@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My App Docs</title>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+
+  <link rel="stylesheet" href="/css/tomorrow.css">
+  <link rel="stylesheet" href="/css/railscasts.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+</head>
+<body class="docs fixed-width">
+
+  <nav class="nav-bar">
+    <div class="wrap">
+      <ul class="hor">
+        <li> <a href="http://cloudcannon.com" class="logo"><img src="/img/logo.png" alt="logo" height="35" /></a> </li>
+        
+        
+          <li> <a href="/index.html"
+            
+              class="current"
+            
+            > Documentation </a> </li>
+        
+          <li> <a href="/jekyll-resources.html"
+            
+            > Jekyll Resources </a> </li>
+        
+          <li> <a href="/support.html"
+            
+            > Support </a> </li>
+        
+      </ul>
+
+      <ul class="right hor">
+          <li><input type="text" name="search" id="search" class="search-box" placeholder="Search"><div id="search_results" class="search-results"></div></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    
+      <div id="sidebar" class="sidebar">
+  
+    
+        <section>
+          <h6> Getting Started </h6>
+          <ul>
+            
+              <li><a href="#getting_started1_welcomehtml">
+                Welcome
+                
+                </a></li>
+            
+              <li><a href="#getting_started2_add_a_websitehtml">
+                Add a Website
+                
+                </a></li>
+            
+              <li><a href="#getting_started3_our_philosophieshtml">
+                Our Core Principle
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+    
+        <section>
+          <h6> File Syncing </h6>
+          <ul>
+            
+              <li><a href="#file_syncing1_cloud_storagehtml">
+                Cloud Storage
+                
+                </a></li>
+            
+              <li><a href="#file_syncing2_ftphtml">
+                FTP
+                
+                </a></li>
+            
+              <li><a href="#file_syncing3_file_uploadhtml">
+                File Upload
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+    
+        <section>
+          <h6> Editing </h6>
+          <ul>
+            
+              <li><a href="#editing1_editable_regionshtml">
+                Editable Regions
+                
+                </a></li>
+            
+              <li><a href="#editing2_repeatable_regionshtml">
+                Repeatable Regions
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+    
+        <section>
+          <h6> Common Tasks </h6>
+          <ul>
+            
+              <li><a href="#common_tasks1_custom_domainshtml">
+                Custom Domains
+                
+                </a></li>
+            
+              <li><a href="#common_tasks2_custom_404_pagehtml">
+                Custom 404 Page
+                
+                </a></li>
+            
+              <li><a href="#common_tasks3_highlighting_active_linkshtml">
+                Highlighting Active Links
+                
+                </a></li>
+            
+              <li><a href="#common_tasks4_pretty_urlshtml">
+                Pretty URLS
+                
+                </a></li>
+            
+              <li><a href="#common_tasks5_includeshtml">
+                Includes
+                
+                </a></li>
+            
+              <li><a href="#common_tasks6_301_redirectshtml">
+                301 Redirects
+                
+                </a></li>
+            
+              <li><a href="#common_tasks7_form_submissionshtml">
+                For Submissions
+                
+                </a></li>
+            
+              <li><a href="#common_tasks8_hiding_files_from_content_writershtml">
+                Hiding Files from content writers
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+    
+        <section>
+          <h6> Sharing </h6>
+          <ul>
+            
+              <li><a href="#sharing1_share_with_content_writerhtml">
+                Share with Content Writers
+                
+                </a></li>
+            
+              <li><a href="#sharing2_share_with_developerhtml">
+                Share with Developers
+                
+                </a></li>
+            
+              <li><a href="#sharing3_password_sharinghtml">
+                Password Sharing
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+    
+        <section>
+          <h6> Jekyll </h6>
+          <ul>
+            
+              <li><a href="#jekyll1_compilinghtml">
+                Compiling
+                
+                </a></li>
+            
+              <li><a href="#jekyll2_templateshtml">
+                Templates
+                
+                </a></li>
+            
+              <li><a href="#jekyll3_blogginghtml">
+                Blogging
+                
+                </a></li>
+            
+              <li><a href="#jekyll4_collectionshtml">
+                Collections
+                
+                </a></li>
+            
+              <li><a href="#jekyll5_datahtml">
+                Data
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+    
+        <section>
+          <h6> Extra </h6>
+          <ul>
+            
+              <li><a href="#extra1_website_optimizationshtml">
+                Website Optimizations
+                
+                </a></li>
+            
+              <li><a href="#extra2_sslhtml">
+                SSL Support
+                
+                </a></li>
+            
+          </ul>
+        </section>
+    
+  
+</div>
+
+    
+    <div class="main">
+      <script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="getting_started1_welcomehtml">
+            Welcome
+            </a></h3>
+          
+
+          
+
+          <p> Welcome to CloudCannon! The easiest way to make static and <a target="_blank" href="http://jekyllrb.com">Jekyll</a> websites updatable. </p>
+
+<p> This Getting Started tutorial will show you in 5 minutes how to go from an HTML website on your computer to a live website your team can update on CloudCannon. </p>
+
+<p> First, make sure you have: </p>
+
+<ul>
+  <li> A free <a href="https://app.cloudcannon.com/users/sign_up">CloudCannon account</a></li>
+  <li> An HTML website/template on your computer (if you don't have one <a href="http://cloudcannon.com/freebies/cirrus">download one of ours</a>) </li>
+</ul>
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="getting_started2_add_a_websitehtml">
+            Add a Website
+            </a></h3>
+          
+
+          
+
+          <p> The first step is to add a new site to CloudCannon by clicking on the <em>Add a New Site</em> button. </p>
+
+<figure>
+  <img src="/img/getting_started/1.png" alt="Add a Site">
+</figure>
+
+<p> And type in a site name </p>
+
+<figure>
+  <img src="/img/getting_started/2.png" alt="Site Name">
+</figure>
+
+<p> Now it's time to add files to your website. The easiest way is to upload the files in browser but you can also sync them through <a href="#file_syncing1_cloud_storagehtml">Cloud Storage</a>. Click Upload your website files.</p>
+
+<figure>
+  <img src="/img/getting_started/3.png" alt="Upload files">
+</figure>
+
+<p> Select your website files from your computer. </p>
+
+<figure>
+  <img src="/img/getting_started/4.png" alt="Select your website files">
+</figure>
+
+<p> Now those files have uploaded to CloudCannon, it's time to edit them. Click on index.html to update the homepage. </p>
+
+<figure>
+  <img src="/img/getting_started/5.png" alt="File Browser">
+</figure>
+
+<p> This will bring up your website in the visual editor. We're going to set the updatable errors. Click on the code editor:
+  <br> <img src="/img/getting_started/code-editor.png" alt="Code Editor" width="70"/> </p>
+
+<figure>
+  <img src="/img/getting_started/6.png" alt="File Browser">
+</figure>
+
+<p> Add a <code>class="editable"</code> to the HTML elements you want to be updatabled. For more information on how editables behave on different elements see the editables section </p>
+
+<figure>
+  <img src="/img/getting_started/7.png" alt="Code editor">
+</figure>
+
+<p> When you go back to the visual editor view there will a yellow box around the sections you added the editable class to. /p>
+<figure>
+  <img src="/img/getting_started/8.png" alt="Visual Editor">
+</figure>
+
+<p> And that's all there is to it! If click inside the yellow box you can make updates directly on the page.</p>
+<figure>
+  <img src="/img/getting_started/9.png" alt="Inline Update">
+</figure>
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="getting_started3_our_philosophieshtml">
+            Our Core Principle
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+  
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="file_syncing1_cloud_storagehtml">
+            Cloud Storage
+            </a></h3>
+          
+
+          
+
+          <p> Connecting a cloud storage provider to CloudCannon allows you to work on your website on your computer and have all changes automatically synced to CloudCannon. All files changes made on CloudCannon get synced back to your storage provider so you'll always have the latest version of the website on your computer. </p>
+
+<h4> Dropbox </h4>
+
+<p> Go to your website configuration and go to storage providers and click Connect next to Dropbox. </p>
+
+<figure>
+  <img src="/img/cloud_storage/dropbox/1.png" alt="Storage Providers">
+</figure>
+
+<p> This will bring up a dialog asking what the main source is for the inital synchronisation. This only matters if you have existing files in CloudCannon or Dropbox, select the source of files you want to keep. Click Connect Dropbox. </p>
+
+<figure>
+  <img src="/img/cloud_storage/dropbox/2.png" alt="Inital Transfer">
+</figure>
+
+
+<p> This will take you to Dropbox, type in your credentials to continue. </p>
+<figure>
+  <img src="/img/cloud_storage/dropbox/3.png" alt="Dropbox credentials">
+</figure>
+
+<p> Next you need to click allow to give CloudCannon access to a folder in your Dropbox.</p>
+<figure>
+  <img src="/img/cloud_storage/dropbox/4.png" alt="Allow">
+</figure>
+
+<p> Your Dropbox is now connected to CloudCannon. </p>
+<figure>
+  <img src="/img/cloud_storage/dropbox/5.png" alt="Connected">
+</figure>
+
+<p> Put files in the folder Apps->Cloud Cannon->Your Site Name and they will be synced to CloudCannon. Any changes made on CloudCannon will be synced back to your Dropbox. </p>
+<figure>
+  <img src="/img/cloud_storage/dropbox/6.png" alt="Dropbox folder">
+</figure>
+
+
+<h4> GitHub </h4>
+
+<p> Go to your website configuration and go to storage providers and click connect next to GitHub. </p>
+<figure>
+  <img src="/img/cloud_storage/github/1.png" alt="Storage Providers">
+</figure>
+
+<p> This will redirect you to GitHub, login and authorize CloudCannon access to your GitHub Account. </p>
+<figure>
+  <img src="/img/cloud_storage/github/2.png" alt="GitHub">
+</figure>
+
+<p> You'll be redirected to CloudCannon, pick a repository to connect. If you don't have one for this website, create a new one in GitHub and refresh this page. </p>
+<figure>
+  <img src="/img/cloud_storage/github/3.png" alt="Select repository">
+</figure>
+
+<p> Select the branch you want CloudCannon to pull and push changes to. </p>
+<figure>
+  <img src="/img/cloud_storage/github/4.png" alt="Select Branch">
+</figure>
+
+<p> This will bring up a dialog asking what the main source is for the inital synchronisation. This only matters if you have existing files in CloudCannon or  your repository, select the source of files you want to keep. Click Connect GitHub. </p>
+<figure>
+  <img src="/img/cloud_storage/github/5.png" alt="Inital Transfer">
+</figure>
+
+<p> GitHub is now connected. Changes you push to the Git Repository will be pulled in by CloudCannon. Any changes made on CloudCannon will automatically be committed and pushed. </p>
+<figure>
+  <img src="/img/cloud_storage/github/6.png" alt="GitHub Connected">
+</figure>
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="file_syncing2_ftphtml">
+            FTP
+            </a></h3>
+          
+
+          
+
+          - Connect to your existing hosting
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="file_syncing3_file_uploadhtml">
+            File Upload
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+  
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="editing1_editable_regionshtml">
+            Editable Regions
+            </a></h3>
+          
+
+          
+
+          - how to add
+- elements we support
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="editing2_repeatable_regionshtml">
+            Repeatable Regions
+            </a></h3>
+          
+
+          
+
+          - What are repeatable Regions?
+- How to add
+- How to use
+
+        </section>
+      </section>
+    
+  
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks1_custom_domainshtml">
+            Custom Domains
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks2_custom_404_pagehtml">
+            Custom 404 Page
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks3_highlighting_active_linkshtml">
+            Highlighting Active Links
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks4_pretty_urlshtml">
+            Pretty URLS
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks5_includeshtml">
+            Includes
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks6_301_redirectshtml">
+            301 Redirects
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks7_form_submissionshtml">
+            For Submissions
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="common_tasks8_hiding_files_from_content_writershtml">
+            Hiding Files from content writers
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+  
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="sharing1_share_with_content_writerhtml">
+            Share with Content Writers
+            </a></h3>
+          
+
+          
+
+          - What does a content writer see?
+- How to share with a content writer
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="sharing2_share_with_developerhtml">
+            Share with Developers
+            </a></h3>
+          
+
+          
+
+          - What does a developer see?
+  - GitHub
+- How to share with a developer
+
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="sharing3_password_sharinghtml">
+            Password Sharing
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+  
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="jekyll1_compilinghtml">
+            Compiling
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="jekyll2_templateshtml">
+            Templates
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="jekyll3_blogginghtml">
+            Blogging
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="jekyll4_collectionshtml">
+            Collections
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="jekyll5_datahtml">
+            Data
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+  
+
+  
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="extra1_website_optimizationshtml">
+            Website Optimizations
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="extra2_sslhtml">
+            SSL Support
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
+  
+
+
+    </div>
+  </div>
+</body>
+</html>

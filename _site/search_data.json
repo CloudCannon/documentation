@@ -1,0 +1,277 @@
+{
+	
+    
+      
+
+      
+  			"getting_started1_welcomehtml": {
+  				"title": "Welcome",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"getting_started2_add_a_websitehtml": {
+  				"title": "Add a Website",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"getting_started3_our_philosophieshtml": {
+  				"title": "Our Core Principle",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+    
+      
+        ,
+      
+
+      
+  			"file_syncing1_cloud_storagehtml": {
+  				"title": "Cloud Storage",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"file_syncing2_ftphtml": {
+  				"title": "FTP",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"file_syncing3_file_uploadhtml": {
+  				"title": "File Upload",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+    
+      
+        ,
+      
+
+      
+  			"editing1_editable_regionshtml": {
+  				"title": "Editable Regions",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"editing2_repeatable_regionshtml": {
+  				"title": "Repeatable Regions",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+    
+      
+        ,
+      
+
+      
+  			"common_tasks1_custom_domainshtml": {
+  				"title": "Custom Domains",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks2_custom_404_pagehtml": {
+  				"title": "Custom 404 Page",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks3_highlighting_active_linkshtml": {
+  				"title": "Highlighting Active Links",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks4_pretty_urlshtml": {
+  				"title": "Pretty URLS",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks5_includeshtml": {
+  				"title": "Includes",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks6_301_redirectshtml": {
+  				"title": "301 Redirects",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks7_form_submissionshtml": {
+  				"title": "For Submissions",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"common_tasks8_hiding_files_from_content_writershtml": {
+  				"title": "Hiding Files from content writers",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+    
+      
+        ,
+      
+
+      
+  			"sharing1_share_with_content_writerhtml": {
+  				"title": "Share with Content Writers",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"sharing2_share_with_developerhtml": {
+  				"title": "Share with Developers",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"sharing3_password_sharinghtml": {
+  				"title": "Password Sharing",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+    
+      
+        ,
+      
+
+      
+  			"jekyll1_compilinghtml": {
+  				"title": "Compiling",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"jekyll2_templateshtml": {
+  				"title": "Templates",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"jekyll3_blogginghtml": {
+  				"title": "Blogging",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"jekyll4_collectionshtml": {
+  				"title": "Collections",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"jekyll5_datahtml": {
+  				"title": "Data",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+    
+      
+        ,
+      
+
+      
+  			"extra1_website_optimizationshtml": {
+  				"title": "Website Optimizations",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"extra2_sslhtml": {
+  				"title": "SSL Support",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+		  
+    
+	
+}

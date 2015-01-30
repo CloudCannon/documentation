@@ -1,0 +1,32 @@
+collections:
+  getting_started:
+    title: Getting Started
+    render: true
+  file_syncing:
+    title: File Syncing
+    render: true
+  editing:
+    title: Editing
+    render: true
+  common_tasks:
+    title: Common Tasks
+    render: true
+  sharing:
+    title: Sharing
+    render: true
+  jekyll:
+    title: Jekyll
+    render: true
+  extra:
+    title: Extra
+    render: true
+main_links:
+  -
+    title: Documentation
+    link: /index.html
+  -
+    title: Jekyll Resources
+    link: /jekyll-resources.html
+  -
+    title: Support
+    link: /support.html
