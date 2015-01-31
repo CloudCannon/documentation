@@ -5,7 +5,7 @@
           <h6> {{collection[1].title}} </h6>
           <ul>
             {% for doc in collection[1].docs %}
-              <li><a href="#{{doc.url | replace: '/', '' | replace: '.', ''}}">
+              <li><a title="{{doc.title}}" href="#{{doc.url | replace: '/', '' | replace: '.', ''}}">
                 {{doc.title}}
                 {% if doc.type %}<span class="endpoint {{doc.type}}"></span> {% endif %}
                 </a></li>

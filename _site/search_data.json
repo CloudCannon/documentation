@@ -37,7 +37,25 @@
       
 
       
-  			"file_syncing1_cloud_storagehtml": {
+  			"file_syncing1_file_typeshtml": {
+  				"title": "File Types",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"file_syncing2_file_uploadhtml": {
+  				"title": "File Upload",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"file_syncing3_cloud_storagehtml": {
   				"title": "Cloud Storage",
   				"description": "",
   				"type": ""
@@ -46,8 +64,8 @@
 				  ,
 			  
 		  
-  			"file_syncing2_ftphtml": {
-  				"title": "FTP",
+  			"file_syncing4_dropboxhtml": {
+  				"title": "Dropbox",
   				"description": "",
   				"type": ""
   			}
@@ -55,8 +73,17 @@
 				  ,
 			  
 		  
-  			"file_syncing3_file_uploadhtml": {
-  				"title": "File Upload",
+  			"file_syncing5_githubhtml": {
+  				"title": "GitHub",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"file_syncing6_ftphtml": {
+  				"title": "FTP",
   				"description": "",
   				"type": ""
   			}
@@ -70,7 +97,25 @@
       
 
       
-  			"editing1_editable_regionshtml": {
+  			"editing1_visual_editorhtml": {
+  				"title": "Visual Editor",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"editing2_code_editorhtml": {
+  				"title": "Code Editor",
+  				"description": "",
+  				"type": ""
+  			}
+			  
+				  ,
+			  
+		  
+  			"editing3_editable_regionshtml": {
   				"title": "Editable Regions",
   				"description": "",
   				"type": ""
@@ -79,7 +124,7 @@
 				  ,
 			  
 		  
-  			"editing2_repeatable_regionshtml": {
+  			"editing4_repeatable_regionshtml": {
   				"title": "Repeatable Regions",
   				"description": "",
   				"type": ""
@@ -122,7 +167,7 @@
 			  
 		  
   			"common_tasks4_pretty_urlshtml": {
-  				"title": "Pretty URLS",
+  				"title": "Pretty URLs",
   				"description": "",
   				"type": ""
   			}
@@ -149,7 +194,7 @@
 			  
 		  
   			"common_tasks7_form_submissionshtml": {
-  				"title": "For Submissions",
+  				"title": "Form Submissions",
   				"description": "",
   				"type": ""
   			}
@@ -158,7 +203,7 @@
 			  
 		  
   			"common_tasks8_hiding_files_from_content_writershtml": {
-  				"title": "Hiding Files from content writers",
+  				"title": "Hiding Files From Content Writers",
   				"description": "",
   				"type": ""
   			}
