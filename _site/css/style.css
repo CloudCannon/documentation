@@ -155,13 +155,12 @@ body {
 }
 
 .sidebar {
-  width: 170px;
+  width: 200px;
   position: absolute;
   padding: 20px 20px 0 20px;
   white-space:nowrap;
   top: 8px;
   overflow-y: auto;
-  background: #fafafa;
 }
 
 .sidebar section {
@@ -238,7 +237,7 @@ h3 .endpoint {
 }
 
 .docs .main {
-  margin: 0 0 0 210px;
+  margin: 0 0 0 230px;
 }
 
 .main img {
