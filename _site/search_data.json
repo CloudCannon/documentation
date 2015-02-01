@@ -121,6 +121,15 @@
   				"type": ""
   			}
 			  
+				  ,
+			  
+		  
+  			"editing5_javascripthtml": {
+  				"title": "Javascript",
+  				"description": "",
+  				"type": ""
+  			}
+			  
 		  
     
 	
@@ -241,8 +250,8 @@
       
 
       
-  			"jekyll1_compilinghtml": {
-  				"title": "Compiling",
+  			"jekyll1_introhtml": {
+  				"title": "Intro",
   				"description": "",
   				"type": ""
   			}
@@ -250,8 +259,8 @@
 				  ,
 			  
 		  
-  			"jekyll2_templateshtml": {
-  				"title": "Templates",
+  			"jekyll2_limitationshtml": {
+  				"title": "Limitations",
   				"description": "",
   				"type": ""
   			}
@@ -270,15 +279,6 @@
 		  
   			"jekyll4_collectionshtml": {
   				"title": "Collections",
-  				"description": "",
-  				"type": ""
-  			}
-			  
-				  ,
-			  
-		  
-  			"jekyll5_datahtml": {
-  				"title": "Data",
   				"description": "",
   				"type": ""
   			}

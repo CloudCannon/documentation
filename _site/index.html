@@ -29,14 +29,6 @@
             
             > Documentation </a> </li>
         
-          <li> <a href="/jekyll-resources.html"
-            
-            > Jekyll Resources </a> </li>
-        
-          <li> <a href="/support.html"
-            
-            > Support </a> </li>
-        
       </ul>
 
       <ul class="right hor">
@@ -133,6 +125,11 @@
                 
                 </a></li>
             
+              <li><a title="Javascript" href="#editing5_javascripthtml">
+                Javascript
+                
+                </a></li>
+            
           </ul>
         </section>
     
@@ -215,13 +212,13 @@
           <h6> Jekyll </h6>
           <ul>
             
-              <li><a title="Compiling" href="#jekyll1_compilinghtml">
-                Compiling
+              <li><a title="Intro" href="#jekyll1_introhtml">
+                Intro
                 
                 </a></li>
             
-              <li><a title="Templates" href="#jekyll2_templateshtml">
-                Templates
+              <li><a title="Limitations" href="#jekyll2_limitationshtml">
+                Limitations
                 
                 </a></li>
             
@@ -232,11 +229,6 @@
             
               <li><a title="Collections" href="#jekyll4_collectionshtml">
                 Collections
-                
-                </a></li>
-            
-              <li><a title="Data" href="#jekyll5_datahtml">
-                Data
                 
                 </a></li>
             
@@ -813,6 +805,19 @@
         </section>
       </section>
     
+      <section class="doc-content full">
+        <section class="left-docs">
+          <h3><a id="editing5_javascripthtml">
+            Javascript
+            </a></h3>
+          
+
+          
+
+          
+        </section>
+      </section>
+    
   
 
   
@@ -1110,27 +1115,61 @@
     
       <section class="doc-content full">
         <section class="left-docs">
-          <h3><a id="jekyll1_compilinghtml">
-            Compiling
+          <h3><a id="jekyll1_introhtml">
+            Intro
             </a></h3>
           
 
           
 
-          
+          <h4> What is Jekyll? </h4>
+
+<p> Jekyll is a static site generator. What that means is it takes your content written in HTML, Markdown and other markup languages, passes it through templates and outputs a completley static website </p>
+
+<p> The advantages of doing this are: </p>
+
+<ul>
+  <li>
+    <strong>It's simple</strong> - Jekyll is a small step up from HTML so there's not huge amount to learn.
+  </li>
+  <li>
+    <strong> Secure </strong> - You don't need to worry about the latest PHP vunribility or if your site has an security hole. Your site is just static files which makes it much harder to find security holes.
+  </li>
+  <li>
+    <strong> Fast </strong> - There's no backend processing or database to access to generate your site, so Jekyll websites are extremly fast. </li>
+  <li> <strong> It's powerful </strong> - Jekyll opens up a world of new possibilites on static websites, you can blog, have templates, it's hard to belive these are just static websites. </li>
+</ul>
+
+<p> To get started on Jekyll, checkout the <a href="http://jekyllrb.com/"> offical website </a></p>
+
+<h4> What does CloudCannon's Jekyll integration do? </h4>
+
+<p> One of the downsides of using Jekyll for a website is there's no easy way for a non-technical user to update content themselves. </p>
+
+<p> On CloudCannon you can add all the normal CloudCannon editing features to a Jekyll website. CloudCannon also allows non-technical users to blog, manage collections, front matter and data.</p>
+
         </section>
       </section>
     
       <section class="doc-content full">
         <section class="left-docs">
-          <h3><a id="jekyll2_templateshtml">
-            Templates
+          <h3><a id="jekyll2_limitationshtml">
+            Limitations
             </a></h3>
           
 
           
 
-          
+          <p> We've tried to make the Jekyll integration "just work", however there are some limitations to be aware of.
+
+<h4> Templates / Includes </h4>
+
+<p> You can't have editable/repeatable regions inside a template or include. It must be in the main content. If you need to add updatable content to a template or include, try using a collection </p>
+
+<h4> Compiling </h4>
+
+<p> Each time you make an edit, CloudCannon has to recompile the website before we can show it in the Visual Editor. It usually takes a few seconds </p>
+
         </section>
       </section>
     
@@ -1143,7 +1182,38 @@
 
           
 
-          
+          <p> To blog on your check site you first need to create a _posts folder in the root of your Jekyll website. </p>
+
+<p> Once you've done this and you go to the collections tab for your website, you should see two items: Draft Posts and Published Posts. Draft posts are hidden when your site is published. </p>
+
+<figure>
+  <img src="/img/jekyll/blogging/1.png" alt="draft post">
+</figure>
+
+<p> Let's add a new Draft post, click add draft post button and enter a title for the post </p>
+
+<figure>
+  <img src="/img/jekyll/blogging/3.png" alt="naming draft post">
+</figure>
+
+<p> Now click on the file you've just created. You'll be taken back to a stripped back editor. Enter the content for your blog post here.  </p>
+
+<figure>
+  <img src="/img/jekyll/blogging/4.png" alt="Editing">
+</figure>
+
+<p> If you ever want to see the raw markdown (and you're not a <a href="#sharing1_share_with_content_writerhtml">Content Writer</a>), go to the Code Editor  </p>
+
+<figure>
+  <img src="/img/jekyll/blogging/6.png" alt="Code Editor">
+</figure>
+
+<p> You can always configure the layout, blog title and any other Front Matter you've defined by going to the settings tab. </p>
+
+<figure>
+  <img src="/img/jekyll/blogging/5.png" alt="Settings">
+</figure>
+
         </section>
       </section>
     
@@ -1156,20 +1226,25 @@
 
           
 
-          
-        </section>
-      </section>
-    
-      <section class="doc-content full">
-        <section class="left-docs">
-          <h3><a id="jekyll5_datahtml">
-            Data
-            </a></h3>
-          
+          <p> Collections a similar to Blogging. Each Collection you define in your _config.yml will be in the collection tab in CloudCannon </p>
 
-          
+<figure>
+  <img src="/img/jekyll/collections/1.png" alt="collection">
+</figure>
 
-          
+<p> If it's a Markdown file you can editing it visually with our Markdown editor </p>
+
+<figure>
+  <img src="/img/jekyll/collections/2.png" alt="collection">
+</figure>
+
+<p> If it's an HTML file and your have output set to your in your _config.yml you can use the Visual Editor with Editable Regions. If you don't have output set to true you can only use the Code Editor </p>
+
+
+<figure>
+  <img src="/img/jekyll/collections/3.png" alt="collection">
+</figure>
+
         </section>
       </section>
     
@@ -1182,7 +1257,18 @@
 
           
 
-          
+          <p> Front Matter can be updated in the settings tab when you have a file open. </p>
+
+<figure>
+  <img src="/img/jekyll/front-matter/1.png" alt="Settings">
+</figure>
+
+<p> It even handles arrays </p>
+
+<figure>
+  <img src="/img/jekyll/front-matter/2.png" alt="Front matter">
+</figure>
+
         </section>
       </section>
     

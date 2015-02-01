@@ -518,11 +518,6 @@ pre {
   top: 0;
 }
 
-.file-extentions li {
-  float: left;
-  width: 33%;
-}
-
 @media (max-width: 1000px) {
   .right-code {
     float: none;
