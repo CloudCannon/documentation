@@ -194,6 +194,11 @@ body {
   font-weight: bold;
 }
 
+.file-extentions li {
+  float: left;
+  width: 33%;
+}
+
 .endpoint {
   font-size: 10px;
   padding: 0 2px;
