@@ -16,5 +16,5 @@ Let&#39;s pretend that I own a web design agency&nbsp;and my domain is SamBonney
 *   create the Swish Barber site as&nbsp;a separate&nbsp;site in CloudCannon
 *   upload the site files
 *   go into Custom Domain settings
-*   type in swishbarber.coolagency.com&nbsp;and &quot;claim&quot; that subdomain for that site.
+*   type in swishbarber.sambonney.com&nbsp;and &quot;claim&quot; that subdomain for that site.
 *   then go to your own DNS and add the A record that CloudCannon gives you for that site under the subdomain.
