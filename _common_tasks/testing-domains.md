@@ -18,4 +18,4 @@ Let&#39;s pretend that I own a web design agency&nbsp;and my domain is SamBonney
 *   upgrade the site plan
 *   go into Custom Domain settings
 *   type in swishbarber.sambonney.com&nbsp;and &quot;claim&quot; that subdomain for that site.
-*   then go to your own DNS and add the A record that CloudCannon gives&nbsp;for that site under the subdomain.
+*   then go to my own DNS and add the A record that CloudCannon gives&nbsp;for that site under the subdomain.
