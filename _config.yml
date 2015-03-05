@@ -20,6 +20,9 @@ collections:
   extra:
     title: Extra
     render: true
+  known_issues:
+    title: Known Issues
+    render: true
 main_links:
   -
     title: Documentation
