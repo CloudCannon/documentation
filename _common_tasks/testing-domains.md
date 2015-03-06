@@ -1,11 +1,11 @@
 ---
 title: Testing Domains
 ---
-All sites on CloudCannon&#39;s paid plans receive a free testing .cloudvent.net subdomain.&nbsp;This allows you to see that site live on the web, even if you haven&#39;t purchased a permanent domain for the project yet.
+All sites on CloudCannon&#39;s receive a free testing .cloudvent.net subdomain.&nbsp;This allows you to see that site live on the web, even if you haven&#39;t purchased a permanent domain for the project yet. (Free plan sites must have a password set to view the site on this subdomain; Paying users may choose to set a site password or not).
 
 These subdomains are automatically generated with the format of &#39;{COLOR}-{ANIMAL}.cloudvent.net&#39;
 
-At this stage it is not possible to change the automatically generated subdomain.
+It is not possible to change the automatically generated subdomain.
 
 If you wish to use more professional custom testing domains for client projects try the following method:
 
