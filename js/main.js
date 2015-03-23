@@ -49,12 +49,12 @@ jQuery(function() {
       top = 8;
       $sidebar.css({
         'top': top,
-        'position': absolute
+        'position': "absolute"
       });
     } else if (top < $main.offset().top + $main.height() - $sidebar.height()) {
       $sidebar.css({
         'top': 0,
-        'position': absolute
+        'position': "fixed"
       });
     }
 
