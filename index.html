@@ -10,7 +10,7 @@ title: My App Docs
 {% for collection in site.collections %}
   {% if collection[1].render %}
     {% for doc in collection[1].docs %}
-      <section class="doc-content full">
+      <section class="doc-content full"> 
         <section class="left-docs">
           <h3><a id="{{ doc.url | replace: '/', '' | replace: '.', '' }}">
             {{doc.title}}
