@@ -47,10 +47,15 @@ jQuery(function() {
     top = top - nav_height - 20;
     if (top < nav_height - 32) {
       top = 8;
-    }
-
-    if (top < $main.offset().top + $main.height() - $sidebar.height()) {
-      $sidebar.css('top', top);
+      $sidebar.css({
+        'top': top,
+        'position': absolute
+      });
+    } else if (top < $main.offset().top + $main.height() - $sidebar.height()) {
+      $sidebar.css({
+        'top': 0,
+        'position': absolute
+      });
     }
 
     $sidebar.css('height', window.innerHeight - 30)
