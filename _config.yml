@@ -1,35 +1,47 @@
 collections:
-  getting_started:
+  guide:
     title: Getting Started
-    render: true
-  file_syncing:
+    permalink: /guide/:title/
+    active_prefix: /guide/
+    output: true
+  syncing:
     title: File Syncing
-    render: true
+    permalink: /syncing/:title/
+    active_prefix: /syncing/
+    output: true
   editing:
     title: Editing
-    render: true
-  common_tasks:
+    permalink: /editing/:title/
+    active_prefix: /editing/
+    output: true
+  tasks:
     title: Common Tasks
-    render: true
+    permalink: /tasks/:title/
+    active_prefix: /tasks/
+    output: true
   sharing:
     title: Sharing
-    render: true
+    permalink: /sharing/:title/
+    active_prefix: /sharing/
+    output: true
   jekyll:
     title: Jekyll
-    render: true
+    permalink: /jekyll/:title/
+    active_prefix: /jekyll/
+    output: true
   extra:
     title: Extra
-    render: true
-  known_issues:
+    permalink: /extra/:title/
+    active_prefix: /extra/
+    output: true
+  issues:
     title: Known Issues
-    render: true
 main_links:
   -
     title: Documentation
     link: /index.html
-#  -
-#    title: Jekyll Resources
-#    link: /jekyll-resources.html
-#  -
-#    title: Support
-#    link: /support.html
+defaults:
+- scope:
+    path: ""
+  values:
+    layout: docs

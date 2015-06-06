@@ -1,0 +1,18 @@
+<header>
+	<img src="http://cloudcannon.com/img/logo.png"alt="CloudCannon">
+
+	<nav>
+		<ul>
+			{% for item in site.collections %}
+				{% assign collection = item[1] %}
+				{% if collection.output %}
+					<li class="nav-item top-level {% if page.url contains collection.active_prefix %}current{% endif %}">
+						{% assign items = collection.docs | sort: 'order' %}
+						<a href="{{ items.first.url }}">{{ collection.title }}</a>
+						{% include secondary-nav-items.html items=items %}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

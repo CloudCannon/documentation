@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% for item in site.collections %}
+	{% assign collection = item[1] %}
+	{% if page.url contains collection.active_prefix %}
+		{% assign section = collection.title %}
+		{% assign items = collection.docs | sort: 'order' %}
+		{% break %}
+	{% endif %}
+{% endfor %}
+
+<section class="main">
+	<div class="page-header">
+		<h2>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h2>
+		<h3>{{ section }}</h3>
+
+		{% if items %}
+			{% include section-nav.html items=items %}
+		{% endif %}
+	</div>
+	<article class="content contains-screenshots">
+		{{ content }}
+	</article>
+</section>

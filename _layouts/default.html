@@ -1,50 +1,33 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{page.title}}</title>
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/ico" href="/favicon.ico">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ page.title }} - CloudCannon Documentation</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="/js/main.js"></script>
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/screen.css">
 
-  <link rel="stylesheet" href="/css/tomorrow.css">
-  <link rel="stylesheet" href="/css/railscasts.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-</head>
-<body class="{{page.body_class}}">
+		<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-  <nav class="nav-bar">
-    <div class="wrap">
-      <ul class="hor">
-        <li> <a href="http://cloudcannon.com" class="logo"><img src="/img/logo.png" alt="logo" height="35" /></a> </li>
-        {% assign current = page.url %}
-        {% for main_link in site.main_links %}
-          <li> <a href="{{main_link.link}}"
-            {% if current == main_link.link %}
-              class="current"
-            {% endif %}
-            > {{ main_link.title }} </a> </li>
-        {% endfor %}
-      </ul>
+		<!--[if lt IE 9]>
+		<script src="/js/html5shiv.min.js"></script>
+		<script src="/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
 
-      <ul class="right hor">
-          <li><input type="text" name="search" id="search" class="search-box" placeholder="Search"><div id="search_results" class="search-results"></div></li>
+	<body>
+		{% include mobile-nav.html %}
+		{% include primary-nav.html %}
 
-      </ul>
-    </div>
-  </nav>
+		{{ content }}
 
-  <div class="wrap">
-    {% if page.sidebar %}
-      {% include sidebar.html %}
-    {% endif %}
-    <div class="main">
-      {{content}}
-    </div>
-  </div>
-</body>
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+			};
+		</script>
+	</body>
 </html>

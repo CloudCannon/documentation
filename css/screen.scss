@@ -1,0 +1,299 @@
+---
+---
+
+$body-background-color: #fff;
+$body-color-secondary: #222;
+
+$content-color: #222;
+$content-background-color: #fff;
+
+$nav-background-color: #135571;
+$nav-color-secondary: #fff;
+$nav-width: 200px;
+
+$page-header-background: #26ABE2;
+
+$mobile-nav-height: 60px;
+$mobile-nav-padding: 10px;
+
+$brand-color: #ffd200;
+
+$space: 20px;
+$border-radius: 5px;
+
+@import "mixins";
+@import "normalize";
+@import "pygments";
+@import "typography";
+@import "set";
+
+body, html {
+	background: #000;
+	padding: 0;
+	border-top: 0;
+}
+
+header {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: $mobile-nav-height;
+	bottom: 0;
+	right: 0;
+	padding: 0 $space;
+	text-align: right;
+	background-color: $nav-background-color;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	z-index: 1;
+
+	> img {
+		display: none;
+		height: 80px;
+		height: 60px;
+		margin: ($space / 2) 0;
+	}
+
+	ul {
+		padding: 0;
+	}
+}
+
+.nav-open header {
+	display: block;
+}
+
+.mobile-nav {
+	padding: $mobile-nav-padding;
+	height: $mobile-nav-height;
+	background-color: $nav-background-color;
+
+	> img {
+		height: 100%;
+		padding: 5px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.open-nav {
+		background-image: url(/img/icons/menu.svg);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: $mobile-nav-height - ($mobile-nav-padding * 2);
+		height: $mobile-nav-height - ($mobile-nav-padding * 2);
+		border: 0;
+		opacity: 0.6;
+		position: absolute;
+		top: $mobile-nav-padding;
+		right: $mobile-nav-padding;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus,
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+
+.main {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: $mobile-nav-height;
+	bottom: 0;
+	background: $body-background-color url(/img/background-repeat.png);
+
+	h1 {
+		color: $body-color-secondary;
+		text-transform: uppercase;
+		text-align: center;
+		text-shadow: none;
+		margin: $space $space ($space * 1.5) $space;
+		font-size: 3rem;
+	}
+}
+
+.maintained {
+	font-size: .6em;
+
+	img {
+		width: 60px;
+		vertical-align: middle;
+	}
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 700px;
+	position: relative;
+
+	background-color: transparent;
+	padding: 0;
+	box-shadow: none;
+	color: $content-color;
+	padding: $space $space 0.01em $space;
+	border-radius: $border-radius;
+}
+
+.nav-item {
+	display: block;
+	padding: 7px 0;
+	font-size: 0.8rem;
+	line-height: 1.2;
+
+	> ul {
+		display: none;
+	}
+
+	> a {
+		color: #fff;
+		opacity: 0.4;
+
+		:hover { opacity: 0.8; }
+	}
+
+	&.current {
+		> a {
+			opacity: 1;
+		}
+
+		> ul {
+			display: block;
+		}
+	}
+
+	&.top-level {
+		padding: 0 0 15px 0;
+
+		> ul {
+			margin-top: 7px;
+		}
+
+		> a {
+			font-size: 1.2em;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.section-nav {
+	position: absolute;
+	top: 30px;
+	left: $space * 1.5;
+	right: $space * 1.5;
+
+	.prev,
+	.next {
+		background-size: 60px;
+		background-repeat: no-repeat;
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		opacity: 0.8;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.disabled {
+			display: none;
+		}
+	}
+
+	.prev {
+		float: left;
+		background-image: url(/img/icons/arrow-back.svg);
+	}
+
+	.next {
+		float: right;
+		background-image: url(/img/icons/arrow-forward.svg);
+	}
+}
+
+.section-heading {
+	margin-bottom: 15px;
+
+	+ p {
+		margin-top: 0;
+	}
+}
+
+article img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.contains-screenshots img {
+	border-radius: 2px;
+}
+
+pre, code {
+	font-size: 16px;
+	font-family: Inconsolata, Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+	line-height: 1.4;
+	font-weight: 400;
+}
+
+.highlight {
+	padding: 10px 0 5px 0;
+
+	code {
+		line-height: 1.4;
+	}
+}
+
+.page-header {
+	padding: 80px 0;
+	text-align: center;
+	background-color: $page-header-background;
+	color: #FFF;
+	text-transform: uppercase;
+
+	h2 {font-size: 3em;}
+	h2, h3 {
+		margin: 0;
+		line-height: 1.2;
+	}
+}
+
+p > code {
+	position: relative;
+	top: -2px;
+}
+
+
+@media (min-width: 700px) {
+	.mobile-nav {
+		display: none;
+	}
+
+	body {
+		padding: 0 0 0 $nav-width;
+	}
+
+	header {
+		display: block;
+		width: $nav-width;
+		top: 0;
+		padding: $space ($space * 2);
+
+		> img {
+			display: inline;
+		}
+	}
+
+	.main {
+		top: 0;
+		left: $nav-width + ($space * 4);
+	}
+}
