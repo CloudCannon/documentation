@@ -10,13 +10,14 @@ title: Form Submissions
 
 <p>That's it! Here's an example form: </p>
 
-<pre>
-&lt;form method="post" action="/success.html"&gt;
-  &lt;label&gt;First Name&lt;/label&gt;&lt;input type="text" name="first_name" /&gt;
-  &lt;label&gt;Surname&lt;/label&gt;&lt;input type="text" name="surname" /&gt;
-  &lt;label&gt;Message&lt;/label&gt;&lt;textarea name="message"&gt;&lt;/textarea&gt;
-  &lt;input type="hidden" name="cc_emails[]" value="mike@cloudcannon.com" /&gt;
-  &lt;input type="hidden" name="cc_emails[]" value="george@cloudcannon.com" /&gt;
+{% highlight html %}
+<form method="post" action="/success.html">
+  <label>First Name</label><input type="text" name="first_name" />
+  <label>Surname</label><input type="text" name="surname" />
+  <label>Message</label><textarea name="message"></textarea>
+  <input type="hidden" name="cc_emails[]" value="mike@cloudcannon.com" />
+  <input type="hidden" name="cc_emails[]" value="george@cloudcannon.com" />
 
-  &lt;input type="submit" value="Send Message" /&gt;
-&lt;/form&gt;</pre>
+  <input type="submit" value="Send Message" />
+</form>
+{% endhighlight %}
