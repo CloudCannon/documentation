@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section class="main {{ page.extra_class }}">
+	<div class="content-box">
+		<h1>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1>
+
+		<article class="content">
+			{{ content }}
+		</article>
+	</div>
+</section>

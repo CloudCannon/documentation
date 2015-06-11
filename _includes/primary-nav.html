@@ -1,0 +1,22 @@
+<header>
+	<h1><img src="http://cloudcannon.com/img/logo.png" alt="CloudCannon"><br> Documentation</h1>
+
+	<nav>
+		<ul>
+			{% assign url = page.url %}
+			{% if url == "/" %}
+				{% assign url = "/guide/setup/" %}
+			{% endif %}
+			{% for item in site.collections %}
+				{% assign collection = item[1] %}
+				{% if collection.output %}
+					<li class="nav-item top-level {% if url contains collection.active_prefix %}current{% endif %}">
+						{% assign items = collection.docs | sort: 'order' %}
+						<a href="{{ items.first.url }}">{{ collection.title }}</a>
+						{% include secondary-nav-items.html items=items %}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</header>
