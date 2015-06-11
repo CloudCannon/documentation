@@ -3,7 +3,7 @@ title: Intro
 ---
 #### Static vs Jekyll
 
-CloudCannon supports two types of websites, static and Jekyll. To turn on Jekyll integration CloudCannon looks for `_config.yml` in the root of your website.
+CloudCannon supports two types of websites, static and [Jekyll](http://jekyllrb.com). To turn on Jekyll integration CloudCannon looks for `_config.yml` in the root of your website.
 
 #### What is Jekyll?
 

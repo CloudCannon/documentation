@@ -1,6 +1,7 @@
 html, body {
 	font-size: 18px;
 	line-height: 1.7;
+	font: 300 21px Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 a {
@@ -14,6 +15,7 @@ h1, h2, h3, h4 {
 
 p {
 	margin: 0.2em 0 1.2em 0;
+	line-height: 1.5em;
 }
 
 .warning, .error, .success {
@@ -34,4 +36,8 @@ p {
 
 h4 {
   font-size: 1.5em;
+}
+
+li {
+	padding: 5px 0;
 }
