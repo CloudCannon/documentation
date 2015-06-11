@@ -24,11 +24,6 @@ collections:
     permalink: /sharing/:title/
     active_prefix: /sharing/
     output: true
-  jekyll:
-    title: Jekyll
-    permalink: /jekyll/:title/
-    active_prefix: /jekyll/
-    output: true
   extra:
     title: Extra
     permalink: /extra/:title/
