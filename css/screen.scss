@@ -63,10 +63,9 @@ h1 {
 	padding-bottom: 10px;
 	font-weight: 300;
 
-	> img {
-		display: none;
-		height: 65px;
-		margin: ($space / 2) 0;
+	img {
+		width: 100px;
+  	margin: 0 0 10px 0;
 	}
 }
 
