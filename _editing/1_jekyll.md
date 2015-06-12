@@ -15,7 +15,7 @@ To get started with Jekyll checkout out [Jekyll.tips](http://jekyll.tips).
 
 **Simple Editing** - Jekyll has no easy way for non-technical users to update content themselves. With CloudCannon non-technical users can manage all content on their websites.
 
-**Jekyll builds in the cloud** - Jekyll sites are normally compiled locally and then uploaded to a webserver. This requires setting up a ruby environment to run Jekyll. Users that wish to avoid setting up this environment can use CloudCannon to build Jekyll sites in the cloud.
+**Jekyll builds in the cloud** - Jekyll sites are normally compiled locally and then uploaded to a web server. This requires setting up a ruby environment to run Jekyll. Users that wish to avoid setting up this environment can use CloudCannon to build Jekyll sites in the cloud.
 
 #### Jekyll Version
 

@@ -9,7 +9,7 @@ CloudCannon is a cloud based CMS and hosting provider for static and [Jekyll](ht
 
 ## Who is CloudCannon for?
 
-CloudCannon is focussed on bringing developers and non-technical people together. Agencies are using CloudCannon to deliver updatable websites to clients. Enterprises have their marketing teams update websites without interrupting developers.
+CloudCannon allows non-technical teams to take control of their website and developers to build websites faster. Agencies are using CloudCannon to deliver updatable websites to clients. Enterprises have their marketing teams update websites without interrupting developers.
 
 #### What is Jekyll?
 
