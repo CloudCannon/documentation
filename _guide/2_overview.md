@@ -6,7 +6,13 @@ This overview will give you a glimpse of the features on CloudCannon and walk yo
 
 Download the [Creative site](/creative.zip).
 
-This website started off as a free template. It's been converted to a Jekyll website with a blog, layouts and other features. For a full walkthrough on how to do this check out [Jekyll.tips](http://jekyll.tips).
+Creative is a [Jekyll](http://jekyllrb.com) site. Jekyll sites are similar to static sites (websites with just HTML, CSS and Javascript files) but much more powerful. You can have a blog, layouts and complex generated pages.
+
+This website started off as a free HTML5 template. It's been converted to a Jekyll website with a blog, layouts and other features.
+
+For a full guide how to convert a HTML5 template to a Jekyll site check out [Jekyll.tips](http://jekyll.tips).
+
+### CloudCannon Overview
 
 Sign up for a CloudCannon account.
 
@@ -16,13 +22,17 @@ Create a new site.
 
 ![Create a new site](/img/overview/creative.png)
 
-Now we need to upload our site to CloudCannon. There's a few ways of doing this. We could sync with GitHub, BitBucket or Dropbox. For this site we'll just upload the files from our computer.
+Now we need to upload our site to CloudCannon. There's a few ways of doing this. We could sync with GitHub, BitBucket or Dropbox. The advantage of doing this is you'll have a full history of changes on your website and you can revert to anytime. It also makes it easier to work with a team of developers because everyone can pull and push changes to the website on their local machine.
+
+For this site we'll just upload the files from our computer.
 
 Click the file upload button.
 
 ![Upload](/img/overview/upload.png)
 
 Go to upload folder (This is only supported in some browsers. If it's grayed out use one of the storage providers mentioned above).
+
+Select the folder of the unzipped Creative website.
 
 ![Upload Folder](/img/overview/upload_folder.png)
 
