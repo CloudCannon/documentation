@@ -4,7 +4,7 @@ title: Front Matter
 
 _This feature is only available on Jekyll sites._
 
-Front Matter is updated by opening the Settings sidebar when you have a file open.
+Front Matter is updated by using the &#39;Toggle Settings&#39; button at top right when you have a file open. This will open the Settings sidebar where you can edit Front Matter variables.
 
 ![Settings](/img/jekyll/front-matter/1.png)
 
