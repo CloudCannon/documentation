@@ -33,8 +33,10 @@ layout: default
 			{% include section-nav.html items=items previous_collection=previous next_collection=next %}
 		{% endif %}
 	</div>
-	<article class="content contains-screenshots">
+	<article class="content">
+		{% if page.warning %}
+			<p class="warning">{{ page.warning }}</p>
+		{% endif %}
 		{{ content }}
-
 	</article>
 </section>

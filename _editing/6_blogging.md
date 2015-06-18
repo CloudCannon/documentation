@@ -1,8 +1,7 @@
 ---
 title: Blogging
+warning: This feature is only available on Jekyll sites.
 ---
-
-_This feature is only available on Jekyll sites._
 
 To blog on your site you first need to create a `_posts` folder in the root of your Jekyll website.
 

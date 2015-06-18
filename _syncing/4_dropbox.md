@@ -23,5 +23,3 @@ Your Dropbox is now connected to CloudCannon.
 ![Connected](/img/cloud_storage/dropbox/5.png)
 
 Put files in the folder Dropbox->Apps->Cloud Cannon->[Your Site Name] and they will be synced to CloudCannon. Any changes made on CloudCannon will sync back to your Dropbox.
-
-![Dropbox Folder](/img/cloud_storage/dropbox/6.png)

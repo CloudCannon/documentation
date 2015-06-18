@@ -14,8 +14,6 @@ CloudFlare is service which works as a reverse proxy for your website. What that
 
 The advantage of doing this is CloudFlare does many performance and security enhancements so your website will load faster and be more immune to malicious attacks. They’ve also recently added free SSL support.
 
-![CloudFlare](/img/ssl/1.png)
-
 #### Why should I care?
 
 Google recently [announced](http://googlewebmastercentral.blogspot.co.nz/2014/08/https-as-ranking-signal.html) that it will prioritize sites that use SSL. Web designers should be approaching clients about SSL to ensure that their clients sites continue to rank well. Given that CloudFlare offers SSL for free AND you get the malicious traffic buffer of their CDN, using it is almost a no-brainer.
@@ -56,4 +54,4 @@ Find the SSL section and change it to "Flexible SSL"
 
 ![CloudFlare](/img/ssl/8.png)
 
-That’s it! Changing your DNS can take up to 48 hours to propagate and CloudFlare’s free SSL can take up to 24 hours to set up. So while there should be no downtime, it might be a day or two before you have SSL and CloudFlare serving your website. 
+That’s it! Changing your DNS can take up to 48 hours to propagate and CloudFlare’s free SSL can take up to 24 hours to set up. So while there should be no downtime, it might be a day or two before you have SSL and CloudFlare serving your website.

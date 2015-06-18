@@ -1,8 +1,7 @@
 ---
 title: Collections
+warning: This feature is only available on Jekyll sites.
 ---
-_This feature is only available on Jekyll sites._
-
 
 Collections are used to organize content, sort of like blogging, except that the content isn't blog posts. Each Collection you define in your `_config.yml` will be in the **Collection** tab in CloudCannon.
 
