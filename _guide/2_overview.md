@@ -4,7 +4,7 @@ title: Overview
 
 This overview will give you a glimpse of the features on CloudCannon and walk you through the different editing modes.
 
-Download the [Creative site" src="/creative.zip)" class="screenshot">
+Download the [Creative site](/creative.zip).
 
 Creative is a [Jekyll](http://jekyllrb.com) site. Jekyll sites are similar to static sites (websites with just HTML, CSS and Javascript files) but much more powerful. You can have a blog, layouts and complex generated pages.
 
