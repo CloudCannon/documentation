@@ -6,7 +6,7 @@ The Content Writer share level is for sharing a site with users who are non-tech
 
 When they edit a site it takes them straight to the Visual Editor.
 
-![Share](/img/sharing/3.png)
+<img alt="Share" src="/img/sharing/3.png" class="screenshot">
 
 To share with a site to Content Writer:
 
@@ -16,4 +16,4 @@ To share with a site to Content Writer:
 * Select *View and Update Content*
 * Save Changes
 
-![Share](/img/sharing/1.png)
+<img alt="Share" src="/img/sharing/1.png" class="screenshot">

@@ -12,7 +12,7 @@ There's lots of ways you can use editable regions. To allow everything to be upd
 
 Editable regions behave differently depending on what element you put them on. We current support:
 
-#### img
+### img
 
 Gives user options to alter the current image, update the images description and replace the existing image with another previously uploaded, from the web or a new upload.
 
@@ -23,19 +23,19 @@ If you've specified a width and height on an image, CloudCannon ensures that new
 
 ![Crop](/img/editing/4.png)
 
-#### Text Elements: p, h1, h2, h3, h4, h5, h6
+### Text Elements: p, h1, h2, h3, h4, h5, h6
 
 Gives options for bold, italics and links
 
 ![Text Elements](/img/editing/5.png)
 
-#### Inline Elements: span, strong, em
+### Inline Elements: span, strong, em
 
 <p> Only allows updating text </p>
 
 ![Inline Elements](/img/editing/6.png)
 
-#### Block Elements: div, section, article, aside, footer, header, nav
+### Block Elements: div, section, article, aside, footer, header, nav
 
 On block elements you can set headings, bold, italics, links, quotes, lists and images.
 

@@ -11,4 +11,4 @@ To share a site with a Developer:
 * Select *Full Access*
 * Save Changes
 
-![Share with developer](/img/sharing/1.png)
+<img alt="Share with developer" src="/img/sharing/1.png" class="screenshot">

@@ -6,4 +6,4 @@ The Visual Editor is the main way to edit content in CloudCannon. Editable regio
 
 You can navigate to other pages by simply clicking links on the site.
 
-![Yellow Box](/img/editing/1.png)
+<img alt="Yellow Box" src="/img/editing/1.png" class="screenshot">

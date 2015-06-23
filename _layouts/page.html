@@ -2,12 +2,20 @@
 layout: default
 ---
 
-<section class="main {{ page.extra_class }}">
-	<div class="content-box">
-		<h1>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1>
+<section class="main">
+	<div class="page-header">
+		<h2>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h2>
+		<!-- <h3>{{ section }}</h3> -->
 
-		<article class="content">
-			{{ content }}
-		</article>
+		<div class="section-nav">
+			<a href="/style/colours/" class="next"  title="Continue to Style"></a>
+		</div>
+
 	</div>
+	<article class="content">
+		{% if page.warning %}
+			<p class="warning">{{ page.warning }}</p>
+		{% endif %}
+		{{ content }}
+	</article>
 </section>
