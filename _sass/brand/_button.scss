@@ -19,7 +19,7 @@ $default-button-color: #eee;
 		border-color: darken($background-color, 15%) \9;
 	}
 
-	.no-touch &:hover {
+	&:hover {
 		background-color: darken($background-color, 5%);
 		color: $color;
 	}
@@ -73,7 +73,7 @@ $default-button-color: #eee;
 .btn:active {
 	outline: 0;
 	border-bottom-width: 1px;
-	border-top-width: 2px;
+	border-top: 2px solid transparent;
 }
 
 .btn-large {

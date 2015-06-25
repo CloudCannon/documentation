@@ -36,3 +36,7 @@
        -o-user-select: $select;
           user-select: $select;
 }
+
+@mixin box-sizing($select...) {
+    box-sizing: $select;
+}

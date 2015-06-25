@@ -17,9 +17,6 @@ $mobile-nav-padding: 10px;
 
 $brand-color: #ffd200;
 
-$space: 20px;
-$border-radius: 3px;
-
 @import "brand/mixins";
 @import "brand/normalize";
 @import "brand/pygments";
@@ -29,6 +26,9 @@ $border-radius: 3px;
 @import "brand/button";
 @import "brand/code";
 @import "brand/set";
+@import "brand/form";
+@import "brand/checkbox";
+@import "brand/tables";
 
 @import "layout";
 @import "logos";
