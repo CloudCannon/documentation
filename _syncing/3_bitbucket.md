@@ -1,5 +1,6 @@
 ---
 title: Bitbucket
+warning: Only Git repositories are supported at this stage.
 ---
 {% include cloud_storage.md %}
 

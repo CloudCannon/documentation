@@ -17,6 +17,8 @@ Jekyll is a static site generator. What this really means is that Jekyll is a pr
 
 With Jekyll you can do things you would normally need a backend for. Blogging, photo galleries, and layouts are all possible.
 
+CloudCannon runs Jekyll version **2.4.0**
+
 ## How does CloudCannon work?
 
 Getting a website online and updatable is easy with CloudCannon.

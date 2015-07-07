@@ -4,6 +4,11 @@ collections:
     permalink: /overview/:title/
     active_prefix: /overview/
     output: true
+  getting_started:
+    title: Getting Started
+    permalink: /getting_started/:title/
+    active_prefix: /getting_started/
+    output: true
   syncing:
     title: File Syncing
     permalink: /syncing/:title/
@@ -23,6 +28,11 @@ collections:
     title: Sharing
     permalink: /sharing/:title/
     active_prefix: /sharing/
+    output: true
+  tutorials:
+    title: Tutorials
+    permalink: /tutorials/:title/
+    active_prefix: /tutorials/
     output: true
   extra:
     title: Extra

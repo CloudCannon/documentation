@@ -1,8 +1,8 @@
 ---
-title: Walkthrough
+title: Tour
 ---
 
-This walkthrough will give you a glimpse of the features on CloudCannon and walk you through the different editing modes.
+This tour will give you a glimpse of the features on CloudCannon and walk you through the different editing modes.
 
 Download the [Creative site](/creative.zip).
 
