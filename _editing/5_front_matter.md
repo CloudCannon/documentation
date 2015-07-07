@@ -137,10 +137,10 @@ sale_starts_on: 2015-01-09
 ---
 {% endhighlight %}
 
-#### Usage
+#### Liquid
 {% highlight liquid %}
 {% raw %}
-{{ page.sale_starts_on | date: '%B %d, %Y' }}
+<p>Big sale starts on {{ page.sale_starts_on | date: '%B %d, %Y' }}</p>
 {% endraw %}
 {% endhighlight %}
 
@@ -149,21 +149,61 @@ sale_starts_on: 2015-01-09
 ### Select
 Shows as a select box
 
+#### Usage
+There's two ways of populating data in the select box.
+
+The first is to add an array to `_config.yml`:
+
+{% highlight liquid %}
+{% raw %}
+styles:
+  - Red
+  - Blue
+  - Green
+{% endraw %}
+{% endhighlight %}
+
+The second is to have your data in a Collection. Let's say we have a Collection of products, the select box will be populated with items from the products Collection.
+
+#### Front Matter
+You reference the singular version of the data array you set in `_config.yml` or your Collection.
+
 {% highlight liquid %}
 ---
-show_feature: true
+style: Green
+product: beanie
 ---
+{% endhighlight %}
+
+#### Liquid
+{% highlight liquid %}
+{% raw %}
+<p> Only available in {{ page.style }} </p>
+{% endraw %}
 {% endhighlight %}
 
 <img alt="Front matter" src="/img/editing/front_matter/select.png" class="screenshot">
 
 ### Hash
-Setting a variable to true or false will show as a checkbox
+Hash groups related data in its own interface
 
+#### Usage
+Set a hash in the Front Matter
+
+#### Front Matter
 {% highlight liquid %}
 ---
-show_feature: true
+footer:
+  copyright: LionWear Inc.
+  since: 2004
 ---
+{% endhighlight %}
+
+#### Liquid
+{% highlight liquid %}
+{% raw %}
+<footer> &copy; {{ page.footer.since }}{{ page.footer.copyright }} </footer>
+{% endraw %}
 {% endhighlight %}
 
 <img alt="Front matter" src="/img/editing/front_matter/hash_1.png" class="screenshot">
@@ -171,12 +211,31 @@ show_feature: true
 <img alt="Front matter" src="/img/editing/front_matter/hash_2.png" class="screenshot">
 
 ### Array
-Setting a variable to true or false will show as a checkbox
+Similar to a hash, it separates the data into a different interface. Items in the array can be
+reordered and deleted and new items can be added.
 
+#### Usage
+Set an array in the Front Matter
+
+#### Front Matter
 {% highlight liquid %}
 ---
-show_feature: true
+staff:
+  - Bill
+  - Ben
+  - Badger
 ---
+{% endhighlight %}
+
+#### Liquid
+{% highlight liquid %}
+{% raw %}
+<ul class="staff">
+  {% for staff_member in page.staff %}
+    <li> {{ staff_member }} </li>
+  {% endfor %}
+</ul>
+{% endraw %}
 {% endhighlight %}
 
 <img alt="Front matter" src="/img/editing/front_matter/simple_array_1.png" class="screenshot">
@@ -184,13 +243,47 @@ show_feature: true
 <img alt="Front matter" src="/img/editing/front_matter/simple_array_2.png" class="screenshot">
 
 ### Advanced Array
-Setting a variable to true or false will show as a checkbox
+Any data structures are possible. You can even have nested arrays.
 
+#### Usage
+Set an array, hash or any data type inside an existing array
+
+#### Front Matter
 {% highlight liquid %}
 ---
-show_feature: true
+testimonial:
+  - name: Beans
+    quote: LionWear is my favourite way to buy clothes online
+    photo_path: "/image/beans_profile.jpg"
+    favourite_items:
+      - Blue Hoodie
+      - Pink Beanie
+  - name: Peanut
+    quote: "Next day deliver is amazing!"
+    photo_path: "/image/peans_profile.jpg"
+    favourite_items:
+      - Skinny Jeans
+      - Woolen Socks
 ---
 {% endhighlight %}
+
+#### Liquid
+{% highlight liquid %}
+{% raw %}
+<div class="testimonals">
+  {% for testimonial in page.testimonials %}
+    <blockquote>{{ testimonial.quote }}</blockquote>
+    <p><img src="{{ testimonial.photo_path }}" alt="{{ testimonial.name }}" /> {{ testimonial.name }} </p>
+    <ul>
+      {% for item in testimonial.favourite_items %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
+{% endraw %}
+{% endhighlight %}
+
 
 <img alt="Front matter" src="/img/editing/front_matter/advanced_array_1.png" class="screenshot">
 
