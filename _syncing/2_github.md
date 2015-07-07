@@ -20,3 +20,18 @@ A dialog box will appear asking for the master source for the initial synchroniz
 GitHub is now connected. Changes you push to the Git Repository are pulled in by CloudCannon. Any changes made on CloudCannon are automatically committed and pushed.
 
 <img alt="Inital Transfer" src="/img/cloud_storage/github/6.png" class="screenshot">
+
+### Adding a new GitHub Organization
+
+If you add a GitHub Organization after you have granted access to CloudCannon you'll need to manually allow access.
+
+To do this open the settings for the Organization on GitHub and go to the **Third-party access** tab. Click on **your own authorized applications** under the *No pending requests* header.
+
+<img alt="Inital Transfer" src="/img/cloud_storage/github/7.png" class="screenshot">
+
+Click on **CloudCannon**.
+
+<img alt="Inital Transfer" src="/img/cloud_storage/github/8.png" class="screenshot">
+
+Click **Grant Access** next to your new organization.
+<img alt="Inital Transfer" src="/img/cloud_storage/github/9.png" class="screenshot">
