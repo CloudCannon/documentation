@@ -53,9 +53,10 @@ short_description: The finest hand-crafted clothing
 
 <img alt="Front matter" src="/img/editing/front_matter/small_text_field.png" class="screenshot">
 
+***
 
 ### Large text field
-A text field which is expanded for larger text.
+A text field which is expanded for longer text.
 
 #### Usage
 This is automatically used when there is too much text for a small text field.
@@ -75,6 +76,8 @@ long_description: Products are crafted in-house by hand, making each piece a lab
 {% endhighlight %}
 
 <img alt="Front matter" src="/img/editing/front_matter/large_text_field.png" class="screenshot">
+
+***
 
 ### Boolean
 A Checkbox which can be triggered on or off.
@@ -102,6 +105,8 @@ show_feature: true
 
 <img alt="Front matter" src="/img/editing/front_matter/check_box.png" class="screenshot">
 
+***
+
 ### Image / File
 Select an image or file.
 
@@ -124,6 +129,8 @@ background_image_path: /image/bg.png
 
 <img alt="Front matter" src="/img/editing/front_matter/image.png" class="screenshot">
 
+***
+
 ### Date
 Shows a date picker.
 
@@ -145,6 +152,8 @@ sale_starts_on: 2015-01-09
 {% endhighlight %}
 
 <img alt="Front matter" src="/img/editing/front_matter/date.png" class="screenshot">
+
+***
 
 ### Select
 Shows as a select box.
@@ -184,6 +193,8 @@ product: beanie
 
 <img alt="Front matter" src="/img/editing/front_matter/select.png" class="screenshot">
 
+***
+
 ### Hash
 Hash groups related data in its own interface.
 
@@ -209,6 +220,8 @@ footer:
 <img alt="Front matter" src="/img/editing/front_matter/hash_1.png" class="screenshot">
 
 <img alt="Front matter" src="/img/editing/front_matter/hash_2.png" class="screenshot">
+
+***
 
 ### Array
 Similar to a hash, it separates the data into a different interface. Items in the array can be
@@ -241,6 +254,8 @@ staff:
 <img alt="Front matter" src="/img/editing/front_matter/simple_array_1.png" class="screenshot">
 
 <img alt="Front matter" src="/img/editing/front_matter/simple_array_2.png" class="screenshot">
+
+***
 
 ### Advanced Array
 Any data structures are possible. You can even have nested arrays.
