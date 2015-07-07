@@ -10,7 +10,7 @@ Creative is a [Jekyll](http://jekyllrb.com) site. Jekyll sites are similar to st
 
 This website started off as a free HTML5 template. It's been converted to a Jekyll website with a blog, layouts and other features.
 
-For a full guide how to convert a HTML5 template to a Jekyll site check out [Jekyll.tips](http://jekyll.tips).
+For a full guide how to convert a HTML5 template to a Jekyll site check out our [Getting Started Guide](/getting_started/introduction/).
 
 ## CloudCannon Overview
 
