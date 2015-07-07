@@ -1,8 +1,8 @@
 collections:
-  guide:
-    title: Getting Started
-    permalink: /guide/:title/
-    active_prefix: /guide/
+  overview:
+    title: Overview
+    permalink: /overview/:title/
+    active_prefix: /overview/
     output: true
   syncing:
     title: File Syncing

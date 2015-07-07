@@ -32,7 +32,7 @@ You have complete control over how your data is structured and the interface use
 The available types of data are:
 
 ### Small text field
-A small field for text
+A small field for text.
 
 #### Usage
 Have a small amount of text on a variable.
@@ -77,10 +77,10 @@ long_description: Products are crafted in-house by hand, making each piece a lab
 <img alt="Front matter" src="/img/editing/front_matter/large_text_field.png" class="screenshot">
 
 ### Boolean
-A Checkbox which can be triggered on or off
+A Checkbox which can be triggered on or off.
 
 #### Usage
-Set a variable to true or false
+Set a variable to true or false.
 
 #### Front Matter
 {% highlight liquid %}
@@ -106,7 +106,7 @@ show_feature: true
 Select an image or file.
 
 #### Usage
-Add **_path** to the end of your variable name
+Add **_path** to the end of your variable name.
 
 #### Front Matter
 {% highlight liquid %}
@@ -128,7 +128,7 @@ background_image_path: /image/bg.png
 Shows a date picker.
 
 #### Usage
-Add **_on** to the end of your variable name
+Add **_on** to the end of your variable name.
 
 #### Front Matter
 {% highlight liquid %}
@@ -147,7 +147,7 @@ sale_starts_on: 2015-01-09
 <img alt="Front matter" src="/img/editing/front_matter/date.png" class="screenshot">
 
 ### Select
-Shows as a select box
+Shows as a select box.
 
 #### Usage
 There's two ways of populating data in the select box.
@@ -185,10 +185,10 @@ product: beanie
 <img alt="Front matter" src="/img/editing/front_matter/select.png" class="screenshot">
 
 ### Hash
-Hash groups related data in its own interface
+Hash groups related data in its own interface.
 
 #### Usage
-Set a hash in the Front Matter
+Set a hash in the Front Matter.
 
 #### Front Matter
 {% highlight liquid %}
@@ -215,7 +215,7 @@ Similar to a hash, it separates the data into a different interface. Items in th
 reordered and deleted and new items can be added.
 
 #### Usage
-Set an array in the Front Matter
+Set an array in the Front Matter.
 
 #### Front Matter
 {% highlight liquid %}
@@ -246,12 +246,12 @@ staff:
 Any data structures are possible. You can even have nested arrays.
 
 #### Usage
-Set an array, hash or any data type inside an existing array
+Set an array, hash or any data type inside an existing array.
 
 #### Front Matter
 {% highlight liquid %}
 ---
-testimonial:
+testimonials:
   - name: Beans
     quote: LionWear is my favourite way to buy clothes online
     photo_path: "/image/beans_profile.jpg"
@@ -270,7 +270,7 @@ testimonial:
 #### Liquid
 {% highlight liquid %}
 {% raw %}
-<div class="testimonals">
+<div class="testimonials">
   {% for testimonial in page.testimonials %}
     <blockquote>{{ testimonial.quote }}</blockquote>
     <p><img src="{{ testimonial.photo_path }}" alt="{{ testimonial.name }}" /> {{ testimonial.name }} </p>
