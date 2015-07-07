@@ -1,4 +1,4 @@
-.warning, .error, .success {
+.warning, .error, .success, .info {
 	border-left: 5px solid #FD0;
 	padding: 10px 15px;
 	margin: 1em -15px 1em -20px;
@@ -12,4 +12,8 @@
 
 .error {
 	border-color: #F20;
+}
+
+.info {
+	border-color: #56ADEC;
 }

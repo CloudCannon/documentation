@@ -11,9 +11,11 @@ CloudCannon is a cloud based CMS and hosting provider for static and [Jekyll](ht
 
 CloudCannon allows non-technical teams to take control of their website and developers to build websites faster. Agencies are using CloudCannon to deliver updatable websites to clients. Enterprises have their marketing teams update websites without interrupting developers.
 
-### What is Jekyll?
+## What is Jekyll?
 
 Jekyll is a static site generator. What this really means is that Jekyll is a program that takes your content written in HTML, Markdown and other markup languages, passes it through templates and outputs a completely static website.
+
+With Jekyll you can do things you would normally need a backend for. Blogging, photo galleries, and layouts are all possible.
 
 ## How does CloudCannon work?
 

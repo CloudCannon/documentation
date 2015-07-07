@@ -17,7 +17,7 @@ Now click on the file you've just created. It'll open our stripped-back markdown
 
 <img alt="Editing" src="/img/jekyll/blogging/4.png" class="screenshot">
 
-If you ever want to see the raw Markdown go to the Code Editor.  </p>
+If you ever want to see the raw Markdown go to the Code Editor. 
 
 <img alt="Code Editor" src="/img/jekyll/blogging/6.png" class="screenshot">
 

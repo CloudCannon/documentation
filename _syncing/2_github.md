@@ -1,6 +1,7 @@
 ---
 title: GitHub
 ---
+{% include cloud_storage.md %}
 
 Go to Storage Providers in your website configuration and click "Connect" next to GitHub.
 

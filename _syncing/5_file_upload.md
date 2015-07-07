@@ -2,7 +2,9 @@
 title: File Upload
 ---
 
-Uploading files in the browser is the fastest way to get a website going on CloudCannon. To upload additional files to a site that already has previous uploads click on the upload button in the top right of the file browser.
+Uploading files in the browser is the fastest way to get a website going on CloudCannon.
+
+Click on the upload button in the top right of the file browser.
 
 <img alt="Upload" src="/img/overview/upload.png" class="screenshot">
 
