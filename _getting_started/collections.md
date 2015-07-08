@@ -33,13 +33,13 @@ We're defining the properties of the service using Front Matter, then writing th
 
 Head over to the Collections tab in CloudCannon, you'll see it's detected the Services collection.
 
-![Collections](/img/guide/collections/collections.png)
+<img alt="Collections" src="/img/guide/collections/collections.png" class="screenshot">
 
 Open up our Web Design item. You can easily manage this service using the visual editor. Let's add an image to Web Design. I'm going to use a free flat icon set you can [download here](/flaticons_squidink.zip).
 
 Click **Add Image Path** and upload an appropriate icon.
 
-![Add Image](/img/guide/collections/add_image.png)
+<img alt="Add Image" src="/img/guide/collections/add_image.png" class="screenshot">
 
 Go ahead and add three more services. I added **Content Writing**, **SEO** and **Social Media Marketing**.
 
@@ -107,4 +107,4 @@ title: Services
 
 That's it! Now our client can easily manage the services on the website using Collections.
 
-![Final](/img/guide/collections/final.png)
+<img alt="Final" src="/img/guide/collections/final.png" class="screenshot">

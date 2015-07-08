@@ -141,8 +141,8 @@ title: Contact
 
 And we have a beautiful map showing all our office locations.
 
-![Office](/img/guide/data/map.png)
+<img alt="Office" src="/img/guide/data/map.png" class="screenshot">
 
 Our client can go to the collections tab, click on General Data and get an easy interface for updating our office locations.
 
-![CSV](/img/guide/data/csv.png)
+<img alt="CSV" src="/img/guide/data/csv.png" class="screenshot">

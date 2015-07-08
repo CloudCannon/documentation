@@ -453,4 +453,4 @@ the given variable instead of rendering it to the screen.
 {% endraw %}
 {% endhighlight %}
 
-Content sourced from: [https://github.com/Shopify/liquid/wiki/Liquid-for-Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+<p><small>Content sourced from <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Shopify</a></small></p>

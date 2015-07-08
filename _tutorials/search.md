@@ -225,7 +225,7 @@ I'll assume you've got at RSS Feed set up for your Jekyll site. If you haven't, 
 
 Head over to [TapirGo](http://tapirgo.com/) and sign up for a free account. You'll need to enter the URL of your RSS Feed and your email address.
 
-![Tapirgo](/img/tutorials/search/tapirgo.png)
+<img alt="Tapirgo" src="/img/tutorials/search/tapirgo.png" class="screenshot">
 
 Create `search.html` with the following content:
 
@@ -257,11 +257,11 @@ This is the simplest method to implement. Google provides a search box you can e
 
 Create a new [Google Custom Search Engine](https://cse.google.com/cse/create/new).
 
-![Google Custom Search Engine](/img/tutorials/search/cse.png)
+<img alt="Google Custom Search Engine" src="/img/tutorials/search/cse.png" class="screenshot">
 
 On the next page click "Get Code"
 
-![Google Custom Search Engine 2](/img/tutorials/search/cse_2.png)
+<img alt="Google Custom Search Engine 2" src="/img/tutorials/search/cse_2.png" class="screenshot">
 
 Copy and paste that code into your website.
 

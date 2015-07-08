@@ -171,7 +171,7 @@ One tricky part is we need to set an active class on the first slide which is do
 
 If you upload the site to [CloudCannon](http://cloudcannon.com) (remember you'll need to add a `_config.yml`), a non-technical user can easily change content, reorder the slideshow and add/remove slides.
 
-![CloudCannon Front Matter](/img/tutorials/slideshow/cloudcannon.png)
+<img alt="CloudCannon Front Matter" src="/img/tutorials/slideshow/cloudcannon.png" class="screenshot">
 
 Everythings working now so let's get back to the carousel indicators. We just need to add an `<li>` for each slide and add a class of active to the first item.
 

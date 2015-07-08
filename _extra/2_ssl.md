@@ -22,11 +22,11 @@ Google recently [announced](http://googlewebmastercentral.blogspot.co.nz/2014/08
 
 First off, head over to CloudFlare and register a new account
 
-![CloudFlare](/img/ssl/2.png)
+<img alt="CloudFlare" src="/img/ssl/2.png" class="screenshot">
 
 Next it'll ask for your website address.
 
-![CloudFlare](/img/ssl/3.png)
+<img alt="CloudFlare" src="/img/ssl/3.png" class="screenshot">
 
 After this CloudFlare will take about a minute to scan your existing DNS records. Once it’s finished it, it’ll show you the DNS records it’s found. You need to verify these records are correct. For CloudCannon websites the DNS records are fairly simple, usually the setup is:
 
@@ -36,15 +36,15 @@ After this CloudFlare will take about a minute to scan your existing DNS records
 
 Once you’re happy these are correct click the continue button.
 
-![CloudFlare](/img/ssl/4.png)
+<img alt="CloudFlare" src="/img/ssl/4.png" class="screenshot">
 
 Next up is configuring CloudFlare. I switched the plan to 'Free' and the 'Performance' to CDN + Full optimizations.
 
-![CloudFlare](/img/ssl/5.png)
+<img alt="CloudFlare" src="/img/ssl/5.png" class="screenshot">
 
 Now you need to update your nameservers. To do this log in to your domain provider and change the nameservers to the ones that CloudFlare gives you.
 
-![CloudFlare](/img/ssl/6.png)
+<img alt="CloudFlare" src="/img/ssl/6.png" class="screenshot">
 
 Almost finished! Now go into your CloudFlare Settings
 

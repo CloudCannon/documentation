@@ -7,7 +7,7 @@ permalink: /
 
 CloudCannon is a cloud based CMS and hosting provider for static and [Jekyll](http://jekyllrb.com) websites. CloudCannon manages all the technical details of deploying and scaling websites and offers a simple interface for content updates.
 
-<p><iframe width="420" height="315" src="https://www.youtube.com/embed/W9GaCEm4bHo" frameborder="0" allowfullscreen></iframe></p>
+<p class="videoWrapper"><iframe width="420" height="315" src="https://www.youtube.com/embed/W9GaCEm4bHo" frameborder="0" allowfullscreen></iframe></p>
 
 ## Who is CloudCannon for?
 

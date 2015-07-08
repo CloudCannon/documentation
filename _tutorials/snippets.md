@@ -15,12 +15,16 @@ Handy snippets of Jekyll code:
 {% endraw %}
 {% endhighlight %}
 
+***
+
 ### Current year
 {% highlight liquid %}
 {% raw %}
 {{ site.time | date: '%Y' }}
 {% endraw %}
 {% endhighlight %}
+
+***
 
 ## Posts
 
@@ -36,6 +40,8 @@ Handy snippets of Jekyll code:
 {% endraw %}
 {% endhighlight %}
 
+***
+
 ### List Posts
 
 {% highlight html %}
@@ -50,6 +56,8 @@ Handy snippets of Jekyll code:
 </ul>
 {% endraw %}
 {% endhighlight %}
+
+***
 
 ### List Posts by year
 
@@ -67,6 +75,8 @@ Handy snippets of Jekyll code:
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
+
+***
 
 ### Posts Pagination
 
@@ -93,6 +103,8 @@ Shows `<span>` elements for non-linked pages and `<a>` elements for active links
 {% endraw %}
 {% endhighlight %}
 
+***
+
 ### Post List with Content
 
 {% highlight html %}
@@ -111,6 +123,8 @@ Shows `<span>` elements for non-linked pages and `<a>` elements for active links
 {% endraw %}
 {% endhighlight %}
 
+***
+
 ### Reading Time
 
 Paste within a post layout. Change `content` to `page.content` if used within a layout file.
@@ -125,6 +139,8 @@ Paste within a post layout. Change `content` to `page.content` if used within a 
 {% endunless %}
 {% endraw %}
 {% endhighlight %}
+
+***
 
 ### Related Posts
 
