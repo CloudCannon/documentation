@@ -23,17 +23,23 @@ If you've specified a width and height on an image, CloudCannon ensures that new
 
 ![Crop](/img/editing/4.png)
 
+***
+
 ### Text Elements: p, h1, h2, h3, h4, h5, h6
 
 Gives options for bold, italics and links
 
 ![Text Elements](/img/editing/5.png)
 
+***
+
 ### Inline Elements: span, strong, em
 
 <p> Only allows updating text </p>
 
 ![Inline Elements](/img/editing/6.png)
+
+***
 
 ### Block Elements: div, section, article, aside, footer, header, nav
 
