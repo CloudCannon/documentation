@@ -39,8 +39,6 @@ collections:
     permalink: /extra/:title/
     active_prefix: /extra/
     output: true
-  issues:
-    title: Known Issues
 main_links:
   -
     title: Documentation
