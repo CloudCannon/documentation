@@ -135,23 +135,71 @@ background_image_path: /image/bg.png
 Shows a date picker.
 
 #### Usage
-Add **_on** to the end of your variable name.
+Add **_date** to the end of your variable name. This field will be used if the value is a Date.
 
 #### Front Matter
 {% highlight liquid %}
 ---
-sale_starts_on: 2015-01-09
+sale_start_date: 2015-01-09
 ---
 {% endhighlight %}
 
 #### Liquid
 {% highlight liquid %}
 {% raw %}
-<p>Big sale starts on {{ page.sale_starts_on | date: '%B %d, %Y' }}</p>
+<p>Big sale starts at {{ page.sale_start_date | date: '%B %d, %Y' }}</p>
 {% endraw %}
 {% endhighlight %}
 
 <img alt="Front matter" src="/img/editing/front_matter/date.png" class="screenshot">
+
+***
+
+### Time
+Shows a 12h time input.
+
+#### Usage
+Add **_time** to the end of your variable name or name it **time**.
+
+#### Front Matter
+{% highlight liquid %}
+---
+opening_time: 8:00am
+---
+{% endhighlight %}
+
+#### Liquid
+{% highlight liquid %}
+{% raw %}
+<p>The store opens at {{ page.opening_time }}</p>
+{% endraw %}
+{% endhighlight %}
+
+<img alt="Front matter" src="/img/editing/front_matter/time.png" class="screenshot">
+
+***
+
+### Date Time
+Shows a date picker and a time picker.
+
+#### Usage
+Used on **date** and **datetime**. Alternatively add **_at** or **_datetime** to the end of your variable name.
+
+#### Front Matter
+{% highlight liquid %}
+---
+date: 2015-07-15 12:00:00
+---
+{% endhighlight %}
+
+#### Liquid
+{% highlight liquid %}
+{% raw %}
+<p>Blog published at {{ page.date | date: '%B %d, %Y' }}</p>
+{% endraw %}
+{% endhighlight %}
+
+<img alt="Front matter" src="/img/editing/front_matter/datetime.png" class="screenshot">
 
 ***
 
