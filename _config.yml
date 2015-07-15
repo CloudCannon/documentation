@@ -39,6 +39,11 @@ collections:
     permalink: /extra/:title/
     active_prefix: /extra/
     output: true
+  authentication:
+    title: Authentication
+    permalink: /authentication/:title/
+    active_prefix: /authentication/
+    output: true
 main_links:
   -
     title: Documentation
