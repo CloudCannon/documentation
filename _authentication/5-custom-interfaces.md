@@ -15,6 +15,8 @@ You can use these classes to provide error handling and success notifications in
 
 The customisable pages are listed below, with parameters and working examples.
 
+---
+
 ## Password Login
 
 | **Filename**        | login.html          |
@@ -62,6 +64,7 @@ We require a hidden username input here for internal reasons. The value is ignor
 {% endraw %}
 {% endhighlight %}
 
+---
 
 ## User Account Login
 
@@ -110,7 +113,7 @@ We require a hidden username input here for internal reasons. The value is ignor
 {% endraw %}
 {% endhighlight %}
 
-
+---
 
 ## Set Password
 
@@ -181,7 +184,7 @@ We require a hidden username input here for internal reasons. The value is ignor
 {% endraw %}
 {% endhighlight %}
 
-
+---
 
 ## Reset Password
 
