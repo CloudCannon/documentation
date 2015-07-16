@@ -30,7 +30,9 @@ pre {
 	}
 }
 
-p > code {
-	padding: 4px 6px;
-	white-space: nowrap;
+p, li {
+	> code {
+		padding: 4px 6px;
+		white-space: nowrap;
+	}
 }

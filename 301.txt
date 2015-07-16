@@ -1,0 +1,2 @@
+/tasks/multilingual/ /i18n/internationalisation/
+/tasks/multilingual/index.html /i18n/internationalisation/

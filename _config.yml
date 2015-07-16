@@ -24,6 +24,11 @@ collections:
     permalink: /tasks/:title/
     active_prefix: /tasks/
     output: true
+  i18n:
+    title: Internationalisation
+    permalink: /i18n/:title/
+    active_prefix: /i18n/
+    output: true
   sharing:
     title: Sharing
     permalink: /sharing/:title/
