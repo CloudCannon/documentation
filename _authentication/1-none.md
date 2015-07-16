@@ -2,10 +2,17 @@
 title: None
 ---
 
-Anyone can view your site with no authentication. If you are making a public facing website this is the setting you want.
+No authentication allows anyone to view your site. If you are making a public facing website this is the setting you want.
 
 No authentication is the default state for your site.
 {: .info}
+
+To remove authentication for your site:
+
+1. Go to the *Authentication* tab in site settings
+2. Select *None* and click *Switch to no authentication*
+
+![No authentication](/img/authentication/none.png){: .screenshot}
 
 ***
 
