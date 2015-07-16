@@ -32,6 +32,7 @@ collections:
   internationalization:
     title: Internationalization
     permalink: /internationalization/:title/
+    active_prefix: /internationalization/
     output: true
   tutorials:
     title: Tutorials
