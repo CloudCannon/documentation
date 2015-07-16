@@ -29,6 +29,10 @@ collections:
     permalink: /sharing/:title/
     active_prefix: /sharing/
     output: true
+  internationalization:
+    title: Internationalization
+    permalink: /internationalization/:title/
+    output: true
   tutorials:
     title: Tutorials
     permalink: /tutorials/:title/
