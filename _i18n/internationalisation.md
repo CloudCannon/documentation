@@ -21,7 +21,7 @@ Firstly we must add a key to each element we want internationalised. To do this 
 
 ## Obtaining the current locale
 
-Once you have tagged the elements that need translation, CloudCannon can generate a lookup of the languages. CloudCannon supports three file extensions: `.json`, `.yml` or `properties`. These files are called locales.
+Once you have tagged the elements that need translation, CloudCannon can generate a lookup of the content. CloudCannon supports three file extensions: `.json`, `.yml` or `properties`. These files are called locales.
 
 To obtain the current locale you can visit any of these urls on your site:
 
