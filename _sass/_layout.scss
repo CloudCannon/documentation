@@ -306,3 +306,21 @@ header h1 {
 		height: 100%;
 	}
 }
+
+.device {
+	background-size: contain;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.ipad {
+	@extend .device;
+	background-image: url(/img/ipad.svg);
+	padding: 3.5% 10%;
+}
+
+.nexus-7 {
+	@extend .device;
+	background-image: url(/img/nexus-7.svg);
+	padding: 6% 11%;
+}

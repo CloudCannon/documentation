@@ -10,10 +10,10 @@ When they edit a site it takes them straight to the Visual Editor.
 
 To share with a site to Content Writer:
 
-1. Go to the Sharing tab in Site Settings
+1. Go to the *Sharing* tab in site settings
 2. Click *Share with another person*
 3. Type in the user's email address
 4. Select *View and Update Content*
-5. Save Changes
+5. Save changes
 
 ![Share](/img/sharing/1.png){: .screenshot}
