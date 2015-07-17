@@ -19,6 +19,11 @@ collections:
     permalink: /editing/:title/
     active_prefix: /editing/
     output: true
+  domains:
+    title: Domains
+    permalink: /domains/:title/
+    active_prefix: /domains/
+    output: true
   tasks:
     title: Common Tasks
     permalink: /tasks/:title/
