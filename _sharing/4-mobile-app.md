@@ -7,7 +7,7 @@ Give your clients or team members a mobile app to edit your site.
 To create a mobile app for your site:
 
 1. Set up [Password Sharing](/sharing/password-sharing)
-2. Upload icons for your app with the instructions below *(optional)*
+2. Upload icons for your app with the instructions below
 3. Navigate to the password sharing login page with your device's web browser
 4. Save to your home screen with the device specific instructions below
 
