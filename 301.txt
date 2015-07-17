@@ -1,2 +1,4 @@
 /tasks/multilingual/ /i18n/internationalisation/
 /tasks/multilingual/index.html /i18n/internationalisation/
+/sharing/share-with-content-writers/ /sharing/non-developers/
+/sharing/share-with-developers/ /sharing/developers/
