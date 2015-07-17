@@ -8,7 +8,7 @@ heading: Atom Feed in Jekyll
 duplicate_content: http://jekyll.tips/tutorials/atom-feed/
 ---
 
-An Atom feed allows readers to subscribe to the latest posts on your blog. Adding an Atom Feed to a Jekyll website is simple.
+An Atom feed allows readers to subscribe to the latest posts on your blog. 
 
 Create `atom.xml` to the root of the website with the following contents:
 

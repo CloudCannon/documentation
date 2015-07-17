@@ -1,7 +1,9 @@
 ---
 title: Front Matter
-warning: This feature is only available on Jekyll sites.
 ---
+This feature is only available on Jekyll sites.
+{: .info}
+
 
 Front Matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) which allows you to set any sort of custom variables on a page.
 
@@ -25,7 +27,7 @@ For example, later in `index.html` I could use that variable:
 
 Using CloudCannon you can update Front Matter by clicking the &#39;Toggle Settings&#39; button at top right when you have a file open.
 
-<img alt="Settings" src="/img/jekyll/front-matter/1.png" class="screenshot">
+![Settings](/img/jekyll/front-matter/1.png){: .screenshot}
 
 You have complete control over how your data is structured and the interface used to update it.
 
@@ -51,7 +53,7 @@ short_description: The finest hand-crafted clothing
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/small_text_field.png" class="screenshot">
+![Front matter](/img/editing/front_matter/small_text_field.png){: .screenshot}
 
 ***
 
@@ -75,7 +77,7 @@ long_description: Products are crafted in-house by hand, making each piece a lab
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/large_text_field.png" class="screenshot">
+![Front matter](/img/editing/front_matter/large_text_field.png){: .screenshot}
 
 ***
 
@@ -103,7 +105,7 @@ show_feature: true
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/check_box.png" class="screenshot">
+![Front matter](/img/editing/front_matter/check_box.png){: .screenshot}
 
 ***
 
@@ -127,7 +129,7 @@ background_image_path: /image/bg.png
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/image.png" class="screenshot">
+![Front matter](/img/editing/front_matter/image.png){: .screenshot}
 
 ***
 
@@ -151,7 +153,7 @@ sale_start_date: 2015-01-09
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/date.png" class="screenshot">
+![Front matter](/img/editing/front_matter/date.png){: .screenshot}
 
 ***
 
@@ -175,7 +177,7 @@ opening_time: 8:00am
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/time.png" class="screenshot">
+![Front matter](/img/editing/front_matter/time.png){: .screenshot}
 
 ***
 
@@ -199,7 +201,7 @@ date: 2015-07-15 12:00:00
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/datetime.png" class="screenshot">
+![Front matter](/img/editing/front_matter/datetime.png){: .screenshot}
 
 ***
 
@@ -239,7 +241,7 @@ product: beanie
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/select.png" class="screenshot">
+![Front matter](/img/editing/front_matter/select.png){: .screenshot}
 
 ***
 
@@ -265,9 +267,9 @@ footer:
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/hash_1.png" class="screenshot">
+![Front matter](/img/editing/front_matter/hash_1.png){: .screenshot}
 
-<img alt="Front matter" src="/img/editing/front_matter/hash_2.png" class="screenshot">
+![Front matter](/img/editing/front_matter/hash_2.png){: .screenshot}
 
 ***
 
@@ -299,9 +301,9 @@ staff:
 {% endraw %}
 {% endhighlight %}
 
-<img alt="Front matter" src="/img/editing/front_matter/simple_array_1.png" class="screenshot">
+![Front matter](/img/editing/front_matter/simple_array_1.png){: .screenshot}
 
-<img alt="Front matter" src="/img/editing/front_matter/simple_array_2.png" class="screenshot">
+![Front matter](/img/editing/front_matter/simple_array_2.png){: .screenshot}
 
 ***
 
@@ -348,8 +350,8 @@ testimonials:
 {% endhighlight %}
 
 
-<img alt="Front matter" src="/img/editing/front_matter/advanced_array_1.png" class="screenshot">
+![Front matter](/img/editing/front_matter/advanced_array_1.png){: .screenshot}
 
-<img alt="Front matter" src="/img/editing/front_matter/advanced_array_2.png" class="screenshot">
+![Front matter](/img/editing/front_matter/advanced_array_2.png){: .screenshot}
 
-<img alt="Front matter" src="/img/editing/front_matter/advanced_array_3.png" class="screenshot">
+![Front matter](/img/editing/front_matter/advanced_array_3.png){: .screenshot}

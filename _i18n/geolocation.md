@@ -2,7 +2,7 @@
 title: Geolocation
 ---
 
-Geolocation is only available on CloudCannon Enterprise.
+Geolocation is only available on CloudCannon Enterprise and sites hosted by CloudCannon.
 {: .info}
 
 Geolocation on CloudCannon allows you to detect which country your viewers are coming from. CloudCannon automatically injects the viewers country code into the HTML elements class as it is served.

@@ -142,4 +142,4 @@ Go to the **Visual Editor**, this what our client will see. In the **Settings** 
 
 You can reorder, delete, update and add new Portfolio items from here.
 
-<img alt="Settings" src="/img/guide/photogallery/settings.png" class="screenshot">
+![Settings](/img/guide/photogallery/settings.png){: .screenshot}

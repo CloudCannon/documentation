@@ -2,7 +2,7 @@
 title: Internationalisation
 ---
 
-Internationalisation is only available on CloudCannon Enterprise.
+Internationalisation is only available on CloudCannon Enterprise and sites hosted by CloudCannon.
 {: .info}
 
 CloudCannon's Internationalisation allows you to serve your site in different languages based on the viewers browser settings.

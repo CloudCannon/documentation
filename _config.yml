@@ -24,10 +24,10 @@ collections:
     permalink: /domains/:title/
     active_prefix: /domains/
     output: true
-  tasks:
-    title: Common Tasks
-    permalink: /tasks/:title/
-    active_prefix: /tasks/
+  hosting:
+    title: Hosting
+    permalink: /hosting/:title/
+    active_prefix: /hosting/
     output: true
   i18n:
     title: Internationalisation
@@ -43,11 +43,6 @@ collections:
     title: Tutorials
     permalink: /tutorials/:title/
     active_prefix: /tutorials/
-    output: true
-  extra:
-    title: Extra
-    permalink: /extra/:title/
-    active_prefix: /extra/
     output: true
 main_links:
   -

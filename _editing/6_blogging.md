@@ -1,7 +1,8 @@
 ---
 title: Blogging
-warning: This feature is only available on Jekyll sites.
 ---
+This feature is only available on Jekyll sites.
+{: .info}
 
 Blog posts are [Markdown](https://help.github.com/articles/markdown-basics/) files which live in the `_posts` folder of your site.
 
@@ -26,20 +27,20 @@ Take a look at the source for this post to get an idea about how it works.
 
 In CloudCannon, go to the **Collections** tab for your website where there will be two items: Draft Posts and Published Posts. Draft posts are hidden when your site is published.
 
-<img alt="Draft post" src="/img/jekyll/blogging/1.png" class="screenshot">
+![Draft post](/img/jekyll/blogging/1.png){: .screenshot}
 
 Let's add a new Draft post. Click the **Start a new draft** button and enter a title for the post.
 
-<img alt="Naming draft post" src="/img/jekyll/blogging/3.png" class="screenshot">
+![Naming draft post](/img/jekyll/blogging/3.png){: .screenshot}
 
 Now click on the file you've just created. It'll open our stripped-back markdown editor. Enter the content for your blog post here.
 
-<img alt="Editing" src="/img/jekyll/blogging/4.png" class="screenshot">
+![Editing](/img/jekyll/blogging/4.png){: .screenshot}
 
 If you ever want to see the raw Markdown go to the Code Editor.
 
-<img alt="Code Editor" src="/img/jekyll/blogging/6.png" class="screenshot">
+![Code Editor](/img/jekyll/blogging/6.png){: .screenshot}
 
 You can always configure the layout, blog title and any other Front Matter you've defined by going to the **Settings** tab.
 
-<img alt="Code Editor" src="/img/jekyll/blogging/5.png" class="screenshot">
+![Code Editor](/img/jekyll/blogging/5.png){: .screenshot}

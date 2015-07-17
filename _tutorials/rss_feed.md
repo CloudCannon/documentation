@@ -8,7 +8,7 @@ heading: RSS Feed in Jekyll
 duplicate_content: http://jekyll.tips/tutorials/rss-feed/
 ---
 
-Blogs usually have an RSS feed to push content out to their readers. Adding a RSS Feed to a Jekyll Blog is super simple.
+Blogs usually have an RSS feed to push content out to their readers. 
 
 Create a file in the root of the site called `feed.xml` with the following contents:
 

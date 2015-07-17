@@ -10,27 +10,27 @@ Now it's time to use CloudCannon to host this site and add a CMS.
 
 Head over to [CloudCannon](http://cloudcannon.com), sign up for a free account and create a website.
 
-<img alt="Create Site" src="/img/guide/cms/create_site.png" class="screenshot">
+![Create Site](/img/guide/cms/create_site.png){: .screenshot}
 
 This brings up the file browser for the site. There are no files at the moment so let's add some! Click the **connect storage provider** button.
 
-<img alt="Dashboard" src="/img/guide/cms/dashboard.png" class="screenshot">
+![Dashboard](/img/guide/cms/dashboard.png){: .screenshot}
 
 We want to sync files from our repository so click **Connect** next to GitHub and allow CloudCannon access to your account.
 
-<img alt="Connect" src="/img/guide/cms/connect.png" class="screenshot">
+![Connect](/img/guide/cms/connect.png){: .screenshot}
 
 Connect the repository for the website.
 
-<img alt="Repo" src="/img/guide/cms/repo.png" class="screenshot">
+![Repo](/img/guide/cms/repo.png){: .screenshot}
 
 CloudCannon will pull in your files and display them in the file browser. Any updates you make in CloudCannon sync back to GitHub and any changes you push to GitHub sync to CloudCannon.
 
-<img alt="Files" src="/img/guide/cms/files.png" class="screenshot">
+![Files](/img/guide/cms/files.png){: .screenshot}
 
 Now we have the files on CloudCannon, it's time to add updatable regions. Click on `index.html`, this brings up the site in preview. You can navigate around the website in this view. Click on the **Code Editor** view to bring up the source code of the site.
 
-<img alt="Preview" src="/img/guide/cms/preview.png" class="screenshot">
+![Preview](/img/guide/cms/preview.png){: .screenshot}
 
 We set the editable regions by adding a class of **editable** to elements in the HTML. Let's make the headings on the index page editable:
 
@@ -51,12 +51,12 @@ The context you put the editable class is important. If you wanted to give more 
 
 Go to the **Visual Editor** view. The elements with the editable class have a yellow box around them indicating they're editable. Try clicking on an editable region and making an update inline.
 
-<img alt="Visual Editor" src="/img/guide/cms/visual.png" class="screenshot">
+![Visual Editor](/img/guide/cms/visual.png){: .screenshot}
 
 CloudCannon pushes your website live to a testing domain of `*.cloudvent.net`. On the free plan the website isn't public, we need to add a password before we can view it. Go to **Site Settings**, then **Site Password** and type in a password for your website.
 
-<img alt="Password" src="/img/guide/cms/password.png" class="screenshot">
+![Password](/img/guide/cms/password.png){: .screenshot}
 
 Click on the cloudvent domain at the top of the page, enter your password. Our site is now live on the internet!
 
-<img alt="Cloudvent" src="/img/guide/cms/cloudvent.png" class="screenshot">
+![Cloudvent](/img/guide/cms/cloudvent.png){: .screenshot}

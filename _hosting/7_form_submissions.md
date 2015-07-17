@@ -1,14 +1,16 @@
 ---
 title: Form Submissions
 ---
+Only available for sites hosted by CloudCannon
+{: .info}
 
-We've made it super easy to have contact forms on your website.
+Add a contact form to your site.
 
-Create a normal form element. Make the method 'post' and the action point to the page you want the user to be redirected to after the form submission.
+Create a normal form element. Make the method attribute 'post' and the action attribute point to the page you want the visitor to be redirected to after the form submission.
 
 Add the input elements for your contact form. Finally, add a hidden field with a name of cc_emails[] and a value of the email address to send the form submission to.
 
-That's it! Here's an example form:
+Here's an example form:
 
 {% highlight html %}
 <form method="post" action="/success.html">

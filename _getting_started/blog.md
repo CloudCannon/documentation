@@ -106,7 +106,7 @@ The last step is to add a link to the blog in `nav.html`:
 
 Head over to the browser and check out your first Jekyll blog post.
 
-<img alt="Blog" src="/img/guide/blog/blog.png" class="screenshot">
+![Blog](/img/guide/blog/blog.png){: .screenshot}
 
 Let's see how our client updates the blog.
 
@@ -114,14 +114,14 @@ Go to the Collections tab in [CloudCannon](http://cloudcannon.com). This bring u
 
 Draft posts are **not** published to the live website and live in the `_drafts` directory.
 
-<img alt="Collections" src="/img/guide/blog/collections.png" class="screenshot">
+![Collections](/img/guide/blog/collections.png){: .screenshot}
 
 If you go to Published Posts you will see our first blog post there. Click the post and you'll be able to update it using the visual editor.
 
 Go back to the Collections view and create a new post by clicking **Start a new Draft**, then adding content. When you're finished press **Publish Post** which moves it from `_drafts` to `_posts` and prefixes the file name with today's date.
 
-<img alt="New Post" src="/img/guide/blog/new_post.png" class="screenshot">
+![New Post](/img/guide/blog/new_post.png){: .screenshot}
 
 Go to your cloudvent domain and browse to the `blog.html` page. There are now two blogs posts!
 
-<img alt="Blog Index" src="/img/guide/blog/blog_index.png" class="screenshot">
+![Blog Index](/img/guide/blog/blog_index.png){: .screenshot}
