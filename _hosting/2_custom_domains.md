@@ -2,6 +2,9 @@
 title: Custom Domains
 ---
 
+Only relevant for sites hosted by CloudCannon
+{: .info}
+
 First off you need to buy your domain name. We recommend using [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) because they have CloudCannon integration which automatically does the steps that follow below.
 
 Now we need to set up your domain's DNS. What is DNS you ask? The Domain Name System (DNS) translates Internet domain and host names to IP addresses. DNS converts the names we type in our Web browser address bar to the IP addresses of Web servers hosting those sites.

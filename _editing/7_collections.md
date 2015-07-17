@@ -1,13 +1,14 @@
 ---
 title: Collections
-warning: This feature is only available on Jekyll sites.
 ---
+This feature is only available on Jekyll sites.
+{: .info}
 
-Collections are used to organize content, similar to blogging, except the content isn't organized by date.
+Collections are used to organise content, similar to blogging, except the content isn't organised by date.
 
 There's lots of great use cases for collections: API documentation, products, albums. Basically anywhere you have structured data which repeats itself.
 
-In this example we'll create a collection to organize and display staff members.
+In this example we'll create a collection to organise and display staff members.
 
 To define the staff collection we need to set it in `_config.yml` :
 
@@ -84,11 +85,11 @@ layout: default
 
 All collections defined in `_config.yml` appear in the **Collections** tab on CloudCannon. From here you can add a new item to the collection by clicking a button, the front matter is copied from an existing collection item.
 
-<img alt="Collections Interface" src="/img/jekyll/collections/1.png" class="screenshot">
+![Collections Interface](/img/jekyll/collections/1.png){: .screenshot}
 
 You can edit the collection item with the Markdown editor. All front matter can be updated as well.
 
-<img alt="Markdown Editor" src="/img/jekyll/collections/2.png" class="screenshot">
+![Markdown Editor](/img/jekyll/collections/2.png){: .screenshot}
 
 If it's an HTML file the output set to 'true' in in `_config.yml`, the Visual Editor can be used with Editable Regions.
 

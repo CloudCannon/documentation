@@ -8,7 +8,7 @@ Adding an editable region is simple, just add `class="editable"` to an HTML elem
 
 When you switch to the Visual Editor, you'll see a yellow box around that element indicating it's updatable.
 
-There's lots of ways you can use editable regions. To allow everything to be updatable, you could put an editable region on the main content `<div>` in your HTML. To allow only specific parts to be updatable, you could put the editable region on specific images, paragraphs, lists etc. you want your other users to update.
+There's lots of ways you can use editable regions. To allow everything to be updated, you could put an editable region on the main content `<div>` in your HTML. To have only specific parts to be updated, you could put the editable region on specific images, paragraphs and lists.
 
 Editable regions behave differently depending on what element you put them on. We current support:
 
