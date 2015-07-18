@@ -53,7 +53,7 @@ Most domain registrars offer a DNS service. To setup:
 
 ![DNS](/img/common_tasks/1.png)
 
-Here are some domain registrars documentation:
+See DNS instructions for your domain registrar:
 
 * [Namecheap](https://www.namecheap.com/domains/freedns.aspx) which can be used with any provider
 * [GoDaddy](https://www.godaddy.com/help/managing-dns-for-your-domain-names-680)
@@ -66,11 +66,11 @@ Because all domain registrars do not have DNS we have built in DNS for your conv
 
 ![Site settings domain tab with own DNS](/img/domains/cloudcannon-dns.png){: .screenshot}
 
-Once this is selected go to your domain registrar and enter the nameservers provided. This will be under *DNS Server Settings* or *Nameservers*. Enter each value in order. This will tell anyone viewing your domain to look at CloudCannon's DNS for more information. Here are some domain registrars documentation:
+Once this is selected go to your domain registrar and enter the nameservers provided. This will be under *DNS Server Settings* or *Nameservers*. Enter each value in order. This will tell anyone viewing your domain to look at CloudCannon's DNS for more information. See nameserver configuration instructions for your domain registrar:
 
 * [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/767/10/how-can-i-change-the-nameservers-for-my-domain)
 * [GoDaddy](https://www.godaddy.com/help/setting-nameservers-for-your-domain-names-664)
 
-That's it your DNS has automatically been configured by CloudCannon. If you do want to add extra DNS records you can add these in the new section *DNS* in the site settings. This is useful for mail servers(MX) and webmaster tools(TEXT).
+That's it your DNS has automatically been configured by CloudCannon. To add extra DNS records access the *DNS* section in the site settings. This is useful for mail servers(MX) and webmaster tools(TEXT).
 
 ![Site settings DNS tab](/img/domains/cloudcannon-dns-extra.png){: .screenshot}

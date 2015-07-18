@@ -10,7 +10,8 @@
 			{% for item in site.collections %}
 				{% assign collection = item[1] %}
 				{% if collection.output %}
-					<li class="nav-item top-level {% if url contains collection.active_prefix %}current{% endif %}">
+					{% assign parts = url | split: "/" %}
+					<li class="nav-item top-level {% if parts[1] == collection.active_prefix %}current{% endif %}">
 						{% assign items = collection.docs | sort: 'order' %}
 						<a href="{{ items.first.url }}">{{ collection.title }}</a>
 						{% include secondary-nav-items.html items=items %}
