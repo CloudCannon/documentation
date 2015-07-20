@@ -47,7 +47,7 @@ collections:
   authentication:
     title: Authentication
     permalink: /authentication/:title/
-    active_prefix: /authentication/
+    active_prefix: authentication
     output: true
 defaults:
 - scope:
