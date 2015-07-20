@@ -37,6 +37,11 @@ header {
 	}
 }
 
+nav ul + ul {
+	padding-top: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .main {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
