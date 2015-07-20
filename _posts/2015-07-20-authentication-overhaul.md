@@ -9,6 +9,7 @@ This release has a complete overhaul of the site authentication. This includes:
 * [Authenticated routes](/authentication/custom-routes/) allows you to have private sections of a site
 * [Date/time front matter interfaces](/editing/front-matter/)
 * [Prototyping sites](authentication/none/) no longer require a password. Instead viewers will be presented with a splash screen before viewing the site. 
+* Internationalisation langauge detection incorperates the country more effectively.
 * Disabled http access on app.cloudcannon.com
 * Better date handling on draft posts. If a date is already defined when published it will maintain that date
 * Syncing with GitHub handles force pushes
