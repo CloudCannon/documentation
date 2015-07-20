@@ -44,6 +44,11 @@ collections:
     permalink: /tutorials/:title/
     active_prefix: tutorials
     output: true
+  authentication:
+    title: Authentication
+    permalink: /authentication/:title/
+    active_prefix: /authentication/
+    output: true
 defaults:
 - scope:
     path: ""
