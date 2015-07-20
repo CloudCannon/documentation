@@ -40,7 +40,7 @@ We require a hidden username input here for internal reasons. The value is ignor
       }
 
       .has-incorrect-login .incorrect-login-message {
-        display: none;
+        display: block;
       }
     </style>
   </head>
@@ -86,7 +86,7 @@ We require a hidden username input here for internal reasons. The value is ignor
       }
 
       .has-incorrect-login .incorrect-login-message {
-        display: none;
+        display: block;
       }
     </style>
   </head>
