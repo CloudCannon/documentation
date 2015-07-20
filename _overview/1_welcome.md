@@ -24,7 +24,7 @@ CloudCannon runs Jekyll version **2.4.0**
 
 Getting a website online and updatable is easy with CloudCannon.
 
-1. The website files are synced to CloudCannon using Github, BitBucket, Dropbox or a File Upload.
+1. The website files are synced to CloudCannon using GitHub, Bitbucket, Dropbox or a File Upload.
 
 2. CloudCannon makes your website live on a generated subdomain (*.cloudvent.net) or your own domain name.
 
