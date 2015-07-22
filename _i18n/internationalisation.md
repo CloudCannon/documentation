@@ -5,7 +5,7 @@ title: Internationalisation
 Internationalisation is only available on CloudCannon Enterprise and sites hosted by CloudCannon.
 {: .info}
 
-CloudCannon's Internationalisation allows you to serve your site in different languages based on the viewers browser settings.
+CloudCannon Internationalisation allows you to serve your site in different languages based on the viewers browser settings.
 
 ***
 
@@ -21,9 +21,9 @@ Firstly we must add a key to each element we want internationalised. To do this 
 
 ## Obtaining the current locale
 
-Once you have tagged the elements that need translation, CloudCannon can generate a lookup of the content. CloudCannon supports three file extensions: `.json`, `.yml` or `properties`. These files are called locales.
+Once you have tagged the elements that need translation, CloudCannon can generate a lookup of the content. CloudCannon supports three file extensions: `.json`, `.yml` and `.properties`. These files are called locales.
 
-To obtain the current locale you can visit any of these urls on your site:
+To obtain the current locale you can visit any of these URLs on your site:
 
 <ul>
 	<li>
@@ -46,7 +46,7 @@ To obtain the current locale you can visit any of these urls on your site:
 Once you have the current locale you can start creating new ones. For each new locale:
 
 1. Create the file with your chosen format (either `.yml`, `.json` or `.properties`).
-2. Name that file the locale that matches it. This locale should be a in the format `language[_territory]`. For example, general english is `en` and english specific to New Zealand should be `en_NZ`.
+2. Name that file the locale that matches it. This locale should be a in the format `language[_territory]`. For example, general English is `en` and English specific to New Zealand should be `en_NZ`.
 3. Use the current locale as a template and update the values for the new locale.
 4. Add each file to the `_locales` directory in the root of your site.
 
