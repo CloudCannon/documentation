@@ -4,8 +4,15 @@ title: Optimisations
 Only available for sites hosted by CloudCannon
 {: .info}
 
-We automatically perform optimisations on CloudCannon sites to make the websites load as fast as possible. These optimisations start running roughly 5 minutes after you've updated your website.
+CloudCannon optimises sites to make them load as fast as possible. Sites are optimised roughly five minutes after you've made a change.
 
-Local website assets referenced in the HTML and CSS are served by our CDN.
+CloudCannon minifies CSS with [clean-css](https://github.com/GoalSmashers/clean-css) and JavaScript with [Uglifier](https://github.com/lautis/uglifier).
+Assets referenced in the HTML and CSS are served from a CDN. External assets are not optimised.
 
-We also minify the CSS files using [clean-css](https://github.com/GoalSmashers/clean-css) and the Javascript using [Uglifier](https://github.com/lautis/uglifier).
+To toggle optimisations for your site:
+
+1. Go to the *Site Details* tab in site settings
+2. Toggle *Minify and serve assets from CDN*
+3. Click *Update Site*
+
+![Optimisations Interface](/img/hosting/site-details.png){: .screenshot}

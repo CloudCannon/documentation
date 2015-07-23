@@ -18,7 +18,7 @@ This sets the `JEKYLL_ENV` environment variable.
 CloudCannon defaults to `production`. Running Jekyll locally defaults to `development`.
 {: .info}
 
-![Jekyll Environment Interface](/img/hosting/environments.png){: .screenshot}
+![Jekyll Environment Interface](/img/hosting/site-details.png){: .screenshot}
 
 To change the environment on your local machine, set it before running Jekyll:
 
