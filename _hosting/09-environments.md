@@ -20,7 +20,7 @@ CloudCannon defaults to `production`. Running Jekyll locally defaults to `develo
 
 ![Jekyll Environment Interface](/img/hosting/environments.png){: .screenshot}
 
-To change the environment on your local environment, set it before running Jekyll:
+To change the environment on your local machine, set it before running Jekyll:
 
 {% highlight bash %}
 $ JEKYLL_ENV=production jekyll serve
