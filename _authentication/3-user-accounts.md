@@ -17,7 +17,7 @@ To add a user to your site:
 1. Enter the email address of the person you are adding
 2. Click *Add User*
 
-The user will receive an email with instructions to set a password and log in. You can remove them at any time.
+The user will receive an email with instructions to set a password. You can remove them at any time.
 
 ![Adding a user account](/img/authentication/accounts-added.png){: .screenshot}
 
