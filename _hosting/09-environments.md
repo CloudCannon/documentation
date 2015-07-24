@@ -44,7 +44,7 @@ staging:
 
 production:
   asset_url: "https://cdn.example.org/"
-  app_url: "https://app.example.org/“
+  app_url: "https://app.example.org/"
 {% endhighlight %}
 
 {% highlight html %}
