@@ -13,11 +13,11 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         {% if post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
+          <description>{{ post.excerpt | strip_html }}</description>
         {% else %}
-          <description>{{ post.content | xml_escape }}</description>
+          <description>{{ post.content | strip_html }}</description>
         {% endif %}
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>
         {{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
