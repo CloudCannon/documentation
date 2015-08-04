@@ -222,6 +222,8 @@ styles:
 {% endraw %}
 {% endhighlight %}
 
+Don't forget the "s" character at the end of your array name.
+
 The second is to have your data in a Collection. Let's say we have a Collection of products, the select box will be populated with items from the products Collection.
 
 #### Front Matter
@@ -233,6 +235,8 @@ style: Green
 product: beanie
 ---
 {% endhighlight %}
+
+Don't forget to remove the "s" character at the end of your variable name.
 
 #### Liquid
 {% highlight liquid %}

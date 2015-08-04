@@ -35,7 +35,7 @@ Gives options for bold, italics and links
 
 ### Inline Elements: span, strong, em
 
-<p> Only allows updating text </p>
+Only allows updating text
 
 ![Inline Elements](/img/editing/6.png)
 
@@ -46,3 +46,13 @@ Gives options for bold, italics and links
 On block elements you can set headings, bold, italics, links, quotes, lists and images.
 
 ![Block Elements](/img/editing/7.png)
+
+### Note about editable class in _includes
+
+If you add a class "editable" to an element in a file in _includes directory and then include it with 
+{% highlight liquid %}
+{% raw %}
+{% include your_file.html %}
+{% endraw %}
+{% endhighlight %}
+You will not be able to edit it in the Visual Editor (in Cloudcannon).
