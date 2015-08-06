@@ -1,6 +1,8 @@
 ---
 title: Editable Regions
 ---
+Editable Regions do not work inside Jekyll includes or layouts. We are working to support this in the future.
+{: .warning}
 
 Editable regions let your control exactly what users can update using the Visual Editor.
 
@@ -35,7 +37,7 @@ Gives options for bold, italics and links
 
 ### Inline Elements: span, strong, em
 
-<p> Only allows updating text </p>
+Only allows updating text
 
 ![Inline Elements](/img/editing/6.png)
 
