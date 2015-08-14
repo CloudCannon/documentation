@@ -1,4 +1,0 @@
----
-title: Untitled
-type: major
----
