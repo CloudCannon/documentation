@@ -1,5 +1,5 @@
 ---
-title: Bitbucket and Liquid in Markdown
+title: Bitbucket Improvements and Liquid in Markdown
 type: minor
 ---
 
