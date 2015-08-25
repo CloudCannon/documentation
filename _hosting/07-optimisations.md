@@ -9,7 +9,9 @@ CloudCannon optimises sites to make them load as fast as possible. Sites are opt
 CloudCannon minifies CSS with [clean-css](https://github.com/GoalSmashers/clean-css) and JavaScript with [Uglifier](https://github.com/lautis/uglifier).
 Assets referenced in the HTML and CSS are served from a CDN. External assets are not optimised.
 
-To toggle optimisations for your site:
+Text based assets (HTML, CSS, JS, txt etc.) are gzipped before being served.
+
+All these optimisations are on by default, if you need to toggle optimisations for your site:
 
 1. Go to the *Site Details* tab in site settings
 2. Toggle *Minify and serve assets from CDN*
