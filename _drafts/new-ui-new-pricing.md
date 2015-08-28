@@ -1,8 +1,8 @@
 ---
-title: New UI and New Pricing
+title: Improved UI and Better Team Pricing
 type: major
 ---
-Today we introduce a new pricing model. This creates a better agency flow with less upgrade steps and  whitelabelling. You can read more about it in our [pricing change announcement](http://cloudcannon.com/blog/).
+Today we introduce a new pricing model. This creates a better agency flow with less upgrade steps and whitelabelling. You can read more about it in our [pricing change announcement](http://cloudcannon.com/blog/).
 
 CloudCannon will look very different. Everything from the login screens to the app layout has changed. Here is a complete list of the UI Changes
 
