@@ -6,7 +6,6 @@ Today we introduce a new pricing model. This creates a better agency flow with l
 
 CloudCannon will look very different. Everything from the login screens to the app layout has changed. Here is a complete list of the UI Changes
 
-* Font changed from Roboto to Open Sans
 * User navigation has its own routes and is available in a single sidebar. This gives you access to all settings in a single place and frees up the header for contextual controls.
 * Site navigations merged into a single sidebar. Labels are always visible which removes the need to remember which icon is which.
 * New icons site wide from Google Material Design.
@@ -19,3 +18,4 @@ CloudCannon will look very different. Everything from the login screens to the a
 * Better mobile styles in all sections of the app
 * Markdown editor handles files starting with an hr or an empty yaml header
 * General bug fixes
+* Font changed from Roboto to Open Sans
