@@ -10,7 +10,7 @@ CloudCannon will look very different. Everything from the login screens to the a
 * Site navigations merged into a single sidebar. Labels are always visible which removes the need to remember which icon is which.
 * New icons site wide from Google Material Design.
 * New UI added to allow easier navigation to other pages within the visual editor.
-* Uploads have a new encoding without spaces or brackets. This solves some encoding when outputting to a page.
+* Uploads have a new encoding without spaces or brackets. This solves some encoding issues when outputting to a page.
 * A new plans page within account settings to give better visibility to your payment details
 * Currently shared to users show up in site sharing for easy resharing
 * Sharing interface tidied to allow faster updates to existing shares
