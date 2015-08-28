@@ -17,5 +17,5 @@ CloudCannon will look very different. Everything from the login screens to the a
 * Background images added to login and sidebar header
 * Better mobile styles in all sections of the app
 * Markdown editor handles files starting with an hr or an empty yaml header
-* General bug fixes
 * Font changed from Roboto to Open Sans
+* General bug fixes
