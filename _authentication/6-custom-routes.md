@@ -2,7 +2,8 @@
 title: Custom Routes
 ---
 
-Not available for prototyping sites.
+Custom Routes are only available on the CloudCannon Basic plan and above and sites hosted by CloudCannon.
+{: .info}
 {: .warning}
 
 Custom routes allow you to specify the routes you want authenticated, and keep the rest public.

@@ -1,6 +1,8 @@
 ---
 title: User Accounts
 ---
+User Account Authentication is only available on the CloudCannon Agency plan and above and sites hosted by CloudCannon.
+{: .info}
 
 User account authentication restricts access to your site to a set of users you invite.
 Visitors to your site are prompted to enter an email address and password.

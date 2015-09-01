@@ -16,9 +16,8 @@ To remove authentication for your site:
 
 ***
 
-## Prototyping Sites
+## Free Plan Sites
 
-All prototyping sites with no authentication will have a splash screen before visitors can see your site.
-You can use authentication while prototyping instead, limiting the access to your team and clients.
+All sites on the free plan will have a splash screen before visitors can see your site.
 
 ![Splash screen](/img/authentication/none-login.png){: .screenshot}

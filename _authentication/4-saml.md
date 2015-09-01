@@ -1,6 +1,8 @@
 ---
 title: SAML
 ---
+SAML Authentication is only available on the CloudCannon Enterprise plan and sites hosted by CloudCannon.
+{: .info}
 
 SAML authentication restricts access to your site by using a third party login service. CloudCannon uses [OneLogin](https://www.onelogin.com/connector/cloudcannonsite-single-sign-on) to authenticate users from your organisation.
 

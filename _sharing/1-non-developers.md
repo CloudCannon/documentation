@@ -8,12 +8,11 @@ When they edit a site it takes them straight to the Visual Editor.
 
 ![Share](/img/sharing/3.png){: .screenshot}
 
-To share with a site to Content Writer:
+To share with a site with a non-developer:
 
 1. Go to the *Sharing* tab in site settings
-2. Click *Share with another person*
-3. Type in the user's email address
-4. Select *View and Update Content*
-5. Save changes
+2. Type in the user's email address
+3. Choose Non-Developer as the share level
+5. Click Add Share
 
 ![Share](/img/sharing/1.png){: .screenshot}

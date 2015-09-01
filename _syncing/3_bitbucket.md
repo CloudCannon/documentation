@@ -6,7 +6,7 @@ warning: Only Git repositories are supported at this stage.
 
 Go to Storage Providers in your website configuration and click *Connect* next to Bitbucket.
 
-![Storage Providers](/img/cloud_storage/bitbucket/1.png){: .screenshot}
+![Storage Providers](/img/cloud_storage/github/1.png){: .screenshot}
 
 This will redirect you to Bitbucket. Log in and authorise CloudCannon access to your Bitbucket account.
 
