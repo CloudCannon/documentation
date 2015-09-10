@@ -84,7 +84,7 @@ Using CSS you can alter anything from font-size to text direction:
 {% highlight css %}
 /* Arabic */
 .language-ar .content {
-	direction: rtl;
+  direction: rtl;
 }
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ Run some custom JavaScript based on language:
 
 {% highlight js %}
 var htmlElement = document.documentElement,
-  languageClass = htmlElement.className.match(/\language\-([a-z]{2}_[a-z]{2})\b/);
+  languageClass = htmlElement.className.match(/language-([^\s]+)\b/);
 
 if (languageClass) {
   console.log(languageClass[1]); // logs your locale - check your console
@@ -103,7 +103,7 @@ if (languageClass) {
 
 <script>
 var htmlElement = document.documentElement,
-  languageClass = htmlElement.className.match(/\language\-([a-z]{2}_[a-z]{2})\b/);
+  languageClass = htmlElement.className.match(/language-([^\s]+)\b/);
 
 if (languageClass) {
   console.log(languageClass[1]); // logs your locale - check your console
