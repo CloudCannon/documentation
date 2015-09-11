@@ -1,4 +1,4 @@
 ---
-title: Performance and Bug Fixes
+title: Performance Improvements and Bug Fixes
 type: minor
 ---
