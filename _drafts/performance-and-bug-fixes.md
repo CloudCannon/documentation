@@ -10,8 +10,3 @@ type: minor
 * (Bug) Ctrl/Cmd + S will trigger a save in all editors
 * (Bug) Unbolding was broken in some cases
 * General bug fixes and ui tweaks
-
-
- 
-
- 
