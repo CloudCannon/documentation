@@ -3,7 +3,7 @@ title: Performance Improvements and Bug Fixes
 type: minor
 ---
 
-* (Feature) base_path is reset to be "" on every site so that it does not break interface
+* (Feature) base_path is reset to be `""` on every site so that it does not break interface
 * (Improvement) Better icons on git repository lists
 * (Bug) Paste as plain text fixed if pasting from Microsoft Office
 * (Bug) Browser list icon will now show when in a grid view rather than showing current state
