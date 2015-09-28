@@ -4,6 +4,10 @@ title: Pretty URLs
 Only available for sites hosted by CloudCannon
 {: .info}
 
-Remove the .html extensions in the urls on your site.
+Remove the `.html` extensions in the URLs on your site.
 
-Let's say you have an about.html page. Create a folder called about, put the `about.html` file in the about folder then rename `about.html` to `index.html`. Now you can link to `/about/`.
+To prettify the URL for an about page:
+
+1. Create a folder called `about` in the root directory of your site
+2. Add the about page to the folder and name it `index.html`
+3. Access your page at `/about/` or `http://example.org/about/`

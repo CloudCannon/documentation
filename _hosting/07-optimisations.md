@@ -4,12 +4,12 @@ title: Optimisations
 Only available for sites hosted by CloudCannon
 {: .info}
 
-CloudCannon optimises sites to make them load as fast as possible. Sites are optimised roughly five minutes after you've made a change.
+CloudCannon optimises sites to make them load as fast as possible.
 
 CloudCannon minifies CSS with [clean-css](https://github.com/GoalSmashers/clean-css) and JavaScript with [Uglifier](https://github.com/lautis/uglifier).
 Assets referenced in the HTML and CSS are served from a CDN. External assets are not optimised.
 
-Text based assets (HTML, CSS, JS, txt etc.) are gzipped before being served.
+Text based assets (e.g. HTML, CSS, JS, txt) are gzipped before being served.
 
 All these optimisations are on by default, if you need to toggle optimisations for your site:
 
