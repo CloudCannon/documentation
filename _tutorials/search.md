@@ -53,7 +53,7 @@ layout: default
   <input type="submit" value="search">
 </form>
 
-<ul id="results"></ul>
+<ul id="search_results"></ul>
 {% endraw %}
 {% endhighlight %}
 
