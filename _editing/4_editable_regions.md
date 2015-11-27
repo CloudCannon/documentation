@@ -3,7 +3,6 @@ title: Editable Regions
 ---
 
 Editable regions let your control exactly what users can update using the Visual Editor.
-{: .warning}
 
 Adding an editable region is simple, just add `class="editable"` to an HTML element. If the element already has a class, you can have multiple classes like this: `<div class="content editable">`.
 
