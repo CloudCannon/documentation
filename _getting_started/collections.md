@@ -7,7 +7,7 @@ Next up we're looking at [Collections](http://jekyllrb.com/docs/collections/). C
 
 We're going to use a Collection on our Services page to reduce the repetition of HTML.
 
-Each service is formatted in a similar way. There's an image, title and description. The icons for the Service page come from a font at the moment, we'll change this to an image so our client can easily upload one themselves.
+Each service is formatted in a similar way, with an image, title and description. The icons for the Service page come from a font at the moment, we'll change this to an image so our client can easily upload one themselves.
 
 First we need tell Jekyll about the collection. Add the following to `_config.yml`:
 

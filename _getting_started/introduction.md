@@ -15,13 +15,13 @@ Jekyll is a static site generator. It takes source files and generates an entire
 
 There's been huge trend towards static technologies mostly due to the complexity of current systems. Jekyll is:
 
-* **Simple** - There's far less moving parts required for a Jekyll website. This makes Jekyll websites extremely fast and simple to build.
+* **Simple** - There are far less moving parts required for a Jekyll website. This makes Jekyll websites extremely fast and simple to build.
 
 * **Fast** - Jekyll websites are among the fastest on the internet. There's no time spent generating a page, the web server simply needs to return a file.
 
 * **Secure** - Jekyll websites are secure because it's just a static website. You don't need to worry about installing security patches or worrying if a plugin has vulnerabilities.
 
-* **Scalable** - There's no backend processing on Jekyll websites which makes them insanely scalable.
+* **Scalable** - No backend processing on Jekyll websites makes them insanely scalable.
 
 * **Source Controlled** - The entire website including all the content can be source controlled. This gives you the entire history of the website and the ability to roll back to any version.
 

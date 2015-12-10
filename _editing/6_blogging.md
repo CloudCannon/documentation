@@ -20,7 +20,6 @@ The content for my post is here.
 
 
 
-
 To access the CloudCannon blogging interface:
 
 1. Add a Jekyll site with at least one published post or draft
@@ -32,12 +31,12 @@ To access the CloudCannon blogging interface:
 
 To start a new draft from the *Drafts* or *Posts* tabs:
 
-1. Open the *Add Files* menu in the top right corner and select **Add draft**
+1. Open the *Add Files* menu in the top right corner and select **Add Draft**
 2. Enter a title/filename for the post and press enter
 
 Your file will be opened in the CloudCannon content editor. Front matter for the file is copied from an existing blog post to keep the structure consistent.
 
-Draft posts are hidden on your live site unless configured otherwise.
+Draft posts are hidden on your live site unless set otherwise in *Site Settings*.
 {: .info}
 
 ![Creating a new draft](/img/editing/blogging/adding-draft.png){: .screenshot srcset="/img/editing/blogging/adding-draft.png 800w, /img/editing/blogging/adding-draft@2x.png 1600w"}

@@ -2,15 +2,15 @@
 title: Editable Regions
 ---
 
-Editable regions let your control exactly what users can update using the Visual Editor.
+Editable regions let you control exactly what users can update using the [Visual Editor](/editing/visual-editor).
 
 Adding an editable region is simple, just add `class="editable"` to an HTML element. If the element already has a class, you can have multiple classes like this: `<div class="content editable">`.
 
-When you switch to the Visual Editor, you’ll see a yellow box around that element indicating it’s updatable.
+When you switch to the [Visual Editor](/editing/visual-editor), you’ll see a yellow box around that element, indicating that it is editable.
 
-There’s lots of ways you can use editable regions. To allow everything to be updated, you could put an editable region on the main content `<div>` in your HTML. To have only specific parts to be updated, you could put the editable region on specific images, paragraphs and lists.
+There are a number of ways to use editable regions. To allow everything to be updated, you could put an editable region on the main content `<div>` in your HTML. Alternatively, restrict the editable regions to specific parts of your site (e.g. select images, paragraphs and lists).
 
-Editable regions behave differently depending on what element you put them on. We current support:
+Editable regions behave differently depending on what element they are applied to:
 
 ### img
 
@@ -18,7 +18,7 @@ Gives user options to alter the current image, update the images description and
 
 ![Upload Image](/img/editing/3.png)
 
-If you’ve specified a width and height on an image, CloudCannon ensures that new images are the exact same size by cropping the image. The user can drag and move the image to specify how it is cropped.
+CloudCannon ensures that new images are the exact same size by cropping the image. The user can drag/move and resize the image to specify how it is cropped in place.
 
 ![Crop](/img/editing/4.png)
 
@@ -26,7 +26,7 @@ If you’ve specified a width and height on an image, CloudCannon ensures that n
 
 ### Text Elements: p, h1, h2, h3, h4, h5, h6
 
-Gives options for bold, italics and links
+Gives options for bold, italics and links.
 
 ![Text Elements](/img/editing/5.png)
 
@@ -34,7 +34,7 @@ Gives options for bold, italics and links
 
 ### Inline Elements: span, strong, em
 
-Only allows updating text
+Restricted to updating text only.
 
 ![Inline Elements](/img/editing/6.png)
 

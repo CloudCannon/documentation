@@ -10,7 +10,7 @@ For example, you could use a different CDN for your development, staging and pro
 
 To change the environment for your site:
 
-1. Go to the *Site Details* tab in site settings
+1. Go to the *Site Details* tab in *Site Settings*
 2. Enter your new environment in *Jekyll Environment*
 3. Click *Update Site*
 

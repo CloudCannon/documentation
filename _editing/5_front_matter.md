@@ -4,18 +4,17 @@ title: Front Matter
 This feature is only available on Jekyll sites.
 {: .info}
 
-
-Front Matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) which allows you to set any sort of custom variables on a page.
+Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) which allows you to set custom variables for a page.
 
 Here is a basic example. I've inserted this at the top of my `index.html` file:
 
 {% highlight liquid %}
 ---
-title: Blogging Like a Hacker
+title: Lion Wear
 ---
 {% endhighlight %}
 
-The triple dashes indicate we're using Front Matter. Inside we can set our own variables which can be used throughout the rest of the page using [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+The triple dashes indicate we're using front matter. Inside we can set our own variables which can be used throughout the rest of the page using [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
 
 For example, later in `index.html` I could use that variable:
 
@@ -25,7 +24,7 @@ For example, later in `index.html` I could use that variable:
 {% endraw %}
 {% endhighlight %}
 
-Using CloudCannon you can update Front Matter by clicking the &#39;Toggle Settings&#39; button at top right when you have a file open.
+Using CloudCannon you can update front matter by clicking the **Toggle Settings** button at top right when you have a file open.
 
 ![Settings](/img/jekyll/front-matter/1.png){: .screenshot}
 
@@ -61,7 +60,7 @@ short_description: The finest hand-crafted clothing
 A text field which is expanded for longer text.
 
 #### Usage
-This is automatically used when there is too much text for a small text field.
+This is automatically used when there is too much text for a small text field, and for the `description` key.
 
 #### Front Matter
 {% highlight liquid %}
@@ -82,7 +81,7 @@ long_description: Products are crafted in-house by hand, making each piece a lab
 ***
 
 ### Boolean
-A Checkbox which can be triggered on or off.
+A checkbox which can be triggered on or off.
 
 #### Usage
 Set a variable to true or false.
@@ -113,7 +112,7 @@ show_feature: true
 Select an image or file.
 
 #### Usage
-Add **_path** to the end of your variable name.
+Add `_path` to the end of your variable name.
 
 #### Front Matter
 {% highlight liquid %}
@@ -125,7 +124,7 @@ background_image_path: /image/bg.png
 #### Liquid
 {% highlight liquid %}
 {% raw %}
-<img src="{{ page.background_image_path }}" alt="BG image" />
+<img src="{{ page.background_image_path }}" alt="Background image" />
 {% endraw %}
 {% endhighlight %}
 
@@ -137,7 +136,7 @@ background_image_path: /image/bg.png
 Shows a date picker.
 
 #### Usage
-Add **_date** to the end of your variable name. This field will be used if the value is a Date.
+Add `_date` to the end of your variable name. This field is also used if the value is a date.
 
 #### Front Matter
 {% highlight liquid %}
@@ -161,7 +160,7 @@ sale_start_date: 2015-01-09
 Shows a 12h time input.
 
 #### Usage
-Add **_time** to the end of your variable name or name it **time**.
+Add `_time` to the end of your variable name or name it `time`.
 
 #### Front Matter
 {% highlight liquid %}
@@ -182,10 +181,10 @@ opening_time: 8:00am
 ***
 
 ### Date Time
-Shows a date picker and a time picker.
+Shows a date and time picker.
 
 #### Usage
-Used on **date** and **datetime**. Alternatively add **_at** or **_datetime** to the end of your variable name.
+Used on `date` and `datetime`. Alternatively, add `_at` or `_datetime` to the end of your variable name.
 
 #### Front Matter
 {% highlight liquid %}
@@ -209,7 +208,7 @@ date: 2015-07-15 12:00:00
 Shows as a select box.
 
 #### Usage
-There's two ways of populating data in the select box.
+There are two ways to populate data in the select box.
 
 The first is to add an array to `_config.yml`:
 
@@ -222,10 +221,10 @@ styles:
 {% endraw %}
 {% endhighlight %}
 
-The second is to have your data in a Collection. Let's say we have a Collection of products, the select box will be populated with items from the products Collection.
+The second is to have your data in a [Collection](/editing/collections/). For example, with collection of products, the select box will be populated with items from the products collection.
 
 #### Front Matter
-You reference the singular version of the data array you set in `_config.yml` or your Collection.
+You reference the singular version of the key for the data array you set in `_config.yml` or your collection name.
 
 {% highlight liquid %}
 ---
@@ -237,7 +236,7 @@ product: beanie
 #### Liquid
 {% highlight liquid %}
 {% raw %}
-<p> Only available in {{ page.style }} </p>
+<p>Only available in {{ page.style }}</p>
 {% endraw %}
 {% endhighlight %}
 
@@ -249,7 +248,7 @@ product: beanie
 Hash groups related data in its own interface.
 
 #### Usage
-Set a hash in the Front Matter.
+Set a hash in the front matter.
 
 #### Front Matter
 {% highlight liquid %}
@@ -263,7 +262,7 @@ footer:
 #### Liquid
 {% highlight liquid %}
 {% raw %}
-<footer> &copy; {{ page.footer.since }}{{ page.footer.copyright }} </footer>
+<footer>&copy; {{ page.footer.since }} {{ page.footer.copyright }}</footer>
 {% endraw %}
 {% endhighlight %}
 
@@ -274,11 +273,10 @@ footer:
 ***
 
 ### Array
-Similar to a hash, it separates the data into a different interface. Items in the array can be
-reordered and deleted and new items can be added.
+Similar to a hash, arrays are separated into a different interface. Items in the array can be reordered, deleted and new items can be added.
 
 #### Usage
-Set an array in the Front Matter.
+Set an array in the front matter.
 
 #### Front Matter
 {% highlight liquid %}
@@ -295,7 +293,7 @@ staff:
 {% raw %}
 <ul class="staff">
   {% for staff_member in page.staff %}
-    <li> {{ staff_member }} </li>
+    <li>{{ staff_member }}</li>
   {% endfor %}
 </ul>
 {% endraw %}
@@ -338,7 +336,7 @@ testimonials:
 <div class="testimonials">
   {% for testimonial in page.testimonials %}
     <blockquote>{{ testimonial.quote }}</blockquote>
-    <p><img src="{{ testimonial.photo_path }}" alt="{{ testimonial.name }}" /> {{ testimonial.name }} </p>
+    <p><img src="{{ testimonial.photo_path }}" alt="{{ testimonial.name }}">{ { testimonial.name }}</p>
     <ul>
       {% for item in testimonial.favourite_items %}
         <li>{{ item }}</li>

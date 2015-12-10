@@ -207,7 +207,7 @@ In `default.html` replace the nav element with: `{% raw %}{% include nav.html %}
 {% endraw %}
 {% endhighlight %}
 
-To highlight the current page in `nav.html` we need to work out what page we're currently on and add an `active` class to that link in the navigation. There's lots of ways of doing this, we'll do the simplest for now.
+To highlight the current page in `nav.html` we need to work out what page we're currently on and add an `active` class to that link in the navigation. There are lots of ways of doing this, we'll do the simplest for now.
 
 Jekyll has a variable which has the path to the current page you can reference using `page.url`. Let's use that to compare the current page to the item in the navigation. If it matches we'll add the class:
 

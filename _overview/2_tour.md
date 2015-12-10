@@ -22,7 +22,7 @@ Create a new site.
 
 ![Create a new site](/img/overview/creative.png){: .screenshot}
 
-Now we need to upload our site to CloudCannon. There's a few ways of doing this. We could sync with GitHub, Bitbucket or Dropbox. The advantage of doing this is you'll have a full history of changes on your website and you can revert to anytime. It also makes it easier to work with a team of developers because everyone can pull and push changes to the website on their local machine.
+Now we need to upload our site to CloudCannon. There are a few ways of doing this. We could sync with GitHub, Bitbucket or Dropbox. The advantage of doing this is you'll have a full history of changes on your website and you can revert to anytime. It also makes it easier to work with a team of developers because everyone can pull and push changes to the website on their local machine.
 
 For this site we'll just upload the files from our computer.
 
