@@ -54,7 +54,7 @@ description: A blog with the latest trends and news in Web Design
 {% endraw %}
 {% endhighlight %}
 
-If you're using [CloudCannon](http://cloudcannon.com), your non-technical users can easily update the Front Matter:
+If you're using [CloudCannon](http://cloudcannon.com), your non-developers can easily update the Front Matter:
 
 ![Front Matter on CloudCannon](/img/tutorials/seo/front_matter.png)
 

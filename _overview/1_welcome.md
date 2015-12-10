@@ -16,9 +16,10 @@ CloudCannon allows non-technical teams to take control of their website and deve
 
 Jekyll is a static site generator. What this really means is that Jekyll takes your content written in HTML, Markdown and other markup languages, passes it through templates and outputs a completely static website.
 
-With Jekyll you can do things you would normally need a backend for. Blogging, photo galleries, and layouts are all possible.
+With Jekyll, you can do things you would normally need a backend for. Blogging, photo galleries, and layouts are all possible.
 
 CloudCannon runs Jekyll version **2.4.0**
+{: .info}
 
 ## How does CloudCannon work?
 
@@ -32,4 +33,4 @@ Getting a website online and updatable is easy with CloudCannon.
 
 4. Share the site with the rest of the team.
 
-Other developers get full access to the source code. Non-technical users can easily manage the content of site without writing code.
+Other developers get full access to the source code. Non-developers can easily manage the content of site without writing code.

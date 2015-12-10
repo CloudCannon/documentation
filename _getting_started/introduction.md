@@ -3,7 +3,7 @@ title: Introduction
 order: 1
 duplicate_content: http://jekyll.tips/
 ---
-This guide will give you a step-by-step introduction to Jekyll and CloudCannon. We'll download a free HTML 5 template, convert it into a Jekyll website, add a blog and make it so clients or non-technical users can update content. Let's get started!
+This guide will give you a step-by-step introduction to Jekyll and CloudCannon. We'll download a free HTML 5 template, convert it into a Jekyll website, add a blog and make it so clients or non-developers can update content. Let's get started!
 
 ### What is Jekyll?
 

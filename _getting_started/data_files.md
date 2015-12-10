@@ -21,7 +21,7 @@ latitude,longitude,name
 
 Now to add the map and markers to `contact.html`. We can access data in the CSV by using `site.data.office_locations`.
 
-Google Maps has a Javascript API so we need to get this data into a Javascript variable. It's actually pretty easy to output JSON with Jekyll:
+Google Maps has a JavaScript API so we need to get this data into a JavaScript variable. It's actually pretty easy to output JSON with Jekyll:
 
 {% highlight html %}
 {% raw %}

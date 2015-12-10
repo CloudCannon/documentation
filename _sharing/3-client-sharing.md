@@ -20,6 +20,6 @@ To change the URLs:
 
 1. Go to the *Client Interface* tab in site settings
 2. Enter the desired URLs
-4. Click *Update Client Interface*
+3. Click *Update Client Interface*
 
 ![Client Interface](/img/sharing/client-interface.png){: .screenshot}

@@ -285,4 +285,4 @@ This template already has CSS for styling the `active` class so that's all we ne
 
 Go to your browser and navigate around the site, the current page has a red font. At this point we have a basic working website we can hand off to a client.
 
-Let's look at hosting and adding a CMS so non-technical users can update the website.
+Let's look at hosting and adding a CMS so non-developers can update the website.

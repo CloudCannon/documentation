@@ -57,7 +57,7 @@ layout: default
 {% endraw %}
 {% endhighlight %}
 
-We'll also create `/js/search.js` to hold our search Javascript.
+We'll also create `/js/search.js` to hold our search JavaScript.
 
 Download the minified version from [lunr.js](http://lunrjs.com/).
 

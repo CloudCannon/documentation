@@ -4,43 +4,63 @@ title: Blogging
 This feature is only available on Jekyll sites.
 {: .info}
 
-Blog posts are [Markdown](https://help.github.com/articles/markdown-basics/) files which live in the `_posts` folder of your site.
+Create and manage Jekyll blogs with CloudCannon.
 
-Jekyll expects the file name to be in a particular format for blog posts. The format is: `YEAR-MONTH-DAY-title.md`. For example: `_posts/2015-03-06-my-first-post.md`.
-
-The format of a blog is Front Matter at the top, then the content is written in Markdown. Like so:
+Jekyll blog posts are [Markdown](https://help.github.com/articles/markdown-basics/) files located in the `_posts` folder, with filenames in the `YEAR-MONTH-DAY-title.MARKUP` format. The contents of a post file starts with front matter, and has the content underneath. For example:
 
 {% highlight text %}
 ---
-layout: post
 title: My First Blog Post
 ---
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
-the site to see your changes. You can rebuild the site in many different ways, but
-the most common way is to run `jekyll serve`, which launches a web server and
-auto-regenerates your site when a file is updated.
+The content for my post is here.
 
-To add new posts, simply add a file in the `_posts` directory that follows the
-convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter.
-Take a look at the source for this post to get an idea about how it works.
+* Markdown is great for developers
+* CloudCannon has an easy-to-use interface for non-developers to write Markdown
 {% endhighlight %}
 
-In CloudCannon, go to the **Collections** tab for your website where there will be two items: Draft Posts and Published Posts. Draft posts are hidden when your site is published.
 
-![Draft post](/img/jekyll/blogging/1.png){: .screenshot}
 
-Let's add a new Draft post. Click the **Start a new draft** button and enter a title for the post.
 
-![Naming draft post](/img/jekyll/blogging/3.png){: .screenshot}
+To access the CloudCannon blogging interface:
 
-Now click on the file you've just created. It'll open our stripped-back markdown editor. Enter the content for your blog post here.
+1. Add a Jekyll site with at least one published post or draft
+2. Go to the *Posts* or *Drafts* tabs in the *Collections* section
 
-![Editing](/img/jekyll/blogging/4.png){: .screenshot}
+![Empty blogging interface](/img/editing/blogging/posts-interface.png){: .screenshot srcset="/img/editing/blogging/posts-interface.png 800w, /img/editing/blogging/posts-interface@2x.png 1600w"}
 
-If you ever want to see the raw Markdown go to the Code Editor.
 
-![Code Editor](/img/jekyll/blogging/6.png){: .screenshot}
 
-You can always configure the layout, blog title and any other Front Matter you've defined by going to the **Settings** tab.
+To start a new draft from the *Drafts* or *Posts* tabs:
 
-![Code Editor](/img/jekyll/blogging/5.png){: .screenshot}
+1. Open the *Add Files* menu in the top right corner and select **Add draft**
+2. Enter a title/filename for the post and press enter
+
+Your file will be opened in the CloudCannon content editor. Front matter for the file is copied from an existing blog post to keep the structure consistent.
+
+Draft posts are hidden on your live site unless configured otherwise.
+{: .info}
+
+![Creating a new draft](/img/editing/blogging/adding-draft.png){: .screenshot srcset="/img/editing/blogging/adding-draft.png 800w, /img/editing/blogging/adding-draft@2x.png 1600w"}
+
+
+
+There are a number of ways to add content for your new draft:
+
+* Type the main content directly onto the page
+* Insert images, links, and style your text with the editor controls above
+
+Once the content is finished, publish your post with the button provided in the top right. Posts can always be edited after publishing.
+
+The owner and developers of a site can access the raw Markdown via the **Switch to Source Editor** button.
+{: .info}
+
+![Editing draft](/img/editing/blogging/edit-draft.png){: .screenshot srcset="/img/editing/blogging/edit-draft.png 800w, /img/editing/blogging/edit-draft@2x.png 1600w"}
+
+
+
+[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) can be updated in the *Settings Panel*, accessed by selecting the *Toggle Settings* button in the top right corner.
+
+Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="_blank"} instead.
+{: .info}
+
+![Editing draft with Settings Panel open](/img/editing/blogging/edit-draft-settings.png){: .screenshot srcset="/img/editing/blogging/edit-draft-settings.png 800w, /img/editing/blogging/edit-draft-settings@2x.png 1600w"}

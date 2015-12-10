@@ -6,7 +6,7 @@ duplicate_content: http://jekyll.tips/tutorials/photo-gallery/
 
 Photo galleries typically have a lot of repeating code. It a good idea to remove any repeating code to make websites easy to maintain.
 
-Through this process we'll also makes it easier for non-technical users to update content in slideshows.
+Through this process we'll also makes it easier for non-developers to update content in slideshows.
 
 For this tutorial we'll be using the [Corlate](/corlate.zip) template from [ShapeBootstrap](http://shapebootstrap.net/).
 
@@ -175,7 +175,7 @@ One tricky part is we need to set an active class on the first slide which is do
 {% endraw %}
 {% endhighlight %}
 
-If you upload the site to [CloudCannon](http://cloudcannon.com) (remember you'll need to add a `_config.yml`), a non-technical user can easily change content, reorder the slideshow and add/remove slides.
+If you upload the site to [CloudCannon](http://cloudcannon.com) (remember you'll need to add a `_config.yml`), a non-developer can easily change content, reorder the slideshow and add/remove slides.
 
 ![CloudCannon Front Matter](/img/tutorials/slideshow/cloudcannon.png){: .screenshot}
 
