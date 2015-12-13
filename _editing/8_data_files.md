@@ -28,11 +28,9 @@ Now we can access this data in our site using `site.data.office_locations`, like
 
 {% highlight html %}
 {% raw %}
-...
-  {% for location in site.data.office_locations %}
-    <p>{{ location.name }}, {{ location.latitude }}, {{ location.longitude }}</p>
-  {% endfor %}
-...
+{% for location in site.data.office_locations %}
+  <p>{{ location.name }}: {{ location.latitude }}, {{ location.longitude }}</p>
+{% endfor %}
 {% endraw %}
 {% endhighlight %}
 

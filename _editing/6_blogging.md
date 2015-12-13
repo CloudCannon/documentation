@@ -57,7 +57,7 @@ The owner and developers of a site can access the raw Markdown via the **Switch 
 
 
 
-[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) can be updated in the *Settings Panel*, accessed by selecting the *Toggle Settings* button in the top right corner.
+[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) can be updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
 
 Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="_blank"} instead.
 {: .info}
