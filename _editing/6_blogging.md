@@ -34,7 +34,7 @@ To start a new draft from the *Drafts* or *Posts* tabs:
 1. Open the *Add Files* menu in the top right corner and select **Add Draft**
 2. Enter a title/filename for the post and press enter
 
-Your file will be opened in the CloudCannon content editor. Front matter for the file is copied from an existing blog post to keep the structure consistent.
+Your file will be opened in the CloudCannon content editor. Front matter for the file is populated from [Collection Defaults](/editing/collection-defaults/) or an existing item to keep the structure consistent.
 
 Draft posts are hidden on your live site unless set otherwise in *Site Settings*.
 {: .info}

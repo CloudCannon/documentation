@@ -4,94 +4,115 @@ title: Collections
 This feature is only available on Jekyll sites.
 {: .info}
 
-Collections are used to organise content, similar to blogging, except the content isn't organised by date.
+Manage your Jekyll collections with ease in CloudCannon.
 
-There are lots of great use cases for collections: API documentation, products, albums. Basically anywhere you have structured data which repeats itself.
+Collections are for managing groups of structured content. The concepts are similar to [Blogging](/editing/blogging/), without the chronological restriction. Collections have many applications, including: API documentation, products, albums and blog authors.
 
-In this example we'll create a collection to organise and display staff members.
+CloudCannon provides an easy to use interface for managing collections. To access the CloudCannon collections interface:
 
-To define the staff collection we need to set it in `_config.yml`:
+1. Add a Jekyll site with at least one collection
+2. Go to the tab for your collection in the *Collections* section
 
-{% highlight yaml %}
-{% raw %}
-collections:
-  staff:
-    output: true
+![Empty collections interface](/img/editing/collections/collections-interface.png){: .screenshot srcset="/img/editing/collections/collections-interface.png 800w, /img/editing/collections/collections-interface@2x.png 1600w"}
 
-defaults:
-  - scope:
-      path: ""
-      type: "staff"
-    values:
-      layout: "staff_member"
-{% endraw %}
-{% endhighlight %}
 
-I've set a staff collection with `output: true`. Output true means Jekyll will generate a page for each item in the collection. I'm doing this because there will be a page for each staff member with a full bio.
 
-The defaults section tells Jekyll to use the `staff_member` layout for pages generated in the staff collection. I could define the layout on each collection item but it's always going to be the `staff_member` layout, so it's better to set it as a default.
+To create a new collection item:
 
-Now in the root of the website we'll create a folder `_staff` and add `elon.md` with the following content:
+1. Open the *Add Files* menu in the top right corner and select **Add *Collection Name***
+2. Enter a title/filename for the item and press enter
 
-{% highlight liquid %}
-{% raw %}
+Your file will be opened in the CloudCannon content editor. Front matter for the file is populated from [Collection Defaults](/editing/collection-defaults/) or an existing item to keep the structure consistent.
+
+![Creating a new collection item](/img/editing/collections/adding-item.png){: .screenshot srcset="/img/editing/collections/adding-item.png 800w, /img/editing/collections/adding-item@2x.png 1600w"}
+
+
+
+There are a number of ways to add content for your new item:
+
+* Type the main content directly onto the page
+* Insert images, links, and style your text with the editor controls above
+
+Non-output HTML collections can only be edited in the [Code Editor](/editing/code-editor/).
+
+The owner and developers of a site can access the raw file content via the **Switch to Source Editor** button.
+{: .info}
+
+![Editing item](/img/editing/collections/edit-item.png){: .screenshot srcset="/img/editing/collections/edit-item.png 800w, /img/editing/collections/edit-item@2x.png 1600w"}
+
+[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) can be updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
+
+Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="_blank"} instead.
+{: .info}
+
+![Editing item with Settings Panel open](/img/editing/collections/edit-item-settings.png){: .screenshot srcset="/img/editing/collections/edit-item-settings.png 800w, /img/editing/collections/edit-item-settings@2x.png 1600w"}
+
+
+
 ---
-name: Elon Musk
-position: CEO
-twitter_handle: "@elonmusk"
-profile_photo_path: http://www.wired.com/images_blogs/wiredscience/2012/10/ff_musk4_f.jpg
----
-Born in South Africa in 1971 Elon Musk was raised in Pretoria by a South African engineer father, Errol Musk, and Canadian born Pennsylvania Dutch, nutritionist and author mother, Maye. As he grew up he dreamed of moving to the US where he believed “anything is possible.” His first stop though was Canada where he spent two years at Queens University in Kingston Ontario.
-{% endraw %}
-{% endhighlight %}
 
-Next let's create `/staff.html` and print out all the staff members (only one at this stage) using Liquid:
+To create a Jekyll collection to manage and display staff members, follow this example (assumes `/_layouts/default.html` exists):
 
-{% highlight liquid %}
-{% raw %}
----
-layout: default
----
-<ul class="staff">
-  {% for staff_member in site.staff %}
-    <li>
-      <div class="profile_image">
-        <img src="{{ staff_member.profile_photo_path }}" alt="{{ staff_member.name }}">
-      </div>
-      <p><a href="{{ staff_member.url }}">{{ staff_member.name }} - <strong>{{ staff_member.position }}</strong></a></p>
-    </li>
-  {% endfor %}
-</div>
-{% endraw %}
-{% endhighlight %}
+1.  Define the staff collection and default layout in `/_config.yml`:
 
-Notice the `staff_member.url`. This links to the generated page for the staff member. It's automatically generated by Jekyll because we've set `output: true` on the collection.
+    ~~~
+    collections:
+      staff:
+        output: true
 
-Now we need to define the `staff_member` layout in `_layouts/staff_member.html`. This is the layout the generated staff pages use:
+    defaults:
+      -
+        scope:
+          path: ""
+          type: "staff"
+        values:
+          layout: "staff-member"
+    ~~~
 
-{% highlight liquid %}
-{% raw %}
----
-layout: default
----
-<div class="profile_image">
-  <img src="{{ page.profile_photo_path }}" alt="{{ page.name }}">
-</div>
-<h2>{{ page.name }} - <strong>{{ page.position }}</strong></h2>
-<p>Twitter Handle - {{ page.twitter_handle }}</p>
-<p>{{ page.content }}</p>
-{% endraw %}
-{% endhighlight %}
+    Jekyll generates a page for each staff member with `output: true`. The default **staff-member** layout avoids setting it in each file.
 
+2.  Create `/_staff/elon.md` with the following content:
 
-All collections defined in `_config.yml` appear in the *Collections* section in CloudCannon. From here, you can add a new item to the collection by clicking a button, the front matter is copied from an existing collection item.
+    ~~~
+    ---
+    name: Elon Musk
+    position: CEO
+    twitter_handle: "@elonmusk"
+    profile_photo_path: http://www.wired.com/images_blogs/wiredscience/2012/10/ff_musk4_f.jpg
+    ---
+    Born in South Africa in 1971 Elon Musk was raised in Pretoria by a South African engineer father, Errol Musk, and Canadian born Pennsylvania Dutch, nutritionist and author mother, Maye. As he grew up he dreamed of moving to the US where he believed “anything is possible.” His first stop though was Canada where he spent two years at Queens University in Kingston Ontario.
+    ~~~
 
-![Collections Interface](/img/jekyll/collections/1.png){: .screenshot}
+3.  Create `/staff.html` to display all staff members:
 
-You can edit the collection item with the Markdown editor. All front matter can be updated as well.
+    ~~~
+    {% raw %}---
+    layout: default
+    ---
+    <ul class="staff-members">
+      {% for member in site.staff %}
+        <li class="staff-member">
+          <img src="{{ member.profile_photo_path }}" alt="{{ member.name }}">
+          <p>
+            <a href="{{ member.url }}">
+              {{ member.name }} - <strong>{{ member.position }}</strong>
+            </a>
+          </p>
+        </li>
+      {% endfor %}
+    </ul>{% endraw %}
+    ~~~
 
-![Markdown Editor](/img/jekyll/collections/2.png){: .screenshot}
+    Jekyll provides the `url` attribute to link to the generated page for each staff member.
 
-If it's an HTML file the output set to **true** in in `_config.yml`, the [Visual Editor](/editing/visual-editor/) can be used with [Editable Regions](/editing/editable-regions/).
+4.  Create the `staff-member` layout by creating `/_layouts/staff-member.html`. Generated staff pages use this file:
 
-If output set to **false** on an HTML collection item, only the [Code Editor](/editing/code-editor/) can be used.
+    ~~~
+    {% raw %}---
+    layout: default
+    ---
+    <img src="{{ page.profile_photo_path }}" alt="{{ page.name }}">
+    <h1>{{ page.name }} - {{ page.position }}</h1>
+    <p>Twitter Handle: {{ page.twitter_handle }}</p>
+    {{ page.content }}{% endraw %}
+    ~~~
