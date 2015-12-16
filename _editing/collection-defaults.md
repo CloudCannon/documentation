@@ -4,7 +4,7 @@ title: Collection Defaults
 This feature is only available on Jekyll sites.
 {: .info}
 
-Provide default front matter for new drafts and collection items.
+Provide default front matter and/or content for new drafts and collection items.
 Defaults for collection item files are copied from `_defaults.md` in the root collection folder.
 Defaults files are hidden in the *Collections* section to prevent changes from non-developers and clients.
 
