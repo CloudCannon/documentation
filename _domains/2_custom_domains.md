@@ -25,7 +25,7 @@ All changes to a domains DNS can take up to 48 hours to propagate. This is the u
 
 Once a domain has been added, configuration instructions will become available. You will have two choices:
 
-* Use CloudCannon DNS **(recommend)**
+* Use CloudCannon DNS **(recommended)**
 * Use your own DNS
 
 If you are unfamiliar with DNS see [Verisign's DNS explainer](http://www.verisigninc.com/en_US/domain-names/online/how-dns-works/index.xhtml).
