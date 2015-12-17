@@ -54,7 +54,7 @@ Here are some domain registrars' documentation:
 
 ### Using your own DNS
 
-If you are using the naked domain we recommend using CloudCannon DNS. This allows us dynamically load balance your site across multiple servers.
+If you are using the naked domain we recommend using CloudCannon DNS. This allows us to dynamically load balance your site across multiple servers.
 {: .warning}
 
 Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **I have my own DNS**.
