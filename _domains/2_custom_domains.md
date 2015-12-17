@@ -2,18 +2,15 @@
 title: Custom Domains
 ---
 
-Only relevant for sites hosted by CloudCannon
+Using a custom domain requires you to purchase one from an external domain registrar. We recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) as it has a one click install for which avoids the following steps.
 {: .info}
 
-## Purchasing a domain
+## Adding a custom domain
 
-When purchasing a domain, we recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains). Iwantmyname has a one click install for CloudCannon which avoids the following steps. However, CloudCannon works with any domain registrar.
+To add a custom domain:
 
----
-
-## Attaching a domain to a site
-
-Once you have your domain name you can go ahead and add it to your site. You can do this in your site settings under the *Domain* tab. After entering your domain, submit the form.
+1. Go to the *Domain* section in *Site Settings*.
+2. Enter the domain name with or without a subdomain
 
 ![Site settings domain tab with subdomain](/img/domains/example-entered.png){: .screenshot}
 
