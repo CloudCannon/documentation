@@ -244,6 +244,7 @@ Do this for all the links and now `nav.html` will look like this:
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+
         {% if page.url == '/about.html' %}
           <li class="active">
         {% else %}
@@ -251,6 +252,7 @@ Do this for all the links and now `nav.html` will look like this:
         {% endif %}
           <a href="/about.html">About</a>
         </li>
+
         {% if page.url == '/services.html' %}
           <li class="active">
         {% else %}
@@ -258,6 +260,7 @@ Do this for all the links and now `nav.html` will look like this:
         {% endif %}
           <a href="/services.html">Services</a>
         </li>
+
         {% if page.url == '/portfolio.html' %}
           <li class="active">
         {% else %}
@@ -265,6 +268,7 @@ Do this for all the links and now `nav.html` will look like this:
         {% endif %}
           <a href="/portfolio.html">Portfolio</a>
         </li>
+
         {% if page.url == '/contact.html' %}
           <li class="active">
         {% else %}
@@ -272,6 +276,7 @@ Do this for all the links and now `nav.html` will look like this:
         {% endif %}
           <a href="/contact.html">Contact</a>
         </li>
+        
       </ul>
     </div>
     <!-- /.navbar-collapse -->
