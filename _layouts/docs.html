@@ -9,6 +9,7 @@ layout: default
 {% if url == "/" %}
 	{% assign url = "/guide/setup/" %}
 {% endif %}
+{% assign parts = page.url | split: "/" %}
 {% for item in site.collections %}
 	{% assign collection = item[1] %}
 	{% if section %}
@@ -16,7 +17,7 @@ layout: default
 			{% assign next = collection %}
 			{% break %}
 		{% endif %}
-	{% elsif url contains collection.active_prefix %}
+	{% elsif parts[0] == collection.active_prefix %}
 		{% assign section = collection.title %}
 		{% assign items = collection.docs | sort: 'order' %}
 	{% elsif collection.output %}
