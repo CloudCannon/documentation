@@ -29,7 +29,6 @@ layout: default
 	<div class="page-header">
 		<h2>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h2>
 		<h3>{{ section }}</h3>
-		<h3>{{ parts | jsonify }}</h3>
 
 		{% if items %}
 			{% include section-nav.html items=items previous_collection=previous next_collection=next %}
