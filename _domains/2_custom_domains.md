@@ -45,7 +45,7 @@ To configure your domain:
 2. Enter the nameservers provided and enter the nameservers provided
 3. (Optional) Add additional DNS records got to the *DNS* section in *Site Settings*
 
-Here are some domain registrar's documentation:
+Here are some domain registrars' documentation:
 
 * [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/767/10/how-can-i-change-the-nameservers-for-my-domain)
 * [GoDaddy](https://www.godaddy.com/help/setting-nameservers-for-your-domain-names-664)
@@ -67,7 +67,7 @@ Go to the *Site Settings* / *Domain* section and ensure it looks like the follow
     - **Type**: CNAME
     - **Value**: sites.cloudcannon.com
 
-Here are some domain registrar's DNS documentation:
+Here are some domain registrars' DNS documentation:
 
-* [Namecheap](https://www.namecheap.com/domains/freedns.aspx) which can be used with any provider
+* [Namecheap](https://www.namecheap.com/domains/freedns.aspx) (can be used with registrar)
 * [GoDaddy](https://www.godaddy.com/help/managing-dns-for-your-domain-names-680)
