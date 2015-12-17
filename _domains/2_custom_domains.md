@@ -63,14 +63,10 @@ Go to the *Site Settings* / *Domain* section and ensure it looks like the follow
 
 1. Go into the DNS settings for your domain
 2. Add a CNAME record with the following details:
+    - **Name/Alias**: *.example.com using your domain name
+    - **Type**: CNAME.
+    - **Value**: sites.cloudcannon.com
 
-**Name/Alias**: *.example.com using your domain name
-
-**Type**: CNAME.
-
-**Value**: sites.cloudcannon.com
-
-![DNS](/img/common_tasks/1.png)
 
 See DNS instructions for your domain registrar:
 
