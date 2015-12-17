@@ -43,7 +43,7 @@ To configure your domain:
 
 1. Go to your domain registrar *DNS Server Settings* or *Nameservers*
 2. Enter the nameservers provided and enter the nameservers provided
-3. (Optional) Add additional DNS records got to the *DNS* section in *Site Settings*
+3. (Optional) Add additional DNS records in the *DNS* section in *Site Settings*
 
 Here are some domain registrars' documentation:
 
