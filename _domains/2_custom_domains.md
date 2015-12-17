@@ -10,8 +10,7 @@ To add a custom domain:
 1. Go to the *Domain* section in *Site Settings*.
 2. Enter the domain name with or without a subdomain
 
-![Site settings domain tab with subdomain](/img/domains/example-entered.png){: .screenshot}
-
+![Site settings domain tab with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
 
 [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install for which avoids the following steps.
 {: .info}
@@ -37,7 +36,7 @@ If you are unfamiliar with DNS see [Verisign's DNS explainer](http://www.verisig
 
 Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **Use CloudCannon DNS**.
 
-![Site settings domain tab with own DNS](/img/domains/cloudcannon-dns.png){: .screenshot}
+![Site settings domain tab with own DNS](/img/domains/cloudcannon-dns.png){: .screenshot srcset="/img/domains/cloudcannon-dns.png 800w, /img/domains/cloudcannon-dns@2x.png 1600w"}
 
 To configure your domain:
 
@@ -59,7 +58,7 @@ If you are using the naked domain we recommend using CloudCannon DNS. This allow
 
 Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **I have my own DNS**.
 
-![Site settings domain tab with own DNS](/img/domains/own-dns.png){: .screenshot}
+![Site settings domain tab with own DNS](/img/domains/own-dns.png){: .screenshot srcset="/img/domains/own-dns.png 800w, /img/domains/own-dns@2x.png 1600w"}
 
 1. Go into the DNS settings for your domain
 2. Add a CNAME record with the following details:
