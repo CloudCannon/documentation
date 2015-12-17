@@ -5,8 +5,6 @@ title: Custom Domains
 Using a custom domain requires you to purchase one from an external domain registrar. We recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) as it has a one click install for which avoids the following steps.
 {: .info}
 
-## Adding a custom domain
-
 To add a custom domain:
 
 1. Go to the *Domain* section in *Site Settings*.
