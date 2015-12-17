@@ -41,8 +41,8 @@ Go to the *Site Settings* / *Domain* section and ensure it looks like the follow
 
 To configure your domain:
 
-1. Go to your domain registrar *DNS Server Settings* or *Nameservers*.
-2. Enter the nameservers provided and enter the nameservers provided.
+1. Go to your domain registrar *DNS Server Settings* or *Nameservers*
+2. Enter the nameservers provided and enter the nameservers provided
 3. (Optional) Add additional DNS records got to the *DNS* section in *Site Settings*
 
 Here are some domain registrars documentation:
@@ -66,9 +66,9 @@ Go to the *Site Settings* / *Domain* section and ensure it looks like the follow
 
 **Name/Alias**: *.example.com using your domain name
 
-**Type**: Set to CNAME.
+**Type**: CNAME.
 
-**Value**: Set to sites.cloudcannon.com
+**Value**: sites.cloudcannon.com
 
 ![DNS](/img/common_tasks/1.png)
 
