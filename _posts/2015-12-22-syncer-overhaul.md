@@ -5,7 +5,7 @@ type: major
 
 This release features major changes when interacting with storage providers. Sync operations between GitHub, Bitbucket, Dropbox and FTP are now faster, more reliable and have greater visibility in CloudCannon.
 
-Features
+Features:
 
 * Better syncing process for storage providers
 * **Check Changes** button for storage providers in *Status* section
@@ -13,7 +13,7 @@ Features
 * Improved interface for adding domain names and managing DNS
 * Save button more prominent
 
-Fixes
+Fixes:
 
 * Loading animation fixed for Firefox and Safari
 * Sidebar display for users with no first name or surname
