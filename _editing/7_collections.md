@@ -1,6 +1,7 @@
 ---
 title: Collections
 ---
+
 This feature is only available on Jekyll sites.
 {: .info}
 

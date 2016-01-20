@@ -1,6 +1,7 @@
 ---
 title: Front Matter
 ---
+
 This feature is only available on Jekyll sites.
 {: .info}
 

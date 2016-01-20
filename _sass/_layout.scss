@@ -50,7 +50,7 @@ nav ul + ul {
 	right: 0;
 	top: $mobile-nav-height;
 	bottom: 0;
-	background: $body-background-color url(/img/background-repeat.png);
+	background-color: $body-background-color;
 }
 
 .content {
