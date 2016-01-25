@@ -5,7 +5,7 @@ type: minor
 
 ### Features
 
-* Editor links have been added to the visual editor to allow customisation of your interfaces.
+* [Editor links](/editing/editor-links/) have been added to the visual editor to allow customisation of your interfaces.
 * Commit hashes are available on each site activity from GitHub and Bitbucket.
 
 
