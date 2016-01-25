@@ -1,4 +1,5 @@
 ---
-title: 'Editor links, markdown attributes and'
-type: major
+title: 'Editor links, markdown attributes and general improvements'
+type: minor
 ---
+
