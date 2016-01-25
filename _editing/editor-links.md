@@ -6,10 +6,10 @@ Editor Links allow you to link to other sections of the CloudCannon interface fr
 
 Editor Links are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
-* `&lt;a href="cloudcannon:collections/_staff/"&gt;Edit all staff&lt;/a&gt;`
-* `&lt;a href="cloudcannon:collections/_staff/jane-doe.md"&gt;Edit Jane Doe&lt;/a&gt;`
-* `&lt;a href="cloudcannon:collections/_posts/2015-07-30-welcome-post.md"&gt;Edit Welcome Post&lt;/a&gt;`
-* `&lt;a href="cloudcannon:status"&gt;Link to Site Status and Recent Activity&lt;/a&gt;`
+* `<a href="cloudcannon:collections/_staff/">Edit all staff</a>`
+* `<a href="cloudcannon:collections/_staff/jane-doe.md">Edit Jane Doe</a>`
+* `<a href="cloudcannon:collections/_posts/2015-07-30-welcome-post.md">Edit Welcome Post</a>`
+* `<a href="cloudcannon:status">Link to Site Status and Recent Activity</a>`
 
 
 ---
@@ -17,18 +17,18 @@ Editor Links are prefixed with `cloudcannon:` and match the URL structure of the
 To have edit links for posts in a list, add an Editor Link in the blog post loop:
 
 {% highlight liquid %}
-&lt;ul class="blog-posts"&gt;
+<ul class="blog-posts">
   {% raw %}{% for post in site.posts %}
-    &lt;li class="blog-post"&gt;
-      &lt;h3&gt;{{ post.title }}&lt;/h3&gt;
-      &lt;p&gt;{{ post.excerpt }}&lt;/p&gt;
-      &lt;a href="{{ post.url }}"&gt;Read more&lt;/a&gt;
+    <li class="blog-post">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}">Read more</a>
 
-      &lt;!-- Editor Link --&gt;
-      &lt;a href="cloudcannon:collections/{{ post.path }}" class="editor-link"&gt;Edit&lt;/a&gt;
-    &lt;/li&gt;
+      <!-- Editor Link -->
+      <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit</a>
+    </li>
   {% endfor %}{% endraw %}
-&lt;/ul&gt;
+</ul>
 {% endhighlight %}
 
 ![CloudCannon blog posts with edit buttons](/img/editing/editor-links/blog-posts.png){: .screenshot srcset="/img/editing/editor-links/blog-posts.png 800w, /img/editing/editor-links/blog-posts@2x.png 1600w"}
@@ -38,7 +38,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 To have an edit link on a collection item page, add the following to the page:
 
 {% highlight liquid %}
-{% raw %}&lt;a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link"&gt;Edit&lt;/a&gt;{% endraw %}
+{% raw %}<a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link">Edit</a>{% endraw %}
 {% endhighlight %}
 
 ![Netflix case study collection item with edit button](/img/editing/editor-links/collection-item.png){: .screenshot srcset="/img/editing/editor-links/collection-item.png 800w, /img/editing/editor-links/collection-item@2x.png 1600w"}
