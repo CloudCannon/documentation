@@ -3,13 +3,13 @@ title: 'Editor links, Markdown attributes and general improvements'
 type: minor
 ---
 
-### Features
+Features:
 
 * [Editor links](/editing/editor-links/) have been added to the visual editor to allow customisation of your interfaces.
 * Commit hashes are available on each site activity from GitHub and Bitbucket.
 
 
-### Bugs
+Fixes:
 
 * `srcset` and `sizes` attributes are now valid attributes within the Markdown editor. These were previously filtered out on save.
 * Renaming folders to the same name with different cases was causing odd behaviour.
