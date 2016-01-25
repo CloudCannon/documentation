@@ -8,7 +8,7 @@ Editor Links are prefixed with `cloudcannon:` and match the URL structure of the
 
 * `&lt;a href="cloudcannon:collections/_staff/"&gt;Edit all staff&lt;/a&gt;`
 * `&lt;a href="cloudcannon:collections/_staff/jane-doe.md"&gt;Edit Jane Doe&lt;/a&gt;`
-* `&lt;a href="cloudcannon:collections/_posts/2015-07-30-my-blog-post.md"&gt;Edit my blog post&lt;/a&gt;`
+* `&lt;a href="cloudcannon:collections/_posts/2015-07-30-welcome-post.md"&gt;Edit Welcome Post&lt;/a&gt;`
 * `&lt;a href="cloudcannon:status"&gt;Link to Site Status and Recent Activity&lt;/a&gt;`
 
 
