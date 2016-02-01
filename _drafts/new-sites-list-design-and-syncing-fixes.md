@@ -5,7 +5,7 @@ type: minor
 
 This week deployment focuses on usability changes to the sites list. Site names are no longer required to be unique with the exception of Dropbox connected sites. Storage provider details are displayed on the sites list to help distinguish between environments. If a site icon contains transparency it will be displayed with a padding around it. Alternatively if the site icon has no transparency the image will be shown right to the edge its wrapper.
 
-IMAGE OF SITES LIST
+![Empty blogging interface](/img/change-log/new-sites-list.png){: .screenshot srcset="/img/change-log/new-sites-list.png 800w, /img/change-log/new-sites-list@2x.png 1600w"}
 
 Syncing improvements ensure that sites stay synchronised when reconnected. When connecting a git repo, all files on CloudCannon will be reset to the state on the selected branch.
 
