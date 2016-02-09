@@ -8,7 +8,7 @@ examples:
       tagline: Hand-crafted clothing.
       ---
     image_paths:
-      - /img/editing/front-matter/new/text-field.png
+      - /img/editing/front-matter/text-field.png
   - title: Large text field
     details: Multiline text field expanded for longer text. Displayed when there is too much text for a text field, and for the `description` key.
     yaml: |
@@ -16,7 +16,7 @@ examples:
       description: Products are crafted in-house by hand, making each piece a labour of love and an exercise in craftsmanship.
       ---
     image_paths:
-      - /img/editing/front-matter/new/large-text-field.png
+      - /img/editing/front-matter/large-text-field.png
   - title: Boolean
     details: Checkbox which can be triggered on or off. Displayed for variables with values set to **true** or **false**.
     yaml: |
@@ -24,7 +24,7 @@ examples:
       show_feature: true
       ---
     image_paths:
-      - /img/editing/front-matter/new/boolean.png
+      - /img/editing/front-matter/boolean.png
   - title: Image or file
     details: Image or file selector. Has options for external links and uploading new files. Displayed for variables with keys ending in `_path`.
     yaml: |
@@ -32,7 +32,7 @@ examples:
       background_image_path: /image/background.png
       ---
     image_paths:
-      - /img/editing/front-matter/new/image-or-file.png
+      - /img/editing/front-matter/image-or-file.png
   - title: Colour
     details: |
       Input with dropdown for selecting colour.
@@ -45,8 +45,8 @@ examples:
       brand_colour: '#ff0000'
       ---
     image_paths:
-      - /img/editing/front-matter/new/colour.png
-      - /img/editing/front-matter/new/colour-focus.png
+      - /img/editing/front-matter/colour.png
+      - /img/editing/front-matter/colour-focus.png
     info: Quote hex colours, otherwise the hash symbol begins a YAML comment.
   - title: Date
     details: Date picker with options for year, month and day. Displayed for variables with date values or keys ending in `_date`.
@@ -55,15 +55,16 @@ examples:
       sale_start_date: 2015-01-09
       ---
     image_paths:
-      - /img/editing/front-matter/new/date.png
+      - /img/editing/front-matter/date.png
+      - /img/editing/front-matter/date-focus.png
   - title: Time
     details: 12 hour time input. Displayed for `time` and variables with keys ending in `_time`.
     yaml: |
       ---
-      opening_time: 8:00am
+      opening_time: 8:00 am
       ---
     image_paths:
-      - /img/editing/front-matter/new/time.png
+      - /img/editing/front-matter/time.png
   - title: Date Time
     details: Combination date picker and 12 hour time input. Displayed for `date`, `datetime` and variables with keys ending in `_at` or `_datetime`.
     yaml: |
@@ -71,7 +72,8 @@ examples:
       date: 2015-07-15 12:00:00
       ---
     image_paths:
-      - /img/editing/front-matter/new/date-time.png
+      - /img/editing/front-matter/datetime.png
+      - /img/editing/front-matter/datetime-focus.png
   - title: Select
     details: |
       Set of options in a dropdown menu. There are two ways to populate the options:
@@ -93,17 +95,19 @@ examples:
       style: Green
       ---
     image_paths:
-      - /img/editing/front-matter/new/select.png
+      - /img/editing/front-matter/select.png
+      - /img/editing/front-matter/select-focus.png
   - title: Object
     details: Button that navigates to grouped data. Displayed for variables with an object as the value.
     yaml: |
       ---
       footer:
-        copyright: LionWear Inc.
+        copyright: Lion Wear Inc.
         since: 2004
       ---
     image_paths:
-      - /img/editing/front-matter/new/object.png
+      - /img/editing/front-matter/object.png
+      - /img/editing/front-matter/object-active.png
   - title: Array
     details: Button that navigates to an ordered list of items. Items in the array can be added, reordered and deleted. Displayed for variables with an array as the value.
     yaml: |
@@ -114,7 +118,8 @@ examples:
         - Badger
       ---
     image_paths:
-      - /img/editing/front-matter/new/array.png
+      - /img/editing/front-matter/array.png
+      - /img/editing/front-matter/array-active.png
 ---
 
 This feature is only available on Jekyll sites.
