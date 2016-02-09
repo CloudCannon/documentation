@@ -36,4 +36,4 @@ Now we can access this data in our site using `site.data.office_locations`, like
 
 Data files have a tab in the *Collections* section. Non-developers can edit these files with an easy to use interface:
 
-![Data files](/img/jekyll/data_files.png){: .screenshot}
+![Data files](/img/editing/data-files.png){: .screenshot}
