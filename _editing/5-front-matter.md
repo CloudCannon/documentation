@@ -131,10 +131,10 @@ Access the variables in the page with [Liquid](https://github.com/Shopify/liquid
 
 {% highlight liquid %}
 ---
-title: Lion Wear
+title: Home
 ---
 ...
-<title>{% raw %}{{ page.title }}{% endraw %}</title>
+<title>{% raw %}{{ page.title }}{% endraw %} - Lion Wear</title>
 ...
 {% endhighlight %}
 

@@ -6,4 +6,4 @@ The *Visual Editor* is the main way to edit content in CloudCannon. Editable reg
 
 Navigate to other pages by clicking links on the site.
 
-![Visual Editor interface](/img/guide/cms/visual.png){: .screenshot}
+![Visual Editor](/img/editing/visual-editor.png){: .screenshot srcset="/img/editing/visual-editor.png 800w, /img/editing/visual-editor@2x.png 1600w"}

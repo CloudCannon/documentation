@@ -334,19 +334,13 @@ header h1 {
 
 .settings-panel-example {
 	@extend p;
+	display: -webkit-flex;
 	display: flex;
-
-	.details {
-		flex: 1;
-		margin-right: 20px;
-	}
-
-	p + .highlight > pre {
-		margin-bottom: 0;
-	}
+	-webkit-flex-direction: column;
+	flex-direction: column;
 
 	.example {
-		flex: 0 0 300px;
+		max-width: 300px;
 		background-color: #fafafa;
 		margin: 0;
 		padding: 0;
@@ -354,5 +348,26 @@ header h1 {
 		line-height: 1;
 		border-radius: 2px;
 		overflow: hidden;
+	}
+
+	@media (min-width: 960px) {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+
+		.details {
+			-webkit-flex: 1;
+			flex: 1;
+			margin-right: 20px;
+		}
+
+		p + .highlight > pre {
+			margin-bottom: 0;
+		}
+
+		.example {
+			-webkit-flex: 0 0 300px;
+			flex: 0 0 300px;
+			max-width: 100%;
+		}
 	}
 }
