@@ -42,7 +42,7 @@ examples:
       Each variation defines the preferred format of the colour. The `_colour` and `_color` variations default to hex.
     yaml: |
       ---
-      brand_colour: '#ff0000'
+      brand_colour: '#f05f40'
       ---
     image_paths:
       - /img/editing/front-matter/colour.png
@@ -138,7 +138,7 @@ title: Home
 ...
 {% endhighlight %}
 
-CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Settings** button at top right of the Visual Editor or Content Editor to access it.
+CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Settings** button at top right of the [Visual Editor](/editing/visual-editor/) or *Content Editor* to access it.
 
 ![CloudCannon front matter interface](/img/editing/front-matter/overview.png){: .screenshot srcset="/img/editing/front-matter/overview.png 800w, /img/editing/front-matter/overview@2x.png 1600w"}
 
