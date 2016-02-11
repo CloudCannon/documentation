@@ -1,0 +1,18 @@
+<div class="settings-panel-example">
+	<div class="details">
+		<h3>{{ include.example.title }}</h3>
+
+		{{ include.example.details | markdownify }}
+
+		{% highlight yaml %}{{ include.example.yaml }}{% endhighlight %}
+	</div>
+	<div class="example">
+		{% for image_path in include.example.image_paths %}
+			<img alt="{{ include.example.title }} interface" src="{{ image_path }}" srcset="{{ image_path }} 300w, {{ image_path | replace: '.png', '@2x.png' }} 600w">
+		{% endfor %}
+	</div>
+</div>
+
+{% if include.example.info %}
+<p class="info">{{ include.example.info }}</p>
+{% endif %}
