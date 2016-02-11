@@ -1,7 +1,9 @@
 ---
 title: Bitbucket
-warning: Only Git repositories are supported at this stage.
 ---
+Mercurial repositories are not supported at this stage.
+{: .warning}
+
 {% include cloud_storage.md %}
 
 Go to Storage Providers in your website configuration and click *Connect* next to Bitbucket.
