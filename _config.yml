@@ -56,6 +56,7 @@ defaults:
     layout: docs
 name: CloudCannon Docs
 url: http://docs.cloudcannon.com
+future: true
 author:
   name: Mike
   email: mike@cloudcannon.com

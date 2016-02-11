@@ -50,14 +50,13 @@ nav ul + ul {
 	right: 0;
 	top: $mobile-nav-height;
 	bottom: 0;
-	background: $body-background-color url(/img/background-repeat.png);
+	background-color: $body-background-color;
 }
 
 .content {
 	margin: 0 auto;
-	max-width: 710px;
+	max-width: 800px;
 	position: relative;
-
 	background-color: transparent;
 	box-shadow: none;
 	color: $content-color;
@@ -82,7 +81,7 @@ footer {
 }
 
 .page-header {
-	padding: 80px 0;
+	padding: 80px;
 	text-align: center;
 	background-color: $page-header-background;
 	text-transform: uppercase;
@@ -331,4 +330,44 @@ header h1 {
 	@extend .device;
 	background-image: url(/img/nexus-7.svg);
 	padding: 6% 11%;
+}
+
+.settings-panel-example {
+	@extend p;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	.example {
+		max-width: 300px;
+		background-color: #fafafa;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		line-height: 1;
+		border-radius: 2px;
+		overflow: hidden;
+	}
+
+	@media (min-width: 960px) {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+
+		.details {
+			-webkit-flex: 1;
+			flex: 1;
+			margin-right: 20px;
+		}
+
+		p + .highlight > pre {
+			margin-bottom: 0;
+		}
+
+		.example {
+			-webkit-flex: 0 0 300px;
+			flex: 0 0 300px;
+			max-width: 100%;
+		}
+	}
 }
