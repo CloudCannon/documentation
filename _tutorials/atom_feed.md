@@ -8,7 +8,7 @@ heading: Atom Feed in Jekyll
 duplicate_content: http://jekyll.tips/tutorials/atom-feed/
 ---
 
-An Atom feed allows readers to subscribe to the latest posts on your blog. 
+An Atom feed allows readers to subscribe to the latest posts on your blog.
 
 Create `atom.xml` to the root of the website with the following contents:
 
@@ -58,6 +58,6 @@ And finally add a link to `<head>` which is probably in `_layouts/default.html` 
 
 {% highlight html %}
 ...
-<link rel="alternate" type="application/atom+xml" title="The Creative Blog" href="/atom_feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="The Creative Blog" href="/atom.xml" />
 ...
 {% endhighlight %}
