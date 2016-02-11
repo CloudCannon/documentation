@@ -1,8 +1,7 @@
 ---
 title: Custom Domains
 ---
-
-Using a custom domain requires you to purchase one from an external domain registrar. We recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains).
+Only available for sites hosted by CloudCannon. Using a custom domain requires you to purchase one from an external domain registrar. We recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains).
 {: .info}
 
 To add a custom domain:
@@ -12,7 +11,7 @@ To add a custom domain:
 
 ![Site settings domain tab with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
 
-[iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install for which avoids the following steps.
+[iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to avoid the following steps.
 {: .info}
 
 ---
@@ -53,7 +52,7 @@ Here are some domain registrars' documentation:
 
 ### Using your own DNS
 
-If you are using the naked domain we recommend using CloudCannon DNS. This allows us to dynamically load balance your site across multiple servers.
+If you are using the apex domain (i.e. no subdomain) we recommend using CloudCannon DNS. This allows us to dynamically load balance your site across multiple servers.
 {: .warning}
 
 Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **I have my own DNS**.
@@ -68,5 +67,5 @@ Go to the *Site Settings* / *Domain* section and ensure it looks like the follow
 
 Here are some domain registrars' DNS documentation:
 
-* [Namecheap](https://www.namecheap.com/domains/freedns.aspx) (can be used with registrar)
+* [Namecheap](https://www.namecheap.com/domains/freedns.aspx) (can be used with any registrar)
 * [GoDaddy](https://www.godaddy.com/help/managing-dns-for-your-domain-names-680)
