@@ -14,6 +14,11 @@ collections:
     permalink: /syncing/:title/
     active_prefix: syncing
     output: true
+  building:
+    title: Building
+    permalink: /building/:title/
+    active_prefix: building
+    output: true
   editing:
     title: Editing
     permalink: /editing/:title/
