@@ -2,7 +2,7 @@
 title: File Types
 ---
 
-CloudCannon supports the following extension types:
+CloudCannon lowercases the filenames (including extension) of all files that are uploaded or synced from a storage provider. The following extensions are supported:
 
 * js
 * coffee
