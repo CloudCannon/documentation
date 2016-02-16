@@ -2,7 +2,7 @@
 title: Jekyll
 ---
 
-CloudCannon will compile any site that contains `_config.yml` with Jekyll.
+CloudCannon builds any site that contains a `_config.yml` file in the root folder with Jekyll.
 
 ---
 
@@ -23,4 +23,4 @@ Once the site has been built, the version is displayed on the *Site Status* page
 
 ### Jekyll Plugins
 
-CloudCannon does not support custom Jekyll plugins. With the exception of sites built with Jekyll **3.0.3** which includes `jekyll-paginate 1.1.0`. If you do require plugins for a site contact support.
+CloudCannon does not support custom Jekyll plugins. With the exception of sites built with Jekyll **3.0.3** which includes `jekyll-paginate 1.1.0`. Contact support if you do require plugins for a site.
