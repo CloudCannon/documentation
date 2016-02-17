@@ -1,3 +1,11 @@
+name: CloudCannon Docs
+url: http://docs.cloudcannon.com
+future: true
+
+author:
+  name: CloudCannon
+  email: support@cloudcannon.com
+
 collections:
   overview:
     title: Overview
@@ -54,17 +62,9 @@ collections:
     permalink: /tutorials/:title/
     active_prefix: tutorials
     output: true
+
 defaults:
 - scope:
     path: ""
   values:
     layout: docs
-name: CloudCannon Docs
-url: http://docs.cloudcannon.com
-future: true
-author:
-  name: Mike
-  email: mike@cloudcannon.com
-
-
-# salaries, visa wait on Scott, marketing - Mike, PR
