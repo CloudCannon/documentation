@@ -9,10 +9,9 @@ layout: default
 {% if url == "/" %}
 	{% assign url = "/guide/setup/" %}
 {% endif %}
-
 {% assign parts = page.url | split: "/" %}
-
-{% for collection in site.collections %}
+{% for item in site.collections %}
+	{% assign collection = item[1] %}
 	{% if section %}
 		{% if collection.output %}
 			{% assign next = collection %}
