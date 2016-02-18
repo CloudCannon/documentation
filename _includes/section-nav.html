@@ -16,7 +16,9 @@
 			{% endif %}
 
 			{% if forloop.last %}
-				{% if include.next_collection.docs %}
+				{% if include.next_collection.label == "posts" %}
+					<a href="/changelog/" class="next" title="Continue to Change Log"></a>
+				{% elsif include.next_collection.docs %}
 					{% assign items = include.next_collection.docs | sort: 'order' %}
 					<a href="{{ items.first.url }}" class="next"  title="Continue to {{ include.next_collection.title }}"></a>
 				{% else %}
