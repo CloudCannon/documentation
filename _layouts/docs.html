@@ -7,10 +7,10 @@ layout: default
 
 {% assign url = page.url %}
 {% if url == "/" %}
-	{% assign url = "/guide/setup/" %}
+	{% assign url = "/overview/welcome/" %}
 {% endif %}
 
-{% assign parts = page.url | split: "/" %}
+{% assign parts = url | split: "/" %}
 
 {% for collection in site.collections %}
 	{% if section %}

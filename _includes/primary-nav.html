@@ -7,13 +7,18 @@
 			{% if url == "/" %}
 				{% assign url = "/overview/welcome/" %}
 			{% endif %}
+
 			{% for collection in site.collections %}
 				{% if collection.output %}
 					{% assign parts = url | split: "/" %}
 					<li class="nav-item top-level {% if parts[1] == collection.active_prefix %}current{% endif %}">
 						{% assign items = collection.docs | sort: 'order' %}
 						<a href="{{ items.first.url }}">{{ collection.title }}</a>
-						{% include secondary-nav-items.html items=items %}
+						<ul>
+							{% for item in items %}
+								<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+							{% endfor %}
+						</ul>
 					</li>
 				{% endif %}
 			{% endfor %}
