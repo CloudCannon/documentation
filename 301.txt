@@ -13,3 +13,4 @@
 /hosting/custom-domains/ /domains/custom-domains/
 /hosting/highlighting-active-links/ /hosting/active-links/
 /sharing/password-sharing/ /sharing/client-sharing/
+/creative_2.zip /creative-guide.zip

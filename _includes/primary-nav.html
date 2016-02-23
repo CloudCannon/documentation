@@ -7,8 +7,7 @@
 			{% if url == "/" %}
 				{% assign url = "/overview/welcome/" %}
 			{% endif %}
-			{% for item in site.collections %}
-				{% assign collection = item[1] %}
+			{% for collection in site.collections %}
 				{% if collection.output %}
 					{% assign parts = url | split: "/" %}
 					<li class="nav-item top-level {% if parts[1] == collection.active_prefix %}current{% endif %}">
