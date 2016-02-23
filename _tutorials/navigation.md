@@ -1,5 +1,6 @@
 ---
 title: Navigation
+order: 3
 heading: Navigation in Jekyll
 duplicate_content: http://jekyll.tips/tutorials/navigation/
 ---

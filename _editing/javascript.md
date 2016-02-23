@@ -1,5 +1,6 @@
 ---
 title: JavaScript
+order: 11
 ---
 
 The CloudCannon editor works with JavaScript, as long as the editable content is in the DOM on page load.

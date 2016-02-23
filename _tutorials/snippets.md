@@ -1,5 +1,6 @@
 ---
 title: Snippets
+order: 9
 heading: Jekyll Snippets
 duplicate_content: http://jekyll.tips/tutorials/snippets/
 ---

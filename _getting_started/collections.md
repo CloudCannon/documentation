@@ -35,7 +35,7 @@ Head over to the Collections tab in CloudCannon, you'll see it's detected the Se
 
 ![Collections](/img/guide/collections/collections.png){: .screenshot}
 
-Open up our Web Design item. You can easily manage this service using the visual editor. Let's add an image to Web Design. I'm going to use a free flat icon set you can [download here](/flaticons_squidink.zip).
+Open up our Web Design item. You can easily manage this service using the visual editor. Let's add an image to Web Design. I'm going to use a free flat icon set you can [download here](/flaticons-squidink.zip).
 
 Click **Add Image Path** and upload an appropriate icon.
 

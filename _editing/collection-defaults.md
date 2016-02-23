@@ -1,5 +1,6 @@
 ---
 title: Collection Defaults
+order: 9
 ---
 This feature is only available on Jekyll sites.
 {: .info}

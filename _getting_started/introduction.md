@@ -9,7 +9,7 @@ This guide will give you a step-by-step introduction to Jekyll and CloudCannon. 
 
 Jekyll is a static site generator. It takes source files and generates an entirely static website. This is different from how a typical CMS such as Wordpress works. With Wordpress when a visitor goes to a page, that page is generated on the fly. With Jekyll, the entire website is generated upfront so visitors are simply served static files.
 
-![Jekyll Logo](/img/logo-2x.png)
+![Jekyll Logo](/img/jekyll-logo.png)
 
 ### Why use Jekyll?
 

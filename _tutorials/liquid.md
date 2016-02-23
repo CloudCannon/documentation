@@ -1,5 +1,6 @@
 ---
 title: Liquid
+order: 2
 heading: Liquid in Jekyll
 duplicate_content: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 ---
