@@ -1,6 +1,6 @@
 ---
-title: Non Developers
-order: 1
+title: Non-Developers
+order: 3
 ---
 
 The non-developer share level is for sharing a site with users who are non-technical. They do not see the *Code Editor* or *File Browser* interfaces.

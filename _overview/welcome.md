@@ -3,26 +3,31 @@ title: Welcome
 order: 1
 permalink: /
 ---
-## What is CloudCannon?
 
-CloudCannon is a cloud based CMS and hosting provider for static and [Jekyll](http://jekyllrb.com) websites. CloudCannon manages the technical details of deploying and scaling websites and provides an easy-to-use interface for non-developers to make content updates.
+CloudCannon is a cloud-based CMS and hosting provider for static and [Jekyll](http://jekyllrb.com) websites. CloudCannon manages the technical details of deploying and scaling websites and provides an easy-to-use interface for non-developers to make content updates.
 
-<p class="videoWrapper"><iframe width="420" height="315" src="https://www.youtube.com/embed/W9GaCEm4bHo" frameborder="0" allowfullscreen></iframe></p>
+<p class="video-wrapper"><iframe width="420" height="315" src="https://www.youtube.com/embed/W9GaCEm4bHo" frameborder="0" allowfullscreen></iframe></p>
 
-## Who is CloudCannon for?
+---
 
-CloudCannon allows non-technical teams to take control of their website and developers to build websites faster. Agencies are using CloudCannon to deliver updatable websites to clients. Enterprises have their marketing teams update websites without interrupting developers.
+### Who is CloudCannon for?
 
-## What is Jekyll?
+CloudCannon allows non-technical teams to take control of their website and developers to build websites faster. Freelancers and agencies use CloudCannon to deliver updatable websites to clients. Enterprise marketing teams update websites without interrupting developers.
+
+---
+
+### What is Jekyll?
 
 Jekyll is a static site generator. Jekyll takes your content written in HTML, Markdown and other markup languages, passes it through templates and outputs a static website.
 
 Jekyll enables features you would normally need a backend for. Including: blogging, photo galleries, includes and layouts.
 
-CloudCannon runs Jekyll version **2.4.0**
+CloudCannon runs Jekyll version **2.4.0**, **2.5.3** and **3.0.3**.
 {: .info}
 
-## Using CloudCannon
+---
+
+### Using CloudCannon
 
 Getting a website online and updatable is easy with CloudCannon.
 

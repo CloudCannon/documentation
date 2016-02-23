@@ -18,7 +18,7 @@ The customisable pages are listed below, with parameters and working examples.
 
 ---
 
-## Password Login
+### Password Login
 
 | **Filename**        | login.html          |
 | **Form action**     |                     |
@@ -67,7 +67,7 @@ CloudCannon require a hidden username input here for internal reasons. The value
 
 ---
 
-## User Account Login
+### User Account Login
 
 | **Filename**        | login.html          |
 | **Form action**     |                     |
@@ -116,7 +116,7 @@ CloudCannon require a hidden username input here for internal reasons. The value
 
 ---
 
-## Set Password
+### Set Password
 
 | **Filename**        | set-password.html                                                       |
 | **Form action**     | /set-password                                                           |
@@ -187,7 +187,7 @@ CloudCannon require a hidden username input here for internal reasons. The value
 
 ---
 
-## Reset Password
+### Reset Password
 
 | **Filename**        | reset-password.html       |
 | **Form action**     | /reset-password           |

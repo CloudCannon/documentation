@@ -1,6 +1,10 @@
 ---
 title: Front Matter
 order: 5
+requirements:
+  build: Jekyll
+  plan: Free
+  hosting: Any
 examples:
   - title: Text field
     details: Single line field for text. Displayed for short text variables.
@@ -122,9 +126,6 @@ examples:
       - /img/editing/front-matter/array.png
       - /img/editing/front-matter/array-active.png
 ---
-
-This feature is only available on Jekyll sites.
-{: .info}
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
 Variables are defined in YAML between triple dashed lines at the top of a file.

@@ -1,16 +1,17 @@
 ---
 title: Internationalisation
 order: 2
+requirements:
+  build: Any
+  plan: Enterprise
+  hosting: CloudCannon
 ---
-
-Internationalisation is only available on CloudCannon Enterprise and sites hosted by CloudCannon.
-{: .info}
 
 CloudCannon Internationalisation allows you to serve your site in different languages based on the viewers browser settings.
 
-***
+---
 
-## Tagging content for translation
+### Tagging content for translation
 
 Firstly we must add a key to each element we want internationalised. To do this add a `data-i18n` attribute with a unique key. For example:
 
@@ -18,9 +19,9 @@ Firstly we must add a key to each element we want internationalised. To do this 
 <h2 class="editable" data-il8n="welcome_message">Hello, welcome to my website</h2>
 {% endhighlight %}
 
-***
+---
 
-## Obtaining the current locale
+### Obtaining the current locale
 
 Once you have tagged the elements that need translation, CloudCannon can generate a lookup of the content. CloudCannon supports three file extensions: `.json`, `.yml` and `.properties`. These files are called locales.
 
@@ -41,9 +42,9 @@ To obtain the current locale you can visit any of these URLs on your site:
 	</li>
 </ul>
 
-***
+---
 
-## Providing alternative locales
+### Providing alternative locales
 Once you have the current locale you can start creating new ones. For each new locale:
 
 1. Create the file with your chosen format (either `.yml`, `.json` or `.properties`).
@@ -70,9 +71,9 @@ Here are some example locales:
 
 CloudCannon will now generate a new version of the HTML per locale and route visitors based on their accept-language header and country.
 
-***
+---
 
-## Detecting the current locale
+### Detecting the current locale
 
 CloudCannon automatically injects the viewers locale into the HTML elements class as it is served. If a site has en_NZ support and the viewer accepts that language it will look like:
 

@@ -7,6 +7,8 @@ duplicate_content: http://jekyll.tips/tutorials/search/
 
 Full-text searching is possible with Jekyll. We’ll demonstrate a number of techniques, each with their own pros and cons. In these examples we'll be searching blog posts but it could easily be a Collection or Data File.
 
+---
+
 ### Client Side Search
 
 Client side search is a good technique because it's fast for small data sets, you don't need to use a third party and you have complete control of how the results are displayed and what data is searched. However, this method is very slow on large data sets.
@@ -216,6 +218,8 @@ jQuery(function() {
 {% endraw %}
 {% endhighlight %}
 
+---
+
 ### TapirGo
 
 TapirGo is free, third party service provided by [80Beans](http://www.80beans.com/) for searching RSS feeds.
@@ -251,6 +255,8 @@ jQuery(function() {
 Replace YOUR_TOKEN_HERE with the token Tapirgo gives you when you sign up.
 
 That's it! The full results of the search query will display on your site.
+
+---
 
 ### Google Search
 

@@ -1,10 +1,11 @@
 ---
 title: Data Files
 order: 8
+requirements:
+  build: Jekyll
+  plan: Free
+  hosting: Any
 ---
-
-This feature is only available on Jekyll sites.
-{: .info}
 
 Data files are YAML, JSON or CSV files located in the `_data` directory.
 

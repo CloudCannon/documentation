@@ -1,9 +1,11 @@
 ---
 title: Form Submissions
 order: 6
+requirements:
+  build: Any
+  plan: Free
+  hosting: CloudCannon
 ---
-Only available for sites hosted by CloudCannon
-{: .info}
 
 Add a contact form to your site.
 

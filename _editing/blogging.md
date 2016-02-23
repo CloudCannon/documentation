@@ -1,10 +1,11 @@
 ---
 title: Blogging
 order: 6
+requirements:
+  build: Jekyll
+  plan: Free
+  hosting: Any
 ---
-
-This feature is only available on Jekyll sites.
-{: .info}
 
 Create and manage Jekyll blogs with CloudCannon.
 

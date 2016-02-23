@@ -1,10 +1,11 @@
 ---
 title: Collections
 order: 7
+requirements:
+  build: Jekyll
+  plan: Free
+  hosting: Any
 ---
-
-This feature is only available on Jekyll sites.
-{: .info}
 
 Manage your Jekyll collections with ease in CloudCannon.
 

@@ -1,15 +1,19 @@
 ---
 title: Custom Domains
 order: 2
+requirements:
+  build: Any
+  plan: Free
+  hosting: CloudCannon
 ---
 
-Only available for sites hosted by CloudCannon. Using a custom domain requires you to purchase one from an external domain registrar. We recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains).
 {: .info}
 
 To add a custom domain:
 
-1. Go to the *Domain* section in *Site Settings*.
-2. Enter the domain name with or without a subdomain
+1. Purchase a domain from a domain registrar (we recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
+2. Go to the *Domain* section in *Site Settings*
+3. Enter the domain name with or without a subdomain
 
 ![Site settings domain tab with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
 
@@ -18,7 +22,7 @@ To add a custom domain:
 
 ---
 
-## Configuring your domain
+### Configuring your domain
 
 All changes to a domains DNS can take up to 48 hours to propagate. This is the upper range and depends on the previous TTL set on the domain. To test your site is configured correctly use the [pingdom DNS checker](http://dnscheck.pingdom.com/).
 {: .warning}

@@ -15,9 +15,9 @@ To remove authentication for your site:
 
 ![No authentication](/img/authentication/none.png){: .screenshot}
 
-***
+---
 
-## Free Plan Sites
+### Free Plan Sites
 
 All sites on the free plan will have a splash screen before visitors can see your site.
 

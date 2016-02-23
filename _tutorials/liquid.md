@@ -23,7 +23,9 @@ There are two types of markup in Liquid: Output and Tag.
 {% endraw %}
 {% endhighlight xml %}
 
-## Output
+---
+
+### Output
 
 Here is a simple example of Output:
 
@@ -35,7 +37,7 @@ Hello {{ 'tobi' }}
 {% endraw %}
 {% endhighlight %}
 
-### Advanced output: Filters
+#### Advanced output: Filters
 
 Output markup takes filters.  Filters are simple methods.  The first parameter
 is always the output of the left side of the filter.  The return value of the
@@ -51,7 +53,7 @@ Hello {{ 'now' | date: "%Y %h" }}
 {% endraw %}
 {% endhighlight %}
 
-### Standard Filters
+#### Standard Filters
 
 * **date** - reformat a date ([syntax reference](http://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date))
 * **capitalize** - capitalize words in the input sentence
@@ -85,7 +87,9 @@ Hello {{ 'now' | date: "%Y %h" }}
 * **split** - split a string on a matching pattern *e.g.* `{% raw %}{{ "a~b" | split:"~" }} #=> ['a','b']{% endraw %}`
 * **modulo** - remainder, *e.g.* `{% raw %}{{ 3 | modulo:2 }} #=> 1{% endraw %}`
 
-## Tags
+---
+
+### Tags
 
 Tags are used for the logic in your template.
 
@@ -104,7 +108,7 @@ Here is a list of currently supported tags:
 * **raw** - temporarily disable tag processing to avoid syntax conflicts.
 * **unless** - Mirror of if statement
 
-### Comments
+#### Comments
 
 {% raw %}
 Any content that you put between `{% comment %}` and `{% endcomment %}` tags is turned into a comment.
@@ -116,7 +120,7 @@ We made 1 million dollars {% comment %} in losses {% endcomment %} this year
 {% endraw %}
 {% endhighlight %}
 
-### Raw
+#### Raw
 
 Raw temporarily disables tag processing.
 This is useful for generating content (eg, Mustache, Handlebars) which uses conflicting syntax.
@@ -131,7 +135,7 @@ This is useful for generating content (eg, Mustache, Handlebars) which uses conf
 {% endraw %}{{b}}% endraw %{{a}}
 {% endhighlight %}
 
-### If / Else
+#### If / Else
 
 `if / else` should be well-known from any other programming language.
 Liquid allows you to write simple expressions in the `if` or `unless` (and
@@ -238,7 +242,7 @@ optionally, `elsif` and `else`) clause:
 {% endraw %}
 {% endhighlight %}
 
-### Case Statement
+#### Case Statement
 
 If you need more conditions, you can use the `case` statement:
 
@@ -270,7 +274,7 @@ hit 2 or 3
 {% endraw %}
 {% endhighlight %}
 
-### Cycle
+#### Cycle
 
 Often you have to alternate between different colors or similar tasks.  Liquid
 has built-in support for such operations, using the `cycle` tag.
@@ -317,7 +321,7 @@ one
 two
 {% endhighlight %}
 
-### For loops
+#### For Loops
 
 Liquid allows `for` loops over collections:
 
@@ -403,7 +407,7 @@ A for loop can take an optional `else` clause to display a block of text when th
 {% endraw %}
 {% endhighlight %}
 
-### Variable Assignment
+#### Variable Assignment
 
 You can store data in your own variables, to be used in output or other tags as
 desired.  The simplest way to create a variable is with the `assign` tag, which

@@ -7,29 +7,29 @@ duplicate_content: http://jekyll.tips/tutorials/snippets/
 
 Handy snippets of Jekyll code:
 
-## Dates
+---
 
-### Month, day, year
+### Dates
+
+#### Month, day, year
 {% highlight liquid %}
 {% raw %}
 {{ page.date | date: "%B %-d, %Y" }}
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### Current year
+#### Current year
 {% highlight liquid %}
 {% raw %}
 {{ site.time | date: '%Y' }}
 {% endraw %}
 {% endhighlight %}
 
-***
+---
 
-## Posts
+### Posts
 
-### Next Post
+#### Next Post
 
 {% highlight html %}
 {% raw %}
@@ -41,9 +41,7 @@ Handy snippets of Jekyll code:
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### List Posts
+#### List Posts
 
 {% highlight html %}
 {% raw %}
@@ -58,9 +56,7 @@ Handy snippets of Jekyll code:
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### List Posts by year
+#### List Posts by year
 
 {% highlight html %}
 {% raw %}
@@ -77,9 +73,7 @@ Handy snippets of Jekyll code:
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### Posts Pagination
+#### Posts Pagination
 
 Shows `<span>` elements for non-linked pages and `<a>` elements for active links. Automatically accounts for Jekyll's pagination problem where there is no `page1` with a special `if` statement (for when `page == 2`).
 
@@ -104,9 +98,7 @@ Shows `<span>` elements for non-linked pages and `<a>` elements for active links
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### Post List with Content
+#### Post List with Content
 
 {% highlight html %}
 {% raw %}
@@ -124,9 +116,7 @@ Shows `<span>` elements for non-linked pages and `<a>` elements for active links
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### Reading Time
+#### Reading Time
 
 Paste within a post layout. Change `content` to `page.content` if used within a layout file.
 
@@ -141,9 +131,7 @@ Paste within a post layout. Change `content` to `page.content` if used within a 
 {% endraw %}
 {% endhighlight %}
 
-***
-
-### Related Posts
+#### Related Posts
 
 {% highlight html %}
 {% raw %}

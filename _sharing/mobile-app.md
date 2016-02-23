@@ -17,7 +17,7 @@ You can save CloudCannon to your home screen for your non-password users.
 
 ---
 
-## Icons
+### Icons
 
 The icons are dependent on your target device.
 
@@ -29,7 +29,7 @@ Follow the style guidelines for each platform for the best effect.
 
 ---
 
-## iOS
+### iOS
 
 To add a page to your home screen in Mobile Safari:
 
@@ -46,7 +46,7 @@ Your client now has an app to edit their website without the browser controls.
 
 ---
 
-## Android
+### Android
 
 To add a page to your home screen in Mobile Chrome:
 

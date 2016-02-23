@@ -1,10 +1,11 @@
 ---
 title: White Labeling
 order: 4
+requirements:
+  build: Any
+  plan: Agency
+  hosting: Any
 ---
-
-White Labeling is only available on the Agency and Enterprise plans.
-{: .info}
 
 Remove all CloudCannon logos and brand it as your own.
 

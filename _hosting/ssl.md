@@ -3,23 +3,23 @@ title: SSL
 order: 8
 ---
 
-## What's SSL?
+### What is SSL?
 
 SSL is a way of ensuring all the data passed between a website visitor and the server remains private. For websites with login passwords and private data, SSL is essential. For static websites it's not so important as the website is already public. However, for visitors there's an extra level of trust from seeing the padlock in their browser.
 
 ![browser bar](/img/ssl/1_a.png)
 
-## What's CloudFlare?
+### What is CloudFlare?
 
 CloudFlare is service which works as a reverse proxy for your website. What that means is when someone visits your website, the request will go to CloudFlare, then CloudFlare will download the website from the hosting provider and serve it to the user.
 
 The advantage of doing this is CloudFlare does many performance and security enhancements so your website will load faster and be more immune to malicious attacks. They've also recently added free SSL support.
 
-## Why should I care?
+### Why should I care?
 
 Google recently [announced](http://googlewebmastercentral.blogspot.co.nz/2014/08/https-as-ranking-signal.html) that it will prioritize sites that use SSL. Web designers should be approaching clients about SSL to ensure that their clients sites continue to rank well. Given that CloudFlare offers SSL for free AND you get the malicious traffic buffer of their CDN, using it is almost a no-brainer.
 
-## Adding SSL
+### Adding SSL
 
 First off, head over to CloudFlare and register a new account:
 

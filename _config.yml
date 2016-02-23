@@ -7,6 +7,21 @@ author:
   name: CloudCannon
   email: support@cloudcannon.com
 
+builds:
+  - Any
+  - Static
+  - Jekyll
+
+plans:
+  - Free
+  - Basic
+  - Agency
+  - Enterprise
+
+hostings:
+  - Any
+  - CloudCannon
+
 collections:
   overview:
     title: Overview

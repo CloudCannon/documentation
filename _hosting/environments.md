@@ -1,10 +1,11 @@
 ---
 title: Environments
 order: 9
+requirements:
+  build: Jekyll
+  plan: Free
+  hosting: Any
 ---
-
-This feature is only available on Jekyll sites.
-{: .info}
 
 Environments allow you to use different values in your website depending on where it is deployed.
 For example, you could use a different CDN for your development, staging and production sites.

@@ -1,10 +1,11 @@
 ---
 title: Pretty URLs
 order: 4
+requirements:
+  build: Any
+  plan: Free
+  hosting: CloudCannon
 ---
-
-Only available for sites hosted by CloudCannon
-{: .info}
 
 Remove the `.html` extensions in the URLs on your site.
 

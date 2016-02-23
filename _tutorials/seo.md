@@ -11,6 +11,8 @@ Starter Guide](http://static.googleusercontent.com/media/www.google.com/en/us/we
 
 We'll be covering the `<title>` and `<meta>` description tags, improving the structure of URLs, adding a site map and custom 404 pages.
 
+---
+
 ### Title and Descriptions
 
 We can make `<title>` and `<meta>` description tags easily editable using Front Matter.
@@ -59,6 +61,7 @@ If you're using [CloudCannon](http://cloudcannon.com), your non-developers can e
 
 ![Front Matter on CloudCannon](/img/tutorials/seo/front_matter.png)
 
+---
 
 ### Improving the Structure of URLs
 
@@ -100,6 +103,8 @@ collections:
 ...
 {% endraw %}
 {% endhighlight %}
+
+---
 
 ### Sitemap
 
@@ -221,12 +226,15 @@ url: http://mysite.com
 {% endraw %}
 {% endhighlight %}
 
+---
+
 ### Custom 404 Pages
 
 This is more of a best practice. Custom 404 Pages in Jekyll can help users navigate your site if they've gone to a page that doesn't exist. Create `404.html` with the content for your 404 page. You can use Front Matter, liquid and layouts as normal.
 
 [GitHub Pages](https://pages.github.com), [CloudCannon](http://cloudcannon.com) and the Jekyll Server will show 404.html when they can't find a page. Any other services may require configuration to get custom 404 pages working.
 
+---
 
 ### Tips for Content
 

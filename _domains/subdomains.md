@@ -1,10 +1,11 @@
 ---
 title: Subdomains
 order: 3
+requirements:
+  build: Any
+  plan: Free
+  hosting: CloudCannon
 ---
-
-Only available for sites hosted by CloudCannon
-{: .info}
 
 Adding a subdomain is the same as adding a [Custom Domain](/domains/custom-domains/). To add a subdomain:
 
@@ -18,7 +19,7 @@ If your domain is **example.com**, adding **www.** to the front defines **www** 
 
 ---
 
-## Multiple Subdomains
+### Multiple Subdomains
 
 When there are multiple sites with subdomains on the same domain, a subdomain is delegated as the main domain. All unallocated subdomains redirect to the sites with the main domain. For example:
 

@@ -10,7 +10,7 @@ To stop serving content on this domain, add [Password Authentication](/authentic
 
 ---
 
-## Agency Domains
+### Agency Domains
 
 To brand agency sites to share with clients:
 

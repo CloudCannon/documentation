@@ -11,7 +11,7 @@ Once a user is authenticated, they can log out at `<your-domain>/logout`. You ca
 
 ---
 
-## Custom Routes
+### Custom Routes
 
 CloudCannon sets a cookie when the user is authenticated.
 Use this to show the log out button for authenticated users on public pages, and hide it otherwise.

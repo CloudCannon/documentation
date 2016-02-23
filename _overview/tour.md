@@ -13,7 +13,7 @@ This website started off as a free HTML5 template. It's been converted to a Jeky
 
 For a full guide how to convert a HTML5 template to a Jekyll site check out our [Getting Started Guide](/getting_started/introduction/).
 
-## CloudCannon Overview
+### CloudCannon Overview
 
 Sign up for a CloudCannon account.
 

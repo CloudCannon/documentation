@@ -1,6 +1,10 @@
 ---
 title: Client Sharing
-order: 3
+order: 1
+requirements:
+  build: Any
+  plan: Basic
+  hosting: Any
 ---
 
 Share your site with your clients without them having to create a CloudCannon account and use a seat on your pricing plan.
@@ -11,7 +15,9 @@ Go to the Client Sharing tab in site settings and enter a password:
 
 Send your clients the website URL with **/update** on the end (e.g. `http://mysite.com/update`) and have them enter the password. Once they've logged in, your client gets a stripped back interface for editing content on their site.
 
-## Interface
+---
+
+### Interface
 
 Customise the interface for your clients. You can provide documentation and support URLs. The support URL can be a `mailto:` link.
 

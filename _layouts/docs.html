@@ -36,9 +36,28 @@ layout: default
 		{% endif %}
 	</div>
 	<article class="content">
-		{% if page.warning %}
-			<p class="warning">{{ page.warning }}</p>
+		{% assign requirements = "" %}
+
+		{% if page.requirements.build == 'Jekyll' %}
+			{% assign requirements = requirements | append: ' for Jekyll sites' %}
 		{% endif %}
+
+		{% if page.requirements.hosting == 'CloudCannon' %}
+			{% assign requirements = requirements | append: ' with CloudCannon hosting' %}
+		{% endif %}
+
+		{% if page.requirements.plan == 'Basic' %}
+			{% assign requirements = requirements | append: ' on the Basic, Agency and Enterprise plans' %}
+		{% elsif page.requirements.plan == 'Agency' %}
+			{% assign requirements = requirements | append: ' on the Agency and Enterprise plans' %}
+		{% elsif page.requirements.plan == 'Enterprise' %}
+			{% assign requirements = requirements | append: ' on the Enterprise plan' %}
+		{% endif %}
+
+		{% if requirements != "" %}
+			<p class="info">Available{{ requirements }}.</p>
+		{% endif %}
+
 		{{ content }}
 	</article>
 </section>

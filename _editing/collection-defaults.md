@@ -1,9 +1,11 @@
 ---
 title: Collection Defaults
 order: 9
+requirements:
+  build: Jekyll
+  plan: Free
+  hosting: Any
 ---
-This feature is only available on Jekyll sites.
-{: .info}
 
 Provide default front matter and/or content for new drafts and collection items.
 Defaults for collection item files are copied from `_defaults.md` in the root collection folder.
