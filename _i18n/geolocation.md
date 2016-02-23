@@ -1,5 +1,6 @@
 ---
 title: Geolocation
+order: 1
 ---
 
 Geolocation is only available on CloudCannon Enterprise and sites hosted by CloudCannon.

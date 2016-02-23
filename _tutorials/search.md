@@ -1,5 +1,6 @@
 ---
 title: Search
+order: 7
 heading: Search in Jekyll
 duplicate_content: http://jekyll.tips/tutorials/search/
 ---

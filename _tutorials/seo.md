@@ -1,5 +1,6 @@
 ---
 title: SEO
+order: 8
 heading: SEO in Jekyll
 duplicate_content: http://jekyll.tips/tutorials/seo/
 ---

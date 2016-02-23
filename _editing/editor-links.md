@@ -1,5 +1,6 @@
 ---
 title: Editor Links
+order: 10
 ---
 
 Editor Links allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site.

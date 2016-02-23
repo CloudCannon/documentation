@@ -10,7 +10,7 @@ You do not need to learn _all_ of Jekyll to get started. A Jekyll site starts as
 
 We'll be using one of the thousands of free HTML templates for this guide. Of course, you can easily build your website from scratch using any CSS or JavaScript framework you desire. One of the big advantages of using Jekyll is you have complete control over all the source code.
 
-Download and unzip the [Creative Template](/creative_2.zip).
+Download and unzip the [Creative Template](/creative-jekyll.zip).
 
 ### Running Jekyll
 

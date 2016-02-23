@@ -1,5 +1,6 @@
 ---
 title: Internationalisation
+order: 2
 ---
 
 Internationalisation is only available on CloudCannon Enterprise and sites hosted by CloudCannon.

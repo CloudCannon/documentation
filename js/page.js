@@ -1,47 +1,39 @@
 (function (window) {
-	var events = {};
-
-	events.record = function (eventName) {
-	    ga('send', {
-			  'hitType': 'event',
-			  'eventCategory': eventName,
-			  'eventAction': 'event actioned'
+	window.eventsWrapper = {
+		record: function (eventName) {
+			ga("send", {
+				hitType: "event",
+				eventCategory: eventName,
+				eventAction: "event actioned"
 			});
-    };
-
-    window.eventsWrapper = events;
+		}
+	};
 }(window));
 
-var recordThemeClick = function() {
-    var attribute = this.getAttribute("data-theme-name");
+var recordThemeClick = function () {
+	var attribute = this.getAttribute("data-theme-name"),
+		action = this.getAttribute("class") === "download-link" ? "Downloaded " : "GitHub ";
 
-		if (this.getAttribute('class') == 'download-link') {
-			window.eventsWrapper.record('Downloaded ' + attribute);
-		} else {
-			window.eventsWrapper.record('GitHub ' + attribute);
-		}
+	window.eventsWrapper.record(action + attribute);
 };
 
-var download_link = document.getElementsByClassName("download-link");
+var recordServiceClick = function () {
+	var attribute = this.getAttribute("data-service-name");
 
-for (var i=0; i<download_link.length; i++){
-    download_link[i].addEventListener('click', recordThemeClick);
-}
-
-var github_link = document.getElementsByClassName("github-link");
-
-for (var i=0; i<github_link.length; i++){
-    github_link[i].addEventListener('click', recordThemeClick);
-}
-
-var recordServiceClick = function() {
-    var attribute = this.getAttribute("data-service-name");
-
-		window.eventsWrapper.record('Clicked Service ' + attribute);
+	window.eventsWrapper.record("Clicked Service " + attribute);
 };
 
-var service_link = document.getElementsByClassName("service-link");
+var downloadLinks = document.getElementsByClassName("download-link");
+for (var i = 0; i < downloadLinks.length; i++){
+	downloadLinks[i].addEventListener("click", recordThemeClick);
+}
 
-for (var i=0; i<service_link.length; i++){
-    service_link[i].addEventListener('click', recordServiceClick);
+var githubLinks = document.getElementsByClassName("github-link");
+for (var i = 0; i < githubLinks.length; i++){
+	githubLinks[i].addEventListener("click", recordThemeClick);
+}
+
+var serviceLinks = document.getElementsByClassName("service-link");
+for (var i = 0; i < serviceLinks.length; i++){
+	serviceLinks[i].addEventListener("click", recordServiceClick);
 }
