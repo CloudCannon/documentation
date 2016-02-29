@@ -33,7 +33,7 @@ Editable text elements provide an interface to update text and format with bold,
 
 ---
 
-### Inline Elements: span, strong, em
+### Inline Elements: span, strong, em, th, td
 
 Editable inline elements provide an interface to update smaller sections of text without formatting.
 
