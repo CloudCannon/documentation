@@ -102,6 +102,31 @@ examples:
     image_paths:
       - /img/editing/front-matter/select.png
       - /img/editing/front-matter/select-focus.png
+  - title: Multiselect
+    details: |
+      Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. There are two ways to populate the options:
+
+      The first is from an array in `_config.yml`:
+
+      ~~~yaml
+      styles:
+        - Red
+        - Blue
+        - Green
+      ~~~
+
+      The second is with [Collection](/editing/collections/) item names.
+
+      Displayed for variables with keys matching the name of a collection or array set in `_config.yml`.
+    yaml: |
+      ---
+      styles:
+        - Green
+        - Blue
+      ---
+    image_paths:
+      - /img/editing/front-matter/multiselect.png
+      - /img/editing/front-matter/multiselect-focus.png
   - title: Object
     details: Button that navigates to grouped data. Displayed for variables with an object as the value.
     yaml: |

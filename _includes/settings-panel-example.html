@@ -1,6 +1,6 @@
 <div class="settings-panel-example">
 	<div class="details">
-		<h3>{{ include.example.title }}</h3>
+		<h3 id="{{ include.example.title | slugify }}">{{ include.example.title }}</h3>
 
 		{{ include.example.details | markdownify }}
 
