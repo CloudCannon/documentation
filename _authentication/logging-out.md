@@ -1,6 +1,10 @@
 ---
 title: Logging Out
 order: 7
+requirements:
+  build: Any
+  plan: Free
+  hosting: CloudCannon
 ---
 
 Once a user is authenticated, they can log out at `<your-domain>/logout`. You can provide a log out button on your authenticated pages with this link.

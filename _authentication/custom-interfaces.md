@@ -1,15 +1,19 @@
 ---
 title: Custom Interfaces
 order: 5
+requirements:
+  build: Any
+  plan: Free
+  hosting: CloudCannon
 ---
-
-CloudCannon provides default, white-labelled pages for authentication.
-{: .info}
 
 You can create your own custom branded pages for authentication. Each page is different, but the process is the same:
 
 1. Create the relevant file in the root folder of your site
 2. Add the HTML for the page
+
+CloudCannon provides default, white-labelled pages for authentication.
+{: .info}
 
 CloudCannon injects classes into the HTML to indicate the result of the action. They are injected into `{% raw %}{{messageClasses}}{% endraw %}`.
 Use these classes to provide error handling and success notifications in your forms.
@@ -25,7 +29,7 @@ The customisable pages are listed below, with parameters and working examples.
 | **Form inputs**     | username, password  |
 | **Message classes** | has-incorrect-login |
 
-CloudCannon require a hidden username input here for internal reasons. The value is ignored.
+CloudCannon requires a hidden username input here for internal reasons. The value is ignored.
 {: .warning}
 
 {% highlight html %}

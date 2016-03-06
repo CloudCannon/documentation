@@ -1,11 +1,11 @@
 ---
 title: Custom Routes
 order: 6
+requirements:
+  build: Any
+  plan: Basic
+  hosting: CloudCannon
 ---
-
-Custom Routes are only available on the CloudCannon Basic plan and above and sites hosted by CloudCannon.
-{: .info}
-{: .warning}
 
 Custom routes allow you to specify the routes you want authenticated, and keep the rest public.
 This feature is ideal for staff or special subscriber sections of your site.

@@ -1,10 +1,11 @@
 ---
 title: Password
 order: 2
+requirements:
+  build: Any
+  plan: Basic
+  hosting: CloudCannon
 ---
-
-Password Authentication is only available on the CloudCannon Basic plan and above and sites hosted by CloudCannon.
-{: .info}
 
 Password authentication restricts access to your site by prompting viewers to enter a password.
 
