@@ -1,16 +1,30 @@
+body {
+	height: auto;
+
+	@media (min-width: $mobile-break) {
+		padding: 0 0 0 $nav-width;
+		&::after {
+			content: "";
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: $nav-width;
+			background-color: $nav-background-color;
+		}
+	}
+}
+
 header {
 	display: none;
-	position: fixed;
-	left: 0;
+	position: absolute;
 	top: $mobile-nav-height;
-	bottom: 0;
+	left: 0;
 	right: 0;
-	text-align: left;
-	background-color: $nav-background-color;
-	overflow-y: auto;
+	bottom: 0;
 	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
 	z-index: 1;
+	background-color: $nav-background-color;
 
 	ul {
 		padding: 0;
@@ -22,43 +36,32 @@ header {
 	}
 
 	@media (min-width: $mobile-break) {
-		& {
-			display: block;
-			width: $nav-width;
-			top: 0;
-			padding: 0;
-		}
+		background-color: transparent;
+		display: block;
+		width: $nav-width;
+		top: 0;
+		bottom: auto;
 
 		h1 {
-			display: -webkit-flex;
-			display: flex;
-			-webkit-flex-direction: column;
-			flex-direction: column;
-			-webkit-justify-content: center;
-			justify-content: center;
-
+			@include display-flex();
+			@include flex-direction(row);
+			@include align-items(center);
 			padding: $space;
-			background-color: $nav-header-background-color;
-			height: 205px;
-			box-sizing: border-box;
 			margin: 0;
-			font-size: 19px;
+			font-size: 1.9rem;
 			line-height: 0.8;
-			color: #FFF;
 			letter-spacing: 0;
-			font-weight: 400;
+			font-weight: 600;
 			text-indent: 0;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 
 			img {
-				width: 135px;
-				padding-left: 2px;
+				width: 24px;
+				padding: 12px 8px;
+				background: #26ABE2;
+				border-radius: 2px;
+				margin-right: 10px;
 			}
-		}
-
-		&,
-		h1 {
-			box-shadow: inset -10px 0px 10px -10px rgba(0, 0, 0, 0.15);
 		}
 	}
 }
@@ -71,8 +74,8 @@ header {
 
 .content,
 .page-header {
-	margin: $space auto 1.75em auto;
-	padding: 0 $space;
+	margin: 50px auto;
+	padding: 0 $space + 5;
 	max-width: $content-max-width;
 }
 
@@ -82,7 +85,7 @@ header {
 	h2,
 	h3 {
 		margin: 0;
-		line-height: 1.1;
+		line-height: 1.2;
 	}
 
 	h2 {
@@ -111,10 +114,8 @@ header {
 	$emblem-vertical-padding: ($mobile-nav-height - $emblem-size) / 2;
 	$emblem-horizontal-padding: $space;
 
-	display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
+	@include display-flex;
+	@include align-items(center);
 	padding: $emblem-vertical-padding $emblem-horizontal-padding;
 	height: $mobile-nav-height;
 	background-color: $mobile-nav-background-color;
@@ -136,7 +137,7 @@ header {
 		display: inline-block;
 		margin: 0 0 0 20px;
 		line-height: 1;
-		font-size: 2rem;
+		font-size: 1.9rem;
 		color: white;
 		letter-spacing: -1px;
 	}
@@ -216,7 +217,7 @@ nav {
 	}
 
 	&.top-level > a {
-		line-height: 1.3;
+		line-height: 1.5;
 		font-weight: 600;
 		padding-left: $space;
 	}
@@ -226,18 +227,12 @@ nav {
 	.mobile-nav {
 		display: none;
 	}
-
-	body {
-		padding: 0 0 0 $nav-width;
-	}
 }
 
 .settings-panel-example {
 	@extend p;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
+	@include display-flex();
+	@include flex-direction(column);
 
 	.example {
 		max-width: 300px;
@@ -251,12 +246,10 @@ nav {
 	}
 
 	@media (min-width: 960px) {
-		-webkit-flex-direction: row;
-		flex-direction: row;
+		@include flex-direction(row);
 
 		.details {
-			-webkit-flex: 1;
-			flex: 1;
+			@include flex(1);
 			margin-right: 20px;
 		}
 
@@ -265,8 +258,7 @@ nav {
 		}
 
 		.example {
-			-webkit-flex: 0 0 300px;
-			flex: 0 0 300px;
+			@include flex(0 0 300px);
 			max-width: 100%;
 		}
 	}
@@ -277,10 +269,19 @@ nav {
 	margin-right: 0;
 }
 
-
+// this width is when the content starts centering
 @media (max-width: $nav-width + ($space * 4) + $content-max-width) {
+	.page-header,
+	.content {
+		margin: $space auto 1.75em auto;
+	}
+
 	.warning, .error, .success, .info {
 		margin-left: 0;
 		margin-right: 0;
 	}
+}
+
+h3 + .warning {
+	margin-top: 1.75em;
 }
