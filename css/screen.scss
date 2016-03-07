@@ -15,23 +15,17 @@
 
 $brand-colour: #26ABE2;
 
-$body-background-color: #fff;
-$body-color-secondary: #222;
+$body-background-color: #2B2E31;
 
 $content-max-width: 800px;
-$content-color: $body-color-secondary;
-$content-background-color: $body-background-color;
+$content-color: #222;
+$content-background-color: #fff;
 
 // dark blue #135571
 $nav-header-background-color: $brand-colour;
+$nav-header-height: 60px;
 $nav-background-color: #eee;
 $nav-width: 300px;
-
-$page-header-background: $content-background-color;
-
-$mobile-nav-height: 60px;
-$mobile-nav-padding: 10px;
-$mobile-nav-background-color: $nav-header-background-color;
 
 $mobile-break: 700px;
 $full-width-break: $nav-width + ($space * 4) + $content-max-width;
