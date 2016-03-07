@@ -3,19 +3,22 @@
 $body-background-color: #fff;
 $body-color-secondary: #222;
 
-$content-color: #222;
-$content-background-color: #fff;
+$content-max-width: 800px;
+$content-color: $body-color-secondary;
+$content-background-color: $body-background-color;
 
-$nav-background-color: #135571;
-$nav-color-secondary: #fff;
-$nav-width: 180px;
+// dark blue #135571
+$nav-header-background-color: #26ABE2;
+$nav-background-color: #eee;
+$nav-width: 300px;
 
-$page-header-background: #26ABE2;
+$page-header-background: $content-background-color;
 
 $mobile-nav-height: 60px;
 $mobile-nav-padding: 10px;
+$mobile-nav-background-color: $nav-header-background-color;
 
-$brand-color: #ffd200;
+$mobile-break: 700px;
 
 @import "brand/mixins";
 @import "brand/normalize";
@@ -33,3 +36,4 @@ $brand-color: #ffd200;
 @import "layout";
 @import "changelog";
 @import "logos";
+@import "devices";

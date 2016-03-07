@@ -4,12 +4,10 @@ layout: default
 
 <section class="main">
 	<div class="page-header">
-		<h2>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h2>
+		<h2>{% if page.section %}{{ page.section }}{% else %}Documentation{% endif %}</h2>
+		<h3>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h3>
 	</div>
 	<article class="content">
-		{% if page.warning %}
-			<p class="warning">{{ page.warning }}</p>
-		{% endif %}
 		{{ content }}
 	</article>
 </section>

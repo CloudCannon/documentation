@@ -9,7 +9,7 @@
 			{% endif %}
 
 			{% for collection in site.collections %}
-				{% if collection.output %}
+				{% if collection.output and collection.label != 'posts' %}
 					{% assign parts = url | split: "/" %}
 					<li class="nav-item top-level {% if parts[1] == collection.active_prefix %}current{% endif %}">
 						{% assign items = collection.docs | sort: 'order' %}
@@ -20,6 +20,10 @@
 							{% endfor %}
 						</ul>
 					</li>
+					{% if collection.section_end == true %}
+						</ul>
+						<ul>
+					{% endif %}
 				{% endif %}
 			{% endfor %}
 		</ul>

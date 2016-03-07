@@ -32,6 +32,7 @@ collections:
     title: Getting Started
     permalink: /getting_started/:title/
     active_prefix: getting_started
+    section_end: true
     output: true
   syncing:
     title: File Syncing

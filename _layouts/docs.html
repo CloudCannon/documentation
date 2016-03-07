@@ -1,39 +1,12 @@
 ---
 layout: default
 ---
-
-{% assign previous = '' %}
-{% assign next = '' %}
-
-{% assign url = page.url %}
-{% if url == "/" %}
-	{% assign url = "/overview/welcome/" %}
-{% endif %}
-
-{% assign parts = url | split: "/" %}
-
-{% for collection in site.collections %}
-	{% if section %}
-		{% if collection.output %}
-			{% assign next = collection %}
-			{% break %}
-		{% endif %}
-	{% elsif parts[1] == collection.active_prefix %}
-		{% assign section = collection.title %}
-		{% assign items = collection.docs | sort: 'order' %}
-	{% elsif collection.output %}
-		{% assign previous = collection %}
-	{% endif %}
-{% endfor %}
+{% assign collection = site.collections | where: "label", page.collection | first %}
 
 <section class="main">
 	<div class="page-header">
-		<h2>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h2>
-		<h3>{{ section }}</h3>
-
-		{% if items %}
-			{% include section-nav.html items=items previous_collection=previous next_collection=next %}
-		{% endif %}
+		<h2>{{ collection.title }}</h2>
+		<h3>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h3>
 	</div>
 	<article class="content">
 		{% assign requirements = "" %}
