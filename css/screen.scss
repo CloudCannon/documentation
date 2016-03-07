@@ -1,25 +1,5 @@
 ---
 ---
-$body-background-color: #fff;
-$body-color-secondary: #222;
-
-$content-max-width: 800px;
-$content-color: $body-color-secondary;
-$content-background-color: $body-background-color;
-
-// dark blue #135571
-$nav-header-background-color: #26ABE2;
-$nav-background-color: #eee;
-$nav-width: 300px;
-
-$page-header-background: $content-background-color;
-
-$mobile-nav-height: 60px;
-$mobile-nav-padding: 10px;
-$mobile-nav-background-color: $nav-header-background-color;
-
-$mobile-break: 700px;
-
 @import "brand/mixins";
 @import "brand/normalize";
 @import "brand/pygments";
@@ -33,7 +13,29 @@ $mobile-break: 700px;
 @import "brand/checkbox";
 @import "brand/tables";
 
+$brand-colour: #26ABE2;
+
+$body-background-color: #fff;
+$body-color-secondary: #222;
+
+$content-max-width: 800px;
+$content-color: $body-color-secondary;
+$content-background-color: $body-background-color;
+
+// dark blue #135571
+$nav-header-background-color: $brand-colour;
+$nav-background-color: #eee;
+$nav-width: 300px;
+
+$page-header-background: $content-background-color;
+
+$mobile-nav-height: 60px;
+$mobile-nav-padding: 10px;
+$mobile-nav-background-color: $nav-header-background-color;
+
+$mobile-break: 700px;
+$full-width-break: $nav-width + ($space * 4) + $content-max-width;
+
 @import "layout";
 @import "changelog";
-@import "logos";
 @import "devices";

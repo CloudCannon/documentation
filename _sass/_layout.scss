@@ -58,7 +58,7 @@ header {
 			img {
 				width: 24px;
 				padding: 12px 8px;
-				background: #26ABE2;
+				background: $brand-colour;
 				border-radius: 2px;
 				margin-right: 10px;
 			}
@@ -74,9 +74,9 @@ header {
 
 .content,
 .page-header {
-	margin: 50px auto;
-	padding: 0 $space + 5;
 	max-width: $content-max-width;
+	padding: 0 $space + 5;
+	margin: $space auto 1.75em auto;
 }
 
 .page-header {
@@ -99,6 +99,9 @@ header {
 		margin-left: -4px;
 	}
 
+	@media (min-width: $full-width-break) {
+		margin-top: 55px;
+	}
 }
 
 .nav-open {
@@ -270,12 +273,7 @@ nav {
 }
 
 // this width is when the content starts centering
-@media (max-width: $nav-width + ($space * 4) + $content-max-width) {
-	.page-header,
-	.content {
-		margin: $space auto 1.75em auto;
-	}
-
+@media (max-width: $full-width-break) {
 	.warning, .error, .success, .info {
 		margin-left: 0;
 		margin-right: 0;
