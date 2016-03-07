@@ -182,8 +182,11 @@ header {
 }
 
 nav {
-	padding: $space / 2 0;
 	display: none;
+
+	@media (min-width: $mobile-break) {
+		display: block;
+	}
 
 	> ul {
 		padding: $space / 2 0;
@@ -191,14 +194,6 @@ nav {
 		& + ul {
 			border-top: 1px solid rgba(0, 0, 0, 0.075);
 		}
-	}
-}
-
-
-@media (min-width: $mobile-break) {
-	nav {
-		padding: 0;
-		display: block;
 	}
 }
 
