@@ -1,6 +1,6 @@
 ---
 title: YAML Multiselect/Tagger
-type: major
+type: minor
 ---
 
 
@@ -8,7 +8,7 @@ This release adds a multiselect/tagger to the range of interfaces for Jekyll fro
 
 Features:
 
-* Multiselect/tagger added to&nbsp;[front matter interfaces](/editing/front-matter/).
+* Multiselect/tagger added to [front matter interfaces](/editing/front-matter/).
 * New look and feel to [docs.cloudcannon.com](http://docs.cloudcannon.com/).
 
 
