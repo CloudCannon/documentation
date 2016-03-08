@@ -1,5 +1,5 @@
 ---
-title: YAML Multi Select
+title: YAML Multiselect/Tagger
 type: major
 ---
 
