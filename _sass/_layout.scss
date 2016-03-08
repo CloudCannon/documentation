@@ -1,5 +1,6 @@
 body {
 	height: auto;
+	overflow-x: hidden;
 	background-color: $body-background-color;
 
 	&.nav-open {
@@ -163,17 +164,29 @@ header {
 	h3 {
 		margin: 0;
 		line-height: 1.2;
+		letter-spacing: -1px;
 	}
 
 	h2 {
-		font-size: 2.65rem;
+		font-size: 2rem;
 		margin-left: -1px;
 		color: #888;
+		letter-spacing: 0;
 	}
 
 	h3 {
-		font-size: 5.4rem;
+		font-size: 4rem;
 		margin-left: -4px;
+	}
+
+	@media (min-width: $mobile-break) {
+		h2 {
+			font-size: 2.65rem;
+		}
+
+		h3 {
+			font-size: 5.4rem;
+		}
 	}
 
 	@media (min-width: $full-width-break) {
@@ -210,7 +223,7 @@ nav {
 	> a {
 		color: #666;
 		text-decoration: none;
-		font-size: 1.35rem;
+		font-size: 1.4rem;
 		padding: $space / 2 0 $space / 2 $space * 2;
 		display: block;
 	}
@@ -235,9 +248,6 @@ nav {
 		padding-left: $space;
 	}
 }
-
-
-
 
 .settings-panel-example {
 	@extend p;
