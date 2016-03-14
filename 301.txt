@@ -14,3 +14,4 @@
 /hosting/highlighting-active-links/ /hosting/active-links/
 /sharing/password-sharing/ /sharing/client-sharing/
 /creative_2.zip /creative-guide.zip
+/hosting/form-submissions/ /hosting/contact-forms/

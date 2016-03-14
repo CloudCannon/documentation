@@ -32,4 +32,4 @@ To turn off optimisations on individual elements, add the `.cms-no-rewrite` clas
 <a href="/newsletters/january-summary.pdf" class="cms-no-rewrite">Download Latest Newsletter</a>
 ~~~
 
-The file will be optimised, but the reference on the element remains untouched.
+The reference on the element remains the same, pointing to the unoptimised version.
