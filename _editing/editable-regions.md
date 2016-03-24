@@ -33,8 +33,7 @@ Editable text elements provide an interface to update text and format with bold,
 
 ---
 
-### Inline Elements: span, strong, em, th, td
-
+### Inline Elements: a, span, small, strong, em, i, b, sub, sup, li, dd, dt, td, th
 Editable inline elements provide an interface to update smaller sections of text without formatting.
 
 ![Inline Elements](/img/editing/6.png)
