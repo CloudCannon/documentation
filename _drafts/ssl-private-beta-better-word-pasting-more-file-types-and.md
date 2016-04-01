@@ -1,5 +1,5 @@
 ---
-title: SSL Private Beta
+title: SSL Private Beta and General Improvements
 type: major
 ---
 
