@@ -9,7 +9,7 @@ You have complete flexibility on how you host your site with CloudCannon.
 
 ### CloudCannon Hosting
 
-CloudCannon provides reliable, easy to set up hosting. CloudCannon automatically builds your site, all you need to do is [point your domain at CloudCannon servers](/domains/custom-domains/). CloudCannon also provides [Testing Domains](/domains/testing-domains/) for all sites.
+CloudCannon provides reliable, easy-to-set-up hosting. CloudCannon automatically builds your site, all you need to do is [point your domain at CloudCannon servers](/domains/custom-domains/). CloudCannon also provides [Testing Domains](/domains/testing-domains/) for all sites.
 
 Some CloudCannon features such as [Internationalisation](/i18n/internationalisation/), [Custom 404 Pages](/hosting/custom-404-page/) and [Authentication](/authentication/none/) require CloudCannon as your hosting provider.
 
