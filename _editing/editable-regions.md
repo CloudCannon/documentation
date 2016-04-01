@@ -3,7 +3,7 @@ title: Editable Regions
 order: 4
 ---
 
-Define *Editable Regions* to set the content clients and team members can update in the [Visual Editor](/editing/visual-editor).
+Define *Editable Regions* to set the content clients and team members can update in the [Visual Editor](/editing/visual-editor/).
 
 *Editable Regions* have yellow borders in the [Visual Editor](/editing/visual-editor/), indicating what areas are updatable. Define large sections to give full control, or limit access by defining select images and areas of text.
 
