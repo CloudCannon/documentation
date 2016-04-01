@@ -18,5 +18,5 @@ You can have wildcards by using `*` and external domains will work too. Here's a
 {% highlight text %}
 /old_file.html /new_file.html
 /category/* /new_category
-/page http://google.com
+/page/ http://google.com
 {% endhighlight %}
