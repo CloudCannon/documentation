@@ -1,4 +1,6 @@
 ---
-title: 'SSL Private Beta, Better Word Pasting, More File Types and'
+title: SSL Private Beta
 type: major
 ---
+
+
