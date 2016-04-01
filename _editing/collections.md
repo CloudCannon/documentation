@@ -11,7 +11,7 @@ Manage your Jekyll collections with ease in CloudCannon.
 
 Collections are for managing groups of structured content. The concepts are similar to [Blogging](/editing/blogging/), without the chronological restriction. Collections have many applications, including: API documentation, products, albums and blog authors.
 
-CloudCannon provides an easy to use interface for managing collections. To access the CloudCannon collections interface:
+CloudCannon provides an easy-to-use interface for managing collections. To access the CloudCannon collections interface:
 
 1. Add a Jekyll site with at least one collection
 2. Go to the tab for your collection in the *Collections* section
