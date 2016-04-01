@@ -22,7 +22,7 @@ Optimisations are on by default, to toggle optimisations for your site:
 2. Toggle *Minify and serve assets from CDN*
 3. Click *Update Site*
 
-![Optimisations Interface](/img/hosting/site-details.png){: .screenshot}
+![Optimisations Interface](/img/hosting/site-details.png){: .screenshot srcset="/img/hosting/site-details.png 800w, /img/hosting/site-details@2x.png 1600w"}
 
 ---
 
