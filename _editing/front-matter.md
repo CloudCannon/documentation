@@ -6,7 +6,7 @@ requirements:
   plan: Free
   hosting: Any
 examples:
-  - title: Text field
+  - title: Text Field
     details: Single line field for text. Displayed for short text variables.
     yaml: |
       ---
@@ -14,7 +14,7 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/text-field.png
-  - title: Large text field
+  - title: Large Text Field
     details: Multiline text field expanded for longer text. Displayed when there is too much text for a text field, and for the `description` key.
     yaml: |
       ---
@@ -30,7 +30,7 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/boolean.png
-  - title: Image or file
+  - title: Image or File
     details: Image or file selector. Has options for external links and uploading new files. Displayed for variables with keys ending in `_path`.
     yaml: |
       ---

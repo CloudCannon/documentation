@@ -15,3 +15,4 @@
 /sharing/password-sharing/ /sharing/client-sharing/
 /creative_2.zip /creative-guide.zip
 /hosting/form-submissions/ /hosting/contact-forms/
+/editing/javascript/ /editing/visual-editor/#editor-content

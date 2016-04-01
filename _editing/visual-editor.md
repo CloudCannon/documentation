@@ -9,3 +9,31 @@ The *Page Selector* shows a list of pages, posts, drafts and collection items to
 Use the **Toggle Pages** button in the top right corner to access it.
 
 ![Visual Editor](/img/editing/visual-editor.png){: .screenshot srcset="/img/editing/visual-editor.png 800w, /img/editing/visual-editor@2x.png 1600w"}
+
+---
+
+### Editor Content
+
+Create content that only appears in the *Visual Editor* with CSS or JavaScript.
+
+The *Visual Editor* adds the `.cms-editor-active` class to the `body` of the page. Use this to show elements that are hidden on the live site:
+
+{% highlight css %}
+.editor-content {
+  display: none;
+}
+
+.cms-editor-active .editor-content {
+  display: block;
+}
+{% endhighlight %}
+
+Alternatively, check `window.location.host` with JavaScript to find out if a page is being viewed inside the *Visual Editor*:
+
+{% highlight javascript %}
+if (window.location.host === "app.cloudcannon.com") {
+  alert("Inside CloudCannon!");
+} else {
+  alert("Not in CloudCannon.");
+}
+{% endhighlight %}
