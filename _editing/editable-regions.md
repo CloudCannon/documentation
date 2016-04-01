@@ -5,7 +5,7 @@ order: 4
 
 Define *Editable Regions* to set the content clients and team members can update in the [Visual Editor](/editing/visual-editor).
 
-*Editable Regions* have yellow borders in the [Visual Editor](/editing/visual-editor/), indicating what areas can be updated. Define large sections to give full control, or limit access by defining only a few images and areas of text.
+*Editable Regions* have yellow borders in the [Visual Editor](/editing/visual-editor/), indicating what areas are updatable. Define large sections to give full control, or limit access by defining select images and areas of text.
 
 To define an *Editable Region*:
 
@@ -15,7 +15,7 @@ To define an *Editable Region*:
 Define multiple classes if the element already has a class, for example: `<div class="content editable">`.
 {: .info}
 
-The *Editable Region* interface used depend on what element they are applied to:
+The *Editable Region* interface used depends on the defined element:
 
 ---
 
