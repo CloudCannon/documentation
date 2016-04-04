@@ -81,52 +81,78 @@ examples:
       - /img/editing/front-matter/datetime-focus.png
   - title: Select
     details: |
-      Set of options in a dropdown menu. There are two ways to populate the options:
-
-      The first is from an array in `_config.yml`:
+      Set of options in a dropdown menu. There are three ways to populate the options, from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
 
       ~~~yaml
       styles:
         - Red
         - Blue
         - Green
+
+      options:
+        red: Red Shirt
+        blue: Blue Sweater
+        green: Green Jacket
+
+      collections:
+        - authors
       ~~~
 
-      The second is with [Collection](/editing/collections/) item names.
-
-      Displayed for variables with keys of the singular name of the collection or array set in `_config.yml`.
+      Displayed for variables with keys **of the singular name** of the collection, array or object set in `_config.yml`.
     yaml: |
       ---
       style: Green
+      option: red
+      author: george
       ---
     image_paths:
       - /img/editing/front-matter/select.png
       - /img/editing/front-matter/select-focus.png
+      - /img/editing/front-matter/select-object.png
+      - /img/editing/front-matter/select-object-focus.png
+      - /img/editing/front-matter/select-collection.png
+      - /img/editing/front-matter/select-collection-focus.png
+    info: The value saved to the front matter depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by filename.
   - title: Multiselect
     details: |
-      Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. There are two ways to populate the options:
-
-      The first is from an array in `_config.yml`:
+      Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. There are three ways to populate the options, from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
 
       ~~~yaml
       styles:
         - Red
         - Blue
         - Green
+
+      options:
+        red: Red Shirt
+        blue: Blue Sweater
+        green: Green Jacket
+
+      collections:
+        - authors
       ~~~
 
-      The second is with [Collection](/editing/collections/) item names.
-
-      Displayed for variables with keys matching the name of a collection or array set in `_config.yml`.
+      Displayed for variables with keys **matching the name** of a collection or array set in `_config.yml`.
     yaml: |
       ---
       styles:
         - Green
         - Blue
+      options:
+        - red
+        - blue
+      authors:
+        - george
+        - mike
       ---
     image_paths:
       - /img/editing/front-matter/multiselect.png
       - /img/editing/front-matter/multiselect-focus.png
+      - /img/editing/front-matter/multiselect-object.png
+      - /img/editing/front-matter/multiselect-object-focus.png
+      - /img/editing/front-matter/multiselect-collection.png
+      - /img/editing/front-matter/multiselect-collection-focus.png
+    info: The value saved to the each item in the front matter array depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by filename.
   - title: Object
     details: Button that navigates to grouped data. Displayed for variables with an object as the value.
     yaml: |
