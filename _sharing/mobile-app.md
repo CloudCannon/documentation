@@ -35,7 +35,7 @@ To add a page to your home screen in Mobile Safari:
 
 1. Tap the **Share** button
 2. Tap **Add to Home Screen**
-3. Edit the title (optional)
+3. (Optional) Edit the title
 4. Tap **Add**
 
 ![Adding to iOS Home Screen](/img/sharing/ios-add.png){: .ipad}
@@ -52,7 +52,7 @@ To add a page to your home screen in Mobile Chrome:
 
 1. Tap the **Menu** button
 2. Tap **Add to home screen**
-3. Edit the title (optional)
+3. (Optional) Edit the title
 4. Tap **Add**
 
 ![Adding to Android Home Screen](/img/sharing/android-add.png){: .nexus-7}

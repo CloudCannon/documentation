@@ -11,9 +11,9 @@ Share your site with your clients without them having to create a CloudCannon ac
 
 Go to the *Site Settings* / *Client Sharing* section and enter a password:
 
-![Password sharing](/img/sharing/5.png){: .screenshot}
+![Client Sharing](/img/sharing/client-sharing.png){: .screenshot srcset="/img/sharing/client-sharing.png 800w, /img/sharing/client-sharing@2x.png 1600w"}
 
-Send your clients the website URL with **/update** on the end (e.g. `http://mysite.com/update`) and have them enter the password. Once they've logged in, your client gets a stripped back interface for editing content on their site.
+Send your clients their website URL suffixed with **/update** (e.g. `http://example.com/update`) and have them enter the password. Once they've logged in, your client gets access to the [Visual Editor](/editing/visual-editor/) to edit content on their site.
 
 ---
 
@@ -26,7 +26,7 @@ The preview URL overrides the link to the live site in the sidebar and header. I
 To change the URLs:
 
 1. Go to the *Site Settings* / *Client Interface* section
-2. Enter the desired URLs
+2. Enter the desired URLs (all are optional)
 3. Click **Update Client Interface**
 
-![Client Interface](/img/sharing/client-interface.png){: .screenshot}
+![Client Interface](/img/sharing/client-interface.png){: .screenshot srcset="/img/sharing/client-interface.png 800w, /img/sharing/client-interface@2x.png 1600w"}
