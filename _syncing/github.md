@@ -26,7 +26,7 @@ GitHub is now connected. Changes you push to the Git repository are pulled in by
 
 If you add a GitHub Organisation after you have granted access to CloudCannon you'll need to manually allow access.
 
-To do this open the settings for the Organisation on GitHub and go to the *Third-party access* tab. Click on *your own authorised applications* under the *No pending requests* header.
+To do this open the settings for the Organisation on GitHub and go to the *Third-party access* tab. Click on **your own authorised applications** under the *No pending requests* header.
 
 ![Inital Transfer](/img/cloud_storage/github/7.png){: .screenshot}
 

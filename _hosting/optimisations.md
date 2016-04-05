@@ -18,9 +18,9 @@ Assets referenced in the HTML and CSS are served from a CDN. Text based assets (
 
 Optimisations are on by default, to toggle optimisations for your site:
 
-1. Go to the *Site Details* tab in site settings
-2. Toggle *Minify and serve assets from CDN*
-3. Click *Update Site*
+1. Go to the *Site Settings* / *Details* section
+2. Toggle **Minify and serve assets from CDN**
+3. Click **Update Site**
 
 ![Optimisations Interface](/img/hosting/site-details.png){: .screenshot srcset="/img/hosting/site-details.png 800w, /img/hosting/site-details@2x.png 1600w"}
 

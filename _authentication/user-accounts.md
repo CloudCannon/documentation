@@ -12,7 +12,7 @@ Visitors to your site are prompted to enter an email address and password.
 
 To set up user account authentication for your site:
 
-1. Go to the *Site Settings* / *Authentication* tab
+1. Go to the *Site Settings* / *Authentication* section
 2. Select *User Account* and click **Switch to User Account authentication**
 
 ![User account authentication](/img/authentication/accounts.png){: .screenshot srcset="/img/authentication/accounts.png 800w, /img/authentication/accounts@2x.png 1600w"}
@@ -22,7 +22,7 @@ To add a user to your site:
 1. Enter the email address of the person you are adding
 2. Click **Add User**
 
-The user will receive an email with instructions to set a password. You can remove them at any time.
+The user receives an email with instructions to set a password. You can remove them at any time.
 
 ![Adding a user account](/img/authentication/accounts-added.png){: .screenshot srcset="/img/authentication/accounts-added.png 800w, /img/authentication/accounts-added@2x.png 1600w"}
 

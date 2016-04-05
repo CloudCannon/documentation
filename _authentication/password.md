@@ -11,7 +11,7 @@ Password authentication restricts access to your site by prompting viewers to en
 
 To set up password authentication for your site:
 
-1. Go to the *Site Settings* / *Authentication* tab
+1. Go to the *Site Settings* / *Authentication* section
 2. Select *Password* and click **Switch to Password authentication**
 3. Enter a password and click **Update Site Password**
 

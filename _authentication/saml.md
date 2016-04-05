@@ -14,7 +14,7 @@ SAML authentication requires a [OneLogin](https://www.onelogin.com/connector/clo
 
 To set up SAML account authentication for your site:
 
-1. Go to the *Site Settings* / *Authentication* tab
+1. Go to the *Site Settings* / *Authentication* section
 2. Select *SAML* and click **Switch to SAML authentication**
 
 ![SAML authentication](/img/authentication/saml.png){: .screenshot srcset="/img/authentication/saml.png 800w, /img/authentication/saml@2x.png 1600w"}
@@ -22,7 +22,7 @@ To set up SAML account authentication for your site:
 To configure SAML authentication:
 
 1. Create a [CloudCannon Site App](https://www.onelogin.com/connector/cloudcannonsite-single-sign-on) in OneLogin
-2. Copy details from SSO Tab to *Authentication* tab
+2. Copy details from SSO tab to *Site Settings* / *Authentication* section
 
 ![Adding SAML configuration](/img/authentication/saml-added.png){: .screenshot srcset="/img/authentication/saml-added.png 800w, /img/authentication/saml-added@2x.png 1600w"}
 

@@ -9,7 +9,7 @@ requirements:
 
 Share your site with your clients without them having to create a CloudCannon account and use a seat on your pricing plan.
 
-Go to the Client Sharing tab in site settings and enter a password:
+Go to the *Site Settings* / *Client Sharing* section and enter a password:
 
 ![Password sharing](/img/sharing/5.png){: .screenshot}
 
@@ -25,8 +25,8 @@ The preview URL overrides the link to the live site in the sidebar and header. I
 
 To change the URLs:
 
-1. Go to the *Client Interface* tab in site settings
+1. Go to the *Site Settings* / *Client Interface* section
 2. Enter the desired URLs
-3. Click *Update Client Interface*
+3. Click **Update Client Interface**
 
 ![Client Interface](/img/sharing/client-interface.png){: .screenshot}

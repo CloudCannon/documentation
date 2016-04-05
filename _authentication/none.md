@@ -10,7 +10,7 @@ No authentication is the default state for your site.
 
 To remove authentication for your site:
 
-1. Go to the *Site Settings* / *Authentication* tab
+1. Go to the *Site Settings* / *Authentication* section
 2. Select *None* and click **Switch to no authentication**
 
 ![No authentication](/img/authentication/none.png){: .screenshot srcset="/img/authentication/none.png 800w, /img/authentication/none@2x.png 1600w"}

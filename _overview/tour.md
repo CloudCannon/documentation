@@ -57,7 +57,7 @@ Go to the Code Editor at the top right. The Code Editor gives access to the sour
 
 ![Code Editor](/img/overview/code_editor.png){: .screenshot}
 
-Let's get into some blogging. Click the *Collections* tab on the left. This brings up your draft posts.
+Let's get into some blogging. Click the *Collections* section on the left. This brings up your draft posts.
 
 ![Draft Posts](/img/overview/draft_posts.png){: .screenshot}
 

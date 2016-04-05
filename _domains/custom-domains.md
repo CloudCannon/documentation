@@ -12,10 +12,10 @@ requirements:
 To add a custom domain:
 
 1. Purchase a domain from a domain registrar (we recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
-2. Go to the *Domain* section in *Site Settings*
+2. Go to the *Site Settings* / *Domain* section
 3. Enter the domain name with or without a subdomain
 
-![Site settings domain tab with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
+![Site settings domain section with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
 
 [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to avoid the following steps.
 {: .info}
@@ -41,13 +41,13 @@ If you are unfamiliar with DNS see [Verisign's DNS explainer](http://www.verisig
 
 Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **Use CloudCannon DNS**.
 
-![Site settings domain tab with own DNS](/img/domains/cloudcannon-dns.png){: .screenshot srcset="/img/domains/cloudcannon-dns.png 800w, /img/domains/cloudcannon-dns@2x.png 1600w"}
+![Site settings domain section with own DNS](/img/domains/cloudcannon-dns.png){: .screenshot srcset="/img/domains/cloudcannon-dns.png 800w, /img/domains/cloudcannon-dns@2x.png 1600w"}
 
 To configure your domain:
 
 1. Go to your domain registrar *DNS Server Settings* or *Nameservers*
 2. Enter the nameservers provided and enter the nameservers provided
-3. (Optional) Add additional DNS records in the *DNS* section in *Site Settings*
+3. (Optional) Add additional DNS records in the *Site Settings* / *DNS* section
 
 Here are some domain registrars' documentation:
 
@@ -63,7 +63,7 @@ If you are using the apex domain (i.e. no subdomain) we recommend using CloudCan
 
 Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **I have my own DNS**.
 
-![Site settings domain tab with own DNS](/img/domains/own-dns.png){: .screenshot srcset="/img/domains/own-dns.png 800w, /img/domains/own-dns@2x.png 1600w"}
+![Site settings domain section with own DNS](/img/domains/own-dns.png){: .screenshot srcset="/img/domains/own-dns.png 800w, /img/domains/own-dns@2x.png 1600w"}
 
 1. Go into the DNS settings for your domain
 2. Add a CNAME record with the following details:

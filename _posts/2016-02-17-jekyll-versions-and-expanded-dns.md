@@ -9,7 +9,7 @@ Features:
 
 * Jekyll **3.0.3** and **2.5.3** support.
 * [Jekyll versions](/building/jekyll/) configurable per site.
-* CNAME and A record support in *Site Settings / DNS*.
+* CNAME and A record support in *Site Settings* / *DNS*.
 * URLs in the `srcset` attribute support CloudCannon optimisations.
 * Jekyll build error output accessible from sidebar.
 

@@ -14,15 +14,15 @@ Other features include:
 * Support for `.ejs` files
 * Move up a folder action for files in browser
 * Date support in CSV editor
-* Improved actions in *Pages* view in *Collections* tab
+* Improved file actions in *Collections* / *Pages* section
 
 Bug fixes:
 
-* Disable output and permalink editing for a collection on the *Collections* tab
+* Disable output and permalink editing for a collection in the *Collections* section
 * Prevent browser find overscrolling editor content
 * Start with template option removed
 * Ensure Jekyll indicator hidden in some cases for static sites
 * Prevent multiple applications of a coupon
 * Login screen users update correctly when email changed
 * New collection items with dates now formatted with ISO8601 format
-* Markdown pages displayed in *Pages* view in *Collections* tab
+* Markdown pages displayed in *Collections* / *Pages* section
