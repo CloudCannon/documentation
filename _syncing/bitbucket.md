@@ -15,9 +15,8 @@ This will redirect you to Bitbucket. Log in and authorise CloudCannon access to 
 
 You'll be redirected back to CloudCannon to pick a repository to connect. If you don't have one for this website, create a new one in Bitbucket and refresh this page.
 
-A dialog box will appear asking for the master source for the initial synchronisation. This only matters if you have existing files in CloudCannon or your repository. The arrow shows the direction of file transfer and points to the source that will be overwritten. Click *Connect Bitbucket*.
-
-![Initial Transfer](/img/cloud_storage/bitbucket/5.png){: .screenshot}
+A dialog box warns you if there are existing files in your site. The files will be replaced with the contents of the repository. Click **Connect Bitbucket** to continue or close the dialog to cancel the process.
+{: .warning}
 
 Bitbucket is now connected. Changes you push to the Git repository are pulled in by CloudCannon. Any changes made on CloudCannon are automatically committed and pushed.
 
