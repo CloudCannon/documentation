@@ -317,6 +317,15 @@ h4 code {
 	line-height: 1;
 }
 
+h4 svg {
+	vertical-align: middle;
+	margin-right: 6px;
+	position: relative;
+	top: -2px;
+	fill: #2E2E2E;
+	height: 23px;
+}
+
 .required {
 	position: relative;
 }
