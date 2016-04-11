@@ -60,3 +60,18 @@ Editable block elements are rich editable regions with options to format and add
 Editable inline elements provide an interface to change smaller sections of text without formatting.
 
 ![Inline editable region in the Visual Editor](/img/editing/editable-regions/inline-editable.png){: .screenshot srcset="/img/editing/editable-regions/inline-editable.png 800w, /img/editing/editable-regions/inline-editable@2x.png 1600w"}
+
+---
+
+### Markdown Content Elements
+
+~~~html
+<div>{% raw %}{{ content }}{% endraw %}</div>
+~~~
+
+Markdown content elements are elements which only contain `{% raw %}{{ content }}{% endraw %}`. CloudCannon will make this element editable on any page which has a Markdown file as the source. The editing controls are determined by the surrounding element; `div` elements will be a block level editable, `span` will be an inline level editable.
+
+Elements that contain other elements and `{% raw %}{{ content }}{% endraw %}` will not be editable. Layouts that contain more than one `{% raw %}{{ content }}{% endraw %}` will not be editable. For these cases the [Content Editor](/editing/content-editor/) is available for editing.
+{: .info}
+
+![Markdown content region editable in the Visual Editor](/img/editing/editable-regions/markdown-editable.png){: .screenshot srcset="/img/editing/editable-regions/markdown-editable.png 800w, /img/editing/editable-regions/markdown-editable@2x.png 1600w"}
