@@ -1,4 +1,6 @@
 ---
-title: Inline Editing on Markdown pages
+title: Inline Editing on Markdown Pages
 type: major
 ---
+
+
