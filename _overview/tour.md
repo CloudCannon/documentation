@@ -116,7 +116,7 @@ Collection items are updated in the *Content Editor* the same way as drafts and 
 
 This tour only covers some of the features available to you.
 
-Explore the features CloudCannon offers at your own pace through this documentation. Extend this tour by providing editing access to clients with [Client Sharing](/sharing/client-sharing/) or look though the [overview](/#features) for a summary of each section.
+Explore the features CloudCannon offers at your own pace through this documentation. Extend this tour by providing editing access to clients with [Client Sharing](/sharing/client-sharing/) or look through the [overview](/#features) for a summary of each section.
 
 [Jekyll Tips](http://jekyll.tips/) has vast range of curated resources, guides and videos for Jekyll. Improving your Jekyll skills allows you to build better sites and editing experiences with CloudCannon for your team and clients.
 
