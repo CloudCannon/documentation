@@ -12,7 +12,6 @@ Features:
 
 * Inline Editing on Markdown Pages
 * Object and array support on form submissions
-* &nbsp;
 
 
 Fixes:
@@ -21,3 +20,4 @@ Fixes:
 * Github syncing missing files on large commits
 * Underscores allowed in CNAMEs
 * Unsubscribe link updated in form submissions
+* Fixed cases of bad pluralisation in front matter editor
