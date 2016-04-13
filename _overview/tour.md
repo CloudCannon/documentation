@@ -3,9 +3,9 @@ title: Tour
 order: 2
 ---
 
-This tour gives you a glimpse of the features on CloudCannon and demonstrates different editors.
+This tour sets up your first site on CloudCannon, showcases some of the features and demonstrates different editors.
 
-Either download the [creative site](/creative.zip) and follow along or just read through the steps.
+Download the [creative site](/creative.zip) and follow along, or just read through the steps.
 The creative site is a free HTML template enhanced with Jekyll features.
 
 ---
@@ -24,7 +24,7 @@ The creative site is a free HTML template enhanced with Jekyll features.
 
 ### Adding Files
 
-When edits are made in CloudCannon, the relevant source files are changed directly. To upload the creative site source files:
+CloudCannon works directly with the static or Jeykll source files you provide. To upload the creative site source files:
 
 1. Open the *Add Files* menu
 2. Select **Upload a folder**
@@ -34,7 +34,7 @@ Alternatively, drag and drop files into the *File Browser*.
 
 ![File Browser with Add Files menu open](/img/overview/file-browser-add-menu.png){: .screenshot srcset="/img/overview/file-browser-add-menu.png 800w, /img/overview/file-browser-add-menu@2x.png 1600w"}
 
-Some browsers do not support folder upload. CloudCannon recommends syncing with a storage provider in this case.
+Some browsers do not support folder upload. The best alternative in this case is syncing with a storage provider.
 {: .warning}
 
 Each file uploads individually to CloudCannon through your web browser.
@@ -90,10 +90,12 @@ This brings up your pages, drafts, posts, collections items and data files.
 Select the **Drafts** group and open the **Second Blog Post** draft.
 The draft opens in the *Content Editor*, a distraction-free WYSIWYG editor that saves to Markdown.
 
-Make edits to the main content and front matter.
-Select **Publish Post** in the top right to push the draft live.
+Draft posts are hidden on the live site until published. To publish the draft:
 
-Published posts can also be updated inline with *Visual Editor*.
+1. Make final edits to the main content and front matter
+2. Select **Publish Post** in the top right
+
+Make future changes to published posts with the *Content Editor* or inline with the *Visual Editor*.
 {: .info}
 
 ![Content Editor](/img/overview/content-editor.png){: .screenshot srcset="/img/overview/content-editor.png 800w, /img/overview/content-editor@2x.png 1600w"}
@@ -114,7 +116,7 @@ Collection items are updated in the *Content Editor* the same way as drafts and 
 
 This tour only covers some of the features available to you.
 
-Explore the features CloudCannon offers in depth at your own pace through this documentation. Extend this tour by providing editing access to clients with [Client Sharing](/sharing/client-sharing/) or look though the [overview](/#features) for a summary of each section.
+Explore the features CloudCannon offers at your own pace through this documentation. Extend this tour by providing editing access to clients with [Client Sharing](/sharing/client-sharing/) or look though the [overview](/#features) for a summary of each section.
 
 [Jekyll Tips](http://jekyll.tips/) has vast range of curated resources, guides and videos for Jekyll. Improving your Jekyll skills allows you to build better sites and editing experiences with CloudCannon for your team and clients.
 
