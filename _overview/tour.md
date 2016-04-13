@@ -107,7 +107,7 @@ This collection is for listing the services offered on the creative site.
 
 ![Collections section with Services group open](/img/overview/services.png){: .screenshot srcset="/img/overview/services.png 800w, /img/overview/services@2x.png 1600w"}
 
-Open any of the collections items in *Services*.
+Open any of the collection items in *Services*.
 Collection items are updated in the *Content Editor* the same way as drafts and posts.
 
 ---
