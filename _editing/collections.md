@@ -36,7 +36,7 @@ There are a number of ways to add content for your new item:
 * Type the main content directly onto the page
 * Insert images, links, and style your text with the editor controls above
 
-Non-output HTML collections can only be edited in the [Code Editor](/editing/code-editor/).
+Non-output HTML collections can only be edited in the [Source Editor](/editing/source-editor/).
 
 The owner and developers of a site can access the raw file content via the **Switch to Source Editor** button.
 {: .info}

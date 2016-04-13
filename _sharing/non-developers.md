@@ -7,7 +7,7 @@ The non-developer share level is for sharing a site to non-technical team member
 
 Non-developers make content changes with the [Visual Editor](/editing/visual-editor/), [Content Editor](/editing/content-editor/) and *Collections* section.
 They have access to the recent activity in the *Status* section.
-The [Code Editor](/editing/code-editor/) and *File Browser* are hidden and inaccessible.
+The [Source Editor](/editing/source-editor/) and *File Browser* are hidden and inaccessible.
 
 Sharing with a non-developer increases the users on your plan. Use [Client Sharing](/sharing/client-sharing/) to share sites with clients at no additional cost.
 {: .info}

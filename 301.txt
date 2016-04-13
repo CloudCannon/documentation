@@ -13,11 +13,14 @@
 /hosting/custom-domains/ /domains/custom-domains/
 /hosting/highlighting-active-links/ /hosting/active-links/
 /sharing/password-sharing/ /sharing/client-sharing/
-/creative_2.zip /creative-guide.zip
+/creative_2.zip http://jekyll.tips/creative.zip
+/creative-guide.zip http://jekyll.tips/creative.zip
+/corlate.zip http://jekyll.tips/corlate.zip
+/flaticons-squidink.zip http://jekyll.tips/flaticons_squidink.zip
 /hosting/form-submissions/ /hosting/contact-forms/
 /editing/javascript/ /editing/visual-editor/#editor-content
 /hosting/overview/ /hosting/options/
-/getting_started/introduction/ /overview/tour/
+/getting_started/introduction/ http://jekyll.tips/
 /getting_started/setup/ http://jekyll.tips/guide/setup/
 /getting_started/running-jekyll/ http://jekyll.tips/guide/running-jekyll/
 /getting_started/layouts/ http://jekyll.tips/guide/layouts/
@@ -39,3 +42,4 @@
 /tutorials/search/ http://jekyll.tips/tutorials/search/
 /tutorials/seo/ http://jekyll.tips/tutorials/seo/
 /tutorials/snippets/ http://jekyll.tips/tutorials/snippets/
+/editing/code-editor/ /editing/source-editor/

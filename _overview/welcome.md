@@ -31,6 +31,8 @@ Follow the *Getting Started* guide on [Jekyll Tips](http://jekyll.tips/) to crea
 
 ---
 
+### Features
+
 Get the most from CloudCannon by following the documentation for each feature:
 
 #### {% include icons/backup.svg %} File Syncing

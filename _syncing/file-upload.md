@@ -3,14 +3,24 @@ title: File Upload
 order: 4
 ---
 
-Uploading files in the browser is the fastest way to get a website going on CloudCannon.
+Uploading files through a web browser is the fastest way to get a website live on CloudCannon.
 
-Click on the upload button in the top right of the file browser.
+To upload files from the *File Browser*:
 
-![Upload](/img/overview/upload.png){: .screenshot}
+1. Open the *Add Files* menu
+2. Select **Upload files** or **Upload a folder**
 
-Then choose if you want to select individual files or upload a whole folder.
+Alternatively, drag and drop files into the *File Browser*.
+{: .info}
 
-![Upload Folder](/img/overview/upload_folder.png){: .screenshot}
+Uploading a folder uploads all files inside the folder, rather than the folder itself.
 
-Once you've made a selection it will upload to CloudCannon. If you have a cloud storage provider connected CloudCannon will push the file there as well.
+Some browsers do not support folder upload. CloudCannon recommends syncing with a storage provider in this case.
+{: .warning}
+
+![File Browser with Add Files menu open](/img/overview/file-browser-add-menu.png){: .screenshot srcset="/img/overview/file-browser-add-menu.png 800w, /img/overview/file-browser-add-menu@2x.png 1600w"}
+
+Each file uploads individually to CloudCannon through your web browser. Unsupported files are greyed out, while any files with errors uploading are shown red.
+
+If the site is synced with a storage provider, CloudCannon pushes the files there as well.
+{: .info}
