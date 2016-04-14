@@ -52,6 +52,7 @@ Keep a full history of changes and work on your local machine by syncing files w
 ### Inline Editing
 
 Open the *Visual Editor* by selecting **Editor** in the left sidebar.
+
 The *Visual Editor* is for making content changes inline on the website.
 Yellow boxes indicate *Editable Regions* in each page.
 Navigate around the site to make changes to other pages.
@@ -83,7 +84,7 @@ Clients and non-developers don't have access to the *Source Editor*.
 ### Content Editing
 
 Open the *Collections* section by selecting **Collections** in the left sidebar.
-This brings up your pages, drafts, posts, collections items and data files.
+This section contains your pages, drafts, posts, collections items and data files.
 
 ![Collections section with Pages group open](/img/overview/pages.png){: .screenshot srcset="/img/overview/pages.png 800w, /img/overview/pages@2x.png 1600w"}
 
