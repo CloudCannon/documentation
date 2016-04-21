@@ -3,9 +3,9 @@ title: Editor Links
 order: 10
 ---
 
-Editor Links allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site.
+*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site.
 
-Editor Links are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
+*Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
 * `<a href="cloudcannon:collections/_staff/">Edit all staff</a>`
 * `<a href="cloudcannon:collections/_staff/jane-doe.md">Edit Jane Doe</a>`
@@ -44,12 +44,12 @@ To have an edit link on a collection item page, add the following to the page:
 
 ![Netflix case study collection item with edit button](/img/editing/editor-links/collection-item.png){: .screenshot srcset="/img/editing/editor-links/collection-item.png 800w, /img/editing/editor-links/collection-item@2x.png 1600w"}
 
-When generating Editor Links in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
+When generating *Editor Links* in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
 {: .info}
 
 ---
 
-To show Editor Links inside the editor and hide them on the live site:
+To show *Editor Links* inside the editor and hide them on the live site:
 
 1. Give the links an appropriate class name (e.g. `.editor-link`).
 2. Use the following CSS to show the links inside the editor only:

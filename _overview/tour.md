@@ -3,72 +3,123 @@ title: Tour
 order: 2
 ---
 
-This tour will give you a glimpse of the features on CloudCannon and walk you through the different editing modes.
+This tour sets up your first site on CloudCannon, showcases some of the features and demonstrates different editors.
 
-Download the [Creative site](/creative.zip).
+Download the [creative site](/creative.zip) and follow along, or just read through the steps.
+The creative site is a free HTML template enhanced with Jekyll features.
 
-Creative is a [Jekyll](http://jekyllrb.com) site. Jekyll sites are similar to static sites (websites with just HTML, CSS and JavaScript files) but much more powerful. You can have a blog, layouts and complex generated pages.
+---
 
-This website started off as a free HTML5 template. It's been converted to a Jekyll website with a blog, layouts and other features.
+### Preparation
 
-For a full guide how to convert a HTML5 template to a Jekyll site check out our [Getting Started Guide](/getting_started/introduction/).
+[Sign up](https://app.cloudcannon.com/users/sign_up) for a CloudCannon account, then create a new site from the *Sites List*:
 
-### CloudCannon Overview
+1. Select **Add Site**
+2. Type a name for your site (e.g. Creative)
+3. Press **Enter** to confirm
 
-Sign up for a CloudCannon account.
+![Creating a new site from the Sites List](/img/overview/sites-list-empty.png){: .screenshot srcset="/img/overview/sites-list-empty.png 800w, /img/overview/sites-list-empty@2x.png 1600w"}
 
-![Sign Up](/img/overview/sign_up.png){: .screenshot}
+---
 
-Create a new site.
+### Adding Files
 
-![Create a new site](/img/overview/creative.png){: .screenshot}
+CloudCannon works directly with the static or Jeykll source files you provide. To upload the creative site source files:
 
-Now we need to upload our site to CloudCannon. There are a few ways of doing this. We could sync with GitHub, Bitbucket or Dropbox. The advantage of doing this is you'll have a full history of changes on your website and you can revert to anytime. It also makes it easier to work with a team of developers because everyone can pull and push changes to the website on their local machine.
+1. Open the *Add Files* menu
+2. Select **Upload a folder**
 
-For this site we'll just upload the files from our computer.
+Alternatively, drag and drop files into the *File Browser*.
+{: .info}
 
-Click the file upload button.
+![File Browser with Add Files menu open](/img/overview/file-browser-add-menu.png){: .screenshot srcset="/img/overview/file-browser-add-menu.png 800w, /img/overview/file-browser-add-menu@2x.png 1600w"}
 
-![Upload](/img/overview/upload.png){: .screenshot}
+Some browsers do not support folder upload. The best alternative in this case is syncing with a storage provider.
+{: .warning}
 
-Go to upload folder (This is only supported in some browsers. If it's greyed out use one of the storage providers mentioned above).
+Each file uploads individually to CloudCannon through your web browser.
+After the uploads finish, CloudCannon builds the site and deploys it to a test domain.
 
-Select the folder of the unzipped Creative website.
+![File Browser with files](/img/overview/file-browser-complete.png){: .screenshot srcset="/img/overview/file-browser-complete.png 800w, /img/overview/file-browser-complete@2x.png 1600w"}
 
-![Upload Folder](/img/overview/upload_folder.png){: .screenshot}
+View the live site on the test domain by clicking the ***.cloudvent.net** link in the top left.
 
-All the files are in CloudCannon now.
+Keep a full history of changes and work on your local machine by syncing files with a storage provider instead.
+{: .info}
 
-![File Browser](/img/overview/file_browser.png){: .screenshot}
+---
 
-Click on `index.html`. This opens the website in a live preview. You can navigate around the site as if it's a live website.
+### Inline Editing
 
-![preview](/img/overview/preview.png){: .screenshot}
+Open the *Visual Editor* by selecting **Editor** in the left sidebar.
 
-Go to the Visual Editor at the top right. In the Visual Editor you can make content changes inline on the website. The yellow boxes indicate the updatable areas of the page.
+The *Visual Editor* is for making content changes inline on the website.
+Yellow boxes indicate *Editable Regions* in each page.
+Navigate around the site to make changes to other pages.
 
-![Visual Editor](/img/overview/visual_editor.png){: .screenshot}
+![Visual Editor](/img/overview/visual-editor.png){: .screenshot srcset="/img/overview/visual-editor.png 800w, /img/overview/visual-editor@2x.png 1600w"}
 
-Front Matter is a Jekyll feature which allows you to configure variables like the page title on a page. CloudCannon provides the settings view where you can easily update the front matter.
+*Front Matter* is a Jekyll feature for defining custom metadata on a page (e.g. title or layout).
+CloudCannon provides the *Settings Panel* to update front matter within the *Visual Editor*.
+Open it with the **Toggle Settings** button in the top right for pages with front matter.
 
-![Front Matter](/img/overview/front_matter.png){: .screenshot}
+![Editing front matter in the Settings Panel](/img/overview/settings-panel.png){: .screenshot srcset="/img/overview/settings-panel.png 800w, /img/overview/settings-panel@2x.png 1600w"}
 
-Go to the Code Editor at the top right. The Code Editor gives access to the source code of the site. Notice how the `h1` and `p` have `class="editable"`, this is how you control what elements are updated in the Visual Editor.
+---
 
-![Code Editor](/img/overview/code_editor.png){: .screenshot}
+### Code Editing
 
-Let's get into some blogging. Click the *Collections* section on the left. This brings up your draft posts.
+The *Source Editor* provides developer-access to the raw source code of a file.
+To open files in the source editor, open files from the *File Browser*, or select **Switch to Source Editor** in the top right of the *Visual Editor*.
 
-![Draft Posts](/img/overview/draft_posts.png){: .screenshot}
+If you're editing `/index.html`, the `h1` and `p` have `class="editable"`, defining those elements as editable in the *Visual Editor*.
 
-Click on the draft post. This will open it up in a Markdown editor. Try making a few edits and clicking *Publish Post* when you're finished.
+![Source Editor](/img/overview/source-editor.png){: .screenshot srcset="/img/overview/source-editor.png 800w, /img/overview/source-editor@2x.png 1600w"}
 
-![Draft Posts](/img/overview/blog_post.png){: .screenshot}
+Clients and non-developers don't have access to the *Source Editor*.
+{: .info}
 
-To finish off the tutorial we'll go through Collections. Collections are a way of grouping related data, on this site we're using it to list the services this agency offers.
+---
 
-Click *Collections* and go to *Services*. You can update items in the collection in a similar way to the blog post.
+### Content Editing
 
-![services](/img/overview/services.png){: .screenshot}
+Open the *Collections* section by selecting **Collections** in the left sidebar.
+This section contains your pages, drafts, posts, collections items and data files.
 
-That's it for the overview. You can view the live website by clicking the *yoursite*.cloudvent.net link at the top of CloudCannon.
+![Collections section with Pages group open](/img/overview/pages.png){: .screenshot srcset="/img/overview/pages.png 800w, /img/overview/pages@2x.png 1600w"}
+
+Select the **Drafts** group and open the **Second Blog Post** draft.
+The draft opens in the *Content Editor*, a distraction-free WYSIWYG editor that saves to Markdown.
+
+Draft posts are hidden on the live site until published. To publish the draft:
+
+1. Make final edits to the main content and front matter
+2. Select **Publish Post** in the top right
+
+Make future changes to published posts with the *Content Editor* or inline with the *Visual Editor*.
+{: .info}
+
+![Content Editor](/img/overview/content-editor.png){: .screenshot srcset="/img/overview/content-editor.png 800w, /img/overview/content-editor@2x.png 1600w"}
+
+Open the *Collections* section again and select the **Services** group.
+
+Services is a Jekyll collection, a feature used to group related items in a scalable way.
+This collection is for listing the services offered on the creative site.
+
+![Collections section with Services group open](/img/overview/services.png){: .screenshot srcset="/img/overview/services.png 800w, /img/overview/services@2x.png 1600w"}
+
+Open any of the collection items in *Services*.
+Collection items are updated in the *Content Editor* the same way as drafts and posts.
+
+---
+
+### Next Steps
+
+This tour only covers some of the features available to you.
+
+Explore the features CloudCannon offers at your own pace through this documentation. Extend this tour by providing editing access to clients with [Client Sharing](/sharing/client-sharing/) or look through the [overview](/#features) for a summary of each section.
+
+[Jekyll Tips](http://jekyll.tips/) has vast range of curated resources, guides and videos for Jekyll. Improving your Jekyll skills allows you to build better sites and editing experiences with CloudCannon for your team and clients.
+
+Contact us at [support@cloudcannon.com](mailto:support@cloudcannon.com) with any questions or feedback.
+{: .info}

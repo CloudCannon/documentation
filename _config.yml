@@ -28,12 +28,6 @@ collections:
     permalink: /overview/:title/
     active_prefix: overview
     output: true
-  getting_started:
-    title: Getting Started
-    permalink: /getting_started/:title/
-    active_prefix: getting_started
-    section_end: true
-    output: true
   syncing:
     title: File Syncing
     permalink: /syncing/:title/
@@ -73,11 +67,6 @@ collections:
     title: Internationalisation
     permalink: /i18n/:title/
     active_prefix: i18n
-    output: true
-  tutorials:
-    title: Tutorials
-    permalink: /tutorials/:title/
-    active_prefix: tutorials
     output: true
 
 defaults:

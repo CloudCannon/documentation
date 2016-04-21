@@ -19,7 +19,7 @@ The [Content Editor](/editing/content-editor/) is an easy-to-use editor that sup
 
 ![Data files interface](/img/editing/data-files/data-files-interface.png){: .screenshot srcset="/img/editing/data-files/data-files-interface.png 800w, /img/editing/data-files/data-files-interface@2x.png 1600w"}
 
-Developers have access to the raw contents with the [Code Editor](/editing/code-editor/).
+Developers have access to the raw contents with the [Source Editor](/editing/source-editor/).
 {: .info}
 
 The editor adapts to the type of data file opened:
