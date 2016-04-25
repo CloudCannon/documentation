@@ -11,3 +11,33 @@ Use the **Toggle Pages** button in the top right corner to access it.
 
 ![Content Editor](/img/editing/content-editor.png){: .screenshot srcset="/img/editing/content-editor.png 800w, /img/editing/content-editor@2x.png 1600w"}
 
+---
+
+### Hiding the Content Area
+
+When Markdown files only use the front matter, it is better to display a full screen front matter editor. The *Content Editor* can toggle the content section using the `hide_content` variable. This can be configured per collection:
+
+{% highlight yaml %}
+collections:
+  projects:
+    output: false
+    hide_content: true
+{% endhighlight %}
+
+Alternatively, configure `hide_content` directly within the front matter or using `_config.yml` defaults:
+
+{% highlight markdown %}
+---
+title: Hello World
+hide_content: true
+---
+{% endhighlight %}
+
+{% highlight yaml %}
+defaults:
+  - type: 'projects'
+    values:
+      hide_content: true
+{% endhighlight %}
+
+![Content Editor with no content section](/img/editing/content-editor-hidden-content.png){: .screenshot srcset="/img/editing/content-editor-hidden-content.png 800w, /img/editing/content-editor-hidden-content@2x.png 1600w"}
