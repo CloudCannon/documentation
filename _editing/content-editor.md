@@ -15,7 +15,9 @@ Use the **Toggle Pages** button in the top right corner to access it.
 
 ### Hiding the Content Area
 
-When Markdown files only use the front matter, it is better to display a full screen front matter editor. The *Content Editor* can toggle the content section using the `hide_content` variable. This can be configured per collection:
+When files only use the front matter, it is better to display a full screen front matter editor. Toggle the content section in the *Content Editor* using the `hide_content` variable. Configure it with one of the following methods.
+
+The collection definition in `_config.yml`:
 
 {% highlight yaml %}
 collections:
@@ -24,7 +26,7 @@ collections:
     hide_content: true
 {% endhighlight %}
 
-Alternatively, configure `hide_content` directly within the front matter or using `_config.yml` defaults:
+Directly in the front matter:
 
 {% highlight markdown %}
 ---
@@ -32,6 +34,8 @@ title: Hello World
 hide_content: true
 ---
 {% endhighlight %}
+
+Jekyll defaults in `_config.yml`:
 
 {% highlight yaml %}
 defaults:
