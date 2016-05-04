@@ -16,7 +16,7 @@ CloudCannon Internationalisation allows you to serve your site in different lang
 Firstly we must add a key to each element we want internationalised. To do this add a `data-i18n` attribute with a unique key. For example:
 
 {% highlight html %}
-<h2 class="editable" data-il8n="welcome_message">Hello, welcome to my website</h2>
+<h2 class="editable" data-i18n="welcome_message">Hello, welcome to my website</h2>
 {% endhighlight %}
 
 ---
@@ -30,15 +30,15 @@ To obtain the current locale you can visit any of these URLs on your site:
 <ul>
 	<li>
 		/cms-current-locale.properties
-		{% highlight properties %}welcome_message = Hello, welcome to my website{% endhighlight %}
+{% highlight properties %}welcome_message = Hello, welcome to my website{% endhighlight %}
 	</li>
 	<li>
 		/cms-current-locale.json
-		{% highlight json %}{"welcome_message": "Hello, welcome to my website"}{% endhighlight %}
+{% highlight json %}{"welcome_message": "Hello, welcome to my website"}{% endhighlight %}
 	</li>
 	<li>
 		/cms-current-locale.yml
-		{% highlight yaml %}welcome_message: "Hello, welcome to my website"{% endhighlight %}
+{% highlight yaml %}welcome_message: "Hello, welcome to my website"{% endhighlight %}
 	</li>
 </ul>
 
