@@ -57,15 +57,15 @@ Here are some example locales:
 <ul>
 	<li>
 		/_locales/de.properties
-		{% highlight properties %}
-		welcome_message = Hallo, herzlich willkommen auf meiner Website
-		{% endhighlight %}
+{% highlight properties %}
+welcome_message = Hallo, herzlich willkommen auf meiner Website
+{% endhighlight %}
 	</li>
 	<li>
 		/_locales/es.properties
-		{% highlight properties %}
-		welcome_message = Hola, bienvenido a mi página web
-		{% endhighlight %}
+{% highlight properties %}
+welcome_message = Hola, bienvenido a mi página web
+{% endhighlight %}
 	</li>
 </ul>
 
