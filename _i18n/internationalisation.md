@@ -13,7 +13,7 @@ CloudCannon Internationalisation allows you to serve your site in different lang
 
 ### Tagging content for translation
 
-Firstly we must add a key to each element we want internationalised. To do this add a `data-i18n` attribute with a unique key. For example:
+First we must add a key to each element we want internationalised. To do this add a `data-i18n` attribute with a unique key. For example:
 
 {% highlight html %}
 <h2 class="editable" data-i18n="welcome_message">Hello, welcome to my website</h2>
