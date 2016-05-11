@@ -24,7 +24,7 @@ Once the site has been built, the version is displayed on the *Site Status* page
 
 ### Jekyll Plugins
 
-CloudCannon plugin support is currently in private beta. To join, contact support and request access.
+CloudCannon plugin support is currently in private beta. To join, [contact support](mailto:support@cloudcannon.com) and request access.
 {: .info}
 
 To enable Jekyll plugins on a site go to *Site Settings* / *Details*. Ensure the **Use Experimental Plugin Building** is enabled and update the site. This will trigger a rebuild of the site including plugins.
