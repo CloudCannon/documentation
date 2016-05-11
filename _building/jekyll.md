@@ -24,4 +24,14 @@ Once the site has been built, the version is displayed on the *Site Status* page
 
 ### Jekyll Plugins
 
-CloudCannon does not support custom Jekyll plugins. With the exception of sites built with Jekyll **3.0.3** which includes `jekyll-paginate 1.1.0`. Contact support if you do require plugins for a site.
+CloudCannon plugin support is currently in private beta. To join, contact support and request access.
+{: .info}
+
+To enable Jekyll plugins on a site go to *Site Settings* / *Details*. Ensure the **Use Experimental Plugin Building** is enabled and update the site. This will trigger a rebuild of the site including plugins.
+
+![Enabling plugins](/img/building/plugins.png){: .screenshot srcset="/img/building/plugins.png 800w, /img/building/plugins@2x.png 1600w"}
+
+Plugins can be added to a site in a couple ways:
+
+- Add `.rb` files to the `_plugins` directory
+- Add a `Gemfile`, this causes a `bundle install` to run before the build
