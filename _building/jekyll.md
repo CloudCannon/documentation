@@ -24,20 +24,20 @@ Once the site has been built, the version is displayed on the *Site Status* page
 
 ### Jekyll Plugins
 
-CloudCannon plugin support is currently in private beta. To join, [contact support](mailto:support@cloudcannon.com) and request access.
+CloudCannon plugin support is in private beta. To join, [contact support](mailto:support@cloudcannon.com) and request access.
 {: .info}
 
 To enable Jekyll plugins on a site:
 
-1. Go to Site Settings / Details
-2. Enable the Use Experimental Plugin Building option
+1. Go to *Site Settings* / *Details*
+2. Enable the **Use Experimental Plugin Building** option
 3. Update the site.
 
-Enabling Jekyll plugins will trigger a rebuild of the site.
+Enabling Jekyll plugins triggers a rebuild of the site.
 
 ![Enabling plugins](/img/building/plugins.png){: .screenshot srcset="/img/building/plugins.png 800w, /img/building/plugins@2x.png 1600w"}
 
-Plugins can be added to a site in a couple ways:
+Add plugins to a site in a couple of ways:
 
 - Add `.rb` files to the `_plugins` directory
 - Add a `Gemfile`, this causes a `bundle install` to run before the build
