@@ -1,6 +1,6 @@
 ---
 title: Plugins Fixes
-type: major
+type: minor
 ---
 
 
