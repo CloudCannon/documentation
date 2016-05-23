@@ -74,7 +74,7 @@ examples:
     details: Combination date picker and 12 hour time input. Displayed for `date`, `datetime` and variables with keys ending in `_at` or `_datetime`.
     yaml: |
       ---
-      date: 2015-07-15 12:00:00
+      date: 2015-07-15T12:00:00Z
       ---
     image_paths:
       - /img/editing/front-matter/datetime.png
