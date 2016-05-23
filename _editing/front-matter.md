@@ -71,7 +71,7 @@ examples:
     image_paths:
       - /img/editing/front-matter/time.png
   - title: Date Time
-    details: Combination date picker and 12 hour time input. Displayed for `date`, `datetime` and variables with keys ending in `_at` or `_datetime`.
+    details: Combination date picker and 12 hour time input. Outputs a ISO 8601 date. Displayed for `date`, `datetime` and variables with keys ending in `_at` or `_datetime`.
     yaml: |
       ---
       date: 2015-07-15T12:00:00Z
