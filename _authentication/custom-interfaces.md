@@ -18,6 +18,8 @@ CloudCannon provides default, white-labelled pages for authentication.
 CloudCannon injects classes into the HTML to indicate the result of the action. They are injected into `{% raw %}{{messageClasses}}{% endraw %}`.
 Use these classes to provide error handling and success notifications in your forms.
 
+For Jekyll-generated pages, use `raw` tags so Jekyll outputs it for CloudCannon to process later: `{{ "{%" }} raw %}{% raw %}{{messageClasses}}{% endraw %}{{ "{%" }} endraw %}`.
+
 The customisable pages are listed below, with parameters and working examples.
 
 ---
