@@ -27,8 +27,14 @@ To create a contact form:
   <label>Message</label>
   <textarea name="message"></textarea>
 
+  <label>Urgent</label>
+  <input type="checkbox" name="urgent">
+
+  <label>Type of Enquiry</label>
+  <input type="radio" name="_subject" value="Sales Enquiry"> Sales
+  <input type="radio" name="_subject" value="General Enquiry"> General
+
   <input type="hidden" name="_to" value="sales@example.com,support@example.com">
-  <input type="hidden" name="_subject" value="Sales Enquiry">
   <input type="hidden" name="_cc" value="sales.tracker@example.com">
   <input type="text" name="_gotcha" style="display: none;">
 
