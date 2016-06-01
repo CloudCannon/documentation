@@ -1,6 +1,6 @@
-name: CloudCannon Docs
+name: CloudCannon Documentation
 version: 3.0.3
-url: http://docs.cloudcannon.com
+url: https://docs.cloudcannon.com
 future: true
 
 author:

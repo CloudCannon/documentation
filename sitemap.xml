@@ -1,0 +1,64 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	{% for collection in site.collections %}
+		{% if collection.output and collection.label != 'posts' %}
+			{% for item in collection.docs %}
+				{% unless item.sitemap.exclude == "yes" %}
+					<url>
+						<loc>{{ item.url | prepend: site.url | remove: "index.html" | remove: "index.xml" }}</loc>
+
+						{% if item.sitemap.lastmod %}
+							<lastmod>{{ item.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+						{% elsif item.added_date %}
+							<lastmod>{{ item.added_date | date_to_xmlschema }}</lastmod>
+						{% else %}
+							<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+						{% endif %}
+
+						{% assign images = item.content | split:"<img " %}
+						{% for image in images %}
+							{% if image contains 'src' %}
+								{% assign html = image | split:"/>" | first %}
+								{% assign tags = html | split:" " %}
+								{% for tag in tags %}
+									{% if tag contains 'src' %}
+										<image:image>
+											<image:loc>{{ tag | remove: 'src=' | remove: '"' | prepend: site.url }}</image:loc>
+										</image:image>
+										{% break %}
+									{% endif %}
+								{% endfor %}
+								{% break %}
+							{% endif %}
+						{% endfor %}
+
+						<changefreq>weekly</changefreq>
+						<priority>0.5</priority>
+					</url>
+				{% endunless %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+
+	{% for page in site.pages %}
+		{% unless page.url == "/biggie-smalls.json" or page.sitemap.exclude == "yes" %}
+			<url>
+				<loc>{{ page.url | prepend: site.url | remove: "index.html" | remove: "index.xml" }}</loc>
+
+				{% if page.sitemap.lastmod %}
+					<lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+				{% else %}
+					<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+				{% endif %}
+
+				<changefreq>daily</changefreq>
+				<priority>0.5</priority>
+			</url>
+		{% endunless %}
+	{% endfor %}
+</urlset>

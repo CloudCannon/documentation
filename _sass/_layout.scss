@@ -48,7 +48,7 @@ body {
 			background-color: $nav-background-color;
 		}
 
-		header input[type=text],
+		#search-input,
 		&::after {
 			box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.1);
 		}
@@ -363,7 +363,7 @@ h4 svg {
 	}
 }
 
-header input[type=text] {
+#search-input {
 	margin: 0;
 	padding: 10px 20px;
 	border-left: 0;
