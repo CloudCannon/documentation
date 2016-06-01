@@ -5,6 +5,11 @@
 		<button type="button" class="open-nav" id="open-nav"></button>
 	</h1>
 
+	<form action="/search/" method="get">
+		<input type="text" name="q" id="search-input" placeholder="Search">
+		<input type="submit" value="Search" style="display: none;">
+	</form>
+
 	<nav>
 		<ul>
 			{% assign url = page.url %}
