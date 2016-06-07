@@ -6,7 +6,8 @@ body {
 	&.nav-open {
 		overflow: hidden;
 
-		nav {
+		nav,
+		header > form {
 			display: block;
 		}
 
@@ -198,19 +199,20 @@ header {
 	}
 }
 
-nav {
+nav,
+header > form {
 	display: none;
 
 	@media (min-width: $mobile-break) {
 		display: block;
 	}
+}
 
-	> ul {
-		padding: $space / 2 0;
+nav > ul {
+	padding: $space / 2 0;
 
-		& + ul {
-			border-top: 1px solid rgba(0, 0, 0, 0.075);
-		}
+	& + ul {
+		border-top: 1px solid rgba(0, 0, 0, 0.075);
 	}
 }
 
