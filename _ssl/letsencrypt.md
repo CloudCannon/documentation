@@ -9,7 +9,7 @@ order: 2
 
 ### Installing certbot
 
-If you have previously installed an older version of [certbot](https://certbot.eff.org/about/) or the letsencryptclient, run `rm -fr ~/.local/share/letsencrypt` to clear conflicting data.
+If you have previously installed an older version of [certbot](https://certbot.eff.org/about/) or the letsencryptclient, run `rm -rf ~/.local/share/letsencrypt` to clear conflicting data.
 {: .info}
 
 ~~~bash
@@ -99,7 +99,7 @@ This command will output the key in RSA format, use this output when installing 
 To install the newly generated SSL Certificate to CloudCannon:
 
 - Follow the instructions for [Adding a new SSL Certificate](/ssl/custom-certificate/)
-- Copy /etc/letsencrypt/live/DOMAIN_NAME/cert.pem to the public key field
+- Copy `/etc/letsencrypt/live/DOMAIN_NAME/cert.pem` to the public key field
 - Copy the RSA format of the private key to the private key field
-- Copy /etc/letsencrypt/live/DOMAIN_NAME/chain.pem to chain
+- Copy `/etc/letsencrypt/live/DOMAIN_NAME/chain.pem` to chain
 - Save and attach the cert
