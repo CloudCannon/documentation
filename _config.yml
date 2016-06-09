@@ -58,6 +58,11 @@ collections:
     permalink: /sharing/:title/
     active_prefix: sharing
     output: true
+  ssl:
+    title: SSL
+    permalink: /ssl/:title/
+    active_prefix: ssl
+    output: true
   authentication:
     title: Authentication
     permalink: /authentication/:title/

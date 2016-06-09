@@ -43,3 +43,4 @@
 /tutorials/seo/ http://jekyll.tips/tutorials/seo/
 /tutorials/snippets/ http://jekyll.tips/tutorials/snippets/
 /editing/code-editor/ /editing/source-editor/
+/hosting/ssl/ /ssl/cloudflare/
