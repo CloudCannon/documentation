@@ -12,12 +12,12 @@ order: 2
 If you have previously installed an older version of [certbot](https://certbot.eff.org/about/) or the letsencryptclient, run `rm -fr ~/.local/share/letsencrypt` to clear conflicting data.
 {: .info}
 
-```bash
+~~~bash
 cd /tmp
 git clone https://github.com/certbot/certbot.git
 cd certbot
 ./certbot-auto --no-self-upgrade --debug renew --dry-run
-```
+~~~
 
 ---
 
@@ -25,15 +25,15 @@ cd certbot
 
 Running [certbot](https://certbot.eff.org/about/) will generate SSL Certificates for the domains we specify.
 
-```bash
+~~~bash
 ./certbot-auto --no-self-upgrade --debug certonly --manual
-```
+~~~
 
 ![Choosing the domain name](/img/ssl/letsencrypt/domain.png){: .screenshot srcset="/img/ssl/letsencrypt/domain.png 800w, /img/ssl/letsencrypt/domain@2x.png 1600w"}
 
 Once the domain has been specified we must verify that we have access to that domain. Below is example output shown after the prompt:
 
-```
+~~~
 Make sure your web server displays the following content at
 http://letsencrypt.cloudcannon.com/.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o before continuing:
 
@@ -51,20 +51,20 @@ $(command -v python2 || command -v python2.7 || command -v python2.6) -c \
 s = BaseHTTPServer.HTTPServer(('', 80), SimpleHTTPServer.SimpleHTTPRequestHandler); \
 s.serve_forever()"
 Press ENTER to continue
-```
+~~~
 
 Before pressing ENTER, add a `letsencrypt.txt` to the site. Add the values from the above output in the following format:
 
-```markdown
+~~~markdown
 ---
 permalink: /.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o/ # Ensure the trailing slash remains
 ---
 34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o.3-40nFYEAf5ItpgZuuISWUhg4fNm-vVW3T0RXmdzNkU
-```
+~~~
 
 Once compiled, return to the console and press ENTER:
 
-```
+~~~
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at
    /etc/letsencrypt/live/letsencrypt.cloudcannon.com/fullchain.pem.
@@ -76,7 +76,7 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
-```
+~~~
 
 This completes the use of [certbot](https://certbot.eff.org/about/) with a free cert for our domain. All parts of the cert are available at `/etc/letsencrypt/live/DOMAIN_NAME/`.
 
@@ -86,9 +86,9 @@ This completes the use of [certbot](https://certbot.eff.org/about/) with a free 
 
 Before uploading to CloudCannon we must convert the private key into the correct format. This is done using the following command:
 
-```bash
+~~~bash
 sudo openssl rsa -inform pem -in /etc/letsencrypt/live/DOMAIN_NAME/privkey.pem -outform pemsudo openssl rsa -inform
-```
+~~~
 
 This command will output the key in RSA format, use this output when installing the cert onto CloudCannon.
 
