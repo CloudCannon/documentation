@@ -87,7 +87,7 @@ This completes the use of [certbot](https://certbot.eff.org/about/) with a free 
 Before uploading to CloudCannon we must convert the private key into the correct format. This is done using the following command:
 
 ~~~bash
-sudo openssl rsa -inform pem -in /etc/letsencrypt/live/DOMAIN_NAME/privkey.pem -outform pemsudo openssl rsa -inform
+sudo openssl rsa -inform pem -in /etc/letsencrypt/live/DOMAIN_NAME/privkey.pem -outform pem
 ~~~
 
 This command will output the key in RSA format, use this output when installing the cert onto CloudCannon.
