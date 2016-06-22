@@ -17,6 +17,7 @@ This release further streamlines our domain and DNS workflow, particularly with 
 **Fixes:**
 
 * FTP syncing issue
+* Dropbox to CloudCannon syncing issues
 * Solved plugin issues related to latest nokogiri version
 * Files and folders starting with an underscore are now hidden when browsing files in front matter _path selector
 * Improved error handling for creating a new files from *Collection Defaults* with invalid front matter
