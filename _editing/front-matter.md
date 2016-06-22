@@ -176,6 +176,30 @@ examples:
     image_paths:
       - /img/editing/front-matter/array.png
       - /img/editing/front-matter/array-active.png
+  - title: Comment/Note
+    details: |
+      Helper text that provides additional context for form elements. This is configured in `_config.yml` with a `comments` object:
+
+      ~~~yaml
+      comments:
+        title: The page title
+        output: Does this item have a dedicated page?
+        brand_colour: The primary brand colour
+        footer: Update the details in the footer
+      ~~~
+
+      Displayed for variables with the same key in the `comments` object.
+    yaml: |
+      ---
+      title: Welcome
+      brand_colour: '#f05f40'
+      output: true
+      footer:
+        copyright: Lion Wear Inc.
+        since: 2004
+      ---
+    image_paths:
+    - /img/editing/front-matter/comments.png
 ---
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
