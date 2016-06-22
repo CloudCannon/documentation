@@ -20,6 +20,12 @@ version: 3.0.3
 
 Once the site has been built, the version is displayed on the *Site Status* page.
 
+If plugins support is enabled, the version can be specified by adding `jekyll` to the Gemfile.
+{: .info}
+
+Due to a bug in the jsonify filter, Jekyll `3.1.0`, `3.1.1`, `3.1.2` and `3.1.3` are unsupported in CloudCannon.
+{: .warning}
+
 ---
 
 ### Jekyll Plugins
