@@ -4,7 +4,7 @@ type: minor
 ---
 
 
-This release further streamlines our domain and DNS workflow, particularly with apex domains and *External DNS*. Issues with Jekyll Plugins have been fixed from feedback from users in the private beta - contact support to join if you haven't already.
+This release further streamlines our domain and DNS workflow, particularly with apex domains and *External DNS*. Issues with Jekyll Plugins have been fixed from feedback from users in the private beta - [contact support](javascript:void(location.href='mailto:'+String.fromCharCode(115,117,112,112,111,114,116,64,99,108,111,117,100,99,97,110,110,111,110,46,99,111,109)+'?subject=Jekyll%20Plugins%20private%20beta%20request&amp;body=Please%20add%20me%20to%20the%20CloudCannon%20Jekyll%20Plugins%20private%20beta!%0A%0AThanks%2C')) to join if you haven't already.
 
 **Features:**
 
