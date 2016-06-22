@@ -7,15 +7,16 @@ requirements:
   hosting: CloudCannon
 ---
 
-{: .info}
+Give your live site a professional look with a unique domain name.
 
 To add a custom domain:
 
-1. Purchase a domain from a domain registrar (we recommend [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
-2. Go to the *Site Settings* / *Domain* section
-3. Enter the domain name with or without a subdomain
+1. Purchase a domain from a domain registrar (e.g.  [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
+2. Go to the *Site Settings* / *Domain* section for your site
+3. Enter your domain with or without a subdomain
+3. Click **Add Domain**
 
-![Site settings domain section with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
+![Site Settings / Domain section with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
 
 [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to avoid the following steps.
 {: .info}
@@ -24,54 +25,53 @@ To add a custom domain:
 
 ### Configuring your domain
 
-All changes to a domains DNS can take up to 48 hours to propagate. This is the upper range and depends on the previous TTL set on the domain. To test your site is configured correctly use the [pingdom DNS checker](http://dnscheck.pingdom.com/).
+Changes to DNS can take up to 48 hours to propagate, depending on the previous TTL set. Test your site is configured correctly with the [pingdom DNS checker](http://dnscheck.pingdom.com/){: target="_blank"}.
 {: .warning}
 
-Once a domain has been added, configuration instructions will become available. You will have two choices:
+Configuration instructions are shown after adding a domain. There are two choices:
 
-* Use CloudCannon DNS **(recommended)**
-* Use your own DNS
+* CloudCannon DNS **(recommended)**
+* External DNS
 
-If you are unfamiliar with DNS see [Verisign's DNS explainer](http://www.verisigninc.com/en_US/domain-names/online/how-dns-works/index.xhtml).
+Verisign provides a [guide](http://www.verisign.com/en_US/domain-names/online/how-dns-works/index.xhtml){: target="_blank"} to learn how DNS works.
 {: .info}
 
 ---
 
-### Using CloudCannon DNS
+### CloudCannon DNS
 
-Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **Use CloudCannon DNS**.
+To configure your domain with *CloudCannon DNS*:
 
-![Site settings domain section with own DNS](/img/domains/cloudcannon-dns.png){: .screenshot srcset="/img/domains/cloudcannon-dns.png 800w, /img/domains/cloudcannon-dns@2x.png 1600w"}
+1. Ensure you are using *CloudCannon DNS* Otherwise, click **Use CloudCannon DNS**.
+2. Go to your domain registrar's *DNS Server Settings* or *Nameservers*
+3. Enter the nameservers CloudCannon provides in *Site Settings* / *Domain*
+4. Save the changes
 
-To configure your domain:
+![Site Settings / Domain section with CloudCannon DNS](/img/domains/cloudcannon-dns.png){: .screenshot srcset="/img/domains/cloudcannon-dns.png 800w, /img/domains/cloudcannon-dns@2x.png 1600w"}
 
-1. Go to your domain registrar *DNS Server Settings* or *Nameservers*
-2. Enter the nameservers provided and enter the nameservers provided
-3. (Optional) Add additional DNS records in the *Site Settings* / *DNS* section
-
-Here are some domain registrars' documentation:
-
-* [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/767/10/how-can-i-change-the-nameservers-for-my-domain)
-* [GoDaddy](https://www.godaddy.com/help/setting-nameservers-for-your-domain-names-664)
+Set any additional DNS records with CloudCannon [DNS](/domains/dns/).
+{: .info}
 
 ---
 
-### Using your own DNS
+### External DNS
 
-If you are using the apex domain (i.e. no subdomain) we recommend using CloudCannon DNS. This allows us to dynamically load balance your site across multiple servers.
+*CloudCannon DNS* is strongly recommended for sites on apex domains (no subdomain). *External DNS* relies on an A record mapped to a single server. This cannot be dynamically load balanced, reducing redundancy and increasing potential down time risk.
 {: .warning}
 
-Go to the *Site Settings* / *Domain* section and ensure it looks like the following screenshot. Otherwise, click **I have my own DNS**.
+To configure your domain with *External DNS*:
 
-![Site settings domain section with own DNS](/img/domains/own-dns.png){: .screenshot srcset="/img/domains/own-dns.png 800w, /img/domains/own-dns@2x.png 1600w"}
+1. Ensure you are using *External DNS* Otherwise, click **Use External DNS**.
+2. Go into the DNS settings for your domain
+3. Add the CNAME and A records provided to your DNS records
 
-1. Go into the DNS settings for your domain
-2. Add a CNAME record with the following details:
-    - **Name/Alias**: *.example.com using your domain name
-    - **Type**: CNAME
-    - **Value**: sites.cloudcannon.com
+![Site Settings / Domain section with external DNS](/img/domains/external-dns.png){: .screenshot srcset="/img/domains/external-dns.png 800w, /img/domains/external-dns@2x.png 1600w"}
 
-Here are some domain registrars' DNS documentation:
+The CNAME record maps your subdomains to CloudCannon servers, the A record maps your apex domain to a specific CloudCannon server.
+{: .info}
 
-* [Namecheap](https://www.namecheap.com/domains/freedns.aspx) (can be used with any registrar)
-* [GoDaddy](https://www.godaddy.com/help/managing-dns-for-your-domain-names-680)
+Here is the DNS documentation from a few domain registrars:
+
+* [iwantmyname](https://help.iwantmyname.com/customer/en/portal/topics/93994-dns-nameserver/articles){: target="_blank"}
+* [Namecheap](https://www.namecheap.com/domains/freedns.aspx){: target="_blank"} (can be used with any domain registrar)
+* [GoDaddy](https://www.godaddy.com/help/managing-dns-for-your-domain-names-680){: target="_blank"}
