@@ -18,7 +18,7 @@ To add a custom domain:
 
 ![Site Settings / Domain section with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
 
-[iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to avoid the following steps.
+[iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to simplify configuring your domain.
 {: .info}
 
 ---
@@ -42,14 +42,14 @@ Verisign provides a [guide](http://www.verisign.com/en_US/domain-names/online/ho
 
 To configure your domain with *CloudCannon DNS*:
 
-1. Ensure you are using *CloudCannon DNS* Otherwise, click **Use CloudCannon DNS**.
+1. Ensure you are using *CloudCannon DNS*, otherwise click **Use CloudCannon DNS**
 2. Go to your domain registrar's *DNS Server Settings* or *Nameservers*
 3. Enter the nameservers CloudCannon provides in *Site Settings* / *Domain*
 4. Save the changes
 
 ![Site Settings / Domain section with CloudCannon DNS](/img/domains/cloudcannon-dns.png){: .screenshot srcset="/img/domains/cloudcannon-dns.png 800w, /img/domains/cloudcannon-dns@2x.png 1600w"}
 
-Set any additional DNS records with CloudCannon [DNS](/domains/dns/).
+Set additional DNS records for external services or ownership validation with CloudCannon [DNS](/domains/dns/).
 {: .info}
 
 ---
@@ -61,7 +61,7 @@ Set any additional DNS records with CloudCannon [DNS](/domains/dns/).
 
 To configure your domain with *External DNS*:
 
-1. Ensure you are using *External DNS* Otherwise, click **Use External DNS**.
+1. Ensure you are using *External DNS*, otherwise click **Use External DNS**
 2. Go into the DNS settings for your domain
 3. Add the CNAME and A records provided to your DNS records
 
