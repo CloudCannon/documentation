@@ -7,6 +7,8 @@ CloudFlare is service which works as a reverse proxy for your website. What that
 
 The advantage of doing this is CloudFlare does many performance and security enhancements so your website will load faster and be more immune to malicious attacks. They've also recently added free SSL support.
 
+---
+
 ### Adding SSL
 
 First off, head over to CloudFlare and register a new account:
@@ -44,3 +46,12 @@ Find the SSL section and change it to **Flexible SSL**:
 ![CloudFlare](/img/ssl/cloudflare/8.png)
 
 That's it! Changing your DNS can take up to 48 hours to propagate and CloudFlare's free SSL can take up to 24 hours to set up. There should be no downtime, but it could take a day or two before you have SSL and CloudFlare serving your website.
+
+---
+
+### Redirecting HTTP to HTTPS
+
+To redirect all HTTP traffic to HTTPS:
+
+1. Set up CloudFlare SSL
+2. Add [this page rule](https://support.cloudflare.com/hc/en-us/articles/200170536-How-do-I-redirect-all-visitors-to-HTTPS-SSL-) to your CloudFlare configuration
