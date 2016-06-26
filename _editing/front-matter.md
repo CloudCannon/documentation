@@ -194,7 +194,7 @@ examples:
       defaults:
         - type: ''
           values:
-            comments:
+            _comments:
               title: The page title
               output: Does this item have a dedicated page?
               brand_colour: The primary brand colour
@@ -204,7 +204,7 @@ examples:
       Comments are displayed for variables with the same key in the `comments` object.
     yaml: |
       ---
-      comments:
+      _comments:
         title: The page title
         output: Does this item have a dedicated page?
         brand_colour: The primary brand colour
