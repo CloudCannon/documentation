@@ -188,15 +188,28 @@ examples:
         footer: Update the details in the footer
       ~~~
 
-      Displayed for variables with the same key in the `comments` object.
+      Alternatively comments can be configured per file or configured with Jekyll defaults:
+
+      ~~~yaml
+      defaults:
+        - type: ''
+          values:
+            comments:
+              title: The page title
+              output: Does this item have a dedicated page?
+              brand_colour: The primary brand colour
+              footer: Update the details in the footer
+      ---
+      ~~~
+
+      Comments are displayed for variables with the same key in the `comments` object.
     yaml: |
       ---
-      title: Welcome
-      brand_colour: '#f05f40'
-      output: true
-      footer:
-        copyright: Lion Wear Inc.
-        since: 2004
+      comments:
+        title: The page title
+        output: Does this item have a dedicated page?
+        brand_colour: The primary brand colour
+        footer: Update the details in the footer
       ---
     image_paths:
     - /img/editing/front-matter/comments.png
