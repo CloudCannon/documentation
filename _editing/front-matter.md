@@ -176,6 +176,12 @@ examples:
     image_paths:
       - /img/editing/front-matter/array.png
       - /img/editing/front-matter/array-active.png
+  - title: Hidden
+    details: Hidden values are not present in the interface. This applies to any key that begins with an underscore.
+    yaml: |
+      ---
+      _image_src: /src/
+      ---
   - title: Comment
     details: |
       Helper text that provides additional context for form elements. This is configured in `_config.yml` with a `comments` object:
