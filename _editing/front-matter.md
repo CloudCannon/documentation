@@ -176,19 +176,19 @@ examples:
     image_paths:
       - /img/editing/front-matter/array.png
       - /img/editing/front-matter/array-active.png
-  - title: Comment/Note
+  - title: Comment
     details: |
       Helper text that provides additional context for form elements. This is configured in `_config.yml` with a `comments` object:
 
       ~~~yaml
-      comments:
+      _comments:
         title: The page title
         output: Does this item have a dedicated page?
         brand_colour: The primary brand colour
         footer: Update the details in the footer
       ~~~
 
-      Alternatively comments can be configured per file or configured with Jekyll defaults:
+      Alternatively, configure comments per file or with Jekyll defaults:
 
       ~~~yaml
       defaults:
