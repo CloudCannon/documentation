@@ -5,7 +5,7 @@ type: minor
 
 This release adds live output from jekyll builds. This also allows you to view output from successful builds not just errored builds.
 
-![Markdown content region editable in the Visual Editor](/img/editing/editable-regions/markdown-editable.png){: .screenshot srcset="/img/editing/editable-regions/markdown-editable.png 800w, /img/editing/editable-regions/markdown-editable@2x.png 1600w"}
+![Markdown content region editable in the Visual Editor](/img/building/live-output.png){: .screenshot srcset="/img/building/live-output.png 800w, /img/building/live-output@2x.png 1600w"}
 
 Features:
 
