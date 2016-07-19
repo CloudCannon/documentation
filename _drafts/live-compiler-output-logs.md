@@ -1,5 +1,5 @@
 ---
-title: Live Compiler Output Logs
+title: Live Compiler Build Logs
 type: minor
 ---
 
