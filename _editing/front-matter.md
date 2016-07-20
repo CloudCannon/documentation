@@ -217,7 +217,44 @@ examples:
         footer: Update the details in the footer
       ---
     image_paths:
-    - /img/editing/front-matter/comments.png
+      - /img/editing/front-matter/comments.png
+  - title: Array Defaults
+    details: |
+      Provides initial values for newly created items in arrays.
+      This is configured in `_config.yml` with a `_defaults` object:
+
+      ~~~yaml
+      _defaults:
+        image_path: /images/placeholder.png
+      ~~~
+
+      Alternatively, configure per file or with Jekyll defaults:
+
+      ~~~yaml
+      defaults:
+        - type: ''
+          values:
+            _defaults:
+              image_path: /images/placeholder.png
+      ~~~
+
+      New array items clone the structure from the existing array items.
+      Array defaults populate that structure for variables with the same keys in `_defaults`.
+    yaml: |
+      ---
+      _defaults:
+        image_path: /images/placeholder.png
+      images:
+        - image_path: /images/sunset.png
+          title: Sunset
+
+        # Adding an item to the array is prepopulated as:
+        - image_path: /images/placeholder.png
+          title:
+      ---
+    image_paths:
+      - /img/editing/front-matter/array-defaults.png
+    info: Array defaults also apply to CSV files with front matter.
 ---
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
