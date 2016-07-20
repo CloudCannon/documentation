@@ -184,7 +184,7 @@ examples:
       ---
   - title: Comment
     details: |
-      Helper text that provides additional context for form elements. This is configured in `_config.yml` with a `comments` object:
+      Helper text that provides additional context for form elements. This is configured in `_config.yml` with a `_comments` object:
 
       ~~~yaml
       _comments:
@@ -207,7 +207,7 @@ examples:
               footer: Update the details in the footer
       ~~~
 
-      Comments are displayed for variables with the same key in the `comments` object.
+      Comments are displayed for variables with the same key in the `_comments` object.
     yaml: |
       ---
       _comments:
