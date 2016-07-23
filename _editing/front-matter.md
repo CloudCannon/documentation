@@ -68,7 +68,7 @@ examples:
   - title: Social
     details: |
       Text field with avatar for various social handles.
-      Displayed for variables with keys ending in one of the following: `_twitter`, `_facebook`, `_github`, `_email` and `_email_address`.
+      Displayed for variables with keys ending in one of the following: `_twitter`, `_facebook`, `_instagram`, `_github`, `_email` and `_email_address`.
       Alternatively, you can use the variations without underscores as keys (i.e. `twitter` or `email`).
     info: The Twitter @ symbol is part of the interface, and is stripped from the value on save.
     yaml: |
