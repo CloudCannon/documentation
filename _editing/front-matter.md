@@ -53,6 +53,18 @@ examples:
       - /img/editing/front-matter/colour.png
       - /img/editing/front-matter/colour-focus.png
     info: Quote hex colours, otherwise the hash symbol begins a YAML comment.
+  - title: Number
+    details: |
+      Input field for numbers.
+      Displayed for `number`, variables with date values and variables with keys ending in `_number`.
+    yaml: |
+      ---
+      order: 12
+      number: 3.14
+      sort_number: 2
+      ---
+    image_paths:
+      - /img/editing/front-matter/number.png
   - title: Social
     details: |
       Text field with avatar for various social handles.
