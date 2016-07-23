@@ -65,8 +65,9 @@ Here's an example Gemfile:
 ~~~ruby
 source 'https://rubygems.org'
 
+gem 'jekyll', '3.1.6'
+
 group :jekyll_plugins do
-  gem 'jekyll', '3.1.6'
   gem 'jekyll-sitemap', '0.10.0'
 end
 ~~~

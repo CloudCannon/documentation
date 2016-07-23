@@ -41,7 +41,7 @@ examples:
   - title: Colour
     details: |
       Input with dropdown for selecting colour.
-      Displayed for variables with keys ending in one of the following: `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` or `_hsl`.
+      Displayed for variables with keys ending in one of the following: `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` and `_hsl`.
       Alternatively, you can use the variations without underscores as keys (i.e. `rgb` or `colour`).
 
       Each variation defines the preferred format of the colour. The `_colour` and `_color` variations default to hex.
@@ -53,6 +53,21 @@ examples:
       - /img/editing/front-matter/colour.png
       - /img/editing/front-matter/colour-focus.png
     info: Quote hex colours, otherwise the hash symbol begins a YAML comment.
+  - title: Social
+    details: |
+      Text field with avatar for various social handles.
+      Displayed for variables with keys ending in one of the following: `_twitter`, `_facebook`, `_github`, `_email` and `_email_address`.
+      Alternatively, you can use the variations without underscores as keys (i.e. `twitter` or `email`).
+    info: The Twitter @ symbol is part of the interface, and is stripped from the value on save.
+    yaml: |
+      ---
+      twitter: CloudCannonApp
+      author_github: CloudCannon
+      support_email_address: support@cloudcannon.com
+      facebook: CloudCannon
+      ---
+    image_paths:
+      - /img/editing/front-matter/social.png
   - title: Date
     details: Date picker with options for year, month and day. Displayed for variables with date values or keys ending in `_date`.
     yaml: |
