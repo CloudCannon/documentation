@@ -57,7 +57,7 @@ examples:
     details: Date picker with options for year, month and day. Displayed for variables with date values or keys ending in `_date`.
     yaml: |
       ---
-      sale_start_date: 2015-01-09
+      sale_start_date: 2015-01-09T00:00:00Z
       ---
     image_paths:
       - /img/editing/front-matter/date.png
