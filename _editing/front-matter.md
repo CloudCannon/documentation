@@ -67,16 +67,28 @@ examples:
       - /img/editing/front-matter/number.png
   - title: Social
     details: |
-      Text field with avatar for various social handles.
-      Displayed for variables with keys ending in one of the following: `_twitter`, `_facebook`, `_instagram`, `_github`, `_email` and `_email_address`.
-      Alternatively, you can use the variations without underscores as keys (e.g. `twitter` or `email`).
-    info: The Twitter @ symbol is part of the interface, and is stripped from the value on save.
+      Text field with avatar for various social handles and full URLs.
+      Displayed for variables with keys ending in one of the following: `_twitter`, `_twitter_username`, `_twitter_url`, `_facebook`, `_facebook_username`, `_facebook_url`, `_google_plus`, `_google_plus_username`, `_google_plus_url`, `_instagram`, `_instagram_username`, `_instagram_url`, `_github`, `_github_username`, `_github_url`, `_email` and `_email_address`.
+      Alternatively, you can use the variations without underscores as keys (e.g. `twitter_username`, `facebook_url`, `email_address` or `github`).
+    info: |
+      For compatibility with popular Jekyll plugins, the Twitter **@** symbol is stripped from the value on save. The Twitter interfaces display a placeholder symbol.
+
+      In order to support both custom and default Google user ID variations, the **+** is part of the value in the Google+ interfaces.
     yaml: |
       ---
       twitter: CloudCannonApp
-      author_github: CloudCannon
-      support_email_address: support@cloudcannon.com
+      twitter_url: 'https://twitter.com/@jekyllrb'
       facebook: CloudCannon
+      facebook_url: 'https://www.facebook.com/CloudCannon'
+      google_plus: +CloudCannon
+      default_google_plus: '117511497981903622103'
+      google_plus_url: 'https://plus.google.com/+CloudCannon'
+      github_username: CloudCannon
+      github_url: 'https://github.com/jekyll'
+      docs_github_url: 'https://github.com/CloudCannon/Documentation'
+      instagram_url: 'https://www.instagram.com/purenewzealand/'
+      email: support@cloudcannon.com
+      email_address: support@cloudcannon.com
       ---
     image_paths:
       - /img/editing/front-matter/social.png
@@ -221,7 +233,7 @@ examples:
         footer: Update the details in the footer
       ~~~
 
-      Alternatively, configure comments per file or with Jekyll defaults:
+      Alternatively, configure comments per file in front matter or with Jekyll defaults:
 
       ~~~yaml
       defaults:
@@ -255,7 +267,7 @@ examples:
         image_path: /images/placeholder.png
       ~~~
 
-      Alternatively, configure per file or with Jekyll defaults:
+      Alternatively, configure per file in front matter or with Jekyll defaults:
 
       ~~~yaml
       defaults:
@@ -281,7 +293,7 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/array-defaults.png
-    info: Array defaults also apply to CSV files with front matter.
+    info: Array defaults also apply in the [Content Editor](/editing/content-editor/) with CSV, YAML and JSON files.
 ---
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
