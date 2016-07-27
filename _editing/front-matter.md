@@ -30,18 +30,25 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/boolean.png
-  - title: Image or File
-    details: Image or file selector. Has options for external links and uploading new files. Displayed for variables with keys ending in `_path`.
+  - title: File
+    details: |
+      File, image and document selectors with controls to use external links and upload new files.
+      Displayed for variables with keys ending in `_path`, `_document_path`, `_document`, `_image_path` or `_image`.
+      Alternatively, you can use the variations without underscores as keys (e.g. `image_path` or `document`).
+
+      Each variation limits the files shown in the selector by type. The `_path` variation shows all visible files.
     yaml: |
       ---
-      background_image_path: /image/background.png
+      background_image_path: /images/background.png
+      newsletter_document_path: /documents/2016/newsletter.pdf
+      extra_styles_path: /styles/screen.css
       ---
     image_paths:
-      - /img/editing/front-matter/image-or-file.png
+      - /img/editing/front-matter/file.png
   - title: Colour
     details: |
       Input with dropdown for selecting colour.
-      Displayed for variables with keys ending in one of the following: `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` and `_hsl`.
+      Displayed for variables with keys ending in `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` and `_hsl`.
       Alternatively, you can use the variations without underscores as keys (e.g. `rgb` or `colour`).
 
       Each variation defines the preferred format of the colour. The `_colour` and `_color` variations default to hex.
@@ -56,7 +63,7 @@ examples:
   - title: Number
     details: |
       Input field for numbers.
-      Displayed for `number`, variables with date values and variables with keys ending in `_number`.
+      Displayed for `number`, variables with keys ending in `_number` and variables with numerical values.
     yaml: |
       ---
       order: 12
@@ -69,7 +76,7 @@ examples:
     details: |
       Text field with avatar for various social handles and full URLs.
       Displayed for variables with keys ending in one of the following: `_twitter`, `_twitter_username`, `_twitter_url`, `_facebook`, `_facebook_username`, `_facebook_url`, `_google_plus`, `_google_plus_username`, `_google_plus_url`, `_instagram`, `_instagram_username`, `_instagram_url`, `_github`, `_github_username`, `_github_url`, `_email` and `_email_address`.
-      Alternatively, you can use the variations without underscores as keys (e.g. `twitter_username`, `facebook_url`, `email_address` or `github`).
+      Alternatively, you can use the variations without underscores as keys (e.g. `twitter_username` or `facebook_url`).
     info: |
       For compatibility with popular Jekyll plugins, the Twitter **@** symbol is stripped from the value on save. The Twitter interfaces display a placeholder symbol.
 
@@ -293,7 +300,7 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/array-defaults.png
-    info: Array defaults also apply in the [Content Editor](/editing/content-editor/) with CSV, YAML and JSON files.
+    info: Array defaults also apply when editing CSV, YAML and JSON files.
 ---
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
@@ -313,8 +320,8 @@ CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Se
 
 ![CloudCannon front matter interface](/img/editing/front-matter/overview.png){: .screenshot srcset="/img/editing/front-matter/overview.png 800w, /img/editing/front-matter/overview@2x.png 1600w"}
 
-There are interfaces for different types of content. Values and naming schemes dictate which interfaces are used.
-Use these naming schemes to customise the editor for your team and clients. The available interfaces are:
+There are interfaces for different types of content. Values and key naming conventions dictate which interfaces are used.
+Use these conventions to customise the editor for your team and clients. The available interfaces are:
 
 {% for example in page.examples %}
 ***
