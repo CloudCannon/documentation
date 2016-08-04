@@ -24,7 +24,7 @@ examples:
       - /img/editing/front-matter/large-text-field.png
   - title: Rich Text
     details: |
-      WYSIWYG editor for formatted content. Displayed for variable with keys ending in `html` or `markdown`.
+      WYSIWYG editor for formatted content. Displayed for variables with keys ending in `html` or `markdown`.
 
       Each variation defines which format the value is saved as.
     yaml: |
