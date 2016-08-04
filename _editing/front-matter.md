@@ -6,7 +6,7 @@ requirements:
   plan: Free
   hosting: Any
 examples:
-  - title: Text Field
+  - title: Text
     details: Single line field for text. Displayed for short text variables.
     yaml: |
       ---
@@ -14,7 +14,7 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/text-field.png
-  - title: Large Text Field
+  - title: Large Text
     details: Multiline text field expanded for longer text. Displayed when there is too much text for a text field, and for the `description` key.
     yaml: |
       ---
@@ -22,6 +22,31 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/large-text-field.png
+  - title: Rich Text
+    details: |
+      WYSIWYG editor for formatted content. Displayed for variable with keys ending in `html` or `markdown`.
+
+      Each variation defines which format the value is saved as.
+    yaml: |
+      ---
+      markdown: |
+        # Animals
+
+        - Dogs
+        - Cats
+
+        > It's raining cats and dogs.
+      sidebar_html: |
+        <p>This paragraph has <em>emphasis</em> and <strong>strength</strong>.</p>
+        <ol>
+          <li>Walk</li>
+          <li>Run</li>
+        </ol>
+        <p>Linking to <a href="/">index</a>.</p>
+      ---
+    image_paths:
+      - /img/editing/front-matter/rich-text.png
+    info: Use the `markdownify` Liquid filter to render Markdown from front matter.
   - title: Boolean
     details: Checkbox which can be triggered on or off. Displayed for variables with values set to **true** or **false**.
     yaml: |
