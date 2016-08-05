@@ -15,7 +15,7 @@ examples:
     image_paths:
       - /img/editing/front-matter/text-field.png
   - title: Large Text
-    details: Multiline text field expanded for longer text. Displayed when there is too much text for a text field, and for the `description` key.
+    details: Multiline text field expanded for longer text. Displayed for long text variables and the `description` key.
     yaml: |
       ---
       description: Products are crafted in-house by hand, making each piece a labour of love and an exercise in craftsmanship.
@@ -24,7 +24,8 @@ examples:
       - /img/editing/front-matter/large-text-field.png
   - title: Rich Text
     details: |
-      WYSIWYG editor for formatted content. Displayed for variables with keys ending in `html` or `markdown`.
+      WYSIWYG editor for formatted content. Displayed for variables with keys ending in `_html` or `_markdown`.
+      Alternatively, you can use the variations without underscores as keys (e.g. `markdown`).
 
       Each variation defines which format the value is saved as.
     yaml: |
