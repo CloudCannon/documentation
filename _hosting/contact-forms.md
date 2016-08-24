@@ -82,6 +82,16 @@ The subject of the email.
 </select>
 {% endhighlight %}
 
+#### `_cc`
+
+The value used for the CC header in the email.
+Use this to send a copy in another address (or addresses) without sending it directly.
+Send a copy of the email to multiple addresses by separating them with commas.
+
+{% highlight html %}
+<input type="hidden" name="_cc" value="contact@example.com">
+{% endhighlight %}
+
 #### `_gotcha`
 
 Honeypot field for preventing untargeted spam.
@@ -99,16 +109,6 @@ CloudCannon does **not** send the email if the CAPTCHA fails to validate.
 
 {% highlight html %}
 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-{% endhighlight %}
-
-#### `_cc`
-
-The value used for the CC header in the email.
-Use this to send a copy in another address (or addresses) without sending it directly.
-Send a copy of the email to multiple addresses by separating them with commas.
-
-{% highlight html %}
-<input type="hidden" name="_cc" value="contact@example.com">
 {% endhighlight %}
 
 ---
