@@ -102,28 +102,23 @@ Hide it with CSS to prevent visitors filling it out.
 <input type="text" name="_gotcha" style="display: none;">
 {% endhighlight %}
 
-#### `g-recaptcha`
-[ReCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
-CloudCannon does **not** send the email if the CAPTCHA fails to validate.
-[ReCAPTCHA](https://developers.google.com/recaptcha/) requires [additional configuration](#setting-up-recaptcha) in the site settings.
-
-{% highlight html %}
-<div class="g-recaptcha" data-sitekey="your_site_key"></div>
-{% endhighlight %}
+For better spam prevention try using [Google ReCAPTCHA](#google-recaptcha).
+{: .info}
 
 ---
 
-### Setting up ReCAPTCHA
+### Google ReCAPTCHA
 
-[ReCAPTCHA](https://developers.google.com/recaptcha/) prevents targeted and untargeted spam.
+[ReCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
 CloudCannon does **not** send the email if the CAPTCHA fails to validate.
+[ReCAPTCHA](https://developers.google.com/recaptcha/) requires additional configuration in the *Site Settings*.
 
 ![ReCAPTCHA Example](/img/hosting/captcha.gif)
 
 To add [ReCAPTCHA](https://developers.google.com/recaptcha/) to your site:
 
 1. Sign up for an API key at [https://developers.google.com/recaptcha/](https://developers.google.com/recaptcha/)
-2. Render the form following the instructions at the [ReCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
+2. Add the form element by following the instructions at the [ReCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
 3. Add the secret and key to *Site Settings* / *Forms*
 
 ![ReCAPTCHA Configuration](/img/hosting/recaptcha.png){: .screenshot srcset="/img/hosting/recaptcha.png 800w, /img/hosting/recaptcha@2x.png 1600w"}
