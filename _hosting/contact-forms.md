@@ -84,12 +84,21 @@ The subject of the email.
 
 #### `_gotcha`
 
-Honeypot field for preventing spam.
+Honeypot field for preventing untargeted spam.
 CloudCannon does **not** send the email if this field has a value.
 Hide it with CSS to prevent visitors filling it out.
 
 {% highlight html %}
 <input type="text" name="_gotcha" style="display: none;">
+{% endhighlight %}
+
+#### `g-recaptcha`
+[ReCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
+CloudCannon does **not** send the email if the CAPTCHA fails to validate.
+[ReCAPTCHA](https://developers.google.com/recaptcha/) requires [additional configuration](#setting-up-recaptcha) in the site settings.
+
+{% highlight html %}
+<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 {% endhighlight %}
 
 #### `_cc`
@@ -102,6 +111,26 @@ Send a copy of the email to multiple addresses by separating them with commas.
 <input type="hidden" name="_cc" value="contact@example.com">
 {% endhighlight %}
 
+---
+
+### Setting up ReCAPTCHA
+
+[ReCAPTCHA](https://developers.google.com/recaptcha/) prevents targeted and untargeted spam.
+CloudCannon does **not** send the email if the CAPTCHA fails to validate.
+
+![ReCAPTCHA Example](/img/hosting/captcha.gif)
+
+To add [ReCAPTCHA](https://developers.google.com/recaptcha/) to your site:
+
+1. Sign up for an API key at [https://developers.google.com/recaptcha/](https://developers.google.com/recaptcha/)
+2. Render the form following the instructions at the [ReCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
+3. Add the secret and key to *Site Settings* / *Forms*
+
+![ReCAPTCHA Configuration](/img/hosting/recaptcha.png){: .screenshot srcset="/img/hosting/recaptcha.png 800w, /img/hosting/recaptcha@2x.png 1600w"}
+
+Once configured, any form submissions that fail to validate will return a 401 error page.
+
+![401 Error Page](/img/hosting/401-error.png){: .screenshot srcset="/img/hosting/401-error.png 800w, /img/hosting/401-error@2x.png 1600w"}
 
 ---
 
