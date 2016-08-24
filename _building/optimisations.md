@@ -1,15 +1,13 @@
 ---
 title: Optimisations
-order: 7
+order: 6
 requirements:
   build: Any
   plan: Free
   hosting: CloudCannon
 ---
 
-CloudCannon optimises sites so they load as fast as possible.
-
-CloudCannon minifies CSS with [clean-css](https://github.com/GoalSmashers/clean-css) and JavaScript with [Uglifier](https://github.com/lautis/uglifier). Externally hosted assets are not optimised.
+CloudCannon optimises sites to load as fast as possible. CloudCannon minifies CSS with [clean-css](https://github.com/GoalSmashers/clean-css) and JavaScript with [Uglifier](https://github.com/lautis/uglifier). Externally hosted assets are not optimised.
 
 Filenames containing **-min** or **.min** are not minified, as the filename suggests they have been minified already.
 {: .info}
@@ -18,11 +16,9 @@ Assets referenced in the HTML and CSS are served from a CDN. Text based assets (
 
 Optimisations are on by default, to toggle optimisations for your site:
 
-1. Go to the *Site Settings* / *Details* section
+1. Go to the *Site Settings* / *Build* section
 2. Toggle **Minify and serve assets from CDN**
-3. Click **Update Site**
-
-![Optimisations Interface](/img/hosting/site-details.png){: .screenshot srcset="/img/hosting/site-details.png 800w, /img/hosting/site-details@2x.png 1600w"}
+3. Click **Update Build Details**
 
 ---
 

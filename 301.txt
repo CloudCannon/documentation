@@ -44,3 +44,6 @@
 /tutorials/snippets/ http://jekyll.tips/tutorials/snippets/
 /editing/code-editor/ /editing/source-editor/
 /hosting/ssl/ /ssl/cloudflare/
+/hosting/environments/ /building/environments/
+/hosting/optimisations/ /building/optimisations/
+/building/static/ /building/jekyll/#static
