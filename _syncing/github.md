@@ -38,7 +38,7 @@ To allow access, open the settings for the Organisation on GitHub and go to the 
 
 ![GitHub Organisation settings](/img/syncing/github/organisation-settings.png){: .screenshot srcset="/img/syncing/github/organisation-settings.png 800w, /img/syncing/github/organisation-settings@2x.png 1600w"}
 
-Click the *Edit* button next to **CloudCannon**.
+Click the **Edit** button next to CloudCannon.
 
 ![GitHub Organisation settings for CloudCannon](/img/syncing/github/organisation-cloudcannon-settings.png){: .screenshot srcset="/img/syncing/github/organisation-cloudcannon-settings.png 800w, /img/syncing/github/organisation-cloudcannon-settings@2x.png 1600w"}
 
