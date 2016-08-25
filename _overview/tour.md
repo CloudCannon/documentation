@@ -26,8 +26,8 @@ The creative site is a free HTML template enhanced with Jekyll features.
 
 CloudCannon works directly with the static or Jeykll source files you provide. To upload the creative site source files:
 
-1. Open the *Add Files* menu
-2. Select **Upload a folder**
+1. Select the **Upload folder** option
+2. Select the extracted **creative** folder
 
 Alternatively, drag and drop files into the *File Browser*.
 {: .info}
