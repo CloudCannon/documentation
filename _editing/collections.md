@@ -56,7 +56,7 @@ Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/co
 
 To create a Jekyll collection to manage and display staff members, follow this example (assumes `/_layouts/default.html` exists):
 
-1.  Define the staff collection and default layout in `/_config.yml`:
+1.  Define the staff collection and default layout in `_config.yml`:
 
     ~~~
     collections:
