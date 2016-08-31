@@ -23,6 +23,7 @@ CloudCannon lowercases the filenames (including extensions) of all files uploade
 * eps
 * gif
 * gz
+* haml
 * htc
 * htm
 * html

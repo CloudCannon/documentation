@@ -9,7 +9,7 @@ requirements:
 
 Create and manage [Jekyll data files](https://jekyllrb.com/docs/datafiles/) in CloudCannon.
 
-Data files are YAML, JSON or CSV files located in the `/_data` directory. Use them to separate content from source code.
+Data files are YAML, JSON or CSV files located in the `_data` directory (configurable in `_config.yml` as `data_dir`). Use them to separate content from source code.
 The use cases for data files include: office locations, restaurant menus, staff members and opening hours.
 
 The [Content Editor](/editing/content-editor/) is an easy-to-use editor that supports data files. To access the interface:

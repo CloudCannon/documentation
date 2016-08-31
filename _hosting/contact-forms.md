@@ -82,16 +82,6 @@ The subject of the email.
 </select>
 {% endhighlight %}
 
-#### `_gotcha`
-
-Honeypot field for preventing spam.
-CloudCannon does **not** send the email if this field has a value.
-Hide it with CSS to prevent visitors filling it out.
-
-{% highlight html %}
-<input type="text" name="_gotcha" style="display: none;">
-{% endhighlight %}
-
 #### `_cc`
 
 The value used for the CC header in the email.
@@ -102,6 +92,40 @@ Send a copy of the email to multiple addresses by separating them with commas.
 <input type="hidden" name="_cc" value="contact@example.com">
 {% endhighlight %}
 
+#### `_gotcha`
+
+Honeypot field for preventing untargeted spam.
+CloudCannon does **not** send the email if this field has a value.
+Hide it with CSS to prevent visitors filling it out.
+
+{% highlight html %}
+<input type="text" name="_gotcha" style="display: none;">
+{% endhighlight %}
+
+For better spam prevention try using [Google reCAPTCHA](#google-recaptcha).
+{: .info}
+
+---
+
+### Google reCAPTCHA
+
+[reCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
+CloudCannon does **not** send the email if the CAPTCHA fails to validate.
+[reCAPTCHA](https://developers.google.com/recaptcha/) requires additional configuration in the *Site Settings*.
+
+![reCAPTCHA Example](/img/hosting/captcha.gif)
+
+To add [reCAPTCHA](https://developers.google.com/recaptcha/) to your site:
+
+1. Sign up for an API key at [https://developers.google.com/recaptcha/](https://developers.google.com/recaptcha/)
+2. Add the form element by following the instructions at the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
+3. Add the secret and key to *Site Settings* / *Forms*
+
+![reCAPTCHA Configuration](/img/hosting/recaptcha.png){: .screenshot srcset="/img/hosting/recaptcha.png 800w, /img/hosting/recaptcha@2x.png 1600w"}
+
+Once configured, any form submissions that fail to validate will return a 401 error page.
+
+![401 Error Page](/img/hosting/401-error.png){: .screenshot srcset="/img/hosting/401-error.png 800w, /img/hosting/401-error@2x.png 1600w"}
 
 ---
 

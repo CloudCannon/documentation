@@ -26,7 +26,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
       <a href="{{ post.url }}">Read more</a>
 
       <!-- Editor Link -->
-      <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit</a>
+      <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
     </li>
   {% endfor %}{% endraw %}
 </ul>

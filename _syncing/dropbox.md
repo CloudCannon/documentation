@@ -4,24 +4,28 @@ order: 3
 ---
 {% include cloud_storage.md %}
 
-Go to Storage Providers in your website configuration and click "Connect" next to Dropbox.
+To connect a Dropbox account and start syncing files, follow these instructions:
 
-![Storage Providers](/img/cloud_storage/github/1.png){: .screenshot}
+Go to *Site Settings* / *Storage Providers* and click **Connect** next to Dropbox.
 
-A dialog box will appear asking for the master source for the initial synchronization. This only matters if you have existing files in CloudCannon or Dropbox. The arrow shows the direction of file transfer and points to the source that will be overwritten. Click *Connect Dropbox*.
+![Storage Providers interface](/img/syncing/storage-providers.png){: .screenshot srcset="/img/syncing/storage-providers.png 800w, /img/syncing/storage-providers@2x.png 1600w"}
 
-![Inital Transfer](/img/cloud_storage/dropbox/2.png){: .screenshot}
+A dialog box appears asking for the source for the initial synchronization. This only matters if you have existing files in CloudCannon or Dropbox. The arrow shows indicates the destination where files are overwritten.
 
-This will take you to Dropbox. Type in your credentials to continue.
+Choose a direction and click **Connect Dropbox**.
 
-![Dropbox credentials](/img/cloud_storage/dropbox/3.png){: .screenshot}
+![Dropbox Initial transfer selection](/img/syncing/dropbox/initial-transfer.png){: .screenshot srcset="/img/syncing/dropbox/initial-transfer.png 800w, /img/syncing/dropbox/initial-transfer@2x.png 1600w"}
 
-Next you need to click "Allow" to give CloudCannon access to a folder in your Dropbox. (CloudCannon only has access to this folder, not any of your other files or folders).
+This takes you to Dropbox, enter your credentials to continue.
 
-![Allow](/img/cloud_storage/dropbox/4.png){: .screenshot}
+![Dropbox authentication](/img/syncing/dropbox/authentication.png){: .screenshot srcset="/img/syncing/dropbox/authentication.png 800w, /img/syncing/dropbox/authentication@2x.png 1600w"}
 
-Your Dropbox is now connected to CloudCannon.
+Click **Allow** to give CloudCannon access to a folder in your Dropbox. CloudCannon only has access to this folder, not any of your other files or folders.
 
-![Connected](/img/cloud_storage/dropbox/5.png){: .screenshot}
+![Dropbox authorisation](/img/syncing/dropbox/authorisation.png){: .screenshot srcset="/img/syncing/dropbox/authorisation.png 800w, /img/syncing/dropbox/authorisation@2x.png 1600w"}
 
-Put files in the folder Dropbox->Apps->Cloud Cannon->[Your Site Name] and they will be synced to CloudCannon. Any changes made on CloudCannon will sync back to your Dropbox.
+Dropbox is now connected to CloudCannon.
+
+![Storage Providers interface with Dropbox connected](/img/syncing/dropbox/connected.png){: .screenshot srcset="/img/syncing/dropbox/connected.png 800w, /img/syncing/dropbox/connected@2x.png 1600w"}
+
+Adding files to your local folder **Dropbox/Apps/Cloud Cannon/[Site Name]** syncs them with CloudCannon. Any changes made on CloudCannon sync back to this Dropbox folder.

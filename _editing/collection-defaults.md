@@ -20,3 +20,6 @@ For example:
 * `/_posts/_defaults.md` contains defaults for new draft posts
 
 New items created will use these values. If the `title` and `name` attributes are present, they are set to the name used when a user creates a file.
+
+Looking to set the default values for new array items in front matter? Use [Array Defaults](/editing/front-matter/#array-defaults) instead.
+{: .info}
