@@ -4,7 +4,7 @@ type: minor
 ---
 
 
-This release includes a number improvements to i18n, source configurations and an updated path selector interface.
+This release includes a number of improvements to i18n, source configurations and an updated path selector interface.
 
 Features:
 
