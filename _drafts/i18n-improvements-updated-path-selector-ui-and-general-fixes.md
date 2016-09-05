@@ -20,3 +20,5 @@ Fixes
 * i18n options are now only shown for enterprise sites with locales
 * CSS compressor no longer makes unsafe optimisations
 * Embedded data urls no longer break after CSS compression
+* Path correction in i18n produces the correct url
+* Assets within the editor are no longer cached
