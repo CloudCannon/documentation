@@ -6,7 +6,7 @@ type: major
 
 This release marks the end of our Jekyll and Jekyll plugins betas. Jekyll support is stable and accepts most configurations. We've also added some additional features and improvements.
 
-Features:
+**Features:**
 
 * Plugins automatically enabled on all new sites
 * Jekyll used by default to build all new sites
@@ -23,7 +23,7 @@ Features:
 * Maximum timeout for syncing operations increased
 * Google reCAPTCHA support in *Contact Forms*
 
-Fixes
+**Fixes:**
 
 * Fixed rich text issues when inside arrays or objects
 * Fixed edge case with some values in social interfaces causing errors

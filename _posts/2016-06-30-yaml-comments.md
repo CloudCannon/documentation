@@ -6,7 +6,7 @@ type: minor
 
 This release marks the much-awaited arrival of front matter comments in the *Settings Panel*. Scores of bug fixes and quality-of-life changes are also included.
 
-Features:
+**Features:**
 
 * [Comments/notes](https://docs.cloudcannon.com/editing/front-matter/#comment) for front matter in the *Settings Panel*
 * Download file option in the file context menu
@@ -15,7 +15,7 @@ Features:
 * *Settings Panel* and **Toggle Settings** button hidden if front matter is empty
 
 
-Fixes:
+**Fixes:**
 
 * Fragment/hash `href`s no longer navigate out of *Visual Editor*
 * The placeholder/input when creating new drafts and collection items starts in view when there are many files

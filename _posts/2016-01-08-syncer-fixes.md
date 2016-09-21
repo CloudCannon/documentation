@@ -5,7 +5,7 @@ type: minor
 
 This release includes minor bug fixes, focused around storage provider syncing.
 
-Fixes:
+**Fixes:**
 
 * Fixed some assets not loading in the editor due to inconsistently escaped unicode characters
 * Prevent issues with folder names containing "."s

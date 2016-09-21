@@ -1,22 +1,27 @@
 ---
 title: 301 Redirects
-order: 5
+order: 2
 requirements:
   build: Any
   plan: Free
   hosting: CloudCannon
 ---
 
-When you change the structure of your website, you should redirect the old URLs to the new pages. To set up 301 redirects on CloudCannon, create a file called `301.txt` in the root of your website. In this file, you can specify the redirects using this syntax:
+When you change the structure of your website, you should redirect the old URLs to the new pages.
+
+To set up 301 redirects:
+
+1. Create a file called `301.txt` at the root of your site
+2. Specify the redirects in this file using the following syntax
 
 {% highlight text %}
-old_url new_url
+old-url new-url
 {% endhighlight %}
 
-You can have wildcards by using `*` and external domains will work too. Here's an example file:
+CloudCannon supports redirects to external domains and wildcard matching with `*`. Here's an example file:
 
 {% highlight text %}
-/old_file.html /new_file.html
-/category/* /new_category
-/page/ http://google.com
+/about.html /about/
+/category/* /new-category
+/should-have-been-elsewhere/ http://example.com
 {% endhighlight %}

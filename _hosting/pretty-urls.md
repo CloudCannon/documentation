@@ -1,6 +1,6 @@
 ---
 title: Pretty URLs
-order: 4
+order: 6
 requirements:
   build: Any
   plan: Free
@@ -9,7 +9,7 @@ requirements:
 
 Remove the `.html` extensions in the URLs on your site.
 
-To prettify the URL for an about page:
+To prettify the URL for an `/about.html` page:
 
 1. Create a folder called `about` in the root directory of your site
 2. Add the about page to the folder and name it `index.html`

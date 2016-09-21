@@ -6,13 +6,13 @@ type: minor
 
 This release fixes a few early bugs found in the plugins private beta.
 
-Features:
+**Features:**
 
 * Added `--drafts` to compiler error if **Output Draft Posts** is enabled
 * Better compiler output from plugin builds
 
 
-Fixes:
+**Fixes:**
 
 * Gemfiles can be created in the *File Browser*
 * Titles missing from *Page Selector*

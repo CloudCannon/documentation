@@ -5,7 +5,7 @@ type: major
 
 This release includes a number of new front matter interfaces, a redesigned site *Status* section, and general bug fixes.
 
-Features:
+**Features:**
 
 * Fresh design for *Status* section
 * Social front matter interfaces (Google+, GitHub, Twitter, Facebook, Instagram and email address)
@@ -16,7 +16,7 @@ Features:
 * Separate billing email address to receive invoices
 * SSL and other security improvements
 
-Fixes:
+**Fixes:**
 
 * Fix some gzip issues when serving files
 * Remove invoices potentially appearing over the free trial

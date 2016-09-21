@@ -7,7 +7,12 @@ requirements:
   hosting: CloudCannon
 ---
 
-Add a page called `404.html` to the root directory of your site. CloudCannon will serve this page when it can't find a file on your site.
+CloudCannon serves a 404 page when it can't find a file on your site. Customise and brand this page as your own.
+
+To create a custom 404 page:
+
+1. Create a file called `404.html` at the root of your site
+2. Add the content you want CloudCannon to serve
 
 Set the `permalink` of your page to `/404.html` if you are using Jekyll and non-default permalinks.
 {: .info}

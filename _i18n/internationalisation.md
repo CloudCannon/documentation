@@ -45,6 +45,7 @@ To obtain the current locale you can visit any of these URLs on your site:
 ---
 
 ### Providing alternative locales
+
 Once you have the current locale you can start creating new ones. For each new locale:
 
 1. Create the file with your chosen format (either `.yml`, `.json` or `.properties`).
@@ -69,13 +70,13 @@ welcome_message = Hola, bienvenido a mi página web
 	</li>
 </ul>
 
-CloudCannon will now generate a new version of the HTML per locale and route visitors based on their accept-language header and country.
+CloudCannon generates a new version of the HTML per locale and route visitors based on their accept-language header and country.
 
 ---
 
 ### Detecting the current locale
 
-CloudCannon automatically injects the viewers locale into the HTML elements class as it is served. If a site has en_NZ support and the viewer accepts that language it will look like:
+CloudCannon automatically injects the viewers locale into the HTML elements class as it is served. If a site has en_NZ support and the viewer accepts that language it looks like:
 
 {% highlight html %}
 <html class="language-en_nz">

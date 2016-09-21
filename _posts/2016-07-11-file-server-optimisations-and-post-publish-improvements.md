@@ -6,7 +6,7 @@ type: minor
 
 This release contains SEO improvements for the file server and a better publish workflow.
 
-Features:
+**Features:**
 
 * Improved publish for draft posts. When a date is specified in the front matter, CloudCannon uses that for the published filename. When the date field is empty, CloudCannon populates it with today's date and uses that in the filename. If there is no date field, CloudCannon uses today's date in the filename.
 * YAML/CSV now only copies the structure from previous entry when creating a new array item rather than the values as well
@@ -14,7 +14,7 @@ Features:
 * URLs ending with \*/index.html redirect to \*/
 
 
-Fixes:
+**Fixes:**
 
 * Better preloading on route changes after uploading large lists of files
 * `@import` in CSS files no longer prevents compression if the imports are external URLs

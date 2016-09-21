@@ -6,7 +6,7 @@ type: major
 
 This release improves the user experience for editing YAML files and adding files to an empty site.&nbsp;
 
-Features:
+**Features:**
 
 * Improved YAML editor with redesigned breadcrumb and layout
 * Added `hide_content` setting to enable a full screen YAML editor for front matter
@@ -17,7 +17,7 @@ Features:
 * Validation on SSL certs when uploaded
 
 
-Fixes:
+**Fixes:**
 
 * Collection tab displaying at incorrect times
 * Layout select box now populates correctly

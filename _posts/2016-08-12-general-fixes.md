@@ -6,12 +6,12 @@ type: minor
 
 This release includes a number of general bug fixes.
 
-Features:
+**Features:**
 
 * Added .ics support
 
 
-Fixes
+**Fixes:**
 
 * Live output from builds corrected in multiple cases
 * SSL cert chains corrected for all sites

@@ -9,14 +9,14 @@ This week's deployment focuses on usability changes to the sites list. Site name
 
 Syncing improvements ensure that sites stay synchronised when reconnected. When connecting a Git repository, all files on CloudCannon are reset to the state on the selected branch.
 
-Features:
+**Features:**
 
 * New sites list design.
 * Site icon pixel reading to optimise viewing.
 * Videos and audio files are served from a CDN.
 
 
-Fixes:
+**Fixes:**
 
 * Resetting a connection will delete files in CloudCannon. This often left sites in an intermediate state.
 * Syncing with GitHub or Bitbucket no longer syncs the&nbsp;`_site`&nbsp;and `node_modules` directories.

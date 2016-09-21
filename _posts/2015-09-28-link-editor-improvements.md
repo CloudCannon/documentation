@@ -6,7 +6,7 @@ type: major
 This release includes a redesign of the link pop out in the Visual Editor.
 The design is more consistent and streamlined for users. The preview mode is no longer required.
 
-Other features include:
+**Features:**
 
 * Client interface preview, support and documentation URL options
 * Button for adding new array item improved
@@ -16,7 +16,7 @@ Other features include:
 * Date support in CSV editor
 * Improved file actions in *Collections* / *Pages* section
 
-Bug fixes:
+**Fixes:**
 
 * Disable output and permalink editing for a collection in the *Collections* section
 * Prevent browser find overscrolling editor content

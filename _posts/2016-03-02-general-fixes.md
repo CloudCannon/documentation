@@ -5,12 +5,12 @@ type: minor
 
 This release contains minor fixes and improvements.
 
-Features:
+**Features:**
 
 * `th` elements added to supported inline editable regions
 * Collection Defaults added to progress items in *Site Status*
 
-Fixes:
+**Fixes:**
 
 * Fixed support for syncing empty repositories.
 * Fixed an issue with DNS interface for non-apex domains.

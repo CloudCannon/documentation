@@ -6,13 +6,13 @@ type: minor
 
 This release increases the speed of all file operations (saving, syncing and serving etc.) and resolves issues discovered via support.
 
-Features:
+**Features:**
 
 * Improved speed on all file operations
 * Storage provider icon replaces file browser icon when connected
 
 
-Fixes:
+**Fixes:**
 
 * HTML code within tilde code blocks are no longer escaped
 * Unauthorised GitHub accounts handled more gracefully
