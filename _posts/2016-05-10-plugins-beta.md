@@ -5,7 +5,7 @@ type: major
 
 This release marks our first official support for custom plugins. Get in touch if you want to be part of the beta. Read on for the full list of features and bug fixes included.
 
-Features:
+**Features:**
 
 * Private beta for Jekyll plugin support
 * Update filename for blog posts when the title and date are changed in the *Settings Panel*
@@ -15,7 +15,7 @@ Features:
 * Improved UI for JSON and YAML files with array as only child
 * YAML/JSON editor uses prettified filename if no `title` exists
 
-Fixes:
+**Fixes:**
 
 * Prevent items in *Collections* to be moved above their base path
 * Fixed comments added by keyboard shortcut in *Source Editor* for `.scss` files

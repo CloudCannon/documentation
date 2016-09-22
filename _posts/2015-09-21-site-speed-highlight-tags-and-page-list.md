@@ -12,7 +12,7 @@ A DOS attack early last week forced us to review page performance. The improveme
 * Compression on sites are now performed immediately after a Jekyll compile.
 
 
-Additionally we added new features:
+**Features:**
 
 * Added support for highlight tag in markdown editor. This retains the content like a pre tag.
 * Users will need to downgrade before deleting their account to stop accidental deletions
@@ -20,7 +20,7 @@ Additionally we added new features:
 * Added support for category posts folders. Each category is listed in the *Collections* section. For example, posts in `/cats/_posts` are separated from those inside `/_posts`. All drafts remain in `/_drafts/`, upon publishing the category decides where they should go. No change will occur if you have all posts in `/_posts`.
 
 
-As always, bug fixes include:
+**Fixes:**
 
 * Safari client editor failed to login on first use
 * Client editor move/delete files were not working for some users

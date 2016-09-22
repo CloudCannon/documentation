@@ -8,13 +8,13 @@ This release adds inline editing of Markdown content. This feature means that po
 
 ![Markdown content region editable in the Visual Editor](/img/editing/editable-regions/markdown-editable.png){: .screenshot srcset="/img/editing/editable-regions/markdown-editable.png 800w, /img/editing/editable-regions/markdown-editable@2x.png 1600w"}
 
-Features:
+**Features:**
 
 * Inline editing on Markdown pages
 * Object and array support for *Contact Forms*
 
 
-Fixes:
+**Fixes:**
 
 * Span tag edge case issue fixed in *Content Editor*
 * GitHub syncing no longer missing files on some large commits

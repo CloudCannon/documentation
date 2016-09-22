@@ -9,13 +9,13 @@ requirements:
 
 Geolocation on CloudCannon allows you to detect which country your viewers are coming from. CloudCannon automatically injects the viewers country code into the HTML elements class as it is served.
 
-If a viewer is from New Zealand, the class `country-nz` will be added to look like this:
+If a viewer is from New Zealand, the class `country-nz` is added to look like this:
 
 {% highlight html %}
 <html class="country-nz">
 {% endhighlight %}
 
-Using CSS you can show and hide elements:
+Use CSS to show and hide elements:
 
 {% highlight css %}
 .new-zealand-content {
@@ -27,7 +27,7 @@ Using CSS you can show and hide elements:
 }
 {% endhighlight %}
 
-Run some custom JavaScript based on country code:
+Run custom JavaScript based on country code:
 
 {% highlight js %}
 var htmlElement = document.documentElement,

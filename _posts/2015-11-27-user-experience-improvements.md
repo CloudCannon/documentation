@@ -5,7 +5,7 @@ type: minor
 
 This release includes various user experience improvements and fixes.
 
-Features:
+**Features:**
 
 * GST displayed on New Zealand invoices
 * White labelled email when creating adding users with user account authentication
@@ -14,7 +14,7 @@ Features:
 * Open collection items for editing when created
 * Serve `ico` and `pdf` files from CDN
 
-Fixes:
+**Fixes:**
 
 * Prevent plain single and quotes from being turned into entities in our editors
 * Fixed a flickering issue when sharing site to team members

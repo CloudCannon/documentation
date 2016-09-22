@@ -8,13 +8,13 @@ This release adds live output from Jekyll builds. This also allows you to view o
 
 ![View the live output from any build](/img/building/live-output.png){: .screenshot srcset="/img/building/live-output.png 800w, /img/building/live-output@2x.png 1600w"}
 
-Features:
+**Features:**
 
 * Live outputs from Jekyll builds. Click **Show Output**&nbsp;in the sidebar or *Status* section to view a live stream of logs during a build
 * Output of a successful build is available in the *Status* section
 
 
-Fixes:
+**Fixes:**
 
 * Apostrophes in post titles no longer slugify to a dash
 * Better handling of invalid authentication states

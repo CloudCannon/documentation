@@ -1,6 +1,6 @@
 ---
 title: Contact Forms
-order: 6
+order: 4
 requirements:
   build: Any
   plan: Free

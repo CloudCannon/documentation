@@ -5,7 +5,7 @@ type: major
 
 This release announces the start of our SSL private beta, new file types, better pasting from Microsoft Word, a new collection configure interface and general improvements/fixes. Contact support to join the SSL private beta.
 
-Features:
+**Features:**
 
 * Custom SSL support released
 * Better Microsoft Word pasting
@@ -14,7 +14,7 @@ Features:
 * Added support for empty arrays in front matter (defaults to string entries)
 * Improved documentation
 
-Fixes:
+**Fixes:**
 
 * *Collections* section visible when *Collection Defaults* are the only entries
 * Empty `strong`, `em` and `u` tags removed from Markdown output on save

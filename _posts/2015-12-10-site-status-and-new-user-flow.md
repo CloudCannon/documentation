@@ -5,7 +5,7 @@ type: major
 
 This release includes consolidated interface changes and the site status feature. You can find more details on the release the associated [blog post](http://cloudcannon.com/features/2015/12/10/site-status-and-new-user-flow/).
 
-Features:
+**Features:**
 
 * *Status* section for site state, errors, suggestions and activity
 * Improved empty interfaces detailing next steps
@@ -14,7 +14,7 @@ Features:
 * Onboarding when sharing to team members without accounts has improved
 * Folders in *Collections* view now prettified
 
-Fixes:
+**Fixes:**
 
 * Potential flickering in share UI resolved
 * Fixed pages collection showing when no pages exist
