@@ -25,7 +25,7 @@ To create a new collection item:
 1. Open the *Add Files* menu in the top right corner and select **Add *Collection Name***
 2. Enter a title/filename for the item and press enter
 
-Your file will be opened in the CloudCannon content editor. Front matter for the file is populated from [Collection Defaults](/editing/collection-defaults/) or an existing item to keep the structure consistent.
+Your new file is opened in the [Content Editor](/editing/content-editor/). Front matter for the file is populated from [Collection Defaults](/editing/collection-defaults/) or an existing item to keep the structure consistent.
 
 ![Creating a new collection item](/img/editing/collections/adding-item.png){: .screenshot srcset="/img/editing/collections/adding-item.png 800w, /img/editing/collections/adding-item@2x.png 1600w"}
 
@@ -36,14 +36,12 @@ There are a number of ways to add content for your new item:
 * Type the main content directly onto the page
 * Insert images, links, and style your text with the editor controls above
 
-Non-output HTML collections can only be edited in the [Source Editor](/editing/source-editor/).
-
 The owner and developers of a site can access the raw file content via the **Switch to Source Editor** button.
 {: .info}
 
 ![Editing item](/img/editing/collections/edit-item.png){: .screenshot srcset="/img/editing/collections/edit-item.png 800w, /img/editing/collections/edit-item@2x.png 1600w"}
 
-[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) can be updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
+[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) is updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
 
 Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="_blank"} instead.
 {: .info}
