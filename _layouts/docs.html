@@ -5,7 +5,7 @@ layout: default
 
 <section class="main">
 	<div class="page-header">
-		<h2>{{ collection.title }}</h2>
+		<h2>{{ collection.title | default: "Change Log" }}</h2>
 		<h3>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h3>
 	</div>
 	<article class="content">
@@ -34,3 +34,5 @@ layout: default
 		<div>{{ content }}</div>
 	</article>
 </section>
+
+<script>{% include anchor-links.js %}</script>

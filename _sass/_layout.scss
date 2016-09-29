@@ -379,3 +379,24 @@ h4 svg {
 		border-color: #ddd;
 	}
 }
+
+.header-link {
+	margin-left: 10px;
+	opacity: 0;
+	transition: opacity ease 0.2s, color ease 0.2s;
+	text-decoration: none;
+	color: #888;
+    font-size: 0.9em;
+    vertical-align: bottom;
+
+    &:hover {
+        color: $brand-colour;
+    }
+}
+
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+	opacity: 1;
+}
