@@ -32,7 +32,8 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 </ul>
 {% endhighlight %}
 
-![CloudCannon blog posts with edit buttons](/img/editing/editor-links/blog-posts.png){: .screenshot srcset="/img/editing/editor-links/blog-posts.png 800w, /img/editing/editor-links/blog-posts@2x.png 1600w"}
+![CloudCannon blog posts with edit buttons](/img/editing/editor-links/blog-posts.png){: srcset="/img/editing/editor-links/blog-posts.png 800w, /img/editing/editor-links/blog-posts@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -42,7 +43,8 @@ To have an edit link on a collection item page, add the following to the page:
 {% raw %}<a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link">Edit</a>{% endraw %}
 {% endhighlight %}
 
-![Netflix case study collection item with edit button](/img/editing/editor-links/collection-item.png){: .screenshot srcset="/img/editing/editor-links/collection-item.png 800w, /img/editing/editor-links/collection-item@2x.png 1600w"}
+![Netflix case study collection item with edit button](/img/editing/editor-links/collection-item.png){: srcset="/img/editing/editor-links/collection-item.png 800w, /img/editing/editor-links/collection-item@2x.png 1600w"}
+{: .has-screenshot}
 
 When generating *Editor Links* in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
 {: .info}

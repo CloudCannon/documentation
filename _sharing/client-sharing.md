@@ -11,7 +11,8 @@ Share your site with your clients without them having to create a CloudCannon ac
 
 Go to the *Site Settings* / *Client Sharing* section and enter a password:
 
-![Client Sharing](/img/sharing/client-sharing.png){: .screenshot srcset="/img/sharing/client-sharing.png 800w, /img/sharing/client-sharing@2x.png 1600w"}
+![Client Sharing](/img/sharing/client-sharing.png){: srcset="/img/sharing/client-sharing.png 800w, /img/sharing/client-sharing@2x.png 1600w"}
+{: .has-screenshot}
 
 Send your clients their website URL suffixed with **/update** (e.g. `http://example.com/update`) and have them enter the password. Once they've logged in, your client gets access to the [Visual Editor](/editing/visual-editor/) to edit content on their site.
 
@@ -29,4 +30,5 @@ To change the URLs:
 2. Enter the desired URLs (all are optional)
 3. Click **Update Client Interface**
 
-![Client Interface](/img/sharing/client-interface.png){: .screenshot srcset="/img/sharing/client-interface.png 800w, /img/sharing/client-interface@2x.png 1600w"}
+![Client Interface](/img/sharing/client-interface.png){: srcset="/img/sharing/client-interface.png 800w, /img/sharing/client-interface@2x.png 1600w"}
+{: .has-screenshot}

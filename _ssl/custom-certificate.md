@@ -17,7 +17,8 @@ To add a new SSL Certificate:
 Once added, the SSL certificate needs to be attached to the site.
 {: .info}
 
-![Adding a new SSL certificate](/img/ssl/adding.png){: .screenshot srcset="/img/ssl/adding.png 800w, /img/ssl/adding@2x.png 1600w"}
+![Adding a new SSL certificate](/img/ssl/adding.png){: srcset="/img/ssl/adding.png 800w, /img/ssl/adding@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -28,7 +29,8 @@ To add SSL to a site:
 1. Go to *Site Settings* / *SSL*
 2. Click **Attach** on any SSL certificate
 
-![Attaching an SSL certificate](/img/ssl/attaching.png){: .screenshot srcset="/img/ssl/attaching.png 800w, /img/ssl/attaching@2x.png 1600w"}
+![Attaching an SSL certificate](/img/ssl/attaching.png){: srcset="/img/ssl/attaching.png 800w, /img/ssl/attaching@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -41,4 +43,5 @@ To redirect all HTTP traffic to HTTPS:
 2. Enable the **Redirect all HTTP traffic to HTTPS** option
 3. Update the site.
 
-![Redirecting HTTP to HTTPS](/img/ssl/redirecting.png){: .screenshot srcset="/img/ssl/redirecting.png 800w, /img/ssl/redirecting@2x.png 1600w"}
+![Redirecting HTTP to HTTPS](/img/ssl/redirecting.png){: srcset="/img/ssl/redirecting.png 800w, /img/ssl/redirecting@2x.png 1600w"}
+{: .has-screenshot}

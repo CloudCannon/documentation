@@ -347,7 +347,8 @@ title: Home
 
 CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Settings** button at top right of the [Visual Editor](/editing/visual-editor/) or [Content Editor](/editing/content-editor/) to access it.
 
-![CloudCannon front matter interface](/img/editing/front-matter/overview.png){: .screenshot srcset="/img/editing/front-matter/overview.png 800w, /img/editing/front-matter/overview@2x.png 1600w"}
+![CloudCannon front matter interface](/img/editing/front-matter/overview.png){: srcset="/img/editing/front-matter/overview.png 800w, /img/editing/front-matter/overview@2x.png 1600w"}
+{: .has-screenshot}
 
 There are interfaces for different types of content. Values and key naming conventions dictate which interfaces are used.
 Use these conventions to customise the editor for your team and clients. The available interfaces are:

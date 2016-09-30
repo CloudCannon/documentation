@@ -6,7 +6,8 @@ type: minor
 
 This release adds live output from Jekyll builds. This also allows you to view output from successful builds rather than only failed builds.
 
-![View the live output from any build](/img/building/live-output.png){: .screenshot srcset="/img/building/live-output.png 800w, /img/building/live-output@2x.png 1600w"}
+![View the live output from any build](/img/building/live-output.png){: srcset="/img/building/live-output.png 800w, /img/building/live-output@2x.png 1600w"}
+{: .has-screenshot}
 
 **Features:**
 
