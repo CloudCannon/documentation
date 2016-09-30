@@ -13,11 +13,13 @@ The advantage of doing this is CloudFlare does many performance and security enh
 
 First off, head over to CloudFlare and register a new account:
 
-![CloudFlare](/img/ssl/cloudflare/2.png){: .screenshot}
+![CloudFlare](/img/ssl/cloudflare/2.png)
+{: .has-screenshot}
 
 Next it'll ask for your website address:
 
-![CloudFlare](/img/ssl/cloudflare/3.png){: .screenshot}
+![CloudFlare](/img/ssl/cloudflare/3.png)
+{: .has-screenshot}
 
 After this CloudFlare will take about a minute to scan your existing DNS records. Once it's finished it, it'll show you the DNS records it's found. You need to verify these records are correct. For CloudCannon websites the DNS records are fairly simple, usually the setup is:
 
@@ -27,15 +29,18 @@ After this CloudFlare will take about a minute to scan your existing DNS records
 
 Once you're happy these are correct, click the continue button:
 
-![CloudFlare](/img/ssl/cloudflare/4.png){: .screenshot}
+![CloudFlare](/img/ssl/cloudflare/4.png)
+{: .has-screenshot}
 
 Next up is configuring CloudFlare. I switched the plan to **Free** and the performance to **CDN + Full optimizations**:
 
-![CloudFlare](/img/ssl/cloudflare/5.png){: .screenshot}
+![CloudFlare](/img/ssl/cloudflare/5.png)
+{: .has-screenshot}
 
 Now you need to update your nameservers. Log in to your domain provider and change the nameservers to the ones that CloudFlare gives you:
 
-![CloudFlare](/img/ssl/cloudflare/6.png){: .screenshot}
+![CloudFlare](/img/ssl/cloudflare/6.png)
+{: .has-screenshot}
 
 Almost finished! Now go into your CloudFlare settings:
 

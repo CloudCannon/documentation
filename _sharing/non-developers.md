@@ -19,7 +19,8 @@ To share with a site with a non-developer:
 3. Choose **Non-Developer** as the *Permission Level*
 4. Click **Add Share**
 
-![Sharing with a non-developer](/img/sharing/non-developer.png){: .screenshot srcset="/img/sharing/non-developer.png 800w, /img/sharing/non-developer@2x.png 1600w"}
+![Sharing with a non-developer](/img/sharing/non-developer.png){: srcset="/img/sharing/non-developer.png 800w, /img/sharing/non-developer@2x.png 1600w"}
+{: .has-screenshot}
 
 Team members shared on other sites appear in the interface for quick sharing.
 {: .info}

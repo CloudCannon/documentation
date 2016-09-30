@@ -11,7 +11,8 @@ To connect a Bitbucket repository and start syncing files, follow these instruct
 
 Go to *Site Settings* / *Storage Providers* and click **Connect** next to Bitbucket.
 
-![Storage Providers interface](/img/syncing/storage-providers.png){: .screenshot srcset="/img/syncing/storage-providers.png 800w, /img/syncing/storage-providers@2x.png 1600w"}
+![Storage Providers interface](/img/syncing/storage-providers.png){: srcset="/img/syncing/storage-providers.png 800w, /img/syncing/storage-providers@2x.png 1600w"}
+{: .has-screenshot}
 
 This redirects you to Bitbucket. Log in and authorise CloudCannon access to your Bitbucket account.
 
@@ -22,4 +23,5 @@ A dialog box warns you if there are existing files in your site. The files will 
 
 Bitbucket is now connected. Changes you push to the Git repository are pulled in by CloudCannon. Any changes made on CloudCannon are automatically committed and pushed.
 
-![Storage Providers interface with Bitbucket connected](/img/syncing/bitbucket/connected.png){: .screenshot srcset="/img/syncing/bitbucket/connected.png 800w, /img/syncing/bitbucket/connected@2x.png 1600w"}
+![Storage Providers interface with Bitbucket connected](/img/syncing/bitbucket/connected.png){: srcset="/img/syncing/bitbucket/connected.png 800w, /img/syncing/bitbucket/connected@2x.png 1600w"}
+{: .has-screenshot}

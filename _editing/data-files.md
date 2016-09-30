@@ -17,7 +17,8 @@ The [Content Editor](/editing/content-editor/) is an easy-to-use editor that sup
 1. Add a Jekyll site with at least one data file
 2. Open the file from *Collections* / *Data* section
 
-![Data files interface](/img/editing/data-files/data-files-interface.png){: .screenshot srcset="/img/editing/data-files/data-files-interface.png 800w, /img/editing/data-files/data-files-interface@2x.png 1600w"}
+![Data files interface](/img/editing/data-files/data-files-interface.png){: srcset="/img/editing/data-files/data-files-interface.png 800w, /img/editing/data-files/data-files-interface@2x.png 1600w"}
+{: .has-screenshot}
 
 Developers have access to the raw contents with the [Source Editor](/editing/source-editor/).
 {: .info}
@@ -41,7 +42,8 @@ latitude,longitude,name
 -35.117330,173.267559,Kaitaia
 {% endhighlight %}
 
-![CSV interface](/img/editing/data-files/csv.png){: .screenshot srcset="/img/editing/data-files/csv.png 800w, /img/editing/data-files/csv@2x.png 1600w"}
+![CSV interface](/img/editing/data-files/csv.png){: srcset="/img/editing/data-files/csv.png 800w, /img/editing/data-files/csv@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -79,4 +81,5 @@ Group of input fields, similar to [Front Matter](/editing/front-matter/).
 ]
 {% endhighlight %}
 
-![YAML/JSON interface](/img/editing/data-files/yaml-json.png){: .screenshot srcset="/img/editing/data-files/yaml-json.png 800w, /img/editing/data-files/yaml-json@2x.png 1600w"}
+![YAML/JSON interface](/img/editing/data-files/yaml-json.png){: srcset="/img/editing/data-files/yaml-json.png 800w, /img/editing/data-files/yaml-json@2x.png 1600w"}
+{: .has-screenshot}

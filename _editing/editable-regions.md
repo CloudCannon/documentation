@@ -27,7 +27,8 @@ The *Editable Region* interface used depends on the defined element:
 
 Editable text elements provide an interface to enter text, create hyperlinks, and format with bold and italics.
 
-![Text editable region in the Visual Editor](/img/editing/editable-regions/text-editable.png){: .screenshot srcset="/img/editing/editable-regions/text-editable.png 800w, /img/editing/editable-regions/text-editable@2x.png 1600w"}
+![Text editable region in the Visual Editor](/img/editing/editable-regions/text-editable.png){: srcset="/img/editing/editable-regions/text-editable.png 800w, /img/editing/editable-regions/text-editable@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -48,7 +49,8 @@ To change the uploads folder:
 uploads_dir: "assets/images"
 ~~~
 
-![Image editable region in the Visual Editor](/img/editing/editable-regions/image-editable.png){: .screenshot srcset="/img/editing/editable-regions/image-editable.png 800w, /img/editing/editable-regions/image-editable@2x.png 1600w"}
+![Image editable region in the Visual Editor](/img/editing/editable-regions/image-editable.png){: srcset="/img/editing/editable-regions/image-editable.png 800w, /img/editing/editable-regions/image-editable@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -58,7 +60,8 @@ uploads_dir: "assets/images"
 
 Editable block elements are rich editable regions with options to format and add: headings, bold, italics, hyperlinks, quotes, lists and images.
 
-![Block editable region in the Visual Editor](/img/editing/editable-regions/block-editable.png){: .screenshot srcset="/img/editing/editable-regions/block-editable.png 800w, /img/editing/editable-regions/block-editable@2x.png 1600w"}
+![Block editable region in the Visual Editor](/img/editing/editable-regions/block-editable.png){: srcset="/img/editing/editable-regions/block-editable.png 800w, /img/editing/editable-regions/block-editable@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -68,7 +71,8 @@ Editable block elements are rich editable regions with options to format and add
 
 Editable inline elements provide an interface to change smaller sections of text without formatting.
 
-![Inline editable region in the Visual Editor](/img/editing/editable-regions/inline-editable.png){: .screenshot srcset="/img/editing/editable-regions/inline-editable.png 800w, /img/editing/editable-regions/inline-editable@2x.png 1600w"}
+![Inline editable region in the Visual Editor](/img/editing/editable-regions/inline-editable.png){: srcset="/img/editing/editable-regions/inline-editable.png 800w, /img/editing/editable-regions/inline-editable@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -83,4 +87,5 @@ Markdown content elements are elements which only contain `{% raw %}{{ content }
 Elements containing other elements and `{% raw %}{{ content }}{% endraw %}` are not editable. Layouts containing more than one `{% raw %}{{ content }}{% endraw %}` are not editable. For these cases, the [Content Editor](/editing/content-editor/) is available for editing.
 {: .info}
 
-![Markdown content region editable in the Visual Editor](/img/editing/editable-regions/markdown-editable.png){: .screenshot srcset="/img/editing/editable-regions/markdown-editable.png 800w, /img/editing/editable-regions/markdown-editable@2x.png 1600w"}
+![Markdown content region editable in the Visual Editor](/img/editing/editable-regions/markdown-editable.png){: srcset="/img/editing/editable-regions/markdown-editable.png 800w, /img/editing/editable-regions/markdown-editable@2x.png 1600w"}
+{: .has-screenshot}

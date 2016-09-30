@@ -28,7 +28,8 @@ To access the CloudCannon blogging interface:
 1. Add a Jekyll site with at least one post or draft
 2. Go to the *Collections* / *Posts* or *Drafts* section
 
-![Empty blogging interface](/img/editing/blogging/posts-interface.png){: .screenshot srcset="/img/editing/blogging/posts-interface.png 800w, /img/editing/blogging/posts-interface@2x.png 1600w"}
+![Empty blogging interface](/img/editing/blogging/posts-interface.png){: srcset="/img/editing/blogging/posts-interface.png 800w, /img/editing/blogging/posts-interface@2x.png 1600w"}
+{: .has-screenshot}
 
 
 
@@ -42,7 +43,8 @@ Your file is opened in the [Content Editor](/editing/content-editor/). Front mat
 Draft posts are hidden on your live site unless set otherwise in *Site Settings* / *Build*.
 {: .info}
 
-![Creating a new draft](/img/editing/blogging/adding-draft.png){: .screenshot srcset="/img/editing/blogging/adding-draft.png 800w, /img/editing/blogging/adding-draft@2x.png 1600w"}
+![Creating a new draft](/img/editing/blogging/adding-draft.png){: srcset="/img/editing/blogging/adding-draft.png 800w, /img/editing/blogging/adding-draft@2x.png 1600w"}
+{: .has-screenshot}
 
 
 
@@ -56,7 +58,8 @@ Once the content is finished, publish your post with the button provided in the 
 The owner and developers of a site can access the source via the **Switch to Source Editor** button.
 {: .info}
 
-![Editing draft](/img/editing/blogging/edit-draft.png){: .screenshot srcset="/img/editing/blogging/edit-draft.png 800w, /img/editing/blogging/edit-draft@2x.png 1600w"}
+![Editing draft](/img/editing/blogging/edit-draft.png){: srcset="/img/editing/blogging/edit-draft.png 800w, /img/editing/blogging/edit-draft@2x.png 1600w"}
+{: .has-screenshot}
 
 
 
@@ -65,4 +68,5 @@ The owner and developers of a site can access the source via the **Switch to Sou
 Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="_blank"} instead.
 {: .info}
 
-![Editing draft with Settings Panel open](/img/editing/blogging/edit-draft-settings.png){: .screenshot srcset="/img/editing/blogging/edit-draft-settings.png 800w, /img/editing/blogging/edit-draft-settings@2x.png 1600w"}
+![Editing draft with Settings Panel open](/img/editing/blogging/edit-draft-settings.png){: srcset="/img/editing/blogging/edit-draft-settings.png 800w, /img/editing/blogging/edit-draft-settings@2x.png 1600w"}
+{: .has-screenshot}

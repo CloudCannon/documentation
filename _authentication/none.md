@@ -13,7 +13,8 @@ To remove authentication for your site:
 1. Go to the *Site Settings* / *Authentication* section
 2. Select *None* and click **Switch to no authentication**
 
-![No authentication](/img/authentication/none.png){: .screenshot srcset="/img/authentication/none.png 800w, /img/authentication/none@2x.png 1600w"}
+![No authentication](/img/authentication/none.png){: srcset="/img/authentication/none.png 800w, /img/authentication/none@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 
@@ -21,4 +22,5 @@ To remove authentication for your site:
 
 All sites on the free plan will have a splash screen before visitors can see your site.
 
-![Splash screen](/img/authentication/none-login.png){: .screenshot srcset="/img/authentication/none-login.png 800w, /img/authentication/none-login@2x.png 1600w"}
+![Splash screen](/img/authentication/none-login.png){: srcset="/img/authentication/none-login.png 800w, /img/authentication/none-login@2x.png 1600w"}
+{: .has-screenshot}

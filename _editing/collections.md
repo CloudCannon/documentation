@@ -16,7 +16,8 @@ CloudCannon provides an easy-to-use interface for managing collections. To acces
 1. Add a Jekyll site with at least one collection
 2. Go to the tab for your collection in the *Collections* section
 
-![Empty collections interface](/img/editing/collections/collections-interface.png){: .screenshot srcset="/img/editing/collections/collections-interface.png 800w, /img/editing/collections/collections-interface@2x.png 1600w"}
+![Empty collections interface](/img/editing/collections/collections-interface.png){: srcset="/img/editing/collections/collections-interface.png 800w, /img/editing/collections/collections-interface@2x.png 1600w"}
+{: .has-screenshot}
 
 
 
@@ -27,7 +28,8 @@ To create a new collection item:
 
 Your new file is opened in the [Content Editor](/editing/content-editor/). Front matter for the file is populated from [Collection Defaults](/editing/collection-defaults/) or an existing item to keep the structure consistent.
 
-![Creating a new collection item](/img/editing/collections/adding-item.png){: .screenshot srcset="/img/editing/collections/adding-item.png 800w, /img/editing/collections/adding-item@2x.png 1600w"}
+![Creating a new collection item](/img/editing/collections/adding-item.png){: srcset="/img/editing/collections/adding-item.png 800w, /img/editing/collections/adding-item@2x.png 1600w"}
+{: .has-screenshot}
 
 
 
@@ -39,14 +41,16 @@ There are a number of ways to add content for your new item:
 The owner and developers of a site can access the raw file content via the **Switch to Source Editor** button.
 {: .info}
 
-![Editing item](/img/editing/collections/edit-item.png){: .screenshot srcset="/img/editing/collections/edit-item.png 800w, /img/editing/collections/edit-item@2x.png 1600w"}
+![Editing item](/img/editing/collections/edit-item.png){: srcset="/img/editing/collections/edit-item.png 800w, /img/editing/collections/edit-item@2x.png 1600w"}
+{: .has-screenshot}
 
 [Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) is updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
 
 Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="_blank"} instead.
 {: .info}
 
-![Editing item with Settings Panel open](/img/editing/collections/edit-item-settings.png){: .screenshot srcset="/img/editing/collections/edit-item-settings.png 800w, /img/editing/collections/edit-item-settings@2x.png 1600w"}
+![Editing item with Settings Panel open](/img/editing/collections/edit-item-settings.png){: srcset="/img/editing/collections/edit-item-settings.png 800w, /img/editing/collections/edit-item-settings@2x.png 1600w"}
+{: .has-screenshot}
 
 
 

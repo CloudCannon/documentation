@@ -121,11 +121,13 @@ To add [reCAPTCHA](https://developers.google.com/recaptcha/) to your site:
 2. Add the form element by following the instructions at the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
 3. Add the secret and key to *Site Settings* / *Forms*
 
-![reCAPTCHA Configuration](/img/hosting/recaptcha.png){: .screenshot srcset="/img/hosting/recaptcha.png 800w, /img/hosting/recaptcha@2x.png 1600w"}
+![reCAPTCHA Configuration](/img/hosting/recaptcha.png){: srcset="/img/hosting/recaptcha.png 800w, /img/hosting/recaptcha@2x.png 1600w"}
+{: .has-screenshot}
 
 Once configured, any form submissions that fail to validate will return a 401 error page.
 
-![401 Error Page](/img/hosting/401-error.png){: .screenshot srcset="/img/hosting/401-error.png 800w, /img/hosting/401-error@2x.png 1600w"}
+![401 Error Page](/img/hosting/401-error.png){: srcset="/img/hosting/401-error.png 800w, /img/hosting/401-error@2x.png 1600w"}
+{: .has-screenshot}
 
 ---
 

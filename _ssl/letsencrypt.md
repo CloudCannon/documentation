@@ -29,7 +29,8 @@ Running [certbot](https://certbot.eff.org/about/) will generate SSL Certificates
 ./certbot-auto --no-self-upgrade --debug certonly --manual
 ~~~
 
-![Choosing the domain name](/img/ssl/letsencrypt/domain.png){: .screenshot srcset="/img/ssl/letsencrypt/domain.png 800w, /img/ssl/letsencrypt/domain@2x.png 1600w"}
+![Choosing the domain name](/img/ssl/letsencrypt/domain.png){: srcset="/img/ssl/letsencrypt/domain.png 800w, /img/ssl/letsencrypt/domain@2x.png 1600w"}
+{: .has-screenshot}
 
 Once the domain has been specified we must verify that we have access to that domain. Below is example output shown after the prompt:
 

@@ -15,7 +15,8 @@ To change or add a new record:
 2. Change or add details for one or more records
 3. Click **Update DNS**
 
-![Site Settings / DNS section with no additional records](/img/domains/dns.png){: .screenshot srcset="/img/domains/dns.png 800w, /img/domains/dns@2x.png 1600w"}
+![Site Settings / DNS section with no additional records](/img/domains/dns.png){: srcset="/img/domains/dns.png 800w, /img/domains/dns@2x.png 1600w"}
+{: .has-screenshot}
 
 CloudCannon supports the following record types:
 

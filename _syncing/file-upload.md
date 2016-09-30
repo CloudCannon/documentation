@@ -18,7 +18,8 @@ Uploading a folder uploads all files inside the folder, rather than the folder i
 Some browsers do not support folder upload. CloudCannon recommends syncing with a storage provider in this case.
 {: .warning}
 
-![File Browser with Add Files menu open](/img/overview/file-browser-add-menu.png){: .screenshot srcset="/img/overview/file-browser-add-menu.png 800w, /img/overview/file-browser-add-menu@2x.png 1600w"}
+![File Browser with Add Files menu open](/img/overview/file-browser-add-menu.png){: srcset="/img/overview/file-browser-add-menu.png 800w, /img/overview/file-browser-add-menu@2x.png 1600w"}
+{: .has-screenshot}
 
 Each file uploads individually to CloudCannon through your web browser. Unsupported files are greyed out, while any files with errors uploading are shown red.
 

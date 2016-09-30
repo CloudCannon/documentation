@@ -12,7 +12,8 @@ Adding a subdomain is the same as adding a [Custom Domain](/domains/custom-domai
 1. Go to the *Site Settings* / *Domain* section
 2. Enter the domain including the subdomain
 
-![Site settings domain section with subdomain](/img/domains/empty.png){: .screenshot srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
+![Site settings domain section with subdomain](/img/domains/empty.png){: srcset="/img/domains/empty.png 800w, /img/domains/empty@2x.png 1600w"}
+{: .has-screenshot}
 
 If your domain is **example.com**, adding **www.** to the front defines **www** as the subdomain.
 {: .info}
@@ -35,5 +36,6 @@ To set a site with a subdomain as the main domain:
 2. Navigate to the *Site Settings* / *Base Domain* section
 3. Click **Set Main Domain** on a site to redirect all unused subdomains there
 
-![CloudCannon Base Domain interface](/img/domains/base-domains.png){: .screenshot srcset="/img/domains/base-domains.png 800w, /img/domains/base-domains@2x.png 1600w"}
+![CloudCannon Base Domain interface](/img/domains/base-domains.png){: srcset="/img/domains/base-domains.png 800w, /img/domains/base-domains@2x.png 1600w"}
+{: .has-screenshot}
 

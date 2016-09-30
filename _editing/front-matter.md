@@ -129,7 +129,7 @@ examples:
     details: Date picker with options for year, month and day. Displayed for keys ending in `_date` and date values.
     yaml: |
       ---
-      sale_start_date: 2015-01-09T00:00:00Z
+      sale_start_date: 2015-01-09 00:00:00
       ---
     image_paths:
       - /img/editing/front-matter/date.png
@@ -146,7 +146,7 @@ examples:
     details: Combination date picker and 12 hour time input. Outputs an ISO 8601 date. Displayed for `date`, `datetime` and keys ending in `_at` or `_datetime`.
     yaml: |
       ---
-      date: 2015-07-15T12:00:00Z
+      date: 2015-07-15 12:00:00
       ---
     image_paths:
       - /img/editing/front-matter/datetime.png

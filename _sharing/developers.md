@@ -14,7 +14,8 @@ To share a site with a developer:
 3. Select **Developer** as the *Permission Level*
 4. Click **Add Share**
 
-![Sharing with a developer](/img/sharing/developer.png){: .screenshot srcset="/img/sharing/developer.png 800w, /img/sharing/developer@2x.png 1600w"}
+![Sharing with a developer](/img/sharing/developer.png){: srcset="/img/sharing/developer.png 800w, /img/sharing/developer@2x.png 1600w"}
+{: .has-screenshot}
 
 Team members shared on other sites appear in the interface for quick sharing.
 {: .info}
