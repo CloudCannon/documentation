@@ -17,7 +17,8 @@
 				{% assign url = "/overview/welcome/" %}
 			{% endif %}
 
-			{% for collection in site.collections %}
+			{% assign sorted_collections = site.collections | sort: 'order' %}
+			{% for collection in sorted_collections %}
 				{% if collection.output and collection.label != 'posts' %}
 					{% assign parts = url | split: "/" %}
 					<li class="nav-item top-level {% if parts[1] == collection.active_prefix %}current{% endif %}">

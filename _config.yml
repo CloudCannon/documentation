@@ -28,51 +28,61 @@ collections:
     permalink: /overview/:title/
     active_prefix: overview
     output: true
+    order: 1
   syncing:
     title: File Syncing
     permalink: /syncing/:title/
     active_prefix: syncing
     output: true
+    order: 2
   building:
     title: Building
     permalink: /building/:title/
     active_prefix: building
     output: true
+    order: 3
   editing:
     title: Editing
     permalink: /editing/:title/
     active_prefix: editing
     output: true
+    order: 4
   domains:
     title: Domains
     permalink: /domains/:title/
     active_prefix: domains
     output: true
+    order: 5
   hosting:
     title: Hosting
     permalink: /hosting/:title/
     active_prefix: hosting
     output: true
+    order: 6
   sharing:
     title: Sharing
     permalink: /sharing/:title/
     active_prefix: sharing
     output: true
+    order: 7
   ssl:
     title: SSL
     permalink: /ssl/:title/
     active_prefix: ssl
     output: true
+    order: 8
   authentication:
     title: Authentication
     permalink: /authentication/:title/
     active_prefix: authentication
     output: true
+    order: 9
   i18n:
     title: Internationalisation
     permalink: /i18n/:title/
     active_prefix: i18n
     output: true
+    order: 10
 
 defaults:
 - scope:

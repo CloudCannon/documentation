@@ -7,7 +7,7 @@ requirements:
   hosting: Any
 examples:
   - title: Text
-    details: Single line field for text. Displayed for short text variables.
+    details: Single line field for text. Displayed for short text values.
     yaml: |
       ---
       tagline: Hand-crafted clothing.
@@ -15,7 +15,7 @@ examples:
     image_paths:
       - /img/editing/front-matter/text-field.png
   - title: Large Text
-    details: Multiline text field expanded for longer text. Displayed for long text variables and the `description` key.
+    details: Multiline text field expanded for longer text. Displayed for `description` and long text values.
     yaml: |
       ---
       description: Products are crafted in-house by hand, making each piece a labour of love and an exercise in craftsmanship.
@@ -24,7 +24,7 @@ examples:
       - /img/editing/front-matter/large-text-field.png
   - title: Rich Text
     details: |
-      WYSIWYG editor for formatted content. Displayed for variables with keys ending in `_html` or `_markdown`.
+      WYSIWYG editor for formatted content. Displayed for keys ending in `_html` or `_markdown`.
       Alternatively, you can use the variations without underscores as keys (e.g. `markdown`).
 
       Each variation defines which format the value is saved as.
@@ -47,9 +47,9 @@ examples:
       ---
     image_paths:
       - /img/editing/front-matter/rich-text.png
-    info: Use the `markdownify` Liquid filter to render Markdown from front matter.
+    info: Use the `markdownify` Liquid filter to render Markdown from front matter, e.g. `{% if page.markdown %}{{ page.markdown | markdownify }}{% endif %}`.
   - title: Boolean
-    details: Checkbox which can be triggered on or off. Displayed for variables with values set to **true** or **false**.
+    details: Checkbox which can be triggered on or off. Displayed for the values **true** and **false**.
     yaml: |
       ---
       show_feature: true
@@ -59,7 +59,7 @@ examples:
   - title: File
     details: |
       File, image and document selectors with controls to use external links and upload new files.
-      Displayed for variables with keys ending in `_path`, `_document_path`, `_document`, `_image_path` or `_image`.
+      Displayed for keys ending in `_path`, `_document_path`, `_document`, `_image_path` or `_image`.
       Alternatively, you can use the variations without underscores as keys (e.g. `image_path` or `document`).
 
       Each variation limits the files shown in the selector by type. The `_path` variation shows all visible files.
@@ -74,7 +74,7 @@ examples:
   - title: Colour
     details: |
       Input with dropdown for selecting colour.
-      Displayed for variables with keys ending in `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` and `_hsl`.
+      Displayed for keys ending in `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` and `_hsl`.
       Alternatively, you can use the variations without underscores as keys (e.g. `rgb` or `colour`).
 
       Each variation defines the preferred format of the colour. The `_colour` and `_color` variations default to hex.
@@ -89,7 +89,7 @@ examples:
   - title: Number
     details: |
       Input field for numbers.
-      Displayed for `number`, variables with keys ending in `_number` and variables with numerical values.
+      Displayed for `number`, keys ending in `_number` and numerical values.
     yaml: |
       ---
       order: 12
@@ -101,7 +101,7 @@ examples:
   - title: Social
     details: |
       Text field with avatar for various social handles and full URLs.
-      Displayed for variables with keys ending in one of the following: `_twitter`, `_twitter_username`, `_twitter_url`, `_facebook`, `_facebook_username`, `_facebook_url`, `_google_plus`, `_google_plus_username`, `_google_plus_url`, `_instagram`, `_instagram_username`, `_instagram_url`, `_github`, `_github_username`, `_github_url`, `_email` and `_email_address`.
+      Displayed for keys ending in one of the following: `_twitter`, `_twitter_username`, `_twitter_url`, `_facebook`, `_facebook_username`, `_facebook_url`, `_google_plus`, `_google_plus_username`, `_google_plus_url`, `_instagram`, `_instagram_username`, `_instagram_url`, `_github`, `_github_username`, `_github_url`, `_email` and `_email_address`.
       Alternatively, you can use the variations without underscores as keys (e.g. `twitter_username` or `facebook_url`).
     info: |
       For compatibility with popular Jekyll plugins, the Twitter **@** symbol is stripped from the value on save. The Twitter interfaces display a placeholder symbol.
@@ -126,7 +126,7 @@ examples:
     image_paths:
       - /img/editing/front-matter/social.png
   - title: Date
-    details: Date picker with options for year, month and day. Displayed for variables with date values or keys ending in `_date`.
+    details: Date picker with options for year, month and day. Displayed for keys ending in `_date` and date values.
     yaml: |
       ---
       sale_start_date: 2015-01-09T00:00:00Z
@@ -135,7 +135,7 @@ examples:
       - /img/editing/front-matter/date.png
       - /img/editing/front-matter/date-focus.png
   - title: Time
-    details: 12 hour time input. Displayed for `time` and variables with keys ending in `_time`.
+    details: 12 hour time input. Displayed for `time` and keys ending in `_time`.
     yaml: |
       ---
       opening_time: 8:00 am
@@ -143,7 +143,7 @@ examples:
     image_paths:
       - /img/editing/front-matter/time.png
   - title: Date Time
-    details: Combination date picker and 12 hour time input. Outputs a ISO 8601 date. Displayed for `date`, `datetime` and variables with keys ending in `_at` or `_datetime`.
+    details: Combination date picker and 12 hour time input. Outputs an ISO 8601 date. Displayed for `date`, `datetime` and keys ending in `_at` or `_datetime`.
     yaml: |
       ---
       date: 2015-07-15T12:00:00Z
@@ -153,7 +153,7 @@ examples:
       - /img/editing/front-matter/datetime-focus.png
   - title: Select
     details: |
-      Set of options in a dropdown menu. There are three ways to populate the options, from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
+      Set of options in a dropdown menu. The options are populated from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
 
       ~~~yaml
       styles:
@@ -170,7 +170,7 @@ examples:
         - authors
       ~~~
 
-      Displayed for variables with keys **of the singular name** of the collection, array or object set in `_config.yml`.
+      Displayed for keys **in the singular form** of the collection name, array or object set in `_config.yml`.
     yaml: |
       ---
       style: Green
@@ -187,7 +187,7 @@ examples:
     info: The value saved to the front matter depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by filename.
   - title: Multiselect
     details: |
-      Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. There are three ways to populate the options, from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
+      Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. The options are populated from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
 
       ~~~yaml
       styles:
@@ -204,7 +204,7 @@ examples:
         - authors
       ~~~
 
-      Displayed for variables with keys **matching the name** of a collection or array set in `_config.yml`.
+      Displayed for `categories`, `tags`, and keys **matching the name** of a collection name, array or object set in `_config.yml`.
     yaml: |
       ---
       styles:
@@ -224,9 +224,12 @@ examples:
       - /img/editing/front-matter/multiselect-object-focus.png
       - /img/editing/front-matter/multiselect-collection.png
       - /img/editing/front-matter/multiselect-collection-focus.png
-    info: The value saved to the each item in the front matter array depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by filename.
+    info: |
+      The value saved to the each item in the front matter array depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by filename.
+
+      If not populated from any source, `categories` and `tags` display a multiselect that supports adding options inline.
   - title: Object
-    details: Button that navigates to grouped data. Displayed for variables with an object as the value.
+    details: Button that navigates to grouped data. Displayed for object values.
     yaml: |
       ---
       footer:
@@ -237,7 +240,7 @@ examples:
       - /img/editing/front-matter/object.png
       - /img/editing/front-matter/object-active.png
   - title: Array
-    details: Button that navigates to an ordered list of items. Items in the array can be added, reordered and deleted. Displayed for variables with an array as the value.
+    details: Button that navigates to an ordered list of items. Items in the array can be added, reordered and deleted. Displayed for array values.
     yaml: |
       ---
       staff:
@@ -249,14 +252,14 @@ examples:
       - /img/editing/front-matter/array.png
       - /img/editing/front-matter/array-active.png
   - title: Hidden
-    details: Hidden values are not present in the interface. This applies to any key that begins with an underscore.
+    details: Hidden values are not present in the interface. Applies to keys that begin with an underscore.
     yaml: |
       ---
       _image_src: /src/
       ---
   - title: Comment
     details: |
-      Helper text that provides additional context for form elements. This is configured in `_config.yml` with a `_comments` object:
+      Helper text to provide additional context. Configured in `_config.yml` with a `_comments` object:
 
       ~~~yaml
       _comments:
@@ -279,7 +282,7 @@ examples:
               footer: Update the details in the footer
       ~~~
 
-      Comments are displayed for variables with the same key in the `_comments` object.
+      Comments are displayed for the same keys in the `_comments` object.
     yaml: |
       ---
       _comments:
@@ -293,7 +296,7 @@ examples:
   - title: Array Defaults
     details: |
       Provides initial values for newly created items in arrays.
-      This is configured in `_config.yml` with a `_defaults` object:
+      Configured in `_config.yml` with a `_defaults` object:
 
       ~~~yaml
       _defaults:
@@ -311,7 +314,7 @@ examples:
       ~~~
 
       New array items clone the structure from the existing array items.
-      Array defaults populate that structure for variables with the same keys in `_defaults`.
+      Array defaults populate that structure for the same keys in `_defaults`.
     yaml: |
       ---
       _defaults:
