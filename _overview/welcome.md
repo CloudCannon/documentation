@@ -26,7 +26,7 @@ Getting an editable site online is easy with CloudCannon:
 3. Add `class="editable"` to HTML elements you want editable
 4. Share the site to your team and/or clients
 
-Follow the *Getting Started* guide on [Jekyll Tips](http://jekyll.tips/) to create a site for CloudCannon and explore the available features.
+Follow the [Tour](/overview/tour/) to create a site for CloudCannon and explore the available features.
 {: .info}
 
 ---

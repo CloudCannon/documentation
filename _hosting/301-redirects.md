@@ -25,3 +25,6 @@ CloudCannon supports redirects to external domains and wildcard matching with `*
 /category/* /new-category
 /should-have-been-elsewhere/ http://example.com
 {% endhighlight %}
+
+You can redirect to, but not from a URL fragment (e.g. `#example-heading`). The fragment is not passed to the server so cannot be processed by the redirect.
+{: .info}
