@@ -8,9 +8,9 @@ This release includes various user experience improvements and fixes.
 **Features:**
 
 * GST displayed on New Zealand invoices
-* White labelled email when creating adding users with user account authentication
-* HTML formatted, white labelled emails for password reset with user account authentication
-* HTML formatted, white labelled emails with the form submission feature
+* White-labelled email when creating adding users with user account authentication
+* HTML formatted, white-labelled emails for password reset with user account authentication
+* HTML formatted, white-labelled emails with the form submission feature
 * Open collection items for editing when created
 * Serve `ico` and `pdf` files from CDN
 

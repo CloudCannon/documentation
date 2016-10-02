@@ -47,3 +47,4 @@
 /hosting/environments/ /building/environments/
 /hosting/optimisations/ /building/optimisations/
 /building/static/ /building/jekyll/#static
+/sharing/white-labeling/ /sharing/white-labelling/
