@@ -11,12 +11,8 @@ Go to *Site Settings* / *Storage Providers* and click **Connect** next to Dropbo
 ![Storage Providers interface](/img/syncing/storage-providers.png){: srcset="/img/syncing/storage-providers.png 800w, /img/syncing/storage-providers@2x.png 1600w"}
 {: .has-screenshot}
 
-A dialog box appears asking for the source for the initial synchronization. This only matters if you have existing files in CloudCannon or Dropbox. The arrow shows indicates the destination where files are overwritten.
-
-Choose a direction and click **Connect Dropbox**.
-
-![Dropbox Initial transfer selection](/img/syncing/dropbox/initial-transfer.png){: srcset="/img/syncing/dropbox/initial-transfer.png 800w, /img/syncing/dropbox/initial-transfer@2x.png 1600w"}
-{: .has-screenshot}
+A dialog box warns you if there are existing files in your site. The files will be replaced with the contents of the Dropbox folder. Click **Connect Dropbox** to continue or close the dialog to cancel the process.
+{: .warning}
 
 This takes you to Dropbox, enter your credentials to continue.
 
