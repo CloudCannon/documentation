@@ -13,7 +13,7 @@ This release improves file syncing, bringing increased reliability and error rep
 * Extensionless filename support
 * Mixed case filename support
 * Support renaming Dropbox connected sites
-* Visual Editor now consistent with CloudCannon hosting URL rules
+* *Visual Editor* now consistent with CloudCannon hosting URL rules
 
 **Fixes:**
 
