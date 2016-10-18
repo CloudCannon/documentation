@@ -3,7 +3,8 @@ title: Syncer Overhaul and Improved Filename Support
 type: major
 ---
 
-This release improves file syncing, bringing increased reliability and error reporting. Files without extensions and mixed case filenames are now fully supported. A number of smaller fixes and features are also included.
+
+This release improves file syncing, bringing increased reliability and error reporting. Extensionless and mixed case filenames are now fully supported. A number of smaller fixes and features are also included.
 
 **Features:**
 
