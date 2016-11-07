@@ -16,7 +16,7 @@ To change a command line build option:
 2. Change details for one or more options
 3. Click **Update Build Details**
 
-See in-depth details for configuring the [Environments](/building/environments/) and [Optimisations](/building/optimisations/) options.
+See in-depth details for configuring [Environments](/building/environments/) and [Optimisations](/building/optimisations/).
 {: .info}
 
 ![Site Settings Build Interface](/img/building/configuration.png){: srcset="/img/building/configuration.png 800w, /img/building/configuration@2x.png 1600w"}

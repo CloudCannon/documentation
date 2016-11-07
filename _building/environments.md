@@ -13,17 +13,16 @@ For example, you could use a different CDN for your development, staging and pro
 To change the environment for your site:
 
 1. Go to the *Site Settings* / *Build* section
-2. Enter your new environment in *Jekyll Environment*
+2. Enter your new environment the **JEKYLL_ENV** field under *Environment Variables*
 3. Click **Update Build Details**
 
-This sets the `JEKYLL_ENV` environment variable.
 CloudCannon defaults to `production`. Running Jekyll locally defaults to `development`.
 {: .info}
 
 To change the environment on your local machine, set it before running Jekyll:
 
 {% highlight bash %}
-$ JEKYLL_ENV=production jekyll serve
+$ JEKYLL_ENV=production bundle exec jekyll serve
 {% endhighlight %}
 
 ---
