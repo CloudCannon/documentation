@@ -58,7 +58,7 @@ Before pressing ENTER, add a `letsencrypt.txt` to the site. Add the values from 
 
 ~~~markdown
 ---
-permalink: /.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o/ # Ensure the trailing slash remains
+permalink: /.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o/index.html
 ---
 34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o.3-40nFYEAf5ItpgZuuISWUhg4fNm-vVW3T0RXmdzNkU
 ~~~
