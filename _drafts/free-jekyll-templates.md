@@ -12,6 +12,7 @@ This release adds a choice of free Jekyll templates to the empty site state.&nbs
 * Ability to use or fork templates on an empty site
 * Prevent "save my password" browser prompts in client editor
 * Preinstalled Jekyll 3.3.1 and other gems on all build servers
+* Added support for `cite` editable elements
 
 **Fixes:**
 
