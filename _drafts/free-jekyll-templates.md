@@ -4,7 +4,7 @@ type: minor
 ---
 
 
-This release adds a choice of free Jekyll templates to the empty site state.&nbsp;
+This release adds a choice of free Jekyll templates to the empty site state. Included in this release are a number of additional features, aesthetic changes and bug fixes.
 
 **Features:**
 
