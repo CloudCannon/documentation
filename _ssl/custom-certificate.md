@@ -14,6 +14,9 @@ To add a new SSL Certificate:
 2. Click the **Add SSL Certificate** button
 3. Fill in all of the fields available and submit the form
 
+All certificates must be in PEM encoding. The placeholder text indicates the correct start and end headers.
+{: .info}
+
 Once added, the SSL certificate needs to be attached to the site.
 {: .info}
 
