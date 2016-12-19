@@ -20,5 +20,5 @@ This release fixes newly reported issues and includes a number of quality-of-lif
 * Fixed sharing issue where non-developers could not be shared site after sign up.
 * Editor pending changes prompt now correctly triggers when using the *Page Selector*.
 * Characters now render correctly in recent activity under site *Status*.
-* Switch to Source Editor button no longer disappears after a front matter parse error in the *Content*and* Visual Editors*.
+* Switch to Source Editor button no longer disappears after a front matter parse error in the *Content and Visual Editors*.
 * Blank line at the end of a CSV file no longer causes a parse error.
