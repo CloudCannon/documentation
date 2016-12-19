@@ -49,6 +49,20 @@ To change the uploads folder:
 uploads_dir: "assets/images"
 ~~~
 
+To enable the option to enter a URL directly:
+
+1. Create or open `_config.yml` in the root folder
+2. Set the `_editable_regions.image.url_src` to **true**
+
+~~~
+_editable_regions:
+  image:
+    url_src: true
+~~~
+
+This option is disabled by default to avoid breaking design changes, since the image size can't be guaranteed when setting `src` directly.
+{: .info}
+
 ![Image editable region in the Visual Editor](/img/editing/editable-regions/image-editable.png){: srcset="/img/editing/editable-regions/image-editable.png 800w, /img/editing/editable-regions/image-editable@2x.png 1600w"}
 {: .has-screenshot}
 
