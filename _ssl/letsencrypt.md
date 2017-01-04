@@ -7,10 +7,16 @@ order: 2
 
 ---
 
+These notes are for installation on a Mac / *nix system and will not work on a standard Windows system. Sorry.
+{: .warning}
+
+
 ### Installing certbot
 
 If you have previously installed an older version of [certbot](https://certbot.eff.org/about/) or the letsencryptclient, run `rm -rf ~/.local/share/letsencrypt` to clear conflicting data.
 {: .info}
+
+To install certbot on your local system, enter the following commands in your terminal.
 
 ~~~bash
 cd /tmp
@@ -54,16 +60,23 @@ s.serve_forever()"
 Press ENTER to continue
 ~~~
 
-Before pressing ENTER, add a `letsencrypt.txt` to the site. Add the values from the above output in the following format:
+Before pressing ENTER, you must add a `letsencrypt.txt` file to your site with the following contents. Make sure you add your unique values from the terminal output:
 
 ~~~markdown
 ---
+layout: nil
 permalink: /.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o/index.html
 ---
 34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o.3-40nFYEAf5ItpgZuuISWUhg4fNm-vVW3T0RXmdzNkU
 ~~~
 
-Once compiled, return to the console and press ENTER:
+Save the file and wait for the site to compile and update. Test the URL in a new browser window to ensure the URL returns **only** the required key string.
+
+ie: visit http://DOMAIN_NAME/.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o/index.html
+
+Once you have confirmed that the correct output is returned, return to your terminal console and press ENTER.
+
+If everything went smoothly, you should see output similar to this:
 
 ~~~
 IMPORTANT NOTES:
@@ -78,6 +91,10 @@ IMPORTANT NOTES:
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
 ~~~
+
+If you received errors, please ensure the output of your URL (above) is correct, before running the certbot command again and updating the `letsencrypt.txt` file again with the new values.
+{: .info}
+
 
 This completes the use of [certbot](https://certbot.eff.org/about/) with a free cert for our domain. All parts of the cert are available at `/etc/letsencrypt/live/DOMAIN_NAME/`.
 
@@ -103,4 +120,10 @@ To install the newly generated SSL Certificate to CloudCannon:
 - Copy `/etc/letsencrypt/live/DOMAIN_NAME/cert.pem` to the public key field
 - Copy the RSA format of the private key to the private key field
 - Copy `/etc/letsencrypt/live/DOMAIN_NAME/chain.pem` to chain
-- Save and attach the cert
+- Save the added information
+- Click the "Attach" button to attach the certificet to the site
+
+That should be it.
+
+You may need to do a minor update to the site to trigger a new build / compile in order for the SSL settings to take effect. It can also take a few minutes before the redirect to HTTPS takes effect.
+{: .info}
