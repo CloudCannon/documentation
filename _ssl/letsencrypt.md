@@ -123,7 +123,5 @@ To install the newly generated SSL Certificate to CloudCannon:
 - Save the added information
 - Click the "Attach" button to attach the certificate to the site
 
-That should be it.
-
-You may need to do a minor update to the site to trigger a new build / compile in order for the SSL settings to take effect. It can also take a few minutes before the redirect to HTTPS takes effect.
+It can take a few minutes before the redirect to HTTPS takes effect.
 {: .info}
