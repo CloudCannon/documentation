@@ -64,7 +64,7 @@ Before pressing ENTER, you must add a `letsencrypt.txt` file to your site with t
 
 ~~~markdown
 ---
-layout: nil
+layout: null
 permalink: /.well-known/acme-challenge/34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o/index.html
 ---
 34sS6lKqRtmEH6nccSVNF8ifykpAAueVhHz0yvheY0o.3-40nFYEAf5ItpgZuuISWUhg4fNm-vVW3T0RXmdzNkU
