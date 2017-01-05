@@ -121,7 +121,7 @@ To install the newly generated SSL Certificate to CloudCannon:
 - Copy the RSA format of the private key to the private key field
 - Copy `/etc/letsencrypt/live/DOMAIN_NAME/chain.pem` to chain
 - Save the added information
-- Click the "Attach" button to attach the certificet to the site
+- Click the "Attach" button to attach the certificate to the site
 
 That should be it.
 
