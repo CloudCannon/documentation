@@ -19,5 +19,8 @@ To change a command line build option:
 See in-depth details for configuring [Environments](/building/environments/) and [Optimisations](/building/optimisations/).
 {: .info}
 
+Setting the `BUNDLE_GEMFILE` environment variable requires that your gems are specified in the `_config.yml` file.
+{: .warning}
+
 ![Site Settings Build Interface](/img/building/configuration.png){: srcset="/img/building/configuration.png 800w, /img/building/configuration@2x.png 1600w"}
 {: .has-screenshot}
