@@ -3,7 +3,7 @@ title: Custom Interfaces
 order: 5
 requirements:
   build: Any
-  plan: Free
+  plan: Agency
   hosting: CloudCannon
 ---
 
