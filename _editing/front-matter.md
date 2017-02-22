@@ -109,7 +109,7 @@ examples:
       In order to support both custom and default Google user ID variations, the **+** is part of the value in the Google+ interfaces.
     yaml: |
       ---
-      twitter: CloudCannonApp
+      twitter: CloudCannon
       twitter_url: 'https://twitter.com/@jekyllrb'
       facebook: CloudCannon
       facebook_url: 'https://www.facebook.com/CloudCannon'
