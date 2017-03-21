@@ -8,10 +8,10 @@ This release hides the email addresses that contact forms send emails to from th
 
 **Features:**
 
-* Better contact form security
+* Better *Contact Form* security
 
 **Fixes:**
 
 * Issues related to line ending preventing *301 Redirects*
-* Client Sharing with `baseurl` set loads with the correct page
+* *Client Sharing* with `baseurl` set loads with the correct page
 * Fixed edge case preventing static files appearing in editor
