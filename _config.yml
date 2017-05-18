@@ -65,24 +65,30 @@ collections:
     active_prefix: sharing
     output: true
     order: 7
+  organisations:
+    title: Organisations
+    permalink: /organisations/:title/
+    active_prefix: organisations
+    output: true
+    order: 8
   ssl:
     title: SSL
     permalink: /ssl/:title/
     active_prefix: ssl
     output: true
-    order: 8
+    order: 9
   authentication:
     title: Authentication
     permalink: /authentication/:title/
     active_prefix: authentication
     output: true
-    order: 9
+    order: 10
   i18n:
     title: Internationalisation
     permalink: /i18n/:title/
     active_prefix: i18n
     output: true
-    order: 10
+    order: 11
 
 defaults:
 - scope:
