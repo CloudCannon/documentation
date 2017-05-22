@@ -1,6 +1,6 @@
 ---
 title: Mobile App
-order: 5
+order: 6
 ---
 
 Give your clients or team members a mobile app to edit your site.
