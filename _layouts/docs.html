@@ -20,11 +20,9 @@ layout: default
 		{% endif %}
 
 		{% if page.requirements.plan == 'Basic' %}
-			{% assign requirements = requirements | append: ' on the **Basic**, **Agency** and **Enterprise** plans' %}
-		{% elsif page.requirements.plan == 'Agency' %}
-			{% assign requirements = requirements | append: ' on the **Agency** and **Enterprise** plans' %}
-		{% elsif page.requirements.plan == 'Enterprise' %}
-			{% assign requirements = requirements | append: ' on the **Enterprise** plan' %}
+			{% assign requirements = requirements | append: ' on the **Basic** and **Pro** plans' %}
+		{% elsif page.requirements.plan == 'Pro' %}
+			{% assign requirements = requirements | append: ' on the **Pro** plan' %}
 		{% endif %}
 
 		{% if requirements != "" %}

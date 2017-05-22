@@ -3,7 +3,7 @@ title: Geolocation
 order: 1
 requirements:
   build: Any
-  plan: Enterprise
+  plan: Pro
   hosting: CloudCannon
 ---
 

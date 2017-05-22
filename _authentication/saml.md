@@ -3,7 +3,7 @@ title: SAML
 order: 4
 requirements:
   build: Any
-  plan: Enterprise
+  plan: Pro
   hosting: CloudCannon
 ---
 

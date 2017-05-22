@@ -17,7 +17,7 @@ This release includes a number of improvements to i18n, source configurations an
 
 * Full page activity feed for non-developers
 * Collection tab broken when source is set to `.` or `./`
-* i18n options are now only shown for enterprise sites with locales
+* i18n options are now only shown for pro sites with locales
 * CSS compressor no longer makes unsafe optimisations
 * Embedded data URLs no longer break after CSS compression
 * Path correction in i18n produces the correct URL

@@ -9,7 +9,7 @@ requirements:
 
 Remove all CloudCannon logos and brand it as your own.
 
-To remove CloudCannon branding on [Client Sharing](/sharing/client-sharing/) login screens, upgrade to the **Agency** or **Enterprise** plan.
+To remove CloudCannon branding on [Client Sharing](/sharing/client-sharing/) login screens, upgrade to the **Pro** plan.
 
 ![Client sharing login screen](/img/sharing/client-sharing-login.png){: srcset="/img/sharing/client-sharing-login.png 800w, /img/sharing/client-sharing-login@2x.png 1600w"}
 {: .has-screenshot}

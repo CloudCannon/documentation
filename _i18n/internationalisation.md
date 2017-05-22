@@ -3,7 +3,7 @@ title: Internationalisation
 order: 2
 requirements:
   build: Any
-  plan: Enterprise
+  plan: Pro
   hosting: CloudCannon
 ---
 

@@ -15,8 +15,7 @@ builds:
 plans:
   - Free
   - Basic
-  - Agency
-  - Enterprise
+  - Pro
 
 hostings:
   - Any
