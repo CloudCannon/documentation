@@ -6,7 +6,7 @@ order: 3
 Organisations can be branded to make the experience feel like your own in house product. There are two assets that can be configured:
 
 1. Organisation Badge
-2. Organisation Logo
+2. Organisation Sites List Logo
 
 ---
 
@@ -32,7 +32,7 @@ This asset is used in the organisation list. For best results the image should b
 
 ---
 
-### Organisation Badge
+### Organisation Sites List Logo
 
 This asset is used in the organisations sites list. For best results the image should be wider than it is tall and have a minimum width of 512px.
 
