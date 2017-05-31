@@ -3,7 +3,7 @@ title: Branding
 order: 3
 ---
 
-Organisations can be branded to make the experience feel like your own in house product. There are two assets that can be configured:
+Brand organisations to make the experience feel like your own in-house product. There are two configurable assets:
 
 1. Organisation Badge
 2. Organisation Sites List Logo
@@ -15,7 +15,7 @@ Organisations can be branded to make the experience feel like your own in house 
 To add the assets defined above:
 
 1. Go to *Organisation Settings* / *Details*
-2. Upload an image for both availble assets
+2. Upload an image for both available assets
 3. Click **Update Organisation** to confirm the configuration
 
 ![The Details form in the Organisation Settings](/img/organisations/details.png){: srcset="/img/organisations/details.png 800w, /img/organisations/details@2x.png 1600w"}

@@ -4,7 +4,6 @@ order: 1
 ---
 
 Organisations are for teams who need to manage all their sites. It allows a team to be defined and permissions to be granted at different levels.
-{: .info}
 
 ### Adding a new Organisation
 
@@ -21,4 +20,4 @@ Once created, a new screen will be availble to select between your new organisat
 ![Adding a new SSL certificate](/img/organisations/list.png){: srcset="/img/organisations/list.png 800w, /img/organisations/list@2x.png 1600w"}
 {: .has-screenshot}
 
-The **Create Organisation** button will become **Switch Organisation** which returns you to the organisation selection page. To create more organisations there is a link the bottom of the organisations list.
+After creating an organisation, the **Create Organisation** button becomes **Switch Organisation** which returns you to the select organisation page. To create more organisations there is a link the bottom of the organisations list.
