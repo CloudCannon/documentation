@@ -3,7 +3,7 @@ title: Transferring Ownership
 order: 5
 requirements:
   build: Any
-  plan: Any
+  plan: Free
   hosting: Any
 ---
 

@@ -3,7 +3,7 @@ title: White Labelling
 order: 4
 requirements:
   build: Any
-  plan: Agency
+  plan: Pro
   hosting: Any
 ---
 
