@@ -8,7 +8,7 @@ This release marks the much-awaited arrival of front matter comments in the *Set
 
 **Features:**
 
-* [Comments/notes](https://docs.cloudcannon.com/editing/front-matter/#comment) for front matter in the *Settings Panel*
+* [Comments/notes](/editing/options/#comments) for front matter in the *Settings Panel*
 * Download file option in the file context menu
 * Links to pages made in *Visual Editor* and *Content Editor*&nbsp;formatted as pretty URLs if possible
 * Blank option for select fields

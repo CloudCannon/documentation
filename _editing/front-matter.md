@@ -63,6 +63,7 @@ examples:
       Alternatively, you can use the variations without underscores as keys (e.g. `image_path` or `document`).
 
       Each variation limits the files shown in the selector by type. The `_path` variation shows all visible files.
+    info: Control the size and format of image uploads with [Image Upload Options](/editing/options/#image-uploads).
     yaml: |
       ---
       background_image_path: /images/background.png
@@ -278,7 +279,10 @@ CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Se
 {: .has-screenshot}
 
 There are interfaces for different types of content. Values and key naming conventions dictate which interfaces are used.
-Use these conventions to customise the editor for your team and clients. The available interfaces are:
+Use these conventions to customise the editor for your team and clients. The available interfaces are listed below.
+
+Customise these interfaces further by adding sizes, formats, comments and defaults with [Options](/editing/options/).
+{: .info}
 
 {% for example in page.examples %}
 ***
