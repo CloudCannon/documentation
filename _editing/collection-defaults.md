@@ -1,6 +1,6 @@
 ---
 title: Collection Defaults
-order: 9
+order: 10
 requirements:
   build: Jekyll
   plan: Free

@@ -1,6 +1,6 @@
 ---
 title: Collections
-order: 7
+order: 8
 requirements:
   build: Jekyll
   plan: Free
