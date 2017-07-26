@@ -102,7 +102,6 @@ _options:
     height: 120
     resize_style: "contain"
     mime_type: "image/jpeg"
-    quality: 90
     expandable: true
   content:
     width: 90
@@ -117,12 +116,9 @@ _options:
 | height | Integer |
 | resize_style | *contain*, *cover* or *stretch* (optional, defaults to *contain*) |
 | mime_type | *image/jpeg*, *image/png* (optional, defaults to uploaded type if supported) |
-| quality | Integer between *1-100*, (optional, defaults to *90*) |
 | expandable | *true* or *false* (optional, defaults to *false*) |
 
-`mime_type` sets what format the image is converted into on upload. `quality` is only applicable to *image/jpeg* to control how lossy the output is.
-
-`width` and `height` define a bounding box. `resize_style` defines how uploaded images are resized with respect to that box:
+`mime_type` sets what format the image is converted into on upload. `width` and `height` define a bounding box. `resize_style` defines how uploaded images are resized with respect to that box:
 
 * `cover` ensures the image covers the bounding box
 * `contain` ensures the image fits inside the bounding box
