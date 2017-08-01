@@ -9,7 +9,7 @@ This release adds the ability to define image sizes for uploaded images in front
 **Features:**
 
 * Add last 4 digits of credit card to invoices
-* [Image resizing on upload](/editing/options/)
+* [Image resizing on upload](/editing/options/#image-uploads)
 
 **Fixes:**
 
