@@ -25,10 +25,10 @@ examples:
         - type: ''
       values:
         _comments:
-      title: The page title
-      output: Does this item have a dedicated page?
-      brand_colour: The primary brand colour
-      footer: Update the details in the footer
+          title: The page title
+          output: Does this item have a dedicated page?
+          brand_colour: The primary brand colour
+          footer: Update the details in the footer
       ~~~
 
       Comments are displayed for the same keys in the `_comments` object.
@@ -59,7 +59,7 @@ examples:
         - type: ''
       values:
         _defaults:
-      image_path: /images/placeholder.png
+          image_path: /images/placeholder.png
       ~~~
 
       New array items clone the structure from the existing array items.
@@ -70,11 +70,11 @@ examples:
         image_path: /images/placeholder.png
       images:
         - image_path: /images/sunset.png
-      title: Sunset
+          title: Sunset
 
         # Adding an item to the array is prepopulated as:
         - image_path: /images/placeholder.png
-      title:
+          title:
       ---
     image_paths:
       - /img/editing/front-matter/array-defaults.png
