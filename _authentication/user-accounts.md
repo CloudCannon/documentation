@@ -3,7 +3,7 @@ title: User Accounts
 order: 3
 requirements:
   build: Any
-  plan: Agency
+  plan: Pro
   hosting: CloudCannon
 ---
 

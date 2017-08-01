@@ -1,6 +1,6 @@
 ---
 title: Collection Defaults
-order: 9
+order: 10
 requirements:
   build: Jekyll
   plan: Free
@@ -21,5 +21,5 @@ For example:
 
 New items created will use these values. If the `title` and `name` attributes are present, they are set to the name used when a user creates a file.
 
-Looking to set the default values for new array items in front matter? Use [Array Defaults](/editing/front-matter/#array-defaults) instead.
+Looking to set the default values for new array items in front matter? Use [Array Defaults](/editing/options/#array-defaults) instead.
 {: .info}

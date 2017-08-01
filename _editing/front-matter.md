@@ -63,6 +63,7 @@ examples:
       Alternatively, you can use the variations without underscores as keys (e.g. `image_path` or `document`).
 
       Each variation limits the files shown in the selector by type. The `_path` variation shows all visible files.
+    info: Control the size and format of image uploads with [Image Upload Options](/editing/options/#image-uploads).
     yaml: |
       ---
       background_image_path: /images/background.png
@@ -257,79 +258,6 @@ examples:
       ---
       _image_src: /src/
       ---
-  - title: Comment
-    details: |
-      Helper text to provide additional context. Configured in `_config.yml` with a `_comments` object:
-
-      ~~~yaml
-      _comments:
-        title: The page title
-        output: Does this item have a dedicated page?
-        brand_colour: The primary brand colour
-        footer: Update the details in the footer
-      ~~~
-
-      Alternatively, configure comments per file in front matter or with Jekyll defaults:
-
-      ~~~yaml
-      defaults:
-        - type: ''
-          values:
-            _comments:
-              title: The page title
-              output: Does this item have a dedicated page?
-              brand_colour: The primary brand colour
-              footer: Update the details in the footer
-      ~~~
-
-      Comments are displayed for the same keys in the `_comments` object.
-    yaml: |
-      ---
-      _comments:
-        title: The page title
-        output: Does this item have a dedicated page?
-        brand_colour: The primary brand colour
-        footer: Update the details in the footer
-      ---
-    image_paths:
-      - /img/editing/front-matter/comments.png
-  - title: Array Defaults
-    details: |
-      Provides initial values for newly created items in arrays.
-      Configured in `_config.yml` with a `_defaults` object:
-
-      ~~~yaml
-      _defaults:
-        image_path: /images/placeholder.png
-      ~~~
-
-      Alternatively, configure per file in front matter or with Jekyll defaults:
-
-      ~~~yaml
-      defaults:
-        - type: ''
-          values:
-            _defaults:
-              image_path: /images/placeholder.png
-      ~~~
-
-      New array items clone the structure from the existing array items.
-      Array defaults populate that structure for the same keys in `_defaults`.
-    yaml: |
-      ---
-      _defaults:
-        image_path: /images/placeholder.png
-      images:
-        - image_path: /images/sunset.png
-          title: Sunset
-
-        # Adding an item to the array is prepopulated as:
-        - image_path: /images/placeholder.png
-          title:
-      ---
-    image_paths:
-      - /img/editing/front-matter/array-defaults.png
-    info: Array defaults also apply when editing CSV, YAML and JSON files.
 ---
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
@@ -351,7 +279,10 @@ CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Se
 {: .has-screenshot}
 
 There are interfaces for different types of content. Values and key naming conventions dictate which interfaces are used.
-Use these conventions to customise the editor for your team and clients. The available interfaces are:
+Use these conventions to customise the editor for your team and clients. The available interfaces are listed below.
+
+Customise these interfaces further by adding sizes, formats, comments and defaults with [Options](/editing/options/).
+{: .info}
 
 {% for example in page.examples %}
 ***

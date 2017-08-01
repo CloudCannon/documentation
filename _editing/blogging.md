@@ -1,6 +1,6 @@
 ---
 title: Blogging
-order: 6
+order: 7
 requirements:
   build: Jekyll
   plan: Free
