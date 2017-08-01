@@ -4,12 +4,12 @@ type: minor
 ---
 
 
-This release adds the ability to define image sizes for uploaded images in front matter and content editing.
+This release adds the ability to define sizes to resize images in front matter and content editing.
 
 **Features:**
 
-* Add last 4 digits of credit card to invoices
 * [Image resizing on upload](/editing/options/#image-uploads)
+* Added last 4 digits of credit card to invoices
 
 **Fixes:**
 
