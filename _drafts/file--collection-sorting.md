@@ -13,5 +13,5 @@ This release adds the ability to sort your collections and files. This includes 
 
 **Fixes:**
 
-* --future flag on by default for new sites
+* `--future` flag on by default for new sites
 * Image resizing fix for firefox
