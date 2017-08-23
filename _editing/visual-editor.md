@@ -23,7 +23,7 @@ _editor:
   default_path: /about/
 ~~~
 
-Clicking the **Editor** option will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
+Clicking the **Editor** sidebar option will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
 
 ---
 
