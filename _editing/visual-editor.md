@@ -11,6 +11,20 @@ Use the **Toggle Pages** button in the top right corner to access it.
 ![Visual Editor](/img/editing/visual-editor.png){: srcset="/img/editing/visual-editor.png 800w, /img/editing/visual-editor@2x.png 1600w"}
 {: .has-screenshot}
 
+
+---
+
+### Default Editor Path
+
+Set the default path to load when the **Editor** option is clicked in the sidebar. Configured globally in `_config.yml` with an `_editor` object:
+
+~~~yaml
+_editor:
+  default_path: /about/
+~~~
+
+Clicking the **Editor** sidebar option will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
+
 ---
 
 ### Editor Content
