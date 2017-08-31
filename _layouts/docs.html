@@ -19,6 +19,10 @@ layout: default
 			{% assign requirements = requirements | append: ' with **CloudCannon** hosting' %}
 		{% endif %}
 
+		{% if page.requirements.syncing == 'GitHub' %}
+			{% assign requirements = requirements | append: ' with **GitHub** syncing' %}
+		{% endif %}
+
 		{% if page.requirements.plan == 'Basic' %}
 			{% assign requirements = requirements | append: ' on the **Basic** and **Pro** plans' %}
 		{% elsif page.requirements.plan == 'Pro' %}

@@ -3,7 +3,7 @@ title: Editor Links
 order: 11
 ---
 
-*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site.
+*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. Alternatively, add front matter *Editor Links* to open the front matter editor at that variables location.
 
 *Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
@@ -12,6 +12,14 @@ order: 11
 * `<a href="cloudcannon:collections/_posts/2015-07-30-welcome-post.md">Edit Welcome Post</a>`
 * `<a href="cloudcannon:status">Link to Site Status and Recent Activity</a>`
 
+Front matter *Editor Links* are prefixed with `cloudcannon:#` and match the Liquid format used to reference them, for example:
+
+* `<a href="cloudcannon:#title">Edit the title</a>`
+* `<a href="cloudcannon:#array[1]">Edit the first array item</a>`
+* `<a href="cloudcannon:#array[+]">Create a new item in an array</a>`
+* `<a href="cloudcannon:#object.title">Edit a variable within an object</a>`
+* `<a href="cloudcannon:#object.array">Edit an array within an object</a>`
+* `<a href="cloudcannon:#object.array[0].title">Edit the title of the first array item within an object</a>`
 
 ---
 
