@@ -9,6 +9,7 @@ This release provides support for merging with pull requests instead of a direct
 **Features:**
 
 * [Publish Request](/syncing/publishing/#publish-requests)&nbsp;workflow
+* Updated Dropbox logos
 
 **Fixes:**
 
