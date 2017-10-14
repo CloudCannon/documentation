@@ -1,8 +1,8 @@
 module Jekyll
 	module RegexFilter
-		def replace_regex(input, reg_str, repl_str)
-			re = Regexp.new reg_str
-			input.gsub re, repl_str
+		def replace_regex(input, regex_string, replace_string)
+			regex = Regexp.new regex_string
+			input.gsub regex, replace_string
 		end
 	end
 end

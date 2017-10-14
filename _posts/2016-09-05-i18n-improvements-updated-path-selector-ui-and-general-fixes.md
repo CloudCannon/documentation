@@ -21,4 +21,4 @@ This release includes a number of improvements to i18n, source configurations an
 * CSS compressor no longer makes unsafe optimisations
 * Embedded data URLs no longer break after CSS compression
 * Path correction in i18n produces the correct URL
-* Assets within the editor are no longer cached unnecessarily&nbsp;
+* Assets within the editor are no longer cached unnecessarily

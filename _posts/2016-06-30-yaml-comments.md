@@ -10,7 +10,7 @@ This release marks the much-awaited arrival of front matter comments in the *Set
 
 * [Comments/notes](/editing/options/#comments) for front matter in the *Settings Panel*
 * Download file option in the file context menu
-* Links to pages made in *Visual Editor* and *Content Editor*&nbsp;formatted as pretty URLs if possible
+* Links to pages made in *Visual Editor* and *Content Editor* formatted as pretty URLs if possible
 * Blank option for select fields
 * *Settings Panel* and **Toggle Settings** button hidden if front matter is empty
 
@@ -27,5 +27,5 @@ This release marks the much-awaited arrival of front matter comments in the *Set
 * Fix Posts showing up twice in *Collections* section with some Jekyll configurations
 * Fix add button label changing in front matter array interface on click in some configurations
 * SSL certs now applied to all subdomains
-* Fixed some edge case path rewriting when saving or publishing drafts/posts in subfolders&nbsp;
+* Fixed some edge case path rewriting when saving or publishing drafts/posts in subfolders
 * General style fixes

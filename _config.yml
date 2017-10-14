@@ -1,11 +1,81 @@
-name: CloudCannon Documentation
-version: 3.0.3
-url: https://docs.cloudcannon.com
-future: true
+# ----
+# Site
 
-author:
+title: CloudCannon Documentation
+display_title: Documentation
+url: "https://docs.cloudcannon.com"
+baseurl:
+google_analytics_key: UA-37472773-15
+show_full_navigation: false
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Documentation for CloudCannon, the Cloud CMS for Jekyll.
+social:
   name: CloudCannon
-  email: support@cloudcannon.com
+  links:
+    - https://www.facebook.com/CloudCannon
+    - https://twitter.com/CloudCannon
+    - https://plus.google.com/+CloudCannon
+    - https://www.youtube.com/c/CloudCannon
+twitter:
+  username: CloudCannon
+
+# -----
+# Build
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: doc
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release
+
+# -----------
+# CloudCannon
+
+types:
+  - minor
+  - major
 
 builds:
   - Any
@@ -20,77 +90,3 @@ plans:
 hostings:
   - Any
   - CloudCannon
-
-collections:
-  overview:
-    title: Overview
-    permalink: /overview/:title/
-    active_prefix: overview
-    output: true
-    order: 1
-  syncing:
-    title: File Syncing
-    permalink: /syncing/:title/
-    active_prefix: syncing
-    output: true
-    order: 2
-  building:
-    title: Building
-    permalink: /building/:title/
-    active_prefix: building
-    output: true
-    order: 3
-  editing:
-    title: Editing
-    permalink: /editing/:title/
-    active_prefix: editing
-    output: true
-    order: 4
-  domains:
-    title: Domains
-    permalink: /domains/:title/
-    active_prefix: domains
-    output: true
-    order: 5
-  hosting:
-    title: Hosting
-    permalink: /hosting/:title/
-    active_prefix: hosting
-    output: true
-    order: 6
-  sharing:
-    title: Sharing
-    permalink: /sharing/:title/
-    active_prefix: sharing
-    output: true
-    order: 7
-  organisations:
-    title: Organisations
-    permalink: /organisations/:title/
-    active_prefix: organisations
-    output: true
-    order: 8
-  ssl:
-    title: SSL
-    permalink: /ssl/:title/
-    active_prefix: ssl
-    output: true
-    order: 9
-  authentication:
-    title: Authentication
-    permalink: /authentication/:title/
-    active_prefix: authentication
-    output: true
-    order: 10
-  i18n:
-    title: Internationalisation
-    permalink: /i18n/:title/
-    active_prefix: i18n
-    output: true
-    order: 11
-
-defaults:
-- scope:
-    path: ""
-  values:
-    layout: docs

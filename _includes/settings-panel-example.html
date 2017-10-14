@@ -14,5 +14,5 @@
 </div>
 
 {% if include.example.info %}
-{{ include.example.info | markdownify | replace: '<p>', '<p class="info">' }}
+{{ include.example.info | markdownify | replace: '<p>', '<blockquote>' | replace: '</p>', '</blockquote>' }}
 {% endif %}

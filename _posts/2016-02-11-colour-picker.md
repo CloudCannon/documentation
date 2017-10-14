@@ -5,7 +5,7 @@ type: minor
 
 This release adds a colour picker to the range of interfaces for Jekyll front matter and YAML.
 
-![CloudCannon front matter interface including new colour picker](/img/editing/front-matter/overview.png){: srcset="/img/editing/front-matter/overview.png 800w, /img/editing/front-matter/overview@2x.png 1600w"}
+![CloudCannon front matter interface including new colour picker](/images/editing/front-matter/overview.png){: srcset="/images/editing/front-matter/overview.png 800w, /images/editing/front-matter/overview@2x.png 1600w"}
 {: .has-screenshot}
 
 **Features:**

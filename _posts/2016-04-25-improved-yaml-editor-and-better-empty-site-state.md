@@ -4,7 +4,7 @@ type: major
 ---
 
 
-This release improves the user experience for editing YAML files and adding files to an empty site.&nbsp;
+This release improves the user experience for editing YAML files and adding files to an empty site.
 
 **Features:**
 

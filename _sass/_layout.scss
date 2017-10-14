@@ -1,3 +1,8 @@
+input::-ms-clear,
+input::-ms-reveal {
+	display: none !important;
+}
+
 body {
 	height: auto;
 	overflow-x: hidden;
@@ -47,11 +52,11 @@ body {
 			left: 0;
 			width: $nav-width;
 			background-color: $nav-background-color;
+			box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.1);
 		}
 
-		#search-input,
-		&::after {
-			box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.1);
+		#search-input {
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 		}
 
 		&::before {
@@ -113,7 +118,7 @@ header {
 	}
 
 	.open-nav {
-		background-image: url(/img/icons/menu.svg);
+		background-image: url(/images/menu.svg);
 		background-color: transparent;
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -155,12 +160,22 @@ header {
 	position: relative;
 	background-color: $content-background-color;
 	color: $content-color;
+
+	h3::before {
+		content: "";
+		@extend hr;
+		margin: 60px 0;
+	}
+
+	.details h3::before {
+		display: none;
+	}
 }
 
 .content,
 .page-header {
 	max-width: $content-max-width;
-	padding: 0 $space + 5;
+	padding: 0 ($space + 5);
 	margin: $space auto 1.75em auto;
 }
 
@@ -222,8 +237,12 @@ nav > ul {
 	line-height: 1;
 	margin: 0;
 
-	> ul {
+	nav:not(.full-navigation) & > ul {
 		display: none;
+	}
+
+	nav:not(.full-navigation) &.current > ul {
+		display: block;
 	}
 
 	> a {
@@ -238,19 +257,6 @@ nav > ul {
 	> a:active,
 	> a:hover {
 		color: #111;
-	}
-
-	&.current.top-level {
-		// background: #e5e5e5;
-		// box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.1), inset 0 -10px 10px -10px rgba(0, 0, 0, 0.1);
-
-		li:last-child > a {
-			padding-bottom: $space;
-		}
-	}
-
-	&.current > ul {
-		display: block;
 	}
 
 	&.top-level > a {
@@ -298,14 +304,6 @@ nav > ul {
 .highlight {
 	margin-left: 0;
 	margin-right: 0;
-}
-
-// this width is when the content starts centering
-@media (max-width: $full-width-break) {
-	.warning, .error, .success, .info {
-		margin-left: 0;
-		margin-right: 0;
-	}
 }
 
 h3 + .warning {
@@ -365,19 +363,129 @@ h4 svg {
 	}
 }
 
+.search-input-container {
+	position: relative;
+}
+
+.search-input-icon {
+	position: absolute;
+	top: 17px;
+	left: 15px;
+
+	svg {
+		fill: #777;
+	}
+}
+
 #search-input {
+	-webkit-appearance: none;
+	display: block;
 	margin: 0;
-	padding: 10px 20px;
-	border-left: 0;
-	border-top: 0;
-	border-right: 0;
-	border-radius: 0;
+	padding: 15px 20px 15px 49px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 	font-size: 1.5rem;
 	font-weight: 600;
+	line-height: 1.8;
 
 	&:focus {
-		border-color: #ddd;
+		outline: none;
+
+		+ .search-input-icon svg {
+			fill: $brand-colour;
+		}
 	}
+}
+
+.changelog {
+	&,
+	> div {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.date {
+		color: #888;
+		font-style: italic;
+	}
+}
+
+.badge {
+	font-family: "Open Sans", sans-serif;
+	padding: 2px 5px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	background: #eee;
+	font-weight: bold;
+
+	&.major {
+		background: $brand-colour;
+		color: #fff;
+	}
+}
+
+blockquote {
+	border-left: 5px solid #FD0;
+	padding: 10px 15px;
+	margin-left: -15px;
+	margin-right: -10px;
+	background-color: $brand-colour-light;
+	border-color: $brand-colour;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: $full-width-break) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&.warning {
+		background-color: $warning-colour-light;
+		border-color: $warning-colour;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.editor-link {
+	display: none;
+	margin-top: 0;
+
+	.btn {
+		border: 0;
+		border-radius: 2px;
+		width: 100%;
+		max-width: 500px;
+		box-sizing: border-box;
+		font-size: 2rem;
+		text-decoration: none;
+		padding: 10px 15px;
+		margin: 0;
+		font-size: 18px;
+		cursor: pointer;
+		background-color: #f7e064;
+		color: #333;
+		box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			background-color: #f4d525;
+			color: #333;
+		}
+	}
+
+}
+
+.cms-editor-active .editor-link {
+	display: block;
 }
 
 .header-link {
