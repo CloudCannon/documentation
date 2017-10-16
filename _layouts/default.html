@@ -18,7 +18,8 @@
 		<meta name="theme-color" content="#407afc">
 
 		<link type="application/atom+xml" rel="alternate" href="{{ site.baseurl }}/feed.xml" title="Change Log | CloudCannon Documentation" />
-		{% seo %}
+		<title>{% if page.title and page.url != '/' %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+		{% seo title=false %}
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
