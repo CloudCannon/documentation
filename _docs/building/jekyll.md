@@ -19,6 +19,9 @@ $ bundle install
 $ bundle exec jekyll build
 ~~~
 
+These commands are run in the root folder of your site.
+
+> If your `Gemfile` isn’t in the root folder, set the `BUNDLE_GEMFILE` [environment variable](/building/environments/) to tell the Bundler where to find it. Setting this requires that your gems are specified in the `_config.yml` file.
 
 ### Static
 
