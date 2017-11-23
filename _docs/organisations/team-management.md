@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-After creating an organisation, your account is set up as the only userz. This user is set as an owner. There are 5 types of users in an organisation:
+After creating an organisation, your account is set up as the owner. There are 5 types of users in an organisation:
 
 1. **Owners**: These users have full permission as if it is their own account
 2. **Developers**: Can create sites and manage everything to do with them, can't update billing information

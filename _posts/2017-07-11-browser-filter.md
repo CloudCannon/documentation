@@ -9,7 +9,7 @@ This release introduces a text filter/search input wherever you or your clients 
 **Features:**
 
 * Browser text filter
-* Consolidated file browser views for *Collections*, *Page Selector*, *File Browser* and file/page pickers
+* Consolidated file browser views for *Explore*, *Page Selector*, *File Browser* and file/page pickers
 
 **Fixes:**
 

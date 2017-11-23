@@ -16,8 +16,8 @@ A DOS attack early last week forced us to review page performance. The improveme
 
 * Added support for highlight tag in markdown editor. This retains the content like a pre tag.
 * Users will need to downgrade before deleting their account to stop accidental deletions
-* New pages list in the *Collections* section. This allows clients to navigate and clone pages
-* Added support for category posts folders. Each category is listed in the *Collections* section. For example, posts in `/cats/_posts` are separated from those inside `/_posts`. All drafts remain in `/_drafts/`, upon publishing the category decides where they should go. No change will occur if you have all posts in `/_posts`.
+* New pages list in the *Explore* section. This allows clients to navigate and clone pages
+* Added support for category posts folders. Each category is listed in the *Explore* section. For example, posts in `/cats/_posts` are separated from those inside `/_posts`. All drafts remain in `/_drafts/`, upon publishing the category decides where they should go. No change will occur if you have all posts in `/_posts`.
 
 
 **Fixes:**

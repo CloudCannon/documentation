@@ -51,7 +51,7 @@ View the live site on the test domain by clicking the ***.cloudvent.net** link i
 
 ### Inline Editing
 
-Open the *Visual Editor* by selecting **Editor** in the left sidebar.
+Open the *Visual Editor* by selecting **Edit** in the left sidebar.
 
 The *Visual Editor* is for making content changes inline on the website.
 Yellow boxes indicate *Editable Regions* in each page.
@@ -81,10 +81,10 @@ If you're editing `/index.html`, the `h1` and `p` have `class="editable"`, defin
 
 ### Content Editing
 
-Open the *Collections* section by selecting **Collections** in the left sidebar.
+Open the *Explore* section by selecting **Explore** in the left sidebar.
 This section contains your pages, drafts, posts, collections items and data files.
 
-![Collections section with Pages group open](/images/overview/pages.png){: srcset="/images/overview/pages.png 800w, /images/overview/pages@2x.png 1600w"}
+![Explore section with Pages group open](/images/overview/pages.png){: srcset="/images/overview/pages.png 800w, /images/overview/pages@2x.png 1600w"}
 {: .has-screenshot}
 
 Select the **Drafts** group and open the **Second Blog Post** draft.
@@ -100,7 +100,7 @@ Draft posts are hidden on the live site until published. To publish the draft:
 ![Content Editor](/images/overview/content-editor.png){: srcset="/images/overview/content-editor.png 800w, /images/overview/content-editor@2x.png 1600w"}
 {: .has-screenshot}
 
-Open the *Collections* section again and select the **Services** group.
+Open the *Explore* section again and select the **Services** group.
 
 Services is a Jekyll collection, a feature used to group related items in a scalable way.
 This collection is for listing the services offered on the creative site.

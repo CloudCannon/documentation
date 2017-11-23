@@ -26,5 +26,5 @@ This release includes upgrades and fixes to our infrastructure, backend systems 
 * Fixed GitHub merge UI
 * Fixed sync error not showing if no provider connected to a site
 * Fixed default subsection in *Status* section
-* Pages inside node_modules folder no longer shown in *Collections* section
+* Pages inside node_modules folder no longer shown in *Explore* section
 * No longer sending erroneous failed payment emails at end of trial in some configurations

@@ -33,7 +33,7 @@ All editors will have access to the *Publish* option in the sidebar. Clicking **
 
 Go to *Site Settings* / *Storage Providers* and click **Remove Publish Branch** next to GitHub.
 
-![Storage Providers interface](/images/syncing/publish/publish-to-master.png){: srcset="/images/syncing/publish/publish-to-master.png 800w, /images/syncing/publish/publish-to-master@2x.png 1600w"}
+![Storage Providers interface](/images/syncing/publish/with-publish-branch.png){: srcset="/images/syncing/publish/with-publish-branch.png 800w, /images/syncing/publish/with-publish-branch@2x.png 1600w"}
 {: .has-screenshot}
 
 The publish interface becomes unavailable to all editors without a publish branch set.
@@ -49,7 +49,7 @@ To change the publish mode for a GitHub-connected site:
 2. Select *Merge* or *Pull Request*
 3. Click **Change Publish Mode**
 
-![Publish mode interface](/images/syncing/publish/publish-mode.png){: srcset="/images/syncing/publish/publish-mode.png 800w, /images/syncing/publish/publish-mode@2x.png 1600w"}
+![Storage Providers interface](/images/syncing/publish/with-publish-branch.png){: srcset="/images/syncing/publish/with-publish-branch.png 800w, /images/syncing/publish/with-publish-branch@2x.png 1600w"}
 {: .has-screenshot}
 
 

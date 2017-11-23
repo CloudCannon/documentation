@@ -56,9 +56,6 @@ To have an edit link on a collection item page, add the following to the page:
 {% raw %}<a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link">Edit</a>{% endraw %}
 {% endhighlight %}
 
-![Netflix case study collection item with edit button](/images/editing/editor-links/collection-item.png){: srcset="/images/editing/editor-links/collection-item.png 800w, /images/editing/editor-links/collection-item@2x.png 1600w"}
-{: .has-screenshot}
-
 > When generating *Editor Links* in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
 
 ---

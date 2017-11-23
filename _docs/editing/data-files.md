@@ -16,7 +16,7 @@ The use cases for data files include: office locations, restaurant menus, staff 
 The [Content Editor](/editing/content-editor/) is an easy-to-use editor that supports data files. To access the interface:
 
 1. Add a Jekyll site with at least one data file
-2. Open the file from *Collections* / *Data* section
+2. Open the file from *Explore* / *Data* section
 
 ![Data files interface](/images/editing/data-files/data-files-interface.png){: srcset="/images/editing/data-files/data-files-interface.png 800w, /images/editing/data-files/data-files-interface@2x.png 1600w"}
 {: .has-screenshot}

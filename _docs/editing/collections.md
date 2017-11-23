@@ -12,10 +12,10 @@ Manage your Jekyll collections with ease in CloudCannon.
 
 Collections are for managing groups of structured content. The concepts are similar to [Blogging](/editing/blogging/), without the chronological restriction. Collections have many applications, including: API documentation, products, albums and blog authors.
 
-CloudCannon provides an easy-to-use interface for managing collections. To access the CloudCannon collections interface:
+To access the easy-to-use CloudCannon interface for managing collections:
 
 1. Add a Jekyll site with at least one collection
-2. Go to the tab for your collection in the *Collections* section
+2. Go to the tab for your collection in the *Explore* section
 
 ![Empty collections interface](/images/editing/collections/collections-interface.png){: srcset="/images/editing/collections/collections-interface.png 800w, /images/editing/collections/collections-interface@2x.png 1600w"}
 {: .has-screenshot}
@@ -57,34 +57,33 @@ There are a number of ways to add content for your new item:
 
 To create a Jekyll collection to manage and display staff members, follow this example (assumes `/_layouts/default.html` exists):
 
-1.  Define the staff collection and default layout in `_config.yml`:
+1.  Define the staff members collection and default layout in `_config.yml`:
 
     ~~~
     collections:
-      staff:
+      staff_members:
         output: true
 
     defaults:
       -
         scope:
           path: ""
-          type: "staff"
+          type: "staff_members"
         values:
           layout: "staff-member"
     ~~~
 
     Jekyll generates a page for each staff member with `output: true`. The default **staff-member** layout avoids setting it in each file.
 
-2.  Create `/_staff/elon.md` with the following content:
+2.  Create `/_staff_members/sam-doe.md` with the following content:
 
     ~~~
     ---
-    name: Elon Musk
-    position: CEO
-    twitter_handle: "@elonmusk"
-    profile_photo_path: http://www.wired.com/images_blogs/wiredscience/2012/10/ff_musk4_f.jpg
+    name: Same Doe
+    image: /uploads/sam.png
+    credentials:
+    phone_extension:
     ---
-    Born in South Africa in 1971 Elon Musk was raised in Pretoria by a South African engineer father, Errol Musk, and Canadian born Pennsylvania Dutch, nutritionist and author mother, Maye. As he grew up he dreamed of moving to the US where he believed “anything is possible.” His first stop though was Canada where he spent two years at Queens University in Kingston Ontario.
     ~~~
 
 3.  Create `/staff.html` to display all staff members:
@@ -94,12 +93,12 @@ To create a Jekyll collection to manage and display staff members, follow this e
     layout: default
     ---
     <ul class="staff-members">
-      {% for member in site.staff %}
+      {% for member in site.staff_members %}
         <li class="staff-member">
-          <img src="{{ member.profile_photo_path }}" alt="{{ member.name }}">
+          <img src="{{ member.image }}" alt="{{ member.name }}">
           <p>
             <a href="{{ member.url }}">
-              {{ member.name }} - <strong>{{ member.position }}</strong>
+              {{ member.name }} - <strong>{{ member.credentials }}</strong>
             </a>
           </p>
         </li>
@@ -109,14 +108,14 @@ To create a Jekyll collection to manage and display staff members, follow this e
 
     Jekyll provides the `url` attribute to link to the generated page for each staff member.
 
-4.  Create the `staff-member` layout by creating `/_layouts/staff-member.html`. Generated staff pages use this file:
+4.  Create the `staff-member` layout by creating `/_layouts/staff-member.html`. Generated staff member pages use this file:
 
     ~~~
     {% raw %}---
     layout: default
     ---
-    <img src="{{ page.profile_photo_path }}" alt="{{ page.name }}">
-    <h1>{{ page.name }} - {{ page.position }}</h1>
-    <p>Twitter Handle: {{ page.twitter_handle }}</p>
+    <img src="{{ page.image }}" alt="{{ page.name }}">
+    <h1>{{ page.name }} - {{ page.credentials }}</h1>
+    <p>Phone extension: {{ page.phone_extension }}</p>
     {{ page.content }}{% endraw %}
     ~~~

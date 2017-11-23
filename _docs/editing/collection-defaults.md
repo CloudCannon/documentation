@@ -10,7 +10,7 @@ requirements:
 
 Provide default front matter and/or content for new drafts and collection items.
 Defaults for collection item files are copied from `_defaults.md` in the root collection folder.
-Defaults files are hidden in the *Collections* section to prevent changes from non-developers and clients.
+Defaults files are hidden in the *Explore* section to prevent changes from non-developers and clients.
 
 > Set the default extension for new files to `.html` by using `_defaults.html` instead.
 

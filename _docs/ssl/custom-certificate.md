@@ -12,7 +12,7 @@ requirements:
 
 ### Adding a new SSL certificate
 
-To add a new SSL Certificate:
+To add a new SSL certificate:
 
 1. Go to *Site Settings* / *SSL*
 2. Click the **Add SSL Certificate** button
@@ -42,7 +42,7 @@ To add SSL to a site:
 To redirect all HTTP traffic to HTTPS:
 
 1. Ensure an SSL certificate is attached
-2. Go to *Site Settings* / *Hosting*
+2. Go to *Site Settings* / *Hosting* / *Details*
 2. Enable the **Redirect all HTTP traffic to HTTPS** option
 3. Update the site.
 

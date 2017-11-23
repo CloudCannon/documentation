@@ -10,9 +10,9 @@ This release includes consolidated interface changes and the site status feature
 * *Status* section for site state, errors, suggestions and activity
 * Improved empty interfaces detailing next steps
 * New file creation menu with option to create folders
-* *Collections* section behaviour matched with *File Browser*
+* *Explore* section behaviour matched with *File Browser*
 * Onboarding when sharing to team members without accounts has improved
-* Folders in *Collections* view now prettified
+* Folders in *Explore* view now prettified
 
 **Fixes:**
 
@@ -20,4 +20,4 @@ This release includes consolidated interface changes and the site status feature
 * Fixed pages collection showing when no pages exist
 * Fixed pages collection hiding some valid files
 * Fixed navigation issues with collection item breadcrumbs within folders
-* Inconsistencies between pages shown in *Editor* section and *Collections* section
+* Inconsistencies between pages shown in *Edit* section and *Explore* section

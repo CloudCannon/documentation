@@ -16,7 +16,7 @@ This release announces the start of our SSL private beta, new file types, better
 
 **Fixes:**
 
-* *Collections* section visible when *Collection Defaults* are the only entries
+* *Explore* section visible when *Collection Defaults* are the only entries
 * Empty `strong`, `em` and `u` tags removed from Markdown output on save
 * DNS configuration preventing invalid spacing
 * Fixed issues with windows line endings

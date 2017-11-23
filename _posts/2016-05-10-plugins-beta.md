@@ -11,13 +11,13 @@ This release marks our first official support for custom plugins. Get in touch i
 * Update filename for blog posts when the title and date are changed in the *Settings Panel*
 * Prettify `index.html` in editor breadcrumbs
 * Code editing for `.coffee`, `.scss`, `.sass`, `.rb` and `.json` in *Source Editor* greatly improved
-* Output path shown in *Collections* / *Pages* section
+* Output path shown in *Explore* / *Pages* section
 * Improved UI for JSON and YAML files with array as only child
 * YAML/JSON editor uses prettified filename if no `title` exists
 
 **Fixes:**
 
-* Prevent items in *Collections* to be moved above their base path
+* Prevent items in *Explore* to be moved above their base path
 * Fixed comments added by keyboard shortcut in *Source Editor* for `.scss` files
 * Fixed issue when navigating to a page displayed scrolled down
 * Prevent naming issues with non-documented, Jekyll-supported named posts
