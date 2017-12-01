@@ -13,7 +13,7 @@ Publishing allows editors to merge changes from one branch to another. You can c
 
 To connect a publish branch and enable publishing, follow these instructions:
 
-Go to *Site Settings* / *Storage Providers* and click **Add Publish Branch** next to GitHub.
+Go to *Site Settings* / *File Syncing* / *Publish* and click **Add Publish Branch** next to GitHub.
 
 ![Storage Providers interface](/images/syncing/publish/no-publish-branch.png){: srcset="/images/syncing/publish/no-publish-branch.png 800w, /images/syncing/publish/no-publish-branch@2x.png 1600w"}
 {: .has-screenshot}
@@ -31,7 +31,7 @@ All editors will have access to the *Publish* option in the sidebar. Clicking **
 
 ### Removing a publish branch
 
-Go to *Site Settings* / *Storage Providers* and click **Remove Publish Branch** next to GitHub.
+Go to *Site Settings* / *File Syncing* / *Publish* and click **Remove Publish Branch** next to GitHub.
 
 ![Storage Providers interface](/images/syncing/publish/with-publish-branch.png){: srcset="/images/syncing/publish/with-publish-branch.png 800w, /images/syncing/publish/with-publish-branch@2x.png 1600w"}
 {: .has-screenshot}
@@ -45,7 +45,7 @@ The publish mode determines if publish is a direct merge or a pull request. Merg
 
 To change the publish mode for a GitHub-connected site:
 
-1. Go to *Site Settings* / *Storage Providers*
+1. Go to *Site Settings* / *File Syncing* / *Publish*
 2. Select *Merge* or *Pull Request*
 3. Click **Change Publish Mode**
 
