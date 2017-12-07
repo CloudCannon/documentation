@@ -15,7 +15,7 @@ Connecting Bitbucket allows you to work on your websites locally and have the ch
 
 To connect a Bitbucket repository and start syncing files, follow these instructions:
 
-Go to *Site Settings* / *Storage Providers* and click **Connect** next to Bitbucket.
+Go to *Site Settings* / *File Syncing* and click **Connect** next to Bitbucket.
 
 ![Storage Providers interface](/images/syncing/storage-providers.png){: srcset="/images/syncing/storage-providers.png 800w, /images/syncing/storage-providers@2x.png 1600w"}
 {: .has-screenshot}

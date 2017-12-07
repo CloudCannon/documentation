@@ -89,6 +89,61 @@ Configure the various editing interfaces for your clients to optimise for their 
 * Custom scope with Jekyll Defaults
 
 
+### Toolbars
+
+Control the toolbar options for your clients or editors to increase focus on the content at hand.
+
+Set toolbar options for the [Content Editor](/editing/content-editor/) with the `content` key, and [Editable Regions](/editing/editable-regions/) using the `_block` and `_text` keys. Options for Rich Text front matter interfaces are specified by matching key names.
+
+{% highlight yaml %}
+_options:
+  some_markdown:
+    bold: true
+    table: true
+  _text:
+    italic: true
+  _block:
+    format: true
+    undo: true
+    redo: true
+  content:
+    format: true
+    bold: true
+    numberedlist: true
+    table: true
+{% endhighlight %}
+
+You can also set options directly on elements for [Editable Regions](/editing/editable-regions/):
+
+{% highlight html %}
+<p class="editable" data-cms-options='{"bold": true, "italic": true}'>...</p>
+{% endhighlight %}
+
+> The most specific options that apply to an interface are used, less specific options that still apply are ignored. In order of specificity: `data-cms-options` attributes, front matter and Jekyll defaults, then globally in `_config.yml`.
+
+The complete list of options are:
+
+- bold
+- italic
+- removeformat
+- link
+- undo
+- redo
+- underline
+- strike
+- subscript
+- superscript
+- format (unavailable for `_text`)
+- blockquote (unavailable for `_text`)
+- numberedlist (unavailable for `_text`)
+- bulletedlist (unavailable for `_text`)
+- outdent (unavailable for `_text`)
+- indent (unavailable for `_text`)
+- image (unavailable for `_text` or *Rich Text* fields)
+- table (unavailable for `_text`)
+
+
+
 ### Image Uploads
 
 Control the size and format of images clients or team members upload through the interface. Images are resized and converted automatically.
