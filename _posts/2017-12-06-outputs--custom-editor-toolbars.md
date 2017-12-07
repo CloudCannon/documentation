@@ -4,7 +4,7 @@ type: major
 ---
 
 
-This release adds two major features, the option to output a generated site and editor toolbar customisation. See a feature post in our blog.
+This release adds two major features, the option to output a generated site and editor toolbar customisation. See [our feature post in our blog](https://cloudcannon.com/features/2017/12/07/build-outputs-and-toolbar-options/).
 
 **Features:**
 
