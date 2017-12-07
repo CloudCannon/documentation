@@ -1,6 +1,6 @@
 ---
 title: Outputs & Custom Editor Toolbars
-type: minor
+type: major
 ---
 
 This release adds two major features, the option to output a generated site and editor toolbar customisation.
