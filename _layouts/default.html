@@ -41,7 +41,7 @@
 			</h1>
 
 			<form action="{{ site.baseurl }}/search/" method="get" class="search-input-container">
-				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="text" name="q" id="search-input" placeholder="Search" data-autofocus>
 				<div class="search-input-icon">{% include icons/search.svg %}</div>
 
 				<input type="submit" value="Search" style="display: none;">
@@ -84,9 +84,10 @@
 		</section>
 
 		<script>
-			document.getElementById("open-nav").addEventListener("click", function () {
-				document.body.classList.toggle("nav-open");
-			});
+
+
+			{% include menu.js %}
+			{% include autofocus.js %}
 		</script>
 	</body>
 </html>
