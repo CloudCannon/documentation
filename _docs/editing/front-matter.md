@@ -16,7 +16,9 @@ examples:
     image_paths:
       - /images/editing/front-matter/text-field.png
   - title: Large Text
-    details: Multiline text field expanded for longer text. Displayed for `description` and long text values.
+    details: |
+      Multiline text field expanded for longer text. Displayed for keys ending in `_text` or `_description`.
+      Alternatively, you can use the variations without underscores as keys (e.g. `description`).
     yaml: |
       ---
       description: Products are crafted in-house by hand, making each piece a labour of love and an exercise in craftsmanship.
