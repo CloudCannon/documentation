@@ -102,6 +102,35 @@ examples:
       ---
     image_paths:
       - /images/editing/front-matter/number.png
+  - title: Code Block
+    details: |
+      Configurable editor for blocks of code or monospace content.
+      Displayed for `code_block` and keys ending in `_code_block`.
+
+      Syntax highlighting is enabled when the suffix includes a language (e.g. `javascript_code_block`).
+    info: Set a theme, tab size and more for each interface with editing [Options](/editing/options/).
+    yaml: |
+      ---
+      code_block: |
+        Some content is better in monospace.
+
+        1 + 1 = 2
+        2 + 2 = 4
+      javascript_code_block: |
+        function sayHello() {
+            console.log("Hi there!");
+        }
+
+        sayHello();
+      example_ruby_code_block: |
+        def say_hello
+          puts 'Hi there!'
+        end
+
+        say_hello
+      ---
+    image_paths:
+      - /images/editing/front-matter/code-block.png
   - title: URL
     details: |
       Input field with a preview for absolute or fully qualified URLs.
