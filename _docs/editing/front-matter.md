@@ -107,8 +107,8 @@ examples:
       Configurable editor for blocks of code or monospace content.
       Displayed for `code_block` and keys ending in `_code_block`.
 
-      Syntax highlighting is enabled when the suffix includes a language (e.g. `javascript_code_block`).
-    info: Set a theme, tab size and more for each interface with editing [Options](/editing/options/).
+      Syntax highlighting is enabled when the suffix includes a [language](https://github.com/ajaxorg/ace/tree/v1.2.9/lib/ace/mode) (e.g. `javascript_code_block`).
+    info: Set a theme, tab size and more for each interface with code block [Options](/editing/options/#code-blocks).
     yaml: |
       ---
       code_block: |
