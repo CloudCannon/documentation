@@ -18,6 +18,7 @@ This release focuses on the front matter editing experience and general fixes.
 
 * Improved sync speeds
 * Large CSVs are loaded faster
+* Rotation on jpeg images is applied on upload
 * Switch editor state and context menu text is no longer set to brand color
 * Credit card failure messages on change plan more obvious
 * Clicking remove in the CSV editor removes the last row
@@ -25,5 +26,5 @@ This release focuses on the front matter editing experience and general fixes.
 * Credit card form shows error messages
 * New lines in markdown table content
 * Underscores escaped in markdown output
-* Space after --- stopped front matter editor loading
+* Space after — stopped front matter editor loading
 * Front matter _number no longer blanks non-number fields
