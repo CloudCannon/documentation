@@ -4,7 +4,7 @@
 
 		{{ include.example.details | markdownify }}
 
-		{% highlight yaml %}{{ include.example.yaml }}{% endhighlight %}
+		{% highlight yaml %}{{ include.example.yaml_code_block }}{% endhighlight %}
 	</div>
 	<div class="example">
 		{% for image_path in include.example.image_paths %}
