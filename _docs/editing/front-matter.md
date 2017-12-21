@@ -2,6 +2,7 @@
 title: Front Matter
 category: Editing
 order: 5
+layout: doc
 requirements:
   build: Jekyll
   plan: Free
