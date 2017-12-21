@@ -9,7 +9,7 @@ requirements:
 examples:
   - title: Text
     details: Single line field for text. Displayed for short text values.
-    yaml: |
+    yaml_code_block: |
       ---
       tagline: Hand-crafted clothing.
       ---
@@ -19,7 +19,7 @@ examples:
     details: |
       Multiline text field expanded for longer text. Displayed for keys ending in `_text` or `_description`.
       Alternatively, you can use the variations without underscores as keys (e.g. `description`).
-    yaml: |
+    yaml_code_block: |
       ---
       description: Products are crafted in-house by hand, making each piece a labour of love and an exercise in craftsmanship.
       ---
@@ -31,7 +31,7 @@ examples:
       Alternatively, you can use the variations without underscores as keys (e.g. `markdown`).
 
       Each variation defines which format the value is saved as.
-    yaml: |
+    yaml_code_block: |
       ---
       markdown: |
         # Animals
@@ -53,7 +53,7 @@ examples:
     info: Use the `markdownify` Liquid filter to render Markdown from front matter, e.g. `{% if page.markdown %}{{ page.markdown | markdownify }}{% endif %}`.
   - title: Boolean
     details: Checkbox which can be triggered on or off. Displayed for the values **true** and **false**.
-    yaml: |
+    yaml_code_block: |
       ---
       show_feature: true
       ---
@@ -67,7 +67,7 @@ examples:
 
       Each variation limits the files shown in the selector by type. The `_path` variation shows all visible files.
     info: Control the size and format of image uploads with [Image Upload Options](/editing/options/#image-uploads).
-    yaml: |
+    yaml_code_block: |
       ---
       background_image_path: /images/background.png
       newsletter_document_path: /documents/2016/newsletter.pdf
@@ -82,7 +82,7 @@ examples:
       Alternatively, you can use the variations without underscores as keys (e.g. `rgb` or `colour`).
 
       Each variation defines the preferred format of the colour. The `_colour` and `_color` variations default to hex.
-    yaml: |
+    yaml_code_block: |
       ---
       brand_colour: '#f05f40'
       ---
@@ -94,7 +94,7 @@ examples:
     details: |
       Input field for numbers.
       Displayed for `number`, keys ending in `_number` and numerical values.
-    yaml: |
+    yaml_code_block: |
       ---
       order: 12
       number: 3.14
@@ -109,7 +109,7 @@ examples:
 
       Syntax highlighting is enabled when the suffix includes a [language](https://github.com/ajaxorg/ace/tree/v1.2.9/lib/ace/mode) (e.g. `javascript_code_block`).
     info: Set a theme, tab size and more for each interface with code block [Options](/editing/options/#code-blocks).
-    yaml: |
+    yaml_code_block: |
       ---
       code_block: |
         Some content is better in monospace.
@@ -137,7 +137,7 @@ examples:
       Displayed for `url`, `link` and keys ending in `_url` or `_link`.
 
       Previews for URLs without a protocol are requested prefixed with `http://`.
-    yaml: |
+    yaml_code_block: |
       ---
       external_url: 'https://bitbucket.org/'
       internal_url: /editing/visual-editor/
@@ -154,7 +154,7 @@ examples:
       For compatibility with popular Jekyll plugins, the Twitter **@** symbol is stripped from the value on save. The Twitter interfaces display a placeholder symbol.
 
       In order to support both custom and default Google user ID variations, the **+** is part of the value in the Google+ interfaces.
-    yaml: |
+    yaml_code_block: |
       ---
       twitter: CloudCannon
       twitter_url: 'https://twitter.com/@jekyllrb'
@@ -174,7 +174,7 @@ examples:
       - /images/editing/front-matter/social.png
   - title: Date
     details: Date picker with options for year, month and day. Displayed for keys ending in `_date` and date values.
-    yaml: |
+    yaml_code_block: |
       ---
       sale_start_date: 2015-01-09 00:00:00
       ---
@@ -183,7 +183,7 @@ examples:
       - /images/editing/front-matter/date-focus.png
   - title: Time
     details: 12 hour time input. Displayed for `time` and keys ending in `_time`.
-    yaml: |
+    yaml_code_block: |
       ---
       opening_time: 8:00 am
       ---
@@ -191,7 +191,7 @@ examples:
       - /images/editing/front-matter/time.png
   - title: Date Time
     details: Combination date picker and 12 hour time input. Outputs an ISO 8601 date. Displayed for `date`, `datetime` and keys ending in `_at` or `_datetime`.
-    yaml: |
+    yaml_code_block: |
       ---
       date: 2015-07-15 12:00:00
       ---
@@ -218,7 +218,7 @@ examples:
       ~~~
 
       Displayed for keys **in the singular form** of the collection name, array or object set in `_config.yml`.
-    yaml: |
+    yaml_code_block: |
       ---
       style: Green
       option: red
@@ -252,7 +252,7 @@ examples:
       ~~~
 
       Displayed for `categories`, `tags`, and keys **matching the name** of a collection name, array or object set in `_config.yml`.
-    yaml: |
+    yaml_code_block: |
       ---
       styles:
         - Green
@@ -277,7 +277,7 @@ examples:
       If not populated from any source, `categories` and `tags` display a multiselect that supports adding options inline.
   - title: Object
     details: Button that navigates to grouped data. Displayed for object values.
-    yaml: |
+    yaml_code_block: |
       ---
       footer:
         copyright: Lion Wear Inc.
@@ -288,7 +288,7 @@ examples:
       - /images/editing/front-matter/object-active.png
   - title: Array
     details: Button that navigates to an ordered list of items. Items in the array can be added, reordered and deleted. Displayed for array values.
-    yaml: |
+    yaml_code_block: |
       ---
       staff:
         - Bill
@@ -300,7 +300,7 @@ examples:
       - /images/editing/front-matter/array-active.png
   - title: Hidden
     details: Hidden values are not present in the interface. Applies to keys that begin with an underscore.
-    yaml: |
+    yaml_code_block: |
       ---
       _image_src: /src/
       ---
