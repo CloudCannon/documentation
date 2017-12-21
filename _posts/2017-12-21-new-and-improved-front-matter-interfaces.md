@@ -8,9 +8,9 @@ This release focuses on the front matter editing experience and general fixes.
 
 **Features:**
 
-* Code front matter interface
-* URL front matter interface
-* Long text field front matter interface
+* [Code front matter interface](/editing/front-matter/#code-block)
+* [URL front matter interface](/editing/front-matter/#url)
+* [Long text field front matter interface](/editing/front-matter/#large-text)
 * data-src is rewritten when optimised
 * Git repositories are split by the owner when adding a provider
 
@@ -26,5 +26,5 @@ This release focuses on the front matter editing experience and general fixes.
 * Credit card form shows error messages
 * New lines in markdown table content
 * Underscores escaped in markdown output
-* Space after — stopped front matter editor loading
-* Front matter _number no longer blanks non-number fields
+* Space after first three dashes stopped front matter editor loading
+* Front matter \_number no longer blanks non-number fields
