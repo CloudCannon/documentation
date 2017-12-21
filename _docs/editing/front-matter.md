@@ -312,12 +312,14 @@ Variables are defined in YAML between triple dashed lines at the top of a file.
 Access the variables in the page with [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers). For example:
 
 {% highlight liquid %}
+{% raw %}
 ---
 title: Home
 ---
 ...
-<title>{% raw %}{{ page.title }}{% endraw %} - Lion Wear</title>
+<title>{{ page.title }} - Lion Wear</title>
 ...
+{% endraw %}
 {% endhighlight %}
 
 CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Settings** button at top right of the [Visual Editor](/editing/visual-editor/) or [Content Editor](/editing/content-editor/) to access it.
