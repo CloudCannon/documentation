@@ -16,7 +16,9 @@ examples:
     image_paths:
       - /images/editing/front-matter/text-field.png
   - title: Large Text
-    details: Multiline text field expanded for longer text. Displayed for `description` and long text values.
+    details: |
+      Multiline text field expanded for longer text. Displayed for keys ending in `_text` or `_description`.
+      Alternatively, you can use the variations without underscores as keys (e.g. `description`).
     yaml: |
       ---
       description: Products are crafted in-house by hand, making each piece a labour of love and an exercise in craftsmanship.
@@ -100,6 +102,49 @@ examples:
       ---
     image_paths:
       - /images/editing/front-matter/number.png
+  - title: Code Block
+    details: |
+      Configurable editor for blocks of code or monospace content.
+      Displayed for `code_block` and keys ending in `_code_block`.
+
+      Syntax highlighting is enabled when the suffix includes a [language](https://github.com/ajaxorg/ace/tree/v1.2.9/lib/ace/mode) (e.g. `javascript_code_block`).
+    info: Set a theme, tab size and more for each interface with code block [Options](/editing/options/#code-blocks).
+    yaml: |
+      ---
+      code_block: |
+        Some content is better in monospace.
+
+        1 + 1 = 2
+        2 + 2 = 4
+      javascript_code_block: |
+        function sayHello() {
+            console.log("Hi there!");
+        }
+
+        sayHello();
+      example_ruby_code_block: |
+        def say_hello
+          puts 'Hi there!'
+        end
+
+        say_hello
+      ---
+    image_paths:
+      - /images/editing/front-matter/code-block.png
+  - title: URL
+    details: |
+      Input field with a preview for absolute or fully qualified URLs.
+      Displayed for `url`, `link` and keys ending in `_url` or `_link`.
+
+      Previews for URLs without a protocol are requested prefixed with `http://`.
+    yaml: |
+      ---
+      external_url: 'https://bitbucket.org/'
+      internal_url: /editing/visual-editor/
+      link: github.com
+      ---
+    image_paths:
+      - /images/editing/front-matter/url.png
   - title: Social
     details: |
       Text field with avatar for various social handles and full URLs.

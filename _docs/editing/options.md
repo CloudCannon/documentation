@@ -142,7 +142,31 @@ The complete list of options are:
 - image (unavailable for `_text` or *Rich Text* fields)
 - table (unavailable for `_text`)
 
+### Code Blocks
 
+Change the appearance and behaviour of your front matter code blocks to fit your use case and brand.
+
+{% highlight yaml %}
+_options:
+  code_block:
+    tab_size: 2
+    show_gutter: false
+  javascript_code_block:
+    tab_size: 4
+    theme: dawn
+{% endhighlight %}
+
+| Option | Values |
+| ------ | ------ |
+| tab_size | Integer (optional, defaults to *4*) |
+| theme | String, one from [themes](https://github.com/ajaxorg/ace/tree/v1.2.9/lib/ace/theme) (optional, defaults to *monokai*) |
+| show_gutter | *true* or *false* (optional, defaults to *true*) |
+
+`tab_size` controls how many spaces lines are auto indented.
+
+`theme` controls the appearance of the editor.
+
+`show_gutter` toggles line numbers and code folding controls.
 
 ### Image Uploads
 

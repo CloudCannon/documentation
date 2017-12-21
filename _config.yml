@@ -46,6 +46,7 @@ defaults:
     scope:
       path: ""
     values:
+      image: /siteicon.png
       layout: default
   -
     scope:
