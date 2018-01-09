@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-Connecting Bitbucket allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to Bitbucket.
+Connecting GitHub allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to GitHub.
 
 To connect a GitHub repository and start syncing files, follow these instructions:
 
