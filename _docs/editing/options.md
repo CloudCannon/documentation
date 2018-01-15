@@ -161,7 +161,7 @@ _options:
     styles: /css/content.css
 {% endhighlight %}
 
-The file can have any extension, but must contain only plain CSS. Selectors must specify an element and one class in order to be included in the styles dropdown. Styles with incompatible selectors are included in the editor, but not shown as options.
+The file can have any extension, but must contain only plain CSS and be a source file. Selectors must specify an element and one class in order to be included in the styles dropdown. Styles with incompatible selectors are included in the editor, but not shown as options.
 
 {% highlight css %}
 p.callout { /* Can be applied to blocks of content */
