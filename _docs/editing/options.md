@@ -103,14 +103,16 @@ _options:
   _text:
     italic: true
   _block:
-    format: true
+    format: p h3
     undo: true
     redo: true
   content:
-    format: true
+    format: p h1 h2 h3 h4 h5 h6 pre address div
     bold: true
     numberedlist: true
     table: true
+    right: align-to-right
+    styles: /_sass/_content-typography.scss
 {% endhighlight %}
 
 You can also set options directly on elements for [Editable Regions](/editing/editable-regions/):
@@ -121,26 +123,82 @@ You can also set options directly on elements for [Editable Regions](/editing/ed
 
 > The most specific options that apply to an interface are used, less specific options that still apply are ignored. In order of specificity: `data-cms-options` attributes, front matter and Jekyll defaults, then globally in `_config.yml`.
 
-The complete list of options are:
+The complete list of options follows, all values can either be *true* or *false* unless specified otherwise:
 
-- bold
-- italic
-- removeformat
-- link
-- undo
-- redo
-- underline
-- strike
-- subscript
-- superscript
-- format (unavailable for `_text`)
-- blockquote (unavailable for `_text`)
-- numberedlist (unavailable for `_text`)
-- bulletedlist (unavailable for `_text`)
-- outdent (unavailable for `_text`)
-- indent (unavailable for `_text`)
-- image (unavailable for `_text` or *Rich Text* fields)
-- table (unavailable for `_text`)
+| Option | Values |
+| ------ | ------ |
+bold | |
+italic | |
+removeformat | |
+link | |
+undo | |
+redo | |
+underline | |
+strike | |
+subscript | |
+superscript | |
+format (unavailable for `_text`) | *true*, *false* or space separated options |
+blockquote (unavailable for `_text`) | |
+numberedlist (unavailable for `_text`) | |
+bulletedlist (unavailable for `_text`) | |
+outdent (unavailable for `_text`) | |
+indent (unavailable for `_text`) | |
+image (unavailable for `_text` or *Rich Text* fields) | |
+table (unavailable for `_text`) | |
+styles (unavailable for `_text`) | *false*, or path to source CSS file |
+left (unavailable for `_text`) | *false* or string of class name |
+center (unavailable for `_text`) | *false* or string of class name |
+right (unavailable for `_text`) | *false* or string of class name |
+justify (unavailable for `_text`) | *false* or string of class name |
+
+### Styles
+
+Add predefined styles in plain CSS for your clients and team members to use in the Visual Editor, Content Editor and Front Matter interfaces.
+
+{% highlight yaml %}
+_options:
+  content:
+    styles: /css/content.css
+{% endhighlight %}
+
+The file can have any extension, but must contain only plain CSS. Selectors must specify an element and one class in order to be included in the styles dropdown. Styles with incompatible selectors are included in the editor, but not shown as options.
+
+{% highlight css %}
+p.callout { /* Can be applied to blocks of content */
+  margin: 10px;
+  border: 1px solid #f5f5f5;
+  background-color: #eee;
+}
+
+span.big-blue-text { /* Can be applied to inline content */
+  font-size: 2rem;
+  color: blue;
+}
+
+h2 { /* Applied to content, excluded from style dropdown */
+  font-family: cursive;
+}
+
+.center-this-text { /* Excluded from style dropdown, used as center class described below */
+  text-align: center;
+}
+
+{% endhighlight %}
+
+> Custom styles in the Visual Editor requires the same styles on your live site, otherwise the class is applied but has no visual effect.
+
+Use the justification options to specify classes for alignment rather than the dropdown for a better editing experience:
+
+{% highlight yaml %}
+_options:
+  _block:
+    left: align-left
+    center: center-this-text
+    right: align-right
+    justify: full-width-text
+{% endhighlight %}
+
+> Be sure to include these classes in your styles CSS for them to take effect.
 
 ### Code Blocks
 
