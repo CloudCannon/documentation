@@ -33,7 +33,7 @@ examples:
       ~~~
 
       Comments are displayed for the same keys in the `_comments` object.
-    yaml: |
+    yaml_code_block: |
       ---
       _comments:
         title: The page title
@@ -65,7 +65,7 @@ examples:
 
       New array items clone the structure from the existing array items.
       Array defaults populate that structure for the same keys in `_defaults`.
-    yaml: |
+    yaml_code_block: |
       ---
       _defaults:
         image_path: /images/placeholder.png
