@@ -1,7 +1,7 @@
 ---
 title: Optimisations
 category: Building
-order: 6
+order: 7
 requirements:
   build: Any
   plan: Free
