@@ -12,11 +12,11 @@ requirements:
 CloudCannon is a cloud-based content management system and hosting provider for static and [Jekyll](https://jekyllrb.com/) websites.
 Agencies, freelancers and enterprise teams use CloudCannon to deliver CMS editable websites to clients and non-technical team members.
 
-> [Sign up](https://app.cloudcannon.com/) or learn more about CloudCannon at [cloudcannon.com](http://cloudcannon.com/).
+> [Sign up](https://app.cloudcannon.com/) or learn more about CloudCannon at [cloudcannon.com](https://cloudcannon.com/).
 
 Many features in CloudCannon are backed with [Jekyll](https://jekyllrb.com/), a popular static site generator.
 
-> Learn Jekyll with [Jekyll Tips](http://jekyll.tips/), our comprehensive set of guides, videos and curated resources.
+> Learn Jekyll with [CloudCannon Academy](https://learn.cloudcannon.com/), our comprehensive set of guides, videos and curated resources.
 
 ### Getting Started
 
