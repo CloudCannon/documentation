@@ -173,14 +173,30 @@ examples:
     image_paths:
       - /images/editing/front-matter/social.png
   - title: Date
-    details: Date picker with options for year, month and day. Displayed for keys ending in `_date` and date values.
+    details: |
+      Date picker with options for year, month and day. Displayed for keys ending in `_date` and date values.
+
+      If `site.timezone` is set, dates are output with the matching offset suffix. If unset, dates are output in UTC (without an offset suffix).
     yaml_code_block: |
       ---
-      sale_start_date: 2015-01-09 00:00:00
+      sale_start_date: 2018-01-09 00:00:00
       ---
     image_paths:
       - /images/editing/front-matter/date.png
       - /images/editing/front-matter/date-focus.png
+    info: The time part is always added as `00:00:00` for consistency with *Date Time* fields and sorting comparisons in Liquid.
+  - title: Date Time
+    details: |
+      Combination date picker and 12 hour time input. Outputs an ISO 8601 date. Displayed for `date`, `datetime` and keys ending in `_at` or `_datetime`.
+
+      If `site.timezone` is set, dates are output with the matching offset suffix. If unset, dates are output in UTC (without an offset suffix).
+    yaml_code_block: |
+      ---
+      date: 2018-07-15 12:00:00
+      ---
+    image_paths:
+      - /images/editing/front-matter/datetime.png
+      - /images/editing/front-matter/datetime-focus.png
   - title: Time
     details: 12 hour time input. Displayed for `time` and keys ending in `_time`.
     yaml_code_block: |
@@ -189,15 +205,6 @@ examples:
       ---
     image_paths:
       - /images/editing/front-matter/time.png
-  - title: Date Time
-    details: Combination date picker and 12 hour time input. Outputs an ISO 8601 date. Displayed for `date`, `datetime` and keys ending in `_at` or `_datetime`.
-    yaml_code_block: |
-      ---
-      date: 2015-07-15 12:00:00
-      ---
-    image_paths:
-      - /images/editing/front-matter/datetime.png
-      - /images/editing/front-matter/datetime-focus.png
   - title: Select
     details: |
       Set of options in a dropdown menu. The options are populated from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
