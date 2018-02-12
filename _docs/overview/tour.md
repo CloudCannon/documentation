@@ -117,6 +117,6 @@ This tour only covers some of the features available to you.
 
 Explore the features CloudCannon offers at your own pace through this documentation. Extend this tour by providing editing access to clients with [Client Sharing](/sharing/client-sharing/) or look through the [overview](/#features) for a summary of each section.
 
-[Jekyll Tips](http://jekyll.tips/) has vast range of curated resources, guides and videos for Jekyll. Improving your Jekyll skills allows you to build better sites and editing experiences with CloudCannon for your team and clients.
+[CloudCannon Academy](https://learn.cloudcannon.com/) has vast range of curated resources, guides and videos for Jekyll. Improving your Jekyll skills allows you to build better sites and editing experiences with CloudCannon for your team and clients.
 
 > Contact us at [support@cloudcannon.com](mailto:support@cloudcannon.com) with any questions or feedback.

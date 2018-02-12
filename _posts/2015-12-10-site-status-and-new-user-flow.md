@@ -3,7 +3,7 @@ title: Site Status and New User Flow
 type: major
 ---
 
-This release includes consolidated interface changes and the site status feature. You can find more details on the release the associated [blog post](http://cloudcannon.com/features/2015/12/10/site-status-and-new-user-flow/).
+This release includes consolidated interface changes and the site status feature. You can find more details on the release the associated [blog post](https://cloudcannon.com/features/2015/12/10/site-status-and-new-user-flow/).
 
 **Features:**
 
