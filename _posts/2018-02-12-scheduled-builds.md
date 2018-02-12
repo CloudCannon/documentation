@@ -3,7 +3,6 @@ title: Scheduled Builds
 type: major
 ---
 
-
 This release introduces scheduling for future posts and arbitrary site builds. Timezone support has been overhauled to ensure clarity when setting up automated or manual future builds.
 
 **Features:**
