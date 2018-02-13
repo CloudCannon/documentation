@@ -5,7 +5,7 @@ order: 1
 requirements:
   build: Any
   plan: Free
-  hosting: CloudCannon
+  hosting: Any
 ---
 
 > This guide describes the recommended workflow for translation of a Jekyll Site. For other impl
