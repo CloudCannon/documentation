@@ -4,7 +4,7 @@ category: Internationalisation
 order: 1
 requirements:
   build: Any
-  plan: Basic
+  plan: Free
   hosting: CloudCannon
 ---
 
