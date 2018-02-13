@@ -1,7 +1,7 @@
 ---
 title: Geolocation
-category: Internationalisation
-order: 1
+category: Hosting
+order: 7
 requirements:
   build: Any
   plan: Pro
