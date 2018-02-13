@@ -4,7 +4,7 @@ category: Internationalisation
 order: 1
 requirements:
   build: Any
-  plan: Pro
+  plan: Basic
   hosting: CloudCannon
 ---
 
@@ -32,10 +32,8 @@ To enable i18n on a CloudCannon Site:
 
 IMAGE HERE
 
-
 ### Other implementations
 
 #### Jekyll plugins
 
 Describe. Disadvantages
-
