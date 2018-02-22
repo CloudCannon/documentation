@@ -95,7 +95,9 @@ The `_schedule.txt` is a comma separated list of values. It contains three value
 For example:
 
 ```
-3005-10-22T10:00:00+00:00,Publish Post,_posts/3005-10-22-because-of-the-internet.md
+2020-10-22T10:00:00+00:00,Publish Post,_posts/2020-10-22-because-of-the-internet.md
 ```
 
 These values are used to schedule a build and generate the management UI.
+
+> If you're creating `_schedule.txt` without the `jekyll-cloudcannon-schedule` plugin you will need to add the file to your `include` in `_config.yml` as Jekyll doesn't process files beginning with an underscore by default.
