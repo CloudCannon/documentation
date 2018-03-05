@@ -38,18 +38,11 @@ Editable text elements provide an interface to enter text, create hyperlinks, an
 
 `img`
 
-Editable image regions provide options to replace or crop the existing image, and update the image description. Images are replaced with external URLs, file uploads or previously uploaded images.
+Image *Editable Regions* provide options to change the image and description. Images can be replaced with new file uploads, previously uploaded images or external URLs.
 
-CloudCannon ensures that new images do not break layouts by cropping them to the **size of the image being replaced**. Users move and resize images to specify how they are cropped in place. The original and cropped images are placed inside the `uploads` and `uploads/versions` folders respectively.
+CloudCannon ensures that new images do not break layouts by cropping them to the **size of the image being replaced** (not the element). After choosing a replacement image, users move and resize images to specify how they are cropped in place. The original and cropped images are placed inside the `/uploads` folder.
 
-To change the uploads folder:
-
-1. Create or open `_config.yml` in the root folder
-2. Add an `uploads_dir` variable with the path set as required
-
-~~~
-uploads_dir: "assets/images"
-~~~
+> Set where images are uploaded with [File Uploads options](/editing/options/#file-uploads).
 
 To enable the option to enter a URL directly:
 
