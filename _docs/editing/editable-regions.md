@@ -40,9 +40,9 @@ Editable text elements provide an interface to enter text, create hyperlinks, an
 
 Image *Editable Regions* provide options to change the image and description. Images can be replaced with new file uploads, previously uploaded images or external URLs.
 
-CloudCannon ensures that new images do not break layouts by cropping them to the **size of the image being replaced** (not the element). After choosing a replacement image, users move and resize images to specify how they are cropped in place. The original and cropped images are placed inside the `/uploads` folder.
+CloudCannon ensures that new images do not break layouts by cropping them to the **size of the image being replaced** (not the element). After choosing a replacement image, users move and resize images to specify how they are cropped in place. The original and cropped images are placed inside the `/uploads` folder, but this can be changed in [File Upload options](/editing/options/#file-uploads).
 
-> Set where images are uploaded with [File Uploads options](/editing/options/#file-uploads).
+> Retina versions of images are generated from uploads and suffixed with `@2x`, resolution permitting.
 
 To enable the option to enter a URL directly:
 
