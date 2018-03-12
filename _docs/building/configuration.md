@@ -19,8 +19,13 @@ To change a command line build option:
 
 > See in-depth details for configuring [Environments](/building/environments/) and [Optimisations](/building/optimisations/).
 
-> Setting the `BUNDLE_GEMFILE` environment variable requires that your gems are specified in the `_config.yml` file.
-{: .warning}
-
 ![Site Settings Build Interface](/images/building/configuration.png){: srcset="/images/building/configuration.png 800w, /images/building/configuration@2x.png 1600w"}
 {: .has-screenshot}
+
+
+### Custom Gemfile
+
+By default CloudCannon uses `/Gemfile` as the gem source. To change this you can set the `BUNDLE_GEMFILE` environment variable. e.g. `BUNDLE_GEMFILE=src/Gemfile`.
+
+> Setting the `BUNDLE_GEMFILE` environment variable requires that your gems are specified in the `_config.yml` file.
+{: .warning}
