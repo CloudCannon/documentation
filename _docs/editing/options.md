@@ -226,6 +226,26 @@ _options:
 
 `show_gutter` toggles line numbers and code folding controls.
 
+### File Uploads
+
+Keep a consistent file structure by setting up an uploads path structure. Images, documents and other files in the editor are uploaded to this location.
+
+{% highlight yaml %}
+_options:
+  image: # Front matter field
+    uploads_dir: "uploads/front-matter-images/:title"
+  content: # Content Editor and block Editable Regions
+    uploads_dir: "uploads/:year/:month/:day/:title"
+{% endhighlight %}
+
+The `:categories`, `:year`, `:month`, `:day` and `:title` dynamic fields resolve to the associated Jekyll fields for the containing file.
+
+You can also set `site.uploads_dir` in your `_config.yml` to set it everywhere:
+
+{% highlight yaml %}
+uploads_dir: "uploads/:categories/:year/:month/:day/:title"
+{% endhighlight %}
+
 ### Image Uploads
 
 Control the size and format of images clients or team members upload through the interface. Images are resized and converted automatically.
