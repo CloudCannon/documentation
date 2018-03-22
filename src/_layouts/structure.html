@@ -1,0 +1,35 @@
+---
+layout: default
+header_class: short
+---
+
+<header class="short">
+	{% include navigation/top.html %}
+		<!-- <form action="{{ site.baseurl }}/search/" method="get" class="search-input-container">
+			<input type="text" name="q" id="search-input" placeholder="Search" data-autofocus>
+			<div class="search-input-icon">{% include icons/search.svg %}</div>
+
+			<input type="submit" value="Search" style="display: none;">
+		</form> -->
+
+
+	<section>
+		<div class="wrapper">
+			<h1>{{ page.title }}</h1>
+			{% if page.category %}
+				<p class="subtitle">{{ page.category }}</p>
+			{% elsif page.display_title %}
+				<p class="subtitle">{{ page.display_title }}</p>
+			{% elsif page.subtitle %}
+				<p class="subtitle">{{ page.subtitle }}</p>
+			{% endif %}
+		</div>
+	</section>
+</header>
+
+{{ content }}
+
+<script>
+{% include menu.js %}
+{% include autofocus.js %}
+</script>

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.7.2">
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="/css/screen.css" type="text/css">
+
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+		<link rel="shortcut icon" type="image/png" sizes="128x128" href="/assets/favicon-128x128.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+		<link rel="manifest" href="/assets/manifest.json">
+		<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#407afc">
+		<meta name="theme-color" content="#407afc">
+
+		<link type="application/atom+xml" rel="alternate" href="https://docs.cloudcannon.com/feed.xml" title="CloudCannon Documentation" />
+		<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Scheduling | CloudCannon Documentation</title>
+<meta property="og:title" content="Scheduling" />
+<meta property="og:locale" content="en_NZ" />
+<meta name="description" content="Scheduling allows you to define when your site is built automatically. There are two types of scheduled builds:" />
+<meta property="og:description" content="Scheduling allows you to define when your site is built automatically. There are two types of scheduled builds:" />
+<link rel="canonical" href="https://docs.cloudcannon.com/building/scheduling/" />
+<meta property="og:url" content="https://docs.cloudcannon.com/building/scheduling/" />
+<meta property="og:site_name" content="CloudCannon Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-22T15:33:35+13:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@CloudCannon" />
+<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o" />
+<script type="application/ld+json">
+{"name":null,"description":"Scheduling allows you to define when your site is built automatically. There are two types of scheduled builds:","url":"https://docs.cloudcannon.com/building/scheduling/","headline":"Scheduling","dateModified":"2018-03-22T15:33:35+13:00","datePublished":"2018-03-22T15:33:35+13:00","sameAs":null,"@type":"Article","author":null,"image":null,"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://docs.cloudcannon.com/siteicon.png"}},"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		
+
+	</head>
+
+	<body>
+		
+<nav class="siblings dark">
+	
+	<div class="nav-bar wrapper wrapper-large">
+		
+			<a  href="http://localhost:4000">Home</a>
+		
+			<a  href="http://localhost:4001">Guides</a>
+		
+			<a class="active" href="http://localhost:4002">Documentation</a>
+		
+		
+	</div>
+</nav>
+		<header class="short">
+	<div class="nav-bar wrapper wrapper-large">
+	<a id="open-nav" href="#">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<path d="M3 18h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z" fill="#eee"/>
+		</svg>
+
+</a>
+	<div class="logo">
+	<a href="/">
+		
+		<?xml version="1.0" encoding="utf-8"?>
+		<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+			 y="0px" viewBox="0 0 530.104 76.667" xml:space="preserve">
+		<g id="Layer_1" display="none">
+			<g display="inline">
+				<path fill="#29ABE2" d="M383.001,370.947c-2.316-13.691-12.399-24.67-25.525-28.518c0.211-1.331,0.405-2.664,0.405-4.048
+					c0,0,0,0,0-0.002c-0.004-14.148-11.476-25.622-25.622-25.622c-7.15,0-13.605,2.951-18.26,7.67
+					c-1.27-3.398-4.477-5.848-8.332-5.848c-4.954,0-8.963,4.006-8.963,8.959c0,4.955,3.371,7.137,10.528,10.484
+					c0.97,0.437,1.906,0.935,2.839,1.443c0.557,0.306,1.105,0.633,1.649,0.96c0.401,0.243,0.802,0.487,1.194,0.741
+					c0.236,0.154,0.469,0.312,0.705,0.468c2.155,1.441,4.193,3.048,6.088,4.808c0.097,0.093,0.193,0.192,0.291,0.285
+					c0.78,0.736,1.531,1.504,2.257,2.291c0.194,0.209,0.388,0.418,0.578,0.628c0.806,0.905,1.586,1.829,2.32,2.793
+					c5.995,7.932,9.619,17.85,9.619,28.529c0,10.678-3.624,20.597-9.619,28.529c-0.734,0.964-1.515,1.888-2.32,2.791
+					c-0.19,0.213-0.384,0.422-0.578,0.631c-0.726,0.787-1.477,1.553-2.253,2.289c-0.102,0.095-0.198,0.193-0.295,0.286
+					c-1.895,1.76-3.933,3.367-6.088,4.808c-0.236,0.156-0.469,0.316-0.705,0.469c-0.393,0.253-0.793,0.498-1.194,0.74
+					c-0.544,0.327-1.093,0.654-1.653,0.96c-0.929,0.511-1.865,1.006-2.835,1.442c-7.157,3.349-10.528,5.529-10.528,10.484
+					c0,4.953,4.009,8.959,8.963,8.959c3.855,0,7.062-2.449,8.332-5.848c4.654,4.72,11.109,7.671,18.26,7.671
+					c14.147,0,25.618-11.474,25.622-25.622v-0.002c0-1.384-0.194-2.718-0.405-4.049c13.126-3.847,23.209-14.827,25.525-28.518
+					c0.329-1.956,0.502-3.966,0.502-6.021C383.503,374.913,383.33,372.903,383.001,370.947z"/>
+				<path fill="#29ABE2" d="M271.272,419.913c-0.97-0.437-1.907-0.932-2.835-1.442c-0.561-0.306-1.11-0.633-1.654-0.96
+					c-0.401-0.242-0.802-0.487-1.194-0.74c-0.236-0.152-0.468-0.312-0.705-0.469c-2.156-1.44-4.193-3.048-6.088-4.808
+					c-0.097-0.093-0.194-0.191-0.295-0.286c-0.776-0.736-1.527-1.502-2.253-2.289c-0.194-0.209-0.388-0.418-0.578-0.631
+					c-0.806-0.903-1.586-1.827-2.321-2.791c-5.995-7.932-9.619-17.851-9.619-28.529c0-10.678,3.624-20.597,9.619-28.529
+					c0.734-0.964,1.515-1.888,2.321-2.793c0.189-0.211,0.384-0.419,0.578-0.628c0.726-0.787,1.477-1.555,2.257-2.291
+					c0.097-0.093,0.194-0.192,0.291-0.285c1.895-1.759,3.932-3.367,6.088-4.808c0.236-0.156,0.469-0.314,0.705-0.468
+					c0.393-0.253,0.793-0.498,1.194-0.741c0.544-0.327,1.092-0.654,1.649-0.96c0.933-0.508,1.869-1.006,2.839-1.443
+					c7.155-3.348,10.526-5.529,10.526-10.484c0-4.953-4.008-8.959-8.961-8.959c-3.856,0-7.062,2.449-8.332,5.848
+					c-4.654-4.719-11.109-7.67-18.26-7.67c-14.146,0-25.618,11.474-25.622,25.622c0,0.002,0,0.002,0,0.002
+					c0,1.384,0.194,2.717,0.405,4.048c-13.125,3.848-23.208,14.828-25.524,28.518c-0.329,1.955-0.502,3.966-0.502,6.02
+					c0,2.055,0.173,4.065,0.502,6.021c2.316,13.691,12.399,24.671,25.524,28.518c-0.211,1.331-0.405,2.665-0.405,4.049v0.002
+					c0.004,14.148,11.476,25.622,25.622,25.622c7.151,0,13.606-2.951,18.26-7.671c1.27,3.398,4.476,5.848,8.332,5.848
+					c4.953,0,8.961-4.006,8.961-8.959C281.798,425.442,278.427,423.261,271.272,419.913z"/>
+				<circle fill="#29ABE2" cx="289.25" cy="376.967" r="27.936"/>
+			</g>
+			<g display="inline">
+				<path fill="#29ABE2" d="M383.001,370.947c-2.316-13.691-12.399-24.67-25.525-28.518c0.211-1.331,0.405-2.664,0.405-4.048
+					c0,0,0,0,0-0.002c-0.004-14.148-11.476-25.622-25.622-25.622c-7.15,0-13.605,2.951-18.26,7.67
+					c-1.27-3.398-4.477-5.848-8.332-5.848c-4.954,0-8.963,4.006-8.963,8.959c0,4.955,3.371,7.137,10.528,10.484
+					c0.97,0.437,1.906,0.935,2.839,1.443c0.557,0.306,1.105,0.633,1.649,0.96c0.401,0.243,0.802,0.487,1.194,0.741
+					c0.236,0.154,0.469,0.312,0.705,0.468c2.155,1.441,4.193,3.048,6.088,4.808c0.097,0.093,0.193,0.192,0.291,0.285
+					c0.78,0.736,1.531,1.504,2.257,2.291c0.194,0.209,0.388,0.418,0.578,0.628c0.806,0.905,1.586,1.829,2.32,2.793
+					c5.995,7.932,9.619,17.85,9.619,28.529c0,10.678-3.624,20.597-9.619,28.529c-0.734,0.964-1.515,1.888-2.32,2.791
+					c-0.19,0.213-0.384,0.422-0.578,0.631c-0.726,0.787-1.477,1.553-2.253,2.289c-0.102,0.095-0.198,0.193-0.295,0.286
+					c-1.895,1.76-3.933,3.367-6.088,4.808c-0.236,0.156-0.469,0.316-0.705,0.469c-0.393,0.253-0.793,0.498-1.194,0.74
+					c-0.544,0.327-1.093,0.654-1.653,0.96c-0.929,0.511-1.865,1.006-2.835,1.442c-7.157,3.349-10.528,5.529-10.528,10.484
+					c0,4.953,4.009,8.959,8.963,8.959c3.855,0,7.062-2.449,8.332-5.848c4.654,4.72,11.109,7.671,18.26,7.671
+					c14.147,0,25.618-11.474,25.622-25.622v-0.002c0-1.384-0.194-2.718-0.405-4.049c13.126-3.847,23.209-14.827,25.525-28.518
+					c0.329-1.956,0.502-3.966,0.502-6.021C383.503,374.913,383.33,372.903,383.001,370.947z"/>
+				<path fill="#29ABE2" d="M271.272,419.913c-0.97-0.437-1.907-0.932-2.835-1.442c-0.561-0.306-1.11-0.633-1.654-0.96
+					c-0.401-0.242-0.802-0.487-1.194-0.74c-0.236-0.152-0.468-0.312-0.705-0.469c-2.156-1.44-4.193-3.048-6.088-4.808
+					c-0.097-0.093-0.194-0.191-0.295-0.286c-0.776-0.736-1.527-1.502-2.253-2.289c-0.194-0.209-0.388-0.418-0.578-0.631
+					c-0.806-0.903-1.586-1.827-2.321-2.791c-5.995-7.932-9.619-17.851-9.619-28.529c0-10.678,3.624-20.597,9.619-28.529
+					c0.734-0.964,1.515-1.888,2.321-2.793c0.189-0.211,0.384-0.419,0.578-0.628c0.726-0.787,1.477-1.555,2.257-2.291
+					c0.097-0.093,0.194-0.192,0.291-0.285c1.895-1.759,3.932-3.367,6.088-4.808c0.236-0.156,0.469-0.314,0.705-0.468
+					c0.393-0.253,0.793-0.498,1.194-0.741c0.544-0.327,1.092-0.654,1.649-0.96c0.933-0.508,1.869-1.006,2.839-1.443
+					c7.155-3.348,10.526-5.529,10.526-10.484c0-4.953-4.008-8.959-8.961-8.959c-3.856,0-7.062,2.449-8.332,5.848
+					c-4.654-4.719-11.109-7.67-18.26-7.67c-14.146,0-25.618,11.474-25.622,25.622c0,0.002,0,0.002,0,0.002
+					c0,1.384,0.194,2.717,0.405,4.048c-13.125,3.848-23.208,14.828-25.524,28.518c-0.329,1.955-0.502,3.966-0.502,6.02
+					c0,2.055,0.173,4.065,0.502,6.021c2.316,13.691,12.399,24.671,25.524,28.518c-0.211,1.331-0.405,2.665-0.405,4.049v0.002
+					c0.004,14.148,11.476,25.622,25.622,25.622c7.151,0,13.606-2.951,18.26-7.671c1.27,3.398,4.476,5.848,8.332,5.848
+					c4.953,0,8.961-4.006,8.961-8.959C281.798,425.442,278.427,423.261,271.272,419.913z"/>
+				<circle fill="#29ABE2" cx="289.25" cy="376.967" r="27.936"/>
+			</g>
+			<g display="inline">
+				<path fill="#29ABE2" d="M174.088,486.216c0,0.404-0.18,0.674-0.449,0.898c-2.065,1.571-4.67,2.38-7.275,2.38
+					c-6.466,0-11.855-5.299-11.855-11.811c0-6.557,5.389-11.99,11.855-11.99c2.604,0,5.299,0.854,7.275,2.515
+					c0.809,0.674,0.359,1.842-0.628,1.842c-0.225,0-0.449-0.045-0.629-0.18c-1.617-1.213-3.862-2.111-6.018-2.111
+					c-5.344,0-9.79,4.491-9.79,9.925c0,5.344,4.446,9.745,9.79,9.745c2.246,0,4.356-0.674,6.018-1.977
+					C173.01,484.96,174.088,485.273,174.088,486.216z"/>
+				<path fill="#29ABE2" d="M180.37,459.182c0-0.224-0.09-0.493-0.314-0.628c-0.764-0.404-0.809-0.853-0.809-1.078
+					c0-1.078,1.078-1.078,1.078-1.078c0.629,0,2.111,0.584,2.111,2.784v27.304c0,0.225,0.09,0.494,0.315,0.629
+					c0.763,0.404,0.808,0.853,0.808,1.077c0,1.078-1.078,1.078-1.078,1.078c-0.629,0-2.111-0.584-2.111-2.784V459.182z"/>
+				<path fill="#29ABE2" d="M188.721,477.639c0-6.557,5.344-11.945,11.9-11.945c6.557,0,11.855,5.389,11.855,11.945
+					c0,6.557-5.299,11.855-11.855,11.855C194.065,489.495,188.721,484.196,188.721,477.639z M190.787,477.639
+					c0,5.389,4.446,9.79,9.835,9.79s9.79-4.401,9.79-9.79c0-5.389-4.401-9.88-9.79-9.88S190.787,472.251,190.787,477.639z"/>
+				<path fill="#29ABE2" d="M235.33,484.96c-1.257,2.694-4.67,4.311-7.41,4.311c-6.646,0-10.059-3.503-10.059-10.104v-10.464
+					c0-0.225-0.09-0.494-0.314-0.629c-0.763-0.403-0.808-0.852-0.808-1.077c0-1.078,1.078-1.078,1.078-1.078
+					c0.629,0,2.111,0.584,2.111,2.784v10.464c0,5.479,2.604,8.128,8.038,8.128c4.176,0,7.365-3.054,7.365-7.185v-11.406
+					c0-2.2,1.482-2.784,2.111-2.784c0,0,1.078,0,1.078,1.078c0,0.225-0.045,0.674-0.809,1.077c-0.224,0.135-0.314,0.404-0.314,0.629
+					v17.783c0,0.225,0.09,0.494,0.314,0.629c0.764,0.404,0.809,0.853,0.809,1.077c0,1.078-1.078,1.078-1.078,1.078
+					c-0.629,0-2.111-0.584-2.111-2.784V484.96z"/>
+				<path fill="#29ABE2" d="M262.54,459.182c0-2.2,1.482-2.784,2.111-2.784c0,0,1.078,0,1.078,1.078c0,0.225-0.045,0.674-0.809,1.078
+					c-0.225,0.135-0.314,0.404-0.314,0.628v27.304c0,0.225,0.089,0.494,0.314,0.629c0.764,0.404,0.809,0.853,0.809,1.077
+					c0,1.078-1.078,1.078-1.078,1.078c-0.629,0-2.111-0.584-2.111-2.784v-2.56c-1.841,4.131-5.613,5.344-8.667,5.344
+					c-6.287,0-10.643-5.568-10.643-11.945c0-6.107,4.491-11.406,10.643-11.406c3.413,0,6.377,1.033,8.667,4.805V459.182z
+					 M262.54,476.921c0-4.805-3.682-8.936-8.622-8.936c-5.254,0-8.622,4.401-8.622,9.341c0,4.85,3.278,9.88,8.622,9.88
+					c5.478,0,8.622-5.164,8.622-9.925V476.921z"/>
+				<path fill="#29ABE2" d="M290.557,469.916c0,1.302-1.033,2.29-2.246,2.29c-0.538,0-0.988-0.135-1.392-0.404
+					c-1.302-1.033-2.964-1.706-4.446-1.706c-4.131,0.045-7.499,3.502-7.499,7.544c0,3.997,3.368,7.454,7.454,7.454
+					c1.527,0,3.144-0.628,4.491-1.661c0.404-0.27,0.809-0.404,1.347-0.404c1.213,0,2.29,1.033,2.29,2.29
+					c0,0.674-0.404,1.258-0.943,1.707c-1.976,1.616-4.58,2.47-7.14,2.47c-6.646,0-11.945-5.299-11.945-11.855
+					c0-6.602,5.344-11.945,11.9-11.945c2.65,0,5.21,0.854,7.185,2.47C290.242,468.613,290.557,469.197,290.557,469.916z"/>
+				<path fill="#29ABE2" d="M308.875,486.486c-0.494,0.674-2.155,3.009-5.973,3.009c-4.535,0-8.802-3.009-8.802-7.948
+					c0-5.479,4.401-7.635,9.071-7.635c1.931,0,3.817,0.449,5.568,1.303c0-4.581-1.975-5.254-4.58-5.254
+					c-3.054,0-4.536,0.628-4.536,0.628c-1.392,0.494-2.829-0.403-2.829-1.841c0-1.077,0.719-1.931,1.617-2.2
+					c1.706-0.494,3.457-0.854,5.523-0.854c6.196,0,9.295,2.919,9.295,7.993v10.733c0,0.494,0.18,0.718,0.404,0.853
+					c0,0,0.764,0.359,0.764,1.707c0,1.347-0.988,2.29-2.335,2.29C310.266,489.27,308.92,488.237,308.875,486.486z M304.34,477.505
+					c-2.74,0-5.748,0.809-5.748,4.087c0,2.38,2.245,3.547,4.355,3.547c2.649,0,5.658-1.661,5.793-4.49v-1.796
+					C307.214,477.774,305.282,477.505,304.34,477.505z"/>
+				<path fill="#29ABE2" d="M336.04,476.293c0-3.817-2.38-6.107-6.107-6.107c-3.413,0-6.062,2.964-6.062,5.883v9.789
+					c0,2.021-1.392,3.413-3.368,3.413c-1.257,0-2.335-0.898-2.335-2.29c0-1.348,0.809-1.752,0.809-1.752
+					c0.225-0.135,0.404-0.269,0.404-0.763v-13.742c0-0.493-0.18-0.628-0.404-0.763c0,0-0.809-0.404-0.809-1.752
+					c0-1.392,1.078-2.29,2.335-2.29c1.842,0,3.143,1.213,3.323,3.009c1.438-1.751,4.267-3.233,6.422-3.233
+					c7.229,0,10.283,3.503,10.283,10.867v7.904c0,0.494,0.18,0.628,0.404,0.763c0,0,0.809,0.404,0.809,1.752
+					c0,1.392-1.078,2.29-2.335,2.29c-1.977,0-3.368-1.393-3.368-3.413V476.293z"/>
+				<path fill="#29ABE2" d="M363.833,476.293c0-3.817-2.38-6.107-6.107-6.107c-3.413,0-6.062,2.964-6.062,5.883v9.789
+					c0,2.021-1.392,3.413-3.368,3.413c-1.257,0-2.335-0.898-2.335-2.29c0-1.348,0.809-1.752,0.809-1.752
+					c0.225-0.135,0.404-0.269,0.404-0.763v-13.742c0-0.493-0.18-0.628-0.404-0.763c0,0-0.809-0.404-0.809-1.752
+					c0-1.392,1.078-2.29,2.335-2.29c1.842,0,3.144,1.213,3.323,3.009c1.438-1.751,4.267-3.233,6.422-3.233
+					c7.229,0,10.283,3.503,10.283,10.867v7.904c0,0.494,0.18,0.628,0.404,0.763c0,0,0.809,0.404,0.809,1.752
+					c0,1.392-1.078,2.29-2.335,2.29c-1.977,0-3.368-1.393-3.368-3.413V476.293z"/>
+				<path fill="#29ABE2" d="M372.764,477.594c0-6.557,5.389-11.9,11.9-11.9c6.557,0,11.9,5.344,11.9,11.9
+					c0,6.512-5.344,11.9-11.9,11.9C378.153,489.495,372.764,484.106,372.764,477.594z M377.256,477.594
+					c0,4.087,3.323,7.409,7.409,7.409c4.087,0,7.41-3.322,7.41-7.409c0-4.131-3.323-7.409-7.41-7.409
+					C380.579,470.185,377.256,473.464,377.256,477.594z"/>
+				<path fill="#29ABE2" d="M417.982,476.293c0-3.817-2.38-6.107-6.107-6.107c-3.413,0-6.062,2.964-6.062,5.883v9.789
+					c0,2.021-1.392,3.413-3.368,3.413c-1.257,0-2.335-0.898-2.335-2.29c0-1.348,0.809-1.752,0.809-1.752
+					c0.225-0.135,0.404-0.269,0.404-0.763v-13.742c0-0.493-0.18-0.628-0.404-0.763c0,0-0.809-0.404-0.809-1.752
+					c0-1.392,1.078-2.29,2.335-2.29c1.842,0,3.144,1.213,3.323,3.009c1.438-1.751,4.267-3.233,6.422-3.233
+					c7.23,0,10.283,3.503,10.283,10.867v7.904c0,0.494,0.18,0.628,0.404,0.763c0,0,0.809,0.404,0.809,1.752
+					c0,1.392-1.078,2.29-2.335,2.29c-1.977,0-3.368-1.393-3.368-3.413V476.293z"/>
+			</g>
+		</g>
+		<g id="Layer_2">
+			<g>
+				<path d="M107.127,35.162c-1.273-7.522-6.813-13.555-14.025-15.669c0.116-0.731,0.223-1.464,0.223-2.225c0,0,0,0,0-0.001
+					C93.323,9.494,87.02,3.189,79.247,3.189c-3.929,0-7.476,1.621-10.033,4.215c-0.697-1.867-2.459-3.213-4.578-3.213
+					c-2.722,0-4.925,2.201-4.925,4.923c0,2.722,1.852,3.921,5.785,5.761c0.533,0.24,1.047,0.513,1.56,0.793
+					c0.306,0.168,0.607,0.348,0.906,0.527c0.22,0.133,0.44,0.268,0.656,0.407c0.13,0.085,0.257,0.171,0.387,0.257
+					c1.184,0.792,2.304,1.675,3.345,2.642c0.053,0.051,0.106,0.105,0.16,0.156c0.429,0.405,0.841,0.826,1.24,1.259
+					c0.107,0.115,0.213,0.229,0.317,0.345c0.443,0.497,0.872,1.005,1.275,1.535c3.294,4.358,5.286,9.808,5.286,15.675
+					s-1.991,11.317-5.286,15.675c-0.403,0.53-0.832,1.037-1.275,1.533c-0.104,0.117-0.211,0.232-0.317,0.347
+					c-0.399,0.433-0.811,0.853-1.238,1.258c-0.056,0.052-0.109,0.106-0.162,0.157c-1.041,0.967-2.161,1.85-3.345,2.642
+					c-0.13,0.086-0.257,0.174-0.387,0.258c-0.216,0.139-0.436,0.274-0.656,0.407c-0.299,0.18-0.601,0.36-0.909,0.528
+					c-0.51,0.281-1.025,0.553-1.558,0.793c-3.932,1.84-5.785,3.038-5.785,5.761c0,2.721,2.202,4.923,4.925,4.923
+					c2.118,0,3.88-1.346,4.578-3.213c2.557,2.593,6.104,4.215,10.033,4.215c7.773,0,14.076-6.304,14.078-14.078v-0.001
+					c0-0.76-0.107-1.493-0.223-2.225c7.212-2.114,12.752-8.147,14.025-15.669c0.181-1.074,0.276-2.179,0.276-3.308
+					C107.403,37.341,107.308,36.237,107.127,35.162z"/>
+				<path d="M45.738,62.066c-0.533-0.24-1.048-0.512-1.558-0.793c-0.308-0.168-0.61-0.348-0.909-0.528
+					c-0.22-0.133-0.44-0.268-0.656-0.407c-0.13-0.084-0.257-0.172-0.387-0.258c-1.185-0.791-2.304-1.675-3.345-2.642
+					c-0.053-0.051-0.106-0.105-0.162-0.157c-0.426-0.405-0.839-0.825-1.238-1.258c-0.106-0.115-0.213-0.23-0.317-0.347
+					c-0.443-0.496-0.872-1.004-1.275-1.533c-3.294-4.358-5.285-9.808-5.285-15.675s1.991-11.317,5.285-15.675
+					c0.404-0.53,0.832-1.037,1.275-1.535c0.104-0.116,0.211-0.231,0.317-0.345c0.399-0.433,0.811-0.854,1.24-1.259
+					c0.053-0.051,0.107-0.105,0.16-0.156c1.041-0.967,2.161-1.85,3.345-2.642c0.13-0.086,0.258-0.173,0.387-0.257
+					c0.216-0.139,0.436-0.274,0.656-0.407c0.299-0.179,0.6-0.359,0.906-0.527c0.512-0.279,1.027-0.553,1.56-0.793
+					c3.932-1.839,5.784-3.038,5.784-5.761c0-2.722-2.202-4.923-4.923-4.923c-2.119,0-3.881,1.346-4.579,3.213
+					c-2.557-2.593-6.104-4.215-10.033-4.215c-7.773,0-14.076,6.304-14.078,14.078c0,0.001,0,0.001,0,0.001
+					c0,0.761,0.106,1.493,0.222,2.225C10.92,21.607,5.379,27.64,4.107,35.162c-0.181,1.074-0.276,2.179-0.276,3.308
+					c0,1.129,0.096,2.233,0.276,3.308c1.273,7.523,6.813,13.556,14.024,15.669c-0.116,0.731-0.222,1.464-0.222,2.225v0.001
+					c0.002,7.774,6.305,14.078,14.078,14.078c3.929,0,7.476-1.622,10.033-4.215c0.698,1.867,2.459,3.213,4.579,3.213
+					c2.721,0,4.923-2.201,4.923-4.923C51.522,65.104,49.67,63.906,45.738,62.066z"/>
+				<circle cx="55.616" cy="38.47" r="15.349"/>
+			</g>
+			<g>
+				<path d="M160.122,56.854c0,0.591-0.262,0.984-0.656,1.312c-3.018,2.296-6.822,3.477-10.627,3.477
+					c-9.446,0-17.318-7.74-17.318-17.252c0-9.577,7.872-17.515,17.318-17.515c3.805,0,7.741,1.246,10.627,3.673
+					c1.181,0.984,0.524,2.69-0.918,2.69c-0.328,0-0.656-0.066-0.919-0.262c-2.361-1.772-5.642-3.083-8.79-3.083
+					c-7.806,0-14.3,6.559-14.3,14.497c0,7.806,6.494,14.234,14.3,14.234c3.28,0,6.363-0.984,8.79-2.887
+					C158.548,55.018,160.122,55.477,160.122,56.854z"/>
+				<path d="M169.305,17.365c0-0.328-0.131-0.722-0.459-0.919c-1.115-0.59-1.181-1.246-1.181-1.574c0-1.574,1.574-1.574,1.574-1.574
+					c0.918,0,3.083,0.852,3.083,4.067v39.883c0,0.328,0.131,0.722,0.459,0.919c1.115,0.59,1.181,1.246,1.181,1.574
+					c0,1.574-1.575,1.574-1.575,1.574c-0.918,0-3.083-0.853-3.083-4.067V17.365z"/>
+				<path d="M181.506,44.325c0-9.577,7.806-17.448,17.383-17.448c9.577,0,17.318,7.871,17.318,17.448
+					c0,9.578-7.741,17.318-17.318,17.318C189.312,61.643,181.506,53.903,181.506,44.325z M184.523,44.325
+					c0,7.872,6.494,14.301,14.366,14.301c7.872,0,14.3-6.429,14.3-14.301c0-7.871-6.428-14.431-14.3-14.431
+					C191.017,29.894,184.523,36.454,184.523,44.325z"/>
+				<path d="M249.597,55.018c-1.837,3.935-6.822,6.297-10.824,6.297c-9.709,0-14.694-5.116-14.694-14.76V31.271
+					c0-0.328-0.131-0.722-0.459-0.918c-1.115-0.591-1.181-1.246-1.181-1.574c0-1.574,1.575-1.574,1.575-1.574
+					c0.918,0,3.083,0.853,3.083,4.066v15.284c0,8.003,3.805,11.873,11.742,11.873c6.101,0,10.758-4.46,10.758-10.495V31.271
+					c0-3.214,2.164-4.066,3.083-4.066c0,0,1.574,0,1.574,1.574c0,0.328-0.065,0.983-1.181,1.574c-0.328,0.196-0.46,0.59-0.46,0.918
+					v25.977c0,0.328,0.131,0.722,0.46,0.919c1.115,0.59,1.181,1.246,1.181,1.574c0,1.574-1.574,1.574-1.574,1.574
+					c-0.919,0-3.083-0.853-3.083-4.067V55.018z"/>
+				<path d="M289.348,17.365c0-3.215,2.165-4.067,3.083-4.067c0,0,1.574,0,1.574,1.574c0,0.328-0.065,0.984-1.181,1.574
+					c-0.328,0.197-0.459,0.591-0.459,0.919v39.883c0,0.328,0.131,0.722,0.459,0.919c1.115,0.59,1.181,1.246,1.181,1.574
+					c0,1.574-1.574,1.574-1.574,1.574c-0.918,0-3.083-0.853-3.083-4.067v-3.738c-2.689,6.034-8.2,7.806-12.66,7.806
+					c-9.184,0-15.547-8.134-15.547-17.449c0-8.921,6.56-16.661,15.547-16.661c4.985,0,9.315,1.509,12.66,7.019V17.365z
+					 M289.348,43.276c0-7.019-5.379-13.054-12.595-13.054c-7.675,0-12.595,6.428-12.595,13.644c0,7.085,4.789,14.432,12.595,14.432
+					c8.003,0,12.595-7.544,12.595-14.497V43.276z"/>
+				<path d="M330.28,33.043c0,1.902-1.509,3.346-3.279,3.346c-0.787,0-1.443-0.197-2.034-0.591c-1.902-1.509-4.329-2.492-6.494-2.492
+					c-6.035,0.065-10.955,5.116-10.955,11.02c0,5.839,4.92,10.89,10.89,10.89c2.23,0,4.592-0.918,6.559-2.427
+					c0.591-0.393,1.182-0.591,1.969-0.591c1.771,0,3.345,1.509,3.345,3.346c0,0.983-0.59,1.837-1.377,2.492
+					c-2.887,2.362-6.691,3.608-10.43,3.608c-9.708,0-17.449-7.74-17.449-17.318c0-9.643,7.806-17.448,17.384-17.448
+					c3.87,0,7.609,1.246,10.496,3.607C329.821,31.14,330.28,31.993,330.28,33.043z"/>
+				<path d="M357.044,57.248c-0.722,0.984-3.148,4.396-8.725,4.396c-6.625,0-12.856-4.396-12.856-11.611
+					c0-8.003,6.428-11.151,13.25-11.151c2.821,0,5.576,0.656,8.135,1.902c0-6.69-2.887-7.675-6.691-7.675
+					c-4.461,0-6.625,0.918-6.625,0.918c-2.034,0.722-4.133-0.59-4.133-2.689c0-1.574,1.05-2.82,2.361-3.214
+					c2.493-0.722,5.051-1.246,8.068-1.246c9.053,0,13.579,4.264,13.579,11.676V54.23c0,0.722,0.263,1.05,0.59,1.247
+					c0,0,1.115,0.524,1.115,2.492c0,1.968-1.442,3.346-3.411,3.346C359.078,61.315,357.109,59.806,357.044,57.248z M350.419,44.129
+					c-4.002,0-8.396,1.181-8.396,5.97c0,3.477,3.279,5.182,6.362,5.182c3.871,0,8.266-2.427,8.463-6.56v-2.624
+					C354.617,44.522,351.796,44.129,350.419,44.129z"/>
+				<path d="M396.731,42.357c0-5.575-3.477-8.921-8.921-8.921c-4.985,0-8.855,4.329-8.855,8.593V56.33c0,2.952-2.034,4.985-4.92,4.985
+					c-1.837,0-3.411-1.312-3.411-3.346c0-1.968,1.181-2.558,1.181-2.558c0.328-0.197,0.59-0.393,0.59-1.115V34.223
+					c0-0.722-0.262-0.918-0.59-1.115c0,0-1.181-0.59-1.181-2.559c0-2.033,1.574-3.345,3.411-3.345c2.689,0,4.592,1.771,4.854,4.395
+					c2.1-2.559,6.232-4.723,9.381-4.723c10.561,0,15.021,5.116,15.021,15.874v11.546c0,0.722,0.263,0.918,0.591,1.115
+					c0,0,1.181,0.59,1.181,2.558c0,2.034-1.574,3.346-3.411,3.346c-2.886,0-4.92-2.033-4.92-4.985V42.357z"/>
+				<path d="M437.336,42.357c0-5.575-3.477-8.921-8.921-8.921c-4.985,0-8.855,4.329-8.855,8.593V56.33c0,2.952-2.034,4.985-4.92,4.985
+					c-1.837,0-3.411-1.312-3.411-3.346c0-1.968,1.181-2.558,1.181-2.558c0.328-0.197,0.59-0.393,0.59-1.115V34.223
+					c0-0.722-0.262-0.918-0.59-1.115c0,0-1.181-0.59-1.181-2.559c0-2.033,1.574-3.345,3.411-3.345c2.689,0,4.592,1.771,4.854,4.395
+					c2.1-2.559,6.232-4.723,9.381-4.723c10.562,0,15.021,5.116,15.021,15.874v11.546c0,0.722,0.263,0.918,0.591,1.115
+					c0,0,1.181,0.59,1.181,2.558c0,2.034-1.574,3.346-3.411,3.346c-2.886,0-4.92-2.033-4.92-4.985V42.357z"/>
+				<path d="M450.389,44.259c0-9.577,7.872-17.383,17.384-17.383c9.577,0,17.383,7.806,17.383,17.383
+					c0,9.512-7.806,17.384-17.383,17.384C458.261,61.643,450.389,53.771,450.389,44.259z M456.948,44.259
+					c0,5.97,4.854,10.824,10.824,10.824c5.969,0,10.823-4.854,10.823-10.824c0-6.034-4.855-10.823-10.823-10.823
+					C461.803,33.436,456.948,38.225,456.948,44.259z"/>
+				<path d="M516.446,42.357c0-5.575-3.477-8.921-8.921-8.921c-4.985,0-8.855,4.329-8.855,8.593V56.33c0,2.952-2.034,4.985-4.92,4.985
+					c-1.837,0-3.411-1.312-3.411-3.346c0-1.968,1.181-2.558,1.181-2.558c0.328-0.197,0.59-0.393,0.59-1.115V34.223
+					c0-0.722-0.262-0.918-0.59-1.115c0,0-1.181-0.59-1.181-2.559c0-2.033,1.574-3.345,3.411-3.345c2.69,0,4.592,1.771,4.854,4.395
+					c2.1-2.559,6.232-4.723,9.381-4.723c10.562,0,15.021,5.116,15.021,15.874v11.546c0,0.722,0.263,0.918,0.591,1.115
+					c0,0,1.181,0.59,1.181,2.558c0,2.034-1.574,3.346-3.411,3.346c-2.886,0-4.92-2.033-4.92-4.985V42.357z"/>
+			</g>
+		</g>
+		</svg>
+	
+
+		<span>CloudCannon</span>
+	</a>
+</div>
+	<nav class="main">
+	
+		<a  href="/">Docs</a>
+	
+		<a  href="/changelog/">Changelog</a>
+	
+</nav>
+	<nav class="right">
+	<a href="https://app.cloudcannon.com/" target="_blank">Log In</a>
+	<a href="https://app.cloudcannon.com/users/sign_up" target="_blank" class="button keep-text-size dark">Sign Up</a>
+</nav>
+</div>
+		<!-- <form action="/search/" method="get" class="search-input-container">
+			<input type="text" name="q" id="search-input" placeholder="Search" data-autofocus>
+			<div class="search-input-icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></div>
+
+			<input type="submit" value="Search" style="display: none;">
+		</form> -->
+</header>
+
+<div class="dark-content docs-container">
+	<div class="wrapper wrapper-large">
+		<nav class="docs-nav">
+			<ul>
+				
+
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/">Overview</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/">Welcome</a></li>
+							
+								<li class="nav-item "><a href="/overview/tour/">Tour</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/syncing/github/">File Syncing</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/syncing/github/">GitHub</a></li>
+							
+								<li class="nav-item "><a href="/syncing/bitbucket/">Bitbucket</a></li>
+							
+								<li class="nav-item "><a href="/syncing/dropbox/">Dropbox</a></li>
+							
+								<li class="nav-item "><a href="/syncing/publishing/">Publishing</a></li>
+							
+								<li class="nav-item "><a href="/syncing/file-upload/">File Upload</a></li>
+							
+								<li class="nav-item "><a href="/syncing/output/">Output</a></li>
+							
+								<li class="nav-item "><a href="/syncing/file-types/">File Types</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level current">
+						
+						<a href="/building/jekyll/">Building</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/building/jekyll/">Jekyll</a></li>
+							
+								<li class="nav-item "><a href="/building/versions/">Versions</a></li>
+							
+								<li class="nav-item "><a href="/building/plugins/">Plugins</a></li>
+							
+								<li class="nav-item "><a href="/building/configuration/">Configuration</a></li>
+							
+								<li class="nav-item current"><a href="/building/scheduling/">Scheduling</a></li>
+							
+								<li class="nav-item "><a href="/building/optimisations/">Optimisations</a></li>
+							
+								<li class="nav-item "><a href="/building/environments/">Environments</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/editing/visual-editor/">Editing</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/editing/visual-editor/">Visual Editor</a></li>
+							
+								<li class="nav-item "><a href="/editing/content-editor/">Content Editor</a></li>
+							
+								<li class="nav-item "><a href="/editing/source-editor/">Source Editor</a></li>
+							
+								<li class="nav-item "><a href="/editing/editable-regions/">Editable Regions</a></li>
+							
+								<li class="nav-item "><a href="/editing/front-matter/">Front Matter</a></li>
+							
+								<li class="nav-item "><a href="/editing/options/">Options</a></li>
+							
+								<li class="nav-item "><a href="/editing/blogging/">Blogging</a></li>
+							
+								<li class="nav-item "><a href="/editing/collections/">Collections</a></li>
+							
+								<li class="nav-item "><a href="/editing/data-files/">Data Files</a></li>
+							
+								<li class="nav-item "><a href="/editing/collection-defaults/">Collection Defaults</a></li>
+							
+								<li class="nav-item "><a href="/editing/editor-links/">Editor Links</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/domains/testing-domains/">Domains</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/domains/testing-domains/">Testing Domains</a></li>
+							
+								<li class="nav-item "><a href="/domains/custom-domains/">Custom Domains</a></li>
+							
+								<li class="nav-item "><a href="/domains/subdomains/">Subdomains</a></li>
+							
+								<li class="nav-item "><a href="/domains/dns/">DNS</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/hosting/options/">Hosting</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/hosting/options/">Options</a></li>
+							
+								<li class="nav-item "><a href="/hosting/301-redirects/">301 Redirects</a></li>
+							
+								<li class="nav-item "><a href="/hosting/custom-404-page/">Custom 404 Page</a></li>
+							
+								<li class="nav-item "><a href="/hosting/contact-forms/">Contact Forms</a></li>
+							
+								<li class="nav-item "><a href="/hosting/active-links/">Active Links</a></li>
+							
+								<li class="nav-item "><a href="/hosting/pretty-urls/">Pretty URLs</a></li>
+							
+								<li class="nav-item "><a href="/hosting/extensionless-urls/">Extensionless URLs</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/sharing/client-sharing/">Sharing</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/sharing/client-sharing/">Client Sharing</a></li>
+							
+								<li class="nav-item "><a href="/sharing/collaborators/">Collaborators</a></li>
+							
+								<li class="nav-item "><a href="/sharing/white-labelling/">White Labelling</a></li>
+							
+								<li class="nav-item "><a href="/sharing/transfer-ownership/">Transferring Ownership</a></li>
+							
+								<li class="nav-item "><a href="/sharing/mobile-app/">Mobile App</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/organisations/getting-started/">Organisations</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/organisations/getting-started/">Getting Started</a></li>
+							
+								<li class="nav-item "><a href="/organisations/team-management/">Team Management</a></li>
+							
+								<li class="nav-item "><a href="/organisations/branding/">Branding</a></li>
+							
+								<li class="nav-item "><a href="/organisations/saml/">SAML</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/ssl/custom-certificate/">SSL</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/ssl/custom-certificate/">Custom Certificate</a></li>
+							
+								<li class="nav-item "><a href="/ssl/letsencrypt/">Let's Encrypt</a></li>
+							
+								<li class="nav-item "><a href="/ssl/cloudflare/">CloudFlare</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/authentication/none/">Authentication</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/authentication/none/">None</a></li>
+							
+								<li class="nav-item "><a href="/authentication/password/">Password</a></li>
+							
+								<li class="nav-item "><a href="/authentication/user-accounts/">User Accounts</a></li>
+							
+								<li class="nav-item "><a href="/authentication/saml/">SAML</a></li>
+							
+								<li class="nav-item "><a href="/authentication/custom-interfaces/">Custom Interfaces</a></li>
+							
+								<li class="nav-item "><a href="/authentication/custom-routes/">Custom Routes</a></li>
+							
+								<li class="nav-item "><a href="/authentication/logging-out/">Logging Out</a></li>
+							
+						</ul>
+					</li>
+				
+					<li class="nav-item top-level ">
+						
+						<a href="/i18n/geolocation/">Internationalisation</a>
+						<ul>
+							
+								<li class="nav-item "><a href="/i18n/geolocation/">Geolocation</a></li>
+							
+								<li class="nav-item "><a href="/i18n/internationalisation/">Internationalisation</a></li>
+							
+						</ul>
+					</li>
+				
+			</ul>
+		</nav>
+
+		<section class="docs-main">
+			<article class="content">
+				<p class="docs-category">Building</p>
+				<h2>Scheduling</h2>
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				<div><p>Scheduling allows you to define when your site is built automatically. There are two types of scheduled builds:</p>
+
+<ol>
+  <li>Manually configured builds</li>
+  <li>Automatic builds configured from site source</li>
+</ol>
+
+<hr />
+
+<h2 id="manual-builds">Manual Builds</h2>
+
+<p>Manually configured builds or Manual builds are configured in the CloudCannon UI. They are useful for regular period builds or one off future builds.</p>
+
+<p>To configure a manual build:</p>
+
+<ol>
+  <li>Go to <em>Site Settings</em> / <em>Scheduled Builds</em></li>
+  <li>Select the <strong>Manual</strong> tab</li>
+  <li>Add a <strong>name</strong></li>
+  <li>Enter the <strong>date</strong> for the build to first run</li>
+  <li>If you want the build to repeat on a regular interval, select a <strong>Repeat Interval</strong></li>
+  <li>Click <strong>Create Schedule</strong> to create a scheduled build.</li>
+</ol>
+
+<blockquote class="explainer">
+  <p>Repeat Intervals work from the original date selected. If you select a daily interval and your original time was 2pm, all future builds will run at 2pm.</p>
+</blockquote>
+
+<p><img src="/images/building/configuration.png" alt="Site Settings Build Interface" srcset="/images/building/configuration.png 800w, /images/building/configuration@2x.png 1600w" class="screenshot" /></p>
+
+<p>To remove a build:</p>
+
+<ol>
+  <li>Go to <em>Site Settings</em> / <em>Scheduled Builds</em></li>
+  <li>Select the <strong>Manual</strong> tab</li>
+  <li>Click <strong>Cancel</strong> on your selected build and then click again to confirm</li>
+</ol>
+
+<hr />
+
+<h2 id="automatic-builds">Automatic builds</h2>
+
+<p>Automatic builds are configured by generating a <code class="highlighter-rouge">_schedule.txt</code> file in your Jekyll site. After a build CloudCannon will read your <code class="highlighter-rouge">_schedule.txt</code> file and automatically configure a build at the specified time. This is useful for future posts and any build that uses <code class="highlighter-rouge">site.time</code>.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>To generate <code class="highlighter-rouge">_schedule.txt</code> we recommend using our plugin <a href="https://github.com/CloudCannon/jekyll-cloudcannon-schedule">jekyll-cloudcannon-schedule`</a>. This will parse all posts set for the future and generate a build on that date. If you would like to generate a custom file, see below for <a href="#schedule-file-format">schedule file format</a>.</p>
+
+<p><a href="https://travis-ci.org/CloudCannon/jekyll-cloudcannon-schedule"><img src="https://travis-ci.org/CloudCannon/jekyll-cloudcannon-schedule.svg?branch=master" alt="Build Status" /></a>
+<a href="https://badge.fury.io/rb/jekyll-cloudcannon-schedule"><img src="https://badge.fury.io/rb/jekyll-cloudcannon-schedule.svg" alt="Gem Version" /></a></p>
+
+<p>Add the following to your <strong>Gemfile</strong>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group :jekyll_plugins do
+  gem 'jekyll-cloudcannon-schedule', '0.1.2'
+end
+</code></pre></div></div>
+
+<p>Add the following to your <strong>_config.yml</strong>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>plugins:
+  - jekyll-cloudcannon-schedule
+</code></pre></div></div>
+
+<blockquote class="explainer">
+  <p>If you are using a Jekyll version less than 3.5.0, use the gems key instead of plugins.</p>
+</blockquote>
+
+<h3 id="viewing-automatic-builds">Viewing automatic builds</h3>
+
+<p>Once the plugin is configured, the site will be built automatically at the date of any future post. To view all available automatic builds:</p>
+
+<ol>
+  <li>Go to <em>Site Settings</em> / <em>Scheduled Builds</em></li>
+  <li>Select the <strong>Automatic</strong> tab</li>
+  <li>Clicking <strong>Update</strong> will open the source filename in the content editor</li>
+</ol>
+
+<p>This is useful when configuring your initial plugin setup.</p>
+
+<p><img src="/images/building/configuration.png" alt="Site Settings Build Interface" srcset="/images/building/configuration.png 800w, /images/building/configuration@2x.png 1600w" class="screenshot" /></p>
+
+<blockquote class="explainer">
+  <p>Posts that are visible on the main site will not trigger a build. If automatic builds are not working, ensure <strong>–future</strong> is unchecked in <strong>Site Settings</strong> / <strong>Build</strong>.</p>
+</blockquote>
+
+<h3 id="schedule-file-format">Schedule File Format</h3>
+
+<p>The <code class="highlighter-rouge">_schedule.txt</code> is a comma separated list of values. It contains three values:</p>
+
+<ol>
+  <li>Run date</li>
+  <li>Build name</li>
+  <li>Source filename</li>
+</ol>
+
+<p>For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2020-10-22T10:00:00+00:00,Publish Post,_posts/2020-10-22-because-of-the-internet.md
+</code></pre></div></div>
+
+<p>These values are used to schedule a build and generate the management UI.</p>
+
+<blockquote class="explainer">
+  <p>If you’re creating <code class="highlighter-rouge">_schedule.txt</code> without the <code class="highlighter-rouge">jekyll-cloudcannon-schedule</code> plugin you will need to add the file to your <code class="highlighter-rouge">include</code> in <code class="highlighter-rouge">_config.yml</code> as Jekyll doesn’t process files beginning with an underscore by default.</p>
+</blockquote>
+</div>
+
+				<script>var headings = document.querySelectorAll("h3[id], h4[id], h5[id], h6[id]");
+
+for (var i = 0; i < headings.length; i++) {
+	var anchorLink = document.createElement("a");
+	anchorLink.innerText = "#";
+	anchorLink.href = "#" + headings[i].id;
+	anchorLink.classList.add("header-link");
+
+	headings[i].appendChild(anchorLink);
+}
+</script>
+			</article>
+		</section>
+	</div>
+</div>
+		<footer>
+	<div class="wrapper wrapper-large">
+		<div class="footer-links">
+			<div class="about">
+				<div class="logo">
+	<a href="/">
+		
+		<?xml version="1.0" encoding="utf-8"?>
+		<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+			 y="0px" viewBox="0 0 530.104 76.667" xml:space="preserve">
+		<g id="Layer_1" display="none">
+			<g display="inline">
+				<path fill="#29ABE2" d="M383.001,370.947c-2.316-13.691-12.399-24.67-25.525-28.518c0.211-1.331,0.405-2.664,0.405-4.048
+					c0,0,0,0,0-0.002c-0.004-14.148-11.476-25.622-25.622-25.622c-7.15,0-13.605,2.951-18.26,7.67
+					c-1.27-3.398-4.477-5.848-8.332-5.848c-4.954,0-8.963,4.006-8.963,8.959c0,4.955,3.371,7.137,10.528,10.484
+					c0.97,0.437,1.906,0.935,2.839,1.443c0.557,0.306,1.105,0.633,1.649,0.96c0.401,0.243,0.802,0.487,1.194,0.741
+					c0.236,0.154,0.469,0.312,0.705,0.468c2.155,1.441,4.193,3.048,6.088,4.808c0.097,0.093,0.193,0.192,0.291,0.285
+					c0.78,0.736,1.531,1.504,2.257,2.291c0.194,0.209,0.388,0.418,0.578,0.628c0.806,0.905,1.586,1.829,2.32,2.793
+					c5.995,7.932,9.619,17.85,9.619,28.529c0,10.678-3.624,20.597-9.619,28.529c-0.734,0.964-1.515,1.888-2.32,2.791
+					c-0.19,0.213-0.384,0.422-0.578,0.631c-0.726,0.787-1.477,1.553-2.253,2.289c-0.102,0.095-0.198,0.193-0.295,0.286
+					c-1.895,1.76-3.933,3.367-6.088,4.808c-0.236,0.156-0.469,0.316-0.705,0.469c-0.393,0.253-0.793,0.498-1.194,0.74
+					c-0.544,0.327-1.093,0.654-1.653,0.96c-0.929,0.511-1.865,1.006-2.835,1.442c-7.157,3.349-10.528,5.529-10.528,10.484
+					c0,4.953,4.009,8.959,8.963,8.959c3.855,0,7.062-2.449,8.332-5.848c4.654,4.72,11.109,7.671,18.26,7.671
+					c14.147,0,25.618-11.474,25.622-25.622v-0.002c0-1.384-0.194-2.718-0.405-4.049c13.126-3.847,23.209-14.827,25.525-28.518
+					c0.329-1.956,0.502-3.966,0.502-6.021C383.503,374.913,383.33,372.903,383.001,370.947z"/>
+				<path fill="#29ABE2" d="M271.272,419.913c-0.97-0.437-1.907-0.932-2.835-1.442c-0.561-0.306-1.11-0.633-1.654-0.96
+					c-0.401-0.242-0.802-0.487-1.194-0.74c-0.236-0.152-0.468-0.312-0.705-0.469c-2.156-1.44-4.193-3.048-6.088-4.808
+					c-0.097-0.093-0.194-0.191-0.295-0.286c-0.776-0.736-1.527-1.502-2.253-2.289c-0.194-0.209-0.388-0.418-0.578-0.631
+					c-0.806-0.903-1.586-1.827-2.321-2.791c-5.995-7.932-9.619-17.851-9.619-28.529c0-10.678,3.624-20.597,9.619-28.529
+					c0.734-0.964,1.515-1.888,2.321-2.793c0.189-0.211,0.384-0.419,0.578-0.628c0.726-0.787,1.477-1.555,2.257-2.291
+					c0.097-0.093,0.194-0.192,0.291-0.285c1.895-1.759,3.932-3.367,6.088-4.808c0.236-0.156,0.469-0.314,0.705-0.468
+					c0.393-0.253,0.793-0.498,1.194-0.741c0.544-0.327,1.092-0.654,1.649-0.96c0.933-0.508,1.869-1.006,2.839-1.443
+					c7.155-3.348,10.526-5.529,10.526-10.484c0-4.953-4.008-8.959-8.961-8.959c-3.856,0-7.062,2.449-8.332,5.848
+					c-4.654-4.719-11.109-7.67-18.26-7.67c-14.146,0-25.618,11.474-25.622,25.622c0,0.002,0,0.002,0,0.002
+					c0,1.384,0.194,2.717,0.405,4.048c-13.125,3.848-23.208,14.828-25.524,28.518c-0.329,1.955-0.502,3.966-0.502,6.02
+					c0,2.055,0.173,4.065,0.502,6.021c2.316,13.691,12.399,24.671,25.524,28.518c-0.211,1.331-0.405,2.665-0.405,4.049v0.002
+					c0.004,14.148,11.476,25.622,25.622,25.622c7.151,0,13.606-2.951,18.26-7.671c1.27,3.398,4.476,5.848,8.332,5.848
+					c4.953,0,8.961-4.006,8.961-8.959C281.798,425.442,278.427,423.261,271.272,419.913z"/>
+				<circle fill="#29ABE2" cx="289.25" cy="376.967" r="27.936"/>
+			</g>
+			<g display="inline">
+				<path fill="#29ABE2" d="M383.001,370.947c-2.316-13.691-12.399-24.67-25.525-28.518c0.211-1.331,0.405-2.664,0.405-4.048
+					c0,0,0,0,0-0.002c-0.004-14.148-11.476-25.622-25.622-25.622c-7.15,0-13.605,2.951-18.26,7.67
+					c-1.27-3.398-4.477-5.848-8.332-5.848c-4.954,0-8.963,4.006-8.963,8.959c0,4.955,3.371,7.137,10.528,10.484
+					c0.97,0.437,1.906,0.935,2.839,1.443c0.557,0.306,1.105,0.633,1.649,0.96c0.401,0.243,0.802,0.487,1.194,0.741
+					c0.236,0.154,0.469,0.312,0.705,0.468c2.155,1.441,4.193,3.048,6.088,4.808c0.097,0.093,0.193,0.192,0.291,0.285
+					c0.78,0.736,1.531,1.504,2.257,2.291c0.194,0.209,0.388,0.418,0.578,0.628c0.806,0.905,1.586,1.829,2.32,2.793
+					c5.995,7.932,9.619,17.85,9.619,28.529c0,10.678-3.624,20.597-9.619,28.529c-0.734,0.964-1.515,1.888-2.32,2.791
+					c-0.19,0.213-0.384,0.422-0.578,0.631c-0.726,0.787-1.477,1.553-2.253,2.289c-0.102,0.095-0.198,0.193-0.295,0.286
+					c-1.895,1.76-3.933,3.367-6.088,4.808c-0.236,0.156-0.469,0.316-0.705,0.469c-0.393,0.253-0.793,0.498-1.194,0.74
+					c-0.544,0.327-1.093,0.654-1.653,0.96c-0.929,0.511-1.865,1.006-2.835,1.442c-7.157,3.349-10.528,5.529-10.528,10.484
+					c0,4.953,4.009,8.959,8.963,8.959c3.855,0,7.062-2.449,8.332-5.848c4.654,4.72,11.109,7.671,18.26,7.671
+					c14.147,0,25.618-11.474,25.622-25.622v-0.002c0-1.384-0.194-2.718-0.405-4.049c13.126-3.847,23.209-14.827,25.525-28.518
+					c0.329-1.956,0.502-3.966,0.502-6.021C383.503,374.913,383.33,372.903,383.001,370.947z"/>
+				<path fill="#29ABE2" d="M271.272,419.913c-0.97-0.437-1.907-0.932-2.835-1.442c-0.561-0.306-1.11-0.633-1.654-0.96
+					c-0.401-0.242-0.802-0.487-1.194-0.74c-0.236-0.152-0.468-0.312-0.705-0.469c-2.156-1.44-4.193-3.048-6.088-4.808
+					c-0.097-0.093-0.194-0.191-0.295-0.286c-0.776-0.736-1.527-1.502-2.253-2.289c-0.194-0.209-0.388-0.418-0.578-0.631
+					c-0.806-0.903-1.586-1.827-2.321-2.791c-5.995-7.932-9.619-17.851-9.619-28.529c0-10.678,3.624-20.597,9.619-28.529
+					c0.734-0.964,1.515-1.888,2.321-2.793c0.189-0.211,0.384-0.419,0.578-0.628c0.726-0.787,1.477-1.555,2.257-2.291
+					c0.097-0.093,0.194-0.192,0.291-0.285c1.895-1.759,3.932-3.367,6.088-4.808c0.236-0.156,0.469-0.314,0.705-0.468
+					c0.393-0.253,0.793-0.498,1.194-0.741c0.544-0.327,1.092-0.654,1.649-0.96c0.933-0.508,1.869-1.006,2.839-1.443
+					c7.155-3.348,10.526-5.529,10.526-10.484c0-4.953-4.008-8.959-8.961-8.959c-3.856,0-7.062,2.449-8.332,5.848
+					c-4.654-4.719-11.109-7.67-18.26-7.67c-14.146,0-25.618,11.474-25.622,25.622c0,0.002,0,0.002,0,0.002
+					c0,1.384,0.194,2.717,0.405,4.048c-13.125,3.848-23.208,14.828-25.524,28.518c-0.329,1.955-0.502,3.966-0.502,6.02
+					c0,2.055,0.173,4.065,0.502,6.021c2.316,13.691,12.399,24.671,25.524,28.518c-0.211,1.331-0.405,2.665-0.405,4.049v0.002
+					c0.004,14.148,11.476,25.622,25.622,25.622c7.151,0,13.606-2.951,18.26-7.671c1.27,3.398,4.476,5.848,8.332,5.848
+					c4.953,0,8.961-4.006,8.961-8.959C281.798,425.442,278.427,423.261,271.272,419.913z"/>
+				<circle fill="#29ABE2" cx="289.25" cy="376.967" r="27.936"/>
+			</g>
+			<g display="inline">
+				<path fill="#29ABE2" d="M174.088,486.216c0,0.404-0.18,0.674-0.449,0.898c-2.065,1.571-4.67,2.38-7.275,2.38
+					c-6.466,0-11.855-5.299-11.855-11.811c0-6.557,5.389-11.99,11.855-11.99c2.604,0,5.299,0.854,7.275,2.515
+					c0.809,0.674,0.359,1.842-0.628,1.842c-0.225,0-0.449-0.045-0.629-0.18c-1.617-1.213-3.862-2.111-6.018-2.111
+					c-5.344,0-9.79,4.491-9.79,9.925c0,5.344,4.446,9.745,9.79,9.745c2.246,0,4.356-0.674,6.018-1.977
+					C173.01,484.96,174.088,485.273,174.088,486.216z"/>
+				<path fill="#29ABE2" d="M180.37,459.182c0-0.224-0.09-0.493-0.314-0.628c-0.764-0.404-0.809-0.853-0.809-1.078
+					c0-1.078,1.078-1.078,1.078-1.078c0.629,0,2.111,0.584,2.111,2.784v27.304c0,0.225,0.09,0.494,0.315,0.629
+					c0.763,0.404,0.808,0.853,0.808,1.077c0,1.078-1.078,1.078-1.078,1.078c-0.629,0-2.111-0.584-2.111-2.784V459.182z"/>
+				<path fill="#29ABE2" d="M188.721,477.639c0-6.557,5.344-11.945,11.9-11.945c6.557,0,11.855,5.389,11.855,11.945
+					c0,6.557-5.299,11.855-11.855,11.855C194.065,489.495,188.721,484.196,188.721,477.639z M190.787,477.639
+					c0,5.389,4.446,9.79,9.835,9.79s9.79-4.401,9.79-9.79c0-5.389-4.401-9.88-9.79-9.88S190.787,472.251,190.787,477.639z"/>
+				<path fill="#29ABE2" d="M235.33,484.96c-1.257,2.694-4.67,4.311-7.41,4.311c-6.646,0-10.059-3.503-10.059-10.104v-10.464
+					c0-0.225-0.09-0.494-0.314-0.629c-0.763-0.403-0.808-0.852-0.808-1.077c0-1.078,1.078-1.078,1.078-1.078
+					c0.629,0,2.111,0.584,2.111,2.784v10.464c0,5.479,2.604,8.128,8.038,8.128c4.176,0,7.365-3.054,7.365-7.185v-11.406
+					c0-2.2,1.482-2.784,2.111-2.784c0,0,1.078,0,1.078,1.078c0,0.225-0.045,0.674-0.809,1.077c-0.224,0.135-0.314,0.404-0.314,0.629
+					v17.783c0,0.225,0.09,0.494,0.314,0.629c0.764,0.404,0.809,0.853,0.809,1.077c0,1.078-1.078,1.078-1.078,1.078
+					c-0.629,0-2.111-0.584-2.111-2.784V484.96z"/>
+				<path fill="#29ABE2" d="M262.54,459.182c0-2.2,1.482-2.784,2.111-2.784c0,0,1.078,0,1.078,1.078c0,0.225-0.045,0.674-0.809,1.078
+					c-0.225,0.135-0.314,0.404-0.314,0.628v27.304c0,0.225,0.089,0.494,0.314,0.629c0.764,0.404,0.809,0.853,0.809,1.077
+					c0,1.078-1.078,1.078-1.078,1.078c-0.629,0-2.111-0.584-2.111-2.784v-2.56c-1.841,4.131-5.613,5.344-8.667,5.344
+					c-6.287,0-10.643-5.568-10.643-11.945c0-6.107,4.491-11.406,10.643-11.406c3.413,0,6.377,1.033,8.667,4.805V459.182z
+					 M262.54,476.921c0-4.805-3.682-8.936-8.622-8.936c-5.254,0-8.622,4.401-8.622,9.341c0,4.85,3.278,9.88,8.622,9.88
+					c5.478,0,8.622-5.164,8.622-9.925V476.921z"/>
+				<path fill="#29ABE2" d="M290.557,469.916c0,1.302-1.033,2.29-2.246,2.29c-0.538,0-0.988-0.135-1.392-0.404
+					c-1.302-1.033-2.964-1.706-4.446-1.706c-4.131,0.045-7.499,3.502-7.499,7.544c0,3.997,3.368,7.454,7.454,7.454
+					c1.527,0,3.144-0.628,4.491-1.661c0.404-0.27,0.809-0.404,1.347-0.404c1.213,0,2.29,1.033,2.29,2.29
+					c0,0.674-0.404,1.258-0.943,1.707c-1.976,1.616-4.58,2.47-7.14,2.47c-6.646,0-11.945-5.299-11.945-11.855
+					c0-6.602,5.344-11.945,11.9-11.945c2.65,0,5.21,0.854,7.185,2.47C290.242,468.613,290.557,469.197,290.557,469.916z"/>
+				<path fill="#29ABE2" d="M308.875,486.486c-0.494,0.674-2.155,3.009-5.973,3.009c-4.535,0-8.802-3.009-8.802-7.948
+					c0-5.479,4.401-7.635,9.071-7.635c1.931,0,3.817,0.449,5.568,1.303c0-4.581-1.975-5.254-4.58-5.254
+					c-3.054,0-4.536,0.628-4.536,0.628c-1.392,0.494-2.829-0.403-2.829-1.841c0-1.077,0.719-1.931,1.617-2.2
+					c1.706-0.494,3.457-0.854,5.523-0.854c6.196,0,9.295,2.919,9.295,7.993v10.733c0,0.494,0.18,0.718,0.404,0.853
+					c0,0,0.764,0.359,0.764,1.707c0,1.347-0.988,2.29-2.335,2.29C310.266,489.27,308.92,488.237,308.875,486.486z M304.34,477.505
+					c-2.74,0-5.748,0.809-5.748,4.087c0,2.38,2.245,3.547,4.355,3.547c2.649,0,5.658-1.661,5.793-4.49v-1.796
+					C307.214,477.774,305.282,477.505,304.34,477.505z"/>
+				<path fill="#29ABE2" d="M336.04,476.293c0-3.817-2.38-6.107-6.107-6.107c-3.413,0-6.062,2.964-6.062,5.883v9.789
+					c0,2.021-1.392,3.413-3.368,3.413c-1.257,0-2.335-0.898-2.335-2.29c0-1.348,0.809-1.752,0.809-1.752
+					c0.225-0.135,0.404-0.269,0.404-0.763v-13.742c0-0.493-0.18-0.628-0.404-0.763c0,0-0.809-0.404-0.809-1.752
+					c0-1.392,1.078-2.29,2.335-2.29c1.842,0,3.143,1.213,3.323,3.009c1.438-1.751,4.267-3.233,6.422-3.233
+					c7.229,0,10.283,3.503,10.283,10.867v7.904c0,0.494,0.18,0.628,0.404,0.763c0,0,0.809,0.404,0.809,1.752
+					c0,1.392-1.078,2.29-2.335,2.29c-1.977,0-3.368-1.393-3.368-3.413V476.293z"/>
+				<path fill="#29ABE2" d="M363.833,476.293c0-3.817-2.38-6.107-6.107-6.107c-3.413,0-6.062,2.964-6.062,5.883v9.789
+					c0,2.021-1.392,3.413-3.368,3.413c-1.257,0-2.335-0.898-2.335-2.29c0-1.348,0.809-1.752,0.809-1.752
+					c0.225-0.135,0.404-0.269,0.404-0.763v-13.742c0-0.493-0.18-0.628-0.404-0.763c0,0-0.809-0.404-0.809-1.752
+					c0-1.392,1.078-2.29,2.335-2.29c1.842,0,3.144,1.213,3.323,3.009c1.438-1.751,4.267-3.233,6.422-3.233
+					c7.229,0,10.283,3.503,10.283,10.867v7.904c0,0.494,0.18,0.628,0.404,0.763c0,0,0.809,0.404,0.809,1.752
+					c0,1.392-1.078,2.29-2.335,2.29c-1.977,0-3.368-1.393-3.368-3.413V476.293z"/>
+				<path fill="#29ABE2" d="M372.764,477.594c0-6.557,5.389-11.9,11.9-11.9c6.557,0,11.9,5.344,11.9,11.9
+					c0,6.512-5.344,11.9-11.9,11.9C378.153,489.495,372.764,484.106,372.764,477.594z M377.256,477.594
+					c0,4.087,3.323,7.409,7.409,7.409c4.087,0,7.41-3.322,7.41-7.409c0-4.131-3.323-7.409-7.41-7.409
+					C380.579,470.185,377.256,473.464,377.256,477.594z"/>
+				<path fill="#29ABE2" d="M417.982,476.293c0-3.817-2.38-6.107-6.107-6.107c-3.413,0-6.062,2.964-6.062,5.883v9.789
+					c0,2.021-1.392,3.413-3.368,3.413c-1.257,0-2.335-0.898-2.335-2.29c0-1.348,0.809-1.752,0.809-1.752
+					c0.225-0.135,0.404-0.269,0.404-0.763v-13.742c0-0.493-0.18-0.628-0.404-0.763c0,0-0.809-0.404-0.809-1.752
+					c0-1.392,1.078-2.29,2.335-2.29c1.842,0,3.144,1.213,3.323,3.009c1.438-1.751,4.267-3.233,6.422-3.233
+					c7.23,0,10.283,3.503,10.283,10.867v7.904c0,0.494,0.18,0.628,0.404,0.763c0,0,0.809,0.404,0.809,1.752
+					c0,1.392-1.078,2.29-2.335,2.29c-1.977,0-3.368-1.393-3.368-3.413V476.293z"/>
+			</g>
+		</g>
+		<g id="Layer_2">
+			<g>
+				<path d="M107.127,35.162c-1.273-7.522-6.813-13.555-14.025-15.669c0.116-0.731,0.223-1.464,0.223-2.225c0,0,0,0,0-0.001
+					C93.323,9.494,87.02,3.189,79.247,3.189c-3.929,0-7.476,1.621-10.033,4.215c-0.697-1.867-2.459-3.213-4.578-3.213
+					c-2.722,0-4.925,2.201-4.925,4.923c0,2.722,1.852,3.921,5.785,5.761c0.533,0.24,1.047,0.513,1.56,0.793
+					c0.306,0.168,0.607,0.348,0.906,0.527c0.22,0.133,0.44,0.268,0.656,0.407c0.13,0.085,0.257,0.171,0.387,0.257
+					c1.184,0.792,2.304,1.675,3.345,2.642c0.053,0.051,0.106,0.105,0.16,0.156c0.429,0.405,0.841,0.826,1.24,1.259
+					c0.107,0.115,0.213,0.229,0.317,0.345c0.443,0.497,0.872,1.005,1.275,1.535c3.294,4.358,5.286,9.808,5.286,15.675
+					s-1.991,11.317-5.286,15.675c-0.403,0.53-0.832,1.037-1.275,1.533c-0.104,0.117-0.211,0.232-0.317,0.347
+					c-0.399,0.433-0.811,0.853-1.238,1.258c-0.056,0.052-0.109,0.106-0.162,0.157c-1.041,0.967-2.161,1.85-3.345,2.642
+					c-0.13,0.086-0.257,0.174-0.387,0.258c-0.216,0.139-0.436,0.274-0.656,0.407c-0.299,0.18-0.601,0.36-0.909,0.528
+					c-0.51,0.281-1.025,0.553-1.558,0.793c-3.932,1.84-5.785,3.038-5.785,5.761c0,2.721,2.202,4.923,4.925,4.923
+					c2.118,0,3.88-1.346,4.578-3.213c2.557,2.593,6.104,4.215,10.033,4.215c7.773,0,14.076-6.304,14.078-14.078v-0.001
+					c0-0.76-0.107-1.493-0.223-2.225c7.212-2.114,12.752-8.147,14.025-15.669c0.181-1.074,0.276-2.179,0.276-3.308
+					C107.403,37.341,107.308,36.237,107.127,35.162z"/>
+				<path d="M45.738,62.066c-0.533-0.24-1.048-0.512-1.558-0.793c-0.308-0.168-0.61-0.348-0.909-0.528
+					c-0.22-0.133-0.44-0.268-0.656-0.407c-0.13-0.084-0.257-0.172-0.387-0.258c-1.185-0.791-2.304-1.675-3.345-2.642
+					c-0.053-0.051-0.106-0.105-0.162-0.157c-0.426-0.405-0.839-0.825-1.238-1.258c-0.106-0.115-0.213-0.23-0.317-0.347
+					c-0.443-0.496-0.872-1.004-1.275-1.533c-3.294-4.358-5.285-9.808-5.285-15.675s1.991-11.317,5.285-15.675
+					c0.404-0.53,0.832-1.037,1.275-1.535c0.104-0.116,0.211-0.231,0.317-0.345c0.399-0.433,0.811-0.854,1.24-1.259
+					c0.053-0.051,0.107-0.105,0.16-0.156c1.041-0.967,2.161-1.85,3.345-2.642c0.13-0.086,0.258-0.173,0.387-0.257
+					c0.216-0.139,0.436-0.274,0.656-0.407c0.299-0.179,0.6-0.359,0.906-0.527c0.512-0.279,1.027-0.553,1.56-0.793
+					c3.932-1.839,5.784-3.038,5.784-5.761c0-2.722-2.202-4.923-4.923-4.923c-2.119,0-3.881,1.346-4.579,3.213
+					c-2.557-2.593-6.104-4.215-10.033-4.215c-7.773,0-14.076,6.304-14.078,14.078c0,0.001,0,0.001,0,0.001
+					c0,0.761,0.106,1.493,0.222,2.225C10.92,21.607,5.379,27.64,4.107,35.162c-0.181,1.074-0.276,2.179-0.276,3.308
+					c0,1.129,0.096,2.233,0.276,3.308c1.273,7.523,6.813,13.556,14.024,15.669c-0.116,0.731-0.222,1.464-0.222,2.225v0.001
+					c0.002,7.774,6.305,14.078,14.078,14.078c3.929,0,7.476-1.622,10.033-4.215c0.698,1.867,2.459,3.213,4.579,3.213
+					c2.721,0,4.923-2.201,4.923-4.923C51.522,65.104,49.67,63.906,45.738,62.066z"/>
+				<circle cx="55.616" cy="38.47" r="15.349"/>
+			</g>
+			<g>
+				<path d="M160.122,56.854c0,0.591-0.262,0.984-0.656,1.312c-3.018,2.296-6.822,3.477-10.627,3.477
+					c-9.446,0-17.318-7.74-17.318-17.252c0-9.577,7.872-17.515,17.318-17.515c3.805,0,7.741,1.246,10.627,3.673
+					c1.181,0.984,0.524,2.69-0.918,2.69c-0.328,0-0.656-0.066-0.919-0.262c-2.361-1.772-5.642-3.083-8.79-3.083
+					c-7.806,0-14.3,6.559-14.3,14.497c0,7.806,6.494,14.234,14.3,14.234c3.28,0,6.363-0.984,8.79-2.887
+					C158.548,55.018,160.122,55.477,160.122,56.854z"/>
+				<path d="M169.305,17.365c0-0.328-0.131-0.722-0.459-0.919c-1.115-0.59-1.181-1.246-1.181-1.574c0-1.574,1.574-1.574,1.574-1.574
+					c0.918,0,3.083,0.852,3.083,4.067v39.883c0,0.328,0.131,0.722,0.459,0.919c1.115,0.59,1.181,1.246,1.181,1.574
+					c0,1.574-1.575,1.574-1.575,1.574c-0.918,0-3.083-0.853-3.083-4.067V17.365z"/>
+				<path d="M181.506,44.325c0-9.577,7.806-17.448,17.383-17.448c9.577,0,17.318,7.871,17.318,17.448
+					c0,9.578-7.741,17.318-17.318,17.318C189.312,61.643,181.506,53.903,181.506,44.325z M184.523,44.325
+					c0,7.872,6.494,14.301,14.366,14.301c7.872,0,14.3-6.429,14.3-14.301c0-7.871-6.428-14.431-14.3-14.431
+					C191.017,29.894,184.523,36.454,184.523,44.325z"/>
+				<path d="M249.597,55.018c-1.837,3.935-6.822,6.297-10.824,6.297c-9.709,0-14.694-5.116-14.694-14.76V31.271
+					c0-0.328-0.131-0.722-0.459-0.918c-1.115-0.591-1.181-1.246-1.181-1.574c0-1.574,1.575-1.574,1.575-1.574
+					c0.918,0,3.083,0.853,3.083,4.066v15.284c0,8.003,3.805,11.873,11.742,11.873c6.101,0,10.758-4.46,10.758-10.495V31.271
+					c0-3.214,2.164-4.066,3.083-4.066c0,0,1.574,0,1.574,1.574c0,0.328-0.065,0.983-1.181,1.574c-0.328,0.196-0.46,0.59-0.46,0.918
+					v25.977c0,0.328,0.131,0.722,0.46,0.919c1.115,0.59,1.181,1.246,1.181,1.574c0,1.574-1.574,1.574-1.574,1.574
+					c-0.919,0-3.083-0.853-3.083-4.067V55.018z"/>
+				<path d="M289.348,17.365c0-3.215,2.165-4.067,3.083-4.067c0,0,1.574,0,1.574,1.574c0,0.328-0.065,0.984-1.181,1.574
+					c-0.328,0.197-0.459,0.591-0.459,0.919v39.883c0,0.328,0.131,0.722,0.459,0.919c1.115,0.59,1.181,1.246,1.181,1.574
+					c0,1.574-1.574,1.574-1.574,1.574c-0.918,0-3.083-0.853-3.083-4.067v-3.738c-2.689,6.034-8.2,7.806-12.66,7.806
+					c-9.184,0-15.547-8.134-15.547-17.449c0-8.921,6.56-16.661,15.547-16.661c4.985,0,9.315,1.509,12.66,7.019V17.365z
+					 M289.348,43.276c0-7.019-5.379-13.054-12.595-13.054c-7.675,0-12.595,6.428-12.595,13.644c0,7.085,4.789,14.432,12.595,14.432
+					c8.003,0,12.595-7.544,12.595-14.497V43.276z"/>
+				<path d="M330.28,33.043c0,1.902-1.509,3.346-3.279,3.346c-0.787,0-1.443-0.197-2.034-0.591c-1.902-1.509-4.329-2.492-6.494-2.492
+					c-6.035,0.065-10.955,5.116-10.955,11.02c0,5.839,4.92,10.89,10.89,10.89c2.23,0,4.592-0.918,6.559-2.427
+					c0.591-0.393,1.182-0.591,1.969-0.591c1.771,0,3.345,1.509,3.345,3.346c0,0.983-0.59,1.837-1.377,2.492
+					c-2.887,2.362-6.691,3.608-10.43,3.608c-9.708,0-17.449-7.74-17.449-17.318c0-9.643,7.806-17.448,17.384-17.448
+					c3.87,0,7.609,1.246,10.496,3.607C329.821,31.14,330.28,31.993,330.28,33.043z"/>
+				<path d="M357.044,57.248c-0.722,0.984-3.148,4.396-8.725,4.396c-6.625,0-12.856-4.396-12.856-11.611
+					c0-8.003,6.428-11.151,13.25-11.151c2.821,0,5.576,0.656,8.135,1.902c0-6.69-2.887-7.675-6.691-7.675
+					c-4.461,0-6.625,0.918-6.625,0.918c-2.034,0.722-4.133-0.59-4.133-2.689c0-1.574,1.05-2.82,2.361-3.214
+					c2.493-0.722,5.051-1.246,8.068-1.246c9.053,0,13.579,4.264,13.579,11.676V54.23c0,0.722,0.263,1.05,0.59,1.247
+					c0,0,1.115,0.524,1.115,2.492c0,1.968-1.442,3.346-3.411,3.346C359.078,61.315,357.109,59.806,357.044,57.248z M350.419,44.129
+					c-4.002,0-8.396,1.181-8.396,5.97c0,3.477,3.279,5.182,6.362,5.182c3.871,0,8.266-2.427,8.463-6.56v-2.624
+					C354.617,44.522,351.796,44.129,350.419,44.129z"/>
+				<path d="M396.731,42.357c0-5.575-3.477-8.921-8.921-8.921c-4.985,0-8.855,4.329-8.855,8.593V56.33c0,2.952-2.034,4.985-4.92,4.985
+					c-1.837,0-3.411-1.312-3.411-3.346c0-1.968,1.181-2.558,1.181-2.558c0.328-0.197,0.59-0.393,0.59-1.115V34.223
+					c0-0.722-0.262-0.918-0.59-1.115c0,0-1.181-0.59-1.181-2.559c0-2.033,1.574-3.345,3.411-3.345c2.689,0,4.592,1.771,4.854,4.395
+					c2.1-2.559,6.232-4.723,9.381-4.723c10.561,0,15.021,5.116,15.021,15.874v11.546c0,0.722,0.263,0.918,0.591,1.115
+					c0,0,1.181,0.59,1.181,2.558c0,2.034-1.574,3.346-3.411,3.346c-2.886,0-4.92-2.033-4.92-4.985V42.357z"/>
+				<path d="M437.336,42.357c0-5.575-3.477-8.921-8.921-8.921c-4.985,0-8.855,4.329-8.855,8.593V56.33c0,2.952-2.034,4.985-4.92,4.985
+					c-1.837,0-3.411-1.312-3.411-3.346c0-1.968,1.181-2.558,1.181-2.558c0.328-0.197,0.59-0.393,0.59-1.115V34.223
+					c0-0.722-0.262-0.918-0.59-1.115c0,0-1.181-0.59-1.181-2.559c0-2.033,1.574-3.345,3.411-3.345c2.689,0,4.592,1.771,4.854,4.395
+					c2.1-2.559,6.232-4.723,9.381-4.723c10.562,0,15.021,5.116,15.021,15.874v11.546c0,0.722,0.263,0.918,0.591,1.115
+					c0,0,1.181,0.59,1.181,2.558c0,2.034-1.574,3.346-3.411,3.346c-2.886,0-4.92-2.033-4.92-4.985V42.357z"/>
+				<path d="M450.389,44.259c0-9.577,7.872-17.383,17.384-17.383c9.577,0,17.383,7.806,17.383,17.383
+					c0,9.512-7.806,17.384-17.383,17.384C458.261,61.643,450.389,53.771,450.389,44.259z M456.948,44.259
+					c0,5.97,4.854,10.824,10.824,10.824c5.969,0,10.823-4.854,10.823-10.824c0-6.034-4.855-10.823-10.823-10.823
+					C461.803,33.436,456.948,38.225,456.948,44.259z"/>
+				<path d="M516.446,42.357c0-5.575-3.477-8.921-8.921-8.921c-4.985,0-8.855,4.329-8.855,8.593V56.33c0,2.952-2.034,4.985-4.92,4.985
+					c-1.837,0-3.411-1.312-3.411-3.346c0-1.968,1.181-2.558,1.181-2.558c0.328-0.197,0.59-0.393,0.59-1.115V34.223
+					c0-0.722-0.262-0.918-0.59-1.115c0,0-1.181-0.59-1.181-2.559c0-2.033,1.574-3.345,3.411-3.345c2.69,0,4.592,1.771,4.854,4.395
+					c2.1-2.559,6.232-4.723,9.381-4.723c10.562,0,15.021,5.116,15.021,15.874v11.546c0,0.722,0.263,0.918,0.591,1.115
+					c0,0,1.181,0.59,1.181,2.558c0,2.034-1.574,3.346-3.411,3.346c-2.886,0-4.92-2.033-4.92-4.985V42.357z"/>
+			</g>
+		</g>
+		</svg>
+	
+
+		<span>CloudCannon</span>
+	</a>
+</div>
+				<p>Everything you need to build, host and update Jekyll websites.</p>
+			</div>
+			<ul>
+				<li><h4>CloudCannon</h4></li>
+				<li><a href="https://cloudcannon.com/features/">Features</a></li>
+				<li><a href="https://cloudcannon.com/pricing/">Pricing</a></li>
+				<li><a href="https://cloudcannon.com/blog/">Blog</a></li>
+				<li><a href="https://cloudcannon.com/about/">About</a></li>
+				<li><a href="https://cloudcannon.com/careers/">Careers</a></li>
+			</ul>
+			<ul>
+				<li><h4>Resources</h4></li>
+				<li><a href="https://learn.cloudcannon.com/">Guides</a></li>
+				<li><a href="https://docs.cloudcannon.com/">Documentation</a></li>
+				<li><a href="https://cloudcannon.com/experts/">Experts</a></li>
+				<li><a href="https://cloudcannon.com/contact/">Contact</a></li>
+				<li><a href="https://brand.cloudcannon.com/">Brand</a></li>
+			</ul>
+			<ul>
+				<li><h4>App</h4></li>
+				<li><a href="https://app.cloudcannon.com/users/sign_up/">Sign Up</a></li>
+				<li><a href="https://app.cloudcannon.com/">Log In</a></li>
+
+			</ul>
+			<ul class="contact">
+				<li><h4>Contact Us</h4></li>
+				<li><a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a></li>
+				<li class="social">
+					<a class="twitter" href="https://twitter.com/CloudCannon">
+		<svg class="twitter" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>
+	
+</a>
+					<a class="facebook" href="https://www.facebook.com/CloudCannon">
+		<svg class="facebook" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" /></svg>
+	
+</a>
+					<a class="google-plus" href="https://plus.google.com/+CloudCannon">
+		<svg class="google-plus" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" /></svg>
+	
+</a>
+					<a class="youtube" href="https://www.youtube.com/c/CloudCannon">
+		<svg class="youtube" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10,16.5V7.5L16,12M20,4.4C19.4,4.2 15.7,4 12,4C8.3,4 4.6,4.19 4,4.38C2.44,4.9 2,8.4 2,12C2,15.59 2.44,19.1 4,19.61C4.6,19.81 8.3,20 12,20C15.7,20 19.4,19.81 20,19.61C21.56,19.1 22,15.59 22,12C22,8.4 21.56,4.91 20,4.4Z" /></svg>
+	
+</a>
+				</li>
+			</ul>
+
+			<div class="filler"></div>
+		</div>
+	</div>
+
+	<div class="legal-line">
+		<p class="wrapper wrapper-large">
+			&copy; 2018 CloudCannon Ltd &bull;
+			<a href="https://app.cloudcannon.com/terms">Terms</a> &amp;
+			<a href="https://app.cloudcannon.com/privacy_policy">Privacy</a>
+		</p>
+	</div>
+</footer>
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function (event) {
+				event.preventDefault();
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

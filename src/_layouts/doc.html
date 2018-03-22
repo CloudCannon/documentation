@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<header class="short">
+	{% include navigation/top.html %}
+		<!-- <form action="{{ site.baseurl }}/search/" method="get" class="search-input-container">
+			<input type="text" name="q" id="search-input" placeholder="Search" data-autofocus>
+			<div class="search-input-icon">{% include icons/search.svg %}</div>
+
+			<input type="submit" value="Search" style="display: none;">
+		</form> -->
+</header>
+
+<div class="dark-content docs-container">
+	<div class="wrapper wrapper-large">
+		<nav class="docs-nav">
+			<ul>
+				{% assign grouped = site.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+
+				{% for group in grouped %}
+					<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+						{% assign items = group.items | sort: 'order' %}
+						<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+						<ul>
+							{% for item in items %}
+								<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<section class="docs-main">
+			<article class="content">
+				<p class="docs-category">{% if page.category %}{{ page.category }}{% else %}{{ site.display_title }}{% endif %}</p>
+				<h2>{{ page.title }}</h2>
+
+				{% assign requirements = "" %}
+
+				{% if page.requirements.build == 'Jekyll' %}
+					{% assign requirements = requirements | append: ' for <strong>Jekyll</strong> sites' %}
+				{% endif %}
+
+				{% if page.requirements.hosting == 'CloudCannon' %}
+					{% assign requirements = requirements | append: ' with <strong>CloudCannon</strong> hosting' %}
+				{% endif %}
+
+				{% if page.requirements.syncing == 'GitHub' %}
+					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> syncing' %}
+				{% endif %}
+
+				{% if page.requirements.plan == 'Basic' %}
+					{% assign requirements = requirements | append: ' on the <strong>Basic</strong> and <strong>Pro</strong> plans' %}
+				{% elsif page.requirements.plan == 'Pro' %}
+					{% assign requirements = requirements | append: ' on the <strong>Pro</strong> plan' %}
+				{% endif %}
+
+				{% if requirements != "" %}
+					<blockquote class="explainer">Available {{ requirements }}.</blockquote>
+				{% endif %}
+
+				<div>{{ content }}</div>
+
+				<script>{% include anchor-links.js %}</script>
+			</article>
+		</section>
+	</div>
+</div>

@@ -1,0 +1,100 @@
+# ----
+# Site
+
+title: CloudCannon Documentation
+display_title: Documentation
+url: "https://docs.cloudcannon.com"
+baseurl:
+google_analytics_key: UA-37472773-15
+show_full_navigation: false
+theme: jekyll-theme-cloudcannon
+
+active_sibling: Documentation
+main_url: https://cloudcannon.com
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Documentation for CloudCannon, the Cloud CMS for Jekyll.
+social:
+  name: CloudCannon
+  links:
+    - https://www.facebook.com/CloudCannon
+    - https://twitter.com/CloudCannon
+    - https://plus.google.com/+CloudCannon
+    - https://www.youtube.com/c/CloudCannon
+twitter:
+  username: CloudCannon
+
+# -----
+# Build
+
+permalink: pretty
+
+plugins:
+  - jekyll-data
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      hide_cta: true
+      layout: structure
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: doc
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      hide_disqus: true
+      _comments:
+        type: Marks the impact of this release
+
+# -----------
+# CloudCannon
+
+types:
+  - minor
+  - major
+
+builds:
+  - Any
+  - Static
+  - Jekyll
+
+plans:
+  - Free
+  - Basic
+  - Pro
+
+hostings:
+  - Any
+  - CloudCannon

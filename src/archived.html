@@ -1,0 +1,13 @@
+---
+layout: info-page
+title: Archived Blog Posts
+permalink: /changelog/archived/
+---
+
+<h1>Archived posts</h1>
+
+<ul>
+	{% for post in site.posts offset: 10 %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>

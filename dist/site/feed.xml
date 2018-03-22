@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_NZ"><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://docs.cloudcannon.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://docs.cloudcannon.com/" rel="alternate" type="text/html" hreflang="en_NZ" /><updated>2018-03-22T15:33:35+13:00</updated><id>https://docs.cloudcannon.com/</id><title type="html">CloudCannon Documentation</title><subtitle>Documentation for CloudCannon, the Cloud CMS for Jekyll.</subtitle><entry><title type="html">Image improvements</title><link href="https://docs.cloudcannon.com/2018/03/20/image-improvements/" rel="alternate" type="text/html" title="Image improvements" /><published>2018-03-20T00:00:00+13:00</published><updated>2018-03-20T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2018/03/20/image-improvements</id><content type="html" xml:base="https://docs.cloudcannon.com/2018/03/20/image-improvements/">&lt;p&gt;This release adds two major improvements to image editables and path front matter inputs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Configurable asset upload paths&lt;/li&gt;
+  &lt;li&gt;Image editables now use srcset when uploaded image is large enough&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mixed content warnings with http:// images&lt;/li&gt;
+  &lt;li&gt;Code block indentation&lt;/li&gt;
+  &lt;li&gt;Resize options showing undefined&lt;/li&gt;
+  &lt;li&gt;URL view overlapping comments&lt;/li&gt;
+  &lt;li&gt;Allow hyphens for SAML issuer suffix&lt;/li&gt;
+  &lt;li&gt;Markdown code sections don’t escape underscores, asterisks and slashes&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release adds two major improvements to image editables and path front matter inputs.</summary></entry><entry><title type="html">Scheduled Builds</title><link href="https://docs.cloudcannon.com/2018/02/12/scheduled-builds/" rel="alternate" type="text/html" title="Scheduled Builds" /><published>2018-02-12T00:00:00+13:00</published><updated>2018-02-12T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2018/02/12/scheduled-builds</id><content type="html" xml:base="https://docs.cloudcannon.com/2018/02/12/scheduled-builds/">&lt;p&gt;This release introduces scheduling for future posts and arbitrary site builds. Timezone support has been overhauled to ensure clarity when setting up automated or manual future builds.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scheduled and repeating builds&lt;/li&gt;
+  &lt;li&gt;Support for timezones&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Editable Regions&lt;/em&gt; now output formatted HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Toggle details for metrics views fixed&lt;/li&gt;
+  &lt;li&gt;YAML long text no longer default entry for new array entries&lt;/li&gt;
+  &lt;li&gt;New categories can be added again in front matter multi select field&lt;/li&gt;
+  &lt;li&gt;“Post” no longer erroneously appearing in front matter select option&lt;/li&gt;
+  &lt;li&gt;Bitbucket Connect interface fixed&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release introduces scheduling for future posts and arbitrary site builds. Timezone support has been overhauled to ensure clarity when setting up automated or manual future builds.</summary></entry><entry><title type="html">Custom Editor Styles</title><link href="https://docs.cloudcannon.com/2018/01/23/custom-editor-styles/" rel="alternate" type="text/html" title="Custom Editor Styles" /><published>2018-01-23T00:00:00+13:00</published><updated>2018-01-23T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2018/01/23/custom-editor-styles</id><content type="html" xml:base="https://docs.cloudcannon.com/2018/01/23/custom-editor-styles/">&lt;p&gt;This release extends the editor configuration to allow custom styles, alignment and structure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Customisable styles dropdown for &lt;em&gt;Content Editor&lt;/em&gt;, &lt;em&gt;Editable Regions&lt;/em&gt; and &lt;em&gt;Rich Text&lt;/em&gt; fields&lt;/li&gt;
+  &lt;li&gt;Alignment toolbar options&lt;/li&gt;
+  &lt;li&gt;Format toolbar options&lt;/li&gt;
+  &lt;li&gt;Base domain and HTTP to HTTPS redirects are now 301 instead of 302&lt;/li&gt;
+  &lt;li&gt;Better performance for date and date time fields&lt;/li&gt;
+  &lt;li&gt;Increased the allowed character set for folders&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Image resizing for files with mixed or upper case extensions no longer bypassed&lt;/li&gt;
+  &lt;li&gt;Inline images in the &lt;em&gt;Content Editor&lt;/em&gt; are no longer styled as if they were block level&lt;/li&gt;
+  &lt;li&gt;Import image from a URL functionality restored&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release extends the editor configuration to allow custom styles, alignment and structure.</summary></entry><entry><title type="html">General fixes</title><link href="https://docs.cloudcannon.com/2018/01/11/general-fixes/" rel="alternate" type="text/html" title="General fixes" /><published>2018-01-11T00:00:00+13:00</published><updated>2018-01-11T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2018/01/11/general-fixes</id><content type="html" xml:base="https://docs.cloudcannon.com/2018/01/11/general-fixes/">&lt;p&gt;This release contains general fixes and consistency changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create organisation button is disabled after submit&lt;/li&gt;
+  &lt;li&gt;Collection breadcrumb is consistent with navigation&lt;/li&gt;
+  &lt;li&gt;Permissions of files maintained in syncing&lt;/li&gt;
+  &lt;li&gt;HTTPS upgrade is a 301 instead of 302&lt;/li&gt;
+  &lt;li&gt;FTP output reliability and performance&lt;/li&gt;
+  &lt;li&gt;External org users issues&lt;/li&gt;
+  &lt;li&gt;Reduced trial emails&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release contains general fixes and consistency changes.</summary></entry><entry><title type="html">New and Improved Front Matter Interfaces</title><link href="https://docs.cloudcannon.com/2017/12/21/new-and-improved-front-matter-interfaces/" rel="alternate" type="text/html" title="New and Improved Front Matter Interfaces" /><published>2017-12-21T00:00:00+13:00</published><updated>2017-12-21T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2017/12/21/new-and-improved-front-matter-interfaces</id><content type="html" xml:base="https://docs.cloudcannon.com/2017/12/21/new-and-improved-front-matter-interfaces/">&lt;p&gt;This release focuses on the front matter editing experience and general fixes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/editing/front-matter/#code-block&quot;&gt;Code front matter interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/editing/front-matter/#url&quot;&gt;URL front matter interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/editing/front-matter/#large-text&quot;&gt;Long text field front matter interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;data-src is rewritten when optimised&lt;/li&gt;
+  &lt;li&gt;Git repositories are split by the owner when adding a provider&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improved sync speeds&lt;/li&gt;
+  &lt;li&gt;Large CSVs are loaded faster&lt;/li&gt;
+  &lt;li&gt;Rotation on jpeg images is applied on upload&lt;/li&gt;
+  &lt;li&gt;Switch editor state and context menu text is no longer set to brand color&lt;/li&gt;
+  &lt;li&gt;Credit card failure messages on change plan more obvious&lt;/li&gt;
+  &lt;li&gt;Clicking remove in the CSV editor removes the last row&lt;/li&gt;
+  &lt;li&gt;Layout select doesn’t blank field if set to missing layout&lt;/li&gt;
+  &lt;li&gt;Credit card form shows error messages&lt;/li&gt;
+  &lt;li&gt;New lines in markdown table content&lt;/li&gt;
+  &lt;li&gt;Underscores escaped in markdown output&lt;/li&gt;
+  &lt;li&gt;Space after first three dashes stopped front matter editor loading&lt;/li&gt;
+  &lt;li&gt;Front matter _number no longer blanks non-number fields&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release focuses on the front matter editing experience and general fixes.</summary></entry><entry><title type="html">Sierra Safari Fix</title><link href="https://docs.cloudcannon.com/2017/12/09/sierra-safari-fix/" rel="alternate" type="text/html" title="Sierra Safari Fix" /><published>2017-12-09T00:00:00+13:00</published><updated>2017-12-09T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2017/12/09/sierra-safari-fix</id><content type="html" xml:base="https://docs.cloudcannon.com/2017/12/09/sierra-safari-fix/">&lt;p&gt;This release fixes the editor in all older versions of MacOS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MacOS before High Sierra Safari editor size&lt;/li&gt;
+  &lt;li&gt;Empty brand add button working in all browsers&lt;/li&gt;
+  &lt;li&gt;Scroll into view on file create works in new design&lt;/li&gt;
+  &lt;li&gt;Collection configure has correct spacing and doesn’t error&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release fixes the editor in all older versions of MacOS.</summary></entry><entry><title type="html">Outputs &amp;amp; Custom Editor Toolbars</title><link href="https://docs.cloudcannon.com/2017/12/06/outputs-custom-editor-toolbars/" rel="alternate" type="text/html" title="Outputs &amp; Custom Editor Toolbars" /><published>2017-12-06T00:00:00+13:00</published><updated>2017-12-06T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2017/12/06/outputs--custom-editor-toolbars</id><content type="html" xml:base="https://docs.cloudcannon.com/2017/12/06/outputs-custom-editor-toolbars/">&lt;p&gt;This release adds two major features, the option to output a generated site and editor toolbar customisation. See &lt;a href=&quot;https://cloudcannon.com/features/2017/12/07/build-outputs-and-toolbar-options/&quot;&gt;our feature post in our blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rework of &lt;em&gt;Site Settings&lt;/em&gt; / &lt;em&gt;Storage Providers&lt;/em&gt; to &lt;em&gt;Site Settings&lt;/em&gt; / &lt;em&gt;File Syncing&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Added &lt;em&gt;Site Settings&lt;/em&gt; / &lt;em&gt;Storage Providers&lt;/em&gt; / &lt;em&gt;&lt;a href=&quot;/syncing/output/&quot;&gt;Output&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/editing/options/&quot;&gt;Customise editor toolbars&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/editing/options/&quot;&gt;New controls options&lt;/a&gt; (e.g. table, subscript, superscript)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hex validation on brand color&lt;/li&gt;
+  &lt;li&gt;Build icon spins the right way in Status and alignment fixed&lt;/li&gt;
+  &lt;li&gt;Add items to a certain cases of front matter arrays&lt;/li&gt;
+  &lt;li&gt;Download invoice fixed&lt;/li&gt;
+  &lt;li&gt;CSV editor now works with no entries&lt;/li&gt;
+  &lt;li&gt;Extensionless URLs redirects to &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;/index.html&lt;/code&gt; for index pages&lt;/li&gt;
+  &lt;li&gt;Name spaced editor injected CSS&lt;/li&gt;
+  &lt;li&gt;Force HTTPS now works on password pages&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release adds two major features, the option to output a generated site and editor toolbar customisation. See our feature post in our blog.</summary></entry><entry><title type="html">Redesigned App &amp;amp; Org Branding</title><link href="https://docs.cloudcannon.com/2017/11/24/redesigned-app-org-branding/" rel="alternate" type="text/html" title="Redesigned App &amp; Org Branding" /><published>2017-11-24T00:00:00+13:00</published><updated>2017-11-24T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2017/11/24/redesigned-app--org-branding</id><content type="html" xml:base="https://docs.cloudcannon.com/2017/11/24/redesigned-app-org-branding/">&lt;p&gt;This release changes the layout of our app pages and adds org branding features. &lt;a href=&quot;https://cloudcannon.com/features/2017/11/22/app-redesign/&quot;&gt;Read release post at cloudcannon.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Before:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/change-log/old-sites-list-empty.png&quot; alt=&quot;Old sites list&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;After:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/change-log/new-sites-list-empty.png&quot; alt=&quot;New sites list&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">This release changes the layout of our app pages and adds org branding features. Read release post at cloudcannon.com.</summary></entry><entry><title type="html">Redesigned Login Screens</title><link href="https://docs.cloudcannon.com/2017/11/03/redesigned-login-screens/" rel="alternate" type="text/html" title="Redesigned Login Screens" /><published>2017-11-03T00:00:00+13:00</published><updated>2017-11-03T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2017/11/03/redesigned-login-screens</id><content type="html" xml:base="https://docs.cloudcannon.com/2017/11/03/redesigned-login-screens/">&lt;p&gt;This release changes the layout of our pre-app pages including login, sign up and Client Sharing login. More changes coming soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Before:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/change-log/old-login.png&quot; alt=&quot;Old login screen&quot; srcset=&quot;/images/change-log/old-login.png 800w, /images/change-log/old-login@2x.png 1600w&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;After:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/change-log/new-login.png&quot; alt=&quot;New login screen&quot; srcset=&quot;/images/change-log/new-login.png 800w, /images/change-log/new-login@2x.png 1600w&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">This release changes the layout of our pre-app pages including login, sign up and Client Sharing login. More changes coming soon.</summary></entry><entry><title type="html">Publish Requests</title><link href="https://docs.cloudcannon.com/2017/10/14/publish-requests/" rel="alternate" type="text/html" title="Publish Requests" /><published>2017-10-14T00:00:00+13:00</published><updated>2017-10-14T00:00:00+13:00</updated><id>https://docs.cloudcannon.com/2017/10/14/publish-requests</id><content type="html" xml:base="https://docs.cloudcannon.com/2017/10/14/publish-requests/">&lt;p&gt;This release provides support for merging with pull requests instead of a direct merge.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/syncing/publishing/#publish-requests&quot;&gt;Publish Request&lt;/a&gt; workflow&lt;/li&gt;
+  &lt;li&gt;Updated Dropbox logos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Forking a template now saves a better repository full name rather than relying on a redirect&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This release provides support for merging with pull requests instead of a direct merge.</summary></entry></feed>
