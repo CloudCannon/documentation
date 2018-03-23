@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://docs.cloudcannon.com/sitemap.xml
-Disallow: /search/
