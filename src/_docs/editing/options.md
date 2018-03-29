@@ -110,6 +110,7 @@ _options:
     format: p h1 h2 h3 h4 h5 h6 pre address div
     bold: true
     numberedlist: true
+    code: true
     table: true
     right: align-to-right
     styles: /_sass/_content-typography.scss
@@ -138,6 +139,7 @@ underline | |
 strike | |
 subscript | |
 superscript | |
+code (unavailable for `_text`) | |
 format (unavailable for `_text`) | *true*, *false* or space separated options |
 blockquote (unavailable for `_text`) | |
 numberedlist (unavailable for `_text`) | |
