@@ -1,5 +1,5 @@
 ---
-title: Custom Collections Dir and Projects View
+title: Custom Collections Directory and Projects View
 type: minor
 ---
 
