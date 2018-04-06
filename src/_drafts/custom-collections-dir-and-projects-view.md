@@ -8,4 +8,4 @@ This release adds support for custom collection directories and a new way to vie
 **Features:**
 
 * New projects view for sites
-* Support for collection\_dir (added to Jekyll 3.7.0)
+* Support for `collection_dir` (added to Jekyll 3.7.0)
