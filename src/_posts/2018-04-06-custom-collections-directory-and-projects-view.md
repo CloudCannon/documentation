@@ -9,3 +9,4 @@ This release adds support for custom collection directories and a new way to vie
 
 * New projects view for sites
 * Support for `collections_dir` (added to Jekyll 3.7.0)
+* Build & Editing locking for sites (available in *Site Settings / Details*)
