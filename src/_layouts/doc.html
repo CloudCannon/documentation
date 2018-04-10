@@ -4,12 +4,6 @@ layout: default
 
 <header class="short">
 	{% include navigation/top.html %}
-		<!-- <form action="{{ site.baseurl }}/search/" method="get" class="search-input-container">
-			<input type="text" name="q" id="search-input" placeholder="Search" data-autofocus>
-			<div class="search-input-icon">{% include icons/search.svg %}</div>
-
-			<input type="submit" value="Search" style="display: none;">
-		</form> -->
 </header>
 
 <div class="dark-content docs-container">
@@ -68,3 +62,7 @@ layout: default
 		</section>
 	</div>
 </div>
+
+<script>
+	{% include autofocus.js %}
+</script>
