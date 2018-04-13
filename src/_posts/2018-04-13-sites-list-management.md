@@ -31,3 +31,4 @@ This release improves the sites list interface with filtering and grouping. Addi
 * Comments on offending front matter fields no longer obscured
 * Better handling of back ticks when saving back to Markdown source file
 * Code tags with inner &lt;br&gt; kept as HTML when saving back to Markdown source file
+* Images and titles displayed correctly in Explore and Content Editor for collection items in sites with custom source directories
