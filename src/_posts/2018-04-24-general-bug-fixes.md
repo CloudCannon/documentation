@@ -20,3 +20,6 @@ This release includes fixes for various minor issues across the application, and
 * Images are now saved with the correct URL if editor is saved before images upload fully
 * Subscription now set correctly after re-enabling accounts in some previously wrong edge cases
 * Invoices now show correct information in some previously wrong edge cases
+* Issues with custom src sites now display the correct paths in the front matter path interfaces
+* Removing team members will no longer place them in the collaborators section
+* Sites will extensionless urls will no longer redirect infinitely in the editor
