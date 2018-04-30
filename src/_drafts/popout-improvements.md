@@ -15,3 +15,4 @@ This release brings overhauled editing interfaces for links and images inside th
 
 * Issue saving an image under the wrong URL
 * Removed problematic mailto link encoding scheme
+* Issue preventing publish when no changes made
