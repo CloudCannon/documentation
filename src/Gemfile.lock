@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CloudCannon/jekyll-theme-cloudcannon.git
-  revision: 740eb30d579ecad443ec0896c5ff1d3ef65b83f2
+  revision: d5d6edb8521cb66e6ab3b53e9133ec19c07c8f91
   branch: master
   specs:
     jekyll-theme-cloudcannon (0.1.0)
