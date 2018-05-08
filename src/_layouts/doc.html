@@ -45,6 +45,10 @@ layout: default
 					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> syncing' %}
 				{% endif %}
 
+				{% if page.requirements.syncing == 'Git' %}
+					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> or <strong>Bitbucket</strong> syncing' %}
+				{% endif %}
+
 				{% if page.requirements.plan == 'Basic' %}
 					{% assign requirements = requirements | append: ' on the <strong>Basic</strong> and <strong>Pro</strong> plans' %}
 				{% elsif page.requirements.plan == 'Pro' %}
