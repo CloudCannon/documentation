@@ -3,13 +3,4 @@ title: Outputs hotfix
 type: minor
 ---
 
-This release
-
-**Features:**
-
-* 
-
-
-**Fixes:**
-
-* 
+This release fixes an issue preventing connecting a GitHub or Bitbucket as an output.
