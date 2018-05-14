@@ -1,5 +1,5 @@
 ---
-title: Outputs hotfix
+title: Outputs Hotfix
 type: minor
 ---
 
