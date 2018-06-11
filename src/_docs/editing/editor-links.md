@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. Alternatively, add front matter *Editor Links* to open the front matter editor at that variables location.
+*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. Alternatively, add front matter *Editor Links* to open the front matter editor at specified fields.
 
 *Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
@@ -26,7 +26,7 @@ Front matter *Editor Links* are prefixed with `cloudcannon:#` and match the Liqu
 * `<a href="cloudcannon:#object.array">Edit an array within an object</a>`
 * `<a href="cloudcannon:#object.array[0].title">Edit the title of the first array item within an object</a>`
 
----
+### Posts
 
 To have edit links for posts in a list, add an Editor Link in the blog post loop:
 
@@ -47,7 +47,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 
 ![CloudCannon blog posts with edit buttons](/images/editing/editor-links/blog-posts.png){: srcset="/images/editing/editor-links/blog-posts.png 800w, /images/editing/editor-links/blog-posts@2x.png 1600w"}{: .screenshot}
 
----
+### Collection Items
 
 To have an edit link on a collection item page, add the following to the page:
 
@@ -64,7 +64,7 @@ If you are using a custom `collections_dir` include `site.collections_dir` in yo
 > When generating *Editor Links* in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
 {: .explainer}
 
----
+### Toggling Visiblilty
 
 To show *Editor Links* inside the editor and hide them on the live site:
 
@@ -84,3 +84,14 @@ To show *Editor Links* inside the editor and hide them on the live site:
 
 > CloudCannon adds the `.cms-editor-active` class to the `body` of your site in the [Visual Editor](/editing/visual-editor/). The class is not on the live site.
 {: .explainer}
+
+### Front Matter Style
+
+Front matter can be highlighted within the sidebar or displayed standalone in a modal pop up. To change how an editor link opens:
+
+1. Add the `data-cms-editor-link-style` attribute
+2. Set the attribute's value to **modal** or **sidebar** (optional)
+
+```
+<a href="cloudcannon:#title" data-cms-editor-link-style="modal">Edit the title</a>
+```
