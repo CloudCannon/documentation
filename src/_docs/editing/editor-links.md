@@ -95,3 +95,6 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 ```
 <a href="cloudcannon:#title" data-cms-editor-link-style="modal">Edit the title</a>
 ```
+
+> Using modal-style editor links that point directly to [hidden fields](/editing/front-matter/#hidden) show the field.
+{: .explainer}

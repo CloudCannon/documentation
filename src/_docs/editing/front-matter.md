@@ -311,6 +311,7 @@ examples:
       ---
       _image_src: /src/
       ---
+    info: Alternatively, hide fields without changing the key name with [Options](/editing/options/#hidden-fields).
 ---
 
 Front matter is a [Jekyll feature](http://jekyllrb.com/docs/frontmatter/) to set custom variables for a page.
