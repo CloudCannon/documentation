@@ -92,7 +92,7 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 1. Add the `data-cms-editor-link-style` attribute
 2. Set the attribute's value to **modal** or **sidebar** (optional)
 
-```
+```html
 <a href="cloudcannon:#title" data-cms-editor-link-style="modal">Edit the title</a>
 ```
 
