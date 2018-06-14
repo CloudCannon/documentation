@@ -99,4 +99,4 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 > Using modal-style editor links that point directly to [hidden fields](/editing/front-matter/#hidden) show the field.
 {: .explainer}
 
-Cloudcannon adds the `cms-editor-link-dirty` class to Editor Links after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
+CloudCannon adds the `cms-editor-link-dirty` class to *Editor Links* after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
