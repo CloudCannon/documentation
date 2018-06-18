@@ -49,3 +49,34 @@ defaults:
 {% endhighlight %}
 
 ![Content Editor with no content section](/images/editing/content-editor-hidden-content.png){: srcset="/images/editing/content-editor-hidden-content.png 800w, /images/editing/content-editor-hidden-content@2x.png 1600w"}{: .screenshot}
+
+### Hiding the Title
+
+If you have the main title within the content area, you might want to hide the editor title. Toggle the title in the *Content Editor* with `_hide_title`. Configure it with one of the following methods.
+
+The collection definition in `_config.yml`:
+
+{% highlight yaml %}
+collections:
+  projects:
+    output: false
+    _hide_title: true
+{% endhighlight %}
+
+Directly in the front matter:
+
+{% highlight markdown %}
+---
+title: Hello World
+_hide_title: true
+---
+{% endhighlight %}
+
+Jekyll defaults in `_config.yml`:
+
+{% highlight yaml %}
+defaults:
+  - type: 'projects'
+    values:
+      _hide_title: true
+{% endhighlight %}

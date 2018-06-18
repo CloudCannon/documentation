@@ -36,8 +36,7 @@ CloudCannon works directly with the static or Jeykll source files you provide. T
 ![File Browser with Add Files menu open](/images/overview/file-browser-add-menu.png){: srcset="/images/overview/file-browser-add-menu.png 800w, /images/overview/file-browser-add-menu@2x.png 1600w"}{: .screenshot}
 
 > Some browsers do not support folder upload. The best alternative in this case is syncing with a storage provider.
-{: .explainer}
-{: .warning}
+{: .explainer .warning}
 
 Each file uploads individually to CloudCannon through your web browser.
 After the uploads finish, CloudCannon builds the site and deploys it to a test domain.

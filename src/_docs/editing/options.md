@@ -89,6 +89,21 @@ Configure the various editing interfaces for your clients to optimise for their 
 * Custom scope with Jekyll Defaults
 
 
+### Hidden Fields
+
+Control which front matter fields your editors see with the `hidden` option.
+
+{% highlight yaml %}
+_options:
+  layout:
+    hidden: true
+{% endhighlight %}
+
+Hidden fields can be edited with modal-style [Editor Links](/editing/editor-links/#front-matter-style).
+
+> Alternatively, hide front matter fields by prefixing the key with an underscore (e.g. `_hidden_text`).
+{: .explainer}
+
 ### Toolbars
 
 Control the toolbar options for your clients or editors to increase focus on the content at hand.
@@ -129,30 +144,30 @@ The complete list of options follows, all values can either be *true* or *false*
 
 | Option | Values |
 | ------ | ------ |
-bold | |
-italic | |
-removeformat | |
-link | |
-undo | |
-redo | |
-underline | |
-strike | |
-subscript | |
-superscript | |
-code (unavailable for `_text`) | |
-format (unavailable for `_text`) | *true*, *false* or space separated options |
-blockquote (unavailable for `_text`) | |
-numberedlist (unavailable for `_text`) | |
-bulletedlist (unavailable for `_text`) | |
-outdent (unavailable for `_text`) | |
-indent (unavailable for `_text`) | |
-image (unavailable for `_text` or *Rich Text* fields) | |
-table (unavailable for `_text`) | |
-styles (unavailable for `_text`) | *false*, or path to source CSS file |
-left (unavailable for `_text`) | *false* or string of class name |
-center (unavailable for `_text`) | *false* or string of class name |
-right (unavailable for `_text`) | *false* or string of class name |
-justify (unavailable for `_text`) | *false* or string of class name |
+| bold | |
+| italic | |
+| removeformat | |
+| link | |
+| undo | |
+| redo | |
+| underline | |
+| strike | |
+| subscript | |
+| superscript | |
+| code (unavailable for `_text`) | |
+| format (unavailable for `_text`) | *true*, *false* or space separated options |
+| blockquote (unavailable for `_text`) | |
+| numberedlist (unavailable for `_text`) | |
+| bulletedlist (unavailable for `_text`) | |
+| outdent (unavailable for `_text`) | |
+| indent (unavailable for `_text`) | |
+| image (unavailable for `_text` or *Rich Text* fields) | |
+| table (unavailable for `_text`) | |
+| styles (unavailable for `_text`) | *false*, or path to source CSS file |
+| left (unavailable for `_text`) | *false* or string of class name |
+| center (unavailable for `_text`) | *false* or string of class name |
+| right (unavailable for `_text`) | *false* or string of class name |
+| justify (unavailable for `_text`) | *false* or string of class name |
 
 ### Styles
 

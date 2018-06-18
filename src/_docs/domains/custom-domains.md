@@ -26,8 +26,7 @@ To add a custom domain:
 ### Configuring your domain
 
 > Changes to DNS can take up to 48 hours to propagate, depending on the previous TTL set. Test your site is configured correctly with the [pingdom DNS checker](http://dnscheck.pingdom.com/){: target="_blank"}.
-{: .explainer}
-{: .warning}
+{: .explainer .warning}
 
 Configuration instructions are shown after adding a domain. There are two choices:
 
@@ -56,8 +55,7 @@ To configure your domain with *CloudCannon DNS*:
 ### External DNS
 
 > *CloudCannon DNS* is strongly recommended for sites on apex domains (no subdomain). *External DNS* relies on an A record mapped to a single server. This cannot be dynamically load balanced, reducing redundancy and increasing potential down time risk.
-{: .explainer}
-{: .warning}
+{: .explainer .warning}
 
 To configure your domain with *External DNS*:
 

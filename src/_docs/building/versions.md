@@ -24,5 +24,4 @@ gem 'jekyll', '3.6.0'
 ~~~
 
 > Jekyll **3.1.0**, **3.1.1**, **3.1.2** and **3.1.3** are not supported due to a `jsonify` filter bug.
-{: .explainer}
-{: .warning}
+{: .explainer .warning}
