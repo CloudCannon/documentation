@@ -171,6 +171,14 @@ formEl.addEventListener("submit", function (e) {
 });
 {% endhighlight %}
 
+### Security
+
+To protect your information and prevent spam these fields are encrypted before being served to the user.
+
++ `_to`
++ `_cc`
++ `_hook`
+
 ### Webhooks
 
 The `_hook` field allows you to supply a webhook that you control in order to process the form submission outside of email.
@@ -196,14 +204,6 @@ Note that IFTTT does not support custom **JSON** keys. Webhook Applets have acce
 {% endhighlight %}
 
 Zapier and Automate do not have a limitation on the number of fields or custom keys.
-
-### Security
-
-To protect your information and prevent spam these fields are encrypted before being served to the user.
-
-+ `_to`
-+ `_cc`
-+ `_hook`
 
 ### Google reCAPTCHA
 
