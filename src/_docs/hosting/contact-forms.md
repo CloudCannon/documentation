@@ -44,7 +44,6 @@ To create a contact form:
 </form>
 {% endhighlight %}
 
-
 ### Special Fields
 
 Use these fields to customise the email CloudCannon sends through the form. The fields can be hidden or visible depending on your requirements.
@@ -52,8 +51,9 @@ Use these fields to customise the email CloudCannon sends through the form. The 
 #### `_to`
 {: .required}
 
-The address (or addresses) that CloudCannon sends the email to.
-Send the email to multiple addresses by separating them with commas.
+The address (or addresses) that CloudCannon sends the email to. Send the email to multiple addresses by separating them with commas.
+
+If a&nbsp;`_hook`&nbsp;is defined, this field will not be used.
 
 {% highlight html %}
 <input type="hidden" name="_to" value="contact@example.com">
@@ -61,8 +61,7 @@ Send the email to multiple addresses by separating them with commas.
 
 #### `_replyto` or `email`
 
-The value used for the Reply-To header in the email.
-Use this to ensure clients reply to the visitor rather than a default CloudCannon address.
+The value used for the Reply-To header in the email. Use this to ensure clients reply to the visitor rather than a default CloudCannon address.
 
 {% highlight html %}
 <label>
@@ -85,9 +84,7 @@ The subject of the email.
 
 #### `_cc`
 
-The value used for the CC header in the email.
-Use this to send a copy in another address (or addresses) without sending it directly.
-Send a copy of the email to multiple addresses by separating them with commas.
+The value used for the CC header in the email. Use this to send a copy in another address (or addresses) without sending it directly. Send a copy of the email to multiple addresses by separating them with commas.
 
 {% highlight html %}
 <input type="hidden" name="_cc" value="contact@example.com">
@@ -95,7 +92,7 @@ Send a copy of the email to multiple addresses by separating them with commas.
 
 #### `_hook`
 
-A custom webhook to send the form data.
+Instead of sending an email, a webhook can be supplied for the data to be sent to.&nbsp;
 
 {% highlight html %}
 <input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/1234567/abcdef/">
@@ -106,9 +103,7 @@ A custom webhook to send the form data.
 
 #### `_gotcha`
 
-Honeypot field for preventing untargeted spam.
-CloudCannon does **not** send the email if this field has a value.
-Hide it with CSS to prevent visitors filling it out.
+Honeypot field for preventing untargeted spam. CloudCannon does **not** send the email if this field has a value. Hide it with CSS to prevent visitors filling it out.
 
 {% highlight html %}
 <input type="text" name="_gotcha" style="display: none;">
@@ -119,8 +114,7 @@ Hide it with CSS to prevent visitors filling it out.
 
 ### Submitting with AJAX
 
-Submitting a form with JavaScript saves a page load after sending a message, providing a more seamless experience.
-Viewers without JavaScript enabled fall back to the normal flow.
+Submitting a form with JavaScript saves a page load after sending a message, providing a more seamless experience. Viewers without JavaScript enabled fall back to the normal flow.
 
 To submit your contact form with JavaScript:
 
@@ -175,22 +169,22 @@ formEl.addEventListener("submit", function (e) {
 
 To protect your information and prevent spam these fields are encrypted before being served to the user.
 
-+ `_to`
-+ `_cc`
-+ `_hook`
+* `_to`
+* `_cc`
+* `_hook`
 
 ### Webhooks
 
-The `_hook` field allows you to supply a webhook that you control in order to process the form submission outside of email.
-The data is sent as a **POST** request with the Content Type `application/json`.
+The `_hook` field allows you to supply a webhook that you control in order to process the form submission outside of email. The data is sent as a **POST** request with the Content Type `application/json`.
 
 For security, we currently allow hooks from the following platforms to be used:
-- [Zapier](https://zapier.com/){:target="_blank"}
-    - [Documentation](https://zapier.com/help/webhooks/){:target="_blank"}
-- [Automate](https://automate.io/){:target="_blank"}
-    - [Documentation](https://docs.automate.io/apps/webhooks){:target="_blank"}
-- [IFTTT](https://ifttt.com/){:target="_blank"}
-    - [Help Page](https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service){:target="_blank"}
+
+* [Zapier](https://zapier.com/){: target="_blank"}
+  * [Documentation](https://zapier.com/help/webhooks/){: target="_blank"}
+* [Automate](https://automate.io/){: target="_blank"}
+  * [Documentation](https://docs.automate.io/apps/webhooks){: target="_blank"}
+* [IFTTT](https://ifttt.com/){: target="_blank"}
+  * [Help Page](https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service){: target="_blank"}
 
 If you have use cases beyond these platforms, [send us a message](https://cloudcannon.com/contact/).
 
@@ -207,9 +201,7 @@ Zapier and Automate do not have a limitation on the number of fields or custom k
 
 ### Google reCAPTCHA
 
-[reCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
-CloudCannon does **not** send the email if the CAPTCHA fails to validate.
-[reCAPTCHA](https://developers.google.com/recaptcha/) requires additional configuration in the *Site Settings*.
+[reCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam. CloudCannon does **not** send the email if the CAPTCHA fails to validate. [reCAPTCHA](https://developers.google.com/recaptcha/) requires additional configuration in the *Site Settings*.
 
 ![reCAPTCHA Example](/images/hosting/captcha.gif)
 
@@ -219,8 +211,8 @@ To add [reCAPTCHA](https://developers.google.com/recaptcha/) to your site:
 2. Add the form element by following the instructions at the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
 3. Add the secret and key to *Site Settings* / *Forms*
 
-![reCAPTCHA Configuration](/images/hosting/recaptcha.png){: srcset="/images/hosting/recaptcha.png 800w, /images/hosting/recaptcha@2x.png 1600w"}{: .screenshot}
+![reCAPTCHA Configuration](/images/hosting/recaptcha.png){: .screenshot srcset="/images/hosting/recaptcha.png 800w, /images/hosting/recaptcha@2x.png 1600w"}
 
 Once configured, any form submissions that fail to validate will return a 401 error page.
 
-![401 Error Page](/images/hosting/401-error.png){: srcset="/images/hosting/401-error.png 800w, /images/hosting/401-error@2x.png 1600w"}{: .screenshot}
+![401 Error Page](/images/hosting/401-error.png){: .screenshot srcset="/images/hosting/401-error.png 800w, /images/hosting/401-error@2x.png 1600w"}
