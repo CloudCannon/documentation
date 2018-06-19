@@ -31,6 +31,8 @@ layout: default
 				<p class="docs-category">{% if page.category %}{{ page.category }}{% else %}{{ site.display_title }}{% endif %}</p>
 				<h2>{{ page.title }}</h2>
 
+				<div class="toc">{% include toc.html html=content h_max=3 %}</div>
+				
 				{% assign requirements = "" %}
 
 				{% if page.requirements.build == 'Jekyll' %}
