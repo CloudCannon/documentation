@@ -37,6 +37,7 @@ To create a contact form:
 
   <input type="hidden" name="_to" value="sales@example.com,support@example.com">
   <input type="hidden" name="_cc" value="sales.tracker@example.com">
+  <input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/1234567/abcdef/">
   <input type="text" name="_gotcha" style="display: none;">
 
   <input type="submit" value="Send Message">
@@ -92,6 +93,17 @@ Send a copy of the email to multiple addresses by separating them with commas.
 <input type="hidden" name="_cc" value="contact@example.com">
 {% endhighlight %}
 
+#### `_hook`
+
+A custom webhook to send the form data.
+
+{% highlight html %}
+<input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/1234567/abcdef/">
+{% endhighlight %}
+
+> See [Webhooks](#webhooks).
+{: .explainer}
+
 #### `_gotcha`
 
 Honeypot field for preventing untargeted spam.
@@ -104,28 +116,6 @@ Hide it with CSS to prevent visitors filling it out.
 
 > For better spam prevention try using [Google reCAPTCHA](#google-recaptcha).
 {: .explainer}
-
-
-### Google reCAPTCHA
-
-[reCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
-CloudCannon does **not** send the email if the CAPTCHA fails to validate.
-[reCAPTCHA](https://developers.google.com/recaptcha/) requires additional configuration in the *Site Settings*.
-
-![reCAPTCHA Example](/images/hosting/captcha.gif)
-
-To add [reCAPTCHA](https://developers.google.com/recaptcha/) to your site:
-
-1. Sign up for an API key at [https://developers.google.com/recaptcha/](https://developers.google.com/recaptcha/)
-2. Add the form element by following the instructions at the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
-3. Add the secret and key to *Site Settings* / *Forms*
-
-![reCAPTCHA Configuration](/images/hosting/recaptcha.png){: srcset="/images/hosting/recaptcha.png 800w, /images/hosting/recaptcha@2x.png 1600w"}{: .screenshot}
-
-Once configured, any form submissions that fail to validate will return a 401 error page.
-
-![401 Error Page](/images/hosting/401-error.png){: srcset="/images/hosting/401-error.png 800w, /images/hosting/401-error@2x.png 1600w"}{: .screenshot}
-
 
 ### Submitting with AJAX
 
@@ -180,3 +170,57 @@ formEl.addEventListener("submit", function (e) {
   request.send(getFormDataString(formEl));
 });
 {% endhighlight %}
+
+### Webhooks
+
+The `_hook` field allows you to supply a webhook that you control in order to process the form submission outside of email.
+The data is sent as a **POST** request with the Content Type `application/json`.
+
+For security, we currently allow hooks from the following platforms to be used:
+- [Zapier](https://zapier.com/){:target="_blank"}
+    - [Documentation](https://zapier.com/help/webhooks/){:target="_blank"}
+- [Automate](https://automate.io/){:target="_blank"}
+    - [Documentation](https://docs.automate.io/apps/webhooks){:target="_blank"}
+- [IFTTT](https://ifttt.com/){:target="_blank"}
+    - [Help Page](https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service){:target="_blank"}
+
+If you have use cases beyond these platforms, [send us a message](https://cloudcannon.com/contact/).
+
+#### IFTTT
+
+Note that IFTTT does not support custom **JSON** keys. Webhook Applets have access to the three keys `value1`, `value2` and `value3`, the quantity and naming of which is fixed. This means that you will have to reflect this structure in your form, i.e.
+
+{% highlight html %}
+<label>Email Address</label>
+<input type="email" name="value1">
+{% endhighlight %}
+
+Zapier and Automate do not have a limitation on the number of fields or custom keys.
+
+### Security
+
+To protect your information and prevent spam these fields are encrypted before being served to the user.
+
++ `_to`
++ `_cc`
++ `_hook`
+
+### Google reCAPTCHA
+
+[reCAPTCHA](https://developers.google.com/recaptcha/) embeds a CAPTCHA in your page preventing targeted and untargeted spam.
+CloudCannon does **not** send the email if the CAPTCHA fails to validate.
+[reCAPTCHA](https://developers.google.com/recaptcha/) requires additional configuration in the *Site Settings*.
+
+![reCAPTCHA Example](/images/hosting/captcha.gif)
+
+To add [reCAPTCHA](https://developers.google.com/recaptcha/) to your site:
+
+1. Sign up for an API key at [https://developers.google.com/recaptcha/](https://developers.google.com/recaptcha/)
+2. Add the form element by following the instructions at the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/display).
+3. Add the secret and key to *Site Settings* / *Forms*
+
+![reCAPTCHA Configuration](/images/hosting/recaptcha.png){: srcset="/images/hosting/recaptcha.png 800w, /images/hosting/recaptcha@2x.png 1600w"}{: .screenshot}
+
+Once configured, any form submissions that fail to validate will return a 401 error page.
+
+![401 Error Page](/images/hosting/401-error.png){: srcset="/images/hosting/401-error.png 800w, /images/hosting/401-error@2x.png 1600w"}{: .screenshot}
