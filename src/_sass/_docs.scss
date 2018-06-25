@@ -1,4 +1,6 @@
-
+html, body{
+	scroll-behavior: smooth;
+}
 
 h3 + .warning {
 	margin-top: 1.75em;
@@ -29,4 +31,37 @@ h4 svg {
 
 article.content h3 {
 	margin-top: 40px;
+}
+.docs-container h2 {
+	margin: 0;
+}
+.toc ul {
+	padding: 0;
+	margin: 1rem -1rem 1.5rem -1rem;
+	max-width: 500px;
+	li {
+		margin: 0 1rem;
+		list-style-type: none;
+		font-size: 14px;
+		line-height: 1.8em;
+		a {
+			font-weight: bold;
+			&:before {    
+				content: "┠";
+				display: inline-block;
+				margin-right: 5px;
+				position: relative;
+				transform: scaleY(1.8);
+				font-size: 14px;
+			}
+		}
+
+		&:last-of-type {
+			a {
+				&:before {
+					content: "┖";
+				}
+			}
+		}
+	}
 }

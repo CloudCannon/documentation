@@ -45,7 +45,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 </ul>
 {% endhighlight %}
 
-![CloudCannon blog posts with edit buttons](/images/editing/editor-links/blog-posts.png){: srcset="/images/editing/editor-links/blog-posts.png 800w, /images/editing/editor-links/blog-posts@2x.png 1600w"}{: .screenshot}
+![CloudCannon blog posts with edit buttons](/images/editing/editor-links/blog-posts.png){: .screenshot srcset="/images/editing/editor-links/blog-posts.png 800w, /images/editing/editor-links/blog-posts@2x.png 1600w"}
 
 ### Collection Items
 
@@ -71,7 +71,6 @@ To show *Editor Links* inside the editor and hide them on the live site:
 1. Give the links an appropriate class name (e.g. `.editor-link`).
 2. Use the following CSS to show the links inside the editor only:
 
-
 {% highlight css %}
 .editor-link {
   display: none;
@@ -85,7 +84,7 @@ To show *Editor Links* inside the editor and hide them on the live site:
 > CloudCannon adds the `.cms-editor-active` class to the `body` of your site in the [Visual Editor](/editing/visual-editor/). The class is not on the live site.
 {: .explainer}
 
-### Front Matter Style
+### Editor Link Behaviour
 
 Front matter can be highlighted within the sidebar or displayed standalone in a modal pop up. To change how an editor link opens:
 

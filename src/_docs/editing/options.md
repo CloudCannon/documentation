@@ -129,6 +129,7 @@ _options:
     table: true
     right: align-to-right
     styles: /_sass/_content-typography.scss
+    embed: true
 {% endhighlight %}
 
 You can also set options directly on elements for [Editable Regions](/editing/editable-regions/):
@@ -162,12 +163,26 @@ The complete list of options follows, all values can either be *true* or *false*
 | outdent (unavailable for `_text`) | |
 | indent (unavailable for `_text`) | |
 | image (unavailable for `_text` or *Rich Text* fields) | |
+| embed (unavailable for `_text` or *Rich Text* fields) | |
 | table (unavailable for `_text`) | |
 | styles (unavailable for `_text`) | *false*, or path to source CSS file |
 | left (unavailable for `_text`) | *false* or string of class name |
 | center (unavailable for `_text`) | *false* or string of class name |
 | right (unavailable for `_text`) | *false* or string of class name |
 | justify (unavailable for `_text`) | *false* or string of class name |
+
+### Embedding Media
+
+Allow your editors to embed YouTube, Vimeo, Tweets and other media into their content. Embedded content is sanitised to mitigate XSS risks, which includes removing `style` and `script` tags.
+
+{% highlight yaml %}
+_options:
+  content:
+    embed: true
+{% endhighlight %}
+
+> Add the scripts to the end of pages where embedded content is added to enable the same behaviour (e.g. link the Twitter script that transforms blockquotes into Tweets when a front matter field is **true**).
+{: .explainer}
 
 ### Styles
 
