@@ -13,4 +13,4 @@ This release adds support for more workflows in editing and forms.
 **Fixes:**
 
 * Sites ordered alphabetically in projects view
-* Publish in client sharing fixed
+* Publish in client sharing
