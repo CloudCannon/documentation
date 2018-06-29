@@ -32,7 +32,7 @@ layout: default
 				<h2>{{ page.title }}</h2>
 
 				<div class="toc">{% include toc.html html=content h_max=3 %}</div>
-				
+
 				{% assign requirements = "" %}
 
 				{% if page.requirements.build == 'Jekyll' %}
@@ -58,7 +58,7 @@ layout: default
 				{% endif %}
 
 				{% if requirements != "" %}
-					<blockquote class="explainer">Available {{ requirements }}.</blockquote>
+					<blockquote class="explainer"><p>Available {{ requirements }}.</p></blockquote>
 				{% endif %}
 
 				<div>{{ content }}</div>

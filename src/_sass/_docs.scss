@@ -46,7 +46,7 @@ article.content h3 {
 		line-height: 1.8em;
 		a {
 			font-weight: bold;
-			&:before {    
+			&:before {
 				content: "┠";
 				display: inline-block;
 				margin-right: 5px;
@@ -64,4 +64,8 @@ article.content h3 {
 			}
 		}
 	}
+}
+
+.toc:empty + .explainer {
+	margin-top: 20px;
 }
