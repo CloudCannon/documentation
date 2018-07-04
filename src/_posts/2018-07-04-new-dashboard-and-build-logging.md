@@ -3,7 +3,7 @@ title: New Dashboard and Build Logging
 type: minor
 ---
 
-This release add a new way to look at builds and a tidied dashboard. The new dashboard is designed to help manage your sites.
+This release add a new way to look at builds and a tidied dashboard.
 
 **Features:**
 
