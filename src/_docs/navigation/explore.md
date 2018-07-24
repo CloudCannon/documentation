@@ -10,7 +10,7 @@ requirements:
 
 Explore allows navigation of all pages, collections and data in your site. This is generated automatically based on your site configuration. Images and titles are pulled from the corresponding files front matter.
 
-![Source Editor](/images/editing/source-editor.png){: srcset="/images/editing/source-editor.png 800w, /images/editing/source-editor@2x.png 1600w"}{: .screenshot}
+![Source Editor](/uploads/screen-shot-2018-07-25-at-9-09-37-am.png){: .screenshot srcset="/uploads/screen-shot-2018-07-25-at-9-09-37-am.png 800w, /uploads/screen-shot-2018-07-25-at-9-09-37-am@2x.png 1600w"}
 
 ### Pages vs Data
 
