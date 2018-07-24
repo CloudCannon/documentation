@@ -10,9 +10,7 @@ requirements:
 
 The Dashboard is used to give editors a breakdown of all thats important on their site.
 
-![](/uploads/screen-shot-2018-07-25-at-9-06-55-am.png){: srcset="/uploads/screen-shot-2018-07-25-at-9-06-55-am.png 800w, /uploads/screen-shot-2018-07-25-at-9-06-55-am@2x.png 1600w"}
-
-&nbsp;
+![Example Dashboard](/uploads/screen-shot-2018-07-25-at-9-06-55-am.png){: srcset="/uploads/screen-shot-2018-07-25-at-9-06-55-am.png 800w, /uploads/screen-shot-2018-07-25-at-9-06-55-am@2x.png 1600w"}{: .screenshot}
 
 This has 3 main components; Site Breakdown, Main Actions, and Recent Activity.
 
