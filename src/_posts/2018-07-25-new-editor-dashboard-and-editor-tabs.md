@@ -1,6 +1,6 @@
 ---
 title: New editor dashboard and editor tabs
-type: minor
+type: major
 ---
 
 This release is further work on our UX improvements. We have renamed the recently released developer dashboard to status (This will look familiar to our long time users). Doing this allowed us to use the dashboard icon and name for the editor workflows. The Dashboard is designed to give an overview on your site and will be extended over the next few months with more options.
