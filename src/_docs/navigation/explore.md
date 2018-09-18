@@ -16,14 +16,13 @@ Explore allows navigation of all pages, collections and data in your site. This 
 
 CloudCannon splits your collections, pages and data into three default groups. Customise these groups to tailor the editing experience to your site. Reorder, hide, group or display items differently with the following options.
 
-
 #### Collections
 
 These options are set in `_config.yml` on the top level, and affect the *Explore* section navigation.
 
 | Option | Values |
-| ------ | ------ |
-| _explore | Object |
+| --- | --- |
+| \_explore | Object |
 
 `_explore.groups` defines the groups shown in the *Explore* navigation.
 
@@ -32,28 +31,28 @@ _explore:
   groups:
     - heading: Blogging
       collections:
-        - _posts
-        - _drafts
+        - posts
+        - drafts
     - heading: Other
       collections:
         - pages
-        - _staff
-        - _features
+        - staff
+        - features
 ```
-
 
 #### Collection
 
 These options are set in `_config.yml` inside specific collection metadata, and affect the item lists within each *Explore* group.
 
 | Option | Values |
-| ------ | ------ |
-| _sort_key | String, matching a front matter field of the collection items |
-| _subtext_key | String, matching a front matter field of the collection items |
-| _image_key | String, matching a front matter field of the collection items |
-| _image_size | *cover*, *contain* or unset (default) |
-| _singular_name | String |
-| _disable_add | *true* or *false* (default) |
+| --- | --- |
+| \_sort\_key | String, matching a front matter field of the collection items |
+| \_subtext\_key | String, matching a front matter field of the collection items |
+| \_image\_key | String, matching a front matter field of the collection items |
+| \_image\_size | *cover*, *contain* or unset (default) |
+| \_singular\_name | String |
+| \_disable\_add | *true* or *false* (default) |
+| \_icon | String, matching [Material Icon](https://material.io/tools/icons/) name |
 
 `_sort_key` sets the sorting of the collection inside *Explore*.
 
@@ -65,7 +64,7 @@ These options are set in `_config.yml` inside specific collection metadata, and 
 
 `_singular_name` overrides the default singular name of the collection.
 
-`_disable_add` prevents users from adding new collection items.
+`_disable_add` prevents users from adding new collection items.<br><br>`_icon` overrides the default collection icon with an icon from [Google's Material Icons](https://material.io/tools/icons/).
 
 ```yaml
 collections:
@@ -77,6 +76,7 @@ collections:
     _image_size: cover
     _singular_name: Staff Member
     _disable_add: false
+    _icon: people
 ```
 
 #### File
@@ -84,8 +84,8 @@ collections:
 These options are set in the front matter (or with Jekyll Defaults) of specific files, and affect individual items in the *Explore* group lists.
 
 | Option | Values |
-| ------ | ------ |
-| _unlisted | *true* or *false* (default) |
+| --- | --- |
+| \_unlisted | *true* or *false* (default) |
 
 `_unlisted` hides specific files from the *Explore* section (still accessible from [Visual Editor](/editing/visual-editor) and direct links).
 
