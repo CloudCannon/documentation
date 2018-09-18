@@ -16,13 +16,7 @@ This has three main sections: Site Breakdown, Main Actions, and Recent Activity.
 
 ### Site Breakdown
 
-The site breakdown is a representation of the [Explore](navigation/explore) navigation. CloudCannon provides default icons for each file type. You can override these icons by adding an `_icon` key to your collections. The value of `_icon` is any icon from [Google's Material Icons](https://material.io/tools/icons/).
-
-```
-collections:
-  staff_members:
-    _icon: people
-```
+The site breakdown is a representation of the [Explore](navigation/explore) navigation. View options are inherited from the [explore settings](/navigation/explore).
 
 ### Main Actions
 
