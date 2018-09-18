@@ -68,6 +68,18 @@ defaults:
         content:
           width: 800
           height: 2000
+          format: p h2 h3
+          bold: true
+          link: true
+          italic: true
+          removeformat: true
+          numberedlist: true
+          bulletedlist: true
+          code: true
+          table: true
+          outdent: true
+          indent: true
+          image: true
   -
     scope:
       path: ""
