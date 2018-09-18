@@ -10,7 +10,7 @@ requirements:
 
 Explore allows navigation of all pages, collections and data in your site. This generates automatically based on your site configuration. Images and titles come from the corresponding file's front matter.
 
-![Source Editor](/uploads/screen-shot-2018-07-25-at-9-09-37-am.png){: .screenshot srcset="/uploads/screen-shot-2018-07-25-at-9-09-37-am.png 800w, /uploads/screen-shot-2018-07-25-at-9-09-37-am@2x.png 1600w"}
+![Explore section](/images/navigation/explore.png){: .screenshot srcset="/images/navigation/explore.png 800w, /images/navigation/explore@2x.png 1600w"}
 
 ### Grouping
 

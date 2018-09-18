@@ -77,7 +77,7 @@ To create a Jekyll collection to manage and display staff members, follow this e
 
     ~~~
     ---
-    name: Same Doe
+    name: Sam Doe
     image: /uploads/sam.png
     credentials:
     phone_extension:
