@@ -158,6 +158,7 @@ The complete list of options follows, all values can either be *true* or *false*
 | code (unavailable for `_text`) | |
 | format (unavailable for `_text`) | *true*, *false* or space separated options |
 | blockquote (unavailable for `_text`) | |
+| horizontalrule (unavailable for `_text`) | |
 | numberedlist (unavailable for `_text`) | |
 | bulletedlist (unavailable for `_text`) | |
 | outdent (unavailable for `_text`) | |
