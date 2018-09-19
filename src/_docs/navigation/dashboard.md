@@ -10,19 +10,13 @@ requirements:
 
 The Dashboard gives editors a breakdown of the main sections of the site.
 
-![Example Dashboard](/uploads/screen-shot-2018-07-25-at-9-06-55-am.png){: .screenshot srcset="/uploads/screen-shot-2018-07-25-at-9-06-55-am.png 800w, /uploads/screen-shot-2018-07-25-at-9-06-55-am@2x.png 1600w"}
+![Example Dashboard](/images/navigation/dashboard.png){: .screenshot srcset="/images/navigation/dashboard.png 800w, /images/navigation/dashboard@2x.png 1600w"}
 
 This has three main sections: Site Breakdown, Main Actions, and Recent Activity.
 
 ### Site Breakdown
 
-The site breakdown is a representation of the [Explore](navigation/explore) navigation. CloudCannon provides default icons for each file type. You can override these icons by adding an `_icon` key to your collections. The value of `_icon` is any icon from [Google's Material Icons](https://material.io/tools/icons/).
-
-```
-collections:
-  staff_members:
-    _icon: people
-```
+The site breakdown is a representation of the [Explore](navigation/explore) navigation. View options are inherited from the [explore settings](/navigation/explore).
 
 ### Main Actions
 

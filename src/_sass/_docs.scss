@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
 	scroll-behavior: smooth;
 }
 
@@ -32,21 +33,26 @@ h4 svg {
 article.content h3 {
 	margin-top: 40px;
 }
+
 .docs-container h2 {
 	margin: 0;
 }
+
 .toc ul {
 	padding: 0;
 	margin: 1rem -1rem 1.5rem -1rem;
 	max-width: 500px;
+
 	li {
 		margin: 0 1rem;
 		list-style-type: none;
 		font-size: 14px;
 		line-height: 1.8em;
+
 		a {
 			font-weight: bold;
-			&:before {
+
+			&::before {
 				content: "┠";
 				display: inline-block;
 				margin-right: 5px;
@@ -56,16 +62,35 @@ article.content h3 {
 			}
 		}
 
-		&:last-of-type {
-			a {
-				&:before {
-					content: "┖";
-				}
-			}
+		&:last-of-type a::before {
+			content: "┖";
 		}
 	}
 }
 
 .toc:empty + .explainer {
 	margin-top: 20px;
+}
+
+table {
+	border: 1px solid #eee;
+	border-radius: 2px;
+	border-spacing: 0;
+
+	th {
+		padding-bottom: 8px;
+	}
+
+	thead th {
+		border-bottom: 1px solid #eee;
+	}
+}
+
+article.content h3,
+article.content h4 {
+	margin-top: 50px;
+}
+
+article.content h4 {
+	font-size: 1.25rem;
 }
