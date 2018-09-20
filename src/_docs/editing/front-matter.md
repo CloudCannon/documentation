@@ -93,7 +93,7 @@ examples:
   - title: Number
     details: |
       Input field for numbers.
-      Displayed for `number`, keys ending in `_number` and numerical values.
+      Displayed for `number`, and keys ending in `_number`.
     yaml_code_block: |
       ---
       order: 12
