@@ -17,6 +17,6 @@ This release adds the concept of a project. Projects organise sites. A project g
 
 * Sites toggle view alignment
 * Transferring site prompts
-* Changed the way an external link in a `_image`&nbsp;field works
-* Number inputs are only explicit on `_number`&nbsp;fields
+* Changed the way an external link in a `_image` field works
+* Number inputs are only explicit on `_number` fields
 * Large repo clones will sync better after first failure
