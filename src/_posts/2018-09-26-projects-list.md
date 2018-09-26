@@ -1,6 +1,6 @@
 ---
 title: Projects List
-type: minor
+type: major
 ---
 
 This release adds the concept of a project. Projects organise sites. A project groups sites by a repository, stores useful links and keeps your list organised.
