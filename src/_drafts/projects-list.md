@@ -5,9 +5,11 @@ type: minor
 
 This release adds the concept of a project. Projects organise sites. A project groups sites by a repository, stores useful links and keeps your list organised.
 
+![](/uploads/projects-list.png)
+
 **Features:**
 
-* Projects
+* Projects List
 * Add HR to editor toolbars
 * New site create flow and empty state
 
