@@ -3,7 +3,7 @@ title: Projects List
 type: major
 ---
 
-This release adds the concept of a project. Projects organise sites. A project groups sites by a repository, stores useful links and keeps your list organised.
+This release adds the projects feature. Projects store useful links and group sites by repository, helping you and your editors stay organised.
 
 ![Empty projects list](/uploads/projects-list.png){: .screenshot}
 
@@ -17,6 +17,6 @@ This release adds the concept of a project. Projects organise sites. A project g
 
 * Sites toggle view alignment
 * Transferring site prompts
-* Changed the way an external link in a `_image` field works
-* Number inputs are only explicit on `_number` fields
+* Changed the way an external link in a `_image`&nbsp;field works
+* Number inputs are only explicit on `_number`&nbsp;fields
 * Large repo clones will sync better after first failure
