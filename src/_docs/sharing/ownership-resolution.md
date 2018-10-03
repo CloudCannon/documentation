@@ -1,7 +1,7 @@
 ---
 title: Ownership Resolution
 category: Sharing
-order: '20'
+order: 20
 ---
 
 Sometimes there are unforeseen problems that arise in a team. This usually results in a support message to CloudCannon. These can be broken into two different categories:
