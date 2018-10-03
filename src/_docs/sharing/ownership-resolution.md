@@ -39,7 +39,3 @@ Often organisation emails are used when creating an organisation account. The em
 ### Manual resolution
 
 If CloudCannon needs to manually transfer organisation ownership, we will first validate that the request is valid. If the owner uses a company email, we will validate DNS access to that email. This would give us the confidence that you would be able to add or remove emails for anyone under that domain name. Failing this we will treat this on a case by case basis.
-
-&nbsp;
-
-&nbsp;
