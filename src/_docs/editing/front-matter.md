@@ -96,7 +96,6 @@ examples:
       Displayed for `number`, and keys ending in `_number`.
     yaml_code_block: |
       ---
-      order: 12
       number: 3.14
       sort_number: 2
       ---
