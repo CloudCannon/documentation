@@ -70,15 +70,19 @@ Editable block elements are rich editable regions with options to format and add
 
 ![Block editable region in the Visual Editor](/images/editing/editable-regions/block-editable.png){: srcset="/images/editing/editable-regions/block-editable.png 800w, /images/editing/editable-regions/block-editable@2x.png 1600w"}{: .screenshot}
 
-
 ### Inline Elements
 
-`a` `span` `small` `strong` `em` `i` `b` `sub` `sup` `li` `dd` `dt` `td` `th`
+`span` `small` `strong` `em` `i` `b` `sub` `sup` `li` `dd` `dt` `td` `th`
 
 Editable inline elements provide an interface to change smaller sections of text without formatting.
 
 ![Inline editable region in the Visual Editor](/images/editing/editable-regions/inline-editable.png){: srcset="/images/editing/editable-regions/inline-editable.png 800w, /images/editing/editable-regions/inline-editable@2x.png 1600w"}{: .screenshot}
 
+### Link Elements
+
+`a`
+
+Editable link elements are extended inline elements, providing an interface to change smaller sections of text without formatting, as well as the `href` and `target` attributes.
 
 ### Markdown Content Elements
 
