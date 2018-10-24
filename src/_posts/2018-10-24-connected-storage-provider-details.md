@@ -12,5 +12,5 @@ This release displays more information on providers you have connected to your C
 **Fixes:**
 
 * Fixed issue preventing removing empty folders
-* Most specific collection default file (i.e. \_defaults.md) in subfolders now used in all configurations
+* Most specific collection default file (i.e. `_defaults.md`) in subfolders now used in all configurations
 * Edge case preventing site list with build errors loading on free plan for Organisations
