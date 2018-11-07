@@ -67,3 +67,11 @@ Once the content is finished, publish your post with the button provided in the 
 {: .explainer}
 
 ![Editing draft with Settings Panel open](/images/editing/blogging/edit-draft-settings.png){: srcset="/images/editing/blogging/edit-draft-settings.png 800w, /images/editing/blogging/edit-draft-settings@2x.png 1600w"}{: .screenshot}
+
+### Title and Filename Sync
+
+CloudCannon renames blog post files automatically when the front matter `title` is changed, in order to keep filenames, titles and URLs consistent. If you wish to disable this behaviour, set the following for each post in your front matter or with Jekyll Defaults:
+
+```yaml
+_disable_title_filename_sync: true
+```
