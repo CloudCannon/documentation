@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 dist/
 node_modules/
+vendor/bundle
+src/.bundle/config
