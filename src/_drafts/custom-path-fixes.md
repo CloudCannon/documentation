@@ -23,3 +23,4 @@ This release fixes a number of issues, mainly focused on custom Jekyll collectio
 * `_date` suffix front matter fields use the correct interface again
 * Prevent front matter `tags` and `categories` clashing with fields ending with `_tag`, `_tags`, `_category` and `_categories`
 * Explore view issues when sorting and blogging with custom `collections_dir` set
+* Screenshots fixed for sites with load animations
