@@ -8,7 +8,7 @@ This release adds improvements to our forms. Forms are run using queues for adde
 **Features:**
 
 * Improved form handling
-* Forms submissions in Site / Reports
+* Forms submissions in *Site / Reports*
 * This change log visible in app
 * Better browser tab titles
 
