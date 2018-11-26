@@ -1,5 +1,7 @@
 ---
+header: Tour
 title: Tour
+layout: short
 ---
 
 This tour sets up your first site on CloudCannon, showcases some of the features and demonstrates different editors.

@@ -1,5 +1,5 @@
 ---
-title: Large Text
+title: Textarea
 details: |
   Multiline text field expanded for longer text. Displayed for keys ending in `_text` or `_description`.
   Alternatively, you can use the variations without underscores as keys (e.g. `description`).

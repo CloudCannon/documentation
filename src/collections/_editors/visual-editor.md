@@ -2,10 +2,6 @@
 title: Visual Editor
 category: Editing
 order: 1
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
 ---
 
 The *Visual Editor* is the main way to edit content in CloudCannon. [Editable Regions](/editing/editable-regions/) have yellow borders. To make an update, click inside a yellow box and edit the content inline. Navigate to other pages by clicking links on the site.

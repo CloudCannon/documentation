@@ -25,11 +25,9 @@ The [Visual Editor](/editing/visual-editor/) supports JavaScript, however, HTML 
 The *Editable Region* interface used depends on the defined element:
 
 {% for editable_region in site.editable_regions %}
-  <h3>{{ editable_region.name }}</h3>
-  <p>
-    {% for element in editable_region.elements %}
-      <code>{{ element }}</code>
-    {% endfor %}
-  </p>
+  <h3 id="{{ editable_region.name | slugify }}">{{ editable_region.name }}</h3>
+
+  {% for element in editable_region.elements %}{% if element %}`{{ element }}` {% endif %}{% endfor %}
+
   {{ editable_region.content }}
 {% endfor %}

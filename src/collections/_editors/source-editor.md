@@ -2,10 +2,6 @@
 title: Source Editor
 category: Editing
 order: 3
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
 ---
 
 The *Source Editor* is used to make edits within CloudCannon on any text-based file. It is available to the owner and developers of the site.

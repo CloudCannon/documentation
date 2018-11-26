@@ -1,11 +1,9 @@
 ---
 title: Bitbucket
-category: File Syncing
+source_syncing: true
+publishing: true
+output_syncing: true
 order: 2
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
 ---
 
 > Mercurial repositories are not supported.

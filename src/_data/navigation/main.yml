@@ -1,4 +1,6 @@
 - name: Tour
   link: /tour
+- name: Docs
+  link: /
 - name: Changelog
   link: /changelog/

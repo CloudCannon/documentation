@@ -2,10 +2,6 @@
 title: Content Editor
 category: Editing
 order: 2
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
 ---
 
 The *Content Editor* is an elegant rich text editor for Markdown files.

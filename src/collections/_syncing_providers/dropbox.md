@@ -1,11 +1,10 @@
 ---
 title: Dropbox
 category: File Syncing
+source_syncing: true
+publishing: false
+output_syncing: false
 order: 3
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
 ---
 
 Connecting Dropbox allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to Dropbox.

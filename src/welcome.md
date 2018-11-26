@@ -1,12 +1,6 @@
 ---
 title: Welcome
-category: Overview
-order: 1
-permalink: /
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
+layout: short
 ---
 
 CloudCannon is a cloud-based content management system and hosting provider for static and [Jekyll](https://jekyllrb.com/) websites.
