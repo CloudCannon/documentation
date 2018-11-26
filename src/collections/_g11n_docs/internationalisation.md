@@ -1,7 +1,6 @@
 ---
 title: Internationalisation
-category: Internationalisation
-order: 2
+order: 3
 requirements:
   build: Any
   plan: Pro

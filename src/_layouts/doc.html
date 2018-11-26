@@ -9,21 +9,6 @@ layout: default
 <div class="dark-content docs-container">
 	<div class="wrapper wrapper-large">
 		<nav class="docs-nav">
-			<ul>
-				{% assign grouped = site.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
-
-				{% for group in grouped %}
-					<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-						{% assign items = group.items | sort: 'order' %}
-						<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
-						<ul>
-							{% for item in items %}
-								<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-							{% endfor %}
-						</ul>
-					</li>
-				{% endfor %}
-			</ul>
 		</nav>
 
 		<section class="docs-main" id="doc">

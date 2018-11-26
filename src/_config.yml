@@ -35,18 +35,23 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  
+
 exclude:
   - Gemfile
   - Gemfile.lock
 
 collections_dir: collections
 collections:
-  docs:
-    title: Documentation
-    permalink: /:path/
+  project_docs:
+    title: Projects
+    permalink: /projects/:path/
+    output: true
+  g11n_docs:
+    title: Globalisation
+    permalink: /g11n/:path/
     output: true
   sections:
+    permalink: /:path/
     title: Sections
     output: true
   editable_regions:
@@ -60,6 +65,20 @@ defaults:
     values:
       hide_cta: true
       layout: structure
+  -
+    scope:
+      path: ""
+      type: "project_docs"
+    values:
+      hide_cta: true
+      layout: project-doc
+  -
+    scope:
+      path: ""
+      type: "g11n_docs"
+    values:
+      hide_cta: true
+      layout: g11n-doc
   -
     scope:
       path: ""

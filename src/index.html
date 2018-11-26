@@ -15,7 +15,7 @@ icons: true
 				{% assign sorted_sections = site.sections | sort: "order" %}
 				{% for section in sorted_sections %}
 				<li class="doc-section">
-					<a href="{{ section.url }}" class="doc-section-link">
+					<a href="{{ section.url }}introduction/" class="doc-section-link">
 						<i class="material-icons">{{ section.icon }}</i>
 
 						<div class="doc-section-content">

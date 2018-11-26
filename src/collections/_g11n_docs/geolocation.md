@@ -1,7 +1,6 @@
 ---
 title: Geolocation
-category: Internationalisation
-order: 1
+order: 2
 requirements:
   build: Any
   plan: Pro
