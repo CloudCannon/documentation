@@ -1,11 +1,5 @@
 ---
 title: Tour
-category: Overview
-order: 2
-requirements:
-  build: Any
-  plan: Free
-  hosting: Any
 ---
 
 This tour sets up your first site on CloudCannon, showcases some of the features and demonstrates different editors.

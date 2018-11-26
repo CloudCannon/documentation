@@ -36,15 +36,30 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
+docs_categories:
+  general: General (App)
+  files: Files (App, Syncer, Syncer Controller)
+  builds: Builds (App, Compiler, Compiler Controller)
+  editor: Editor Configuration (App)
+  hosting: Hosting (App, File Server)
+  sharing: Sharing (App)
+  organisations: Organisations (App)
+  payment: Payment (App)
+
+
 exclude:
   - Gemfile
   - Gemfile.lock
 
+collections_dir: collections
 collections:
   docs:
     title: Documentation
     permalink: /:path/
     output: true
+  editable_regions:
+    title: Editable Regions
+    output: false
 
 defaults:
   -

@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/CloudCannon/Academy/issues"
   },
-  "homepage": "https://learn.cloudcannon.com",
+  "homepage": "https://docs.cloudcannon.com",
   "devDependencies": {
     "@cloudcannon/suite": "1.0.34",
     "gulp": "^3.9.1"
