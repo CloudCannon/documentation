@@ -1,6 +1,6 @@
 ---
 title: Team Management
-category: Organisations
+category: General
 order: 2
 requirements:
   build: Any

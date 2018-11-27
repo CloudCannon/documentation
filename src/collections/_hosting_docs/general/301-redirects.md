@@ -1,6 +1,6 @@
 ---
 title: 301 Redirects
-category: Hosting
+category: General
 order: 2
 requirements:
   build: Any

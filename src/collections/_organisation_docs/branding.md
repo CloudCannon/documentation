@@ -1,6 +1,6 @@
 ---
 title: Branding
-category: Organisations
+category: General
 order: 3
 requirements:
   build: Any

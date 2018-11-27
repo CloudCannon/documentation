@@ -1,7 +1,7 @@
 ---
 title: Client Sharing
-category: Sharing
-order: 1
+category: General
+order: 2
 requirements:
   build: Any
   plan: Basic

@@ -1,6 +1,6 @@
 ---
 title: Mobile App
-category: Sharing
+category: General
 order: 6
 requirements:
   build: Any

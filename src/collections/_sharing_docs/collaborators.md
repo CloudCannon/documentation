@@ -1,6 +1,6 @@
 ---
 title: Collaborators
-category: Sharing
+category: General
 order: 2
 requirements:
   build: Any

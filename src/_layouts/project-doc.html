@@ -1,39 +1,6 @@
 ---
-layout: default
+layout: doc
+collection: project_docs
 ---
 
-<header class="short">
-	{% include navigation/top.html %}
-</header>
-
-<div class="dark-content docs-container">
-	<div class="wrapper wrapper-large">
-		<nav class="docs-nav">
-			<ul>
-				{% assign items = site.project_docs | sort: 'order' %}
-				{% for item in items %}
-					<li class="nav-item top-level {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-				{% endfor %}
-			</ul>
-		</nav>
-
-		<section class="docs-main" id="doc">
-			<article class="content">
-				<p class="docs-category">{% if page.category %}{{ page.category }}{% else %}{{ site.display_title }}{% endif %}</p>
-				<h2>{{ page.title }}</h2>
-
-				<div class="toc">{% include toc.html html=content h_max=3 %}</div>
-
-				{% include doc-requirements.html  %}
-
-				<div>{{ content }}</div>
-
-				<script>{% include anchor-links.js %}</script>
-			</article>
-		</section>
-	</div>
-</div>
-
-<script>
-	{% include autofocus.js %}
-</script>
+{{ content }}

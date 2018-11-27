@@ -1,50 +1,69 @@
 ---
 layout: default
+icons: true
 ---
 
+{% assign collection = site.collections | where: "label", layout.collection | first %}
 <header class="short">
 	{% include navigation/top.html %}
 </header>
 
-<div class="dark-content docs-container">
+
+<div class="doc-nav">
+	<div class="wrapper wrapper-large" style="padding: 0 10px;">
+		<ul class="doc-nav-sections">
+			{% assign sorted_sections = site.sections | sort: "order" %}
+			{% for section in sorted_sections %}
+			<li class="doc-nav-section">
+				<a href="{{ section.url }}introduction/" class="doc-nav-section-link {% if page.url contains section.url %}current{% endif %}">
+					<i class="material-icons">{{ section.icon }}</i>
+					<strong>{{ section.short_name }}</strong>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<div class="docs-container">
 	<div class="wrapper wrapper-large">
+		<!-- <nav class="docs-nav full-navigation"> -->
 		<nav class="docs-nav">
+			<ul>
+				{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+
+				{% for group in grouped %}
+					<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+						{% assign items = group.items | sort: 'order' %}
+						<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name | default: "General" }} ({{ items | size }})</a>
+						<ul>
+							{% for item in items %}
+								<li class="nav-item {% if item.url == page.url %}current{% endif %}">
+									<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+									{% if item.url == page.url %}<div class="toc">{% include toc.html html=content h_max=3 %}</div>{% endif %}
+								</li>
+							{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
 		</nav>
 
 		<section class="docs-main" id="doc">
 			<article class="content">
-				<p class="docs-category">{% if page.category %}{{ page.category }}{% else %}{{ site.display_title }}{% endif %}</p>
-				<h2>{{ page.title }}</h2>
+				<h1 style="
+    font-size: 0.9rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    /* color: #888; */
+    /* font-weight: 600; */
+">{{ collection.title }} / {{ page.category | default: "General" }}</h1>
+				<h2 style="
+    margin: 10px 0 20px 0;
+">{{ page.title }}</h2>
 
-				<div class="toc">{% include toc.html html=content h_max=3 %}</div>
-
-				{% assign requirements = "" %}
-
-				{% if page.requirements.build == 'Jekyll' %}
-					{% assign requirements = requirements | append: ' for <strong>Jekyll</strong> sites' %}
-				{% endif %}
-
-				{% if page.requirements.hosting == 'CloudCannon' %}
-					{% assign requirements = requirements | append: ' with <strong>CloudCannon</strong> hosting' %}
-				{% endif %}
-
-				{% if page.requirements.syncing == 'GitHub' %}
-					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> syncing' %}
-				{% endif %}
-
-				{% if page.requirements.syncing == 'Git' %}
-					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> or <strong>Bitbucket</strong> syncing' %}
-				{% endif %}
-
-				{% if page.requirements.plan == 'Basic' %}
-					{% assign requirements = requirements | append: ' on the <strong>Basic</strong> and <strong>Pro</strong> plans' %}
-				{% elsif page.requirements.plan == 'Pro' %}
-					{% assign requirements = requirements | append: ' on the <strong>Pro</strong> plan' %}
-				{% endif %}
-
-				{% if requirements != "" %}
-					<blockquote class="explainer"><p>Available {{ requirements }}.</p></blockquote>
-				{% endif %}
+				{% include doc-requirements.html  %}
 
 				<div>{{ content }}</div>
 

@@ -19,7 +19,7 @@ icons: true
 						<i class="material-icons">{{ section.icon }}</i>
 
 						<div class="doc-section-content">
-							<strong>{{ section.name }}</strong>
+							<strong>{{ section.name }} {% if section.name != section.short_name %}({{ section.short_name }}){% endif %}</strong>
 							<span>{{ section.description }}</span>
 						</div>
 					</a>

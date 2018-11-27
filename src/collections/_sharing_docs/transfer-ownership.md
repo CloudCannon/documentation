@@ -1,6 +1,6 @@
 ---
 title: Transferring Ownership
-category: Sharing
+category: General
 order: 5
 requirements:
   build: Any

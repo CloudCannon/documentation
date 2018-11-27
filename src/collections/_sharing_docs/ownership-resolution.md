@@ -1,6 +1,6 @@
 ---
 title: Ownership Resolution
-category: Sharing
+category: General
 order: 20
 ---
 

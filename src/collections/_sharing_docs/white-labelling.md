@@ -1,6 +1,6 @@
 ---
 title: White Labelling
-category: Sharing
+category: General
 order: 4
 requirements:
   build: Any

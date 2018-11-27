@@ -46,14 +46,26 @@ collections:
     title: Projects
     permalink: /projects/:path/
     output: true
+  sharing_docs:
+    title: Sharing
+    permalink: /sharing/:path/
+    output: true
+  hosting_docs:
+    title: Hosting
+    permalink: /hosting/:path/
+    output: true
+  organisation_docs:
+    title: Organisations
+    permalink: /organisations/:path/
+    output: true
   g11n_docs:
     title: Globalisation
     permalink: /g11n/:path/
     output: true
   sections:
-    permalink: /:path/
     title: Sections
-    output: true
+    permalink: /:path/
+    output: false
   editable_regions:
     title: Editable Regions
     output: false
@@ -72,6 +84,27 @@ defaults:
     values:
       hide_cta: true
       layout: project-doc
+  -
+    scope:
+      path: ""
+      type: "hosting_docs"
+    values:
+      hide_cta: true
+      layout: hosting-doc
+  -
+    scope:
+      path: ""
+      type: "organisation_docs"
+    values:
+      hide_cta: true
+      layout: organisation-doc
+  -
+    scope:
+      path: ""
+      type: "sharing_docs"
+    values:
+      hide_cta: true
+      layout: sharing-doc
   -
     scope:
       path: ""

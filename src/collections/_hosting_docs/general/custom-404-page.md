@@ -1,6 +1,6 @@
 ---
 title: Custom 404 Page
-category: Hosting
+category: General
 order: 2
 requirements:
   build: Any

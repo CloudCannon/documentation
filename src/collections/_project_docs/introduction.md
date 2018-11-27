@@ -1,6 +1,6 @@
 ---
 title: Introduction
-category: Projects
+category: General
 order: 1
 requirements:
   build: Any

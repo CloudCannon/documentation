@@ -1,6 +1,6 @@
 ---
 title: Extensionless URLs
-category: Hosting
+category: General
 order: 7
 requirements:
   build: Any

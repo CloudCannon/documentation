@@ -1,6 +1,6 @@
 ---
 title: Contact Forms
-category: Hosting
+category: General
 order: 4
 requirements:
   build: Any

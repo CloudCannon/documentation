@@ -1,6 +1,6 @@
 ---
 title: SAML
-category: Organisations
+category: General
 order: 4
 requirements:
   build: Any

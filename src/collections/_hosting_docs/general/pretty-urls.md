@@ -1,6 +1,6 @@
 ---
 title: Pretty URLs
-category: Hosting
+category: General
 order: 6
 requirements:
   build: Any

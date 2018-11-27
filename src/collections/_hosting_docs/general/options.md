@@ -1,6 +1,6 @@
 ---
 title: Options
-category: Hosting
+category: General
 order: 1
 requirements:
   build: Any

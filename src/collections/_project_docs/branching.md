@@ -1,6 +1,6 @@
 ---
 title: Branching
-category: Projects
+category: General
 order: 2
 requirements:
   build: Any

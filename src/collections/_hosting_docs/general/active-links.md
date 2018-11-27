@@ -1,6 +1,6 @@
 ---
 title: Active Links
-category: Hosting
+category: General
 order: 5
 requirements:
   build: Any
