@@ -1,5 +1,6 @@
 ---
 title: Internationalisation
+category: General
 order: 3
 requirements:
   build: Any
