@@ -1,6 +1,6 @@
 ---
 title: Versions
-category: Building
+category: General
 order: 2
 requirements:
   build: Jekyll

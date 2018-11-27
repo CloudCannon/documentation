@@ -1,10 +1,10 @@
 ---
-title: Jekyll
-category: Building
+title: Introduction
+category: General
 order: 1
 ---
 
-CloudCannon builds all new sites with Jekyll.
+CloudCannon builds all sites with Jekyll.
 
 Sites **without** a `Gemfile` are built with:
 

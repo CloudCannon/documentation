@@ -50,6 +50,10 @@ collections:
     title: Sharing
     permalink: /sharing/:path/
     output: true
+  build_docs:
+    title: Builds
+    permalink: /builds/:path/
+    output: true
   hosting_docs:
     title: Hosting
     permalink: /hosting/:path/
@@ -91,6 +95,13 @@ defaults:
     values:
       hide_cta: true
       layout: hosting-doc
+  -
+    scope:
+      path: ""
+      type: "build_docs"
+    values:
+      hide_cta: true
+      layout: build-doc
   -
     scope:
       path: ""

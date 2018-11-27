@@ -1,6 +1,6 @@
 ---
 title: Optimisations
-category: Building
+category: General
 order: 7
 requirements:
   build: Any

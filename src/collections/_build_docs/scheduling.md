@@ -1,6 +1,6 @@
 ---
 title: Scheduling
-category: Building
+category: General
 order: 6
 requirements:
   build: Any

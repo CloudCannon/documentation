@@ -1,6 +1,6 @@
 ---
 title: Configuration
-category: Building
+category: General
 order: 4
 requirements:
   build: Jekyll
