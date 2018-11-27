@@ -47,9 +47,18 @@
 	.doc-section-link {
 		display: flex;
 		padding: 20px 20px;
-		background: #fff;
+		border: 1px solid #fff;
+		background: #fdfdfd;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 		border-radius: $border-radius;
-		color: #222;
+		color: #333;
+		fill: #333;
+
+		&:hover {
+			background: #fff;
+			color: #000;
+			fill: #000;
+		}
 	}
 
 	.doc-section-content {
@@ -59,10 +68,13 @@
 		line-height: 1.6;
 	}
 
+	svg,
 	i {
 		display: block;
 		font-size: 3rem;
 		margin: 0 20px 0 0;
+		align-self: flex-start;
+		flex: 0 0 48px;
 	}
 
 	span {
@@ -114,15 +126,24 @@ a.doc-nav-section-link {
 	padding: 15px 0 15px 0;
 	border-radius: $docs-nav-bottom-curve-size $docs-nav-bottom-curve-size 0 0;
 	color: #666;
+	fill: #666;
 	position: relative;
 	z-index: 10;
 
+	svg,
+	i {
+		height: 24px;
+		width: 24px;
+	}
+
 	&:hover {
 		color: #222;
+		fill: #222;
 	}
 
 	&.current {
 		color: #222;
+		fill: #222;
 		background: #fff;
 		z-index: 1;
 
