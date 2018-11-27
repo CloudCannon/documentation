@@ -4,10 +4,6 @@
 	{% assign requirements = requirements | append: ' for <strong>Jekyll</strong> sites' %}
 {% endif %}
 
-{% if page.requirements.hosting == 'CloudCannon' %}
-	{% assign requirements = requirements | append: ' with <strong>CloudCannon</strong> hosting' %}
-{% endif %}
-
 {% if page.requirements.syncing == 'GitHub' %}
 	{% assign requirements = requirements | append: ' with <strong>GitHub</strong> syncing' %}
 {% endif %}
