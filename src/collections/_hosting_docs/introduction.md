@@ -4,7 +4,7 @@ category: General
 order: 1
 requirements:
   build: Any
-  plan: Pro
+  plan: Any
   hosting: CloudCannon
 ---
 
