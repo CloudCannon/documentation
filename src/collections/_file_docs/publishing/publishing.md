@@ -1,6 +1,6 @@
 ---
 title: Publishing
-category: File Syncing
+category: Publishing
 order: 3
 requirements:
   build: Any

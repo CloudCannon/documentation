@@ -1,7 +1,7 @@
 ---
 title: File Upload
-category: File Syncing
-order: 4
+category: Source Syncing
+order: 1
 requirements:
   build: Any
   plan: Free
@@ -16,6 +16,9 @@ To upload files from the *File Browser*:
 2. Select **Upload files** or **Upload a folder**
 
 > Alternatively, drag and drop files into the *File Browser*.
+{: .explainer}
+
+> CloudCannon supports any file type uploaded or synced from a storage provider. The maximum size per file is 25 MB.
 {: .explainer}
 
 Uploading a folder uploads all files inside the folder, rather than the folder itself.

@@ -1,9 +1,7 @@
 ---
 title: Bitbucket
-source_syncing: true
-publishing: true
-output_syncing: true
-order: 2
+category: Source Syncing
+order: 3
 ---
 
 > Mercurial repositories are not supported.

@@ -1,5 +1,5 @@
 ---
-title: Data Files
+title: Data Editor
 category: Editing
 order: 9
 ---

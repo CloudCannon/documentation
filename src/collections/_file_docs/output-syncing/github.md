@@ -1,9 +1,7 @@
 ---
 title: GitHub
-source_syncing: true
-publishing: true
-output_syncing: true
-order: 1
+category: Output Syncing
+order: 2
 ---
 
 Connecting GitHub allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to GitHub.

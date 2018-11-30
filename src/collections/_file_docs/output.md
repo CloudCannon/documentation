@@ -1,6 +1,6 @@
 ---
 title: Output
-category: File Syncing
+category: General
 order: 4
 requirements:
   build: Any

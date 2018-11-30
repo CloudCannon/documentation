@@ -54,6 +54,14 @@ collections:
     title: Builds
     permalink: /builds/:path/
     output: true
+  editing_docs:
+    title: Editing
+    permalink: /editing/:path/
+    output: true
+  file_docs:
+    title: Files
+    permalink: /files/:path/
+    output: true
   hosting_docs:
     title: Hosting
     permalink: /hosting/:path/
@@ -80,49 +88,7 @@ defaults:
       path: ""
     values:
       hide_cta: true
-      layout: structure
-  -
-    scope:
-      path: ""
-      type: "project_docs"
-    values:
-      hide_cta: true
-      layout: project-doc
-  -
-    scope:
-      path: ""
-      type: "hosting_docs"
-    values:
-      hide_cta: true
-      layout: hosting-doc
-  -
-    scope:
-      path: ""
-      type: "build_docs"
-    values:
-      hide_cta: true
-      layout: build-doc
-  -
-    scope:
-      path: ""
-      type: "organisation_docs"
-    values:
-      hide_cta: true
-      layout: organisation-doc
-  -
-    scope:
-      path: ""
-      type: "sharing_docs"
-    values:
-      hide_cta: true
-      layout: sharing-doc
-  -
-    scope:
-      path: ""
-      type: "g11n_docs"
-    values:
-      hide_cta: true
-      layout: g11n-doc
+      layout: doc
   -
     scope:
       path: ""

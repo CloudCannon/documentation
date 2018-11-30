@@ -1,5 +1,5 @@
 ---
-title: Data Files
+title: CSV Editor
 category: Editing
 order: 9
 ---

@@ -3,7 +3,7 @@ layout: default
 icons: true
 ---
 
-{% assign collection = site.collections | where: "label", layout.collection | first %}
+{% assign collection = site.collections | where: "label", page.collection | first %}
 <header class="short">
 	{% include navigation/top.html %}
 </header>
@@ -34,22 +34,26 @@ icons: true
 		<!-- <nav class="docs-nav full-navigation"> -->
 		<nav class="docs-nav">
 			<ul>
-				{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+				{% if collection.docs %}
+					{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
 
-				{% for group in grouped %}
-					<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-						{% assign items = group.items | sort: 'order' %}
-						<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name | default: "General" }} ({{ items | size }})</a>
-						<ul>
-							{% for item in items %}
-								<li class="nav-item {% if item.url == page.url %}current{% endif %}">
-									<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-									{% if item.url == page.url %}<div class="toc">{% include toc.html html=content h_max=3 %}</div>{% endif %}
-								</li>
-							{% endfor %}
-						</ul>
-					</li>
-				{% endfor %}
+					{% for group in grouped %}
+						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+							{% assign items = group.items | sort: 'order' %}
+							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name | default: "General" }} ({{ items | size }})</a>
+							<ul>
+								{% for item in items %}
+									<li class="nav-item {% if item.url == page.url %}current{% endif %}">
+										<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+										{% if item.url == page.url %}<div class="toc">{% include toc.html html=content h_max=3 %}</div>{% endif %}
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% endfor %}
+				{% else %}
+					{{collection}}
+				{% endif %}
 			</ul>
 		</nav>
 
