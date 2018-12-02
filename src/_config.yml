@@ -70,9 +70,9 @@ collections:
     title: Organisations
     permalink: /organisations/:path/
     output: true
-  g11n_docs:
-    title: Globalisation
-    permalink: /g11n/:path/
+  i18n_docs:
+    title: Internationalisation
+    permalink: /i18n/:path/
     output: true
   sections:
     title: Sections

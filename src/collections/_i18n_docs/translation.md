@@ -1,5 +1,5 @@
 ---
-title: Internationalisation
+title: Translation
 category: General
 order: 3
 requirements:
