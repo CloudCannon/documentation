@@ -1,7 +1,7 @@
 ---
-title: Output
-category: General
-order: 4
+title: Introduction
+category: Output
+order: 1
 requirements:
   build: Any
   plan: Basic
@@ -15,9 +15,3 @@ Go to *Site Settings* / *File Syncing* / *Output* and click **Connect** next to 
 ![Storage Providers interface](/images/syncing/output/storage-providers.png){: srcset="/images/syncing/output/storage-providers.png 800w, /images/syncing/output/storage-providers@2x.png 1600w"}{: .screenshot}
 
 Once connected the compiled site will replace the contents of your provider. This process will repeat after every build.
-
-### Removing an output
-
-Go to *Site Settings* / *File Syncing* / *Output* and click **Remove**.
-
-![Output interface](/images/syncing/output/github.png){: srcset="/images/syncing/output/github.png 800w, /images/syncing/output/github@2x.png 1600w"}{: .screenshot}

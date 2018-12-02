@@ -1,5 +1,5 @@
 ---
-title: Custom 404 Page
+title: 404 Page
 category: General
 order: 2
 requirements:

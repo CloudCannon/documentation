@@ -31,8 +31,8 @@ icons: true
 
 <div class="docs-container">
 	<div class="wrapper wrapper-large">
-		<!-- <nav class="docs-nav full-navigation"> -->
-		<nav class="docs-nav">
+		<nav class="docs-nav full-navigation">
+		<!-- <nav class="docs-nav"> -->
 			<ul>
 				{% if collection.docs %}
 					{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}

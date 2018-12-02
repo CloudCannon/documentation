@@ -1,5 +1,5 @@
 ---
-title: Let's Encrypt
+title: Automatic SSL
 category: SSL
 order: 1
 requirements:
@@ -8,9 +8,7 @@ requirements:
   hosting: CloudCannon
 ---
 
-[Let's Encrypt](https://letsencrypt.org/) is a fresh kind of Certificate Authority, it's free, automated and open.
-
-CloudCannon automatically generates Let's Encrypt SSL certificates for your sites and serves them over HTTPS. These certificates are automatically renewed before they expire.
+CloudCannon offers free SSL by default on every site and serves them over HTTPS. This is made possible by [Let's Encrypt](https://letsencrypt.org/), which is a new age Certificate Authority, it's free, automated and open. These certificates are automatically renewed before they expire.
 
 ![SSL details](/images/ssl/details.png){: srcset="/images/ssl/details.png 800w, /images/ssl/details@2x.png 1600w"}{: .screenshot}
 
