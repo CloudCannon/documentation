@@ -1,7 +1,7 @@
 ---
 title: Geolocation
 category: General
-order: 2
+order: 3
 requirements:
   build: Any
   plan: Pro

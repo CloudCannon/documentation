@@ -1,7 +1,7 @@
 ---
 title: Translation
 category: General
-order: 3
+order: 2
 requirements:
   build: Any
   plan: Pro
