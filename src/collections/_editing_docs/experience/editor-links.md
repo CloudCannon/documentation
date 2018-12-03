@@ -1,7 +1,7 @@
 ---
 title: Editor Links
-category: Options
-order: 11
+category: Experience
+order: 2
 requirements:
   build: Any
   plan: Free

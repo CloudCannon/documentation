@@ -1,7 +1,7 @@
 ---
 title: Collection Defaults
-category: Options
-order: 10
+category: Experience
+order: 1
 requirements:
   build: Jekyll
   plan: Free
