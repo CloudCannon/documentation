@@ -1,6 +1,6 @@
 ---
 title: Content Editor
-category: Editing
+category: Editors
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Front Matter
-category: Editing
+category: Editors
 order: 5
 ---
 
@@ -21,8 +21,4 @@ CloudCannon provides an easy-to-use editor for front matter. Use the **Toggle Se
 
 ![CloudCannon front matter interface](/images/editing/front-matter/overview.png){: srcset="/images/editing/front-matter/overview.png 800w, /images/editing/front-matter/overview@2x.png 1600w"}{: .screenshot}
 
-There are interfaces for different types of content. Values and key naming conventions dictate which interfaces are used.
-Use these conventions to customise the editor for your team and clients. The available interfaces are listed below.
-
-> Customise these interfaces further by adding sizes, formats, comments and defaults with [Options](/editing/options/).
-{: .explainer}
+The inputs shown are dependent on your keys and values. See [Inputs](/editing/interfaces/inputs/) for a list of choices to tune the experience.

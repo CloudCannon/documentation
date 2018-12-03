@@ -1,10 +1,10 @@
 ---
 title: CSV Editor
-category: Editing
+category: Editors
 order: 12
 ---
 
-The *CSV Editor* is a spreadsheet-like editor.
+The *CSV Editor* is a spreadsheet-like editor. The inputs shown are dependent on your keys and values. See [Inputs](/editing/interfaces/inputs/) for a list of choices to tune the experience.
 
 `/_data/offices.csv`:
 

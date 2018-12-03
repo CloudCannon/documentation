@@ -1,6 +1,6 @@
 ---
 title: Source Editor
-category: Editing
+category: Editors
 order: 3
 themes:
 - ambiance

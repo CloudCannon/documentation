@@ -8,8 +8,10 @@ requirements:
   hosting: Any
 ---
 
-Inputs are interfaces for different types of content. The key used when defining a variable dictates which input is used. There are some exceptions where the value itself dictates the input (e.g. booleans). Use these conventions to customise the editor for your team and clients. This is used in the [Front Matter](/editing/editors/front-matter-editor/), [Data Editor](/editing/editors/data-editor/) and [CSV Editor](/editing/editors/csv-editor/).
+Inputs are interfaces for different types of content. Use a different key for a different input. Use these conventions to customise the editor for your team and clients. This is used in the [Front Matter](/editing/editors/front-matter-editor/), [Data Editor](/editing/editors/data-editor/) and [CSV Editor](/editing/editors/csv-editor/).
 
+> There are some exceptions where the value itself dictates the input (e.g. booleans)
+{: .explainer}
 
 The available inputs are listed below:
 
@@ -28,6 +30,9 @@ The available inputs are listed below:
 	</li>
 {% endfor %}
 </ul>
+
+> Customise these interfaces further by adding sizes, formats, comments and defaults with [Options](/editing/options/).
+{: .explainer}
 
 {% for group in grouped %}
 <hr>

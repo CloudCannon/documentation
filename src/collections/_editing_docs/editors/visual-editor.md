@@ -1,6 +1,6 @@
 ---
 title: Visual Editor
-category: Editing
+category: Editors
 order: 1
 ---
 
