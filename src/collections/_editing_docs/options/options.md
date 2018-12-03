@@ -1,6 +1,6 @@
 ---
 title: Options
-category: Editing
+category: Options
 order: 6
 requirements:
   build: Jekyll

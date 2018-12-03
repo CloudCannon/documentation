@@ -1,5 +1,6 @@
 ---
 title: Code Block
+category: General Inputs
 details: |
   Configurable editor for blocks of code or monospace content.
   Displayed for `code_block` and keys ending in `_code_block`.

@@ -1,5 +1,6 @@
 ---
 name: Block
+order: 2
 elements:
   - div
   - section

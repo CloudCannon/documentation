@@ -1,7 +1,7 @@
 ---
 title: Blogging
-category: Editing
-order: 7
+category: Workflows
+order: 1
 requirements:
   build: Jekyll
   plan: Free

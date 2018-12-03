@@ -1,7 +1,7 @@
 ---
 title: CSV Editor
 category: Editing
-order: 9
+order: 12
 ---
 
 The *CSV Editor* is a spreadsheet-like editor.

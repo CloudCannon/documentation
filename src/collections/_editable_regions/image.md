@@ -1,5 +1,6 @@
 ---
 name: Image
+order: 5
 elements:
   - img
 image:

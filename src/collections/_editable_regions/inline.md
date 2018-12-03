@@ -1,5 +1,6 @@
 ---
 name: Inline
+order: 3
 elements:
   - span
   - small

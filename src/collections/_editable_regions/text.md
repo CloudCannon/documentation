@@ -1,5 +1,6 @@
 ---
 name: Text
+order: 1
 elements:
   - p
   - h1

@@ -2,6 +2,43 @@
 title: Source Editor
 category: Editing
 order: 3
+themes:
+- ambiance
+- chaos
+- chrome
+- clouds
+- clouds_midnight
+- cobalt
+- crimson_editor
+- dawn
+- dracula
+- dreamweaver
+- eclipse
+- github
+- gob
+- gruvbox
+- idle_fingers
+- iplastic
+- katzenmilch
+- kr_theme
+- kuroir
+- merbivore
+- merbivore_soft
+- mono_industrial
+- pastel_on_dark
+- solarized_dark
+- solarized_light
+- sqlserver
+- terminal
+- textmate
+- tomorrow
+- tomorrow_night
+- tomorrow_night_blue
+- tomorrow_night_bright
+- tomorrow_night_eighties
+- twilight
+- vibrant_ink
+- xcode
 ---
 
 The *Source Editor* is used to make edits within CloudCannon on any text-based file. It is available to the owner and developers of the site.
@@ -23,7 +60,7 @@ _source_editor:
 | Option | Values |
 | ------ | ------ |
 | tab_size | Integer (optional, defaults to *4*) |
-| theme | String, one from [themes](https://github.com/ajaxorg/ace/tree/v1.2.9/lib/ace/theme) (optional, defaults to *monokai*) |
+| theme | String, one from [themes](#themes) (optional, defaults to *monokai*) |
 | show_gutter | *true* or *false* (optional, defaults to *true*) |
 
 `tab_size` controls how many spaces lines are auto indented.
@@ -31,3 +68,9 @@ _source_editor:
 `theme` controls the appearance of the editor.
 
 `show_gutter` toggles line numbers and code folding controls.
+
+### Themes
+
+Below are all other available themes:
+
+{% for theme in page.themes %}`{{ theme }}` {% endfor %}

@@ -1,5 +1,6 @@
 ---
 title: Date Time
+category: Time Inputs
 details: |
   Combination date picker and 12 hour time input. Outputs an ISO 8601 date. Displayed for `date`, `datetime` and keys ending in `_at` or `_datetime`.
 

@@ -1,9 +1,14 @@
 ---
-title: Hidden
-details: Hidden values are not present in the interface. Applies to keys that begin with an underscore.
+title: Number
+category: General Inputs
+details: |
+  Input field for numbers.
+  Displayed for `number`, and keys ending in `_number`.
 yaml_code_block: |
   ---
-  _image_src: /src/
+  number: 3.14
+  sort_number: 2
   ---
-info: Alternatively, hide fields without changing the key name with [Options](/editing/options/#hidden-fields).
+image_paths:
+  - /images/editing/front-matter/number.png
 ---

@@ -1,6 +1,7 @@
 ---
 title: Object
 details: Button that navigates to grouped data. Displayed for object values.
+category: Structure
 yaml_code_block: |
   ---
   footer:

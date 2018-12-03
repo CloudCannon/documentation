@@ -1,5 +1,6 @@
 ---
 title: Text
+category: General Inputs
 details: Single line field for text. Displayed for short text values.
 yaml_code_block: |
   ---

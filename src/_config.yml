@@ -81,6 +81,9 @@ collections:
   editable_regions:
     title: Editable Regions
     output: false
+  inputs:
+    title: Inputs
+    output: false
 
 defaults:
   -

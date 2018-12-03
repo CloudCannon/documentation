@@ -1,6 +1,6 @@
 ---
 title: Editor Links
-category: Editing
+category: Options
 order: 11
 requirements:
   build: Any

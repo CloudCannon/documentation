@@ -1,7 +1,7 @@
 ---
 title: Collections
-category: Editing
-order: 8
+category: Workflows
+order: 2
 requirements:
   build: Jekyll
   plan: Free

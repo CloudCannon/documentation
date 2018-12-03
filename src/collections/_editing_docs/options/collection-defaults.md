@@ -1,6 +1,6 @@
 ---
 title: Collection Defaults
-category: Editing
+category: Options
 order: 10
 requirements:
   build: Jekyll

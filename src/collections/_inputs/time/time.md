@@ -1,5 +1,6 @@
 ---
 title: Time
+category: Time Inputs
 details: 12 hour time input. Displayed for `time` and keys ending in `_time`.
 yaml_code_block: |
   ---

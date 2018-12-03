@@ -1,5 +1,6 @@
 ---
 title: Date
+category: Time Inputs
 details: |
   Date picker with options for year, month and day. Displayed for keys ending in `_date` and date values.
 

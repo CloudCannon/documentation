@@ -1,7 +1,8 @@
 ---
 title: Email
+category: General Inputs
 details: |
-  Email field with avatar for `_email` and `_email_address`.
+  Email field with avatar.
   Displayed for `email`, `email_address`, and keys ending in `_email` or `_email_address`.
 info:
 yaml_code_block: |
@@ -10,5 +11,5 @@ yaml_code_block: |
   email_address: support@cloudcannon.com
   ---
 image_paths:
-  - /images/editing/front-matter/social.png
+  - /images/editing/front-matter/email.png
 ---

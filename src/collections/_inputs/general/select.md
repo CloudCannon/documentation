@@ -1,5 +1,6 @@
 ---
 title: Select
+category: General Inputs
 details: |
   Set of options in a dropdown menu. The options are populated from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
 

@@ -1,5 +1,6 @@
 ---
 title: URL
+category: General Inputs
 details: |
   Input field with a preview for absolute or fully qualified URLs.
   Displayed for `url`, `link` and keys ending in `_url` or `_link`.

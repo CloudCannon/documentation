@@ -1,5 +1,6 @@
 ---
 title: Multiselect
+category: General Inputs
 details: |
   Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. The options are populated from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
 

@@ -1,10 +1,10 @@
 ---
-title: Text
-details: Single line field for text. Displayed for short text values.
+title: Hidden
+category: Structure
+details: Hidden values are not present in the interface. Applies to keys that begin with an underscore.
 yaml_code_block: |
   ---
-  tagline: Hand-crafted clothing.
+  _image_src: /src/
   ---
-image_paths:
-  - /images/editing/front-matter/text-field.png
+info: Alternatively, hide fields without changing the key name with [Options](/editing/options/#hidden-fields).
 ---

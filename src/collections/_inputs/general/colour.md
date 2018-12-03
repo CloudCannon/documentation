@@ -1,5 +1,6 @@
 ---
 title: Colour
+category: General Inputs
 details: |
   Input with dropdown for selecting colour.
   Displayed for keys ending in `_colour`, `_color`, `_rgb`, `_hex`, `_hsv` and `_hsl`.
