@@ -8,7 +8,6 @@ icons: true
 	{% include navigation/top.html %}
 </header>
 
-
 <div class="doc-nav">
 	<div class="wrapper wrapper-large" style="padding: 0 10px;">
 		<ul class="doc-nav-sections">
@@ -86,8 +85,41 @@ icons: true
 
 		<section class="docs-main" id="doc">
 			<article class="content">
-				<h1 style="font-size: 0.9rem;margin: 0;text-transform: uppercase;color: #888;">{{ collection.title }} / {{ page.category | default: "General" }}</h1>
-				<h2 style="margin: 10px 0 20px 0;">{{ page.title }}</h2>
+				<div class="doc-nav-mobile" id="doc-nav-mobile">
+					<label>
+						Category
+
+						<select>
+							{% for section in sorted_sections %}
+								<option value="{{ section.url }}introduction/" {% if page.url contains section.url %}selected{% endif %}>
+									{{ section.name }}
+								</option>
+							{% endfor %}
+						</select>
+					</label>
+
+					{% if collection.docs %}
+						{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+						<label>
+							Document
+							<select>
+								{% for group in grouped %}
+									<optgroup label="{{ group.name | default: "General" }} ({{ items | size }})">
+										{% assign items = group.items | sort: 'order' %}
+										{% for item in items %}
+											<option value="{{ site.baseurl }}{{ item.url }}" {% if item.url == page.url %}selected{% endif %}>
+												{{ group.name | default: "General" }} / {{ item.title }}
+											</option>
+										{% endfor %}
+									</optgroup>
+								{% endfor %}
+							</select>
+						</label>
+					{% endif %}
+				</div>
+
+				<h1 class="doc-category-header">{{ collection.title }} / {{ page.category | default: "General" }}</h1>
+				<h2 class="doc-main-header">{{ page.title }}</h2>
 
 				{% include doc-requirements.html  %}
 
@@ -157,4 +189,19 @@ icons: true
 
 <script>
 	{% include autofocus.js %}
+</script>
+<script type="text/javascript">
+	var mobileNav = document.getElementById("doc-nav-mobile");
+
+	if (mobileNav) {
+		var selects = mobileNav.getElementsByTagName("select");
+
+		function selectNavigation(event) {
+			window.location = event.target.value;
+		}
+
+		for (var i = 0; i < selects.length; i++) {
+			selects[i].addEventListener("change", selectNavigation);
+		}
+	}
 </script>

@@ -1,9 +1,5 @@
 {% assign requirements = "" %}
 
-{% if page.requirements.build == 'Jekyll' %}
-	{% assign requirements = requirements | append: ' for <strong>Jekyll</strong> sites' %}
-{% endif %}
-
 {% if page.requirements.syncing == 'GitHub' %}
 	{% assign requirements = requirements | append: ' with <strong>GitHub</strong> syncing' %}
 {% endif %}
