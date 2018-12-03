@@ -6,10 +6,15 @@
 	flex-wrap: wrap;
 
 	.split-choice {
-		flex: 1 1 40%;
+		flex: 1 1 100%;
 		box-sizing: border-box;
 		margin: 6px;
 		background: #fff;
+
+		@media (min-width: 500px) {
+			flex: 1 1 45%;
+			min-width: 400px;
+		}
 	}
 
 	.split-choice-content {
@@ -31,17 +36,29 @@
 	}
 }
 
+$doc-section-breakpoint: 450px;
+
 .doc-sections {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
-	margin: 0;
-	padding: 20px;
+	margin: 0 -20px;
+	padding: 0;
 
 	.doc-section {
 		flex: 1 1 400px;
 		margin: 20px;
 		height: 100%;
+
+		@media (max-width: $doc-section-breakpoint) {
+			margin: 10px 20px;
+		}
+	}
+
+	.doc-section-learn-more {
+		margin-top: 10px;
+		color: $brand-color;
+		opacity: 0.9;
 	}
 
 	.doc-section-link {
@@ -49,8 +66,8 @@
 		padding: 20px 20px;
 		border: 1px solid #fff;
 		background: #fdfdfd;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 		border-radius: $border-radius;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 		color: #333;
 		fill: #333;
 
@@ -58,6 +75,15 @@
 			background: #fff;
 			color: #000;
 			fill: #000;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+			.doc-section-learn-more {
+				opacity: 1;
+			}
+		}
+
+		@media (max-width: $doc-section-breakpoint) {
+			flex-wrap: wrap;
 		}
 	}
 
@@ -68,13 +94,20 @@
 		line-height: 1.6;
 	}
 
-	svg,
-	i {
+	.doc-section-icon {
 		display: block;
 		font-size: 3rem;
 		margin: 0 20px 0 0;
 		align-self: flex-start;
 		flex: 0 0 48px;
+	}
+
+	@media (max-width: $doc-section-breakpoint) {
+		.doc-section-content,
+		.doc-section-icon {
+			text-align: center;
+			margin: 0 auto;
+		}
 	}
 
 	span {

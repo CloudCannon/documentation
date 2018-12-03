@@ -13,7 +13,7 @@ Internationalisation (I18n) in a web sense is the act of making your website mor
 1. [Translation](/i18n/translation/): Serving content in the language of the viewer
 2. [Geolocation](/i18n/geolocation/): Personalising content to give relevant content for the viewer's country
 
-These are internationally separate as people living in a particular country does not guarantee they speak that language. Someone viewing a website from New Zealand (NZ) may be a visitor from Japan. If I18n is handled with the above separation, the website would show the NZ content in Japanese.
+These are internationally separate as a person living in a country is not guaranteed to speak the native language(s). Consider the case where a Japanese tourist is viewing a website in New Zealand (NZ). If I18n is handled with the above separation, the website would show the NZ content in Japanese.
 
 ---
 

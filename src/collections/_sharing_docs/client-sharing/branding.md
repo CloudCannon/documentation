@@ -1,7 +1,7 @@
 ---
 title: Branding
-category: General
-order: 4
+category: Client Sharing
+order: 3
 requirements:
   build: Any
   plan: Pro

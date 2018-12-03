@@ -1,6 +1,6 @@
 ---
 title: Ownership Resolution
-category: Recovery
+category: Transfers
 order: 20
 ---
 

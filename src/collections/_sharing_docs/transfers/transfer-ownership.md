@@ -1,7 +1,7 @@
 ---
 title: Transferring Ownership
-category: General
-order: 5
+category: Transfers
+order: 1
 requirements:
   build: Any
   plan: Free

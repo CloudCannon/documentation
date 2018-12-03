@@ -1,6 +1,6 @@
 ---
 title: Mobile App
-category: General
+category: Client Sharing
 order: 6
 requirements:
   build: Any
