@@ -26,7 +26,7 @@ These commands are run in the root folder of your site.
 
 ### Static
 
-> Static sites work seamlessly in a [Jekyll](/building/jekyll/) build, gaining access to more editing features in CloudCannon.
+> Static sites work seamlessly in a [Jekyll](/builds/introduction/) build, gaining access to more editing features in CloudCannon.
 {: .explainer}
 
 In a legacy CloudCannon static build, files are copied to the live site almost as is. CloudCannon performs optimisations and processes static-specific hosting features on the files.
