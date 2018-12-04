@@ -87,7 +87,7 @@ These options are set in the front matter (or with Jekyll Defaults) of specific 
 | --- | --- |
 | \_unlisted | *true* or *false* (default) |
 
-`_unlisted` hides specific files from the *Explore* section (still accessible from [Visual Editor](/editing/visual-editor) and direct links).
+`_unlisted` hides specific files from the *Explore* section (still accessible from [Visual Editor](/editing/editors/visual-editor/) and direct links).
 
 ```yaml
 ---
