@@ -10,7 +10,6 @@ requirements:
 
 CloudCannon provides preconfigured, fast and reliable hosting. CloudCannon builds, optimises and deploys your sites to [Testing](/domains/testing-domains/) and [Custom Domains](/domains/custom-domains/). This includes advanced configuration e.g. [Custom 404 Pages](/hosting/custom-404-page/) and [Authentication](/authentication/none/)
 
-
 ### Hosting Externally
 
 There are also a number of options to externally host your site while keeping the editing experience of CloudCannon.
@@ -19,13 +18,11 @@ There are also a number of options to externally host your site while keeping th
 
 If your site is already on GitHub Pages, you just need to [connect the repository](/syncing/github/) to CloudCannon. All updates made on CloudCannon are synced to GitHub, which then updates the GitHub Pages website.
 
-
 #### Webhooks
 
 [GitHub](https://developer.github.com/webhooks/) and [Bitbucket](https://confluence.atlassian.com/display/BITBUCKET/Manage+Webhooks) support webhooks, requesting a URL you've configured every time there's a commit. Use this to run a script which builds your site and deploys it anywhere you want.
 
-[Travis CI](https://travis-ci.org/) is a popular (and free) option for doing this. Jekyll has [a guide for building sites with Travis CI](http://jekyllrb.com/docs/continuous-integration/).
-
+[Travis CI](https://travis-ci.org/) is a popular (and free) option for doing this. Jekyll has [a guide for building sites with Travis CI](https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service){: target="_blank"}.
 
 #### FTP
 
