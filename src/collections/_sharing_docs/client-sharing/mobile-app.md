@@ -12,7 +12,7 @@ Give your clients or team members a mobile app to edit your site.
 
 To create a mobile app for your site:
 
-1. Set up [Client Sharing](/sharing/client-sharing)
+1. Set up [Client Sharing](/sharing/client-sharing/client-sharing/)
 2. Upload icons for your app with the instructions below
 3. Navigate to the client sharing login page with your device's web browser
 4. Save to your home screen with the device specific instructions below
@@ -20,17 +20,15 @@ To create a mobile app for your site:
 > You can save CloudCannon to your home screen for your non-password users.
 {: .explainer}
 
-
 ### Icons
 
 The icons are dependent on your target device.
 
-- For iOS devices, upload `/apple-touch-icon.png` (180px by 180px)
-- For Android devices, upload `/touch-icon.png` (192px by 192px)
+* For iOS devices, upload `/apple-touch-icon.png` (180px by 180px)
+* For Android devices, upload `/touch-icon.png` (192px by 192px)
 
 > Follow the style guidelines for each platform for the best effect.
 {: .explainer}
-
 
 ### iOS
 
@@ -46,7 +44,6 @@ To add a page to your home screen in Mobile Safari:
 Your client now has an app to edit their website without the browser controls.
 
 ![iOS Home Screen](/images/sharing/ios-home-screen.png){: .ipad}
-
 
 ### Android
 
