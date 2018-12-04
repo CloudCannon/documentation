@@ -4,25 +4,22 @@ category: Editors
 order: 1
 ---
 
-The *Visual Editor* is the main way to edit content in CloudCannon. [Editable Regions](/editing/editable-regions/) have yellow borders. To make an update, click inside a yellow box and edit the content inline. Navigate to other pages by clicking links on the site.
+The *Visual Editor* is the main way to edit content in CloudCannon. [Editable Regions](/editing/interfaces/editable-regions/) have yellow borders. To make an update, click inside a yellow box and edit the content inline. Navigate to other pages by clicking links on the site.
 
-The *Page Selector* shows a list of pages, posts, drafts and collection items to navigate to.
-Use the **Toggle Pages** button in the top right corner to access it.
+The *Page Selector* shows a list of pages, posts, drafts and collection items to navigate to. Use the **Toggle Pages** button in the top right corner to access it.
 
-![Visual Editor](/images/editing/visual-editor.png){: srcset="/images/editing/visual-editor.png 800w, /images/editing/visual-editor@2x.png 1600w"}{: .screenshot}
-
+![Visual Editor](/images/editing/visual-editor.png){: .screenshot srcset="/images/editing/visual-editor.png 800w, /images/editing/visual-editor@2x.png 1600w"}
 
 ### Default Editor Path
 
 Set the default path to load when the **Edit** option is clicked in the sidebar. Configured globally in `_config.yml` with an `_editor` object:
 
-~~~yaml
+```yaml
 _editor:
   default_path: /about/
-~~~
+```
 
 Clicking the **Edit** sidebar option will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
-
 
 ### Editor Content
 
