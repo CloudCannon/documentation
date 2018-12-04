@@ -8,7 +8,7 @@ requirements:
   hosting: CloudCannon
 ---
 
-CloudCannon provides preconfigured, fast and reliable hosting. CloudCannon builds, optimises and deploys your sites to [Testing](/domains/testing-domains/) and [Custom Domains](/domains/custom-domains/). This includes advanced configuration e.g. [Custom 404 Pages](/hosting/custom-404-page/) and [Authentication](/authentication/none/)
+CloudCannon provides preconfigured, fast and reliable hosting. CloudCannon builds, optimises and deploys your sites to [Testing](/hosting/domains/testing-domains/) and [Custom Domains](/hosting/domains/custom-domains/). This includes advanced configuration e.g. [Custom 404 Pages](/hosting/custom-404-page/) and [Authentication](/authentication/none/)
 
 ### Hosting Externally
 
