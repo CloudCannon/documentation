@@ -8,16 +8,15 @@ requirements:
   hosting: Any
 ---
 
-*Projects* group related sites together with a supporting description and external links.
-Access to *Projects* is available after you have created at least one site.
+*Projects* group related sites together with a supporting description and external links. Access to *Projects* is available after you have created at least one site.
 
-***
+---
 
 ### Adding a new Project
 
 To create a project:
 
-1. Have at least one site created on your account or [Organisation](/organisations/getting-started/)
+1. Have at least one site created on your account or [Organisation](/organisations/introduction/)
 2. Go to the *Projects* section
 3. Click the **Create Project** button
 4. Enter a name for your *Project*
