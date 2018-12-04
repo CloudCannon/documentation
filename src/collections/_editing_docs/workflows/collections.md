@@ -38,7 +38,7 @@ There are a number of ways to add content for your new item:
 
 ![Editing item](/images/editing/collections/edit-item.png){: .screenshot srcset="/images/editing/collections/edit-item.png 800w, /images/editing/collections/edit-item@2x.png 1600w"}
 
-[Front matter](/editing/front-matter/) (e.g. title, description and thumbnail) is updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
+[Front matter](/editing/editors/front-matter-editor/) (e.g. title, description and thumbnail) is updated in the *Settings Panel*, accessed by selecting the **Toggle Settings** button in the top right corner.
 
 > Hide front matter by putting it in [Jekyll Defaults](http://jekyllrb.com/docs/configuration/#front-matter-defaults){: target="\_blank"} instead.
 {: .explainer}
