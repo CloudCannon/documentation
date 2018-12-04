@@ -20,7 +20,7 @@ To define an *Editable Region*:
 > Define multiple classes if the element already has a class, for example: `<div class="content editable">`.
 {: .explainer}
 
-The [Visual Editor](/editing/visual-editor/) supports JavaScript, however, HTML rendered with JavaScript is not editable.
+The [Visual Editor](/editing/editors/visual-editor/) supports JavaScript, however, HTML rendered with JavaScript is not editable.
 
 The *Editable Region* interface used depends on the defined element:
 
