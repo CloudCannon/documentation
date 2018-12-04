@@ -24,7 +24,7 @@ The [Visual Editor](/editing/editors/visual-editor/) supports JavaScript, howeve
 
 The *Editable Region* interface used depends on the defined element:
 
-{% assign ordered = site.editable_regions | sort: "order" %} {% for editable_region in ordered %} —
+{% assign ordered = site.editable_regions | sort: "order" %} {% for editable_region in ordered %} <hr>
 
 ### {{ editable_region.name }}
 

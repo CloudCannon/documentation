@@ -12,19 +12,55 @@ requirements:
 
 *Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
-* `<a href="cloudcannon:collections/_staff/">Edit all staff</a>`
-* `<a href="cloudcannon:collections/_staff/jane-doe.md">Edit Jane Doe</a>`
-* `<a href="cloudcannon:collections/_posts/2015-07-30-welcome-post.md">Edit Welcome Post</a>`
-* `<a href="cloudcannon:status">Link to Site Status and Recent Activity</a>`
+```html
+<a href="cloudcannon:collections/_staff/">
+  Edit all staff
+</a>
+
+<a href="cloudcannon:collections/_staff/jane-doe.md">
+  Edit Jane Doe
+</a>
+
+<a href="cloudcannon:collections/_posts/2015-07-30-welcome-post.md">
+  Edit Welcome Post
+</a>
+
+<a href="cloudcannon:status">
+  Link to Site Status and Recent Activity
+</a>
+```
 
 Front matter *Editor Links* are prefixed with `cloudcannon:#` and match the Liquid format used to reference them, for example:
 
-* `<a href="cloudcannon:#title">Edit the title</a>`
-* `<a href="cloudcannon:#array[1]">Edit the first array item</a>`
-* `<a href="cloudcannon:#array[+]">Create a new item in an array</a>`
-* `<a href="cloudcannon:#object.title">Edit a variable within an object</a>`
-* `<a href="cloudcannon:#object.array">Edit an array within an object</a>`
-* `<a href="cloudcannon:#object.array[0].title">Edit the title of the first array item within an object</a>`
+```html
+<!-- Inputs -->
+<a href="cloudcannon:#title">
+  Edit the title
+</a>
+
+<!-- Arrays -->
+<a href="cloudcannon:#array[1]">
+  Edit the first array item
+</a>
+
+<a href="cloudcannon:#array[+]">
+  Create a new item in an array
+</a>
+
+<!-- Inputs within an Object -->
+<a href="cloudcannon:#object.title">
+  Edit a variable within an object
+</a>
+
+<a href="cloudcannon:#object.array">
+  Edit an array within an object
+</a>
+
+<!-- Inputs within an Array inside an Object -->
+<a href="cloudcannon:#object.array[0].title">
+  Edit the title of the first array item within an object
+</a>
+```
 
 ### Posts
 

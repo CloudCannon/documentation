@@ -43,10 +43,14 @@ article.content h3 {
 	margin: 0 0 10px 0;
 
 	li {
-		margin: 0 1rem 2px 2rem;
-		list-style: square;
+		margin: 0 1rem 2px 1rem;
+		list-style: none;
 		font-size: 14px;
 		line-height: 1.8em;
+	}
+
+	a {
+		padding: 0 10px;
 	}
 }
 

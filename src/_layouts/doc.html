@@ -47,8 +47,7 @@ icons: true
 
 <div class="docs-container">
 	<div class="wrapper wrapper-large">
-		<nav class="docs-nav full-navigation">
-		<!-- <nav class="docs-nav"> -->
+		<nav class="docs-nav full-navigation" id="docs-nav">
 			<ul class="docs-nav-list">
 				{% assign prev = null %}
 				{% assign current = null %}
@@ -203,9 +202,8 @@ icons: true
 	</div>
 {% endif %}
 
-<script>
-	{% include autofocus.js %}
-</script>
+<script src="/js/sticky-sidebar.js"></script>
+<script>{% include autofocus.js %}</script>
 <script type="text/javascript">
 	var mobileNav = document.getElementById("doc-nav-mobile");
 
@@ -220,4 +218,9 @@ icons: true
 			selects[i].addEventListener("change", selectNavigation);
 		}
 	}
+
+	var sidebar = new StickySidebar('#docs-nav', {
+		topSpacing: 20,
+		bottomSpacing: 20
+	});
 </script>
