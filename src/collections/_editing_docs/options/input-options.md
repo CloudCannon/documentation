@@ -50,13 +50,13 @@ examples:
 
 Control which front matter fields your editors see with the `hidden` option.
 
-~~~yaml
+```yaml
 _options:
   layout:
     hidden: true
-~~~
+```
 
-Hidden fields can be edited with modal-style [Editor Links](/editing/editor-links/#front-matter-style).
+Hidden fields can be edited with modal-style [Editor Links](/editing/experience/editor-links/#front-matter-style).
 
 > Alternatively, hide front matter fields by prefixing the key with an underscore (e.g. `_hidden_text`).
 {: .explainer}
@@ -65,7 +65,7 @@ Hidden fields can be edited with modal-style [Editor Links](/editing/editor-link
 
 Change the appearance and behaviour of your front matter code blocks to fit your use case and brand.
 
-~~~yaml
+```yaml
 _options:
   code_block:
     tab_size: 2
@@ -73,13 +73,13 @@ _options:
   javascript_code_block:
     tab_size: 4
     theme: dawn
-~~~
+```
 
 | Option | Values |
-| ------ | ------ |
-| tab_size | Integer (optional, defaults to *4*) |
+| --- | --- |
+| tab\_size | Integer (optional, defaults to *4*) |
 | theme | String, one from [themes](https://github.com/ajaxorg/ace/tree/v1.2.9/lib/ace/theme) (optional, defaults to *monokai*) |
-| show_gutter | *true* or *false* (optional, defaults to *true*) |
+| show\_gutter | *true* or *false* (optional, defaults to *true*) |
 
 `tab_size` controls how many spaces lines are auto indented.
 
@@ -87,7 +87,4 @@ _options:
 
 `show_gutter` toggles line numbers and code folding controls.
 
-{% for example in page.examples %}
-***
-{% include settings-panel-example.html example=example %}
-{% endfor %}
+{% for example in page.examples %} \*\*\* {% include settings-panel-example.html example=example %} {% endfor %}
