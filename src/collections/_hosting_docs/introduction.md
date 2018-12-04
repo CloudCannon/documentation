@@ -16,7 +16,7 @@ There are also a number of options to externally host your site while keeping th
 
 #### GitHub Pages
 
-If your site is already on GitHub Pages, you just need to [connect the repository](/syncing/github/) to CloudCannon. All updates made on CloudCannon are synced to GitHub, which then updates the GitHub Pages website.
+If your site is already on GitHub Pages, you just need to [connect the repository](/files/source-syncing/github/) to CloudCannon. All updates made on CloudCannon are synced to GitHub, which then updates the GitHub Pages website.
 
 #### Webhooks
 
