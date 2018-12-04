@@ -205,6 +205,15 @@ $docs-nav-background: rgba(0, 0, 0, 0.1);
 	}
 }
 
+.doc-nav-sections-empty-fix {
+	position: absolute;
+	height: $docs-nav-bottom-curve-size;
+	background: $docs-nav-background;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
 a.doc-nav-section-link {
 	display: flex;
 	flex-direction: column;
