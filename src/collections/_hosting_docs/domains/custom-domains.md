@@ -12,21 +12,20 @@ Give your live site a professional look with a unique domain name.
 
 To add a custom domain:
 
-1. Purchase a domain from a domain registrar (e.g.  [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
+1. Purchase a domain from a domain registrar (e.g. [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&amp;U=852853&amp;M=25581&amp;urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
 2. Go to the *Site Settings* / *Domain* section for your site
 3. Enter your domain with or without a subdomain
-3. Click **Add Domain**
+4. Click **Add Domain**
 
-![Site Settings / Domain section with subdomain](/images/domains/empty.png){: srcset="/images/domains/empty.png 800w, /images/domains/empty@2x.png 1600w"}{: .screenshot}
+![Site Settings / Domain section with subdomain](/images/domains/empty.png){: .screenshot srcset="/images/domains/empty.png 800w, /images/domains/empty@2x.png 1600w"}
 
-> [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&U=852853&M=25581&urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to simplify configuring your domain.
+> [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&amp;U=852853&amp;M=25581&amp;urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to simplify configuring your domain.
 {: .explainer}
-
 
 ### Configuring your domain
 
 > Changes to DNS can take up to 48 hours to propagate, depending on the previous TTL set. Test your site is configured correctly with the [pingdom DNS checker](http://dnscheck.pingdom.com/){: target="_blank"}.
-{: .explainer .warning}
+{: .explainer.warning}
 
 Configuration instructions are shown after adding a domain. There are two choices:
 
@@ -35,7 +34,6 @@ Configuration instructions are shown after adding a domain. There are two choice
 
 > Verisign provides a [guide](http://www.verisign.com/en_US/domain-names/online/how-dns-works/index.xhtml){: target="_blank"} to learn how DNS works.
 {: .explainer}
-
 
 ### CloudCannon DNS
 
@@ -46,16 +44,15 @@ To configure your domain with *CloudCannon DNS*:
 3. Enter the nameservers CloudCannon provides in *Site Settings* / *Domain*
 4. Save the changes
 
-![Site Settings / Domain section with CloudCannon DNS](/images/domains/cloudcannon-dns.png){: srcset="/images/domains/cloudcannon-dns.png 800w, /images/domains/cloudcannon-dns@2x.png 1600w"}{: .screenshot}
+![Site Settings / Domain section with CloudCannon DNS](/images/domains/cloudcannon-dns.png){: .screenshot srcset="/images/domains/cloudcannon-dns.png 800w, /images/domains/cloudcannon-dns@2x.png 1600w"}
 
-> Set additional DNS records for external services or ownership validation with CloudCannon [DNS](/domains/dns/).
+> Set additional DNS records for external services or ownership validation with CloudCannon [DNS](/hosting/domains/dns/).
 {: .explainer}
-
 
 ### External DNS
 
 > *CloudCannon DNS* is strongly recommended for sites on apex domains (no subdomain). *External DNS* relies on an A record mapped to a single server. This cannot be dynamically load balanced, reducing redundancy and increasing potential down time risk.
-{: .explainer .warning}
+{: .explainer.warning}
 
 To configure your domain with *External DNS*:
 
@@ -63,7 +60,7 @@ To configure your domain with *External DNS*:
 2. Go into the DNS settings for your domain
 3. Add the CNAME and A records provided to your DNS records
 
-![Site Settings / Domain section with external DNS](/images/domains/external-dns.png){: srcset="/images/domains/external-dns.png 800w, /images/domains/external-dns@2x.png 1600w"}{: .screenshot}
+![Site Settings / Domain section with external DNS](/images/domains/external-dns.png){: .screenshot srcset="/images/domains/external-dns.png 800w, /images/domains/external-dns@2x.png 1600w"}
 
 > The CNAME record maps your subdomains to CloudCannon servers, the A record maps your apex domain to a specific CloudCannon server.
 {: .explainer}
