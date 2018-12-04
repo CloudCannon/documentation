@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. Alternatively, add front matter *Editor Links* to open the front matter editor at specified fields.
+*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/editors/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. Alternatively, add front matter *Editor Links* to open the front matter editor at specified fields.
 
 *Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
@@ -95,7 +95,7 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 <a href="cloudcannon:#title" data-cms-editor-link-style="modal">Edit the title</a>
 ```
 
-> Using modal-style editor links that point directly to [hidden fields](/editing/front-matter/#hidden) show the field.
+> Using modal-style editor links that point directly to [hidden fields](/editing/editors/front-matter-editor/#hidden) show the field.
 {: .explainer}
 
 CloudCannon adds the `cms-editor-link-dirty` class to *Editor Links* after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
