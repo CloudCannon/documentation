@@ -1,65 +1,130 @@
 ---
 layout: default
+icons: true
 ---
 
+{% assign collection = site.collections | where: "label", page.collection | first %}
 <header class="short">
 	{% include navigation/top.html %}
 </header>
 
-<div class="dark-content docs-container">
-	<div class="wrapper wrapper-large">
-		<nav class="docs-nav">
-			<ul>
-				{% assign grouped = site.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+<div class="doc-nav">
+	<div class="wrapper wrapper-large" style="padding: 0 10px;">
+		<ul class="doc-nav-sections">
+			{% assign prev_section = null %}
+			{% assign current_section = null %}
+			{% assign next_section = null %}
 
-				{% for group in grouped %}
-					<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-						{% assign items = group.items | sort: 'order' %}
-						<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
-						<ul>
-							{% for item in items %}
-								<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-							{% endfor %}
-						</ul>
-					</li>
-				{% endfor %}
+			{% assign sorted_sections = site.sections | sort: "order" %}
+			{% for section in sorted_sections %}
+				{% unless next_section %}
+					{% if page.url contains section.url %}
+						{% assign current_section = section %}
+					{% elsif current_section %}
+						{% assign next_section = section %}
+					{% else %}
+						{% assign prev_section = section %}
+					{% endif %}
+				{% endunless %}
+
+				<li class="doc-nav-section">
+					<a href="{{ section.url }}introduction/" class="doc-nav-section-link {% if page.url contains section.url %}current{% endif %}">
+						{% if section.icon == "console" %}
+							<svg viewBox="0 0 24 24"><path d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5C2,3.89 2.9,3 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" /></svg>
+						{% else %}
+							<i class="material-icons">{{ section.icon }}</i>
+						{% endif %}
+						<strong>{{ section.short_name }}</strong>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% unless current_section %}
+		<div class="doc-nav-sections-empty-fix"></div>
+	{% endunless %}
+</div>
+
+<div class="docs-container">
+	<div class="wrapper wrapper-large">
+		<nav class="docs-nav full-navigation" id="docs-nav">
+			<ul class="docs-nav-list">
+				{% assign prev = null %}
+				{% assign current = null %}
+				{% assign next = null %}
+				{% if collection.docs %}
+					{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+
+					{% for group in grouped %}
+						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+							{% assign items = group.items | sort: 'order' %}
+							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name | default: "General" }} ({{ items | size }})</a>
+							<ul>
+								{% for item in items %}
+									{% unless next %}
+										{% if item.url == page.url %}
+											{% assign current = item %}
+										{% elsif current %}
+											{% assign next = item %}
+										{% else %}
+											{% assign prev = item %}
+										{% endif %}
+									{% endunless %}
+
+									<li class="nav-item {% if item.url == page.url %}current{% endif %}">
+										<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+										{% if item.url == page.url %}<div class="toc">{% include toc.html html=content h_max=3 %}</div>{% endif %}
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% endfor %}
+				{% endif %}
 			</ul>
 		</nav>
 
 		<section class="docs-main" id="doc">
 			<article class="content">
-				<p class="docs-category">{% if page.category %}{{ page.category }}{% else %}{{ site.display_title }}{% endif %}</p>
-				<h2>{{ page.title }}</h2>
+				<div class="doc-nav-mobile" id="doc-nav-mobile">
+					<label>
+						Category
 
-				<div class="toc">{% include toc.html html=content h_max=3 %}</div>
+						<select>
+							{% for section in sorted_sections %}
+								<option value="{{ section.url }}introduction/" {% if page.url contains section.url %}selected{% endif %}>
+									{{ section.name }}
+								</option>
+							{% endfor %}
+						</select>
+					</label>
 
-				{% assign requirements = "" %}
+					{% if collection.docs %}
+						{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+						<label>
+							Document
+							<select>
+								{% for group in grouped %}
+									{% assign items = group.items | sort: 'order' %}
+									<optgroup label="{{ group.name | default: "General" }} ({{ items | size }})">
+										{% for item in items %}
+											<option value="{{ site.baseurl }}{{ item.url }}" {% if item.url == page.url %}selected{% endif %}>
+												{{ group.name | default: "General" }} / {{ item.title }}
+											</option>
+										{% endfor %}
+									</optgroup>
+								{% endfor %}
+							</select>
+						</label>
+					{% endif %}
+				</div>
 
-				{% if page.requirements.build == 'Jekyll' %}
-					{% assign requirements = requirements | append: ' for <strong>Jekyll</strong> sites' %}
+				{% if collection.docs %}
+					<h1 class="doc-category-header">{{ collection.title }} / {{ page.category | default: "General" }}</h1>
 				{% endif %}
 
-				{% if page.requirements.hosting == 'CloudCannon' %}
-					{% assign requirements = requirements | append: ' with <strong>CloudCannon</strong> hosting' %}
-				{% endif %}
+				<h2 class="doc-main-header">{{ page.title }}</h2>
 
-				{% if page.requirements.syncing == 'GitHub' %}
-					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> syncing' %}
-				{% endif %}
-
-				{% if page.requirements.syncing == 'Git' %}
-					{% assign requirements = requirements | append: ' with <strong>GitHub</strong> or <strong>Bitbucket</strong> syncing' %}
-				{% endif %}
-
-				{% if page.requirements.plan == 'Basic' %}
-					{% assign requirements = requirements | append: ' on the <strong>Basic</strong> and <strong>Pro</strong> plans' %}
-				{% elsif page.requirements.plan == 'Pro' %}
-					{% assign requirements = requirements | append: ' on the <strong>Pro</strong> plan' %}
-				{% endif %}
-
-				{% if requirements != "" %}
-					<blockquote class="explainer"><p>Available {{ requirements }}.</p></blockquote>
-				{% endif %}
+				{% include doc-requirements.html  %}
 
 				<div>{{ content }}</div>
 
@@ -69,6 +134,93 @@ layout: default
 	</div>
 </div>
 
-<script>
-	{% include autofocus.js %}
+{% if current_section %}
+	<div class="split-choice-wrapper">
+		{% if prev %}
+			<div class="split-choice">
+				<div class="split-choice-content">
+					<i class="material-icons">arrow_back</i>
+					<h3>{{ prev.category | default: "General" }} / {{ prev.title }}</h3>
+					<a class="button light" href="{{ prev.url }}">Read previous doc</a>
+				</div>
+			</div>
+		{% elsif prev_section %}
+			<div class="split-choice">
+				<div class="split-choice-content">
+					{% if prev_section.icon == "console" %}
+						<svg viewBox="0 0 24 24" width="80"><path d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5C2,3.89 2.9,3 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" /></svg>
+					{% else %}
+						<i class="material-icons">{{ prev_section.icon }}</i>
+					{% endif %}
+					<h3>{{ prev_section.name }}</h3>
+					<a class="button light" href="{{ prev_section.url }}introduction/">Go back to {{ prev_section.short_name }}</a>
+				</div>
+			</div>
+		{% endif %}
+
+		{% if next %}
+			<div class="split-choice">
+				<div class="split-choice-content">
+					<i class="material-icons">arrow_forward</i>
+					<h3>{{ next.category | default: "General" }} / {{ next.title }}</h3>
+					<a class="button" href="{{ next.url }}">Read next doc</a>
+				</div>
+			</div>
+		{% elsif next_section %}
+			<div class="split-choice">
+				<div class="split-choice-content">
+					{% if next_section.icon == "console" %}
+						<svg viewBox="0 0 24 24" width="80"><path d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5C2,3.89 2.9,3 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" /></svg>
+					{% else %}
+						<i class="material-icons">{{ next_section.icon }}</i>
+					{% endif %}
+					<h3>{{ next_section.name }}</h3>
+					<a class="button" href="{{ next_section.url }}introduction/">Move onto {{ next_section.short_name }}</a>
+				</div>
+			</div>
+		{% else %}
+			<div class="split-choice">
+				<div class="split-choice-content">
+					<i class="material-icons">chat</i>
+					<h3>Let's Chat</h3>
+					<p>If you couldn't find what you needed, send us a message.</p>
+					<a class="button light" href="{{ site.main_url }}/contact/">Contact Support</a>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+{% else %}
+	<div class="split-choice-wrapper">
+		<div class="split-choice">
+			<div class="split-choice-content">
+				<i class="material-icons">chat</i>
+				<h3>Let's Chat</h3>
+				<p>If you couldn't find what you needed, send us a message.</p>
+				<a class="button light" href="{{ site.main_url }}/contact/">Contact Support</a>
+			</div>
+		</div>
+	</div>
+{% endif %}
+
+<script src="/js/sticky-sidebar.js"></script>
+<script>{% include autofocus.js %}</script>
+<script type="text/javascript">
+	var mobileNav = document.getElementById("doc-nav-mobile");
+
+	if (mobileNav) {
+		var selects = mobileNav.getElementsByTagName("select");
+
+		function selectNavigation(event) {
+			window.location = event.target.value;
+		}
+
+		for (var i = 0; i < selects.length; i++) {
+			selects[i].addEventListener("change", selectNavigation);
+		}
+	}
+
+	var sidebar = new StickySidebar('#docs-nav', {
+		topSpacing: 20,
+		bottomSpacing: 20
+	});
 </script>

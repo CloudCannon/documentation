@@ -40,11 +40,50 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+collections_dir: collections
 collections:
-  docs:
-    title: Documentation
-    permalink: /:path/
+  project_docs:
+    title: Projects
+    permalink: /projects/:path/
     output: true
+  sharing_docs:
+    title: Sharing
+    permalink: /sharing/:path/
+    output: true
+  build_docs:
+    title: Builds
+    permalink: /builds/:path/
+    output: true
+  editing_docs:
+    title: Editing
+    permalink: /editing/:path/
+    output: true
+  file_docs:
+    title: Files
+    permalink: /files/:path/
+    output: true
+  hosting_docs:
+    title: Hosting
+    permalink: /hosting/:path/
+    output: true
+  organisation_docs:
+    title: Organisations
+    permalink: /organisations/:path/
+    output: true
+  i18n_docs:
+    title: Internationalisation
+    permalink: /i18n/:path/
+    output: true
+  sections:
+    title: Sections
+    permalink: /:path/
+    output: false
+  editable_regions:
+    title: Editable Regions
+    output: false
+  inputs:
+    title: Inputs
+    output: false
 
 defaults:
   -
@@ -52,34 +91,7 @@ defaults:
       path: ""
     values:
       hide_cta: true
-      layout: structure
-  -
-    scope:
-      path: ""
-      type: "docs"
-    values:
       layout: doc
-      seo:
-        type: Article
-      _comments:
-        category: Group navigation links with this field
-        order: Used to sort links in the navigation
-      _options:
-        content:
-          width: 800
-          height: 2000
-          format: p h2 h3
-          bold: true
-          link: true
-          italic: true
-          removeformat: true
-          numberedlist: true
-          bulletedlist: true
-          code: true
-          table: true
-          outdent: true
-          indent: true
-          image: true
   -
     scope:
       path: ""

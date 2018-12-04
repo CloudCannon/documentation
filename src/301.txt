@@ -26,3 +26,79 @@
 /rss/ /feed.xml
 /sharing/developers/ /sharing/collaborators/
 /sharing/non-developers/ /sharing/collaborators/
+
+/authentication/custom-interfaces/ /hosting/authentication/custom-interfaces/
+/authentication/custom-routes/ /hosting/authentication/custom-routes/
+/authentication/logging-out/ /hosting/authentication/logging-out/
+/authentication/none/ /hosting/authentication/none/
+/authentication/password/ /hosting/authentication/password/
+/authentication/saml/ /hosting/authentication/saml/
+/authentication/user-accounts/ /hosting/authentication/user-accounts/
+
+/building/configuration/ /builds/configuration/
+/building/environments/ /builds/environments/
+/building/jekyll/ /builds/introduction/
+/building/optimisations/ /builds/optimisations/
+/building/plugins/ /builds/plugins/
+/building/scheduling/ /builds/scheduling/
+/building/versions/ /builds/versions/
+
+/domains/custom-domains/ /hosting/domains/custom-domains/
+/domains/dns/ /hosting/domains/dns/
+/domains/subdomains/ /hosting/domains/subdomains/
+/domains/testing-domains/ /hosting/domains/testing-domains/
+
+/editing/blogging/ /editing/workflows/blogging/
+/editing/collection-defaults/ /editing/experience/collection-defaults/
+/editing/collections/ /editing/workflows/collections/
+/editing/content-editor/ /editing/editors/content-editor/
+/editing/data-files/ /editing/editors/data-editor/
+/editing/editable-regions/ /editing/interfaces/editable-regions/
+/editing/editor-links/ /editing/experience/editor-links/
+/editing/front-matter/ /editing/editors/front-matter-editor/
+/editing/options/ /editing/options/options/
+/editing/source-editor/ /editing/editors/source-editor/
+/editing/visual-editor/ /editing/editors/visual-editor/
+
+/hosting/301-redirects/ /hosting/general/301-redirects/
+/hosting/active-links/ /hosting/general/active-links/
+/hosting/contact-forms/ /hosting/forms/introduction/
+/hosting/custom-404-page/ /hosting/general/404-page/
+/hosting/extensionless-urls/ /hosting/general/extensionless-urls/
+/hosting/options/ /hosting/introduction/
+/hosting/pretty-urls/ /hosting/general/pretty-urls/
+
+/i18n/geolocation/ /i18n/geolocation/
+/i18n/internationalisation/ /i18n/translation/
+
+/navigation/dashboard/ /editing/navigation/dashboard/
+/navigation/explore/ /editing/navigation/explore/
+
+/organisations/branding/ /organisations/branding/
+/organisations/getting-started/ /organisations/introduction/
+/organisations/saml/ /organisations/saml/
+/organisations/team-management/ /organisations/team-management/
+
+/overview/tour/ /
+
+/projects/branching/ /projects/branching/
+/projects/introduction/ /projects/introduction/
+
+/sharing/client-sharing/ /sharing/client-sharing/client-sharing/
+/sharing/collaborators/ /sharing/general/collaborators/
+/sharing/mobile-app/ /sharing/client-sharing/mobile-app/
+/sharing/ownership-resolution/ /sharing/transfers/ownership-resolution/
+/sharing/transfer-ownership/ /sharing/transfers/transfer-ownership/
+/sharing/white-labelling/ /sharing/client-sharing/branding/
+
+/ssl/letsencrypt/ /hosting/ssl/automatic-ssl/
+/ssl/cloudflare/ /hosting/ssl/cloudflare/
+/ssl/custom-certificate/ /hosting/ssl/custom-certificate/
+
+/syncing/bitbucket/ /files/source-syncing/bitbucket/
+/syncing/dropbox/ /files/source-syncing/dropbox/
+/syncing/file-types/ /files/introduction/
+/syncing/file-upload/ /files/source-syncing/file-upload/
+/syncing/github/ /files/source-syncing/github/
+/syncing/output/ /files/output-syncing/introduction/
+/syncing/publishing/ /files/publishing/introduction/

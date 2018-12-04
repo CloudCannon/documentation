@@ -1,0 +1,266 @@
+.split-choice-wrapper {
+	display: flex;
+	align-items: center;
+	background: #fafafa;
+	padding: 6px 0;
+	flex-wrap: wrap;
+
+	.split-choice {
+		flex: 1 1 100%;
+		box-sizing: border-box;
+		margin: 6px;
+		background: #fff;
+
+		@media (min-width: 500px) {
+			flex: 1 1 45%;
+			min-width: 400px;
+		}
+	}
+
+	.split-choice-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		min-height: 40vh;
+		max-width: 400px;
+		text-align: center;
+		padding: 20px;
+		margin: 0 auto;
+	}
+
+	svg,
+	i {
+		height: 100px;
+		font-size: 80px;
+	}
+}
+
+$doc-section-breakpoint: 450px;
+
+.doc-sections {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0 -20px;
+	padding: 0;
+
+	.doc-section {
+		flex: 1 1 400px;
+		margin: 20px;
+		height: 100%;
+
+		@media (max-width: $doc-section-breakpoint) {
+			margin: 10px 20px;
+		}
+	}
+
+	.doc-section-learn-more {
+		margin-top: 10px;
+		color: $brand-color;
+		opacity: 0.9;
+	}
+
+	.doc-section-link {
+		display: flex;
+		padding: 20px 20px;
+		border: 1px solid #fff;
+		background: #fdfdfd;
+		border-radius: $border-radius;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+		color: #333;
+		fill: #333;
+
+		&:hover {
+			background: #fff;
+			color: #000;
+			fill: #000;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+			.doc-section-learn-more {
+				opacity: 1;
+			}
+		}
+
+		@media (max-width: $doc-section-breakpoint) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.doc-section-content {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	.doc-section-icon {
+		display: block;
+		font-size: 3rem;
+		margin: 0 20px 0 0;
+		align-self: flex-start;
+		flex: 0 0 48px;
+	}
+
+	@media (max-width: $doc-section-breakpoint) {
+		.doc-section-content,
+		.doc-section-icon {
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	span {
+		font-size: 1rem;
+	}
+}
+
+.doc-category-header {
+	font-size: 0.9rem;
+	margin: 0;
+	text-transform: uppercase;
+	color: #888;
+}
+
+h2.doc-main-header {
+	margin: 10px 0 20px 0;
+}
+
+.doc-nav-sections {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.doc-nav-mobile {
+	display: none;
+}
+
+.doc-nav-mobile {
+	label {
+		flex: 1 1 200px;
+		margin: 10px;
+		text-transform: uppercase;
+		color: #888;
+		font-weight: bold;
+		font-size: 0.9rem;
+	}
+
+	select {
+		display: block;
+		padding: 10px;
+		border: 1px solid #eee;
+		font-size: 1rem;
+		min-width: 0;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 5px 0 0 0;
+		-webkit-appearance: none;
+		background: #fafafafa;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 800px) {
+	.docs-nav,
+	.doc-category-header,
+	.doc-nav-sections {
+		display: none;
+	}
+
+	.doc-nav-mobile {
+		display: flex;
+		margin: 0 -10px;
+		flex-wrap: wrap;
+	}
+}
+
+li.doc-nav-section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin: 0 -1px;
+}
+
+$docs-nav-bottom-curve-size: 10px;
+$docs-nav-background: rgba(0, 0, 0, 0.1);
+.doc-nav {
+	overflow: hidden;
+	position: relative;
+	padding-top: 10px;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: $docs-nav-bottom-curve-size;
+		left: 0;
+		width: 100%;
+		background: $docs-nav-background;
+	}
+}
+
+.doc-nav-sections-empty-fix {
+	position: absolute;
+	height: $docs-nav-bottom-curve-size;
+	background: $docs-nav-background;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+a.doc-nav-section-link {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0 15px 0;
+	border-radius: $docs-nav-bottom-curve-size $docs-nav-bottom-curve-size 0 0;
+	color: #666;
+	fill: #666;
+	position: relative;
+	z-index: 10;
+
+	svg,
+	i {
+		height: 24px;
+		width: 24px;
+	}
+
+	&:hover {
+		color: #222;
+		fill: #222;
+	}
+
+	&.current {
+		color: #222;
+		fill: #222;
+		background: #fff;
+		z-index: 1;
+
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			height: $docs-nav-bottom-curve-size;
+			left: 100%;
+			width: 9999px;
+			background: $docs-nav-background;
+			bottom: 0;
+			border-radius: 0 0 0 $docs-nav-bottom-curve-size;
+		}
+
+		&:after {
+			right: 100%;
+			left: auto;
+			border-radius: 0 0 $docs-nav-bottom-curve-size 0;
+		}
+	}
+}
