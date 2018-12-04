@@ -20,7 +20,7 @@ The site breakdown is a representation of the [Explore](/editing/navigation/expl
 
 ### Main Actions
 
-Sits below the site breakdown and defaults to having a single action (View live site). You can configure two more options in the&nbsp;[client interface](/sharing/client-sharing/#interface).
+Sits below the site breakdown and defaults to having a single action (View live site). You can configure two more options in the&nbsp;[client interface](/sharing/client-sharing/client-sharing/#interface).
 
 ### Recent Activity
 
