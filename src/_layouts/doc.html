@@ -104,8 +104,8 @@ icons: true
 							Document
 							<select>
 								{% for group in grouped %}
+									{% assign items = group.items | sort: 'order' %}
 									<optgroup label="{{ group.name | default: "General" }} ({{ items | size }})">
-										{% assign items = group.items | sort: 'order' %}
 										{% for item in items %}
 											<option value="{{ site.baseurl }}{{ item.url }}" {% if item.url == page.url %}selected{% endif %}>
 												{{ group.name | default: "General" }} / {{ item.title }}
