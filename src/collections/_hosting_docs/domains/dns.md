@@ -8,7 +8,7 @@ requirements:
   hosting: CloudCannon
 ---
 
-Add external services or ownership validation through DNS records while your site is configured with [CloudCannon DNS](/domains/custom-domains/#cloudcannon-dns).
+Add external services or ownership validation through DNS records while your site is configured with [CloudCannon DNS](/hosting/domains/custom-domains/#cloudcannon-dns).
 
 To change or add a new record:
 
@@ -16,7 +16,7 @@ To change or add a new record:
 2. Change or add details for one or more records
 3. Click **Update DNS**
 
-![Site Settings / DNS section with no additional records](/images/domains/dns.png){: srcset="/images/domains/dns.png 800w, /images/domains/dns@2x.png 1600w"}{: .screenshot}
+![Site Settings / DNS section with no additional records](/images/domains/dns.png){: .screenshot srcset="/images/domains/dns.png 800w, /images/domains/dns@2x.png 1600w"}
 
 CloudCannon supports the following record types:
 
