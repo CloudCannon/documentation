@@ -16,7 +16,7 @@ This has three main sections: Site Breakdown, Main Actions, and Recent Activity.
 
 ### Site Breakdown
 
-The site breakdown is a representation of the [Explore](/editing/navigation/explore/) navigation. View options are inherited from the [explore settings](/navigation/explore).
+The site breakdown is a representation of the [Explore](/editing/navigation/explore/) navigation. View options are inherited from the [explore settings](/editing/navigation/explore/).
 
 ### Main Actions
 
