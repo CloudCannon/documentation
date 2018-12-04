@@ -8,20 +8,20 @@ CloudCannon builds all sites with Jekyll.
 
 Sites **without** a `Gemfile` are built with:
 
-~~~bash
+```bash
 $ jekyll build
-~~~
+```
 
 Sites **with** a `Gemfile` are built with:
 
-~~~bash
+```bash
 $ bundle install
 $ bundle exec jekyll build
-~~~
+```
 
 These commands are run in the root folder of your site.
 
-> If your `Gemfile` isn’t in the root folder, set the `BUNDLE_GEMFILE` [environment variable](/building/environments/) to tell the Bundler where to find it. Setting this requires that your gems are specified in the `_config.yml` file.
+> If your `Gemfile` isn’t in the root folder, set the `BUNDLE_GEMFILE` [environment variable](/builds/environments/) to tell the Bundler where to find it. Setting this requires that your gems are specified in the `_config.yml` file.
 {: .explainer}
 
 ### Static
