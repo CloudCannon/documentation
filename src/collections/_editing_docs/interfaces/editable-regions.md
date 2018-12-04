@@ -8,9 +8,9 @@ requirements:
   hosting: Any
 ---
 
-Define *Editable Regions* to set the content clients and team members can update in the [Visual Editor](/editing/visual-editor/).
+Define *Editable Regions* to set the content clients and team members can update in the [Visual Editor](/editing/editors/visual-editor/).
 
-*Editable Regions* have yellow borders in the [Visual Editor](/editing/visual-editor/), indicating what areas are updatable. Define large sections to give full control, or limit access by defining select images and areas of text.
+*Editable Regions* have yellow borders in the [Visual Editor](/editing/editors/visual-editor/), indicating what areas are updatable. Define large sections to give full control, or limit access by defining select images and areas of text.
 
 To define an *Editable Region*:
 
@@ -24,13 +24,10 @@ The [Visual Editor](/editing/visual-editor/) supports JavaScript, however, HTML 
 
 The *Editable Region* interface used depends on the defined element:
 
-{% assign ordered = site.editable_regions | sort: "order" %}
-{% for editable_region in ordered %}
-  ---
+{% assign ordered = site.editable_regions | sort: "order" %} {% for editable_region in ordered %} —
 
-  <h3 id="{{ editable_region.name | slugify }}">{{ editable_region.name }}</h3>
+### {{ editable_region.name }}
 
-  {% for element in editable_region.elements %}{% if element %}`{{ element }}` {% endif %}{% endfor %}
+{% for element in editable_region.elements %}{% if element %}`{{ element }}` {% endif %}{% endfor %}
 
-  {{ editable_region.content }}
-{% endfor %}
+{{ editable_region.content }} {% endfor %}
