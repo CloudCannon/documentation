@@ -87,4 +87,42 @@ _options:
 
 `show_gutter` toggles line numbers and code folding controls.
 
-{% for example in page.examples %} \*\*\* {% include settings-panel-example.html example=example %} {% endfor %}
+
+### Array Defaults
+Provides initial values for newly created items in arrays. Configured globally in `_config.yml` or per file in front matter with a `_defaults` object:
+
+~~~yaml
+_defaults:
+image_path: /images/placeholder.png
+~~~
+
+Alternatively, configure on a custom scope with Jekyll defaults:
+
+~~~yaml
+defaults:
+- type: ''
+values:
+_defaults:
+  image_path: /images/placeholder.png
+~~~
+
+New array items clone the structure from the existing array items.
+Array defaults populate that structure for the same keys in `_defaults`.
+
+
+~~~liquid
+---
+_defaults:
+image_path: /images/placeholder.png
+images:
+- image_path: /images/sunset.png
+  title: Sunset
+
+# Adding an item to the array is prepopulated as:
+- image_path: /images/placeholder.png
+  title:
+---
+~~~
+
+> Array defaults also apply when editing CSV, YAML and JSON files.
+{: .explainer}
