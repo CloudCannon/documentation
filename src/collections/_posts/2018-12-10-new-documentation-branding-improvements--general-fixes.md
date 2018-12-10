@@ -15,7 +15,7 @@ This release is the first since reworking [our documentation](https://docs.cloud
 
 **Fixes:**
 
-* \_hook field now present in form reports
+* `_hook` field now present in form reports
 * Site delete performance
 * Regression of saving an image blob
 * Pasting content no longer saves with a class
