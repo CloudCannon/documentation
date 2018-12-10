@@ -1,5 +1,5 @@
 ---
-title: 'New Documentation, Branding Improvements & General Fixes'
+title: 'New Documentation, Branding Improvements and General Fixes'
 type: minor
 ---
 
