@@ -57,8 +57,7 @@ To create a Jekyll collection to manage and display staff members, follow this e
        output: true
 
    defaults:
-     -
-       scope:
+     - scope:
          path: ""
          type: "staff_members"
        values:

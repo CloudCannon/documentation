@@ -56,17 +56,19 @@ Provides initial values for newly created items in arrays. Configured globally i
 
 ~~~yaml
 _defaults:
-image_path: /images/placeholder.png
+  image_path: /images/placeholder.png
 ~~~
 
 Alternatively, configure on a custom scope with Jekyll defaults:
 
 ~~~yaml
 defaults:
-- type: ''
-values:
-_defaults:
-  image_path: /images/placeholder.png
+  - scope:
+      path: ''
+      type: ''
+    values:
+      _defaults:
+        image_path: /images/placeholder.png
 ~~~
 
 New array items clone the structure from the existing array items.
@@ -76,7 +78,7 @@ Array defaults populate that structure for the same keys in `_defaults`.
 ~~~liquid
 ---
 _defaults:
-image_path: /images/placeholder.png
+  image_path: /images/placeholder.png
 images:
 - image_path: /images/sunset.png
   title: Sunset

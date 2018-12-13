@@ -22,13 +22,15 @@ Alternatively, configure comments on a custom scope with Jekyll defaults:
 
 ~~~yaml
 defaults:
-  - type: ''
-values:
-  _comments:
-    title: The page title
-    output: Does this item have a dedicated page?
-    brand_colour: The primary brand colour
-    footer: Update the details in the footer
+  - scope:
+      path: ''
+      type: ''
+    values:
+      _comments:
+        title: The page title
+        output: Does this item have a dedicated page?
+        brand_colour: The primary brand colour
+        footer: Update the details in the footer
 ~~~
 
 Comments are displayed for the same keys in the `_comments` object.
