@@ -68,7 +68,7 @@ The complete list of options follows, all values can either be *true* or *false*
 | outdent (unavailable for `_text`) | &nbsp; |
 | indent (unavailable for `_text`) | &nbsp; |
 | image (unavailable for `_text` or *Rich Text* fields) | &nbsp; |
-| embed (unavailable for `_text` or *Rich Text* fields) | &nbsp; |
+| embed (unavailable for `_text`) | &nbsp; |
 | table (unavailable for `_text`) | &nbsp; |
 | styles (unavailable for `_text`) | *false*, or path to source CSS file |
 | left (unavailable for `_text`) | *false* or string of class name |
