@@ -39,7 +39,9 @@ Jekyll defaults in `_config.yml`:
 
 {% highlight yaml %}
 defaults:
-  - type: 'projects'
+  - scope:
+      path: ''
+      type: 'projects'
     values:
       _hide_content: true
 {% endhighlight %}
@@ -72,7 +74,9 @@ Jekyll defaults in `_config.yml`:
 
 {% highlight yaml %}
 defaults:
-  - type: 'projects'
+  - scope:
+      path: ''
+      type: 'projects'
     values:
       _hide_title: true
 {% endhighlight %}
