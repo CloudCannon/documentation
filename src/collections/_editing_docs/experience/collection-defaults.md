@@ -18,7 +18,7 @@ For example:
 * `/_staff/_defaults.md` contains defaults for new staff members
 * `/_posts/_defaults.md` contains defaults for new draft posts
 
-New items created will use these values. If the `title` and `name` attributes are present, they are set to the name used when a user creates a file.
+New items created use these values. If the `title` and `name` attributes are present, they are set to the name used when a user creates a file.
 
-> Looking to set the default values for new array items in front matter? Use [Array Defaults](/editing/options/options/#array-defaults) instead.
+> Looking to set the default values for new array items? Use [Array Structures](/editing/options/input-options/#array-structures) instead.
 {: .explainer}

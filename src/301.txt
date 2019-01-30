@@ -60,6 +60,8 @@
 /editing/source-editor/ /editing/editors/source-editor/
 /editing/visual-editor/ /editing/editors/visual-editor/
 
+/editing/editors/csv-editor/ /editing/editors/data-editor/
+
 /hosting/301-redirects/ /hosting/general/301-redirects/
 /hosting/active-links/ /hosting/general/active-links/
 /hosting/contact-forms/ /hosting/forms/introduction/
