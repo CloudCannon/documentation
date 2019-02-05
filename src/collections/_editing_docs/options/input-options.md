@@ -50,13 +50,37 @@ _options:
 `show_gutter` toggles line numbers and code folding controls.
 
 
-### Array Defaults
+### Array Structures
 
-Provides initial values for newly created items in arrays. Configured globally in `_config.yml` or per file in front matter with a `_defaults` object:
+Provides initial values for newly created items in arrays. Configured globally in `_config.yml` or per file in front matter with a `_defaults` object.
+
+For example, set the structure for new items in a `gallery` array with:
 
 ~~~yaml
-_defaults:
-  image_path: /images/placeholder.png
+_array_structures:
+  gallery:
+    label: Image
+    icon: image
+    value:
+      image: /placeholder.png
+      caption:
+~~~
+
+Define multiple structures if you need editors to add different types to an array:
+
+~~~yaml
+_array_structures:
+  gallery:
+    - label: Image
+      icon: image
+      value:
+        image: /placeholder.png
+        caption:
+    - label: External link
+      icon: link
+      value:
+        url:
+        title:
 ~~~
 
 Alternatively, configure on a custom scope with Jekyll defaults:
@@ -67,27 +91,46 @@ defaults:
       path: ''
       type: ''
     values:
-      _defaults:
-        image_path: /images/placeholder.png
+      _array_structures:
+        gallery:
+          - label: Image
+            icon: image
+            value:
+              image: /placeholder.png
+              caption:
+          - label: External link
+            icon: link
+            value:
+              url:
+              title:
 ~~~
 
-New array items clone the structure from the existing array items.
-Array defaults populate that structure for the same keys in `_defaults`.
 
+The `label` is used in the array interface to display what kind of item(s) editors can add.
+
+The `icon` is a Material Design icon name for customising how the array item preview.
+
+New array items have their keys and values populated from the `value` you set. If no structure is defined, new array items clone the structure from existing array items.
 
 ~~~liquid
 ---
-_defaults:
-  image_path: /images/placeholder.png
-images:
-- image_path: /images/sunset.png
-  title: Sunset
+_array_structures:
+  gallery:
+    label: Image
+    icon: image
+    value:
+      image: /placeholder.png
+      caption:
 
-# Adding an item to the array is prepopulated as:
-- image_path: /images/placeholder.png
-  title:
+gallery:
+  - image: /uploads/sunset-at-the-wharf.png
+    caption: Golden hour at the wharf
+
+# Adding an item to the array results in this:
+  - image: /placeholder.png
+    caption:
 ---
 ~~~
 
-> Array defaults also apply when editing CSV, YAML and JSON files.
+> Array structures also apply when editing CSV, YAML and JSON files.
 {: .explainer}

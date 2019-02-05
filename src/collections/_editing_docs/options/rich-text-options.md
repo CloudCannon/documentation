@@ -67,7 +67,7 @@ The complete list of options follows, all values can either be *true* or *false*
 | bulletedlist (unavailable for `_text`) | &nbsp; |
 | outdent (unavailable for `_text`) | &nbsp; |
 | indent (unavailable for `_text`) | &nbsp; |
-| image (unavailable for `_text` or *Rich Text* fields) | &nbsp; |
+| image (unavailable for `_text`) | &nbsp; |
 | embed (unavailable for `_text`) | &nbsp; |
 | table (unavailable for `_text`) | &nbsp; |
 | styles (unavailable for `_text`) | *false*, or path to source CSS file |
@@ -78,16 +78,13 @@ The complete list of options follows, all values can either be *true* or *false*
 
 ### Embedding Media
 
-Allow your editors to embed YouTube, Vimeo, Tweets and other media into their content. Embedded content is sanitised to mitigate XSS risks, which includes removing `style` and `script` tags.
+Allow your editors to embed YouTube, Vimeo, Tweets and other media into their content. Embedded content is sanitised to mitigate XSS risks, which includes removing `style` tags. Embeds containing `script` tags are not loaded in the editor.
 
 ```yaml
 _options:
   content:
     embed: true
 ```
-
-> Add the scripts to the end of pages where embedded content is added to enable the same behaviour (e.g. link the Twitter script that transforms blockquotes into Tweets when a front matter field is **true**).
-{: .explainer}
 
 ### Styles
 

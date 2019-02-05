@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/editors/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. Alternatively, add front matter *Editor Links* to open the front matter editor at specified fields.
+*Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/editors/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. You can also add front matter *Editor Links* to open the front matter editor at specified fields.
 
 *Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
 
@@ -61,6 +61,15 @@ Front matter *Editor Links* are prefixed with `cloudcannon:#` and match the Liqu
   Edit the title of the first array item within an object
 </a>
 ```
+
+Instead of only anchor tags, any element can have an *Editor Link* by using the `data-cms-editor-link` attribute, for example:
+
+```html
+<h1 data-cms-editor-link="cloudcannon:#title">
+  {{ page.title }}
+</h1>
+```
+
 
 ### Posts
 
@@ -128,10 +137,33 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 2. Set the attribute's value to **modal** or **sidebar** (optional)
 
 ```html
-<a href="cloudcannon:#title" data-cms-editor-link-style="modal">Edit the title</a>
+<a href="cloudcannon:#title" data-cms-editor-link-style="modal">
+  Edit the title
+</a>
+
+<h1 data-cms-editor-link="cloudcannon:#title" data-cms-editor-link-style="modal">
+  {{ page.title }}
+</h1>
 ```
 
-> Using modal-style editor links that point directly to [hidden fields](/editing/editors/front-matter-editor/#hidden) show the field.
+> Using modal-style editor links that point directly to [hidden fields](/editing/editors/front-matter-editor/#hidden) show the field in the pop up.
 {: .explainer}
 
 CloudCannon adds the `cms-editor-link-dirty` class to *Editor Links* after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
+
+### Styling
+
+You can give *Editor Links* our default styles by adding the `cms-editor-link` class. This provides a seamless experience alongside [Editable Regions](/editing/interfaces/editable-regions/) by using the same styles.
+
+```html
+<a href="cloudcannon:#title" class="cms-editor-link">
+  Edit the title
+</a>
+
+<h1 data-cms-editor-link="cloudcannon:#title" class="cms-editor-link">
+  {{ page.title }}
+</h1>
+```
+
+> `cms-editor-link-dirty` is also handled with the default styles.
+{: .explainer}
