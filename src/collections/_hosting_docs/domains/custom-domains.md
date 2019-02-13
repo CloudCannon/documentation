@@ -17,7 +17,7 @@ To add a custom domain:
 3. Enter your domain with or without a subdomain
 4. Click **Add Domain**
 
-![Site Settings / Domain section with subdomain](/images/domains/empty.png){: .screenshot srcset="/images/domains/empty.png 800w, /images/domains/empty@2x.png 1600w"}
+![Site Settings / Domain section with subdomain](/images/hosting/domains/empty.png){: .screenshot srcset="/images/hosting/domains/empty.png 800w, /images/hosting/domains/empty@2x.png 1600w"}
 
 > [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&amp;U=852853&amp;M=25581&amp;urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains) domains have a one click install to simplify configuring your domain.
 {: .explainer}
@@ -44,7 +44,7 @@ To configure your domain with *CloudCannon DNS*:
 3. Enter the nameservers CloudCannon provides in *Site Settings* / *Domain*
 4. Save the changes
 
-![Site Settings / Domain section with CloudCannon DNS](/images/domains/cloudcannon-dns.png){: .screenshot srcset="/images/domains/cloudcannon-dns.png 800w, /images/domains/cloudcannon-dns@2x.png 1600w"}
+![Site Settings / Domain section with CloudCannon DNS](/images/hosting/domains/cloudcannon-dns.png){: .screenshot srcset="/images/hosting/domains/cloudcannon-dns.png 800w, /images/hosting/domains/cloudcannon-dns@2x.png 1600w"}
 
 > Set additional DNS records for external services or ownership validation with CloudCannon [DNS](/hosting/domains/dns/).
 {: .explainer}
@@ -60,7 +60,7 @@ To configure your domain with *External DNS*:
 2. Go into the DNS settings for your domain
 3. Add the CNAME and A records provided to your DNS records
 
-![Site Settings / Domain section with external DNS](/images/domains/external-dns.png){: .screenshot srcset="/images/domains/external-dns.png 800w, /images/domains/external-dns@2x.png 1600w"}
+![Site Settings / Domain section with external DNS](/images/hosting/domains/external-dns.png){: .screenshot srcset="/images/hosting/domains/external-dns.png 800w, /images/hosting/domains/external-dns@2x.png 1600w"}
 
 > The CNAME record maps your subdomains to CloudCannon servers, the A record maps your apex domain to a specific CloudCannon server.
 {: .explainer}

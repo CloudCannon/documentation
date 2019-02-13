@@ -10,7 +10,7 @@ requirements:
 
 The Dashboard gives editors a breakdown of the main sections of the site.
 
-![Example Dashboard](/images/navigation/dashboard.png){: .screenshot srcset="/images/navigation/dashboard.png 800w, /images/navigation/dashboard@2x.png 1600w"}
+![Example Dashboard](/images/editing/navigation/dashboard.png){: .screenshot srcset="/images/editing/navigation/dashboard.png 800w, /images/editing/navigation/dashboard@2x.png 1600w"}
 
 This has three main sections: Site Breakdown, Main Actions, and Recent Activity.
 

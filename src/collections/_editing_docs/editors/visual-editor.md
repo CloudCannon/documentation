@@ -8,7 +8,7 @@ The *Visual Editor* is the main way to edit content in CloudCannon. [Editable Re
 
 The *Page Selector* shows a list of pages, posts, drafts and collection items to navigate to. Use the **Toggle Pages** button in the top right corner to access it.
 
-![Visual Editor](/images/editing/visual-editor.png){: .screenshot srcset="/images/editing/visual-editor.png 800w, /images/editing/visual-editor@2x.png 1600w"}
+![Visual Editor](/images/editing/editors/visual-editor.png){: .screenshot srcset="/images/editing/editors/visual-editor.png 800w, /images/editing/editors/visual-editor@2x.png 1600w"}
 
 ### Default Editor Path
 
