@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CloudCannon/Academy.git"
+    "url": "git+https://github.com/CloudCannon/documentation.git"
   },
   "author": "CloudCannon",
   "bugs": {
-    "url": "https://github.com/CloudCannon/Academy/issues"
+    "url": "https://github.com/CloudCannon/documentation/issues"
   },
   "homepage": "https://docs.cloudcannon.com",
   "devDependencies": {
