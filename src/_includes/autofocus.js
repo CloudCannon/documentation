@@ -1,8 +1,12 @@
 setTimeout(function () {
-	var autofocusEl = document.querySelector("[data-autofocus]");
+	var autofocusEls = document.querySelectorAll("[data-autofocus]"),
+		autofocusEl = autofocusEls[autofocusEls.length - 1];
+
 	if (autofocusEl) {
 		var y = window.scrollY;
 		autofocusEl.focus();
-		window.scrollTo(0, y);
+		if (!window.preventAutofocusScroll) {
+			window.scrollTo(0, y);
+		}
 	}
 }, 10);
