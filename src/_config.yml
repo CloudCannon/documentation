@@ -5,7 +5,7 @@ title: CloudCannon Documentation
 display_title: Documentation
 url: "https://docs.cloudcannon.com"
 baseurl:
-google_analytics_key: UA-37472773-15
+google_analytics_key: UA-37472773-1
 show_full_navigation: false
 theme: jekyll-theme-cloudcannon
 
