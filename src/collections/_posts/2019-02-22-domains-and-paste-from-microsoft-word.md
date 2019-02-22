@@ -3,11 +3,12 @@ title: Domains and paste from Microsoft Word
 type: minor
 ---
 
-This release consolidates our domains interfaces from the Site Settings into its own section. We've also improved how pasting content from external sources works, including from Microsoft Word.
+This release updates our domains interfaces with name server comparison. We've also improved how pasting content from external sources works, including from Microsoft Word.
 
 **Features:**
 
-* Domains section
+* Domain name servers comparisons
+* Domain name navigation updated
 * Rich text paste from external sources
 * Adding a link to an email address auto-populates the link
 * Table `thead` element and `th` scope attribute support
