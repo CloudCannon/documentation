@@ -1,5 +1,5 @@
 ---
-title: Domains and paste from Word
+title: Domains and paste from Microsoft Word
 type: minor
 ---
 
