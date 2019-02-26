@@ -15,9 +15,9 @@ sitemap: false
 							{%- assign added = false -%}
 
 							"{{ item.url | slugify }}": {
+								"boost": {% if collection.boost %}{{ collection.boost }}{% else %}1{% endif %},
 								"id": "{{ item.url | slugify }}",
 								"title": "{% if collection.title %}{{ collection.title | xml_escape }}{% else %}Change Log{% endif %} / {{ item.title | xml_escape }}",
-								"category": "{{ collection.title | xml_escape }}",
 								"url": " {{ item.url | xml_escape }}",
 								"content": {{ item.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
 							}
