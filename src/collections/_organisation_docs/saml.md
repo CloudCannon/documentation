@@ -50,11 +50,11 @@ Go to CloudCannon and open *Organisation Settings* / *SAML*. Copy your Issuer an
 
 ![SAML details](/images/organisations/saml/2-details.png){: srcset="/images/organisations/saml/2-details.png 800w, /images/organisations/saml/2-details@2x.png 1600w"}{: .screenshot}
 
-Enter this information into Okta.
+Enter the Issuer and Consume URL information into Okta.
 
 ![Okta details](/images/organisations/saml/3-copy.png){: srcset="/images/organisations/saml/3-copy.png 800w, /images/organisations/saml/3-copy@2x.png 1600w"}{: .screenshot}
 
-And confirm you're using this as an internal applicaiton.
+And confirm you're using CloudCannon as an internal applicaiton.
 
 ![Okta confirm](/images/organisations/saml/4-confirm.png){: srcset="/images/organisations/saml/4-confirm.png 800w, /images/organisations/saml/4-confirm@2x.png 1600w"}{: .screenshot}
 
@@ -68,6 +68,6 @@ Copy the Identity Provider Single Sign-On URL and X.509 Certificate.
 
 ![Okta configuration details](/images/organisations/saml/6-copy.png){: srcset="/images/organisations/saml/6-copy.png 800w, /images/organisations/saml/6-copy@2x.png 1600w"}{: .screenshot}
 
-Enter this information into CloudCannon.
+Enter the Identity Provider Single Sign-On URL and X.509 Certificate information into CloudCannon.
 
 ![Okta configuration details](/images/organisations/saml/7-cc.png){: srcset="/images/organisations/saml/7-cc.png 800w, /images/organisations/saml/7-cc@2x.png 1600w"}{: .screenshot}
