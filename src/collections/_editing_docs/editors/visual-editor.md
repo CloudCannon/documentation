@@ -12,14 +12,14 @@ The *Page Selector* shows a list of pages, posts, drafts and collection items to
 
 ### Default Editor Path
 
-Set the default path to load when the **Edit** option is clicked in the sidebar. Configured globally in `_config.yml` with an `_editor` object:
+Set the default path to load when the **Update Home** action is clicked in the Dashboard. Configured globally in `_config.yml` with an `_editor` object:
 
 ```yaml
 _editor:
   default_path: /about/
 ```
 
-Clicking the **Edit** sidebar option will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
+Clicking the **Update Home** Dashboard action will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
 
 ### Editor Content
 
