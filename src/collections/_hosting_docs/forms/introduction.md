@@ -37,7 +37,6 @@ To create a form:
 
   <input type="hidden" name="_to" value="sales@example.com,support@example.com">
   <input type="hidden" name="_cc" value="sales.tracker@example.com">
-  <input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/1234567/abcdef/">
   <input type="text" name="_gotcha" style="display: none;">
 
   <input type="submit" value="Send Message">
@@ -92,7 +91,7 @@ The value used for the CC header in the email. Use this to send a copy in anothe
 
 #### `_hook`
 
-Instead of sending an email, a webhook can be supplied for the data to be sent to.&nbsp;
+Instead of sending an email, a webhook can be supplied for the data to be sent to.
 
 {% highlight html %}
 <input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/1234567/abcdef/">
