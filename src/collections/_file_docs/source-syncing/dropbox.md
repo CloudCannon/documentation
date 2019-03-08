@@ -10,7 +10,7 @@ To connect a Dropbox account and start syncing files, follow these instructions:
 
 Go to *Site Settings* / *File Syncing* and click **Connect** next to Dropbox.
 
-![Storage Providers interface](/images/files/storage-providers.png){: srcset="/images/files/storage-providers.png 800w, /images/files/storage-providers@2x.png 1600w"}{: .screenshot}
+![Storage Providers interface](/images/files/source-syncing/storage-providers.png){: srcset="/images/files/source-syncing/storage-providers.png 800w, /images/files/source-syncing/storage-providers@2x.png 1600w"}{: .screenshot}
 
 > A dialog box warns you if there are existing files in your site. The files will be replaced with the contents of the Dropbox folder. Click **Connect Dropbox** to continue or close the dialog to cancel the process.
 {: .explainer}

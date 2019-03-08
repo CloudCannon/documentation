@@ -10,7 +10,7 @@ To connect a GitHub repository and start syncing files, follow these instruction
 
 Go to *Site Settings* / *File Syncing* and click **Connect** next to GitHub.
 
-![Storage Providers interface](/images/files/storage-providers.png){: srcset="/images/files/storage-providers.png 800w, /images/files/storage-providers@2x.png 1600w"}{: .screenshot}
+![Storage Providers interface](/images/files/source-syncing/storage-providers.png){: srcset="/images/files/source-syncing/storage-providers.png 800w, /images/files/source-syncing/storage-providers@2x.png 1600w"}{: .screenshot}
 
 This redirects you to GitHub. Enter your credentials to continue.
 
