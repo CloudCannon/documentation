@@ -10,7 +10,7 @@ requirements:
 
 CloudCannon offers free SSL by default on every site and serves them over HTTPS. This is made possible by [Let's Encrypt](https://letsencrypt.org/), which is a new age Certificate Authority, it's free, automated and open. These certificates are automatically renewed before they expire.
 
-![SSL details](/images/ssl/details.png){: srcset="/images/ssl/details.png 800w, /images/ssl/details@2x.png 1600w"}{: .screenshot}
+![SSL details](/images/hosting/ssl/details.png){: srcset="/images/hosting/ssl/details.png 800w, /images/hosting/ssl/details@2x.png 1600w"}{: .screenshot}
 
 ### Toggling HTTPS
 
@@ -20,7 +20,7 @@ To toggle autogenerating Let's Encrypt SSL certificates on your site:
 2. Toggle the *Autogenerate SSL Certificate* option
 3. Click **Update SSL**
 
-![SSL Settings](/images/ssl/settings.png){: srcset="/images/ssl/settings.png 800w, /images/ssl/settings@2x.png 1600w"}{: .screenshot}
+![SSL Settings](/images/hosting/ssl/settings.png){: srcset="/images/hosting/ssl/settings.png 800w, /images/hosting/ssl/settings@2x.png 1600w"}{: .screenshot}
 
 ### Redirecting HTTP to HTTPS
 

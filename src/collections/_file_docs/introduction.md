@@ -14,4 +14,4 @@ CloudCannon is a static site content management system (CMS). A folder of files 
 2. [Publishing](/files/publishing/introduction): Enable git workflows for editors
 3. [Output Syncing](/files/output-syncing/introduction/): Sync the output from Jekyll to be used by another system
 
-![Example file type icons](/images/syncing/file-types.png)
+![Example file type icons](/images/files/file-types.png)

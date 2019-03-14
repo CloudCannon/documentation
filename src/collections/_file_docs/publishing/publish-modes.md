@@ -17,7 +17,7 @@ To change the publish mode for a GitHub or Bitbucket connected site:
 2. Select *Merge* or *Pull Request*
 3. Click **Change Publish Mode**
 
-![Storage Providers interface](/images/syncing/publish/with-publish-branch.png){: srcset="/images/syncing/publish/with-publish-branch.png 800w, /images/syncing/publish/with-publish-branch@2x.png 1600w"}{: .screenshot}
+![Storage Providers interface](/images/files/publish/with-publish-branch.png){: srcset="/images/files/publish/with-publish-branch.png 800w, /images/files/publish/with-publish-branch@2x.png 1600w"}{: .screenshot}
 
 
 ### Publish requests
@@ -37,4 +37,4 @@ The workflow with this publish mode is:
 > **Publish** merges the changes into the publish branch, while **Close** cancels the *Publish Request*. Changes made are not reversed after closing a *Publish Request*.
 {: .explainer}
 
-![Publish Request interface](/images/syncing/publish/publish-requests.png){: srcset="/images/syncing/publish/publish-requests.png 800w, /images/syncing/publish/publish-requests@2x.png 1600w"}{: .screenshot}
+![Publish Request interface](/images/files/publish/publish-requests.png){: srcset="/images/files/publish/publish-requests.png 800w, /images/files/publish/publish-requests@2x.png 1600w"}{: .screenshot}

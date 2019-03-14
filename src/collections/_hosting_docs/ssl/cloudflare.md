@@ -17,11 +17,11 @@ The advantage of doing this is CloudFlare does many performance and security enh
 
 First off, head over to CloudFlare and register a new account:
 
-![CloudFlare](/images/ssl/cloudflare/2.png){: .screenshot}
+![CloudFlare](/images/hosting/ssl/cloudflare/2.png){: .screenshot}
 
 Next it'll ask for your website address:
 
-![CloudFlare](/images/ssl/cloudflare/3.png){: .screenshot}
+![CloudFlare](/images/hosting/ssl/cloudflare/3.png){: .screenshot}
 
 After this CloudFlare will take about a minute to scan your existing DNS records. Once it's finished it, it'll show you the DNS records it's found. You need to verify these records are correct. For CloudCannon websites the DNS records are fairly simple, usually the setup is:
 
@@ -31,23 +31,23 @@ After this CloudFlare will take about a minute to scan your existing DNS records
 
 Once you're happy these are correct, click the continue button:
 
-![CloudFlare](/images/ssl/cloudflare/4.png){: .screenshot}
+![CloudFlare](/images/hosting/ssl/cloudflare/4.png){: .screenshot}
 
 Next up is configuring CloudFlare. I switched the plan to **Free** and the performance to **CDN + Full optimizations**:
 
-![CloudFlare](/images/ssl/cloudflare/5.png){: .screenshot}
+![CloudFlare](/images/hosting/ssl/cloudflare/5.png){: .screenshot}
 
 Now you need to update your nameservers. Log in to your domain provider and change the nameservers to the ones that CloudFlare gives you:
 
-![CloudFlare](/images/ssl/cloudflare/6.png){: .screenshot}
+![CloudFlare](/images/hosting/ssl/cloudflare/6.png){: .screenshot}
 
 Almost finished! Now go into your CloudFlare settings:
 
-![CloudFlare](/images/ssl/cloudflare/7.png)
+![CloudFlare](/images/hosting/ssl/cloudflare/7.png)
 
 Find the SSL section and change it to **Flexible SSL**:
 
-![CloudFlare](/images/ssl/cloudflare/8.png)
+![CloudFlare](/images/hosting/ssl/cloudflare/8.png)
 
 That's it! Changing your DNS can take up to 48 hours to propagate and CloudFlare's free SSL can take up to 24 hours to set up. There should be no downtime, but it could take a day or two before you have SSL and CloudFlare serving your website.
 

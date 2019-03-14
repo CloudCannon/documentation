@@ -19,7 +19,7 @@ To change a command line build option:
 > See in-depth details for configuring [Environments](/builds/environments/) and [Optimisations](/builds/optimisations/).
 {: .explainer}
 
-![Site Settings Build Interface](/images/building/configuration.png){: .screenshot srcset="/images/building/configuration.png 800w, /images/building/configuration@2x.png 1600w"}
+![Site Settings Build Interface](/images/builds/configuration.png){: .screenshot srcset="/images/builds/configuration.png 800w, /images/builds/configuration@2x.png 1600w"}
 
 ### Custom Gemfile
 

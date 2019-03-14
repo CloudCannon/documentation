@@ -31,7 +31,7 @@ To configure a manual build:
 > Repeat Intervals work from the original date selected. If you select a daily interval and your original time was 2pm, all future builds will run at 2pm.
 {: .explainer}
 
-![Site Settings Build Interface](/images/building/configuration.png){: srcset="/images/building/configuration.png 800w, /images/building/configuration@2x.png 1600w"}{: .screenshot}
+![Site Settings Build Interface](/images/builds/manual-builds.png){: srcset="/images/builds/manual-builds.png 800w, /images/builds/manual-builds@2x.png 1600w"}{: .screenshot}
 
 To remove a build:
 
@@ -80,7 +80,7 @@ Once the plugin is configured, the site will be built automatically at the date 
 
 This is useful when configuring your initial plugin setup.
 
-![Site Settings Build Interface](/images/building/configuration.png){: srcset="/images/building/configuration.png 800w, /images/building/configuration@2x.png 1600w"}{: .screenshot}
+![Site Settings Build Interface](/images/builds/automatic-builds.png){: srcset="/images/builds/automatic-builds.png 800w, /images/builds/automatic-builds@2x.png 1600w"}{: .screenshot}
 
 > Posts that are visible on the main site will not trigger a build. If automatic builds are not working, ensure **--future** is unchecked in **Site Settings** / **Build**.
 {: .explainer}
