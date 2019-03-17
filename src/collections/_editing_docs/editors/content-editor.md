@@ -10,7 +10,7 @@ Clients and team members use this to edit formatted Markdown without having to k
 The *Page Selector* shows a list of pages, posts, drafts and collection items to navigate to.
 Use the **Toggle Pages** button in the top right corner to access it.
 
-![Content Editor](/images/editing/content-editor.png){: srcset="/images/editing/content-editor.png 800w, /images/editing/content-editor@2x.png 1600w"}{: .screenshot}
+![Content Editor](/images/editing/editors/content-editor.png){: srcset="/images/editing/editors/content-editor.png 800w, /images/editing/editors/content-editor@2x.png 1600w"}{: .screenshot}
 
 
 ### Hiding the Content Area
@@ -46,7 +46,7 @@ defaults:
       _hide_content: true
 {% endhighlight %}
 
-![Content Editor with no content section](/images/editing/content-editor-hidden-content.png){: srcset="/images/editing/content-editor-hidden-content.png 800w, /images/editing/content-editor-hidden-content@2x.png 1600w"}{: .screenshot}
+![Content Editor with no content section](/images/editing/editors/content-editor-hidden-content.png){: srcset="/images/editing/editors/content-editor-hidden-content.png 800w, /images/editing/editors/content-editor-hidden-content@2x.png 1600w"}{: .screenshot}
 
 ### Hiding the Title
 

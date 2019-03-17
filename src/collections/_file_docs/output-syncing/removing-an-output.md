@@ -10,4 +10,4 @@ requirements:
 
 Go to *Site Settings* / *File Syncing* / *Output* and click **Remove**.
 
-![Output interface](/images/syncing/output/github.png){: srcset="/images/syncing/output/github.png 800w, /images/syncing/output/github@2x.png 1600w"}{: .screenshot}
+![Output interface](/images/files/output/github.png){: srcset="/images/files/output/github.png 800w, /images/files/output/github@2x.png 1600w"}{: .screenshot}

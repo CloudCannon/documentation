@@ -38,4 +38,4 @@ YAML, JSON and CSV files open in the *Data Editor*, most commonly in the `_data`
 ]
 {% endhighlight %}
 
-![YAML/JSON interface](/images/editing/data-files/yaml-json.png){: srcset="/images/editing/data-files/yaml-json.png 800w, /images/editing/data-files/yaml-json@2x.png 1600w"}{: .screenshot}
+![YAML/JSON interface](/images/editing/editors/yaml-json.png){: srcset="/images/editing/editors/yaml-json.png 800w, /images/editing/editors/yaml-json@2x.png 1600w"}{: .screenshot}

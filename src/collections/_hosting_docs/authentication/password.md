@@ -16,11 +16,11 @@ To set up password authentication for your site:
 2. Select *Password* and click **Switch to Password authentication**
 3. Enter a password and click **Update Site Password**
 
-![Password authentication](/images/authentication/password.png){: .screenshot srcset="/images/authentication/password.png 800w, /images/authentication/password@2x.png 1600w"}
+![Password authentication](/images/hosting/authentication/password.png){: .screenshot srcset="/images/hosting/authentication/password.png 800w, /images/hosting/authentication/password@2x.png 1600w"}
 
 Visitors to your site will be prompted for the password to view.
 
 > You can use custom branding on this screen with [Custom Interfaces](/hosting/authentication/custom-interfaces/).
 {: .explainer}
 
-![Password login](/images/authentication/password-login.png){: .screenshot srcset="/images/authentication/password-login.png 800w, /images/authentication/password-login@2x.png 1600w"}
+![Password login](/images/hosting/authentication/password-login.png){: .screenshot srcset="/images/hosting/authentication/password-login.png 800w, /images/hosting/authentication/password-login@2x.png 1600w"}

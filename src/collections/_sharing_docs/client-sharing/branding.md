@@ -16,4 +16,4 @@ To remove CloudCannon branding on [Client Sharing](/sharing/client-sharing/clien
 
 To custom brand the [Client Sharing](/sharing/client-sharing/client-sharing/) login screen, upload a white label logo in *Account Settings* / *Details*:
 
-![Account details interface](/images/sharing/white-label-logo.png){: .screenshot srcset="/images/sharing/white-label-logo.png 800w, /images/sharing/white-label-logo@2x.png 1600w"}
+![Account details interface](/images/sharing/client-sharing-branding.png){: .screenshot srcset="/images/sharing/client-sharing-branding.png 800w, /images/sharing/client-sharing-branding@2x.png 1600w"}
