@@ -6,7 +6,7 @@ order: 1
 
 The *Visual Editor* is the main way to edit content in CloudCannon. [Editable Regions](/editing/interfaces/editable-regions/) have yellow borders. To make an update, click inside a yellow box and edit the content inline. Navigate to other pages by clicking links on the site.
 
-The *Page Selector* shows a list of pages, posts, drafts and collection items to navigate to. Use the **Toggle Pages** button in the top right corner to access it.
+The *Page Selector* shows a list of pages, posts, drafts and collection items to navigate to. Use the **Related Files** button in the top right corner to access it.
 
 ![Visual Editor](/images/editing/editors/visual-editor.png){: .screenshot srcset="/images/editing/editors/visual-editor.png 800w, /images/editing/editors/visual-editor@2x.png 1600w"}
 

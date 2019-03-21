@@ -8,7 +8,7 @@ requirements:
   hosting: CloudCannon
 ---
 
-CloudCannon offers free SSL by default on every site and serves them over HTTPS. This is made possible by [Let's Encrypt](https://letsencrypt.org/), which is a new age Certificate Authority, it's free, automated and open. These certificates are automatically renewed before they expire.
+CloudCannon offers free SSL by default on every site and serves them over HTTPS. This is made possible by [Let's Encrypt](https://letsencrypt.org/), which is a new age Certificate Authority. It's free, automated and open. These certificates are automatically renewed before they expire.
 
 ![SSL details](/images/hosting/ssl/details.png){: srcset="/images/hosting/ssl/details.png 800w, /images/hosting/ssl/details@2x.png 1600w"}{: .screenshot}
 

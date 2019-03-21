@@ -8,7 +8,7 @@ Connecting GitHub allows you to work on your websites locally and have the chang
 
 To connect a GitHub repository and start syncing files, follow these instructions:
 
-Go to *Site Settings* / *File Syncing* and click **Connect** next to GitHub.
+Go to *Site Settings* / *Source Syncing* and click **Connect** next to GitHub.
 
 ![Storage Providers interface](/images/files/source-syncing/storage-providers.png){: srcset="/images/files/source-syncing/storage-providers.png 800w, /images/files/source-syncing/storage-providers@2x.png 1600w"}{: .screenshot}
 
