@@ -69,6 +69,8 @@ _source_editor:
 
 `show_gutter` toggles line numbers and code folding controls.
 
+![Customised Source Editor](/images/editing/editors/source-editor-customisation.png){: srcset="/images/editing/editors/source-editor-customisation.png 800w, /images/editing/editors/source-editor-customisation@2x.png 1600w"}{: .screenshot}
+
 ### Themes
 
 Below are all other available themes:
