@@ -140,11 +140,15 @@ icons: true
 			<div class="split-choice">
 				<div class="split-choice-content">
 					<i class="material-icons">arrow_back</i>
-					<h3>{{ prev.category | default: "General" }} / {{ prev.title }}</h3>
+					<h1 class="doc-category-header">{{ current_section.name }} / {{ prev.category | default: "General" }}</h1>
+					<h2 class="doc-main-header">{{ prev.title }}</h2>
 					<a class="button light" href="{{ prev.url }}">Read previous doc</a>
 				</div>
 			</div>
 		{% elsif prev_section %}
+			{% assign prev_collection = site.collections | where: "title", prev_section.name | first %}
+			{% assign last_group_in_prev_collection = prev_collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order | last %}
+			{% assign last_item_in_prev_collection = last_group_in_prev_collection.items | sort: "order" | last %}
 			<div class="split-choice">
 				<div class="split-choice-content">
 					{% if prev_section.icon == "console" %}
@@ -152,8 +156,9 @@ icons: true
 					{% else %}
 						<i class="material-icons">{{ prev_section.icon }}</i>
 					{% endif %}
-					<h3>{{ prev_section.name }}</h3>
-					<a class="button light" href="{{ prev_section.url }}introduction/">Go back to {{ prev_section.short_name }}</a>
+					<h1 class="doc-category-header">{{ prev_section.name }} / {{ last_item_in_prev_collection.category | default: "General" }}</h1>
+					<h2 class="doc-main-header">{{ last_item_in_prev_collection.title }}</h2>
+					<a class="button light" href="{{ last_item_in_prev_collection.url }}">Go back to {{ prev_section.short_name }}</a>
 				</div>
 			</div>
 		{% endif %}
@@ -162,11 +167,15 @@ icons: true
 			<div class="split-choice">
 				<div class="split-choice-content">
 					<i class="material-icons">arrow_forward</i>
-					<h3>{{ next.category | default: "General" }} / {{ next.title }}</h3>
+					<h1 class="doc-category-header">{{ current_section.name }} / {{ next.category | default: "General" }}</h1>
+					<h2 class="doc-main-header">{{ next.title }}</h2>
 					<a class="button" href="{{ next.url }}">Read next doc</a>
 				</div>
 			</div>
 		{% elsif next_section %}
+			{% assign next_collection = site.collections | where: "title", next_section.name | first %}
+			{% assign first_group_in_next_collection = next_collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order | first %}
+			{% assign first_item_in_next_collection = first_group_in_next_collection.items | sort: "order" | first %}
 			<div class="split-choice">
 				<div class="split-choice-content">
 					{% if next_section.icon == "console" %}
@@ -174,8 +183,9 @@ icons: true
 					{% else %}
 						<i class="material-icons">{{ next_section.icon }}</i>
 					{% endif %}
-					<h3>{{ next_section.name }}</h3>
-					<a class="button" href="{{ next_section.url }}introduction/">Move onto {{ next_section.short_name }}</a>
+					<h1 class="doc-category-header">{{ next_section.name }} / {{ first_item_in_next_collection.category | default: "General" }}</h1>
+					<h2 class="doc-main-header">{{ first_item_in_next_collection.title }}</h2>
+					<a class="button" href="{{ first_item_in_next_collection.url }}">Move onto {{ next_section.short_name }}</a>
 				</div>
 			</div>
 		{% else %}
