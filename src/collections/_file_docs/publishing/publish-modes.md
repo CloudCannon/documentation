@@ -13,7 +13,7 @@ The publish mode determines if publish is a direct merge or a pull request. Merg
 
 To change the publish mode for a GitHub or Bitbucket connected site:
 
-1. Go to *Site Settings* / *File Syncing* / *Publish*
+1. Go to *Site Settings* / *Files* / *Publishing*
 2. Select *Merge* or *Pull Request*
 3. Click **Change Publish Mode**
 

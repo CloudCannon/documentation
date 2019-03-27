@@ -10,6 +10,10 @@ requirements:
 
 Geolocation on CloudCannon allows you to detect which country your viewers are coming from. CloudCannon automatically injects the viewers country code into the HTML elements class as it is served.
 
+You can enable geolocation in *Site Settings* / *Hosting*.
+
+![Enable Geolocation in Routing settings](/images/i18n/enable-geolocation.png){: srcset="/images/i18n/enable-geolocation.png 800w, /images/i18n/enable-geolocation@2x.png 1600w"}{: .screenshot}
+
 If a viewer is from New Zealand, the class `country-nz` is added to look like this:
 
 {% highlight html %}

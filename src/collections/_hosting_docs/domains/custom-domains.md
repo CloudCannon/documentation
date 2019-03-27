@@ -39,10 +39,11 @@ Configuration instructions are shown after adding a domain. There are two choice
 
 To configure your domain with *CloudCannon DNS*:
 
-1. Ensure you are using *CloudCannon DNS*, otherwise click **Use CloudCannon DNS**
-2. Go to your domain registrar's *DNS Server Settings* or *Nameservers*
-3. Enter the nameservers CloudCannon provides in *Site Settings* / *Domain*
-4. Save the changes
+1. Access the settings for your domain via the *Domains* button on the left sidebar
+2. Ensure you are using *CloudCannon DNS*. Otherwise click **Use CloudCannon DNS**
+3. Go to your domain registrar's *DNS Server Settings* or *Nameservers*
+4. Enter the nameservers CloudCannon provides in the *Name Servers* settings
+5. Save the changes
 
 ![Site Settings / Domain section with CloudCannon DNS](/images/hosting/domains/cloudcannon-dns.png){: .screenshot srcset="/images/hosting/domains/cloudcannon-dns.png 800w, /images/hosting/domains/cloudcannon-dns@2x.png 1600w"}
 

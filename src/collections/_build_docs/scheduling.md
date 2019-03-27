@@ -31,7 +31,7 @@ To configure a manual build:
 > Repeat Intervals work from the original date selected. If you select a daily interval and your original time was 2pm, all future builds will run at 2pm.
 {: .explainer}
 
-![Site Settings Build Interface](/images/builds/manual-builds.png){: srcset="/images/builds/manual-builds.png 800w, /images/builds/manual-builds@2x.png 1600w"}{: .screenshot}
+![Site Settings Manual Build Interface](/images/builds/manual-builds.png){: srcset="/images/builds/manual-builds.png 800w, /images/builds/manual-builds@2x.png 1600w"}{: .screenshot}
 
 To remove a build:
 
@@ -47,7 +47,7 @@ Automatic builds are configured by generating a `_schedule.txt` file in your Jek
 
 ### Installation
 
-To generate `_schedule.txt` we recommend using our plugin [jekyll-cloudcannon-schedule`](https://github.com/CloudCannon/jekyll-cloudcannon-schedule). This will parse all posts set for the future and generate a build on that date. If you would like to generate a custom file, see below for [schedule file format](#schedule-file-format).
+To generate `_schedule.txt` we recommend using our plugin, [jekyll-cloudcannon-schedule](https://github.com/CloudCannon/jekyll-cloudcannon-schedule). This will parse all posts set for the future and generate a build on that date. If you would like to generate a custom file, see below for [schedule file format](#schedule-file-format).
 
 [![Build Status](https://travis-ci.org/CloudCannon/jekyll-cloudcannon-schedule.svg?branch=master)](https://travis-ci.org/CloudCannon/jekyll-cloudcannon-schedule)
 [![Gem Version](https://badge.fury.io/rb/jekyll-cloudcannon-schedule.svg)](https://badge.fury.io/rb/jekyll-cloudcannon-schedule)
@@ -67,7 +67,7 @@ plugins:
   - jekyll-cloudcannon-schedule
 ```
 
-> If you are using a Jekyll version less than 3.5.0, use the gems key instead of plugins.
+> If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
 {: .explainer}
 
 ### Viewing automatic builds
@@ -80,7 +80,7 @@ Once the plugin is configured, the site will be built automatically at the date 
 
 This is useful when configuring your initial plugin setup.
 
-![Site Settings Build Interface](/images/builds/automatic-builds.png){: srcset="/images/builds/automatic-builds.png 800w, /images/builds/automatic-builds@2x.png 1600w"}{: .screenshot}
+![Site Settings Automatic Build Interface](/images/builds/automatic-builds.png){: srcset="/images/builds/automatic-builds.png 800w, /images/builds/automatic-builds@2x.png 1600w"}{: .screenshot}
 
 > Posts that are visible on the main site will not trigger a build. If automatic builds are not working, ensure **--future** is unchecked in **Site Settings** / **Build**.
 {: .explainer}

@@ -13,7 +13,7 @@ Publishing allows editors to merge changes from one branch to another. You can c
 
 To connect a publish branch and enable publishing, follow these instructions:
 
-Go to *Site Settings* / *File Syncing* / *Publish* and click **Add Publish Branch**.
+Go to *Site Settings* / *Files* / *Publishing* and click **Add Publish Branch**.
 
 ![Storage Providers interface](/images/files/publish/no-publish-branch.png){: srcset="/images/files/publish/no-publish-branch.png 800w, /images/files/publish/no-publish-branch@2x.png 1600w"}{: .screenshot}
 
