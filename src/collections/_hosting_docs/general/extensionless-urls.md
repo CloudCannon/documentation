@@ -17,7 +17,7 @@ http://example.com/about.html
 
 To serve files on extensionless URLs:
 
-1. Go to *Site Settings* / *Hosting*
+1. Go to *Site Settings* / *Hosting* / *Routing*
 2. Enable **Serve Extensionless URLs** and optionally **Force Extensionless URLs**
 3. Click **Update Hosting Details**
 

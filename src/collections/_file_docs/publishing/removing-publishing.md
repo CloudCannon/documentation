@@ -9,7 +9,7 @@ requirements:
   syncing: Git
 ---
 
-Go to *Site Settings* / *File Syncing* / *Publish* and click **Remove Publish Branch**.
+Go to *Site Settings* / *Files* / *Publishing* and click **Remove Publish Branch**.
 
 ![Storage Providers interface](/images/files/publish/with-publish-branch.png){: srcset="/images/files/publish/with-publish-branch.png 800w, /images/files/publish/with-publish-branch@2x.png 1600w"}{: .screenshot}
 
