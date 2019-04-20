@@ -40,4 +40,5 @@ Installing your gems can take quite some time, to save time on consecutive build
 
 To disable this feature, go to *Site Settings / Build. *
 
-Older sites on CloudCannon will have this caching disabled to prevent changes to their build environment. Enabling this can greatly improve editing experience.
+> Older sites on CloudCannon will have this caching disabled to prevent changes to their build environment. Enabling this can greatly improve editing experience.
+{: .explainer}
