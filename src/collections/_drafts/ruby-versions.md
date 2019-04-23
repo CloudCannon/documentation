@@ -15,5 +15,4 @@ This release improves the build process and expands on the available options. Yo
 
 **Fixes:**
 
-* Build error when using specific configuration and `source` set in `_config.yml`
 * Files now correctly selectable when uploading
