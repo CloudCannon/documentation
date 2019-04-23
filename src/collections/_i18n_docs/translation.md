@@ -10,6 +10,10 @@ requirements:
 
 CloudCannon Internationalisation allows you to serve your site in different languages based on the viewers browser settings.
 
+You can enable geolocation in *Site Settings* / *i18n*.
+
+![Enable i18n in i18n settings](/images/i18n/enable-geolocation.png){: srcset="/images/i18n/enable-geolocation.png 800w, /images/i18n/enable-geolocation@2x.png 1600w"}{: .screenshot}
+
 
 ### Tagging content for translation
 
@@ -22,7 +26,7 @@ First we must add a key to each element we want internationalised. To do this ad
 
 ### Obtaining the current locale
 
-Once you have tagged the elements that need translation, CloudCannon can generate a lookup of the content. CloudCannon supports three file extensions: `.json`, `.yml` and `.properties`. These files are called locales.
+Once you have tagged the elements that needs translation, CloudCannon can generate a lookup of the content. CloudCannon supports three file extensions: `.json`, `.yml` and `.properties`. These files are called locales.
 
 To obtain the current locale you can visit any of these URLs on your site:
 
