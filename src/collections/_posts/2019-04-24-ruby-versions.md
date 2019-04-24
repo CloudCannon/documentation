@@ -12,6 +12,7 @@ This release improves the build process and expands on the available options. Yo
 * Jekyll build option for `--profile`
 * Improved state for new users that have been shared sites
 * Explicit option to enable Internationalisation for a site
+* Better error reporting for invalid config files
 
 **Fixes:**
 
