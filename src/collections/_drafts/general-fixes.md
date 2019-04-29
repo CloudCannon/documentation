@@ -9,6 +9,7 @@ This release fixes a number of recently reported issues.
 
 * Make FTP syncing output only
 * Creating new HTML files from the *Explore* section will fill the title field if it exists
+* Updated Bitbucket API interaction to support latest changes
 
 **Fixes:**
 
