@@ -1,13 +1,13 @@
 ---
-title: General Improvements and HTTP2
+title: General Improvements and HTTP 2
 type: minor
 ---
 
-This release rolls out HTTP2 to our new hosting solution. A number of other general fixes and improvements have been made.
+This release rolls out HTTP 2 to our new hosting solution. A number of other general fixes and improvements have been made.
 
 **Features:**
 
-* HTTP2
+* HTTP 2
 * Support for APNG files
 * Split and merge controls for table cells
 * Automatically open new array items in YAML and front matter fields
