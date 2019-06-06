@@ -64,3 +64,10 @@ _options:
 * `stretch` ignores aspect ratio to resize the image to the bounding box
 
 `expandable` set to *true* allows images to be enlarged past original dimensions.
+
+### Size Attributes
+
+CloudCannon automatically adds size attributes (width, height, sizes) to the HTML for images uploaded in the [Content Editor](https://docs.cloudcannon.com/editing/editors/content-editor/) and [Editable Regions](https://docs.cloudcannon.com/editing/interfaces/editable-regions/). This has multiple benefits:
+
+* Allows srcsets to work properly. Browsers assume by default that an image is 100vw - if the image has a srcset but no explicit size attributes, it will appear full width.
+* Allows browsers to size `<img>` elements before CSS and images are loaded. Otherwise, the page can shift around in front of the viewer as images are loaded and elements are resized.
