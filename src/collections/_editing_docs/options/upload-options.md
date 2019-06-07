@@ -77,7 +77,7 @@ In cases where these size attributes are not right for your layout, some simple 
 
 ```css
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 ```
