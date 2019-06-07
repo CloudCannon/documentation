@@ -15,7 +15,6 @@ This release extends our feature set for contact forms, you can now delete data 
 **Fixes:**
 
 * Save button no longer incorrectly enabled on initial open in certain configurations
-* Prevent more cases of search engines indexing testing domains
 * Ensure save button is enabled when changing externally linked image to a new uploaded image with no other changes
 * Prevent a cross domain referrer leak
 * Prevent a potential OAuth issue
