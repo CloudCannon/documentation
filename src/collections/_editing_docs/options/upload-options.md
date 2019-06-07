@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-### File Uploads
+### File Uploads[\#](#file-uploads){: .header-link}
 
 Keep a consistent file structure by setting up an uploads path structure. Images, documents and other files in the editor are uploaded to this location.
 
@@ -28,7 +28,7 @@ You can also set `site.uploads_dir` in your `_config.yml` to set it everywhere:
 uploads_dir: "uploads/:categories/:year/:month/:day/:title"
 ```
 
-### Image Uploads
+### Image Uploads[\#](#image-uploads){: .header-link}
 
 Control the size and format of images clients or team members upload through the interface. Images are resized and converted automatically.
 
@@ -65,7 +65,7 @@ _options:
 
 `expandable` set to *true* allows images to be enlarged past original dimensions.
 
-### Size Attributes
+### Size Attributes[\#](#size-attributes){: .header-link}
 
 CloudCannon automatically adds size attributes (width, height, sizes) to the HTML for images uploaded in the [Content Editor](https://docs.cloudcannon.com/editing/editors/content-editor/) and [Editable Regions](https://docs.cloudcannon.com/editing/interfaces/editable-regions/).
 
@@ -73,7 +73,7 @@ This allows browsers to size `<img>` elements before CSS and images are loaded. 
 
 These attributes are also required for&nbsp;`srcset` attributes to work properly. Browsers assume by default that the width of an image is 100vw. If the image has a `srcset` but no explicit size attributes, it will appear full width regardless of the `srcset`.
 
-In cases where these size attributes are not right for your layout, some simple CSS can ensure that your images are sized correctly on the page. Once you have defined a width for your images, you can set `height` to `auto`. This will allow the browser to calculate the appropriate height for your image, based on the width.
+In cases where these size attributes are not right for your layout, some simple CSS can ensure that your images are sized correctly on the page. Define a width for your images, then set `height` to `auto`. This will allow the browser to calculate the appropriate height for your image, based on the width.
 
 ```css
 img {
