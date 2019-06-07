@@ -72,3 +72,12 @@ CloudCannon automatically adds size attributes (width, height, sizes) to the HTM
 This allows browsers to size `<img>` elements before CSS and images are loaded. Otherwise, the page can shift around in front of the viewer as images are loaded and elements are resized.
 
 These attributes are also required for&nbsp;`srcset` attributes to work properly. Browsers assume by default that the width of an image is 100vw. If the image has a `srcset` but no explicit size attributes, it will appear full width regardless of the `srcset`.
+
+In cases where these size attributes are not right for your layout, some simple CSS can ensure that your images are sized correctly on the page. Define a width for your images, then set `height` to `auto`. This will allow the browser to calculate the appropriate height for your image, based on the width.
+
+```css
+img {
+    max-width: 100%;
+    height: auto;
+}
+```
