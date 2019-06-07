@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-### File Uploads[\#](#file-uploads){: .header-link}
+### File Uploads
 
 Keep a consistent file structure by setting up an uploads path structure. Images, documents and other files in the editor are uploaded to this location.
 
@@ -28,7 +28,7 @@ You can also set `site.uploads_dir` in your `_config.yml` to set it everywhere:
 uploads_dir: "uploads/:categories/:year/:month/:day/:title"
 ```
 
-### Image Uploads[\#](#image-uploads){: .header-link}
+### Image Uploads
 
 Control the size and format of images clients or team members upload through the interface. Images are resized and converted automatically.
 
@@ -65,7 +65,7 @@ _options:
 
 `expandable` set to *true* allows images to be enlarged past original dimensions.
 
-### Size Attributes[\#](#size-attributes){: .header-link}
+### Size Attributes
 
 CloudCannon automatically adds size attributes (width, height, sizes) to the HTML for images uploaded in the [Content Editor](https://docs.cloudcannon.com/editing/editors/content-editor/) and [Editable Regions](https://docs.cloudcannon.com/editing/interfaces/editable-regions/).
 
