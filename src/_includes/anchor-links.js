@@ -1,4 +1,4 @@
-if (!(document.body.classList.contains("cms-editor-active"))) {
+if (document.querySelectorAll(".cms-editor-active").length === 0) {
     console.log(document.body.classList.contains("cms-editor-active"));
     var headings = document.querySelectorAll("h3[id], h4[id], h5[id], h6[id]");
     
