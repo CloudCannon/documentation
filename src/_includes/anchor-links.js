@@ -10,5 +10,7 @@ if (!document.querySelector("body").classList.contains("cms-editor-active")) {
     
     	headings[i].appendChild(anchorLink);
     }
+} else {
+    console.log(document.querySelector("body").classList);
 }
 
