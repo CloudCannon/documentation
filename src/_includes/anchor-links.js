@@ -1,4 +1,5 @@
 if (!(document.body.classList.contains("cms-editor-active"))) {
+    console.log(document.body.classList);
     var headings = document.querySelectorAll("h3[id], h4[id], h5[id], h6[id]");
     
     for (var i = 0; i < headings.length; i++) {
