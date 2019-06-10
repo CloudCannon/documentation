@@ -1,5 +1,5 @@
 if (!document.querySelector("body").classList.contains("cms-editor-active")) {
-    
+    console.log(document.querySelector("body").classList);
     var headings = document.querySelectorAll("h3[id], h4[id], h5[id], h6[id]");
     
     for (var i = 0; i < headings.length; i++) {
@@ -10,7 +10,5 @@ if (!document.querySelector("body").classList.contains("cms-editor-active")) {
     
     	headings[i].appendChild(anchorLink);
     }
-} else {
-    console.log(document.querySelector("body").classList);
 }
 
