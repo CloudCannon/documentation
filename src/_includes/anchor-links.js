@@ -1,5 +1,4 @@
-if (document.querySelectorAll(".cms-editor-active").length === 0) {
-    console.log(document.body.classList.contains("cms-editor-active"));
+if (window.location.host !== "app.cloudcannon.com") {
     var headings = document.querySelectorAll("h3[id], h4[id], h5[id], h6[id]");
     
     for (var i = 0; i < headings.length; i++) {
