@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-CloudCannon officially supports two Markdown processors for Jekyll. TODO say what it affects here
+CloudCannon officially supports two Markdown processors for Jekyll. Jekyll uses these to convert your Markdown for your live site, and CloudCannon uses it to convert your Markdown for your editors.
 
 ### Kramdown
 
