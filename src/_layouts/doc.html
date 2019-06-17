@@ -27,13 +27,11 @@ icons: true
 					{% endif %}
 				{% endunless %}
 
-				<li class="doc-nav-section">
+				<li class="doc-nav-section" {% if page.url contains section.url %}id="make-visible"{% endif %}>
 					<a href="{{ section.url }}introduction/" class="doc-nav-section-link {% if page.url contains section.url %}current{% endif %}">
-						{% if section.icon == "console" %}
-							<svg viewBox="0 0 24 24"><path d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5C2,3.89 2.9,3 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" /></svg>
-						{% else %}
-							<i class="material-icons">{{ section.icon }}</i>
-						{% endif %}
+						<div class="nav-icon">
+							{% include components/docs-nav-icon.html icon=section.icon %}
+						</div>
 						<strong>{{ section.short_name }}</strong>
 					</a>
 				</li>
@@ -85,39 +83,6 @@ icons: true
 
 		<section class="docs-main" id="doc">
 			<article class="content">
-				<div class="doc-nav-mobile" id="doc-nav-mobile">
-					<label>
-						Category
-
-						<select>
-							{% for section in sorted_sections %}
-								<option value="{{ section.url }}introduction/" {% if page.url contains section.url %}selected{% endif %}>
-									{{ section.name }}
-								</option>
-							{% endfor %}
-						</select>
-					</label>
-
-					{% if collection.docs %}
-						{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
-						<label>
-							Document
-							<select>
-								{% for group in grouped %}
-									{% assign items = group.items | sort: 'order' %}
-									<optgroup label="{{ group.name | default: "General" }} ({{ items | size }})">
-										{% for item in items %}
-											<option value="{{ site.baseurl }}{{ item.url }}" {% if item.url == page.url %}selected{% endif %}>
-												{{ group.name | default: "General" }} / {{ item.title }}
-											</option>
-										{% endfor %}
-									</optgroup>
-								{% endfor %}
-							</select>
-						</label>
-					{% endif %}
-				</div>
-
 				{% if collection.docs %}
 					<h1 class="doc-category-header">{{ collection.title }} / {{ page.category | default: "General" }}</h1>
 				{% endif %}
@@ -233,4 +198,14 @@ icons: true
 		topSpacing: 20,
 		bottomSpacing: 20
 	});
+</script>
+<script>
+(function () {
+	var elmnt = document.getElementById("make-visible");
+	elmnt.scrollIntoView(true);
+	if (screen.width < 800) { 
+		console.log(elmnt);
+		elmnt.scrollIntoView({inline: "center"});
+	}
+})();
 </script>
