@@ -37,6 +37,15 @@ icons: true
 				</li>
 			{% endfor %}
 		</ul>
+		<script>
+			(function () {
+				var elmnt = document.getElementById("make-visible");
+				elmnt.scrollIntoView(true);
+				if (screen.width < 800) {
+					elmnt.scrollIntoView({inline: "center"});
+				}
+			})();
+		</script>
 	</div>
 	{% unless current_section %}
 		<div class="doc-nav-sections-empty-fix"></div>
@@ -198,14 +207,4 @@ icons: true
 		topSpacing: 20,
 		bottomSpacing: 20
 	});
-</script>
-<script>
-(function () {
-	var elmnt = document.getElementById("make-visible");
-	elmnt.scrollIntoView(true);
-	if (screen.width < 800) { 
-		console.log(elmnt);
-		elmnt.scrollIntoView({inline: "center"});
-	}
-})();
 </script>
