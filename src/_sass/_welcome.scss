@@ -265,3 +265,12 @@ a.doc-nav-section-link {
 		}
 	}
 }
+
+.docs-container {
+	@media (max-width: 800px) {
+		padding: 40px 0;
+		nav.full-navigation {
+			display: none;
+		}
+	}
+}
