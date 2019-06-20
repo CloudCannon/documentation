@@ -1,0 +1,26 @@
+{% assign collection = site.collections | where: "label", page.collection | first %}
+{% if collection.docs %}
+
+    <nav class="page-nav-mobile page-table" id="mobile-select-nav">
+        {% assign groups = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+        <table>
+        {% for group in groups %}
+            <tr>
+                <th>{{ group.name }}</th>
+                {% assign items = group.items | sort: "order" %}
+                <td>
+                {% for doc in items %}
+                <span>
+                <a href="{{ site.baseurl }}{{ doc.url }}" {% if page.url == doc.url %}class="current"{% endif %}>
+                        {{ doc.title }}
+                </a>
+                {% unless forloop.last %}•{% endunless %}
+                </span>
+                {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+    </nav>
+
+{% endif %}

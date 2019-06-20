@@ -1,0 +1,23 @@
+{% assign collection = site.collections | where: "label", page.collection | first %}
+{% if collection.docs %}
+
+    <nav class="page-nav-mobile page-list" id="mobile-select-nav">
+        {% assign groups = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+        {% for group in groups %}
+            {% assign items = group.items | sort: "order" %}
+            {% for doc in items %}
+                {% unless forloop.first %}•{% endunless %}
+                <a href="{{ site.baseurl }}{{ doc.url }}" {% if page.url == doc.url %}class="current"{% endif %}>
+                    {% if doc.title == "Introduction" %}
+                        {{ group.name }}
+                    {% else %}
+                        {{ doc.title }}
+                    {% endif %}
+                </a>
+            {% endfor %}
+            {% unless forloop.last %}•{% endunless %}
+        {% endfor %}
+
+    </nav>
+
+{% endif %}

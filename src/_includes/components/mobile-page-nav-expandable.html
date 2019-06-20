@@ -1,0 +1,51 @@
+<nav class="page-nav-mobile expandable full-navigation" onclick="expandToggle()">
+        <button class="doc-category-header">Navigation</button>
+        <div id="expand-nav" class="closed">
+            
+            <ul class="docs-nav-list">
+				{% assign prev = null %}
+				{% assign current = null %}
+				{% assign next = null %}
+				{% if collection.docs %}
+					{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+
+                    {% for group in grouped %}
+						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+							{% assign items = group.items | sort: 'order' %}
+							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name | default: "General" }} ({{ items | size }})</a>
+							<ul>
+								{% for item in items %}
+									{% unless next %}
+										{% if item.url == page.url %}
+											{% assign current = item %}
+										{% elsif current %}
+											{% assign next = item %}
+										{% else %}
+											{% assign prev = item %}
+										{% endif %}
+									{% endunless %}
+
+									<li class="nav-item {% if item.url == page.url %}current{% endif %}">
+										<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+										{% if item.url == page.url %}<div class="toc">{% include toc.html html=content h_max=3 %}</div>{% endif %}
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% endfor %}
+				{% endif %}
+			</ul>
+
+        </div>
+</nav>
+
+<script>
+    const nav = document.getElementById("expand-nav");
+    function expandToggle() {
+        if (nav.classList.contains("closed")) {
+            nav.classList.remove("closed");
+        } else {
+            nav.classList.add("closed");
+        }
+    }
+</script>

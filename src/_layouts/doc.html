@@ -54,6 +54,7 @@ icons: true
 
 <div class="docs-container">
 	<div class="wrapper wrapper-large">
+		
 		<nav class="docs-nav full-navigation" id="docs-nav">
 			<ul class="docs-nav-list">
 				{% assign prev = null %}
@@ -89,6 +90,8 @@ icons: true
 				{% endif %}
 			</ul>
 		</nav>
+
+		{% include components/mobile-page-nav-table.html %}
 
 		<section class="docs-main" id="doc">
 			<article class="content">

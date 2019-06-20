@@ -1,0 +1,37 @@
+{% assign collection = site.collections | where: "label", page.collection | first %}
+{% if collection.docs %}
+
+    {% assign groups = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
+
+    <nav class="page-nav-mobile select" id="mobile-select-nav">
+        <label>
+            Page
+            <select>
+                {% for group in groups %}
+                    {% assign items = group.items | sort: "order" %}
+                    <optgroup label="{{ group.name | default: 'General'}} ({{ items.size }})">
+                        {% for item in items %}
+                            <option value="{{ site.baseurl }}{{ item.url}}" {% if page.url == item.url %}selected{% endif %}>
+                                {{ item.title }}
+                            </option>
+                        {% endfor %}
+                    </optgroup>
+                {% endfor %}
+            </select>
+        </label>
+    </nav>
+    <script>
+        var mobileNav = document.getElementById("mobile-select-nav");
+        if (mobileNav) {
+            var selects = mobileNav.getElementsByTagName("select");
+            function selectNavigation(event) {
+                console.log(event.target.value);
+                window.location = event.target.value;
+            }
+            for (var i = 0; i < selects.length; i++) {
+                selects[i].addEventListener("change", selectNavigation);
+            }
+        }
+    </script>
+
+{% endif %}
