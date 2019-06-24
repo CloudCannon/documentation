@@ -12,5 +12,5 @@ This release adds the ability to serve more than one site under the same domain 
 
 **Fixes:**
 
+* Emails are no longer obscured automatically
 * General design fixes
-* Emails no longer auto obscures
