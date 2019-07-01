@@ -5,8 +5,7 @@ order: 3
 ---
 
 > Mercurial repositories are not supported.
-{: .explainer}
-{: .warning}
+{: .explainer .warning}
 
 Connecting Bitbucket allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to Bitbucket.
 
@@ -21,8 +20,7 @@ This redirects you to Bitbucket. Log in and authorise CloudCannon access to your
 You'll be redirected back to CloudCannon to pick a repository to connect. If you don't have one for this website, create a new one in Bitbucket and refresh this page.
 
 > A dialog box warns you if there are existing files in your site. The files will be replaced with the contents of the repository. Click **Connect Bitbucket** to continue or close the dialog to cancel the process.
-{: .explainer}
-{: .warning}
+{: .explainer .warning}
 
 Bitbucket is now connected. Changes you push to the Git repository are pulled in by CloudCannon. Any changes made on CloudCannon are automatically committed and pushed.
 
