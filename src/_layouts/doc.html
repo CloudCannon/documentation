@@ -8,44 +8,9 @@ icons: true
 	{% include navigation/top.html %}
 </header>
 
-<div class="doc-nav">
-	<div class="wrapper wrapper-large" style="padding: 0 10px;">
-		<ul class="doc-nav-sections">
-			{% assign prev_section = null %}
-			{% assign current_section = null %}
-			{% assign next_section = null %}
-
-			{% assign sorted_sections = site.sections | sort: "order" %}
-			{% for section in sorted_sections %}
-				{% unless next_section %}
-					{% if page.url contains section.url %}
-						{% assign current_section = section %}
-					{% elsif current_section %}
-						{% assign next_section = section %}
-					{% else %}
-						{% assign prev_section = section %}
-					{% endif %}
-				{% endunless %}
-
-				<li class="doc-nav-section">
-					<a href="{{ section.url }}introduction/" class="doc-nav-section-link {% if page.url contains section.url %}current{% endif %}">
-						{% if section.icon == "console" %}
-							<svg viewBox="0 0 24 24"><path d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5C2,3.89 2.9,3 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" /></svg>
-						{% else %}
-							<i class="material-icons">{{ section.icon }}</i>
-						{% endif %}
-						<strong>{{ section.short_name }}</strong>
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-	{% unless current_section %}
-		<div class="doc-nav-sections-empty-fix"></div>
-	{% endunless %}
-</div>
 
 <div class="docs-container">
+	{% include navigation/collection-nav.html docs_nav=true %}
 	<div class="wrapper wrapper-large">
 		<nav class="docs-nav full-navigation" id="docs-nav">
 			<ul class="docs-nav-list">
@@ -83,40 +48,10 @@ icons: true
 			</ul>
 		</nav>
 
+		{% include navigation/mobile-doc-selector.html %}
+
 		<section class="docs-main" id="doc">
 			<article class="content">
-				<div class="doc-nav-mobile" id="doc-nav-mobile">
-					<label>
-						Category
-
-						<select>
-							{% for section in sorted_sections %}
-								<option value="{{ section.url }}introduction/" {% if page.url contains section.url %}selected{% endif %}>
-									{{ section.name }}
-								</option>
-							{% endfor %}
-						</select>
-					</label>
-
-					{% if collection.docs %}
-						{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
-						<label>
-							Document
-							<select>
-								{% for group in grouped %}
-									{% assign items = group.items | sort: 'order' %}
-									<optgroup label="{{ group.name | default: "General" }} ({{ items | size }})">
-										{% for item in items %}
-											<option value="{{ site.baseurl }}{{ item.url }}" {% if item.url == page.url %}selected{% endif %}>
-												{{ group.name | default: "General" }} / {{ item.title }}
-											</option>
-										{% endfor %}
-									</optgroup>
-								{% endfor %}
-							</select>
-						</label>
-					{% endif %}
-				</div>
 
 				{% if collection.docs %}
 					<h1 class="doc-category-header">{{ collection.title }} / {{ page.category | default: "General" }}</h1>
@@ -213,24 +148,5 @@ icons: true
 {% endif %}
 
 <script src="/js/sticky-sidebar.js"></script>
+<script src="/assets/js/mobile-doc-selector.js"></script>
 <script>{% include autofocus.js %}</script>
-<script>
-	var mobileNav = document.getElementById("doc-nav-mobile");
-
-	if (mobileNav) {
-		var selects = mobileNav.getElementsByTagName("select");
-
-		function selectNavigation(event) {
-			window.location = event.target.value;
-		}
-
-		for (var i = 0; i < selects.length; i++) {
-			selects[i].addEventListener("change", selectNavigation);
-		}
-	}
-
-	var sidebar = new StickySidebar('#docs-nav', {
-		topSpacing: 20,
-		bottomSpacing: 20
-	});
-</script>
