@@ -48,42 +48,7 @@ icons: true
 			</ul>
 		</nav>
 
-		<div id="mobile-docs-nav">
-			<p>Jump to Section <i id="close-nav" class="material-icons">close</i></p>
-			<ul class="docs-nav-list">
-				{% assign prev = null %}
-				{% assign current = null %}
-				{% assign next = null %}
-				{% if collection.docs %}
-					{% assign grouped = collection.docs | group_by: 'category' | sort_by_array: 'name', site.data.docs_order %}
-
-					{% for group in grouped %}
-						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name | default: "General" }}</a>
-							<ul>
-								{% for item in items %}
-									{% unless next %}
-										{% if item.url == page.url %}
-											{% assign current = item %}
-										{% elsif current %}
-											{% assign next = item %}
-										{% else %}
-											{% assign prev = item %}
-										{% endif %}
-									{% endunless %}
-
-									<li class="nav-item {% if item.url == page.url %}current{% endif %}">
-										<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-										{% if item.url == page.url %}<div class="toc">{% include toc.html html=content h_max=3 %}</div>{% endif %}
-									</li>
-								{% endfor %}
-							</ul>
-						</li>
-					{% endfor %}
-				{% endif %}
-			</ul>
-		</div>
+		{% include navigation/mobile-doc-selector.html %}
 
 		<section class="docs-main" id="doc">
 			<article class="content">
@@ -183,36 +148,5 @@ icons: true
 {% endif %}
 
 <script src="/js/sticky-sidebar.js"></script>
+<script src="/assets/js/mobile-doc-selector.js"></script>
 <script>{% include autofocus.js %}</script>
-<script>
-	var mobileNav = document.getElementById("doc-nav-mobile");
-
-	if (mobileNav) {
-		var selects = mobileNav.getElementsByTagName("select");
-
-		function selectNavigation(event) {
-			window.location = event.target.value;
-		}
-
-		for (var i = 0; i < selects.length; i++) {
-			selects[i].addEventListener("change", selectNavigation);
-		}
-	}
-
-	var sidebar = new StickySidebar('#docs-nav', {
-		topSpacing: 99,
-		bottomSpacing: 20
-	});
-
-	document.getElementById("doc-path").addEventListener("click", function (event) {
-		event.preventDefault();
-		document.getElementById("mobile-docs-nav").classList.toggle("open");
-		document.getElementsByTagName("BODY")[0].classList.toggle("fixed-position");
-	});
-
-	document.getElementById("close-nav").addEventListener("click", function (event) {
-		event.preventDefault();
-		document.getElementById("mobile-docs-nav").classList.toggle("open");
-		document.getElementsByTagName("BODY")[0].classList.toggle("fixed-position");
-	});
-</script>

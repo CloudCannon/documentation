@@ -1,7 +1,16 @@
 ---
 ---
-
 @import "screen";
 @import "docs";
-
 @import "welcome";
+@import "features";
+@import "about";
+@import "pricing";
+
+.g-recaptcha {
+  margin-bottom: 15px;
+}
+
+.cms-embed {
+    @extend .vertical-flow;
+}
