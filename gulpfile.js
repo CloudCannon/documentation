@@ -4,4 +4,4 @@ const suite = require("@cloudcannon/suite");
 suite.dev(gulp);
 suite.help(gulp);
 
-gulp.task("default", ["help"]);
+gulp.task("default", gulp.series("help"));
