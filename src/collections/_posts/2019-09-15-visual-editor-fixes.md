@@ -3,7 +3,7 @@ title: Visual editor fixes
 type: minor
 ---
 
-This releasepatches a few issues with the visual editor.
+This release patches a few issues with the visual editor.
 
 **Fixes:**
 
