@@ -9,3 +9,9 @@ This release improves handling of certain source syncing cases.
 
 * Error when connecting a GitHub branch with an integer as a name.
 * Better error reporting for merge conflicts.
+
+**Features:**
+
+* More options for sorting the site list
+
+&nbsp;
