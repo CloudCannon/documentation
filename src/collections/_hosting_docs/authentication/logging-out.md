@@ -1,7 +1,7 @@
 ---
 title: Logging Out
 category: Authentication
-order: 7
+order: 8
 requirements:
   build: Any
   plan: Free
