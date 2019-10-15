@@ -1,7 +1,7 @@
 ---
 title: Custom Interfaces
 category: Authentication
-order: 5
+order: 6
 requirements:
   build: Any
   plan: Pro

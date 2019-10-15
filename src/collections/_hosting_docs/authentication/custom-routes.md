@@ -1,7 +1,7 @@
 ---
 title: Custom Routes
 category: Authentication
-order: 6
+order: 7
 requirements:
   build: Any
   plan: Basic
