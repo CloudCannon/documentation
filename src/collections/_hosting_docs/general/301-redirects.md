@@ -27,5 +27,7 @@ CloudCannon supports redirects to external domains and wildcard matching with `*
 /should-have-been-elsewhere/ http://example.com
 {% endhighlight %}
 
+Redirects will only occur if the redirect-from page/location no longer exists within the site. If the page/location still exists within your site, this will be served instead of performing a redirect.
+
 > You can redirect to, but not from a URL fragment (e.g. `#example-heading`). The fragment is not passed to the server so cannot be processed by the redirect.
 {: .explainer}
