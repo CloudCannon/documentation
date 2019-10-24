@@ -30,5 +30,5 @@ The next step is to configure your name servers, which cannot be done in CloudCa
 
 ![Site Settings / Domain section with CloudCannon DNS](/images/hosting/domains/cloudcannon-dns.png){: .screenshot srcset="/images/hosting/domains/cloudcannon-dns.png 800w, /images/hosting/domains/cloudcannon-dns@2x.png 1600w"}
 
-> See [here](/hosting/domains/dns/) for more information about setting additional DNS records for external services or ownership validation.
+> See our guide about [setting additional DNS records](/hosting/domains/dns/) for external services or ownership validation.
 {: .explainer}

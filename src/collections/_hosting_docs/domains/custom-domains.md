@@ -12,7 +12,7 @@ Give your live site a professional look with a unique domain name.
 
 To add a custom domain:
 
-1. Purchase a domain from a domain registrar (e.g. [iwantmyname](http://www.shareasale.com/r.cfm?B=210738&amp;U=852853&amp;M=25581&amp;urllink=https://iwantmyname.com/services/developer/cloud-cannon-custom-domains))
+1. Purchase a domain from a domain registrar
 2. Go to the *Site Settings* / *Domain* section for your site
 3. Enter your domain with or without a subdomain in the *Domain Name* box 
 4. Click **Add Domain**
@@ -36,13 +36,13 @@ Configuration instructions are shown after adding a domain. There are two choice
 
 Using **CloudCannon DNS** allows you to manage your DNS records within CloudCannon. This option automatically provides wildcard SSL certificates for your domain, so all your subdomain sites can be served over HTTPS without extra configuration.
 
-See [here](/hosting/domains/cloudcannon-dns) for more information about CloudCannon DNS.
+See here for more information about [configuring CloudCannon DNS](/hosting/domains/cloudcannon-dns).
 
 #### External DNS
 
-If you want to manage your DNS records outside CloudCannon, you can use **External DNS**. See [here](/hosting/domains/external-dns) for more information about configuring external DNS.
+If you want to manage your DNS records outside CloudCannon, you can use **External DNS**. See here for more information about [configuring external DNS](/hosting/domains/external-dns).
 
-> If you are using Cloudflare as your DNS provider, you will need to configure your DNS records differently. See here for more information.
+> If you are using Cloudflare as your DNS provider, you will need to configure your DNS records differently. See our guide for using a [Cloudflare Proxy with CloudCannon](/hosting/domains/cloudflare-proxy).
 {: .explainer.warning}
 
 > Verisign provides a [guide](http://www.verisign.com/en_US/domain-names/online/how-dns-works/index.xhtml){: target="_blank"} to learn how DNS works.

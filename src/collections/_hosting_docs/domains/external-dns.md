@@ -10,7 +10,7 @@ requirements:
 > [*CloudCannon DNS*](/hosting/domains/cloudcannon-dns) is strongly recommended for sites on apex domains (no subdomain). *External DNS* relies on an A record mapped to a single server. This cannot be dynamically load balanced, reducing redundancy and increasing potential down time risk.
 {: .explainer.warning}
 
-> If you are using **Cloudflare** as your DNS provider, you will need to configure your DNS records differently. See [here](/hosting/domains/cloudflare-proxy) for more information.
+> If you are using **Cloudflare** as your DNS provider, you will need to configure your DNS records differently. See our guides for using a [Cloudflare Proxy with CloudCannon](/hosting/domains/cloudflare-proxy).
 {: .explainer.warning}
 
 If you want to host a site on CloudCannon, but manage your DNS records externally, you can use *External DNS*. To configure your domain with *External DNS*, follow these steps:
