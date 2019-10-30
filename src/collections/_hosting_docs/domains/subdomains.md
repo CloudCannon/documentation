@@ -1,7 +1,7 @@
 ---
 title: Subdomains
 category: Domains
-order: 3
+order: 7
 requirements:
   build: Any
   plan: Free

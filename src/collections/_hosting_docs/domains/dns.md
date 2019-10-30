@@ -1,14 +1,14 @@
 ---
 title: DNS
 category: Domains
-order: 4
+order: 8
 requirements:
   build: Any
   plan: Free
   hosting: CloudCannon
 ---
 
-Add external services or ownership validation through DNS records while your site is configured with [CloudCannon DNS](/hosting/domains/custom-domains/#cloudcannon-dns).
+Add external services or ownership validation through DNS records while your site is configured with [CloudCannon DNS](/hosting/domains/cloudcannon-dns).
 
 To change or add a new record:
 
