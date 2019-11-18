@@ -47,7 +47,8 @@ if (window.location.host === "app.cloudcannon.com") {
 }
 {% endhighlight %}
 
-You can also conditionally import scripts embedded in your HTML:
+You can also conditionally import scripts embedded in your HTML based on whether or not you
+have the visual editor open:
 
 {% highlight html %}
 <script>
