@@ -46,3 +46,15 @@ if (window.location.host === "app.cloudcannon.com") {
   alert("Not in CloudCannon.");
 }
 {% endhighlight %}
+
+You can also conditionally import scripts embedded in your HTML:
+
+{% highlight html %}
+<script>
+if(!window.location.host === "app.cloudcannon.com")
+{
+    var script = document.createElement("script"); 
+    script.src = 'your-script-url';
+}
+</script>
+{% endhighlight %}
