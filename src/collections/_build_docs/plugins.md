@@ -38,7 +38,31 @@ Installing your gems can take quite some time, to save time on consecutive build
 2. Caches that folder based on your Gemfile.lock
 3. When no local gems are found, build your site using the cached installs from your previous builds
 
-To disable this feature, go to *Site Settings / Build. *
+To disable this feature, go to *Site Settings / Build*.
 
 > Older sites on CloudCannon will have this caching disabled to prevent changes to their build environment. Enabling this can greatly improve editing experience.
 {: .explainer}
+
+### The cloudcannon-jekyll gem
+
+In order to optimise the editing interfaces for your site, CloudCannon injects an open source plugin called `cloudcannon-jekyll` before building your site.
+This generates a JSON file with titles, collections, build settings and other metadata that CloudCannon displays for your editors.
+
+By default, data files are not included in the generated output. Including this would enable you to populate select and multiselect inputs from data files.
+
+To include `data`, add the following to your `_config.yml`:
+
+```yaml
+cloudcannon:
+  data: true
+```
+
+Although not necessary, if you would like to generate the details file locally, add the following to your `Gemfile`:
+
+```ruby
+gem 'cloudcannon-jekyll', :group => :jekyll_plugins
+```
+
+
+> Building with `safe: true` disables all plugins, including `cloudcannon-jekyll`. This is not recommended as it degrades the editing experience.
+{: .explainer.warning }
