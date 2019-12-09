@@ -38,4 +38,6 @@ Once open, choose the privacy tab and ensure that "Block all cookies" is not ena
 
 ## Brave
 
-&nbsp;
+To update your cookie preferences on app.cloudcannon.com, click the Brave icon in your address bar and ensure shields are down.
+
+![](/uploads/screen-shot-2019-12-10-at-9-41-59-am.png){: width="432" height="376"}
