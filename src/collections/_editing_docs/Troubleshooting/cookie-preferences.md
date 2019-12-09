@@ -12,11 +12,19 @@ When the visual editor is loaded, CloudCannon creates an authenticated connectio
 
 ## Chrome
 
-![](/uploads/screen-shot-2019-12-10-at-10-07-10-am.png){: width="2796" height="1680"}
+To update your cookie preferences, open your Chrome preferences from the burger menu.
+
+![](/uploads/screen-shot-2019-12-10-at-10-27-17-am.png){: width="2796" height="1680"}
+
+Scroll down to *Advanced / Privacy and Security* then select *Site settings.*
 
 ![](/uploads/screen-shot-2019-12-10-at-10-05-48-am.png){: width="2796" height="1680"}
 
+Select *Cookies and site data*
+
 ![](/uploads/screen-shot-2019-12-10-at-10-06-04-am.png){: width="2796" height="1680"}
+
+Ensure cookies are allowed with app.cloudcannon.com and proxee.co unblocked
 
 ![](/uploads/screen-shot-2019-12-10-at-10-06-37-am.png){: width="2796" height="1680"}
 
