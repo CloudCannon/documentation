@@ -12,7 +12,13 @@ When the visual editor is loaded, CloudCannon creates an authenticated connectio
 
 ## Chrome
 
-&nbsp;
+![](/uploads/screen-shot-2019-12-10-at-10-07-10-am.png){: width="2796" height="1680"}
+
+![](/uploads/screen-shot-2019-12-10-at-10-05-48-am.png){: width="2796" height="1680"}
+
+![](/uploads/screen-shot-2019-12-10-at-10-06-04-am.png){: width="2796" height="1680"}
+
+![](/uploads/screen-shot-2019-12-10-at-10-06-37-am.png){: width="2796" height="1680"}
 
 ## Firefox
 
