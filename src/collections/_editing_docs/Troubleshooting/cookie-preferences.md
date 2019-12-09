@@ -16,7 +16,15 @@ When the visual editor is loaded, CloudCannon creates an authenticated connectio
 
 ## Firefox
 
-&nbsp;
+To update your cookie preferences, open your Firefox preferences from the burger menu.
+
+![](/uploads/firefox-menu.png){: width="1808" height="1108"}
+
+Once open, choose the privacy tab and ensure that "Standard" security is selected.
+
+![](/uploads/firefox-settings.png){: width="1749" height="1082"}
+
+Alternatively, add an exception for app.cloudcannon.com when prompted after opening the editor.
 
 ## Safari
 
