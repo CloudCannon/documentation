@@ -59,3 +59,7 @@ Once open, choose the *Privacy* tab and ensure that **Block all cookies** is not
 To update your cookie preferences on **app.cloudcannon.com**, click the Brave icon in your address bar and ensure shields are down.
 
 ![](/uploads/screen-shot-2019-12-10-at-9-41-59-am.png){: width="432" height="376"}
+
+Alternatively, try shields up with&nbsp;**All cookies allowed.**
+
+![](/uploads/screen-shot-2019-12-10-at-3-01-52-pm.png){: width="874" height="1168"}
