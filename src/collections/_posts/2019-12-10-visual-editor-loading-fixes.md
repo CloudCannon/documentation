@@ -8,7 +8,7 @@ This release contains better authentication handling for the visual editor.
 **Features:**
 
 * Nicer invoices
-* Add --trace option to builds
+* Add –trace option to builds
 
 **Fixes:**
 
