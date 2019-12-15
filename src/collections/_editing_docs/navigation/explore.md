@@ -51,6 +51,7 @@ These options are set in `_config.yml` inside specific collection metadata, and 
 | \_image\_key | String, matching a front matter field of the collection items |
 | \_image\_size | *cover*, *contain* or unset (default) |
 | \_singular\_name | String |
+| \_singular\_key | String |
 | \_disable\_add | *true* or *false* (default) |
 | \_icon | String, matching [Material Icon](https://material.io/tools/icons/) name |
 
@@ -62,7 +63,9 @@ These options are set in `_config.yml` inside specific collection metadata, and 
 
 `_image_size` sets how images are displayed in the list.
 
-`_singular_name` overrides the default singular name of the collection.
+`_singular_name` overrides the default singular display name of the collection.
+
+`_singular_key` overrides the default singular input key of the collection.
 
 `_disable_add` prevents users from adding new collection items.<br><br>`_icon` overrides the default collection icon with an icon from [Google's Material Icons](https://material.io/tools/icons/).
 
@@ -75,6 +78,7 @@ collections:
     _image_key: profile_image
     _image_size: cover
     _singular_name: Staff Member
+    _singular_key: staff_member
     _disable_add: false
     _icon: people
 ```
