@@ -1,7 +1,7 @@
 ---
 title: Dropbox
 category: Source Syncing
-order: 5
+order: 6
 ---
 
 Connecting Dropbox allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to Dropbox.

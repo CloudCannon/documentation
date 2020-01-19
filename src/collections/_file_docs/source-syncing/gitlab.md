@@ -6,6 +6,9 @@ order: 4
 
 Connecting GitLab allows you to work on your websites locally and have the changes sync to CloudCannon. File changes made on CloudCannon also get synced back to GitLab.
 
+> To connect to a *self hosted GitLab* repository instead, follow the instructions listed for [Self Hosted GitLab](/files/source-syncing/self-hosted-gitlab/).
+{: .explainer}
+
 To connect a GitLab repository and start syncing files, follow these instructions:
 
 Go to *Site Settings* / *Source Syncing* and click **Connect** next to GitLab.
