@@ -21,6 +21,22 @@ To connect to your self hosted GitLab instance:
 
 ![Self hosted GitLab entry interface](/images/files/source-syncing/self-hosted-gitlab.png){: .screenshot srcset="/images/files/source-syncing/self-hosted-gitlab.png 800w, /images/files/source-syncing/self-hosted-gitlab@2x.png 1600w"}
 
+The details for this page comes from the GitLab server under User Settings / Applications.
+
+![](/uploads/gitlab-settings2x.png){: width="2880" height="1800"}
+
+The Redirect URI is [https://app.cloudcannon.com/self\_hosted\_gitlab/authorize/](https://app.cloudcannon.com/self_hosted_gitlab/authorize/)
+
+The minimal scopes required are:
+
+1. api
+2. read\_user
+3. read\_repository
+4. write\_repository
+5. openid
+
+Once completed the key and secret will be available for use in CloudCannon. The&nbsp; URLs should match the form placeholders.
+
 ### Syncing with a Repository
 
 To connect a self hosted GitLab repository and start syncing files, follow these instructions:
@@ -34,7 +50,7 @@ This redirects you to your self hosted GitLab. Log in and authorise CloudCannon 
 You'll be redirected back to CloudCannon to pick a repository to connect. If you don't have one for this website, create a new one in your self hosted GitLab and refresh this page.
 
 > A dialog box warns you if there are existing files in your site. The files will be replaced with the contents of the repository. Click **Connect Self Hosted GitLab** to continue or close the dialog to cancel the process.
-{: .explainer .warning}
+{: .explainer.warning}
 
 Self Hosted GitLab is now connected. Changes you push to the Git repository are pulled in by CloudCannon. Any changes made on CloudCannon are automatically committed and pushed.
 
