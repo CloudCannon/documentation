@@ -3,7 +3,7 @@ title: Self Hosted GitLab and Modal Array Structures
 type: major
 ---
 
-This release adds a number of highly requested features
+This release adds a number of highly requested features.
 
 **Features:**
 
