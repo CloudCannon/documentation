@@ -7,9 +7,9 @@ This release adds a number of highly requested features.
 
 **Features:**
 
-* Sorting for projects list
 * Self hosted GitLab support
 * Support for modal style array structures
+* Sorting for projects list
 * Added last synced and last built to the sites and projects list
 
 **Fixes:**
