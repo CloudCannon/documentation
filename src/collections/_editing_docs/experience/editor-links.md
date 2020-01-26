@@ -70,7 +70,7 @@ Instead of only anchor tags, any element can have an *Editor Link* by using the 
 </h1>
 ~~~
 
-### Posts[\#](#posts){: .header-link}[\#](#posts){: .header-link}[\#](#posts){: .header-link}
+### Posts[\#](#posts){: .header-link}[\#](#posts){: .header-link}
 
 To have edit links for posts in a list, add an Editor Link in the blog post loop:
 
