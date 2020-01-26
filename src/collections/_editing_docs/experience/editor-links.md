@@ -95,7 +95,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 
 You can make an editor link to a file in the \_data directory, such as `_data/company.yml`. Just make the link like so:
 
-~~~
+~~~html
 <a href="cloudcannon:collections/_data/company.yml" class="btn">Update Company</a>
 ~~~
 
