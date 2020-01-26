@@ -99,7 +99,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 
 ### Data Files
 
-To set an editor link to a file in the \_data directory, such as `_data/company.yml`
+To set an editor link to a file in the \_data directory, such as `_data/company.yml`, just
 
 ### Collection Items[\#](#collection-items){: .header-link}
 
