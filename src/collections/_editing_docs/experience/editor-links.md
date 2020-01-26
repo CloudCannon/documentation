@@ -136,7 +136,7 @@ To show *Editor Links* inside the editor and hide them on the live site:
 > CloudCannon adds the `.cms-editor-active` class to the `body` of your site in the [Visual Editor](/editing/visual-editor/). The class is not on the live site.
 {: .explainer}
 
-### Editor Link Behaviour[\#](#editor-link-behaviour){: .header-link}[\#](#editor-link-behaviour){: .header-link}[\#](#editor-link-behaviour){: .header-link}
+### Editor Link Behaviour[\#](#editor-link-behaviour){: .header-link}[\#](#editor-link-behaviour){: .header-link}
 
 Front matter can be highlighted within the sidebar or displayed standalone in a modal pop up. To change how an editor link opens:
 
