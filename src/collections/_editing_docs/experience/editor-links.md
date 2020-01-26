@@ -99,7 +99,7 @@ You can make an editor link to a file in the \_data directory, such as `_data/co
 <a href="cloudcannon:collections/_data/company.yml" class="btn">Update Company</a>
 ~~~
 
-### Collection Items[\#](#collection-items){: .header-link}[\#](#collection-items){: .header-link}
+### Collection Items[\#](#collection-items){: .header-link}[\#](#collection-items)
 
 To have an edit link on a collection item page, add the following to the page:
 
