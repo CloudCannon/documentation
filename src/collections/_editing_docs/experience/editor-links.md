@@ -70,7 +70,7 @@ Instead of only anchor tags, any element can have an *Editor Link* by using the 
 </h1>
 ~~~
 
-### Posts[\#](#posts){: .header-link}[\#](#posts){: .header-link}
+### Posts[\#](#posts){: .header-link}[\#](#posts)
 
 To have edit links for posts in a list, add an Editor Link in the blog post loop:
 
@@ -91,7 +91,7 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 
 ![CloudCannon blog posts with edit buttons](/images/editing/editor-links/blog-posts.png){: .screenshot srcset="/images/editing/editor-links/blog-posts.png 800w, /images/editing/editor-links/blog-posts@2x.png 1600w"}
 
-### Data Files[\#](#data-files){: .header-link}[\#](#data-files){: .header-link}
+### Data Files[\#](#data-files){: .header-link}[\#](#data-files)
 
 You can make an editor link to a file in the \_data directory, such as `_data/company.yml`. Just make the link like this:
 
