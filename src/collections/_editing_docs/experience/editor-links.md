@@ -158,7 +158,7 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 
 CloudCannon adds the `cms-editor-link-dirty` class to *Editor Links* after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
 
-### Styling[\#](#styling){: .header-link}[\#](#styling){: .header-link}[\#](#styling){: .header-link}
+### Styling[\#](#styling){: .header-link}[\#](#styling){: .header-link}
 
 You can give *Editor Links* our default styles by adding the `cms-editor-link` class. This provides a seamless experience alongside [Editable Regions](/editing/interfaces/editable-regions/) by using the same styles.
 
