@@ -9,10 +9,8 @@ requirements:
 ---
 
 *Editor Links* allow you to link to other sections of the CloudCannon interface from within the [Visual Editor](/editing/editors/visual-editor/). Use them to create edit buttons for your collection items and blog posts that are not visible on your live site. You can also add front matter *Editor Links* to open the front matter editor at specified fields.
-{: .present-before-paste}
 
 *Editor Links* are prefixed with `cloudcannon:` and match the URL structure of the CloudCannon app, for example:
-{: .present-before-paste}
 
 ~~~html
 <a href="cloudcannon:collections/_staff/">
@@ -33,7 +31,6 @@ requirements:
 ~~~
 
 Front matter *Editor Links* are prefixed with `cloudcannon:#` and match the Liquid format used to reference them, for example:
-{: .present-before-paste}
 
 ~~~html
 <!-- Inputs -->
@@ -66,7 +63,6 @@ Front matter *Editor Links* are prefixed with `cloudcannon:#` and match the Liqu
 ~~~
 
 Instead of only anchor tags, any element can have an *Editor Link* by using the `data-cms-editor-link` attribute, for example:
-{: .present-before-paste}
 
 ~~~html
 <h1 data-cms-editor-link="cloudcannon:#title">
@@ -74,10 +70,9 @@ Instead of only anchor tags, any element can have an *Editor Link* by using the 
 </h1>
 ~~~
 
-### Posts[\#](#posts){: .header-link}
+### Posts[\#](#posts){: .header-link}[\#](#posts){: .header-link}
 
 To have edit links for posts in a list, add an Editor Link in the blog post loop:
-{: .present-before-paste}
 
 {% highlight liquid %}
 <ul class="blog-posts">
@@ -95,36 +90,35 @@ To have edit links for posts in a list, add an Editor Link in the blog post loop
 {% endhighlight %}
 
 ![CloudCannon blog posts with edit buttons](/images/editing/editor-links/blog-posts.png){: .screenshot srcset="/images/editing/editor-links/blog-posts.png 800w, /images/editing/editor-links/blog-posts@2x.png 1600w"}
-{: .present-before-paste}
 
-### Data Files
+### Data Files[\#](#data-files){: .header-link}
 
-To set an editor link to a file in the \_data directory, such as `_data/company.yml`, just
+You can make an editor link to a file in the \_data directory, such as `_data/company.yml`. Just make the link like so:
 
-### Collection Items[\#](#collection-items){: .header-link}
+~~~
+<a href="cloudcannon:collections/_data/company.yml" class="btn">Update Company</a>
+~~~
+
+### Collection Items[\#](#collection-items){: .header-link}[\#](#collection-items){: .header-link}
 
 To have an edit link on a collection item page, add the following to the page:
-{: .present-before-paste}
 
 {% highlight liquid %}
 <a href="cloudcannon:collections/" class="editor-link">Edit</a>
 {% endhighlight %}
 
 If you are using a custom `collections_dir` include `site.collections_dir` in your editor link:
-{: .present-before-paste}
 
 {% highlight liquid %}
 <a href="cloudcannon:collections//" class="editor-link">Edit</a>
 {% endhighlight %}
 
 > When generating *Editor Links* in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
-> {: .present-before-paste}
 {: .explainer}
 
-### Toggling Visiblilty[\#](#toggling-visiblilty){: .header-link}
+### Toggling Visiblilty[\#](#toggling-visiblilty){: .header-link}[\#](#toggling-visiblilty){: .header-link}
 
 To show *Editor Links* inside the editor and hide them on the live site:
-{: .present-before-paste}
 
 1. Give the links an appropriate class name (e.g. `.editor-link`).
 2. Use the following CSS to show the links inside the editor only:
@@ -140,13 +134,11 @@ To show *Editor Links* inside the editor and hide them on the live site:
 {% endhighlight %}
 
 > CloudCannon adds the `.cms-editor-active` class to the `body` of your site in the [Visual Editor](/editing/visual-editor/). The class is not on the live site.
-> {: .present-before-paste}
 {: .explainer}
 
-### Editor Link Behaviour[\#](#editor-link-behaviour){: .header-link}
+### Editor Link Behaviour[\#](#editor-link-behaviour){: .header-link}[\#](#editor-link-behaviour){: .header-link}
 
 Front matter can be highlighted within the sidebar or displayed standalone in a modal pop up. To change how an editor link opens:
-{: .present-before-paste}
 
 1. Add the `data-cms-editor-link-style` attribute
 2. Set the attribute’s value to **modal** or **sidebar** (optional)
@@ -162,16 +154,13 @@ Front matter can be highlighted within the sidebar or displayed standalone in a 
 ~~~
 
 > Using modal-style editor links that point directly to [hidden fields](/editing/editors/front-matter-editor/#hidden) show the field in the pop up.
-> {: .present-before-paste}
 {: .explainer}
 
 CloudCannon adds the `cms-editor-link-dirty` class to *Editor Links* after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
-{: .present-before-paste}
 
-### Styling[\#](#styling){: .header-link}
+### Styling[\#](#styling){: .header-link}[\#](#styling){: .header-link}
 
 You can give *Editor Links* our default styles by adding the `cms-editor-link` class. This provides a seamless experience alongside [Editable Regions](/editing/interfaces/editable-regions/) by using the same styles.
-{: .present-before-paste}
 
 ~~~html
 <a href="cloudcannon:#title" class="cms-editor-link">
@@ -184,5 +173,4 @@ You can give *Editor Links* our default styles by adding the `cms-editor-link` c
 ~~~
 
 > `cms-editor-link-dirty` is also handled with the default styles.
-> {: .present-before-paste}
 {: .explainer}
