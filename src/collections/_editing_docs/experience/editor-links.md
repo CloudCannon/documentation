@@ -116,7 +116,7 @@ If you are using a custom `collections_dir` include `site.collections_dir` in yo
 > When generating *Editor Links* in Jekyll, collection items should use `relative_path`, while posts and pages should use `path`.
 {: .explainer}
 
-### Toggling Visiblilty[\#](#toggling-visiblilty){: .header-link}[\#](#toggling-visiblilty){: .header-link}[\#](#toggling-visiblilty){: .header-link}
+### Toggling Visiblilty[\#](#toggling-visiblilty){: .header-link}[\#](#toggling-visiblilty){: .header-link}
 
 To show *Editor Links* inside the editor and hide them on the live site:
 
