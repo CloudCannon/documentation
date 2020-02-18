@@ -46,3 +46,16 @@ if (window.inEditorMode) {
   alert("Not in CloudCannon.");
 }
 {% endhighlight %}
+
+You can also conditionally import scripts embedded in your HTML based on whether or not you
+have the visual editor open:
+
+{% highlight html %}
+<script>
+if(!window.location.host === "app.cloudcannon.com")
+{
+    var script = document.createElement("script"); 
+    script.src = 'your-script-url';
+}
+</script>
+{% endhighlight %}
