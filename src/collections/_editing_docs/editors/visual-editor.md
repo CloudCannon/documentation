@@ -14,10 +14,10 @@ The *Page Selector* shows a list of pages, posts, drafts and collection items to
 
 Set the default path to load when the **Update Home** action is clicked in the Dashboard. Configured globally in `_config.yml` with an `_editor` object:
 
-```yaml
+~~~yaml
 _editor:
   default_path: /about/
-```
+~~~
 
 Clicking the **Update Home** Dashboard action will load the `default_path`. The example above will load `/about/` instead of loading the default of `/`.
 
@@ -37,10 +37,10 @@ The *Visual Editor* adds the `.cms-editor-active` class to the `body` of the pag
 }
 {% endhighlight %}
 
-Alternatively, check `window.location.host` with JavaScript to find out if a page is being viewed inside the *Visual Editor*:
+Alternatively, check `window.inEditorMode` with JavaScript to find out if a page is being viewed inside the *Visual Editor*\:
 
 {% highlight javascript %}
-if (window.location.host === "app.cloudcannon.com") {
+if (window.inEditorMode) {
   alert("Inside CloudCannon!");
 } else {
   alert("Not in CloudCannon.");
