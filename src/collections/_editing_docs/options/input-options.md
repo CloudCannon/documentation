@@ -12,11 +12,11 @@ requirements:
 
 Control which front matter fields your editors see with the `hidden` option.
 
-```yaml
+~~~yaml
 _options:
   layout:
     hidden: true
-```
+~~~
 
 Hidden fields can be edited with modal-style [Editor Links](/editing/experience/editor-links/#front-matter-style).
 
@@ -27,7 +27,7 @@ Hidden fields can be edited with modal-style [Editor Links](/editing/experience/
 
 Change the appearance and behaviour of your front matter code blocks to fit your use case and brand.
 
-```yaml
+~~~yaml
 _options:
   code_block:
     tab_size: 2
@@ -35,7 +35,7 @@ _options:
   javascript_code_block:
     tab_size: 4
     theme: dawn
-```
+~~~
 
 | Option | Values |
 | --- | --- |
@@ -49,10 +49,9 @@ _options:
 
 `show_gutter` toggles line numbers and code folding controls.
 
-
 ### Array Structures
 
-Provides initial values for newly created items in arrays. Configured globally in `_config.yml` or per file in front matter with a `_defaults` object.
+Provides initial values for newly created items in arrays. Configured globally in `_config.yml`, using Jekyll&nbsp;`_defaults` object, or per file in front matter.
 
 For example, set the structure for new items in a `gallery` array with:
 
@@ -60,11 +59,11 @@ For example, set the structure for new items in a `gallery` array with:
 _array_structures:
   gallery:
     values:
-      label: Image
-      icon: image
-      value:
-        image: /placeholder.png
-        caption:
+      - label: Image
+        icon: image
+        value:
+          image: /placeholder.png
+          caption:
 ~~~
 
 Define multiple structures if you need editors to add different types to an array:
@@ -115,7 +114,6 @@ defaults:
                 url:
                 title:
 ~~~
-
 
 The `label` is used in the array interface to display what kind of item(s) editors can add.
 
