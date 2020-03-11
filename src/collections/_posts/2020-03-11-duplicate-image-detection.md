@@ -16,3 +16,4 @@ This release introduces an prompt when attempting to upload an image already pre
 * Editor Links now correctly trigger edited state class after first edit
 * Sites list logo now correctly propagates
 * Resolved some unwanted behaviour when dragging and dropping images
+* Fixed intermittent visual editor authentication errors in Chrome and Safari
