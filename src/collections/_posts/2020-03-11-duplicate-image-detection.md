@@ -9,6 +9,8 @@ This release introduces an prompt when attempting to upload an image already pre
 
 * Duplicate image detection prompt
 * Support for tab separated files (`.tsv`) files
+* Support for SVGs in front matter image inputs
+* Filtering for accepted mime types in front matter path inputs
 
 **Fixes:**
 
