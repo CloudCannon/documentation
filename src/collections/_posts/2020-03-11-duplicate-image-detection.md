@@ -8,7 +8,7 @@ This release introduces an prompt when attempting to upload an image already pre
 **Features:**
 
 * Duplicate image detection prompt
-* Improved build and simplified hosting dependencies
+* Support for tab separated files (`.tsv`) files
 
 **Fixes:**
 
@@ -17,3 +17,5 @@ This release introduces an prompt when attempting to upload an image already pre
 * Sites list logo now correctly propagates
 * Resolved some unwanted behaviour when dragging and dropping images
 * Fixed intermittent visual editor authentication errors in Chrome and Safari
+* Fixed array structure format regression
+* Resolved issues caused by latest add options feature
