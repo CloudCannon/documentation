@@ -3,7 +3,7 @@ title: Duplicate Image Detection
 type: minor
 ---
 
-This release introduces an prompt when attempting to upload an image already present somewhere else in the site. A number of general fixes are also included.
+This release introduces a prompt when attempting to upload an image already present somewhere else in the site. A number of general fixes are also included.
 
 **Features:**
 
