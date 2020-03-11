@@ -110,8 +110,11 @@ The `href` field is formatted as an [Editor Link](/editing/experience/editor-lin
 
 | Placeholder | Values |
 | --- | --- |
-| :editor | Usually *explore*, is *update* if creating an HTML file |
+| :editor | Usually **explore**, is **update** if creating an HTML file |
 | :collections_dir | The Jekyll `collections_dir` path defined in `_config.yml` |
+| :base_path | The path the editor is currently viewing in the *Explore* section, not including the `source` or `collections_dir` |
+| :base_path_postify | Same as `:base_path`, with **/_drafts** changed to **/_posts** |
+| :base_path_draftify | Same as `:base_path`, with **/_posts** changed to **/_drafts** |
 | :source | The Jekyll `source` path defined in `_config.yml` |
 | :extension | The extension of the default content file |
 
@@ -124,13 +127,13 @@ collections:
   posts:
     _add_options:
       - name: Add Post
-        href: "cloudcannon::editor/:collections_dir/_posts/.:extension🆕"
+        href: "cloudcannon::editor/:collections_dir/:base_path/.:extension🆕"
       - name: Add Draft
-        href: "cloudcannon::editor/:collections_dir/_drafts/.:extension🆕_posts/_defaults.:extension"
+        href: "cloudcannon::editor/:collections_dir/:base_path_draftify/.:extension🆕:base_path_postify/_defaults.:extension"
   <collection-name>: (for all collections)
     _add_options:
       - name: Add <collection-name>
-        href: "cloudcannon::editor/:collections_dir/_<collection-name>/.:extension🆕"
+        href: "cloudcannon::editor/:collections_dir/:base_path/.:extension🆕"
 ```
 
 Extended example:
@@ -142,14 +145,14 @@ collections:
       - name: Add Post
         href: "cloudcannon:explore/_posts/.md🆕"
       - name: Add Draft
-        href: "cloudcannon:explore/_drafts/.md🆕_posts/_defaults.md"
+        href: "cloudcannon:explore/_drafts/.md🆕/_posts/_defaults.md"
   staff:
     _add_options:
       - name: Add Staff Member
         href: "cloudcannon:explore/_staff/.md🆕"
       - name: Add Author
         icon: edit
-        href: "cloudcannon:explore/_staff/.md🆕_staff/_defaults-author.md"
+        href: "cloudcannon:explore/_staff/.md🆕/_staff/_defaults-author.md"
   offices:
     _add_options:
       - name: Add Office

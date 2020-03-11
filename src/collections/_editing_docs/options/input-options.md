@@ -152,3 +152,46 @@ gallery:
 
 > Array structures also apply when editing CSV, YAML and JSON files.
 {: .explainer}
+
+### Restricting file types
+
+You can restrict which filetypes editors can upload in certain fields in the visual editor. This is done by using the `accepts_mime_types` option.
+
+For example, if you wanted to make sure that your editors could only upload png and svg files in the `featured_image` field of each blog post, you could configure `_config.yml` to look like:
+
+~~~yaml
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      push_sidebar_down: true
+      print_stylesheet: true
+      comments: true
+      _options:
+        content:
+          width: 1560
+          height: 2000
+        featured_image:
+          width: 1560
+          height: 2000
+          accepts_mime_types:
+            - "image/png"
+            - "image/svg+xml"
+~~~
+
+Or if you wanted to set the option on a more refined scope, configure the liquid front-matter in `_defaults.md` or in individual files markdown files like so:
+
+~~~liquid
+---
+_options:
+  featured_image:
+    accepts_mime_types:
+      - "image/png"
+      - "image/svg+xml"
+---
+~~~
+
+Not setting the `accepts_mime_type` option will allow all files of the appropriate type within the field. For example, in an image field an editor could upload any image with a valid 'image' extension (`.jpg`, ,`.jpeg`, `.png`, etc.).
