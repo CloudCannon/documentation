@@ -14,6 +14,6 @@ This release includes some updates to the UI in the editor and in the teams page
 
 * Resolved an issue with Dropbox connection/authentication
 * Fixed the 'Add Branding' button appearing when it shouldn't
-* Fixed an issue with the 'recently open' section
+* Fixed an issue with some text in the 'recently open' section
 * Fixed a bug causing the image preview to break
 * Fixed a bug causing some images to become squashed and/or cropped on upload
