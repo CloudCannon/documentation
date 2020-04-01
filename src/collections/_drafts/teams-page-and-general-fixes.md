@@ -8,7 +8,7 @@ This release includes some updates to the UI in the editor and in the teams page
 **Features:**
 
 * Updated the buttons in the editor
-* A new layout for the teams/collaborator page
+* A new layout for the teams/collaborators page
 
 **Fixes:**
 
