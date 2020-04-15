@@ -91,7 +91,7 @@ Alternatively, configure on a custom scope with Jekyll defaults:
 defaults:
   - scope:
       path: ''
-      type: ''
+      type: 'pages'
     values:
       _array_structures:
         gallery:
