@@ -173,11 +173,17 @@ These options are set in the front matter (or with Jekyll Defaults) of specific 
 | Option | Values |
 | --- | --- |
 | \_unlisted | *true* or *false* (default) |
+| \_enabled_editors | Array of strings (*visual* and *content*), enabled and/or preferred editors |
 
 `_unlisted` hides specific files from the *Explore* section (still accessible from [Visual Editor](/editing/editors/visual-editor/) and direct links).
+
+`_enabled_editors` controls how your team edits specific files, use this to set a preferred editor and/or disable the others. The first value sets which editor opens from the Explore section, the other values specify which editors are accessible. Available values are *visual* and *content*, for the [Visual Editor](/editing/editors/visual-editor/) and [Content Editor](/editing/editors/content-editor/) respectively. The [Source Editor](/editing/editors/source-editor/) is always available for those with permission.
 
 ```yaml
 ---
 _unlisted: true
+_enabled_editors:
+  - visual
+  - content
 ---
 ```
