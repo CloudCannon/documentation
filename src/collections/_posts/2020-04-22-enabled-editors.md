@@ -3,7 +3,7 @@ title: Enabled Editors
 type: minor
 ---
 
-This release contains an ption for setting preferred and available editors for opening files from the Explore menu. Other general fixes are also included.
+This release contains an option for setting preferred and available editors for opening files from the Explore menu. Other general fixes are also included.
 
 **Features:**
 
