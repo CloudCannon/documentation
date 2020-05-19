@@ -3,7 +3,7 @@ title: TLS 1.3 support and minor fixes
 type: minor
 ---
 
-This release
+This release adds TLS 1.3 support, and fixes a variety of bugs.
 
 **Features:**
 
