@@ -1,5 +1,5 @@
 ---
-title: Client Editor fixes & Maintenace
+title: Hosting Stats Disabled
 type: minor
 ---
 
