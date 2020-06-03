@@ -8,4 +8,4 @@ This release puts our hosting stats feature into maintenance mode. We are workin
 **Fixes:**
 
 * Front matter images not loading in client editor
-* Extra ssl error handling
+* Extra SSL error handling
