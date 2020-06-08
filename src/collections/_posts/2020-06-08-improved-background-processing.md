@@ -3,7 +3,7 @@ title: Improved Background Processing
 type: major
 ---
 
-This release improves on a number of the background processes that CloudCannon runs with. Everything will appear the same but run faster and more efficiently.
+This release improves on a number of the background processes that CloudCannon runs. Everything will appear the same but run faster and more efficiently.
 
 **Features:**
 
