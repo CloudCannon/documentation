@@ -23,7 +23,7 @@ To set the version:
 
 ~~~ruby
 source 'https://rubygems.org'
-gem 'jekyll', '3.6.0'
+gem 'jekyll', '4.1.1'
 ~~~
 
 > Jekyll **3.1.0**, **3.1.1**, **3.1.2** and **3.1.3** are not supported due to a `jsonify` filter bug.
