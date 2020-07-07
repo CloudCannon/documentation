@@ -4,14 +4,11 @@ category: Authentication
 order: 4
 requirements:
   build: Any
-  plan:
+  plan: Pro
   hosting: CloudCannon
 ---
 
 SAML authentication restricts access to your site by using a third party login service. CloudCannon uses SAML to authenticate users from your organisation.
-
-> SAML authentication requires a CloudCannon Enterprise.
-{: .explainer}
 
 To set up SAML account authentication for your site:
 
