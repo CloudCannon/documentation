@@ -31,3 +31,6 @@ Here's an example `.ruby-version`:
 ```
 
 [Install rbenv on your local environment](https://github.com/rbenv/rbenv#installation) to ensure the same version is used. It is considered best practice to set your ruby version per project. This ensures that local builds and CloudCannon builds use the same version of Ruby.
+
+> The legacy site building system won't use your Ruby version. Ensure you have the **Enable Ruby versions and non-legacy building** option enabled in *Site Settings* / *Details*. The legacy system is for sites created years ago and is being gradually phased out.
+{: .explainer}
