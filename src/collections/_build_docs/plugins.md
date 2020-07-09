@@ -50,11 +50,20 @@ This generates a JSON file with titles, collections, build settings and other me
 
 By default, data files are not included in the generated output. Including this would enable you to populate select and multiselect inputs from data files.
 
-To include `data`, add the following to your `_config.yml`:
+To include all `data`, add the following to your `_config.yml`:
 
 ```yaml
 cloudcannon:
   data: true
+```
+
+Include only select `data` with specific keys:
+
+```yaml
+cloudcannon:
+  data:
+    authors: true
+    offices: true
 ```
 
 Although not necessary, if you would like to generate the details file locally, add the following to your `Gemfile`:
