@@ -44,10 +44,19 @@ info: |
 
   If not populated from any source, `categories` and `tags` display a multiselect that supports adding options inline.
 
-  Populate this input with `site.data` by enabling it in `_config.yml`:
+  Populate this input with all `site.data` by enabling it in `_config.yml`:
 
-  ```
+  ```yaml
   cloudcannon:
     data: true
+  ```
+
+  Include only select `data` with specific keys:
+
+  ```yaml
+  cloudcannon:
+    data:
+      authors: true
+      offices: true
   ```
 ---

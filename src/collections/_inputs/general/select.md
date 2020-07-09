@@ -36,10 +36,19 @@ image_paths:
 info: |
   The value saved to the front matter depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by slug.
 
-  Populate this input with `site.data` by enabling it in `_config.yml`:
+  Populate this input with all `site.data` by enabling it in `_config.yml`:
 
-  ```
+  ```yaml
   cloudcannon:
     data: true
+  ```
+
+  Include only select `data` with specific keys:
+
+  ```yaml
+  cloudcannon:
+    data:
+      authors: true
+      offices: true
   ```
 ---

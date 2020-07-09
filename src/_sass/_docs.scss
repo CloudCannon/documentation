@@ -80,3 +80,15 @@ article.content h4 {
 article.content h4 {
 	font-size: 1.25rem;
 }
+
+.settings-panel-example .highlighter-rouge {
+	@extend .vertical-flow;
+}
+
+.g-recaptcha {
+  margin-bottom: 15px;
+}
+
+.cms-embed {
+    @extend .vertical-flow;
+}
