@@ -1,9 +1,9 @@
 ---
-title: Simplified users/organisations connection
+title: Simplified users/organisations relations
 type: major
 ---
 
-This major goal for this release is simplify how users and organisations are connected.&nbsp;
+This goal for this release is simplify how users and organisations are connected.&nbsp;
 
 **Features:**
 
@@ -11,7 +11,7 @@ This major goal for this release is simplify how users and organisations are con
 * Enabled personal sites ownership transfer.
 * Enabled ability to brand your own editing experience.
 * Improved signup experience.
-* &nbsp;
+* Improved handling of git responses.
 
 **Fixes:**
 
