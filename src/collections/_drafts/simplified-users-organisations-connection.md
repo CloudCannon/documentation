@@ -1,5 +1,5 @@
 ---
-title: Simplified users/organisations relations
+title: Simplified users and organisations relation
 type: major
 ---
 
