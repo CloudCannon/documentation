@@ -11,6 +11,7 @@ This goal for this release is simplify how users and organisations are connected
 * Enabled personal sites ownership transfer.
 * Enabled ability to brand your own editing experience.
 * Improved signup experience.
+* Improved organisation create experience.
 
 **Fixes:**
 
