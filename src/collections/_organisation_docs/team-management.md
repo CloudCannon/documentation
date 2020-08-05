@@ -31,7 +31,7 @@ This will email the team member and prompts them to sign up or log in. Once logg
 
 ![Adding a new SSL certificate](/images/organisations/add-team-member.png){: .screenshot srcset="/images/organisations/add-team-member.png 800w, /images/organisations/add-team-member@2x.png 1600w"}
 
-> Teams can be automatically be created from your own identity provider. See [SAML configuration](/organisations/saml/) for more information.
+> Teams can be automatically created from your own identity provider. See [SAML configuration](/organisations/saml/) for more information.
 {: .explainer}
 
 ### Updating Team Member Levels
