@@ -23,7 +23,7 @@ To add a team member:
 1. Go to *Organisation Settings* / *Team*
 2. Click the **Add** button.
 
-![List of team members](/images/organisations/teams.png){: width="800" height="500"}
+![List of team members](/images/organisations/teams.png){: .screenshot srcset="/images/organisations/teams.png 800w, /images/organisations/teams@2x.png 1600w"}
 
 Add the email of the person you want to share, select the Permission Level required and press **Create team member**
 
@@ -45,7 +45,7 @@ To increase or decrease a team members permission level:
 
 Only owners and developers have permission to update team members. Developers do not have permission to alter the details of an Owner.
 
-![Team members more options.](/images/organisations/more-options-team-member.png){: width="800" height="500"}
+![Team members more options.](/images/organisations/more-options-team-member.png){: .screenshot srcset="/images/organisations/more-options-team-member.png 800w, /images/organisations/more-options-team-member@2x.png 1600w"}
 
 ![Updating team members permissions](/images/organisations/update-team-member.png){: .screenshot srcset="/images/organisations/update-team-member.png 800w, /images/organisations/update-team-member@2x.png 1600w"}
 
