@@ -18,19 +18,19 @@ To explicitly allow the [Visual Editor](/editing/editors/visual-editor/) to load
 
 To update your cookie preferences, open your Chrome preferences from the burger menu.
 
-![](/uploads/screen-shot-2019-12-10-at-10-27-17-am.png){: width="2796" height="1680"}
+![](/uploads/screen-shot-2020-07-31-at-4-56-54-pm.png){: width="1742" height="1062"}
 
 Scroll down to *Advanced* / *Privacy and Security* then select *Site settings*.
 
-![](/uploads/screen-shot-2019-12-10-at-10-05-48-am.png){: width="2796" height="1680"}
+![](/uploads/screen-shot-2020-07-31-at-4-57-33-pm.png){: width="1742" height="1062"}
 
 Select *Cookies and site data*.
 
 ![](/uploads/screen-shot-2019-12-10-at-10-06-04-am.png){: width="2796" height="1680"}
 
-Ensure cookies are allowed with **app.cloudcannon.com** and **proxee.co** unblocked.
+Ensure cookies are always allowed with **app.cloudcannon.com** and **proxy.cloudcannon.com**.
 
-![](/uploads/screen-shot-2019-12-10-at-10-06-37-am.png){: width="2796" height="1680"}
+![](/uploads/screen-shot-2020-07-31-at-4-58-30-pm.png){: width="1742" height="1062"}
 
 ### Mozilla Firefox
 
