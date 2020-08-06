@@ -8,7 +8,7 @@ requirements:
   hosting: Any
 ---
 
-When the [Visual Editor](/editing/editors/visual-editor/) is loaded, CloudCannon creates an authenticated connection to the **proxee.co** domain. This is a copy of your site, only accessible to editors of your site.
+When the [Visual Editor](/editing/editors/visual-editor/) is loaded, CloudCannon creates an authenticated connection to the **proxy.cloudcannon.com**&nbsp;domain. This is a copy of your site, only accessible to editors of your site.
 
 CloudCannon attempts to resolve cookie issues so this works automatically. However, some browsers or configurations are stricter than others about how these two domains interact. This means you may need to relax cookie privileges on your browser for the **cloudcannon.com** domain.
 
