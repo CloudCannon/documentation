@@ -31,4 +31,8 @@ This release
 
 * Blocking users from selecting white as the brand color due to visibility issues
 
+* Fixed Visual Editor for an HTML file with no front matter
+
+* Preventing "Use Existing Image" linking to an image in \_site, which causes a broken link on the site
+
 &nbsp;
