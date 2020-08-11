@@ -8,7 +8,6 @@ This release
 **Features:**
 
 * Allow Cloudflare Proxy websites to use Full (strict) SSL encryption mode
-
 * Allow Cloudflare Proxy websites to have a custom SSL uploaded.
 
 **Fixes:**
