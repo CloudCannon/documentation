@@ -27,4 +27,8 @@ This release
 
 * Removed deprecated command line option of --path on bundle installs
 
+* Fixed domains from showing "Can't find nameservers"
+
+* Blocking users from selecting white as the brand color due to visibility issues
+
 &nbsp;
