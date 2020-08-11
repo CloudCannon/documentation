@@ -3,7 +3,7 @@ title: Compiler improvements
 type: minor
 ---
 
-This release
+This release fixes a number of issues across all systems. Builds will be faster and more reliable.
 
 **Features:**
 
