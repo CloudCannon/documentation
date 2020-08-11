@@ -25,6 +25,8 @@ This release
 
 * Fixed large image previews in editor not loading
 
+* Prevented Client editor showing branding on the basic plan
+
 * Removed deprecated command line option of --path on bundle installs
 
 * Fixed domains from showing "Can't find nameservers"
