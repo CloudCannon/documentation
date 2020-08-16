@@ -5,7 +5,7 @@
 {% endif %}
 
 {% if page.requirements.syncing == 'Git' %}
-	{% assign requirements = requirements | append: ' with <strong>GitHub</strong> or <strong>Bitbucket</strong> syncing' %}
+	{% assign requirements = requirements | append: ' with <strong>GitHub</strong>, <strong>GitLab</strong> and <strong>Bitbucket</strong> syncing' %}
 {% endif %}
 
 {% if page.requirements.plan == 'Basic' %}
