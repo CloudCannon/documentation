@@ -20,4 +20,4 @@ This release provides a new and improved view for the build chain, extra build c
 * Fixed URL issues when uploading images to front matter inputs.
 * Fixed issue with inbox filters.
 * Showing full message on inbox errors.
-* Fixed issue with GIT Provider webhook limits.
+* Fixed issue with Git Provider webhook limits.
