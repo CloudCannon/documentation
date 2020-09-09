@@ -3,7 +3,7 @@ title: Improved build chain interface.
 type: minor
 ---
 
-This release provides a new and improved view for the build chain, extra build configurations and a few minor fixes.
+This release provides a new and improved view for the build chain, extra build configurations and a few minor fixes. During this release a migration caused downtime between 10:30am and 1pm NZT. We have resolved the issues and service has returned to normal.
 
 **Features:**
 
