@@ -16,7 +16,7 @@
   },
   "homepage": "https://docs.cloudcannon.com",
   "devDependencies": {
-    "@cloudcannon/suite": "2.0.0-rc6",
-    "gulp": "4.0.0"
+    "@cloudcannon/suite": "^2.0.1",
+    "gulp": "^4.0.2"
   }
 }

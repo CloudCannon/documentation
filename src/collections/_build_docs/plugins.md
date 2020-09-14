@@ -46,7 +46,7 @@ To disable this feature, go to *Site Settings / Build*.
 ### The cloudcannon-jekyll gem
 
 In order to optimise the editing interfaces for your site, CloudCannon injects an open source plugin called `cloudcannon-jekyll` before building your site.
-This generates a JSON file with titles, collections, build settings and other metadata that CloudCannon displays for your editors.
+This generates JSON files with titles, collections, build settings and other metadata that CloudCannon displays for your editors.
 
 By default, data files are not included in the generated output. Including this would enable you to populate select and multiselect inputs from data files.
 

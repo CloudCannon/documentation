@@ -51,7 +51,7 @@ _options:
 
 ### Array Structures
 
-Provides initial values for newly created items in arrays. Configured globally in `_config.yml`, using Jekyll&nbsp;`_defaults` object, or per file in front matter.
+Provides initial values for newly created items in arrays. Configured globally in `_config.yml`, using Jekyll defaults, or per file in front matter.
 
 For example, set the structure for new items in a `gallery` array with:
 

@@ -2,24 +2,25 @@
 title: Multiselect
 category: General Inputs
 details: |
-  Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. The options are populated from an array or object in `_config.yml`, or with [Collection](/editing/collections/) items:
+  Set of options in a tagger-style dropdown menu. Allows multiple items to be selected. The options are populated from [Collection](/editing/collections/) items, or with an array or object in `_config.yml`:
 
   ~~~yaml
-  styles:
-    - Red
-    - Blue
-    - Green
+  _select_data:
+    styles:
+      - Red
+      - Blue
+      - Green
 
-  options:
-    red: Red Shirt
-    blue: Blue Sweater
-    green: Green Jacket
+    options:
+      red: Red Shirt
+      blue: Blue Sweater
+      green: Green Jacket
 
-  collections:
-    - authors
+    collections:
+      - authors
   ~~~
 
-  Displayed for `categories`, `tags`, and keys **matching the name** of a collection name, array or object set in `_config.yml`.
+  Displayed for `categories`, `tags`, and keys **matching the name** of a collection name, array or object set inside `_select_data` in `_config.yml`.
 yaml_code_block: |
   ---
   styles:
@@ -40,7 +41,7 @@ image_paths:
   - /images/editing/front-matter/multiselect-collection.png
   - /images/editing/front-matter/multiselect-collection-focus.png
 info: |
-  The value saved to the each item in the front matter array depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by slug.
+  The value saved to each item in the front matter array depends on how the select is populated. Array items are saved as the value, keys are saved for objects and collection items are saved by slug.
 
   If not populated from any source, `categories` and `tags` display a multiselect that supports adding options inline.
 
