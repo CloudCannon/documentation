@@ -1,7 +1,7 @@
 ---
 title: Scheduling
 category: General
-order: 6
+order: 3
 requirements:
   build: Any
   plan: Free

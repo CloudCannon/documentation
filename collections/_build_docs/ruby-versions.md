@@ -1,6 +1,6 @@
 ---
 title: Ruby Versions
-category: General
+category: Jekyll
 order: 3
 requirements:
   build: Jekyll
@@ -14,8 +14,12 @@ Versions installed are:
 
 1. `2.3.8` (End of Life)
 2. `2.4.6`
-3. `2.5.5`
-4. `2.6.2`
+3. `2.4.10`
+4. `2.5.5`
+5. `2.5.8`
+6. `2.6.2`
+7. `2.6.6`
+8. `2.7.1`
 
 > If you require a Ruby version not listed above, please contact support. We will do our best to accommodate your needs.
 {: .explainer}

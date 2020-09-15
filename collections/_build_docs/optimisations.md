@@ -1,7 +1,7 @@
 ---
 title: Optimisations
 category: General
-order: 7
+order: 2
 requirements:
   build: Any
   plan: Free

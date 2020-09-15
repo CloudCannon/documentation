@@ -1,6 +1,6 @@
 ---
 title: Plugins
-category: General
+category: Jekyll
 order: 4
 requirements:
   build: Jekyll

@@ -1,6 +1,6 @@
 ---
 title: Markdown
-category: General
+category: Jekyll
 order: 5
 requirements:
   build: Jekyll

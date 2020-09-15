@@ -1,7 +1,7 @@
 ---
 title: Configuration
-category: General
-order: 4
+category: Jekyll
+order: 1
 requirements:
   build: Jekyll
   plan: Free

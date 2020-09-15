@@ -1,7 +1,7 @@
 ---
 title: Environments
-category: General
-order: 9
+category: Jekyll
+order: 6
 requirements:
   build: Jekyll
   plan: Free

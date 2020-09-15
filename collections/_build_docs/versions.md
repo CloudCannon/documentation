@@ -1,6 +1,6 @@
 ---
 title: Versions
-category: General
+category: Jekyll
 order: 2
 requirements:
   build: Jekyll
@@ -22,9 +22,6 @@ To set the version:
 3. Set the version as required
 
 ~~~ruby
-source 'https://rubygems.org'
-gem 'jekyll', '4.1.1'
+source "https://rubygems.org"
+gem "jekyll", "~> 4.1.1"
 ~~~
-
-> Jekyll **3.1.0**, **3.1.1**, **3.1.2** and **3.1.3** are not supported due to a `jsonify` filter bug.
-{: .explainer .warning}
