@@ -21,8 +21,8 @@ This release builds on the navigation parts of the app, bringing in a huge numbe
 * Fixed an edge case with links causing the save button to stay disabled
 * Fixed mark as spam issue with form submissions
 * Error message for symbols in a site name displayed correctly
-* Category folder posts and drafts now currectly use default `_add_options`
-* Fixed issue preventing sme billing reminder emails from sending
+* Category folder posts and drafts now correctly use default `_add_options`
+* Fixed issue preventing some billing reminder emails from sending
 * Lowered rate limit on sign up verification code
 * Fixed actions in link input being unresponsive in some cases
 * Fixed the front matter editor not being accessible for posts in the visual editor in some configurations
