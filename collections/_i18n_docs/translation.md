@@ -10,9 +10,9 @@ requirements:
 
 CloudCannon Internationalisation allows you to serve your site in different languages based on the viewers browser settings.
 
-You can enable geolocation in *Site Settings* / *i18n*.
+You can enable Internationalisation in *Site Settings* / *i18n*.
 
-![Enable i18n in i18n settings](/images/i18n/enable-geolocation.png){: srcset="/images/i18n/enable-geolocation.png 800w, /images/i18n/enable-geolocation@2x.png 1600w"}{: .screenshot}
+![Enable i18n in i18n settings](/images/i18n/enable-i18n.png){: srcset="/images/i18n/enable-i18n.png 800w, /images/i18n/enable-i18n@2x.png 1600w"}{: .screenshot}
 
 
 ### Tagging content for translation
