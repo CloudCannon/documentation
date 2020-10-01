@@ -7,14 +7,14 @@ This release aims to provide general bug fixes and some added features.
 
 **Features:**
 
-* Option to configure the build step to be used for output sync.
-* New rich text Copy Formatting option.
+* You can now choose the build step that syncs with your output storage provider.
+* New 'Copy Formatting' option for editing rich text.
 * Preview text on front-matter editor objects.
 
 **Fixes:**
 
-* Restriction creating a site with special characters.
-* Titles for editor link modals not using index of object.
-* Issue with GitLab Pull Request not merging.
-* Wrong file count on publishing screen connected to a Bitbucket repository.
-* &nbsp;Table headers now toggling to the top of the table.
+* Fixed issue with site names containing special characters.
+* Titles for editor link modals will no longer fall back to using the index of that object.
+* Fixed issue with GitLab Pull Requests not merging.
+* Fixed incorrect file count on publishing screen for sites connected to a Bitbucket repository.
+* &nbsp;Toggling table headers now correctly adds to the top of the table.
