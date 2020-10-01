@@ -12,6 +12,8 @@ Connecting a storage provider to output allows you to access the compiled output
 
 Go to *Site Settings* / *Files* / *Output Syncing* and click **Connect** next to your chosen provider. Providers will be configured once selected.
 
-![Storage Providers interface](/images/files/output/storage-providers.png){: srcset="/images/files/output/storage-providers.png 800w, /images/files/output/storage-providers@2x.png 1600w"}{: .screenshot}
+![Storage Providers interface](/images/files/output/storage-providers.png){: .screenshot srcset="/images/files/output/storage-providers.png 800w, /images/files/output/storage-providers@2x.png 1600w"}
 
 Once connected the compiled site will replace the contents of your provider. This process will repeat after every build.
+
+By default, the compiled output of the build step is synced. You can change the step being synced after selecting the provider.
