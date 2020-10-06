@@ -1,5 +1,5 @@
 ---
-title: Multiple config files for build.
+title: Multiple config files for builds
 type: minor
 ---
 
