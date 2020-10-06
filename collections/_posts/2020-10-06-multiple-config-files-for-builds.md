@@ -8,7 +8,7 @@ This release enables multiple config files for builds, access to compiled CSS on
 **Features:**
 
 * Enabled option for multiple config files for the build configuration.
-* Ability to use compiled CSS files for `_options.styles`&nbsp;toolbar selector.
+* Ability to use compiled CSS files for the&nbsp;`_options.styles`&nbsp;toolbar selector.
 * Added session timeout validations and alerts.
 
 **Fixes:**
