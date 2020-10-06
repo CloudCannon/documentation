@@ -45,36 +45,40 @@ You can also set options directly on elements for [Editable Regions](/editing/ed
 > The most specific options that apply to an interface are used, less specific options that still apply are ignored. In order of specificity: `data-cms-options` attributes, front matter and Jekyll defaults, then globally in `_config.yml`.
 {: .explainer}
 
-The complete list of options follows, all values can either be *true* or *false* unless specified otherwise:
+The complete list of options follows:
 
 | Option | Values |
 | --- | --- |
-| bold | &nbsp; |
-| italic | &nbsp; |
-| removeformat | &nbsp; |
-| link | &nbsp; |
-| undo | &nbsp; |
-| redo | &nbsp; |
-| underline | &nbsp; |
-| strike | &nbsp; |
-| subscript | &nbsp; |
-| superscript | &nbsp; |
-| code (unavailable for `_text`) | &nbsp; |
+| bold | *true*, *false* |
+| italic | *true*, *false* |
+| removeformat | *true*, *false* |
+| copyformatting | *true*, *false* |
+| link | *true*, *false* |
+| undo | *true*, *false* |
+| redo | *true*, *false* |
+| underline | *true*, *false* |
+| strike | *true*, *false* |
+| subscript | *true*, *false* |
+| superscript | *true*, *false* |
+| code (unavailable for `_text`) | *true*, *false* |
 | format (unavailable for `_text`) | *true*, *false* or space separated options |
-| blockquote (unavailable for `_text`) | &nbsp; |
-| horizontalrule (unavailable for `_text`) | &nbsp; |
-| numberedlist (unavailable for `_text`) | &nbsp; |
-| bulletedlist (unavailable for `_text`) | &nbsp; |
-| outdent (unavailable for `_text`) | &nbsp; |
-| indent (unavailable for `_text`) | &nbsp; |
-| image (unavailable for `_text`) | &nbsp; |
-| embed (unavailable for `_text`) | &nbsp; |
-| table (unavailable for `_text`) | &nbsp; |
-| styles (unavailable for `_text`) | *false*, or path to source CSS file |
+| blockquote (unavailable for `_text`) | *true*, *false* |
+| horizontalrule (unavailable for `_text`) | *true*, *false* |
+| numberedlist (unavailable for `_text`) | *true*, *false* |
+| bulletedlist (unavailable for `_text`) | *true*, *false* |
+| outdent (unavailable for `_text`) | *true*, *false* |
+| indent (unavailable for `_text`) | *true*, *false* |
+| image (unavailable for `_text`) | *true*, *false* |
+| embed (unavailable for `_text`) | *true*, *false* |
+| table (unavailable for `_text`) | *true*, *false* |
+| styles (unavailable for `_text`) | *false*, or path to CSS file |
 | left (unavailable for `_text`) | *false* or string of class name |
 | center (unavailable for `_text`) | *false* or string of class name |
 | right (unavailable for `_text`) | *false* or string of class name |
 | justify (unavailable for `_text`) | *false* or string of class name |
+
+> The `removeformat` and `copyformatting` options only apply to `bold`, `italic`, `underline`, `strike`, `subscript`, `superscript`. The controls do not remove or copy other styles or formatting.
+{: .explainer}
 
 ### Embedding Media
 
@@ -93,10 +97,12 @@ Add predefined styles in plain CSS for your clients and team members to use in t
 ```yaml
 _options:
   content:
-    styles: /css/content.css
+    styles: /css/editor.css
 ```
 
-The file can have any extension, but must contain only plain CSS and be a source file. Selectors must specify an element and one class in order to be included in the styles dropdown. Styles with incompatible selectors are included in the editor, but not shown as options.
+The file can be in either source or output. The source CSS file is used if both exist. In either case, it must contain plain CSS.
+
+Selectors must specify an element and one class in order to be included in the styles dropdown. Styles with incompatible selectors are included in the editor, but not shown as options.
 
 ```css
 p.callout { /* Can be applied to blocks of content */
