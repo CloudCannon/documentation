@@ -28,6 +28,8 @@ twitter:
 # -----
 # Build
 
+timezone: Pacific/Auckland
+
 permalink: pretty
 
 exclude:
