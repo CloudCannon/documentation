@@ -1,5 +1,5 @@
 ---
-title: General bug fixes.
+title: General bug fixes
 type: minor
 ---
 
