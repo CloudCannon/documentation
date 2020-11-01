@@ -19,3 +19,4 @@ This release contains a major rewrite of our code to bring more modern developme
 * Can't open array structure object after editing with an editor link
 * Error when trying to add a DNS record
 * Can't set a custom TTL to DNS records
+* Higher limit on recursive array structures
