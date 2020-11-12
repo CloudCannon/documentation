@@ -1,5 +1,5 @@
 ---
-title: Reliability improvements.
+title: Reliability improvements
 type: minor
 ---
 
