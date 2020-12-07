@@ -18,7 +18,7 @@ We’re also releasing private-beta support for another SSG: Hugo\! 🎉<br>Cont
 
 **Features:**
 
-* Overhauled user Interface with increased accessibility
+* Overhauled user interface with increased accessibility
 * Updated sign up flow
 * An updated favicon for browsers using dark-mode
 * Private-beta support for Hugo
@@ -26,9 +26,8 @@ We’re also releasing private-beta support for another SSG: Hugo\! 🎉<br>Cont
 
 **Fixes:**
 
-* Fixed an with syncing git branches
+* Fixed a bug not not showing syncing status
 * Fixed a bug causing erratic authentication behaviour&nbsp;
 * Fixed behaviour when saving changes to front-matter in the source editor
-* Fixed an issue with transferring sites
 * Fixed a bug causing the save-bar to disappear sometimes
 * Select boxes can now use number values
