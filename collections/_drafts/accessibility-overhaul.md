@@ -10,11 +10,11 @@ This release marks the launch of an ongoing commitment to accessibility. We’ve
 * Increased border weight and thickness
 * Changes to input and button dimensions
 
-...and much more\!
+…and much more\!
 
 We’re particularly proud of the changes we’ve made to our brand colour and font. Our new colour adds greater contrast throughout the app interface, increasing legibility. The changes to our font were also motivated by accessibility, along with giving CloudCannon a more modern look.
 
-We’re also releasing private-beta support for another SSG: Hugo\! 🎉
+We’re also releasing private-beta support for another SSG: Hugo\! 🎉<br>Contact support if you're interested in taking part.
 
 **Features:**
 
