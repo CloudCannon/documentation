@@ -26,7 +26,7 @@ We’re also releasing private-beta support for another SSG: Hugo\! 🎉<br>Cont
 
 **Fixes:**
 
-* Fixed a bug not not showing syncing status
+* Fixed a bug showing incorrect syncing status
 * Fixed a bug causing erratic authentication behaviour&nbsp;
 * Fixed behaviour when saving changes to front-matter in the source editor
 * Fixed a bug causing the save-bar to disappear sometimes
