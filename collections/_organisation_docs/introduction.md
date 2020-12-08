@@ -8,7 +8,9 @@ requirements:
   hosting: Any
 ---
 
-Organisations are for teams who need to manage all their sites. It allows a team to be defined and permissions to be granted at different levels.
+You will create your first Organisation when you create your account on CloudCannon. Organisations allow a team to be defined and permissions to be granted at different levels.
+
+See [here](/organisations/branding/) for guidance on updating your Organisation's branding, colour, and logo.
 
 ### Adding a new Organisation
 
