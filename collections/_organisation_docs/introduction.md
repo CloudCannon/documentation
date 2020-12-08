@@ -10,7 +10,7 @@ requirements:
 
 You will already have an Organisation if you have created a CloudCannon account. Organisations allow a team to be defined and permissions to be granted at different levels.
 
-You can update your Organisation's branding, colour, and logo from the Organisation Settiings menu. See the&nbsp;[Organisation Branding](/organisations/branding/)guide for detailed instructions.
+You can update your Organisation's branding, colour, and logo from the Organisation Settiings menu. See the&nbsp;[Organisation Branding guide](/organisations/branding/)&nbsp;for detailed instructions.
 
 ### Adding a new Organisation
 
