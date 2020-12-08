@@ -8,9 +8,9 @@ requirements:
   hosting: Any
 ---
 
-You will create your first Organisation when you create your account on CloudCannon. Organisations allow a team to be defined and permissions to be granted at different levels.
+You will already have an Organisation if you have created a CloudCannon account. Organisations allow a team to be defined and permissions to be granted at different levels.
 
-See [here](/organisations/branding/) for guidance on updating your Organisation's branding, colour, and logo.
+You can update your Organisation's branding, colour, and logo from the Organisation Settiings menu. See the&nbsp;[Organisation Branding page](/organisations/branding/)&nbsp;for detailed instructions.
 
 ### Adding a new Organisation
 
