@@ -8,7 +8,7 @@ This release adds integrity attribute support to the compressor, extra spam vali
 **Features:**
 
 * Compressor now properly handles integrity attributes
-* Added secondary spam validation on forms submissions with reCaptcha enabled&nbsp;
+* Added secondary spam validation on forms submissions with reCAPTCHA enabled&nbsp;
 * Added test domain details to domain settings page
 
 **Fixes:**
