@@ -3,7 +3,7 @@ title: Integrity attributes and more spam validations
 type: minor
 ---
 
-This release adds Integrity attribute support, extra spam validation for form and easier access to test domains. It also fixes a variety of issues reported through support and&nbsp;
+This release adds integrity attribute support to the compressor, extra spam validation for forms and easier access to test domains. It also fixes a variety of issues reported through support.
 
 **Features:**
 
