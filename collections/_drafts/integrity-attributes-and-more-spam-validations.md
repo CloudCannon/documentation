@@ -20,3 +20,4 @@ This release adds Integrity attribute support, extra spam validation for form an
 * Fixed missing option to copy output URL from images
 * Fixed upload of files with special characters
 * Fixed issue incorrectly adding front matter delimiters to .yml files on the source editor
+* Fixed missing access to Inbox forms
