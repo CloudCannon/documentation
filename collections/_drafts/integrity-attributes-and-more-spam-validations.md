@@ -7,17 +7,16 @@ This release adds Integrity attribute support, extra spam validation for form an
 
 **Features:**
 
-* Added support to Integrity attribute for compressed assets
-* Added secondary spam validation on forms submissions when reCaptcha enabled&nbsp;
+* Compressor now properly handles integrity attributes
+* Added secondary spam validation on forms submissions with reCaptcha enabled&nbsp;
 * Added test domain details to domain settings page
 
 **Fixes:**
 
-* Fixed issue allowing user to change its own permission within a team
-* Fixed issue asking for a array structure type when cloning an array structure
-* Fixed issue adding inline array structure not using the modal selection
+* Fixed issue allowing a user to change their own permission within a team
+* Fixed issues with adding/cloning array structures using modals
 * Fixed issue creating a site from forked templates
-* Fixed missing option to copy output URL from images
+* Re-added missing option to copy output URL from images
 * Fixed upload of files with special characters
 * Fixed issue incorrectly adding front matter delimiters to .yml files on the source editor
 * Fixed missing access to Inbox forms
