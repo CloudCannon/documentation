@@ -10,3 +10,4 @@ This release fixes some issues we've been seeing with Editor Link modals. Other 
 * Fixed a bug causing Editor Link modals to break
 * Fixed sites with 'Editing Locked' having their inbox disabled
 * Minor adjustment to button spacing in some views
+* Fixed some cases of Bitbucket not sync with CloudCannon
