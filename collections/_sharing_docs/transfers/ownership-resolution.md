@@ -22,7 +22,11 @@ We can't transfer the files but these are hopefully accessible from your end (th
 
 #### Proving domain ownership
 
-To prove to us you own the domain we will ask you to add a DNS record. Once the DNS record can be validated we can transfer your domain to your new account.
+To prove to us you own the domain we will ask you to add a DNS record. Once the DNS record can be validated, we can release your domain so that you can add it to your new account.
+
+For transparency, we will send a message to the user currently holding the domain name. We will explain that another user is demonstrating ownership of the domain name, and that the domain name will soon be removed. This message will not include any specific information about you.
+
+If the current holder of the domain contests the transfer, we will give them an extra 3 working days to prove ownership of the domain in the same way. If both parties are able to prove ownership, we can't adjudicate who should hold the domain on CloudCannon. In this case, the issue will need to be resolved through communication.
 
 #### Recreating your site
 
