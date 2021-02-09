@@ -9,7 +9,7 @@ This release provides the option to customise the URL used for Client Sharing, a
 
 * Improved interface for Client Sharing settings
 * Added ability to customise the path used for Client Sharing
-* Improved layout of e-mails sent by the application
+* Improved layout of emails sent by the application
 
 **Fixes:**
 
