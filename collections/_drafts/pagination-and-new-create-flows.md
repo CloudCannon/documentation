@@ -1,5 +1,5 @@
 ---
-title: Pagination and new create flows
+title: Pagination and new create site flow
 type: minor
 ---
 
