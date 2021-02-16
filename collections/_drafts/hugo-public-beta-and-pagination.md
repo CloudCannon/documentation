@@ -3,12 +3,12 @@ title: Hugo public beta and pagination
 type: minor
 ---
 
-This release adds public-beta support for Hugo generator and pagination for the sites, projects and domains pages - improving the performance to navigate around the app. It also delivers a new flow for creating sites and projects along with other minor bug fixes.
+This release adds public-beta for Hugo static site generator. Build, edit and host Hugo sites as currently with Jekyll. Further updates include developments to the flow for creating projects and sites.<br>Also included in this release is pagination for the projects, sites and domains pages to improve their performance.
 
 **Features:**
 
-* Public-beta support for Hugo 🎉
-* Added pagination for sites, projects and domains pages
+* Public-beta support for Hugo SSG 🎉
+* Added pagination for projects, sites and domains pages
 * Improved&nbsp; flow for creating new sites and projects
 
 **Fixes:**
@@ -21,4 +21,4 @@ This release adds public-beta support for Hugo generator and pagination for the 
 
 **Upcoming:**
 
-* We will soon release an update to also support Hugo Modules on Hugo sites.
+* An update to also support Hugo Modules on Hugo sites
