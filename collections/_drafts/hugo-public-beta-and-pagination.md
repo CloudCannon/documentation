@@ -18,7 +18,3 @@ This release adds public-beta for Hugo static site generator. Build, edit and ho
 * Fixed issue not clearing the App Updates notification icon
 * Fixed issue loading incomplete site sidebar
 * Fixed issue trying to load missing site icons
-
-**Upcoming:**
-
-* An update to also support Hugo Modules on Hugo sites
