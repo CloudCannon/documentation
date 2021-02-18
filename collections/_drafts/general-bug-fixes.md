@@ -9,3 +9,4 @@ This release fixes a couple of issues reported through support.
 
 * Fixed issue sorting and filtering&nbsp; projects
 * Fixed issue loading Custom SSL page
+* Fixed missing upload file button on link editor modal
