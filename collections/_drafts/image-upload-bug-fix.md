@@ -3,7 +3,7 @@ title: Image upload bug fix
 type: minor
 ---
 
-This release fixes a bug related to uploading image&nbsp;
+This release fixes a bug related to uploaded images
 
 **Fixes:**
 
