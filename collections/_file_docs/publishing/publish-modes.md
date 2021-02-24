@@ -1,6 +1,7 @@
 ---
 title: Publish Modes
 category: Publishing
+new_docs_link: https://cloudcannon.com/documentation/sync/publishing/publish-modes/
 order: 3
 requirements:
   build: Any

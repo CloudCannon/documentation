@@ -1,6 +1,7 @@
 ---
 title: Introduction
 category: General
+new_docs_link: https://cloudcannon.com/documentation/edit/projects/
 order: 1
 requirements:
   build: Any

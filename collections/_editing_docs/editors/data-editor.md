@@ -1,6 +1,7 @@
 ---
 title: Data Editor
 category: Editors
+new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/content-editor/
 order: 9
 ---
 

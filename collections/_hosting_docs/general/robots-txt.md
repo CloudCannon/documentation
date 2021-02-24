@@ -1,6 +1,7 @@
 ---
 title: Web Robots
 category: General
+new_docs_link: https://cloudcannon.com/documentation/host/domains/#robots-txt
 order: 7
 requirements:
   build: Any

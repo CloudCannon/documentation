@@ -1,6 +1,7 @@
 ---
 title: Using Webhooks
 category: Forms
+new_docs_link: https://cloudcannon.com/documentation/host/forms/webhooks/
 order: 3
 requirements:
   build: Any

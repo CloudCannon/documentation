@@ -1,6 +1,7 @@
 ---
 title: Logging Out
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/#logging-out
 order: 8
 requirements:
   build: Any

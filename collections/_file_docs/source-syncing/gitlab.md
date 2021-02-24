@@ -1,6 +1,7 @@
 ---
 title: GitLab
 category: Source Syncing
+new_docs_link: https://cloudcannon.com/documentation/sync/source-syncing/gitlab/
 order: 4
 ---
 

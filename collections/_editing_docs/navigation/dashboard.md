@@ -1,6 +1,7 @@
 ---
 title: Dashboard
 category: Navigation
+new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/dashboard/
 order: 0
 requirements:
   build: Any

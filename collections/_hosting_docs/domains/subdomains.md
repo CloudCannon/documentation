@@ -1,6 +1,7 @@
 ---
 title: Subdomains
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/domains/#subdomains
 order: 7
 requirements:
   build: Any

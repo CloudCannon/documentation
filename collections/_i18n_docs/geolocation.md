@@ -1,6 +1,7 @@
 ---
 title: Geolocation
 category: General
+new_docs_link: https://cloudcannon.com/documentation/host/geolocation/
 order: 3
 requirements:
   build: Any

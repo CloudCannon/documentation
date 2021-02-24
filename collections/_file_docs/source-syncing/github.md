@@ -1,6 +1,7 @@
 ---
 title: GitHub
 category: Source Syncing
+new_docs_link: https://cloudcannon.com/documentation/sync/source-syncing/github/
 order: 2
 ---
 

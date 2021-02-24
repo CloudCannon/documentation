@@ -1,6 +1,7 @@
 ---
 title: Custom Routes
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/#custom-routes
 order: 7
 requirements:
   build: Any

@@ -1,6 +1,7 @@
 ---
 title: External DNS
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/dns/external-dns/
 order: 4
 requirements:
   build: Any
@@ -17,7 +18,7 @@ If you want to host a site on CloudCannon, but manage your DNS records externall
 
 1. Ensure you are using *External DNS*. Otherwise click **External DNS** and *Switch to External DNS*.
 2. Note the CNAME and A records provided by CloudCannon.
-2. Go to your external DNS provider and find the DNS settings for your domain. 
+2. Go to your external DNS provider and find the DNS settings for your domain.
 3. Set the CNAME and A records to match those provided by CloudCannon.
 
 ![Site Settings / Domain section with external DNS](/images/hosting/domains/external-dns.png){: .screenshot srcset="/images/hosting/domains/external-dns.png 800w, /images/hosting/domains/external-dns@2x.png 1600w"}

@@ -1,6 +1,7 @@
 ---
 title: Collection Defaults
 category: Experience
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/collections/#defaults
 order: 1
 requirements:
   build: Jekyll

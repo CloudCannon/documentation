@@ -1,6 +1,7 @@
 ---
 title: User Accounts
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/#user-account-login
 order: 3
 requirements:
   build: Any

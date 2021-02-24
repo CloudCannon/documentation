@@ -1,6 +1,7 @@
 ---
 title: Cloudflare Proxy
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/dns/external-dns/#cloudflare-proxy
 order: 5
 requirements:
   build: Any

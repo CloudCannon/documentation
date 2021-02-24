@@ -1,6 +1,7 @@
 ---
 title: Transferring Ownership
 category: Transfers
+new_docs_link: https://cloudcannon.com/documentation/edit/sharing/site-transfers/
 order: 1
 requirements:
   build: Any

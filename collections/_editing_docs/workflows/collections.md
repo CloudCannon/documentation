@@ -1,6 +1,7 @@
 ---
 title: Collections
 category: Workflows
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/collections/
 order: 2
 requirements:
   build: Jekyll

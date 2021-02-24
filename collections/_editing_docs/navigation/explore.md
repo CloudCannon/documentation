@@ -1,6 +1,7 @@
 ---
 title: Explore
 category: Navigation
+new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/explore/
 order: 1
 requirements:
   build: Any

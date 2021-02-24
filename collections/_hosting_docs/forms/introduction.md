@@ -1,6 +1,7 @@
 ---
 title: Using Forms
 category: Forms
+new_docs_link: https://cloudcannon.com/documentation/host/forms/
 order: 1
 requirements:
   build: Any

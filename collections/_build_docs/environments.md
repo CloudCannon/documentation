@@ -2,6 +2,7 @@
 title: Environments
 category: Jekyll
 order: 6
+new_docs_link: https://cloudcannon.com/documentation/environments/
 requirements:
   build: Jekyll
   plan: Free

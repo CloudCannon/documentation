@@ -1,6 +1,7 @@
 ---
 title: Custom Certificate
 category: SSL
+new_docs_link: https://cloudcannon.com/documentation/host/ssl/#custom-ssl
 order: 2
 requirements:
   build: Any
