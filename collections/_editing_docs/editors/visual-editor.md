@@ -1,6 +1,7 @@
 ---
 title: Visual Editor
 category: Editors
+new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/visual-editor/
 order: 1
 ---
 

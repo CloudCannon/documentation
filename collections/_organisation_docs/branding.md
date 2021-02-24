@@ -1,6 +1,7 @@
 ---
 title: Branding
 category: General
+new_docs_link: https://cloudcannon.com/documentation/edit/organization/branding/
 order: 3
 requirements:
   build: Any

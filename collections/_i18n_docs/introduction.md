@@ -1,6 +1,7 @@
 ---
 title: Introduction
 category: General
+new_docs_link: https://cloudcannon.com/documentation/build/i18n/
 order: 1
 requirements:
   build: Any

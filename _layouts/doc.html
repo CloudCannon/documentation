@@ -2,7 +2,7 @@
 layout: default
 icons: true
 ---
- 
+
 {% assign collection = site.collections | where: "label", page.collection | first %}
 <header class="short">
 	{% include navigation/top.html %}
@@ -52,6 +52,14 @@ icons: true
 
 		<section class="docs-main" id="doc">
 			<article class="content">
+				<div class="c-notice">
+					<div class="c-notice__heading-container">
+						<img src="/images/info.svg" aria-hidden="true">
+					</div>
+					<div>
+						<p><b>A new version of this document is available.</b> Visit the new docs site <a href="{{ page.new_docs_link }}">here</a></p>
+					</div>
+				</div>
 
 				{% if collection.docs %}
 					<h1 class="doc-category-header">{{ collection.title }} / {{ page.category | default: "General" }}</h1>

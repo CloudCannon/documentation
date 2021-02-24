@@ -1,6 +1,7 @@
 ---
 title: Introduction
 category: Publishing
+new_docs_link: https://cloudcannon.com/documentation/sync/publishing/
 order: 1
 requirements:
   build: Any

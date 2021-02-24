@@ -1,6 +1,7 @@
 ---
 title: Custom Domains
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/domains/#custom-domains
 order: 2
 requirements:
   build: Any

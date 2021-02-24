@@ -2,6 +2,7 @@
 title: Cookie Preferences
 category: Editors
 order: 9999
+new_docs_link: https://cloudcannon.com/documentation/
 requirements:
   build: Any
   plan: Free

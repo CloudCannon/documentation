@@ -2,6 +2,7 @@
 title: Ruby Versions
 category: Jekyll
 order: 3
+new_docs_link: https://cloudcannon.com/documentation/build/setup/ruby-versions/
 requirements:
   build: Jekyll
   plan: Free

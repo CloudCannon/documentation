@@ -1,6 +1,7 @@
 ---
 title: None
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/none/
 order: 1
 requirements:
   build: Any

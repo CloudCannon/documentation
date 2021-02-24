@@ -1,6 +1,7 @@
 ---
 title: Rich Text Options
 category: Options
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/configuration/#rich-text-options
 order: 4
 requirements:
   build: Any

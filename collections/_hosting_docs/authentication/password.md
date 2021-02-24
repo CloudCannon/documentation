@@ -1,6 +1,7 @@
 ---
 title: Password
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/password/
 order: 2
 requirements:
   build: Any

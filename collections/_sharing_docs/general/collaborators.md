@@ -1,6 +1,7 @@
 ---
 title: Collaborators
 category: General
+new_docs_link: https://cloudcannon.com/documentation/edit/sharing/collaborators/
 order: 2
 requirements:
   build: Any

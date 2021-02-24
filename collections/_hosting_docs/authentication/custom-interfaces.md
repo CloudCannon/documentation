@@ -1,6 +1,7 @@
 ---
 title: Custom Interfaces
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/#custom-interfaces
 order: 6
 requirements:
   build: Any
