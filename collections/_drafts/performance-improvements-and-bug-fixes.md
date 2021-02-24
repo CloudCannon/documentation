@@ -17,3 +17,4 @@ This release improves overall performance using the App and fixes a variety of i
 * Fixed issue of projects list not sorting accordingly
 * Fixed issue with distorted brand logo on Sites and Project list pages
 * Fixed issue when using Client Sharing while also logged into the App on the same session
+* Fix inconsistently named paths in build plugins
