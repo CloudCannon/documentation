@@ -2,6 +2,7 @@
 title: Payments
 category: General
 new_docs_link: https://cloudcannon.com/documentation/edit/organization/#paying-for-cloudcannon
+canonical_url: https://cloudcannon.com/documentation/edit/organization/#paying-for-cloudcannon
 order: 5
 requirements:
   build: Any

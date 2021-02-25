@@ -2,6 +2,7 @@
 title: External DNS
 category: Domains
 new_docs_link: https://cloudcannon.com/documentation/host/dns/external-dns/
+canonical_url: https://cloudcannon.com/documentation/host/dns/external-dns/
 order: 4
 requirements:
   build: Any

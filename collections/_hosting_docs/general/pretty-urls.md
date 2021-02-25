@@ -2,6 +2,7 @@
 title: Pretty URLs
 category: General
 new_docs_link: https://cloudcannon.com/documentation/
+canonical_url: https://cloudcannon.com/documentation/
 order: 6
 requirements:
   build: Any

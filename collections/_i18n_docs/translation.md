@@ -2,6 +2,7 @@
 title: Translation
 category: General
 new_docs_link: https://cloudcannon.com/documentation/build/i18n/
+canonical_url: https://cloudcannon.com/documentation/build/i18n/
 order: 2
 requirements:
   build: Any

@@ -2,6 +2,7 @@
 title: Extensionless URLs
 category: General
 new_docs_link: https://cloudcannon.com/documentation/host/routing/#extensionless-urls
+canonical_url: https://cloudcannon.com/documentation/host/routing/#extensionless-urls
 order: 7
 requirements:
   build: Any

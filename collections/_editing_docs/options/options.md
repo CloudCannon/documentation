@@ -2,6 +2,7 @@
 title: Adding Options
 category: Options
 new_docs_link: https://cloudcannon.com/documentation/edit/editing/configuration/
+canonical_url: https://cloudcannon.com/documentation/edit/editing/configuration/
 order: 1
 requirements:
   build: Jekyll

@@ -2,6 +2,7 @@
 title: Dropbox
 category: Source Syncing
 new_docs_link: https://cloudcannon.com/documentation/sync/source-syncing/dropbox/
+canonical_url: https://cloudcannon.com/documentation/sync/source-syncing/dropbox/
 order: 6
 ---
 

@@ -3,6 +3,7 @@ title: Optimisations
 category: General
 order: 2
 new_docs_link: https://cloudcannon.com/documentation/build/optimizations/
+canonical_url: https://cloudcannon.com/documentation/build/optimizations/
 requirements:
   build: Any
   plan: Free

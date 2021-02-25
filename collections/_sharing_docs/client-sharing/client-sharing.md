@@ -2,6 +2,7 @@
 title: Client Sharing
 category: Client Sharing
 new_docs_link: https://cloudcannon.com/documentation/edit/sharing/client-sharing/
+canonical_url: https://cloudcannon.com/documentation/edit/sharing/client-sharing/
 order: 1
 requirements:
   build: Any

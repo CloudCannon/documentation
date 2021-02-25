@@ -3,6 +3,7 @@ title: Inputs
 category: Interfaces
 layout: inputs
 new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/inputs/
+canonical_url: https://cloudcannon.com/documentation/edit/interfaces/inputs/
 order: 2
 requirements:
   build: Any

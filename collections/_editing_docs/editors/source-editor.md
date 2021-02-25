@@ -2,6 +2,7 @@
 title: Source Editor
 category: Editors
 new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/source-editor/
+canonical_url: https://cloudcannon.com/documentation/edit/interfaces/source-editor/
 order: 3
 themes:
 - ambiance

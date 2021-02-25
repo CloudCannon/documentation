@@ -2,6 +2,7 @@
 title: Ownership Resolution
 category: Transfers
 new_docs_link: https://cloudcannon.com/documentation/edit/sharing/site-transfers/#site-ownership-resolution
+canonical_url: https://cloudcannon.com/documentation/edit/sharing/site-transfers/#site-ownership-resolution
 order: 20
 ---
 

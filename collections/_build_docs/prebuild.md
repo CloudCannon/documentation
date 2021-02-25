@@ -3,6 +3,7 @@ title: Prebuild
 category: Scripting
 order: 1
 new_docs_link: https://cloudcannon.com/documentation/build/prebuild/
+canonical_url: https://cloudcannon.com/documentation/build/prebuild/
 requirements:
   build: Any
   plan: Free

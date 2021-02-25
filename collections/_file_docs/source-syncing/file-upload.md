@@ -2,6 +2,7 @@
 title: File Upload
 category: Source Syncing
 new_docs_link: https://cloudcannon.com/documentation/sync/source-syncing/file-upload/
+canonical_url: https://cloudcannon.com/documentation/sync/source-syncing/file-upload/
 order: 1
 requirements:
   build: Any
