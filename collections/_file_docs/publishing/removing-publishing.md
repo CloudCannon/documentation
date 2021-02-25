@@ -2,6 +2,7 @@
 title: Removing Publishing
 category: Publishing
 new_docs_link: https://cloudcannon.com/documentation/sync/publishing/removing-publishing/
+canonical_url: https://cloudcannon.com/documentation/sync/publishing/removing-publishing/
 order: 5
 requirements:
   build: Any

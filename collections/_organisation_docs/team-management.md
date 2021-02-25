@@ -2,6 +2,7 @@
 title: Team Management
 category: General
 new_docs_link: https://cloudcannon.com/documentation/edit/organization/#team-management
+canonical_url: https://cloudcannon.com/documentation/edit/organization/#team-management
 order: 2
 requirements:
   build: Any

@@ -3,6 +3,7 @@ title: Markdown
 category: Jekyll
 order: 5
 new_docs_link: https://cloudcannon.com/documentation/build/setup/markdown/
+canonical_url: https://cloudcannon.com/documentation/build/setup/markdown/
 requirements:
   build: Jekyll
   plan: Free

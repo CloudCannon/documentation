@@ -2,6 +2,7 @@
 title: Single Origin
 category: Domains
 new_docs_link: https://cloudcannon.com/documentation/host/external-dns/#apex-domains
+canonical_url: https://cloudcannon.com/documentation/host/external-dns/#apex-domains
 order: 6
 requirements:
   build: Any

@@ -2,6 +2,7 @@
 title: Google reCAPTCHA
 category: Forms
 new_docs_link: https://cloudcannon.com/documentation/host/forms/google-recaptcha/
+canonical_url: https://cloudcannon.com/documentation/host/forms/google-recaptcha/
 order: 6
 requirements:
   build: Any

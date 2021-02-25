@@ -3,6 +3,7 @@ title: Introduction
 category: General
 order: 1
 new_docs_link: https://cloudcannon.com/documentation/build/
+canonical_url: https://cloudcannon.com/documentation/build/
 ---
 
 CloudCannon builds all sites with Jekyll.

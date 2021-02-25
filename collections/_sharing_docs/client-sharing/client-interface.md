@@ -2,6 +2,7 @@
 title: Client Interface
 category: Client Sharing
 new_docs_link: https://cloudcannon.com/documentation/edit/sharing/client-sharing/#client-interface
+canonical_url: https://cloudcannon.com/documentation/edit/sharing/client-sharing/#client-interface
 order: 2
 requirements:
   build: Any

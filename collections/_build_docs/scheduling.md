@@ -3,6 +3,7 @@ title: Scheduling
 category: General
 order: 3
 new_docs_link: https://cloudcannon.com/documentation/build/scheduling/
+canonical_url: https://cloudcannon.com/documentation/build/scheduling/
 requirements:
   build: Any
   plan: Free

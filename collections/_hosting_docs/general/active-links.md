@@ -2,6 +2,7 @@
 title: Active Links
 category: General
 new_docs_link: https://cloudcannon.com/documentation/host/routing/#active-links
+canonical_url: https://cloudcannon.com/documentation/host/routing/#active-links
 order: 5
 requirements:
   build: Any

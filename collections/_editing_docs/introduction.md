@@ -2,6 +2,7 @@
 title: Introduction
 category: General
 new_docs_link: https://cloudcannon.com/documentation/edit/
+canonical_url: https://cloudcannon.com/documentation/edit/
 order: 1
 requirements:
   build: Any

@@ -2,6 +2,7 @@
 title: CloudCannon DNS
 category: Domains
 new_docs_link: https://cloudcannon.com/documentation/host/dns/cloudcannon-dns/
+canonical_url: https://cloudcannon.com/documentation/host/dns/cloudcannon-dns/
 order: 3
 requirements:
   build: Any

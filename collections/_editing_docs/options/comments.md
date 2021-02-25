@@ -2,6 +2,7 @@
 title: Comments
 category: Options
 new_docs_link: https://cloudcannon.com/documentation/edit/editing/configuration/#comments
+canonical_url: https://cloudcannon.com/documentation/edit/editing/configuration/#comments
 order: 6
 requirements:
   build: Jekyll
