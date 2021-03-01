@@ -69,7 +69,7 @@ _options:
 
 ### Size Attributes
 
-CloudCannon automatically adds size attributes (width, height, sizes) to the HTML for images uploaded in the [Content Editor](https://docs.cloudcannon.com/editing/editors/content-editor/) and [Editable Regions](https://docs.cloudcannon.com/editing/interfaces/editable-regions/).
+CloudCannon automatically adds size attributes (width, height, sizes) to the HTML for images uploaded in the [Content Editor](/editing/editors/content-editor/) and [Editable Regions](/editing/interfaces/editable-regions/).
 
 This allows browsers to size `<img>` elements before CSS and images are loaded. Otherwise, the page can shift around in front of the viewer as images are loaded and elements are resized.
 
