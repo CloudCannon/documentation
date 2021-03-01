@@ -1,6 +1,8 @@
 ---
 title: Input Options
 category: Options
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/configuration/#input-options
+canonical_url: https://cloudcannon.com/documentation/edit/editing/configuration/#input-options
 order: 3
 requirements:
   build: Any

@@ -1,6 +1,8 @@
 ---
 title: Editor Links
 category: Experience
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/html/#editor-links
+canonical_url: https://cloudcannon.com/documentation/edit/editing/html/#editor-links
 order: 2
 requirements:
   build: Any

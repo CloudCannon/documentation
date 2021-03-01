@@ -1,6 +1,8 @@
 ---
 title: Front Matter
 category: Editors
+new_docs_link: https://cloudcannon.com/documentation/edit/interfaces/front-matter-editor/
+canonical_url: https://cloudcannon.com/documentation/edit/interfaces/front-matter-editor/
 order: 5
 ---
 

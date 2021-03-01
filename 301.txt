@@ -22,8 +22,6 @@
 /hosting/optimisations/ /building/optimisations/
 /building/static/ /building/jekyll/#static
 /sharing/white-labeling/ /sharing/white-labelling/
-/atom/ /feed.xml
-/rss/ /feed.xml
 /sharing/developers/ /sharing/collaborators/
 /sharing/non-developers/ /sharing/collaborators/
 
@@ -104,3 +102,11 @@
 /syncing/github/ /files/source-syncing/github/
 /syncing/output/ /files/output-syncing/introduction/
 /syncing/publishing/ /files/publishing/introduction/
+
+/atom/ https://cloudcannon.com/changelog/feed.xml
+/rss/ https://cloudcannon.com/changelog/feed.xml
+/feed.xml https://cloudcannon.com/changelog/feed.xml
+
+/changelog/ https://cloudcannon.com/changelog/
+/changelog/archived/ https://cloudcannon.com/changelog/
+/changelog/* https://cloudcannon.com/__CC_PATH__

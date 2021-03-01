@@ -1,6 +1,8 @@
 ---
 title: Automatic SSL
 category: SSL
+new_docs_link: https://cloudcannon.com/documentation/host/ssl/#automatic-ssl
+canonical_url: https://cloudcannon.com/documentation/host/ssl/#automatic-ssl
 order: 1
 requirements:
   build: Any

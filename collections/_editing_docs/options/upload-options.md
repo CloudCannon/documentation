@@ -1,6 +1,8 @@
 ---
 title: Upload Options
 category: Options
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/configuration/#upload-options
+canonical_url: https://cloudcannon.com/documentation/edit/editing/configuration/#upload-options
 order: 3
 requirements:
   build: Any

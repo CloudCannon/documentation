@@ -1,6 +1,8 @@
 ---
 title: Bearer Tokens
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/bearer-token/
+canonical_url: https://cloudcannon.com/documentation/host/authentication/bearer-token/
 order: 5
 requirements:
   build: Any

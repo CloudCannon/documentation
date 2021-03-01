@@ -2,6 +2,8 @@
 title: Plugins
 category: Jekyll
 order: 4
+new_docs_link: https://cloudcannon.com/documentation/build/setup/jekyll-plugins/
+canonical_url: https://cloudcannon.com/documentation/build/setup/jekyll-plugins/
 requirements:
   build: Jekyll
   plan: Free

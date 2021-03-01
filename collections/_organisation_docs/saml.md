@@ -1,6 +1,8 @@
 ---
 title: SAML
 category: General
+new_docs_link: https://cloudcannon.com/documentation/edit/organization/saml/
+canonical_url: https://cloudcannon.com/documentation/edit/organization/saml/
 order: 4
 requirements:
   build: Any

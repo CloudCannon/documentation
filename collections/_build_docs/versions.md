@@ -2,6 +2,8 @@
 title: Versions
 category: Jekyll
 order: 2
+new_docs_link: https://cloudcannon.com/documentation/build/setup/versions/
+canonical_url: https://cloudcannon.com/documentation/build/setup/versions/
 requirements:
   build: Jekyll
   plan: Free

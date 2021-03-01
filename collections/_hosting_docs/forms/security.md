@@ -1,6 +1,8 @@
 ---
 title: Security
 category: Forms
+new_docs_link: https://cloudcannon.com/documentation/host/forms/#security
+canonical_url: https://cloudcannon.com/documentation/host/forms/#security
 order: 4
 requirements:
   build: Any

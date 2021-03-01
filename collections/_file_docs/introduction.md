@@ -1,6 +1,8 @@
 ---
 title: Introduction
 category: General
+new_docs_link: https://cloudcannon.com/documentation/sync/
+canonical_url: https://cloudcannon.com/documentation/sync/
 order: 1
 requirements:
   build: Any

@@ -2,6 +2,8 @@
 title: Configuration
 category: Jekyll
 order: 1
+new_docs_link: https://cloudcannon.com/documentation/build/configuration/
+canonical_url: https://cloudcannon.com/documentation/build/configuration/
 requirements:
   build: Jekyll
   plan: Free

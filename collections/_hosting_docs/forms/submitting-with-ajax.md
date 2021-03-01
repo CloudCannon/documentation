@@ -1,6 +1,8 @@
 ---
 title: Submitting with AJAX
 category: Forms
+new_docs_link: https://cloudcannon.com/documentation/host/forms/#submitting-with-ajax
+canonical_url: https://cloudcannon.com/documentation/host/forms/#submitting-with-ajax
 order: 5
 requirements:
   build: Any

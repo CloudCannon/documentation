@@ -1,6 +1,8 @@
 ---
 title: SAML
 category: Authentication
+new_docs_link: https://cloudcannon.com/documentation/host/authentication/saml/
+canonical_url: https://cloudcannon.com/documentation/host/authentication/saml/
 order: 4
 requirements:
   build: Any

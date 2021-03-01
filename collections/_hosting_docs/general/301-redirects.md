@@ -1,6 +1,8 @@
 ---
 title: 301 Redirects
 category: General
+new_docs_link: https://cloudcannon.com/documentation/host/routing/#301-redirects
+canonical_url: https://cloudcannon.com/documentation/host/routing/#301-redirects
 order: 2
 requirements:
   build: Any

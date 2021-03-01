@@ -1,6 +1,8 @@
 ---
 title: Testing Domains
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/domains/#testing-domains
+canonical_url: https://cloudcannon.com/documentation/host/domains/#testing-domains
 order: 1
 ---
 

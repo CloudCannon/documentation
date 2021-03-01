@@ -1,6 +1,8 @@
 ---
 title: Blogging
 category: Workflows
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/collections/
+canonical_url: https://cloudcannon.com/documentation/edit/editing/collections/
 order: 1
 requirements:
   build: Jekyll

@@ -1,6 +1,8 @@
 ---
 title: Introduction
 category: Output
+new_docs_link: https://cloudcannon.com/documentation/sync/output-syncing/
+canonical_url: https://cloudcannon.com/documentation/sync/output-syncing/
 order: 1
 requirements:
   build: Any

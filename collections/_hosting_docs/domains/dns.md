@@ -1,6 +1,8 @@
 ---
 title: DNS
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/dns/cloudcannon-dns/#managing-records
+canonical_url: https://cloudcannon.com/documentation/host/dns/cloudcannon-dns/#managing-records
 order: 8
 requirements:
   build: Any

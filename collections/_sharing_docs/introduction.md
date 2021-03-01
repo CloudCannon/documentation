@@ -1,6 +1,8 @@
 ---
 title: Introduction
 category: General
+new_docs_link: https://cloudcannon.com/documentation/edit/sharing/
+canonical_url: https://cloudcannon.com/documentation/edit/sharing/
 order: 1
 requirements:
   build: Any

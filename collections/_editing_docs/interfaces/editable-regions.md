@@ -1,6 +1,8 @@
 ---
 title: Editable Regions
 category: Interfaces
+new_docs_link: https://cloudcannon.com/documentation/edit/editing/html/#editable-regions
+canonical_url: https://cloudcannon.com/documentation/edit/editing/html/#editable-regions
 order: 1
 requirements:
   build: Any

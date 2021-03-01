@@ -1,6 +1,8 @@
 ---
 title: Branching
 category: General
+new_docs_link: https://cloudcannon.com/documentation/edit/projects/#branching
+canonical_url: https://cloudcannon.com/documentation/edit/projects/#branching
 order: 2
 requirements:
   build: Any

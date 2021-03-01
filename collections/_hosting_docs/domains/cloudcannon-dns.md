@@ -1,6 +1,8 @@
 ---
 title: CloudCannon DNS
 category: Domains
+new_docs_link: https://cloudcannon.com/documentation/host/dns/cloudcannon-dns/
+canonical_url: https://cloudcannon.com/documentation/host/dns/cloudcannon-dns/
 order: 3
 requirements:
   build: Any
@@ -11,13 +13,13 @@ Using CloudCannon DNS allows you to manage your DNS records within CloudCannon, 
 
 Once you have added your domain name, follow these steps to start using *CloudCannon DNS*:
 
-* Access the settings for your domain via the *Domains* button (globe icon) on the left sidebar. 
+* Access the settings for your domain via the *Domains* button (globe icon) on the left sidebar.
 * Select your domain, then open the *Configuration* tab.
 * Ensure you are using *CloudCannon DNS*. Otherwise click **CloudCannon DNS** and *Switch to CloudCannon DNS*.
 
 ![Site Settings / Domain section with CloudCannon DNS](/images/hosting/domains/cloudcannon-dns-bad-nameservers.png){: .screenshot srcset="/images/hosting/domains/cloudcannon-dns-bad-nameservers.png 800w, /images/hosting/domains/cloudcannon-dns-bad-nameservers@2x.png 1600w"}
 
-Your DNS records will be updated. 
+Your DNS records will be updated.
 
 The next step is to configure your name servers, which cannot be done in CloudCannon. You will see instructions for this in your domain settings if you need to do this.
 

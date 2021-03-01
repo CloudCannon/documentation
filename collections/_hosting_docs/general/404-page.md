@@ -1,6 +1,8 @@
 ---
 title: 404 Page
 category: General
+new_docs_link: https://cloudcannon.com/documentation/host/routing/#404-page
+canonical_url: https://cloudcannon.com/documentation/host/routing/#404-page
 order: 2
 requirements:
   build: Any

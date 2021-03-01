@@ -1,6 +1,8 @@
 ---
 title: Mobile App
 category: Client Sharing
+new_docs_link: https://cloudcannon.com/documentation/edit/sharing/client-sharing/#mobile-app
+canonical_url: https://cloudcannon.com/documentation/edit/sharing/client-sharing/#mobile-app
 order: 6
 requirements:
   build: Any
