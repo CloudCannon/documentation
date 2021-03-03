@@ -41,6 +41,10 @@ h4 svg {
 	justify-content: flex-start;
 	padding: 24px 32px;
 
+	a.text-link {
+		color: #034ad8;
+	}
+
 	&__heading-container {
 		display: flex;
 		font-weight: 500;
