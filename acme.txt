@@ -1,5 +1,0 @@
----
-permalink: /.well-known/acme-challenge/test-d5ce7fb3f94057d7d50cf7fa003e7c51-0/index.html
-layout: null
----
-test-d5ce7fb3f94057d7d50cf7fa003e7c51-0.BaeQbK8m4IZrs40XO4hNhA2aNjZ3uXAoVfNQUYZM7aA
